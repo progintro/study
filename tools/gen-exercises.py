@@ -211,6 +211,10 @@ def build(qs, lectures, outdir):
 
 
 def main(argv):
+    known = {"--lint", "--check", "--build"}
+    if any(a.startswith("-") and a not in known for a in argv):
+        print(__doc__)
+        return 2
     qs = load_questions()
     if argv and argv[0] == "--lint":
         only = {os.path.abspath(a) for a in argv[1:]} or None
