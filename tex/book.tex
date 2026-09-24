@@ -1,0 +1,64 @@
+% Preamble used only for the combined build/study.pdf.
+%
+% The book is typeset with the report class (the Makefile passes
+% --top-level-division=chapter), so every chapter's H1 is a \chapter that starts on
+% a new page, and tools/pdf-prep.py adds unnumbered \part pages between the parts
+% of sources/manifest.yaml. This file adds the cover page.
+
+% Suppresses the per-chapter masthead defined in header.tex - the cover replaces it.
+\def\nomasthead{}
+
+% report's chapter pages use the plain style; keep the running footer consistent.
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[C]{\footnotesize\textcolor{ditcharcoal}{\thepage\ / \pageref{LastPage}}}%
+  \renewcommand{\headrulewidth}{0pt}}
+
+% Compact chapter headings: the H1 already reads "Κεφάλαιο N: …".
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\normalfont\huge\bfseries\color{ditcharcoal}}{}{0pt}{}
+\titlespacing*{\chapter}{0pt}{0pt}{24pt}
+
+\AtBeginDocument{%
+  \begin{titlepage}
+    \centering
+    \vspace*{0.6cm}
+
+    \includegraphics[width=0.74\textwidth]{uoa.jpg}
+
+    \vspace{1.1cm}
+    {\color{ditcyan}\rule{0.85\textwidth}{1.4pt}}
+
+    \vspace{0.9cm}
+    {\Huge\bfseries Οδηγός Μελέτης\par}
+    \vspace{0.45cm}
+    {\LARGE Εισαγωγή στον Προγραμματισμό\par}
+    \vspace{0.35cm}
+    {\large\color{ditcharcoal}Οι διαλέξεις του 2025--26, κεφάλαιο προς κεφάλαιο\par}
+
+    \vspace{0.75cm}
+    {\color{ditcharcoal}\rule{0.85\textwidth}{0.5pt}}
+
+    \vspace{0.9cm}
+    \includegraphics[width=0.14\textwidth]{dit.jpg}
+
+    \vspace{0.45cm}
+    {\large Τμήμα Πληροφορικής και Τηλεπικοινωνιών\par}
+    {\large Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών\par}
+
+    \vfill
+
+    \begin{minipage}{0.9\textwidth}
+      \centering\scriptsize
+      Ένα κεφάλαιο για κάθε διάλεξη: η θεωρία της διάλεξης σε κείμενο, τα κύρια
+      σημεία, οδηγός ανάγνωσης στις σημειώσεις και στα εργαστήρια, και ασκήσεις από
+      τις διαφάνειες, τα εργαστήρια, τις εργασίες και τα θέματα εξετάσεων.\par
+    \end{minipage}
+
+    \vspace{0.7cm}
+    {\scriptsize\color{ditcharcoal}%
+      \texttt{progintro.github.io/study}\par}
+
+    \vspace{0.4cm}
+  \end{titlepage}
+}

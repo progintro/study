@@ -1,0 +1,55 @@
+# Topic vocabulary for chapter front matter (`topics:`) and questions (`topics:`).
+# Add a tag here, with a Greek label, before using it anywhere else.
+course-intro: Εισαγωγή στο μάθημα
+computers: Υπολογιστές και αναπαράσταση πληροφορίας
+compilation: Μεταγλώττιση και σύνδεση (gcc)
+shell: Γραμμή εντολών (shell)
+unix: Unix / Linux, αρχεία και δικαιώματα
+redirection: Ανακατεύθυνση και σωληνώσεις (pipes)
+git: Git και GitHub
+editors: Επεξεργαστές κειμένου και IDEs
+debugging: Αποσφαλμάτωση (gdb, valgrind)
+variables: Μεταβλητές και δηλώσεις
+types: Τύποι δεδομένων
+integer-representation: Αναπαράσταση ακεραίων, υπερχείλιση
+floating-point: Αριθμοί κινητής υποδιαστολής
+memory-model: Μοντέλο μνήμης (διευθύνσεις, στοίβα, σωρός)
+operators: Τελεστές και παραστάσεις
+bitwise: Τελεστές bit
+precedence: Προτεραιότητα και προσεταιριστικότητα
+statements: Εντολές
+conditionals: if / else / switch
+loops: Βρόχοι (while, for, do-while)
+control-flow: Ροή ελέγχου (break, continue, goto)
+functions: Συναρτήσεις
+scope: Εμβέλεια και χρόνος ζωής
+recursion: Αναδρομή
+input-output: Είσοδος / έξοδος (printf, scanf, getchar)
+input-validation: Έλεγχος και ανάγνωση εισόδου
+arrays: Πίνακες
+multidim-arrays: Πολυδιάστατοι πίνακες
+pointers: Δείκτες
+pointer-arithmetic: Αριθμητική δεικτών
+dynamic-memory: Δυναμική δέσμευση μνήμης (malloc / free)
+strings: Συμβολοσειρές
+command-line-args: Ορίσματα γραμμής εντολών (argc / argv)
+function-pointers: Δείκτες σε συναρτήσεις
+complexity: Πολυπλοκότητα αλγορίθμων
+preprocessor: Προεπεξεργαστής (#include, #define)
+searching: Αναζήτηση (σειριακή, δυαδική)
+sorting: Ταξινόμηση
+structs: Δομές (struct, typedef)
+unions-enums: Απαριθμήσεις, ενώσεις, πεδία bit
+linked-lists: Συνδεδεμένες λίστες
+trees: Δέντρα
+files: Αρχεία (fopen, fread, fwrite)
+code-organization: Οργάνωση κώδικα σε πολλαπλά αρχεία
+make: make και Makefiles
+problem-solving: Επίλυση προβλημάτων
+math-algorithms: Μαθηματικοί αλγόριθμοι (πρώτοι, ΜΚΔ, …)
+simulation: Προσομοίωση
+graphs: Γράφοι και αναζήτηση (BFS / DFS)
+game-ai: Παιχνίδια και αναζήτηση (minimax)
+image-audio: Επεξεργασία εικόνας / ήχου (BMP, WAV)
+undefined-behavior: Απροσδιόριστη συμπεριφορά
+good-practice: Καλές πρακτικές

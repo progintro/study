@@ -1,0 +1,69 @@
+#!/usr/bin/env python3
+"""Prepare a throwaway checkout for the Jekyll build, in place.
+
+1. Rewrite math for kramdown in the chapters and questions (below).
+2. Wrap each question body in {% raw %}: the chapters carry the wrapper themselves,
+   but question files are short and many, so they stay free of it and get it here.
+3. Write _data/chapters.yml (chapter number -> slug) for _layouts/question.html.
+
+Math:
+
+The chapters write inline math as $x$, which is what GitHub and pandoc's gfm reader
+understand. kramdown (the Pages Markdown engine) only knows $$x$$: to it a single $
+is plain text, so it goes on to read the underscores in $a_1 + b_2$ as emphasis and
+the backslashes in $\\{$ as escapes, and MathJax is handed a mangled formula.
+kramdown treats $$x$$ inside a paragraph as inline math, so doubling the delimiters
+is all it takes.
+
+This runs in CI on a throwaway checkout (see .github/workflows/pages.yml), so the
+committed Markdown keeps the portable form. Do not run it in a working tree you
+intend to commit from.
+
+Usage: tools/site-prep.py
+"""
+
+import glob
+import os
+import re
+import sys
+
+import yaml
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+INLINE = re.compile(r"(?<![$\\])\$(?![$\s])([^$\n]+?)(?<![\s\\])\$(?!\$)")
+
+
+def convert_line(line):
+    # only outside code spans
+    parts = re.split(r"(`[^`\n]+`)", line)
+    return "".join(p if p.startswith("`") else INLINE.sub(r"$$\1$$", p) for p in parts)
+
+
+def convert(text):
+    out, fenced = [], False
+    for line in text.split("\n"):
+        if re.match(r"\s*```", line):
+            fenced = not fenced
+        out.append(line if fenced else convert_line(line))
+    return "\n".join(out)
+
+
+def main(argv):
+    files = sorted(glob.glob(os.path.join(ROOT, "chapters", "*", "README.md")))
+    questions = sorted(glob.glob(os.path.join(ROOT, "questions", "*", "*.md")))
+    for path in files + questions:
+        text = convert(open(path, encoding="utf-8").read())
+        m = re.match(r"---\n.*?\n---\n", text, re.S)
+        if path in questions and m:
+            text = m.group(0) + "{% raw %}\n" + text[m.end():] + "\n{% endraw %}\n"
+        open(path, "w", encoding="utf-8").write(text)
+    manifest = yaml.safe_load(open(os.path.join(ROOT, "sources", "manifest.yaml"), encoding="utf-8"))
+    os.makedirs(os.path.join(ROOT, "_data"), exist_ok=True)
+    with open(os.path.join(ROOT, "_data", "chapters.yml"), "w", encoding="utf-8") as f:
+        for l in manifest["lectures"]:
+            f.write(f"{l['n']}: {l['slug']}\n")
+    print(f"site-prep: {len(files)} chapters, {len(questions)} questions")
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

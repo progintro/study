@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<nav class="lab-nav lab-nav-top" aria-label="Πλοήγηση κεφαλαίων">
+  <span class="lab-nav-side">
+    {% if page.prev %}<a href="{{ site.baseurl }}/chapters/{{ page.prev }}/">&larr; Προηγούμενο</a>{% endif %}
+  </span>
+  <span class="lab-nav-mid"><a href="{{ site.baseurl }}/">Όλα τα κεφάλαια</a></span>
+  <span class="lab-nav-side lab-nav-right">
+    {% if page.next %}<a href="{{ site.baseurl }}/chapters/{{ page.next }}/">Επόμενο &rarr;</a>{% endif %}
+  </span>
+</nav>
+
+<p class="chapter-meta">
+  Διάλεξη {{ page.lecture }} · {{ page.date | date: "%d/%m/%Y" }} ·
+  <a href="{{ page.slides }}">Διαφάνειες (PDF)</a>
+  {% for n in page.notes %} · <a href="https://progintro.github.io/notes/chapters/{{ n }}/">Σημειώσεις {{ n | slice: 0, 2 | plus: 0 }}</a>{% endfor %}
+  {% for l in page.labs %} · <a href="https://progintro.github.io/lab-material/labs/{{ l }}/">Εργαστήριο {{ l | remove: "lab" | plus: 0 }}</a>{% endfor %}
+</p>
+
+{{ content }}
+
+{% assign slug = page.dir | split: '/' | last %}
+<p class="chapter-downloads">
+  Κατεβάστε το κεφάλαιο:
+  <a href="{{ site.baseurl }}/downloads/{{ slug }}.pdf">PDF</a> ·
+  <a href="{{ site.baseurl }}/md/{{ slug }}.md">Markdown</a> ·
+  <a href="https://github.com/progintro/study/blob/main/{{ page.path }}">GitHub</a>
+</p>
+
+<nav class="lab-nav lab-nav-bottom" aria-label="Πλοήγηση κεφαλαίων">
+  <span class="lab-nav-side">
+    {% if page.prev %}<a href="{{ site.baseurl }}/chapters/{{ page.prev }}/">&larr; Προηγούμενο</a>{% endif %}
+  </span>
+  <span class="lab-nav-mid"><a href="{{ site.baseurl }}/">Όλα τα κεφάλαια</a></span>
+  <span class="lab-nav-side lab-nav-right">
+    {% if page.next %}<a href="{{ site.baseurl }}/chapters/{{ page.next }}/">Επόμενο &rarr;</a>{% endif %}
+  </span>
+</nav>

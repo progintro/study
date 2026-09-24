@@ -1,0 +1,66 @@
+# One entry per chapter of the study guide: the 2025-26 lectures (release tag 2025
+# of progintro/progintro.github.io) plus the guest lecture on make as an appendix.
+#
+#   slides   file name in the release; `make fetch` downloads it to sources/slides/
+#   notes    progintro/notes chapters that cover the same ground (starting guess,
+#            refined by the extraction pass - the chapter's front matter is canonical)
+#   labs     progintro/lab-material labs that practise it (same caveat)
+#   part     the book part the chapter opens or belongs to (see `parts` below)
+release: https://github.com/progintro/progintro.github.io/releases/download/2025
+year: 2025-26
+
+parts:
+  A: Εργαλεία και πρώτα βήματα
+  B: Τα θεμέλια της C
+  C: Πίνακες, δείκτες και μνήμη
+  D: Αλγόριθμοι και δομές δεδομένων
+  E: Οργάνωση κώδικα και προχωρημένα θέματα
+  X: Παραρτήματα
+
+lectures:
+  - {n: 0,  slug: 00-hello-world,        date: 2025-09-29, part: A, slides: lec00.pdf, title: "Καλημέρα Κόσμε!",                     notes: [00-intro, 01-first-programs], labs: [lab00]}
+  - {n: 1,  slug: 01-command-line,       date: 2025-10-03, part: A, slides: lec01.pdf, title: "Η Γραμμή Εντολών",                    notes: [00-intro],                    labs: [lab01]}
+  - {n: 2,  slug: 02-memory-variables,   date: 2025-10-06, part: B, slides: lec02.pdf, title: "Μνήμη και Μεταβλητές",                notes: [02-types-operators],          labs: [lab02, lab03]}
+  - {n: 3,  slug: 03-functions,          date: 2025-10-10, part: B, slides: lec03.pdf, title: "Συναρτήσεις",                         notes: [04-functions],                labs: [lab05]}
+  - {n: 4,  slug: 04-git-operators,      date: 2025-10-13, part: A, slides: lec04.pdf, title: "Git και Τελεστές",                    notes: [02-types-operators],          labs: [lab01]}
+  - {n: 5,  slug: 05-operators-statements, date: 2025-10-17, part: B, slides: lec05.pdf, title: "Τελεστές και Εντολές",              notes: [02-types-operators, 03-control-flow], labs: [lab03]}
+  - {n: 6,  slug: 06-control-flow,       date: 2025-10-20, part: B, slides: lec06.pdf, title: "Εντολές και Ροή Ελέγχου",             notes: [03-control-flow],             labs: [lab03]}
+  - {n: 7,  slug: 07-problem-solving,    date: 2025-10-24, part: B, slides: lec07.pdf, title: "Επίλυση Προβλημάτων",                 notes: [01-first-programs],           labs: [lab03]}
+  - {n: 8,  slug: 08-control-flow-2,     date: 2025-10-27, part: B, slides: lec08.pdf, title: "Ροή Ελέγχου #2",                      notes: [03-control-flow],             labs: [lab03]}
+  - {n: 9,  slug: 09-input,              date: 2025-10-31, part: B, slides: lec09.pdf, title: "Δεδομένα Εισόδου",                    notes: [01-first-programs, 09-io],    labs: [lab04]}
+  - {n: 10, slug: 10-arrays,             date: 2025-11-03, part: C, slides: lec10.pdf, title: "Πίνακες",                             notes: [05-pointers-arrays],          labs: [lab06]}
+  - {n: 11, slug: 11-pointers-recursion, date: 2025-11-07, part: C, slides: lec11.pdf, title: "Δείκτες και Αναδρομή",                notes: [04-functions, 05-pointers-arrays], labs: [lab05, lab06]}
+  - {n: 12, slug: 12-pointers-arrays,    date: 2025-11-10, part: C, slides: lec12.pdf, title: "Δείκτες και Πίνακες",                 notes: [05-pointers-arrays],          labs: [lab06]}
+  - {n: 13, slug: 13-memory,             date: 2025-11-14, part: C, slides: lec13.pdf, title: "Μνήμη",                               notes: [06-memory-strings],           labs: [lab07]}
+  - {n: 14, slug: 14-scope-strings,      date: 2025-11-21, part: C, slides: lec14.pdf, title: "Εμβέλεια, Μνήμη και Συμβολοσειρές",   notes: [04-functions, 06-memory-strings], labs: [lab08]}
+  - {n: 15, slug: 15-complexity-preprocessor, date: 2025-11-24, part: C, slides: lec15.pdf, title: "Πολυπλοκότητα και Προεπεξεργαστής", notes: [10-preprocessor, 11-sorting-searching], labs: []}
+  - {n: 16, slug: 16-problem-solving-2,  date: 2025-11-27, part: D, slides: lec16.pdf, title: "Επίλυση Προβλημάτων #2",              notes: [],                            labs: []}
+  - {n: 17, slug: 17-binary-search-sorting, date: 2025-11-28, part: D, slides: lec17.pdf, title: "Δυαδική Αναζήτηση και Ταξινόμηση", notes: [11-sorting-searching],        labs: []}
+  - {n: 18, slug: 18-sorting-input-2,    date: 2025-12-01, part: D, slides: lec18.pdf, title: "Ταξινόμηση και Δεδομένα Εισόδου #2",  notes: [11-sorting-searching, 09-io], labs: [lab10]}
+  - {n: 19, slug: 19-structs,            date: 2025-12-05, part: D, slides: lec19.pdf, title: "Δομές",                               notes: [07-structs],                  labs: [lab09]}
+  - {n: 20, slug: 20-advanced-structs,   date: 2025-12-08, part: D, slides: lec20.pdf, title: "Προχωρημένες Δομές",                  notes: [07-structs],                  labs: [lab09]}
+  - {n: 21, slug: 21-lists-trees,        date: 2025-12-12, part: D, slides: lec21.pdf, title: "Λίστες και Δέντρα",                   notes: [08-lists-trees],              labs: [lab09]}
+  - {n: 22, slug: 22-trees,              date: 2025-12-15, part: D, slides: lec22.pdf, title: "Δέντρα",                              notes: [08-lists-trees],              labs: [lab09]}
+  - {n: 23, slug: 23-code-organization,  date: 2025-12-19, part: E, slides: lec23.pdf, title: "Οργάνωση Κώδικα",                     notes: [10-preprocessor, 12-good-practice], labs: [lab10]}
+  - {n: 24, slug: 24-advanced-topics,    date: 2025-12-22, part: E, slides: lec24.pdf, title: "Προχωρημένα Θέματα",                  notes: [12-good-practice],            labs: []}
+  - {n: 25, slug: 25-problem-solving-3,  date: 2026-01-09, part: E, slides: lec25.pdf, title: "Επίλυση Προβλημάτων #3",              notes: [],                            labs: []}
+  - {n: 26, slug: 26-make,               date: 2025-12-19, part: X, slides: make.pdf,  title: "How to Make? (προσκεκλημένη διάλεξη)", notes: [],                          labs: [lab10], appendix: true}
+
+# Everything the question bank transcribes. PDFs come from releases (`make fetch`)
+# or from the course site checkout (../progintro.github.io).
+homework:
+  "2023": {release: 2023, files: [hw0.pdf, hw1.pdf, hw2.pdf, hw3.pdf]}
+  "2024": {release: 2024, files: [hw0.pdf, hw1.pdf, hw2.pdf, hw3.pdf], markdown: past/2024/assets/md}
+  "2025": {release: 2025, files: [hw0.pdf, hw1.pdf, hw2.pdf, hw3.pdf, stergios.pdf]}
+
+exams:
+  - {id: 2023-dec, file: exams/2023/progintro-exam-dec-23.pdf, title: "Κατατακτήριες Δεκεμβρίου 2023"}
+  - {id: 2023-fall, dir: exams/2023/fall, title: "Online τελική εξέταση Δεκεμβρίου 2023"}
+  - {id: 2024-jul, file: exams/2024/progintro-exam-jul-24.pdf, title: "Ιούλιος 2024"}
+  - {id: 2024-sep, file: exams/2024/progintro-exam-sep-24.pdf, title: "Σεπτέμβριος 2024"}
+  - {id: 2024-dec, file: exams/2024/progintro-exam-dec-24.pdf, title: "Κατατακτήριες Δεκεμβρίου 2024"}
+  - {id: 2025-jan, file: exams/2025/progintro-exam-jan-25.pdf, title: "Ιανουάριος 2025"}
+  - {id: 2025-sep, file: exams/2025/progintro-exam-sep-25.pdf, title: "Σεπτέμβριος 2025"}
+  - {id: 2026-jan, file: exams/2026/progintro-exam-jan-26.pdf, title: "Ιανουάριος 2026"}
+  - {id: 2026-jun, file: exams/2026/progintro-exam-jun-26.pdf, title: "Ιούνιος 2026"}
+  - {id: 2026-sep, file: exams/2026/progintro-exam-sep-26.pdf, title: "Σεπτέμβριος 2026"}

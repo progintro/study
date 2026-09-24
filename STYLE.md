@@ -1,0 +1,209 @@
+# Style guide: chapters and the question bank
+
+This is the contract for everything under `chapters/` and `questions/`, whoever writes
+it: a person or an agent. `tools/lint.py --strict` enforces the mechanical parts.
+
+## Who we write for
+
+A first-year student who missed the lecture, or who is revising for the exam two
+months later. They have the slides, but slides are terse and full of things that were
+*said*, not written. A chapter should:
+
+1. teach the lecture's material as **readable prose**, not slide bullets;
+2. point precisely to where to read more (the slides, the course notes, the labs);
+3. give the questions to practise on: from the slides, the labs, the homework and past
+   exams.
+
+It must also work as input to an agent ("make me 5 exercises on chapter 12",
+"quiz me on pointers"), so text comes first: no information only in images,
+no layout tricks. Everything is plain Markdown that reads well on GitHub, on the site
+and in the PDF.
+
+## Language
+
+- **Greek** prose, in second-person plural for instructions ("Παρατηρήστε ότι …"),
+  as `lab-material` and `notes` do. The tone is friendly and precise.
+- Technical terms: give the Greek term with the English one in parentheses **the first
+  time** it appears in a chapter, e.g. "δείκτης (pointer)". After that use whichever the
+  course uses (the slides say "pointer" more than "δείκτης": follow the slides).
+- Identifiers, commands, keywords, file names and C code stay in English, in backticks.
+- Use Greek punctuation properly: the Greek question mark is `;`.
+
+## Chapter file
+
+`chapters/NN-slug/README.md`, where `NN-slug` is the lecture's `slug` in
+`sources/manifest.yaml`.
+
+### Front matter
+
+```yaml
+---
+layout: chapter
+chapter: 12
+lecture: 12
+title: "Δείκτες και Πίνακες"
+date: 2025-11-10
+part: C
+slides: https://github.com/progintro/progintro.github.io/releases/download/2025/lec12.pdf
+prev: 11-pointers-recursion
+next: 13-memory
+topics: [pointers, arrays, pointer-arithmetic]
+notes: [05-pointers-arrays]
+labs: [lab06]
+---
+```
+
+- `prev` is omitted on the first chapter and `next` on the last one.
+- `topics` are short English kebab-case tags. Reuse the vocabulary in
+  `questions/topics.yaml`, and add a topic there if none fits.
+- `notes` and `labs` list the related chapters of progintro/notes and the labs of
+  progintro/lab-material.
+
+### Body: sections in this order
+
+```markdown
+# Κεφάλαιο 12: Δείκτες και Πίνακες
+
+<!-- {% raw %} -->
+
+> **Στόχοι:** μετά από αυτό το κεφάλαιο θα μπορείτε να …
+>
+> **Προαπαιτούμενα:** [Κεφάλαιο 10](../10-arrays/), [Κεφάλαιο 11](../11-pointers-recursion/)
+>
+> **Χρόνος μελέτης:** ~2 ώρες
+
+## Σύνοψη
+One paragraph (4–6 sentences): what the lecture is about and why it matters.
+
+## Θεωρία
+### <one H3 per topic of the lecture, in the lecture's order>
+Explanatory prose. Definitions in **bold** at the point where they are defined.
+Code examples, output shown as ```text blocks. Diagrams from the slides are described
+in words or redrawn as text / ASCII / tables; memory layouts as tables.
+
+## Κύρια σημεία
+1. Numbered list of the key takeaways. Every takeaway the slides state explicitly
+   ("Key takeaways", "Τι κρατάμε", summary slides) must be here, plus the ones the
+   lecture implies. Each one is a full sentence.
+
+## Ορολογία
+| Ελληνικά | English | Σύντομος ορισμός |
+| --- | --- | --- |
+
+## Συχνά λάθη
+- Mistakes and misconceptions, each with a one-line example or symptom (compiler
+  message, crash, wrong output) and the fix.
+
+## Διάβασμα
+- **Διαφάνειες:** [Διάλεξη 12](<slides url>), σελ. 1–30. <per-topic page ranges if useful>
+- **Σημειώσεις:** [Κεφάλαιο 5: Δείκτες και πίνακες](https://progintro.github.io/notes/chapters/05-pointers-arrays/), ενότητες «Δείκτες», «Πίνακες» (K04, σελ. 78–92)
+- **Εργαστήριο:** [Εργαστήριο 6](https://progintro.github.io/lab-material/labs/lab06/): ασκήσεις `pointers.c`, `sieve.c`
+- **Βιβλίο:** K&R, κεφ. 5 (only where the slides cite a book)
+- **Άλλα:** external links the slides give (Wikipedia, man pages, videos)
+
+## Ασκήσεις
+<!-- exercises -->
+<!-- /exercises -->
+
+## Ερωτήσεις αυτοαξιολόγησης
+1. Short conceptual question.[^q1]
+...
+
+[^q1]: Short answer.
+
+<!-- {% endraw %} -->
+```
+
+- **One H1**, `# Κεφάλαιο N: <title>`. The appendix chapter is `# Παράρτημα Α: <title>`.
+- The body sits between `<!-- {% raw %} -->` and `<!-- {% endraw %} -->`. C code such as
+  `{{1, 2}}` is Liquid syntax and would otherwise break the site build.
+- **Never edit between the `<!-- exercises -->` markers by hand.**
+  `tools/gen-exercises.py` fills them from `questions/`.
+- Self-assessment answers go in footnotes named `[^q1]`, `[^q2]`, … .
+- K04 page numbers come from `sources/k04-map.tsv` (page → notes chapter and section).
+  Give notes sections by their exact heading text in «».
+
+### Writing the theory section
+
+- **Transform, don't transcribe.** Slides are bullets plus the lecturer's voice; the
+  chapter supplies the missing sentences that connect them. Explain *why*, not only
+  *what*. Keep every fact, example and program from the slides. Drop nothing that
+  would be on an exam.
+- Do not invent course policy, deadlines or grading. When the slides show something
+  that you cannot read reliably, write what you can and record the gap in
+  `sources/extract/lecNN.yaml` under `issues`.
+- Where the slides show live-coding output (terminal screenshots), transcribe it as a
+  ```text block with the `$` prompt.
+- Where the slides use an image to make a point (a meme, a diagram), keep the point
+  in words. Do not describe the meme itself unless it teaches something.
+- Cross-reference earlier chapters by link: `[Κεφάλαιο 6](../06-control-flow/)`.
+
+### Code
+
+- Fence every block with a language: `c`, `text`, `sh`, `make`, `diff`, `yaml`.
+- A ```c block that defines `main` must compile: `tools/check-code.py` runs
+  `gcc -fsyntax-only` on it (with `-std=gnu11`). If a program is deliberately
+  incomplete or wrong (for example "find the bug"), put a line containing only `....`
+  or the comment `// does-not-compile` in it so the check skips it.
+- Write code the way the slides do (modern C, `int main(int argc, char **argv)` where
+  the slides use it). Keep lines ≤ 80 characters so the PDF does not wrap.
+
+### Math, HTML and figures
+
+- Math: `$x$` inline, `$$x$$` display on its own line. No spaces just inside the
+  delimiters. Write `\lbrace`/`\rbrace` rather than `\{`/`\}`.
+- No raw HTML except `<a id="..."></a>` anchors (the PDF drops HTML).
+- Figures are allowed only when words and tables truly cannot carry the point. Put them in
+  `figures/` as SVG plus PDF (the build needs both) and reference the `.svg`.
+
+## The question bank: `questions/`
+
+One question per file, `questions/<kind>/<id>.md`, where kind is `slides`, `labs`,
+`homework` or `exams`.
+
+```markdown
+---
+id: exam-2025-jan-q2
+kind: exam
+title: "Αντιστροφή λέξεων"
+source:
+  title: "Εξέταση Ιανουαρίου 2025, Θέμα 2"
+  url: https://github.com/progintro/progintro.github.io/blob/main/exams/2025/progintro-exam-jan-25.pdf
+  years: [2025]
+chapters: [14, 12]
+topics: [strings, pointers]
+difficulty: 2
+type: programming
+---
+
+<statement, faithful to the original, in Markdown; sample runs as ```text blocks>
+
+## Υπόδειξη
+
+<1-4 sentences that start the student on the right track, without giving the solution>
+```
+
+- `id` equals the file name without `.md`. Conventions:
+  - `slides-lecNN-<slug>`
+  - `lab-labNN-<file>`
+  - `hw-<year>-hwN-<slug>`
+  - `exam-<exam-id>-qN`, with a letter suffix for sub-parts if they are separate problems.
+- `chapters`: the chapter numbers where the question belongs. **The first one is the
+  primary chapter**, where most of the needed material is taught. List others only if
+  the question genuinely needs them.
+- `difficulty`: 1 (direct application), 2 (combines ideas), 3 (exam-hard or longer).
+- `type` is one of:
+  - `programming`: write a program or function
+  - `short-answer`: explain or define
+  - `trace`: what does this print?
+  - `debug`: find the bug
+  - `multiple-choice`
+  - `tooling`: shell, git, gcc, make
+- **Hints only, never full solutions.** A hint may name the technique ("use two
+  indices that move towards each other"), but must not contain the code.
+- Transcribe statements faithfully (Greek as written). Include the input/output
+  examples, which are often the precise spec. Long input files are linked, not
+  pasted.
+- If the same problem appeared in more than one year, keep one file and list every
+  year in `source.years`, adding the other sources in the body under
+  `## Εμφανίσεις`.
