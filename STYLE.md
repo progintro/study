@@ -126,7 +126,7 @@ concepts of «Θεωρία» it applies.
 - **Never edit between the `<!-- exercises -->` markers by hand.**
   `tools/gen-exercises.py` fills them from `questions/`.
 - Self-assessment answers go in footnotes named `[^q1]`, `[^q2]`, … .
-- K04 page numbers come from `sources/k04-map.tsv` (page → notes chapter and section).
+- K04 page numbers come from `sources/k04-map.tsv` (printed K04 page → notes chapter and section).
   Give notes sections by their exact heading text in «».
 
 ### Writing the theory and examples

@@ -40,8 +40,10 @@ jobs:
       - name: Compile every program in the chapters
         run: python3 tools/check-code.py
 
-      - name: Check the generated exercise lists are up to date
-        run: python3 tools/gen-exercises.py --check
+      - name: Check the generated exercise lists and glossary are up to date
+        run: |
+          python3 tools/gen-exercises.py --check
+          python3 tools/gen-glossary.py --check
 
       # Serial on purpose: parallel pandoc containers have produced truncated PDFs.
       - name: Build PDFs, Markdown and JSON

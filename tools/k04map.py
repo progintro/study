@@ -8,7 +8,11 @@ for the conversion) and to the notes section whose heading best matches the last
 {\\bfseries ...} heading seen, since the converted headings went through pandoc and
 no longer match the LaTeX text exactly.
 
-Writes sources/k04-map.tsv: page, notes chapter slug, section heading.
+Page numbers are the ones *printed* on K04's pages, which is what the lecture slides
+cite ("σημειώσεις μέχρι τη σελίδα 62"): the unnumbered title page is PDF page 1, so
+printed page N is PDF page N+1. The title page itself is page 0.
+
+Writes sources/k04-map.tsv: printed page, notes chapter slug, section heading.
 
 Usage: tools/k04map.py [path/to/notes]   (default: ../notes)
 """
@@ -77,8 +81,8 @@ def main(argv):
     out = os.path.join(ROOT, "sources", "k04-map.tsv")
     with open(out, "w", encoding="utf-8") as f:
         f.write("k04_page\tnotes_chapter\tnotes_section\n")
-        for r in rows:
-            f.write("%d\t%s\t%s\n" % r)
+        for page, chap, title in rows:
+            f.write("%d\t%s\t%s\n" % (page - 1, chap, title))
     print(f"k04map: {len(rows)} pages -> {os.path.relpath(out, ROOT)}")
 
 

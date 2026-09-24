@@ -99,10 +99,19 @@ def book(plain):
             meta = f"> Διάλεξη {l['n']} · {l['date']} · [διαφάνειες]({m['release']}/{l['slides']})"
             text = re.sub(r"^(# .+\n)", lambda h: h.group(1) + "\n" + meta + "\n", text, count=1, flags=re.M)
         out.append(text)
+    gpath = os.path.join(ROOT, "glossary.md")
+    if os.path.exists(gpath):
+        if not plain and not appendix:
+            out.append(latex("\\appendix"))
+            appendix = True
+        g = open(gpath, encoding="utf-8").read()
+        g = re.sub(r"\]\(chapters/([\w-]+)/\)", "](" + SITE + r"/chapters/\1/)", g)
+        out.append(g)
     qpath = os.path.join(ROOT, "build", "questions.md")
     if os.path.exists(qpath):
         if not plain and not appendix:
             out.append(latex("\\appendix"))
+            appendix = True
         # the bank's H1 is a chapter of its own; its per-chapter H2s stay sections
         qtext = links(open(qpath, encoding="utf-8").read())
         out.append(qtext if plain else diagrams(qtext))

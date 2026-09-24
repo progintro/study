@@ -53,7 +53,7 @@ $(BUILD)/%.pdf: chapters/%/README.md $(DEPS) | $(BUILD)
 $(BUILD)/questions.json $(BUILD)/questions.md: $(QUESTIONS) sources/manifest.yaml tools/gen-exercises.py | $(BUILD)
 	python3 tools/gen-exercises.py --check --build $(BUILD)
 
-$(BUILD)/study.pdf: $(CHAPTERS) $(DEPS) tex/book.tex $(BUILD)/questions.md | $(BUILD)
+$(BUILD)/study.pdf: $(CHAPTERS) $(DEPS) tex/book.tex glossary.md $(BUILD)/questions.md | $(BUILD)
 	python3 tools/mermaid.py
 	python3 tools/pdf-prep.py --all > $(BUILD)/study.md
 	$(PANDOC) $(BUILD)/study.md $(PDF_FLAGS) --toc-depth=1 --top-level-division=chapter \
@@ -63,9 +63,9 @@ $(BUILD)/study.pdf: $(CHAPTERS) $(DEPS) tex/book.tex $(BUILD)/questions.md | $(B
 
 $(BUILD)/study-md.zip: $(CHAPTERS) $(QUESTIONS) | $(BUILD)
 	rm -f $@
-	zip -q -r $@ README.md chapters questions $(wildcard figures)
+	zip -q -r $@ README.md glossary.md chapters questions $(wildcard figures)
 
-$(BUILD)/llms.txt: $(CHAPTERS) $(BUILD)/questions.md tools/llms.py tools/pdf-prep.py | $(BUILD)
+$(BUILD)/llms.txt: $(CHAPTERS) glossary.md $(BUILD)/questions.md tools/llms.py tools/pdf-prep.py | $(BUILD)
 	python3 tools/pdf-prep.py --all --plain > $(BUILD)/llms-full.txt
 	python3 tools/llms.py > $@
 
@@ -86,9 +86,11 @@ check-code:
 
 exercises:
 	python3 tools/gen-exercises.py
+	python3 tools/gen-glossary.py
 
 check: lint check-code
 	python3 tools/gen-exercises.py --check
+	python3 tools/gen-glossary.py --check
 
 clean:
 	rm -rf $(BUILD) _site
