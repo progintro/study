@@ -43,7 +43,7 @@ def links(text):
     # include them, and a PDF reader can follow the link
     text = re.sub(r"!\[([^\]]*)\]\((https?://[^)\s]+)\)",
                   lambda m: "[Εικόνα: %s](%s)" % (m.group(1) or "σύνδεσμος", m.group(2)), text)
-    text = re.sub(r"\]\((?:\.\./)+questions/(\w+)/([\w.-]+)\.md\)", SITE + r"/questions/\1/\2.html)", text)
+    text = re.sub(r"\]\((?:\.\./)+questions/(\w+)/([\w.-]+)\.md\)", "](" + SITE + r"/questions/\1/\2.html)", text)
     text = re.sub(r"\]\((?:\.\./)+questions/(?:README\.md)?\)", "](" + SITE + "/questions/)", text)
     text = re.sub(r"\]\(\.\./([\w-]+)/?\)", "](" + SITE + r"/chapters/\1/)", text)
     return text
