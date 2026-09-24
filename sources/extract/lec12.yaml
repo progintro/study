@@ -1,0 +1,40 @@
+lecture: 12
+pages: 45
+outline:
+  - {pages: "1", section: "(τίτλος)"}
+  - {pages: "2", section: "(ανακοινώσεις: Εργασία #1, «Πράξεις με δείκτες»)"}
+  - {pages: "3-4", section: "(προηγούμενη φορά / σήμερα)"}
+  - {pages: "5-10", section: "Υπενθύμιση: ο μονοδιάστατος πίνακας στη μνήμη"}
+  - {pages: "11", section: "Γιατί χρειαζόμαστε πολλές διαστάσεις"}
+  - {pages: "12-13", section: "Δήλωση δισδιάστατου πίνακα"}
+  - {pages: "14", section: "Αρχικοποίηση δισδιάστατου πίνακα"}
+  - {pages: "15-18", section: "Πώς αποθηκεύεται ένας δισδιάστατος πίνακας στη μνήμη"}
+  - {pages: "19-21", section: "Υπολογισμός διεύθυνσης στοιχείου στη μνήμη"}
+  - {pages: "22", section: "Ανάθεση σε στοιχεία δισδιάστατου πίνακα: η σκακιέρα"}
+  - {pages: "23", section: "Τρισδιάστατοι, τετραδιάστατοι, κ.ο.κ."}
+  - {pages: "24", section: "Υπενθύμιση: χρήση δεικτών (dereference)"}
+  - {pages: "25-26", section: "Άσκηση: αριθμητική δεικτών μέσα σε βρόχο"}
+  - {pages: "27-28", section: "Δείκτης σε δείκτη"}
+  - {pages: "29-32", section: "Πίνακες από δείκτες"}
+  - {pages: "33-35", section: "Το περίφημο argv"}
+  - {pages: "36-40", section: "Δυναμικοί πίνακες με την malloc"}
+  - {pages: "41-43", section: "Endianness"}
+  - {pages: "44-45", section: "(για την επόμενη φορά / κλείσιμο)"}
+pointers:
+  - {page: 26, text: "Βίντεο «Εισαγωγή στους Pointers» από τους βοηθούς του μαθήματος (QR code· link στο PDF: http://www.youtube.com/watch?v=tH2JW8HsPNw)"}
+  - {page: 44, text: "Σημειώσεις κ. Σταματόπουλου σελ. 73-103 (K04): 05-pointers-arrays «Δείκτες» έως 06-memory-strings «Πολυδιάστατοι πίνακες»"}
+  - {page: 44, text: "Endianness: https://en.wikipedia.org/wiki/Endianness"}
+takeaways_slide: null         # p. 44 is a reading assignment, not a takeaways slide
+issues:
+  - "p. 2: announcement 'Η Εργασία #1 μόλις βγήκε! Προθεσμία: Τετάρτη, 10 Δεκέμβρη 23:59' (course policy, not put in the chapter); the second bullet 'Πράξεις με δείκτες' is a bare clarification heading with no content on the slide."
+  - "p. 44 is a 'Για την επόμενη φορά' slide (reading assignment + link), not an explicit key-takeaways slide; Κύρια σημεία were derived from the lecture content."
+  - "p. 6-10: the 1D memory diagram places bears[0] at bytes 4-7 (array occupies 4-403), consistent with the callout on p. 10; kept as is."
+  - "p. 15-18, 40: slides print sizeof with %d; chapter uses %zu and notes the difference (the question file keeps %d as on the slide)."
+  - "p. 22: chessBoard row 1 holds uppercase 'P' pawns, but the move writes chessBoard[3][4] = 'p' (lowercase); the chapter transcribes it and points out the inconsistency. The board picture shows e2-e4."
+  - "p. 24, 27: memory diagrams draw the int 42 with its value in the last byte (103), i.e. big-endian order, while p. 43 shows the machine is little endian; the chapter explains this in the Endianness section."
+  - "p. 26: video link only as a QR code on the slide; URL recovered from the PDF link annotation (youtube tH2JW8HsPNw), not verified online."
+  - "p. 28: 'Γιατί έχει σημασία;' is answered only with pictures (binary tree with data/left/right pointers, weighted directed graph); no question file written for it."
+  - "p. 37: callout under the last element reads 'array[0]' (typo, should be array[3]); p. 38 corrects to array[N - 1]. The values 1 3 3 7 in the malloc'd block are illustrative (malloc does not initialize)."
+  - "p. 37-38: slides do not mention free() or the NULL check; the chapter adds both from notes 06-memory-strings «Δυναμική δέσμευση μνήμης» and defers details to lecture 13."
+  - "p. 42: printf('%02x', bytes[i]) with plain (signed) char would print ffffff.. for bytes >= 0x80; harmless for 42, noted in the chapter."
+  - "Chapter includes small additions from the notes (argv[argc] == NULL, omitting only the first dimension, passing 2D arrays needs the column count, dynamic 2D arrays via int **) that the slides do not state explicitly."

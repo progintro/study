@@ -1,0 +1,37 @@
+lecture: 6
+pages: 29
+outline:
+  - {pages: "1-2", section: "Έλεγχος της λύσης σας με pipes και time"}
+  - {pages: "3-5", section: "Κατηγορίες εντολών"}
+  - {pages: "6", section: "Η κενή εντολή"}
+  - {pages: "7", section: "Η εντολή έκφρασης"}
+  - {pages: "8", section: "Η σύνθετη εντολή (block)"}
+  - {pages: "9", section: "Ροή ελέγχου και διαγράμματα ροής"}
+  - {pages: "10-11", section: "Η εντολή if"}
+  - {pages: "12-13", section: "Η εντολή if-else"}
+  - {pages: "14", section: "Εμφωλευμένες if και η αλυσίδα else if"}
+  - {pages: "15-16", section: "Το πρόβλημα του dangling else"}
+  - {pages: "17-21", section: "Βρόχοι: η εντολή while"}
+  - {pages: "22-24", section: "Η εντολή for"}
+  - {pages: "25-26", section: "Η εντολή do-while"}
+  - {pages: "27-29", section: "Σύγκριση των τριών βρόχων"}
+pointers:
+  - {page: 2, text: "Περισσότερα για τις ακολουθίες aliquot: https://math.dartmouth.edu/~carlp/upintconf.pdf"}
+  - {page: 2, text: "echo -e \"...\" | ./aliquot, με time και ttyplot (άσκηση aliquot της hw0 2025)"}
+  - {page: 15, text: "Wikipedia: Dangling else (https://en.wikipedia.org/wiki/Dangling_else)"}
+  - {page: 16, text: "Wikipedia: Dangling else (https://en.wikipedia.org/wiki/Dangling_else)"}
+  - {page: 28, text: "Σημειώσεις κ. Σταματόπουλου: όλα μέχρι τη σελίδα 62 (K04)"}
+  - {page: 28, text: "Wikipedia: Control flow (https://en.wikipedia.org/wiki/Control_flow)"}
+  - {page: 28, text: "Wikipedia: Conditional statements (https://en.wikipedia.org/wiki/Conditional_(computer_programming))"}
+  - {page: 28, text: "Wikipedia: While loops (https://en.wikipedia.org/wiki/While_loop)"}
+  - {page: 28, text: "Wikipedia: For loops (https://en.wikipedia.org/wiki/For_loop)"}
+takeaways_slide: null
+issues:
+  - "No explicit key-takeaways slide; the red callouts on p. 11 (parentheses are mandatory) and p. 16 (use braces when unsure) were treated as takeaways."
+  - "p. 23: `for (;;)` is shown without a body, so it is not a complete statement; the chapter adds an empty statement `;` as body."
+  - "p. 27 is only 'Kahoot Time!'; the quiz questions are not in the slides, so none were transcribed. The chapter's 'Σύγκριση των τριών βρόχων' is a synthesis section (supported by lab03's intro), mapped to pp. 27-29."
+  - "p. 28 says to cover Stamatopoulos' notes 'μέχρι την σελίδα 62'; interpreted as K04 page 62, which per k04-map.tsv is notes 04-functions «Συνάρτηση ύψωσης σε δύναμη»."
+  - "p. 2 references the aliquot exercise without naming the homework; identified as hw0 2025 (sources/hw/2025/hw0.pdf, exercise 3). Input 138/0/f = start, max length (0 = unlimited), full output."
+  - "Answers to audience questions (p. 13 alternatives, p. 20 usefulness of always-true conditions, p. 24 changing init/step) were not in the slides; the chapter's answers are standard C, not lecture quotes."
+  - "switch, break, continue, goto (notes ch. 03) are not in this lecture; the chapter points to chapter 8 (Ροή Ελέγχου #2) without asserting its content."
+  - "The gcc warning text for dangling else was written from knowledge of gcc (-Wdangling-else), not verified locally (local gcc is clang)."

@@ -89,3 +89,9 @@
   \let\notesorigcirc\^%
   \DeclareRobustCommand{\^}[1]{\ifx\relax#1\relax\textasciicircum\else\notesorigcirc{#1}\fi}%
 }
+
+% The difficulty stars in the exercise lists (★☆☆) are not in Linux Libertine O;
+% DejaVu Sans, which the image ships, has both.
+\newfontfamily\starfont{DejaVu Sans}
+\newunicodechar{★}{{\starfont ★}}
+\newunicodechar{☆}{{\starfont ☆}}

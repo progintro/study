@@ -27,6 +27,40 @@
 
 <!-- chapters -->
 
+### Μέρος Β: Τα θεμέλια της C
+
+<table class="lab-index">
+  <thead>
+    <tr><th>#</th><th>Κεφάλαιο</th><th>Θέματα</th><th>Ασκήσεις</th><th>PDF</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6</td>
+      <td><a href="chapters/06-control-flow/">Εντολές και Ροή Ελέγχου</a></td>
+      <td>Εντολές, if / else / switch, Βρόχοι (while, for, do-while), Ροή ελέγχου (break, continue, goto)</td>
+      <td>9</td>
+      <td><a href="downloads/06-control-flow.pdf">PDF</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### Μέρος Γ: Πίνακες, δείκτες και μνήμη
+
+<table class="lab-index">
+  <thead>
+    <tr><th>#</th><th>Κεφάλαιο</th><th>Θέματα</th><th>Ασκήσεις</th><th>PDF</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12</td>
+      <td><a href="chapters/12-pointers-arrays/">Δείκτες και Πίνακες</a></td>
+      <td>Πίνακες, Πολυδιάστατοι πίνακες, Δείκτες, Αριθμητική δεικτών, Ορίσματα γραμμής εντολών (argc / argv), Δυναμική δέσμευση μνήμης (malloc / free), Μοντέλο μνήμης (διευθύνσεις, στοίβα, σωρός)</td>
+      <td>7</td>
+      <td><a href="downloads/12-pointers-arrays.pdf">PDF</a></td>
+    </tr>
+  </tbody>
+</table>
+
 <!-- /chapters -->
 
 ## Μελέτη με τη βοήθεια AI

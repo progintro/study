@@ -16,7 +16,7 @@
 
 BUILD ?= build
 IMAGE ?= ghcr.io/ethan42/pandoctex:20260825
-PANDOC ?= docker run --rm -u $(shell id -u):$(shell id -g) -v $(CURDIR):/data -w /data \
+PANDOC ?= docker run --rm --tmpfs /tmp:size=2g -u $(shell id -u):$(shell id -g) -v $(CURDIR):/data -w /data \
 	-e LANG=C.UTF-8 -e HOME=/tmp $(IMAGE) pandoc
 REPO ?= progintro/progintro.github.io
 
@@ -25,11 +25,12 @@ QUESTIONS := $(sort $(wildcard questions/*/*.md))
 SLUGS := $(patsubst chapters/%/README.md,%,$(CHAPTERS))
 CHAPTER_PDFS := $(SLUGS:%=$(BUILD)/%.pdf)
 FIGURES := $(wildcard figures/*.pdf)
-DEPS := tex/header.tex tools/pdf-prep.py $(FIGURES)
+DEPS := tex/header.tex tex/table-widths.lua tools/pdf-prep.py $(FIGURES)
 
 # The same typesetting flags for every PDF. -V babel-lang= and the \babelprovide in
 # tex/header.tex work around pandoc 3.7's babel wiring; see lab-material/CLAUDE.md.
-PDF_FLAGS = -f gfm+tex_math_dollars+raw_attribute -s --toc \
+# tex/table-widths.lua makes table columns wrap instead of running off the page.
+PDF_FLAGS = -f gfm+tex_math_dollars+raw_attribute -s --toc --lua-filter=tex/table-widths.lua \
 	--pdf-engine=xelatex -H tex/header.tex \
 	-V mainfont="Linux Libertine O" -V monofont="Noto Mono" -V fontsize=12pt \
 	-V lang=el -V babel-lang= \
