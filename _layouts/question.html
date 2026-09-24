@@ -2,9 +2,10 @@
 layout: default
 ---
 
+{% assign primary = page.chapters | first %}
 <nav class="lab-nav lab-nav-top" aria-label="Πλοήγηση">
   <span class="lab-nav-side">
-    <a href="{{ site.baseurl }}/chapters/{{ site.data.chapters[page.chapters[0]] }}/">&larr; Κεφάλαιο {{ page.chapters[0] }}</a>
+    <a href="{{ site.baseurl }}/chapters/{{ site.data.chapters[primary] }}/">&larr; Κεφάλαιο {{ primary }}</a>
   </span>
   <span class="lab-nav-mid"><a href="{{ site.baseurl }}/questions/">Όλες οι ασκήσεις</a></span>
   <span class="lab-nav-side lab-nav-right"></span>
