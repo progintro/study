@@ -601,6 +601,17 @@ Pi is approximately: 3.141583
 
 - [Η συνάρτηση about](../../questions/exams/exam-2024-sep-q1.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 1 · ★☆☆ · programming
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Ο τύπος επιστροφής μιας συνάρτησης](../../questions/kahoot/kahoot-function-return-type.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★★ · multiple-choice · 28% σωστές απαντήσεις
+- [Τα μέρη του ορισμού συνάρτησης](../../questions/kahoot/kahoot-function-definition-parts.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★★ · multiple-choice · 31% σωστές απαντήσεις
+- [Ακολουθίες διαφυγής για `\\` και `"`](../../questions/kahoot/kahoot-printf-escapes-backslash-quote.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★☆ · multiple-choice · 43% σωστές απαντήσεις
+- [Η ακολουθία `\r`](../../questions/kahoot/kahoot-printf-carriage-return.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
+- [printf με %c και 42](../../questions/kahoot/kahoot-printf-char-42.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
+- [Από τι αποτελείται ένα πρόγραμμα C](../../questions/kahoot/kahoot-c-program-functions.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★☆ · multiple-choice · 55% σωστές απαντήσεις
+- [Τιμή επιστροφής double](../../questions/kahoot/kahoot-square-double-return.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★☆ · multiple-choice · 58% σωστές απαντήσεις
+- [Προσδιοριστικά %d με σειρά](../../questions/kahoot/kahoot-printf-format-order.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Υπολογισμός βαθμολογίας πρωτοετών](../../questions/slides/slides-lec04-grade-program.md): Διάλεξη 4: Git και Τελεστές, διαφάνεια 8 · ★☆☆ · programming (κεφ. 4)

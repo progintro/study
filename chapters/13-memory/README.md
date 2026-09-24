@@ -691,19 +691,37 @@ $ ./dyn2d
 - [Debugging](../../questions/exams/exam-2023-fall-ex1-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 4 · ★★☆ · debug
 - [Κάδρο](../../questions/exams/exam-2023-fall-ex9-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 4 · ★★★ · programming
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Βάθος αναδρομής μέχρι να γεμίσει η στοίβα](../../questions/kahoot/kahoot-stack-overflow-depth.md): Kahoot «Μνήμη» (διάλεξη 13) · ★★★ · multiple-choice · 20% σωστές απαντήσεις
+- [malloc, calloc, realloc και free](../../questions/kahoot/kahoot-memory-functions.md): Kahoot «Μνήμη» (διάλεξη 13) · ★★★ · multiple-choice · 27% σωστές απαντήσεις
+- [malloc για πίνακα 10000 int](../../questions/kahoot/kahoot-malloc-int-array.md): Kahoot «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 60% σωστές απαντήσεις
+- [Πού βάζω έναν μεγάλο πίνακα](../../questions/kahoot/kahoot-large-array-placement.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★★☆ · multiple-choice · 65% σωστές απαντήσεις
+- [Δέσμευση 10⁹ double](../../questions/kahoot/kahoot-malloc-doubles.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★★☆ · multiple-choice · 66% σωστές απαντήσεις
+- [Αποδέσμευση από τον σωρό](../../questions/kahoot/kahoot-heap-free-any.md): Kahoot «Μνήμη» (διάλεξη 13) · ★★☆ · multiple-choice · 67% σωστές απαντήσεις
+- [Πάντα πετυχαίνει η malloc;](../../questions/kahoot/kahoot-malloc-may-fail.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 70% σωστές απαντήσεις
+- [Είναι συνεχόμενος ο σωρός;](../../questions/kahoot/kahoot-heap-not-contiguous.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 75% σωστές απαντήσεις
+- [Αφαίρεση από στοίβα](../../questions/kahoot/kahoot-stack-lifo.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 80% σωστές απαντήσεις
+- [Κατηγορίες μνήμης](../../questions/kahoot/kahoot-memory-categories.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις
+- [Διπλό free](../../questions/kahoot/kahoot-double-free.md): Kahoot «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 92% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Ο Στέργιος Ξαναχτυπά](../../questions/exams/exam-2026-jan-q6.md): Εξέταση Ιανουαρίου 2026, Θέμα 6 · ★☆☆ · trace (κεφ. 11)
+- [Τερματισμός αναδρομής](../../questions/kahoot/kahoot-recursion-terminates.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις (κεφ. 11)
 - [Περιστροφή Πίνακα](../../questions/exams/exam-2023-fall-ex1-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 3 · ★★☆ · programming (κεφ. 12)
 - [Αλλαγή Τέρματος](../../questions/exams/exam-2023-fall-ex13-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 2 · ★☆☆ · programming (κεφ. 12)
 - [Πολλαπλασιασμός Πινάκων](../../questions/exams/exam-2023-fall-ex8-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 3 · ★★☆ · programming (κεφ. 12)
 - [Πολύτιμοι Πίνακες](../../questions/exams/exam-2023-fall-ex9-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 3 · ★★☆ · programming (κεφ. 12)
 - [FauxtoShop: περιστροφή εικόνας BMP](../../questions/homework/hw-2023-hw2-fauxtoshop.md): Εργασία 2 (2023-24), Άσκηση 1 · ★★★ · programming (κεφ. 12)
+- [Στατικοί και δυναμικοί πίνακες](../../questions/kahoot/kahoot-static-vs-dynamic-arrays.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★☆☆ · multiple-choice · 92% σωστές απαντήσεις (κεφ. 12)
 - [Δυναμική δέσμευση μνήμης για μονοδιάστατο πίνακα](../../questions/labs/lab-lab07-array.md): Εργαστήριο 7, Άσκηση 2 · ★☆☆ · programming (κεφ. 12)
 - [Παράδειγμα endianness](../../questions/slides/slides-lec12-endianness.md): Διάλεξη 12, διαφάνεια 42 · ★★☆ · trace (κεφ. 12)
 - [Πόση μνήμη δεσμεύει η malloc και τι λέει το sizeof](../../questions/slides/slides-lec12-malloc-sizeof.md): Διάλεξη 12, διαφάνειες 39–40 · ★★☆ · short-answer (κεφ. 12)
 - [Η συνάρτηση dog](../../questions/exams/exam-2025-jan-q2.md): Εξέταση Ιανουαρίου 2025, Θέμα 2 · ★☆☆ · trace (κεφ. 14)
 - [Συνένωση Αλφαριθμητικών - join](../../questions/exams/exam-2025-jan-q5.md): Εξέταση Ιανουαρίου 2025, Θέμα 5 · ★★☆ · programming (κεφ. 14)
+- [Πού αποθηκεύεται το char str[]](../../questions/kahoot/kahoot-char-array-storage.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★☆ · multiple-choice · 49% σωστές απαντήσεις (κεφ. 14)
+- [Πού αποθηκεύονται οι τοπικές μεταβλητές](../../questions/kahoot/kahoot-local-variable-storage.md): Kahoot «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★★ · multiple-choice · 23% σωστές απαντήσεις (κεφ. 14)
 - [Δίδυμοι Πρώτοι](../../questions/exams/exam-2023-fall-ex7-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 3 · ★★★ · programming (κεφ. 15)
 - [Μετρώντας τα Αστέρια - stars](../../questions/exams/exam-2025-jan-q6.md): Εξέταση Ιανουαρίου 2025, Θέμα 6 · ★★★ · programming (κεφ. 16)
 - [Χτίζοντας έναν χιονάνθρωπο (Παλιό θέμα)](../../questions/labs/lab-lab07-olaf.md): Εργαστήριο 7, Άσκηση 4 · ★★★ · programming (κεφ. 16)
@@ -715,10 +733,13 @@ $ ./dyn2d
 - [Ταξινόμηση Αρχείων Καταγραφής](../../questions/exams/exam-2023-fall-ex6-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 4 · ★★☆ · programming (κεφ. 18)
 - [Ταξινόμηση Πακέτων](../../questions/exams/exam-2023-fall-ex8-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 4 · ★★★ · programming (κεφ. 18)
 - [Προβλέποντας το Μέλλον (future)](../../questions/homework/hw-2024-hw2-future.md): Εργασία 2 (2024-25), Άσκηση 1 · ★★☆ · programming (κεφ. 18)
+- [Δομή χωρίς αρχικοποίηση](../../questions/kahoot/kahoot-struct-uninitialized.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★☆☆ · multiple-choice · 74% σωστές απαντήσεις (κεφ. 19)
 - [Δομές και δείκτες](../../questions/labs/lab-lab09-person.md): Εργαστήριο 9, Άσκηση 2 · ★★☆ · programming (κεφ. 19)
 - [Αντιστροφή λίστας](../../questions/exams/exam-2024-sep-q5.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 5 · ★★☆ · programming (κεφ. 21)
 - [Μεσαίο Στοιχείο Λίστας](../../questions/exams/exam-2025-sep-q4.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 4 · ★★☆ · programming (κεφ. 21)
 - [Ν-οστό Στοιχείο Λίστας](../../questions/exams/exam-2026-sep-q4.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 4 · ★★☆ · programming (κεφ. 21)
+- [Ανάγνωση διαγραμμένου στοιχείου](../../questions/kahoot/kahoot-list-use-after-free.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★☆☆ · multiple-choice · 92% σωστές απαντήσεις (κεφ. 21)
+- [Εργαλείο για memory leaks](../../questions/kahoot/kahoot-valgrind.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★☆☆ · multiple-choice · 86% σωστές απαντήσεις (κεφ. 21)
 - [Zoomba: συντομότερη διαδρομή σε δωμάτιο](../../questions/homework/hw-2023-hw3-zoomba.md): Εργασία 3 (2023-24), Άσκηση 1 · ★★★ · programming (κεφ. 22)
 - [Το Νερό Νεράκι](../../questions/exams/exam-2023-dec-q4.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 4 · ★★★ · programming (κεφ. 25)
 - [Η Τριπλέτα Στόχος](../../questions/exams/exam-2024-dec-q3.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 3 · ★★★ · programming (κεφ. 25)

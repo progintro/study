@@ -500,10 +500,20 @@ flowchart TD
 - [Παραδείγματα προγραμμάτων](../../questions/slides/slides-lec00-programs-you-know.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 23 · ★☆☆ · short-answer
 - [Γιατί προγραμματισμός το 2025;](../../questions/slides/slides-lec00-why-programming.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 5 · ★☆☆ · short-answer
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Έχω μια ερώτηση για το μάθημα](../../questions/kahoot/kahoot-ask-question.md): Kahoot «Καλημέρα Κόσμε - lec00!», «Καλημέρα Κόσμε!» (διάλεξη 0) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
+- [Το χαρακτηριστικό της C](../../questions/kahoot/kahoot-c-main-feature.md): Kahoot «Καλημέρα Κόσμε - lec00!» (διάλεξη 0) · ★★☆ · multiple-choice · 61% σωστές απαντήσεις
+- [Τα εργαλεία του μαθήματος](../../questions/kahoot/kahoot-course-tools.md): Kahoot «Καλημέρα Κόσμε - lec00!» (διάλεξη 0) · ★☆☆ · multiple-choice · 82% σωστές απαντήσεις
+- [Η φόρμα του μαθήματος](../../questions/kahoot/kahoot-course-form.md): Kahoot «Καλημέρα Κόσμε - lec00!», «Καλημέρα Κόσμε!» (διάλεξη 0) · ★☆☆ · multiple-choice · 85% σωστές απαντήσεις
+- [Εκτύπωση με νέα γραμμή](../../questions/kahoot/kahoot-printf-newline.md): Kahoot «Καλημέρα Κόσμε - lec00!», «Καλημέρα Κόσμε!» (διάλεξη 0) · ★☆☆ · multiple-choice · 86% σωστές απαντήσεις
+- [Τι κάνει η printf](../../questions/kahoot/kahoot-printf-prints.md): Kahoot «Καλημέρα Κόσμε - lec00!», «Καλημέρα Κόσμε!» (διάλεξη 0) · ★☆☆ · multiple-choice · 94% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Μεταγλώττιση, σύνδεση και εκτέλεση](../../questions/labs/lab-lab01-step2-compile-link.md): Εργαστήριο 1, Βήμα 2 · ★☆☆ · tooling (κεφ. 1)
 - [Στοιχεία φοιτητή (Παλιό θέμα)](../../questions/labs/lab-lab00-about.md): Εργαστήριο 0, Άσκηση 1 · ★☆☆ · programming (κεφ. 2)
+- [Πώς γράφουμε σχόλια](../../questions/kahoot/kahoot-comment-syntax.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★☆ · multiple-choice · 46% σωστές απαντήσεις (κεφ. 7)
 - [Τα στάδια του C build process](../../questions/slides/slides-lecmake-build-pipeline.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνεια 5 · ★☆☆ · short-answer (κεφ. 26)
 
 <!-- /exercises -->

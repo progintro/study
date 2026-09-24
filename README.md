@@ -39,14 +39,14 @@
       <td>0</td>
       <td><a href="chapters/00-hello-world/">Καλημέρα Κόσμε!</a></td>
       <td>Εισαγωγή στο μάθημα, Υπολογιστές και αναπαράσταση πληροφορίας, Μεταγλώττιση και σύνδεση (gcc)</td>
-      <td>7</td>
+      <td>13</td>
       <td><a href="downloads/00-hello-world.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>1</td>
       <td><a href="chapters/01-command-line/">Η Γραμμή Εντολών</a></td>
       <td>Υπολογιστές και αναπαράσταση πληροφορίας, Unix / Linux, αρχεία και δικαιώματα, Γραμμή εντολών (shell), Μεταγλώττιση και σύνδεση (gcc)</td>
-      <td>12</td>
+      <td>22</td>
       <td><a href="downloads/01-command-line.pdf">PDF</a></td>
     </tr>
   </tbody>
@@ -63,14 +63,14 @@
       <td>2</td>
       <td><a href="chapters/02-memory-variables/">Μνήμη και Μεταβλητές</a></td>
       <td>Υπολογιστές και αναπαράσταση πληροφορίας, Μοντέλο μνήμης (διευθύνσεις, στοίβα, σωρός), Μεταβλητές και δηλώσεις, Τύποι δεδομένων, Αναπαράσταση ακεραίων, υπερχείλιση, Είσοδος / έξοδος (printf, scanf, getchar)</td>
-      <td>12</td>
+      <td>27</td>
       <td><a href="downloads/02-memory-variables.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>3</td>
       <td><a href="chapters/03-functions/">Συναρτήσεις</a></td>
       <td>Συναρτήσεις, Τύποι δεδομένων, Μεταβλητές και δηλώσεις, Αναπαράσταση ακεραίων, υπερχείλιση, Είσοδος / έξοδος (printf, scanf, getchar), Μεταγλώττιση και σύνδεση (gcc)</td>
-      <td>8</td>
+      <td>16</td>
       <td><a href="downloads/03-functions.pdf">PDF</a></td>
     </tr>
   </tbody>
@@ -87,7 +87,7 @@
       <td>4</td>
       <td><a href="chapters/04-git-operators/">Git και Τελεστές</a></td>
       <td>Git και GitHub, Τελεστές και παραστάσεις, Τελεστές bit, Προτεραιότητα και προσεταιριστικότητα, Τύποι δεδομένων, Ορίσματα γραμμής εντολών (argc / argv)</td>
-      <td>13</td>
+      <td>22</td>
       <td><a href="downloads/04-git-operators.pdf">PDF</a></td>
     </tr>
   </tbody>
@@ -104,35 +104,35 @@
       <td>5</td>
       <td><a href="chapters/05-operators-statements/">Τελεστές και Εντολές</a></td>
       <td>Τελεστές και παραστάσεις, Τελεστές bit, Προτεραιότητα και προσεταιριστικότητα, Τύποι δεδομένων, Εντολές, if / else / switch</td>
-      <td>11</td>
+      <td>14</td>
       <td><a href="downloads/05-operators-statements.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>6</td>
       <td><a href="chapters/06-control-flow/">Εντολές και Ροή Ελέγχου</a></td>
       <td>Εντολές, if / else / switch, Βρόχοι (while, for, do-while), Ροή ελέγχου (break, continue, goto)</td>
-      <td>25</td>
+      <td>34</td>
       <td><a href="downloads/06-control-flow.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>7</td>
       <td><a href="chapters/07-problem-solving/">Επίλυση Προβλημάτων</a></td>
       <td>Επίλυση προβλημάτων, Βρόχοι (while, for, do-while), Καλές πρακτικές, Επεξεργαστές κειμένου και IDEs, Git και GitHub</td>
-      <td>2</td>
+      <td>7</td>
       <td><a href="downloads/07-problem-solving.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>8</td>
       <td><a href="chapters/08-control-flow-2/">Ροή Ελέγχου #2</a></td>
       <td>Βρόχοι (while, for, do-while), Ροή ελέγχου (break, continue, goto), if / else / switch, Αναπαράσταση ακεραίων, υπερχείλιση</td>
-      <td>7</td>
+      <td>12</td>
       <td><a href="downloads/08-control-flow-2.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>9</td>
       <td><a href="chapters/09-input/">Δεδομένα Εισόδου</a></td>
       <td>Είσοδος / έξοδος (printf, scanf, getchar), Έλεγχος και ανάγνωση εισόδου, Αριθμοί κινητής υποδιαστολής, Καλές πρακτικές</td>
-      <td>31</td>
+      <td>40</td>
       <td><a href="downloads/09-input.pdf">PDF</a></td>
     </tr>
   </tbody>
@@ -149,42 +149,42 @@
       <td>10</td>
       <td><a href="chapters/10-arrays/">Πίνακες</a></td>
       <td>Πίνακες, Είσοδος / έξοδος (printf, scanf, getchar), Έλεγχος και ανάγνωση εισόδου, Μοντέλο μνήμης (διευθύνσεις, στοίβα, σωρός), Συμβολοσειρές, Συναρτήσεις, Αναζήτηση (σειριακή, δυαδική), Απροσδιόριστη συμπεριφορά</td>
-      <td>24</td>
+      <td>34</td>
       <td><a href="downloads/10-arrays.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>11</td>
       <td><a href="chapters/11-pointers-recursion/">Δείκτες και Αναδρομή</a></td>
       <td>Δείκτες, Αριθμητική δεικτών, Μοντέλο μνήμης (διευθύνσεις, στοίβα, σωρός), Πίνακες, Αναδρομή, Αναπαράσταση ακεραίων, υπερχείλιση</td>
-      <td>22</td>
+      <td>36</td>
       <td><a href="downloads/11-pointers-recursion.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>12</td>
       <td><a href="chapters/12-pointers-arrays/">Δείκτες και Πίνακες</a></td>
       <td>Πίνακες, Πολυδιάστατοι πίνακες, Δείκτες, Αριθμητική δεικτών, Ορίσματα γραμμής εντολών (argc / argv), Δυναμική δέσμευση μνήμης (malloc / free), Μοντέλο μνήμης (διευθύνσεις, στοίβα, σωρός)</td>
-      <td>22</td>
+      <td>31</td>
       <td><a href="downloads/12-pointers-arrays.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>13</td>
       <td><a href="chapters/13-memory/">Μνήμη</a></td>
       <td>Μοντέλο μνήμης (διευθύνσεις, στοίβα, σωρός), Δυναμική δέσμευση μνήμης (malloc / free), Συναρτήσεις, Αναδρομή, Δείκτες, Πολυδιάστατοι πίνακες, Απροσδιόριστη συμπεριφορά</td>
-      <td>11</td>
+      <td>22</td>
       <td><a href="downloads/13-memory.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>14</td>
       <td><a href="chapters/14-scope-strings/">Εμβέλεια, Μνήμη και Συμβολοσειρές</a></td>
       <td>Εμβέλεια και χρόνος ζωής, Μοντέλο μνήμης (διευθύνσεις, στοίβα, σωρός), Συμβολοσειρές, Δείκτες, Αριθμητική δεικτών, Προτεραιότητα και προσεταιριστικότητα, Ορίσματα γραμμής εντολών (argc / argv)</td>
-      <td>22</td>
+      <td>30</td>
       <td><a href="downloads/14-scope-strings.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>15</td>
       <td><a href="chapters/15-complexity-preprocessor/">Πολυπλοκότητα και Προεπεξεργαστής</a></td>
       <td>Πολυπλοκότητα αλγορίθμων, Προεπεξεργαστής (#include,, Αναδρομή, Συμβολοσειρές, Μεταγλώττιση και σύνδεση (gcc)</td>
-      <td>18</td>
+      <td>26</td>
       <td><a href="downloads/15-complexity-preprocessor.pdf">PDF</a></td>
     </tr>
   </tbody>
@@ -208,42 +208,42 @@
       <td>17</td>
       <td><a href="chapters/17-binary-search-sorting/">Δυαδική Αναζήτηση και Ταξινόμηση</a></td>
       <td>Αναζήτηση (σειριακή, δυαδική), Ταξινόμηση, Πολυπλοκότητα αλγορίθμων, Αναδρομή, Δείκτες</td>
-      <td>13</td>
+      <td>21</td>
       <td><a href="downloads/17-binary-search-sorting.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>18</td>
       <td><a href="chapters/18-sorting-input-2/">Ταξινόμηση και Δεδομένα Εισόδου #2</a></td>
       <td>Ταξινόμηση, Πολυπλοκότητα αλγορίθμων, Αναδρομή, Είσοδος / έξοδος (printf, scanf, getchar), Συμβολοσειρές, Αρχεία (fopen, fread, fwrite), Ανακατεύθυνση και σωληνώσεις (pipes)</td>
-      <td>23</td>
+      <td>28</td>
       <td><a href="downloads/18-sorting-input-2.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>19</td>
       <td><a href="chapters/19-structs/">Δομές</a></td>
       <td>Δομές (struct, typedef), Μοντέλο μνήμης (διευθύνσεις, στοίβα, σωρός), Δείκτες, Δυναμική δέσμευση μνήμης (malloc / free)</td>
-      <td>12</td>
+      <td>21</td>
       <td><a href="downloads/19-structs.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>20</td>
       <td><a href="chapters/20-advanced-structs/">Προχωρημένες Δομές</a></td>
       <td>Δομές (struct, typedef), Απαριθμήσεις, ενώσεις, πεδία bit, Συνδεδεμένες λίστες, Δέντρα, Μοντέλο μνήμης (διευθύνσεις, στοίβα, σωρός)</td>
-      <td>12</td>
+      <td>20</td>
       <td><a href="downloads/20-advanced-structs.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>21</td>
       <td><a href="chapters/21-lists-trees/">Λίστες και Δέντρα</a></td>
       <td>Συνδεδεμένες λίστες, Δέντρα, Δομές (struct, typedef), Δείκτες, Δυναμική δέσμευση μνήμης (malloc / free), Αναδρομή, Πολυπλοκότητα αλγορίθμων, Γράφοι και αναζήτηση (BFS / DFS)</td>
-      <td>10</td>
+      <td>13</td>
       <td><a href="downloads/21-lists-trees.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>22</td>
       <td><a href="chapters/22-trees/">Δέντρα</a></td>
       <td>Δέντρα, Αναδρομή, Γράφοι και αναζήτηση (BFS / DFS), Συνδεδεμένες λίστες, Πολυπλοκότητα αλγορίθμων, Αναζήτηση (σειριακή, δυαδική), Δομές (struct, typedef)</td>
-      <td>20</td>
+      <td>29</td>
       <td><a href="downloads/22-trees.pdf">PDF</a></td>
     </tr>
   </tbody>

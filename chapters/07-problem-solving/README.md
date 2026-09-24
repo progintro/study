@@ -527,6 +527,14 @@ prod    = 1.211521e+171 (64 terms)
 - [Τριψήφιοι άρτιοι σε φθίνουσα σειρά](../../questions/slides/slides-lec07-even-descending.md): Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 14 · ★☆☆ · programming
 - [Γινόμενο τριψήφιων περιττών πολλαπλασίων του 7](../../questions/slides/slides-lec07-odd-multiples-of-7.md): Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 16 · ★★☆ · programming
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Πώς γράφουμε σχόλια](../../questions/kahoot/kahoot-comment-syntax.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★☆ · multiple-choice · 46% σωστές απαντήσεις
+- [Καλό σχόλιο;](../../questions/kahoot/kahoot-good-comment.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★☆ · multiple-choice · 61% σωστές απαντήσεις
+- [Εργασία χωρίς σχόλια](../../questions/kahoot/kahoot-homework-comments.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★☆☆ · multiple-choice · 71% σωστές απαντήσεις
+- [Η γλώσσα του README.md](../../questions/kahoot/kahoot-readme-markdown.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★☆☆ · multiple-choice · 84% σωστές απαντήσεις
+- [Αξίζει να σχολιάζω τον κώδικα;](../../questions/kahoot/kahoot-comments-good-practice.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★☆☆ · multiple-choice · 91% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Πολυπλοκότητα: γινόμενο περιττών πολλαπλασίων του 7](../../questions/slides/slides-lec15-complexity-odd-multiples-of-7.md): Διάλεξη 15, διαφάνεια 13 · ★☆☆ · short-answer (κεφ. 15)

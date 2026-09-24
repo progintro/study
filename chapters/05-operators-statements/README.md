@@ -704,10 +704,19 @@ else
 - [Mystery](../../questions/exams/exam-2026-jan-q1.md): Εξέταση Ιανουαρίου 2026, Θέμα 1 · ★☆☆ · trace
 - [Η συνάρτηση mystery](../../questions/exams/exam-2026-jun-q1.md): Εξέταση Ιουνίου 2026, Θέμα 1 · ★☆☆ · trace
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [x++ και ++y](../../questions/kahoot/kahoot-post-pre-increment.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
+- [Ποιος αριθμός ικανοποιεί τη συνθήκη](../../questions/kahoot/kahoot-num-divisible-3-31.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★☆ · multiple-choice · 58% σωστές απαντήσεις
+- [Μετατροπή double σε int](../../questions/kahoot/kahoot-cast-truncation.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★☆☆ · multiple-choice · 86% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Rickroll Τριπλέτες](../../questions/exams/exam-2023-fall-ex4-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 3 · ★★★ · programming (κεφ. 2)
 - [Πυθαγόρειο θεώρημα](../../questions/labs/lab-lab02-pyth.md): Εργαστήριο 2, Άσκηση 2 · ★☆☆ · programming (κεφ. 3)
+- [Απομόνωση του πιο σημαντικού bit](../../questions/kahoot/kahoot-msb-mask.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 14% σωστές απαντήσεις (κεφ. 4)
+- [0xbeef | 0xcafe0000](../../questions/kahoot/kahoot-or-combine.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 29% σωστές απαντήσεις (κεφ. 4)
+- [while(!42)](../../questions/kahoot/kahoot-while-not-42.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★★ · multiple-choice · 17% σωστές απαντήσεις (κεφ. 6)
 - [Υπολογισμός ριζών τριωνύμου](../../questions/labs/lab-lab03-root.md): Εργαστήριο 3, Άσκηση 2 · ★★☆ · programming (κεφ. 6)
 - [Τιμές μετά από εντολές έκφρασης](../../questions/slides/slides-lec06-expression-statements.md): Διάλεξη 6: Εντολές και Ροή Ελέγχου, διαφάνεια 7 · ★☆☆ · trace (κεφ. 6)
 - [Μέγιστο με if-else και εναλλακτικές](../../questions/slides/slides-lec06-if-else-max.md): Διάλεξη 6: Εντολές και Ροή Ελέγχου, διαφάνεια 13 · ★☆☆ · short-answer (κεφ. 6)
@@ -715,6 +724,7 @@ else
 - [Μετρητής λέξεων](../../questions/exams/exam-2024-sep-q4.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 4 · ★★☆ · programming (κεφ. 9)
 - [Επεξεργασία Ήχου (soundwave)](../../questions/homework/hw-2025-hw1-soundwave.md): Εργασία 1 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 9)
 - [Η έκφραση *str++](../../questions/slides/slides-lec14-str-plus-plus.md): Διάλεξη 14, διαφάνεια 34 · ★★☆ · short-answer (κεφ. 14)
+- [Πολυπλοκότητα μέτρησης bit](../../questions/kahoot/kahoot-count-set-bits.md): Kahoot «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★☆ · multiple-choice · 43% σωστές απαντήσεις (κεφ. 15)
 - [Πολυπλοκότητα υπολογισμού βαθμολογίας](../../questions/slides/slides-lec15-complexity-grade.md): Διάλεξη 15, διαφάνεια 21 · ★☆☆ · short-answer (κεφ. 15)
 - [Κρυφό Μήνυμα](../../questions/exams/exam-2023-fall-ex7-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 2 · ★☆☆ · programming (κεφ. 18)
 

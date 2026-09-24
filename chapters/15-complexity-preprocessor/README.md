@@ -762,11 +762,23 @@ int main() {
 
 - [Δίδυμοι Πρώτοι](../../questions/exams/exam-2023-fall-ex7-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 3 · ★★★ · programming
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Πολυπλοκότητα O(n² + log n)](../../questions/kahoot/kahoot-big-o-sum-of-terms.md): Kahoot «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★★ · multiple-choice · 36% σωστές απαντήσεις
+- [Πολυπλοκότητα μέτρησης ψηφίων](../../questions/kahoot/kahoot-count-digits.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★★ · multiple-choice · 38% σωστές απαντήσεις
+- [Η έξοδος του προεπεξεργαστή](../../questions/kahoot/kahoot-preprocessor-output.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★★ · multiple-choice · 38% σωστές απαντήσεις
+- [Πολυπλοκότητα μέτρησης bit](../../questions/kahoot/kahoot-count-set-bits.md): Kahoot «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★☆ · multiple-choice · 43% σωστές απαντήσεις
+- [Πολυπλοκότητα πολλαπλασιασμού πινάκων](../../questions/kahoot/kahoot-matrix-multiplication.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★☆ · multiple-choice · 49% σωστές απαντήσεις
+- [Τι σημαίνει O(n)](../../questions/kahoot/kahoot-big-o-worst-case.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★☆ · multiple-choice · 62% σωστές απαντήσεις
+- [Ορισμός μακροεντολής](../../questions/kahoot/kahoot-define-macro.md): Kahoot «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★☆☆ · multiple-choice · 74% σωστές απαντήσεις
+- [Γραμμική αναζήτηση σε αμφιθέατρο n × n](../../questions/kahoot/kahoot-seat-search-grid.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★☆☆ · multiple-choice · 75% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Η ακολουθία Fibonacci](../../questions/labs/lab-lab05-fib.md): Εργαστήριο 5, Άσκηση 2 · ★★☆ · programming (κεφ. 11)
 - [Συνένωση Αλφαριθμητικών - join](../../questions/exams/exam-2025-jan-q5.md): Εξέταση Ιανουαρίου 2025, Θέμα 5 · ★★☆ · programming (κεφ. 14)
 - [Εύρεση μηδενός σε πίνακα](../../questions/exams/exam-2024-sep-q3.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 3 · ★★☆ · programming (κεφ. 17)
+- [Αναζήτηση αριθμημένης θέσης σε αίθουσα](../../questions/kahoot/kahoot-find-seat-sorted.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) και «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» · ★★☆ · multiple-choice · 48% σωστές απαντήσεις (κεφ. 17)
 - [Αντιστροφή λίστας](../../questions/exams/exam-2024-sep-q5.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 5 · ★★☆ · programming (κεφ. 21)
 - [Μεσαίο Στοιχείο Λίστας](../../questions/exams/exam-2025-sep-q4.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 4 · ★★☆ · programming (κεφ. 21)
 - [Ν-οστό Στοιχείο Λίστας](../../questions/exams/exam-2026-sep-q4.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 4 · ★★☆ · programming (κεφ. 21)

@@ -610,6 +610,18 @@ while ((ch = getchar()) != EOF) {
 - [Αποκωδικοποίηση](../../questions/exams/exam-2023-fall-ex8-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 2 · ★★☆ · programming
 - [Μετρητής λέξεων](../../questions/exams/exam-2024-sep-q4.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 4 · ★★☆ · programming
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Τιμή επιστροφής της scanf με λάθος είσοδο](../../questions/kahoot/kahoot-scanf-return-partial.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★★★ · multiple-choice · 11% σωστές απαντήσεις
+- [Πόσες τιμές επιστρέφει η getchar](../../questions/kahoot/kahoot-getchar-257-values.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★★★ · multiple-choice · 18% σωστές απαντήσεις
+- [Μετρητής χαρακτήρων μέχρι την αλλαγή γραμμής](../../questions/kahoot/kahoot-charcount-eof.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★★★ · multiple-choice · 31% σωστές απαντήσεις
+- [Διάβασμα ακεραίου με scanf](../../questions/kahoot/kahoot-scanf-int-syntax.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★★☆ · multiple-choice · 53% σωστές απαντήσεις
+- [Ο τύπος επιστροφής της getchar](../../questions/kahoot/kahoot-getchar-return-type.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) και «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★☆☆ · multiple-choice · 66% σωστές απαντήσεις
+- [Η τιμή του EOF](../../questions/kahoot/kahoot-eof-value.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★☆☆ · multiple-choice · 79% σωστές απαντήσεις
+- [Φτάνουν αμέσως τα δεδομένα;](../../questions/kahoot/kahoot-input-buffering.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★☆☆ · multiple-choice · 82% σωστές απαντήσεις
+- [Πώς στέλνω EOF](../../questions/kahoot/kahoot-eof-key.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★☆☆ · multiple-choice · 90% σωστές απαντήσεις
+- [Σύγκριση float με ==](../../questions/kahoot/kahoot-float-equality.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★☆☆ · multiple-choice · 94% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Πυθαγόρειο θεώρημα](../../questions/labs/lab-lab02-pyth.md): Εργαστήριο 2, Άσκηση 2 · ★☆☆ · programming (κεφ. 3)

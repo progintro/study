@@ -677,6 +677,19 @@ $ echo $?
 - [Ξεκινώντας με την γραμμή εντολών (bandit)](../../questions/homework/hw-2023-hw0-bandit.md): Εργασία 0 (2023-24), Άσκηση 2 · ★★☆ · tooling
 - [Παιχνίδια με Κονσόλα (cmdline)](../../questions/homework/hw-2025-hw0-cmdline.md): Εργασία 0 (2025-26), Άσκηση 2 · ★★☆ · tooling
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Το μονοπάτι ενός αρχείου](../../questions/kahoot/kahoot-filepath.md): Kahoot «Command Line» (διάλεξη 1) · ★★★ · multiple-choice · 20% σωστές απαντήσεις
+- [Εκτύπωση περιεχομένων αρχείου](../../questions/kahoot/kahoot-cat-prints-file.md): Kahoot «Command Line» (διάλεξη 1) · ★★★ · multiple-choice · 29% σωστές απαντήσεις
+- [Το basename ενός αρχείου](../../questions/kahoot/kahoot-basename.md): Kahoot «Command Line» (διάλεξη 1) · ★★☆ · multiple-choice · 53% σωστές απαντήσεις
+- [Φορτίο απομακρυσμένου server](../../questions/kahoot/kahoot-uptime.md): Kahoot «Command Line» (διάλεξη 1) · ★★☆ · multiple-choice · 53% σωστές απαντήσεις
+- [Το ΛΣ των web servers](../../questions/kahoot/kahoot-linux-servers.md): Kahoot «Command Line» (διάλεξη 1) · ★★☆ · multiple-choice · 65% σωστές απαντήσεις
+- [Δικαιώματα υπερχρήστη](../../questions/kahoot/kahoot-sudo.md): Kahoot «Command Line» (διάλεξη 1) · ★★☆ · multiple-choice · 68% σωστές απαντήσεις
+- [Στο Linux όλα είναι…](../../questions/kahoot/kahoot-everything-is-a-file.md): Kahoot «Command Line» (διάλεξη 1) · ★☆☆ · multiple-choice · 71% σωστές απαντήσεις
+- [Η εντολή man](../../questions/kahoot/kahoot-man-command.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★☆☆ · multiple-choice · 72% σωστές απαντήσεις
+- [Το 2ο όρισμα του echo](../../questions/kahoot/kahoot-echo-second-arg.md): Kahoot «Command Line» (διάλεξη 1) · ★☆☆ · multiple-choice · 73% σωστές απαντήσεις
+- [Η καταγωγή του Linux](../../questions/kahoot/kahoot-linux-unix.md): Kahoot «Command Line» (διάλεξη 1) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Νέο URL στο GitHub (pages)](../../questions/homework/hw-2025-hw0-pages.md): Εργασία 0 (2025-26), Άσκηση 1 · ★☆☆ · tooling (κεφ. 4)

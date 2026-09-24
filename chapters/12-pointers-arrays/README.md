@@ -557,6 +557,18 @@ $ ./int
 - [Κινούμενος Μέσος Όρος - sma](../../questions/exams/exam-2025-jan-q3.md): Εξέταση Ιανουαρίου 2025, Θέμα 3 · ★★☆ · programming
 - [Το μεγαλύτερο άλμα - polevault](../../questions/exams/exam-2026-sep-q3.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 3 · ★★☆ · programming
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Διεύθυνση στοιχείου δισδιάστατου πίνακα](../../questions/kahoot/kahoot-2d-element-address.md): Kahoot «Πίνακες και Δείκτες» (διάλεξη 12) · ★★★ · multiple-choice · 33% σωστές απαντήσεις
+- [Χαρακτήρας από πίνακα συμβολοσειρών](../../questions/kahoot/kahoot-string-array-element.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★★★ · multiple-choice · 38% σωστές απαντήσεις
+- [sizeof μιας γραμμής](../../questions/kahoot/kahoot-sizeof-row.md): Kahoot «Πίνακες και Δείκτες» (διάλεξη 12) · ★★☆ · multiple-choice · 42% σωστές απαντήσεις
+- [Ο τύπος του argv](../../questions/kahoot/kahoot-argv-type.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★★☆ · multiple-choice · 44% σωστές απαντήσεις
+- [Το τελευταίο στοιχείο δισδιάστατου πίνακα](../../questions/kahoot/kahoot-2d-last-element.md): Kahoot «Πίνακες και Δείκτες» (διάλεξη 12) · ★★☆ · multiple-choice · 67% σωστές απαντήσεις
+- [sizeof δισδιάστατου πίνακα](../../questions/kahoot/kahoot-sizeof-2d-double.md): Kahoot «Πίνακες και Δείκτες» (διάλεξη 12) · ★★☆ · multiple-choice · 68% σωστές απαντήσεις
+- [Πλήθος στοιχείων δισδιάστατου πίνακα](../../questions/kahoot/kahoot-2d-array-count.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★☆☆ · multiple-choice · 81% σωστές απαντήσεις
+- [Στατικοί και δυναμικοί πίνακες](../../questions/kahoot/kahoot-static-vs-dynamic-arrays.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★☆☆ · multiple-choice · 92% σωστές απαντήσεις
+- [Διαστάσεις πίνακα](../../questions/kahoot/kahoot-3d-array-dims.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★☆☆ · multiple-choice · 93% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Άρτια Bits](../../questions/exams/exam-2023-fall-ex8-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 1 · ★☆☆ · programming (κεφ. 4)
@@ -577,6 +589,7 @@ $ ./int
 - [Η συνάρτηση transform](../../questions/exams/exam-2025-sep-q2.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 2 · ★☆☆ · trace (κεφ. 14)
 - [Επεξεργασία συμβολοσειρών](../../questions/labs/lab-lab08-string.md): Εργαστήριο 8, Άσκηση 1 · ★★☆ · programming (κεφ. 14)
 - [Είναι το πρώτο όρισμα "--boo";](../../questions/slides/slides-lec14-check-boo.md): Διάλεξη 14, διαφάνεια 42 · ★☆☆ · programming (κεφ. 14)
+- [Πολυπλοκότητα πολλαπλασιασμού πινάκων](../../questions/kahoot/kahoot-matrix-multiplication.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★☆ · multiple-choice · 49% σωστές απαντήσεις (κεφ. 15)
 - [Πολυπλοκότητα εύρεσης μέγιστου σε πίνακα N x N](../../questions/slides/slides-lec15-complexity-find-max-2d.md): Διάλεξη 15, διαφάνεια 23 · ★☆☆ · short-answer (κεφ. 15)
 - [Πολυπλοκότητα δυναμικού πίνακα με malloc](../../questions/slides/slides-lec15-complexity-malloc.md): Διάλεξη 15, διαφάνεια 19 · ★☆☆ · short-answer (κεφ. 15)
 - [char *array[], char **array και char array[10][10]](../../questions/slides/slides-lec16-char-pointer-arrays.md): Διάλεξη 16, διαφάνεια 19 · ★★☆ · short-answer (κεφ. 16)

@@ -676,8 +676,27 @@ tab και `\\` μια `\`.
 
 - [Rickroll Τριπλέτες](../../questions/exams/exam-2023-fall-ex4-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 3 · ★★★ · programming
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Ο κωδικός ASCII του 'J'](../../questions/kahoot/kahoot-ascii-next-letter.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★★ · multiple-choice · 33% σωστές απαντήσεις
+- [Το 0xFF σε signed char](../../questions/kahoot/kahoot-signed-char-ff.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★★ · multiple-choice · 33% σωστές απαντήσεις
+- [Το μέγεθος του int](../../questions/kahoot/kahoot-int-size.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★★ · multiple-choice · 37% σωστές απαντήσεις
+- [Πόσο είναι το 2^64](../../questions/kahoot/kahoot-two-pow-64.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★★ · multiple-choice · 38% σωστές απαντήσεις
+- [Ο μετρητής του Gangnam Style](../../questions/kahoot/kahoot-gangnam-views.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★☆ · multiple-choice · 41% σωστές απαντήσεις
+- [Πόσος χώρος για ένα κομμάτι IP](../../questions/kahoot/kahoot-ip-octet-size.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★☆ · multiple-choice · 45% σωστές απαντήσεις
+- [Πλήθος διευθύνσεων IPv4](../../questions/kahoot/kahoot-ip-address-count.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
+- [Πόσους αριθμούς χωράει ένας uint64_t](../../questions/kahoot/kahoot-uint64-range.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
+- [Άθροισμα θετικών unsigned int](../../questions/kahoot/kahoot-unsigned-sum-sign.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★☆ · multiple-choice · 63% σωστές απαντήσεις
+- [Η ταχύτητα του Ariane 5](../../questions/kahoot/kahoot-ariane-uint16.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 70% σωστές απαντήσεις
+- [Τιμές ενός byte](../../questions/kahoot/kahoot-byte-values.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 78% σωστές απαντήσεις
+- [Η μορφή μιας IP διεύθυνσης](../../questions/kahoot/kahoot-ip-address-format.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 82% σωστές απαντήσεις
+- [Κύρια και δευτερεύουσα μνήμη](../../questions/kahoot/kahoot-volatile-memory.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 84% σωστές απαντήσεις
+- [Άθροισμα θετικών int](../../questions/kahoot/kahoot-int-overflow-sign.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις
+- [Bit ή byte;](../../questions/kahoot/kahoot-bit-vs-byte.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 93% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
+- [Εκτύπωση με νέα γραμμή](../../questions/kahoot/kahoot-printf-newline.md): Kahoot «Καλημέρα Κόσμε - lec00!», «Καλημέρα Κόσμε!» (διάλεξη 0) · ★☆☆ · multiple-choice · 86% σωστές απαντήσεις (κεφ. 0)
 - [Η συνάρτηση about](../../questions/exams/exam-2024-sep-q1.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 1 · ★☆☆ · programming (κεφ. 3)
 - [Διακοπή ρεύματος και μνήμη](../../questions/slides/slides-lec03-power-outage.md): Διάλεξη 3: Συναρτήσεις, διαφάνεια 3 · ★☆☆ · multiple-choice (κεφ. 3)
 - [Τυπώνοντας τον Πίνακα ASCII](../../questions/exams/exam-2023-fall-ex15-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 2 · ★★☆ · programming (κεφ. 6)
@@ -694,6 +713,9 @@ tab και `\\` μια `\`.
 - [Διάβασμα ακεραίου με scanf](../../questions/labs/lab-lab02-readint.md): Εργαστήριο 2, Βήμα 3 · ★☆☆ · short-answer (κεφ. 9)
 - [Κωδικοποίηση και αποκωδικοποίηση κειμένου](../../questions/labs/lab-lab04-encode-decode.md): Εργαστήριο 4, Άσκηση 4 · ★★☆ · programming (κεφ. 9)
 - [Η συνάρτηση paws](../../questions/exams/exam-2026-jun-q2.md): Εξέταση Ιουνίου 2026, Θέμα 2 · ★★☆ · debug (κεφ. 10)
+- [Μέγεθος πίνακα int](../../questions/kahoot/kahoot-int-array-bytes.md): Kahoot «Πίνακες» (διάλεξη 10) · ★★☆ · multiple-choice · 49% σωστές απαντήσεις (κεφ. 10)
+- [Διεύθυνση και ακέραιος](../../questions/kahoot/kahoot-address-is-integer.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★☆ · multiple-choice · 50% σωστές απαντήσεις (κεφ. 11)
+- [Δείκτης συν 4 σε δεκαεξαδικό](../../questions/kahoot/kahoot-pointer-plus-int-hex.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★★ · multiple-choice · 31% σωστές απαντήσεις (κεφ. 11)
 - [Μέση Τιμή Τυχαίων Μεταβλητών - mean](../../questions/exams/exam-2025-sep-q3.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 3 · ★☆☆ · programming (κεφ. 12)
 - [Πετυχαίνοντας τον στόχο (Παλιό θέμα)](../../questions/labs/lab-lab08-legolas.md): Εργαστήριο 8, Άσκηση 3 · ★★☆ · programming (κεφ. 12)
 - [Η συνάρτηση dog](../../questions/exams/exam-2025-jan-q2.md): Εξέταση Ιανουαρίου 2025, Θέμα 2 · ★☆☆ · trace (κεφ. 14)
@@ -705,6 +727,7 @@ tab και `\\` μια `\`.
 - [Οι Καλύτεροι Αριθμοί, Παμψηφεί](../../questions/exams/exam-2024-dec-q2.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 2 · ★★☆ · programming (κεφ. 16)
 - [Ο Γρίφος του Στέργιου](../../questions/homework/hw-2025-bonus0-stergios.md): Bonus #0 (2025-26, προαιρετική) · ★★★ · programming (κεφ. 16)
 - [Σκαλί-σκαλί (Παλιό θέμα, Προαιρετικό)](../../questions/labs/lab-lab05-ladder.md): Εργαστήριο 5, Άσκηση 3 · ★★★ · programming (κεφ. 16)
+- [Ανάγνωση int σε little endian](../../questions/kahoot/kahoot-little-endian-read.md): Kahoot «Δομές + Αρχεία» · ★★☆ · multiple-choice · 62% σωστές απαντήσεις (κεφ. 18)
 - [Ο τυχερός αριθμός σε δυαδικό](../../questions/slides/slides-lec24-binary-literal.md): Διάλεξη 24: Προχωρημένα Θέματα, διαφάνεια 32 · ★☆☆ · trace (κεφ. 24)
 
 <!-- /exercises -->

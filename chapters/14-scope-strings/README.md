@@ -749,12 +749,25 @@ int isPalindrome(char *str) {
 - [Συνένωση Αλφαριθμητικών - join](../../questions/exams/exam-2025-jan-q5.md): Εξέταση Ιανουαρίου 2025, Θέμα 5 · ★★☆ · programming
 - [Μεταμορφώσιμες Προτάσεις](../../questions/exams/exam-2023-fall-ex5-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 4 · ★★★ · programming
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Πού αποθηκεύονται οι τοπικές μεταβλητές](../../questions/kahoot/kahoot-local-variable-storage.md): Kahoot «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★★ · multiple-choice · 23% σωστές απαντήσεις
+- [Η strcat με τον εαυτό της](../../questions/kahoot/kahoot-strcat-self-overflow.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★★ · multiple-choice · 24% σωστές απαντήσεις
+- [strcpy από literal σε πίνακα](../../questions/kahoot/kahoot-strcpy-literal-to-array.md): Kahoot «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★★ · multiple-choice · 32% σωστές απαντήσεις
+- [Η τιμή της strcmp για ίσες συμβολοσειρές](../../questions/kahoot/kahoot-strcmp-equal.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
+- [Πού αποθηκεύεται το char str[]](../../questions/kahoot/kahoot-char-array-storage.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★☆ · multiple-choice · 49% σωστές απαντήσεις
+- [Διαδοχικές strcat](../../questions/kahoot/kahoot-strcat-sequence.md): Kahoot «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★☆ · multiple-choice · 60% σωστές απαντήσεις
+- [Δύο είδη εμβέλειας](../../questions/kahoot/kahoot-two-kinds-of-scope.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★☆ · multiple-choice · 63% σωστές απαντήσεις
+- [Πού δηλώνονται οι παγκόσμιες μεταβλητές](../../questions/kahoot/kahoot-global-declaration.md): Kahoot «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★☆☆ · multiple-choice · 93% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Αναζητώντας τον Blinky](../../questions/exams/exam-2023-fall-ex11-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #11, Θέμα 1 · ★★☆ · programming (κεφ. 9)
 - [Αναγράμματα](../../questions/exams/exam-2023-fall-ex4-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 1 · ★★☆ · programming (κεφ. 10)
 - [Η ακολουθία Fibonacci](../../questions/labs/lab-lab05-fib.md): Εργαστήριο 5, Άσκηση 2 · ★★☆ · programming (κεφ. 11)
+- [Χαρακτήρας από πίνακα συμβολοσειρών](../../questions/kahoot/kahoot-string-array-element.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★★★ · multiple-choice · 38% σωστές απαντήσεις (κεφ. 12)
 - [Κάδρο](../../questions/exams/exam-2023-fall-ex9-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 4 · ★★★ · programming (κεφ. 13)
+- [Κατηγορίες μνήμης](../../questions/kahoot/kahoot-memory-categories.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις (κεφ. 13)
 - [Πολυπλοκότητα της strcmp](../../questions/slides/slides-lec15-complexity-strcmp.md): Διάλεξη 15, διαφάνεια 31 · ★★☆ · short-answer (κεφ. 15)
 - [Πολυπλοκότητα της strlen](../../questions/slides/slides-lec15-complexity-strlen.md): Διάλεξη 15, διαφάνεια 29 · ★☆☆ · short-answer (κεφ. 15)
 - [Κρυμμένο Μήνυμα](../../questions/exams/exam-2023-fall-ex10-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 3 · ★★☆ · programming (κεφ. 18)

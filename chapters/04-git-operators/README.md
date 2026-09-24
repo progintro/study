@@ -595,10 +595,23 @@ int max(int a, int b) {
 
 - [Άρτια Bits](../../questions/exams/exam-2023-fall-ex8-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 1 · ★☆☆ · programming
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Απομόνωση του πιο σημαντικού bit](../../questions/kahoot/kahoot-msb-mask.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 14% σωστές απαντήσεις
+- [0x42 & 0xFF](../../questions/kahoot/kahoot-and-mask-ff.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 18% σωστές απαντήσεις
+- [0xbeef | 0xcafe0000](../../questions/kahoot/kahoot-or-combine.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 29% σωστές απαντήσεις
+- [Ποιες είναι εντολές git;](../../questions/kahoot/kahoot-git-commands.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 34% σωστές απαντήσεις
+- [Η σειρά των εντολών git](../../questions/kahoot/kahoot-git-order.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · short-answer · 34% σωστές απαντήσεις
+- [3 << 2](../../questions/kahoot/kahoot-shift-left.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★☆ · multiple-choice · 55% σωστές απαντήσεις
+- [0xFF | 0x42](../../questions/kahoot/kahoot-or-mask-ff.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
+- [Git και GitHub](../../questions/kahoot/kahoot-git-vs-github.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★☆☆ · multiple-choice · 82% σωστές απαντήσεις
+- [Ξέχασα κάτι στο git;](../../questions/kahoot/kahoot-git-forgot-commit.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★☆☆ · multiple-choice · 95% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Ξεκινώντας με την γραμμή εντολών (bandit)](../../questions/homework/hw-2023-hw0-bandit.md): Εργασία 0 (2023-24), Άσκηση 2 · ★★☆ · tooling (κεφ. 1)
 - [Παιχνίδια με Κονσόλα (cmdline)](../../questions/homework/hw-2025-hw0-cmdline.md): Εργασία 0 (2025-26), Άσκηση 2 · ★★☆ · tooling (κεφ. 1)
+- [Το 2ο όρισμα του echo](../../questions/kahoot/kahoot-echo-second-arg.md): Kahoot «Command Line» (διάλεξη 1) · ★☆☆ · multiple-choice · 73% σωστές απαντήσεις (κεφ. 1)
 - [Κάντο όπως ο Βιετά](../../questions/exams/exam-2023-dec-q1.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 1 · ★★☆ · programming (κεφ. 6)
 - [Ασημένιο Κλάσμα](../../questions/exams/exam-2023-fall-ex10-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 2 · ★★☆ · programming (κεφ. 6)
 - [Κάντο όπως ο Βιετά](../../questions/exams/exam-2023-fall-ex13-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 1 · ★★☆ · programming (κεφ. 6)

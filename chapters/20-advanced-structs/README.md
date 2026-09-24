@@ -663,6 +663,17 @@ folder: /
 - [Χρήση ένωσης και μέγεθος](../../questions/slides/slides-lec20-union-size.md): Διάλεξη 20, διαφάνεια 19 · ★★☆ · trace
 - [Χάρτης ως γράφος](../../questions/slides/slides-lec20-graph-map.md): Διάλεξη 20, διαφάνεια 46 · ★★★ · short-answer
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Μέγεθος ένωσης](../../questions/kahoot/kahoot-union-size.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★★ · multiple-choice · 36% σωστές απαντήσεις
+- [Περιορισμοί πεδίων bit](../../questions/kahoot/kahoot-bitfield-limits.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 44% σωστές απαντήσεις
+- [Τιμές απαρίθμησης](../../questions/kahoot/kahoot-enum-values.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
+- [Κόμβος με next](../../questions/kahoot/kahoot-node-linked-list.md): Kahoot «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 52% σωστές απαντήσεις
+- [Αυτοαναφορική δομή](../../questions/kahoot/kahoot-self-referential-struct.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 56% σωστές απαντήσεις
+- [Δομή ή ένωση;](../../questions/kahoot/kahoot-struct-vs-union.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 63% σωστές απαντήσεις
+- [Σε τι χρησιμεύει η ένωση](../../questions/kahoot/kahoot-union-purpose.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 65% σωστές απαντήσεις
+- [Κόμβος με left και right](../../questions/kahoot/kahoot-node-binary-tree.md): Kahoot «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 67% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Διερμηνέας Αριθμητικών Εκφράσεων - eval](../../questions/exams/exam-2026-jan-q4.md): Εξέταση Ιανουαρίου 2026, Θέμα 4 · ★★☆ · programming (κεφ. 22)

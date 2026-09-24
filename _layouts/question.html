@@ -17,6 +17,7 @@ layout: default
   {% if page.source.url %}<a href="{{ page.source.url }}">{{ page.source.title }}</a>{% else %}{{ page.source.title }}{% endif %}
   · Δυσκολία {% case page.difficulty %}{% when 1 %}★☆☆{% when 2 %}★★☆{% else %}★★★{% endcase %}
   · {{ page.type }}
+  {% if page.stats %}· {{ page.stats.accuracy }}% σωστές απαντήσεις ({{ page.stats.responses }} απαντήσεις στο αμφιθέατρο){% endif %}
   · Κεφάλαια: {% for c in page.chapters %}<a href="{{ site.baseurl }}/chapters/{{ site.data.chapters[c] }}/">{{ c }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
 </p>
 

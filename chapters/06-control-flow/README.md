@@ -564,6 +564,18 @@ echo -e "2856\n0\nf\n" | ./aliquot | ttyplot
 - [Πετυχαίνοντας τον Στόχο](../../questions/exams/exam-2023-fall-ex9-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 2 · ★★☆ · programming
 - [Εύρεση Πρώτων Παραγόντων - factor](../../questions/exams/exam-2026-jan-q3.md): Εξέταση Ιανουαρίου 2026, Θέμα 3 · ★★☆ · programming
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [while(!42)](../../questions/kahoot/kahoot-while-not-42.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★★ · multiple-choice · 17% σωστές απαντήσεις
+- [Πόσες φορές εκτελείται ένα for μέχρι N](../../questions/kahoot/kahoot-for-n-times-trap.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7), δύο εκδοχές · ★★★ · multiple-choice · 23% σωστές απαντήσεις
+- [while γραμμένο ως for](../../questions/kahoot/kahoot-while-as-for.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★★★ · multiple-choice · 24% σωστές απαντήσεις
+- [if χωρίς παρενθέσεις](../../questions/kahoot/kahoot-if-without-parens.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★★☆ · multiple-choice · 42% σωστές απαντήσεις
+- [Ένα for χωρίς βήμα](../../questions/kahoot/kahoot-for-missing-increment.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★☆ · multiple-choice · 56% σωστές απαντήσεις
+- [Επαναλήψεις με βήμα 2](../../questions/kahoot/kahoot-for-step-two.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
+- [Η σύνταξη του for](../../questions/kahoot/kahoot-for-empty-init.md): Kahoot «Πίνακες» (διάλεξη 10) · ★★☆ · multiple-choice · 59% σωστές απαντήσεις
+- [while και do-while](../../questions/kahoot/kahoot-while-vs-do-while.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★☆☆ · multiple-choice · 85% σωστές απαντήσεις
+- [Απλό if-else](../../questions/kahoot/kahoot-if-else-trace.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★☆☆ · multiple-choice · 91% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Εκτύπωση χαρακτήρων](../../questions/labs/lab-lab04-printchar.md): Εργαστήριο 4, Άσκηση 1 · ★☆☆ · programming (κεφ. 2)
@@ -572,6 +584,8 @@ echo -e "2856\n0\nf\n" | ./aliquot | ttyplot
 - [Mystery](../../questions/exams/exam-2026-jan-q1.md): Εξέταση Ιανουαρίου 2026, Θέμα 1 · ★☆☆ · trace (κεφ. 5)
 - [Η συνάρτηση mystery](../../questions/exams/exam-2026-jun-q1.md): Εξέταση Ιουνίου 2026, Θέμα 1 · ★☆☆ · trace (κεφ. 5)
 - [Υπολογισμός ημέρας μίας δεδομένης ημερομηνίας](../../questions/labs/lab-lab03-birthdate.md): Εργαστήριο 3, Άσκηση 3 · ★☆☆ · programming (κεφ. 5)
+- [switch και if-else](../../questions/kahoot/kahoot-switch-if-else-equivalence.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★★☆ · multiple-choice · 46% σωστές απαντήσεις (κεφ. 8)
+- [while(--i) με i = 0](../../questions/kahoot/kahoot-while-predecrement-overflow.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★★ · multiple-choice · 17% σωστές απαντήσεις (κεφ. 8)
 - [Το Πρόβλημα του Τρόλεϊ (trolley)](../../questions/homework/hw-2024-hw0-trolley.md): Εργασία 0 (2024-25), Άσκηση 3 · ★★☆ · programming (κεφ. 9)
 
 <!-- /exercises -->

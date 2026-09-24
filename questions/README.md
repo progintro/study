@@ -15,6 +15,12 @@
 - [Περνάω χωρίς εργασίες και εργαστήριο;](../questions/slides/slides-lec00-pass-without-labs.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 11 · ★☆☆ · short-answer
 - [Παραδείγματα προγραμμάτων](../questions/slides/slides-lec00-programs-you-know.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 23 · ★☆☆ · short-answer
 - [Γιατί προγραμματισμός το 2025;](../questions/slides/slides-lec00-why-programming.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 5 · ★☆☆ · short-answer
+- [Η φόρμα του μαθήματος](../questions/kahoot/kahoot-course-form.md): Kahoot «Καλημέρα Κόσμε - lec00!», «Καλημέρα Κόσμε!» (διάλεξη 0) · ★☆☆ · multiple-choice · 85% σωστές απαντήσεις
+- [Τα εργαλεία του μαθήματος](../questions/kahoot/kahoot-course-tools.md): Kahoot «Καλημέρα Κόσμε - lec00!» (διάλεξη 0) · ★☆☆ · multiple-choice · 82% σωστές απαντήσεις
+- [Εκτύπωση με νέα γραμμή](../questions/kahoot/kahoot-printf-newline.md): Kahoot «Καλημέρα Κόσμε - lec00!», «Καλημέρα Κόσμε!» (διάλεξη 0) · ★☆☆ · multiple-choice · 86% σωστές απαντήσεις
+- [Τι κάνει η printf](../questions/kahoot/kahoot-printf-prints.md): Kahoot «Καλημέρα Κόσμε - lec00!», «Καλημέρα Κόσμε!» (διάλεξη 0) · ★☆☆ · multiple-choice · 94% σωστές απαντήσεις
+- [Έχω μια ερώτηση για το μάθημα](../questions/kahoot/kahoot-ask-question.md): Kahoot «Καλημέρα Κόσμε - lec00!», «Καλημέρα Κόσμε!» (διάλεξη 0) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
+- [Το χαρακτηριστικό της C](../questions/kahoot/kahoot-c-main-feature.md): Kahoot «Καλημέρα Κόσμε - lec00!» (διάλεξη 0) · ★★☆ · multiple-choice · 61% σωστές απαντήσεις
 
 ## [Κεφάλαιο 1: Η Γραμμή Εντολών](../chapters/01-command-line/)
 
@@ -30,6 +36,16 @@
 - [Αναζήτηση, ανακατεύθυνση και σωληνώσεις](../questions/labs/lab-lab01-step5-grep-pipes.md): Εργαστήριο 1, Βήμα 5 · ★★☆ · tooling
 - [Ξεκινώντας με την γραμμή εντολών (bandit)](../questions/homework/hw-2023-hw0-bandit.md): Εργασία 0 (2023-24), Άσκηση 2 · ★★☆ · tooling
 - [Παιχνίδια με Κονσόλα (cmdline)](../questions/homework/hw-2025-hw0-cmdline.md): Εργασία 0 (2025-26), Άσκηση 2 · ★★☆ · tooling
+- [Το 2ο όρισμα του echo](../questions/kahoot/kahoot-echo-second-arg.md): Kahoot «Command Line» (διάλεξη 1) · ★☆☆ · multiple-choice · 73% σωστές απαντήσεις
+- [Στο Linux όλα είναι…](../questions/kahoot/kahoot-everything-is-a-file.md): Kahoot «Command Line» (διάλεξη 1) · ★☆☆ · multiple-choice · 71% σωστές απαντήσεις
+- [Η καταγωγή του Linux](../questions/kahoot/kahoot-linux-unix.md): Kahoot «Command Line» (διάλεξη 1) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις
+- [Η εντολή man](../questions/kahoot/kahoot-man-command.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★☆☆ · multiple-choice · 72% σωστές απαντήσεις
+- [Το basename ενός αρχείου](../questions/kahoot/kahoot-basename.md): Kahoot «Command Line» (διάλεξη 1) · ★★☆ · multiple-choice · 53% σωστές απαντήσεις
+- [Το ΛΣ των web servers](../questions/kahoot/kahoot-linux-servers.md): Kahoot «Command Line» (διάλεξη 1) · ★★☆ · multiple-choice · 65% σωστές απαντήσεις
+- [Δικαιώματα υπερχρήστη](../questions/kahoot/kahoot-sudo.md): Kahoot «Command Line» (διάλεξη 1) · ★★☆ · multiple-choice · 68% σωστές απαντήσεις
+- [Φορτίο απομακρυσμένου server](../questions/kahoot/kahoot-uptime.md): Kahoot «Command Line» (διάλεξη 1) · ★★☆ · multiple-choice · 53% σωστές απαντήσεις
+- [Εκτύπωση περιεχομένων αρχείου](../questions/kahoot/kahoot-cat-prints-file.md): Kahoot «Command Line» (διάλεξη 1) · ★★★ · multiple-choice · 29% σωστές απαντήσεις
+- [Το μονοπάτι ενός αρχείου](../questions/kahoot/kahoot-filepath.md): Kahoot «Command Line» (διάλεξη 1) · ★★★ · multiple-choice · 20% σωστές απαντήσεις
 
 ## [Κεφάλαιο 2: Μνήμη και Μεταβλητές](../chapters/02-memory-variables/)
 
@@ -45,6 +61,21 @@
 - [Υπερχείλιση ακεραίων](../questions/labs/lab-lab00-overflow.md): Εργαστήριο 0, Άσκηση 2 · ★☆☆ · short-answer
 - [Εκτύπωση χαρακτήρων](../questions/labs/lab-lab04-printchar.md): Εργαστήριο 4, Άσκηση 1 · ★☆☆ · programming
 - [Rickroll Τριπλέτες](../questions/exams/exam-2023-fall-ex4-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 3 · ★★★ · programming
+- [Η ταχύτητα του Ariane 5](../questions/kahoot/kahoot-ariane-uint16.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 70% σωστές απαντήσεις
+- [Bit ή byte;](../questions/kahoot/kahoot-bit-vs-byte.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 93% σωστές απαντήσεις
+- [Τιμές ενός byte](../questions/kahoot/kahoot-byte-values.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 78% σωστές απαντήσεις
+- [Άθροισμα θετικών int](../questions/kahoot/kahoot-int-overflow-sign.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις
+- [Η μορφή μιας IP διεύθυνσης](../questions/kahoot/kahoot-ip-address-format.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 82% σωστές απαντήσεις
+- [Κύρια και δευτερεύουσα μνήμη](../questions/kahoot/kahoot-volatile-memory.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 84% σωστές απαντήσεις
+- [Ο μετρητής του Gangnam Style](../questions/kahoot/kahoot-gangnam-views.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★☆ · multiple-choice · 41% σωστές απαντήσεις
+- [Πλήθος διευθύνσεων IPv4](../questions/kahoot/kahoot-ip-address-count.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
+- [Πόσος χώρος για ένα κομμάτι IP](../questions/kahoot/kahoot-ip-octet-size.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★☆ · multiple-choice · 45% σωστές απαντήσεις
+- [Πόσους αριθμούς χωράει ένας uint64_t](../questions/kahoot/kahoot-uint64-range.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
+- [Άθροισμα θετικών unsigned int](../questions/kahoot/kahoot-unsigned-sum-sign.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★☆ · multiple-choice · 63% σωστές απαντήσεις
+- [Ο κωδικός ASCII του 'J'](../questions/kahoot/kahoot-ascii-next-letter.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★★ · multiple-choice · 33% σωστές απαντήσεις
+- [Το μέγεθος του int](../questions/kahoot/kahoot-int-size.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★★ · multiple-choice · 37% σωστές απαντήσεις
+- [Το 0xFF σε signed char](../questions/kahoot/kahoot-signed-char-ff.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★★ · multiple-choice · 33% σωστές απαντήσεις
+- [Πόσο είναι το 2^64](../questions/kahoot/kahoot-two-pow-64.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★★ · multiple-choice · 38% σωστές απαντήσεις
 
 ## [Κεφάλαιο 3: Συναρτήσεις](../chapters/03-functions/)
 
@@ -56,6 +87,14 @@
 - [Υπερχείλιση ακεραίων](../questions/slides/slides-lec03-overflow.md): Διάλεξη 3: Συναρτήσεις, διαφάνεια 8 · ★★☆ · trace
 - [Πυθαγόρειο θεώρημα](../questions/labs/lab-lab02-pyth.md): Εργαστήριο 2, Άσκηση 2 · ★☆☆ · programming
 - [Η συνάρτηση about](../questions/exams/exam-2024-sep-q1.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 1 · ★☆☆ · programming
+- [Προσδιοριστικά %d με σειρά](../questions/kahoot/kahoot-printf-format-order.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις
+- [Από τι αποτελείται ένα πρόγραμμα C](../questions/kahoot/kahoot-c-program-functions.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★☆ · multiple-choice · 55% σωστές απαντήσεις
+- [Η ακολουθία `\r`](../questions/kahoot/kahoot-printf-carriage-return.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
+- [printf με %c και 42](../questions/kahoot/kahoot-printf-char-42.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
+- [Ακολουθίες διαφυγής για `\\` και `"`](../questions/kahoot/kahoot-printf-escapes-backslash-quote.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★☆ · multiple-choice · 43% σωστές απαντήσεις
+- [Τιμή επιστροφής double](../questions/kahoot/kahoot-square-double-return.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★☆ · multiple-choice · 58% σωστές απαντήσεις
+- [Τα μέρη του ορισμού συνάρτησης](../questions/kahoot/kahoot-function-definition-parts.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★★ · multiple-choice · 31% σωστές απαντήσεις
+- [Ο τύπος επιστροφής μιας συνάρτησης](../questions/kahoot/kahoot-function-return-type.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★★ · multiple-choice · 28% σωστές απαντήσεις
 
 ## [Κεφάλαιο 4: Git και Τελεστές](../chapters/04-git-operators/)
 
@@ -72,6 +111,15 @@
 - [Το πρώτο σας repository](../questions/labs/lab-lab01-info.md): Εργαστήριο 1, Άσκηση 1 · ★☆☆ · tooling
 - [Νέο URL στο GitHub (pages)](../questions/homework/hw-2025-hw0-pages.md): Εργασία 0 (2025-26), Άσκηση 1 · ★☆☆ · tooling
 - [Άρτια Bits](../questions/exams/exam-2023-fall-ex8-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 1 · ★☆☆ · programming
+- [Ξέχασα κάτι στο git;](../questions/kahoot/kahoot-git-forgot-commit.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★☆☆ · multiple-choice · 95% σωστές απαντήσεις
+- [Git και GitHub](../questions/kahoot/kahoot-git-vs-github.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★☆☆ · multiple-choice · 82% σωστές απαντήσεις
+- [0xFF | 0x42](../questions/kahoot/kahoot-or-mask-ff.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
+- [3 << 2](../questions/kahoot/kahoot-shift-left.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★☆ · multiple-choice · 55% σωστές απαντήσεις
+- [0x42 & 0xFF](../questions/kahoot/kahoot-and-mask-ff.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 18% σωστές απαντήσεις
+- [Ποιες είναι εντολές git;](../questions/kahoot/kahoot-git-commands.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 34% σωστές απαντήσεις
+- [Η σειρά των εντολών git](../questions/kahoot/kahoot-git-order.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · short-answer · 34% σωστές απαντήσεις
+- [Απομόνωση του πιο σημαντικού bit](../questions/kahoot/kahoot-msb-mask.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 14% σωστές απαντήσεις
+- [0xbeef | 0xcafe0000](../questions/kahoot/kahoot-or-combine.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 29% σωστές απαντήσεις
 
 ## [Κεφάλαιο 5: Τελεστές και Εντολές](../chapters/05-operators-statements/)
 
@@ -86,6 +134,9 @@
 - [Mystery](../questions/exams/exam-2025-jan-q1.md): Εξέταση Ιανουαρίου 2025, Θέμα 1 · ★☆☆ · trace
 - [Mystery](../questions/exams/exam-2026-jan-q1.md): Εξέταση Ιανουαρίου 2026, Θέμα 1 · ★☆☆ · trace
 - [Η συνάρτηση mystery](../questions/exams/exam-2026-jun-q1.md): Εξέταση Ιουνίου 2026, Θέμα 1 · ★☆☆ · trace
+- [Μετατροπή double σε int](../questions/kahoot/kahoot-cast-truncation.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★☆☆ · multiple-choice · 86% σωστές απαντήσεις
+- [Ποιος αριθμός ικανοποιεί τη συνθήκη](../questions/kahoot/kahoot-num-divisible-3-31.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★☆ · multiple-choice · 58% σωστές απαντήσεις
+- [x++ και ++y](../questions/kahoot/kahoot-post-pre-increment.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
 
 ## [Κεφάλαιο 6: Εντολές και Ροή Ελέγχου](../chapters/06-control-flow/)
 
@@ -114,11 +165,25 @@
 - [Τυπώνοντας τον Πίνακα ASCII](../questions/exams/exam-2023-fall-ex15-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 2 · ★★☆ · programming
 - [Πετυχαίνοντας τον Στόχο](../questions/exams/exam-2023-fall-ex9-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 2 · ★★☆ · programming
 - [Εύρεση Πρώτων Παραγόντων - factor](../questions/exams/exam-2026-jan-q3.md): Εξέταση Ιανουαρίου 2026, Θέμα 3 · ★★☆ · programming
+- [Απλό if-else](../questions/kahoot/kahoot-if-else-trace.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★☆☆ · multiple-choice · 91% σωστές απαντήσεις
+- [while και do-while](../questions/kahoot/kahoot-while-vs-do-while.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★☆☆ · multiple-choice · 85% σωστές απαντήσεις
+- [Η σύνταξη του for](../questions/kahoot/kahoot-for-empty-init.md): Kahoot «Πίνακες» (διάλεξη 10) · ★★☆ · multiple-choice · 59% σωστές απαντήσεις
+- [Ένα for χωρίς βήμα](../questions/kahoot/kahoot-for-missing-increment.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★☆ · multiple-choice · 56% σωστές απαντήσεις
+- [Επαναλήψεις με βήμα 2](../questions/kahoot/kahoot-for-step-two.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
+- [if χωρίς παρενθέσεις](../questions/kahoot/kahoot-if-without-parens.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★★☆ · multiple-choice · 42% σωστές απαντήσεις
+- [Πόσες φορές εκτελείται ένα for μέχρι N](../questions/kahoot/kahoot-for-n-times-trap.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7), δύο εκδοχές · ★★★ · multiple-choice · 23% σωστές απαντήσεις
+- [while γραμμένο ως for](../questions/kahoot/kahoot-while-as-for.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★★★ · multiple-choice · 24% σωστές απαντήσεις
+- [while(!42)](../questions/kahoot/kahoot-while-not-42.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★★ · multiple-choice · 17% σωστές απαντήσεις
 
 ## [Κεφάλαιο 7: Επίλυση Προβλημάτων](../chapters/07-problem-solving/)
 
 - [Τριψήφιοι άρτιοι σε φθίνουσα σειρά](../questions/slides/slides-lec07-even-descending.md): Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 14 · ★☆☆ · programming
 - [Γινόμενο τριψήφιων περιττών πολλαπλασίων του 7](../questions/slides/slides-lec07-odd-multiples-of-7.md): Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 16 · ★★☆ · programming
+- [Αξίζει να σχολιάζω τον κώδικα;](../questions/kahoot/kahoot-comments-good-practice.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★☆☆ · multiple-choice · 91% σωστές απαντήσεις
+- [Εργασία χωρίς σχόλια](../questions/kahoot/kahoot-homework-comments.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★☆☆ · multiple-choice · 71% σωστές απαντήσεις
+- [Η γλώσσα του README.md](../questions/kahoot/kahoot-readme-markdown.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★☆☆ · multiple-choice · 84% σωστές απαντήσεις
+- [Πώς γράφουμε σχόλια](../questions/kahoot/kahoot-comment-syntax.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★☆ · multiple-choice · 46% σωστές απαντήσεις
+- [Καλό σχόλιο;](../questions/kahoot/kahoot-good-comment.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★☆ · multiple-choice · 61% σωστές απαντήσεις
 
 ## [Κεφάλαιο 8: Ροή Ελέγχου #2](../chapters/08-control-flow-2/)
 
@@ -129,6 +194,11 @@
 - [Η εποχή κάθε μήνα](../questions/slides/slides-lec08-season.md): Διάλεξη 8: Ροή Ελέγχου #2, διαφάνεια 17 · ★☆☆ · programming
 - [Ο μικρότερος τριψήφιος πολλαπλάσιο του 2 και του 5 αλλά όχι του 4](../questions/slides/slides-lec08-smallest-three-digit.md): Διάλεξη 8: Ροή Ελέγχου #2, διαφάνεια 6 · ★☆☆ · programming
 - [Η Μέθοδος Newton-Raphson](../questions/homework/hw-2023-hw1-newton.md): Εργασία 1 (2023-24), Άσκηση 1 · ★★☆ · programming
+- [Μόνο με break σταματά ένας βρόχος;](../questions/kahoot/kahoot-break-only-way.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★☆☆ · multiple-choice · 94% σωστές απαντήσεις
+- [goto στο διαγώνισμα](../questions/kahoot/kahoot-goto-in-exam.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★☆☆ · multiple-choice · 97% σωστές απαντήσεις
+- [switch και if-else](../questions/kahoot/kahoot-switch-if-else-equivalence.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★★☆ · multiple-choice · 46% σωστές απαντήσεις
+- [for χωρίς συνθήκη με break](../questions/kahoot/kahoot-for-break-overflow.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★★★ · multiple-choice · 36% σωστές απαντήσεις
+- [while(--i) με i = 0](../questions/kahoot/kahoot-while-predecrement-overflow.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★★ · multiple-choice · 17% σωστές απαντήσεις
 
 ## [Κεφάλαιο 9: Δεδομένα Εισόδου](../chapters/09-input/)
 
@@ -163,6 +233,15 @@
 - [Προσθήκη Νιφάδων](../questions/exams/exam-2023-fall-ex3-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 1 · ★★☆ · programming
 - [Αποκωδικοποίηση](../questions/exams/exam-2023-fall-ex8-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 2 · ★★☆ · programming
 - [Μετρητής λέξεων](../questions/exams/exam-2024-sep-q4.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 4 · ★★☆ · programming
+- [Πώς στέλνω EOF](../questions/kahoot/kahoot-eof-key.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★☆☆ · multiple-choice · 90% σωστές απαντήσεις
+- [Η τιμή του EOF](../questions/kahoot/kahoot-eof-value.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★☆☆ · multiple-choice · 79% σωστές απαντήσεις
+- [Σύγκριση float με ==](../questions/kahoot/kahoot-float-equality.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★☆☆ · multiple-choice · 94% σωστές απαντήσεις
+- [Ο τύπος επιστροφής της getchar](../questions/kahoot/kahoot-getchar-return-type.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) και «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★☆☆ · multiple-choice · 66% σωστές απαντήσεις
+- [Φτάνουν αμέσως τα δεδομένα;](../questions/kahoot/kahoot-input-buffering.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★☆☆ · multiple-choice · 82% σωστές απαντήσεις
+- [Διάβασμα ακεραίου με scanf](../questions/kahoot/kahoot-scanf-int-syntax.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★★☆ · multiple-choice · 53% σωστές απαντήσεις
+- [Μετρητής χαρακτήρων μέχρι την αλλαγή γραμμής](../questions/kahoot/kahoot-charcount-eof.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★★★ · multiple-choice · 31% σωστές απαντήσεις
+- [Πόσες τιμές επιστρέφει η getchar](../questions/kahoot/kahoot-getchar-257-values.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★★★ · multiple-choice · 18% σωστές απαντήσεις
+- [Τιμή επιστροφής της scanf με λάθος είσοδο](../questions/kahoot/kahoot-scanf-return-partial.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★★★ · multiple-choice · 11% σωστές απαντήσεις
 
 ## [Κεφάλαιο 10: Πίνακες](../chapters/10-arrays/)
 
@@ -190,6 +269,16 @@
 - [Αναγράμματα](../questions/exams/exam-2023-fall-ex4-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 1 · ★★☆ · programming
 - [Μαγικό Ζευγάρι](../questions/exams/exam-2023-fall-ex5-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 2 · ★★☆ · programming
 - [Η συνάρτηση paws](../questions/exams/exam-2026-jun-q2.md): Εξέταση Ιουνίου 2026, Θέμα 2 · ★★☆ · debug
+- [Αντιγραφή πίνακα με ανάθεση](../questions/kahoot/kahoot-array-assignment.md): Kahoot «Πίνακες» (διάλεξη 10) · ★☆☆ · multiple-choice · 84% σωστές απαντήσεις
+- [Αρχικοποίηση με περισσότερες τιμές](../questions/kahoot/kahoot-excess-initializers.md): Kahoot «Πίνακες» (διάλεξη 10) · ★☆☆ · multiple-choice · 71% σωστές απαντήσεις
+- [Ο δείκτης του πρώτου στοιχείου](../questions/kahoot/kahoot-first-index.md): Kahoot «Πίνακες» (διάλεξη 10) · ★☆☆ · multiple-choice · 82% σωστές απαντήσεις
+- [Το τελευταίο στοιχείο πίνακα](../questions/kahoot/kahoot-last-element.md): Kahoot «Πίνακες» (διάλεξη 10) · ★☆☆ · multiple-choice · 81% σωστές απαντήσεις
+- [Πρόσβαση εκτός ορίων](../questions/kahoot/kahoot-out-of-bounds.md): Kahoot «Πίνακες» (διάλεξη 10) · ★☆☆ · multiple-choice · 85% σωστές απαντήσεις
+- [Διεύθυνση στοιχείου πίνακα int](../questions/kahoot/kahoot-int-array-address.md): Kahoot «Πίνακες» (διάλεξη 10) · ★★☆ · multiple-choice · 47% σωστές απαντήσεις
+- [Μέγεθος πίνακα int](../questions/kahoot/kahoot-int-array-bytes.md): Kahoot «Πίνακες» (διάλεξη 10) · ★★☆ · multiple-choice · 49% σωστές απαντήσεις
+- [Δείκτης μέσα σε δείκτη](../questions/kahoot/kahoot-nested-index.md): Kahoot «Πίνακες» (διάλεξη 10) · ★★☆ · multiple-choice · 69% σωστές απαντήσεις
+- [Διεύθυνση στοιχείου πίνακα char](../questions/kahoot/kahoot-char-array-address.md): Kahoot «Πίνακες» (διάλεξη 10) · ★★★ · multiple-choice · 19% σωστές απαντήσεις
+- [Χαρακτήρας σε συμβολοσειρά](../questions/kahoot/kahoot-string-char-index.md): Kahoot «Πίνακες» (διάλεξη 10) · ★★★ · multiple-choice · 27% σωστές απαντήσεις
 
 ## [Κεφάλαιο 11: Δείκτες και Αναδρομή](../chapters/11-pointers-recursion/)
 
@@ -215,6 +304,20 @@
 - [Άψογα Τετράγωνα (Bonus)](../questions/homework/hw-2023-hw1-flawless.md): Εργασία 1 (2023-24), Άσκηση 3 (Bonus) · ★★★ · programming
 - [Ο Αλγόριθμος RSA (rsa)](../questions/homework/hw-2024-hw1-rsa.md): Εργασία 1 (2024-25), Άσκηση 2 · ★★★ · programming
 - [Ο Στέργιος Ξαναχτυπά](../questions/exams/exam-2026-jan-q6.md): Εξέταση Ιανουαρίου 2026, Θέμα 6 · ★☆☆ · trace
+- [Πίνακας και δείκτης](../questions/kahoot/kahoot-array-vs-pointer.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★☆☆ · multiple-choice · 71% σωστές απαντήσεις
+- [Τερματισμός αναδρομής](../questions/kahoot/kahoot-recursion-terminates.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις
+- [Διεύθυνση και ακέραιος](../questions/kahoot/kahoot-address-is-integer.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★☆ · multiple-choice · 50% σωστές απαντήσεις
+- [Η τιμή του NULL](../questions/kahoot/kahoot-null-is-zero.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★★☆ · multiple-choice · 65% σωστές απαντήσεις
+- [Η τιμή του ptr + 1](../questions/kahoot/kahoot-pointer-plus-one.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★☆ · multiple-choice · 61% σωστές απαντήσεις
+- [Μέγεθος δεικτών](../questions/kahoot/kahoot-pointer-size.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★☆ · multiple-choice · 46% σωστές απαντήσεις
+- [*(ptr + 4) και ptr[4]](../questions/kahoot/kahoot-ptr-offset-equals-index.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★☆ · multiple-choice · 67% σωστές απαντήσεις
+- [Αλλαγή μεταβλητής και δείκτης](../questions/kahoot/kahoot-variable-increment-via-ptr.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
+- [Η έκφραση *&x](../questions/kahoot/kahoot-deref-address-of.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★★★ · multiple-choice · 35% σωστές απαντήσεις
+- [Αύξηση μέσω δείκτη](../questions/kahoot/kahoot-deref-increment.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★★★ · multiple-choice · 34% σωστές απαντήσεις
+- [Άθροισμα δύο δεικτών](../questions/kahoot/kahoot-pointer-addition.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★★★ · multiple-choice · 28% σωστές απαντήσεις
+- [Αύξηση του ίδιου του δείκτη](../questions/kahoot/kahoot-pointer-increment-scalar.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★★★ · multiple-choice · 37% σωστές απαντήσεις
+- [Δείκτης συν 4 σε δεκαεξαδικό](../questions/kahoot/kahoot-pointer-plus-int-hex.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★★ · multiple-choice · 31% σωστές απαντήσεις
+- [Δείκτης στη μέση πίνακα](../questions/kahoot/kahoot-ptr-index-offset.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★★★ · short-answer · 12% σωστές απαντήσεις
 
 ## [Κεφάλαιο 12: Δείκτες και Πίνακες](../chapters/12-pointers-arrays/)
 
@@ -240,6 +343,15 @@
 - [Στατιστικές](../questions/exams/exam-2024-jul-q2.md): Εξέταση Ιουλίου 2024, Θέμα 2 · ★★☆ · programming
 - [Κινούμενος Μέσος Όρος - sma](../questions/exams/exam-2025-jan-q3.md): Εξέταση Ιανουαρίου 2025, Θέμα 3 · ★★☆ · programming
 - [Το μεγαλύτερο άλμα - polevault](../questions/exams/exam-2026-sep-q3.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 3 · ★★☆ · programming
+- [Πλήθος στοιχείων δισδιάστατου πίνακα](../questions/kahoot/kahoot-2d-array-count.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★☆☆ · multiple-choice · 81% σωστές απαντήσεις
+- [Διαστάσεις πίνακα](../questions/kahoot/kahoot-3d-array-dims.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★☆☆ · multiple-choice · 93% σωστές απαντήσεις
+- [Στατικοί και δυναμικοί πίνακες](../questions/kahoot/kahoot-static-vs-dynamic-arrays.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★☆☆ · multiple-choice · 92% σωστές απαντήσεις
+- [Το τελευταίο στοιχείο δισδιάστατου πίνακα](../questions/kahoot/kahoot-2d-last-element.md): Kahoot «Πίνακες και Δείκτες» (διάλεξη 12) · ★★☆ · multiple-choice · 67% σωστές απαντήσεις
+- [Ο τύπος του argv](../questions/kahoot/kahoot-argv-type.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★★☆ · multiple-choice · 44% σωστές απαντήσεις
+- [sizeof δισδιάστατου πίνακα](../questions/kahoot/kahoot-sizeof-2d-double.md): Kahoot «Πίνακες και Δείκτες» (διάλεξη 12) · ★★☆ · multiple-choice · 68% σωστές απαντήσεις
+- [sizeof μιας γραμμής](../questions/kahoot/kahoot-sizeof-row.md): Kahoot «Πίνακες και Δείκτες» (διάλεξη 12) · ★★☆ · multiple-choice · 42% σωστές απαντήσεις
+- [Διεύθυνση στοιχείου δισδιάστατου πίνακα](../questions/kahoot/kahoot-2d-element-address.md): Kahoot «Πίνακες και Δείκτες» (διάλεξη 12) · ★★★ · multiple-choice · 33% σωστές απαντήσεις
+- [Χαρακτήρας από πίνακα συμβολοσειρών](../questions/kahoot/kahoot-string-array-element.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★★★ · multiple-choice · 38% σωστές απαντήσεις
 
 ## [Κεφάλαιο 13: Μνήμη](../chapters/13-memory/)
 
@@ -254,6 +366,17 @@
 - [Κινήσεις σε πλέγμα (Παλιό θέμα)](../questions/labs/lab-lab07-pacman.md): Εργαστήριο 7, Άσκηση 5 · ★★★ · programming
 - [Debugging](../questions/exams/exam-2023-fall-ex1-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 4 · ★★☆ · debug
 - [Κάδρο](../questions/exams/exam-2023-fall-ex9-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 4 · ★★★ · programming
+- [Διπλό free](../questions/kahoot/kahoot-double-free.md): Kahoot «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 92% σωστές απαντήσεις
+- [Είναι συνεχόμενος ο σωρός;](../questions/kahoot/kahoot-heap-not-contiguous.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 75% σωστές απαντήσεις
+- [Πάντα πετυχαίνει η malloc;](../questions/kahoot/kahoot-malloc-may-fail.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 70% σωστές απαντήσεις
+- [Κατηγορίες μνήμης](../questions/kahoot/kahoot-memory-categories.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις
+- [Αφαίρεση από στοίβα](../questions/kahoot/kahoot-stack-lifo.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 80% σωστές απαντήσεις
+- [Αποδέσμευση από τον σωρό](../questions/kahoot/kahoot-heap-free-any.md): Kahoot «Μνήμη» (διάλεξη 13) · ★★☆ · multiple-choice · 67% σωστές απαντήσεις
+- [Πού βάζω έναν μεγάλο πίνακα](../questions/kahoot/kahoot-large-array-placement.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★★☆ · multiple-choice · 65% σωστές απαντήσεις
+- [Δέσμευση 10⁹ double](../questions/kahoot/kahoot-malloc-doubles.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★★☆ · multiple-choice · 66% σωστές απαντήσεις
+- [malloc για πίνακα 10000 int](../questions/kahoot/kahoot-malloc-int-array.md): Kahoot «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 60% σωστές απαντήσεις
+- [malloc, calloc, realloc και free](../questions/kahoot/kahoot-memory-functions.md): Kahoot «Μνήμη» (διάλεξη 13) · ★★★ · multiple-choice · 27% σωστές απαντήσεις
+- [Βάθος αναδρομής μέχρι να γεμίσει η στοίβα](../questions/kahoot/kahoot-stack-overflow-depth.md): Kahoot «Μνήμη» (διάλεξη 13) · ★★★ · multiple-choice · 20% σωστές απαντήσεις
 
 ## [Κεφάλαιο 14: Εμβέλεια, Μνήμη και Συμβολοσειρές](../chapters/14-scope-strings/)
 
@@ -279,6 +402,14 @@
 - [Σπάσε το PIN](../questions/exams/exam-2023-fall-ex6-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 3 · ★★☆ · programming
 - [Συνένωση Αλφαριθμητικών - join](../questions/exams/exam-2025-jan-q5.md): Εξέταση Ιανουαρίου 2025, Θέμα 5 · ★★☆ · programming
 - [Μεταμορφώσιμες Προτάσεις](../questions/exams/exam-2023-fall-ex5-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 4 · ★★★ · programming
+- [Πού δηλώνονται οι παγκόσμιες μεταβλητές](../questions/kahoot/kahoot-global-declaration.md): Kahoot «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★☆☆ · multiple-choice · 93% σωστές απαντήσεις
+- [Πού αποθηκεύεται το char str[]](../questions/kahoot/kahoot-char-array-storage.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★☆ · multiple-choice · 49% σωστές απαντήσεις
+- [Διαδοχικές strcat](../questions/kahoot/kahoot-strcat-sequence.md): Kahoot «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★☆ · multiple-choice · 60% σωστές απαντήσεις
+- [Η τιμή της strcmp για ίσες συμβολοσειρές](../questions/kahoot/kahoot-strcmp-equal.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
+- [Δύο είδη εμβέλειας](../questions/kahoot/kahoot-two-kinds-of-scope.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★☆ · multiple-choice · 63% σωστές απαντήσεις
+- [Πού αποθηκεύονται οι τοπικές μεταβλητές](../questions/kahoot/kahoot-local-variable-storage.md): Kahoot «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★★ · multiple-choice · 23% σωστές απαντήσεις
+- [Η strcat με τον εαυτό της](../questions/kahoot/kahoot-strcat-self-overflow.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★★ · multiple-choice · 24% σωστές απαντήσεις
+- [strcpy από literal σε πίνακα](../questions/kahoot/kahoot-strcpy-literal-to-array.md): Kahoot «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★★ · multiple-choice · 32% σωστές απαντήσεις
 
 ## [Κεφάλαιο 15: Πολυπλοκότητα και Προεπεξεργαστής](../chapters/15-complexity-preprocessor/)
 
@@ -300,6 +431,14 @@
 - [Κατοπτρικά Πρώτα Τετράγωνα](../questions/homework/hw-2023-hw1-mirror.md): Εργασία 1 (2023-24), Άσκηση 2 · ★★★ · programming
 - [Παραγοντοποίηση ημιπρώτων (factor)](../questions/homework/hw-2024-hw1-factor.md): Εργασία 1 (2024-25), Άσκηση 3 (Bonus) · ★★★ · programming
 - [Δίδυμοι Πρώτοι](../questions/exams/exam-2023-fall-ex7-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 3 · ★★★ · programming
+- [Ορισμός μακροεντολής](../questions/kahoot/kahoot-define-macro.md): Kahoot «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★☆☆ · multiple-choice · 74% σωστές απαντήσεις
+- [Γραμμική αναζήτηση σε αμφιθέατρο n × n](../questions/kahoot/kahoot-seat-search-grid.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★☆☆ · multiple-choice · 75% σωστές απαντήσεις
+- [Τι σημαίνει O(n)](../questions/kahoot/kahoot-big-o-worst-case.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★☆ · multiple-choice · 62% σωστές απαντήσεις
+- [Πολυπλοκότητα μέτρησης bit](../questions/kahoot/kahoot-count-set-bits.md): Kahoot «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★☆ · multiple-choice · 43% σωστές απαντήσεις
+- [Πολυπλοκότητα πολλαπλασιασμού πινάκων](../questions/kahoot/kahoot-matrix-multiplication.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★☆ · multiple-choice · 49% σωστές απαντήσεις
+- [Πολυπλοκότητα O(n² + log n)](../questions/kahoot/kahoot-big-o-sum-of-terms.md): Kahoot «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★★ · multiple-choice · 36% σωστές απαντήσεις
+- [Πολυπλοκότητα μέτρησης ψηφίων](../questions/kahoot/kahoot-count-digits.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★★ · multiple-choice · 38% σωστές απαντήσεις
+- [Η έξοδος του προεπεξεργαστή](../questions/kahoot/kahoot-preprocessor-output.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★★ · multiple-choice · 38% σωστές απαντήσεις
 
 ## [Κεφάλαιο 16: Επίλυση Προβλημάτων #2](../chapters/16-problem-solving-2/)
 
@@ -345,6 +484,14 @@
 - [Πλησιάζοντας στον Στόχο](../questions/exams/exam-2023-fall-ex10-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 4 · ★★☆ · programming
 - [Εύρεση μηδενός σε πίνακα](../questions/exams/exam-2024-sep-q3.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 3 · ★★☆ · programming
 - [Η συνάρτηση compute](../questions/exams/exam-2026-jan-q2.md): Εξέταση Ιανουαρίου 2026, Θέμα 2 · ★★☆ · trace
+- [Δυαδική αναζήτηση σε μη ταξινομημένο πίνακα](../questions/kahoot/kahoot-binary-search-unsorted.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★☆☆ · multiple-choice · 94% σωστές απαντήσεις
+- [Πολυπλοκότητα της bubblesort](../questions/kahoot/kahoot-bubblesort-complexity.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★☆☆ · multiple-choice · 75% σωστές απαντήσεις
+- [Αναζήτηση σε μη ταξινομημένο πίνακα](../questions/kahoot/kahoot-linear-vs-binary-search.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) και «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» · ★☆☆ · multiple-choice · 85% σωστές απαντήσεις
+- [Βήματα δυαδικής αναζήτησης σε 2^50 στοιχεία](../questions/kahoot/kahoot-binary-search-steps.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) και «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» · ★★☆ · multiple-choice · 52% σωστές απαντήσεις
+- [Αναζήτηση αριθμημένης θέσης σε αίθουσα](../questions/kahoot/kahoot-find-seat-sorted.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) και «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
+- [Μέση πολυπλοκότητα της quicksort](../questions/kahoot/kahoot-quicksort-average.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★★☆ · multiple-choice · 66% σωστές απαντήσεις
+- [Ταξινόμηση ενός εκατομμυρίου ακεραίων](../questions/kahoot/kahoot-sort-million-ints.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) και «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» · ★★☆ · multiple-choice · 68% σωστές απαντήσεις
+- [Η πιο γρήγορη ταξινόμηση στη χειρότερη περίπτωση](../questions/kahoot/kahoot-sort-worst-case.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★★★ · multiple-choice · 28% σωστές απαντήσεις
 
 ## [Κεφάλαιο 18: Ταξινόμηση και Δεδομένα Εισόδου #2](../chapters/18-sorting-input-2/)
 
@@ -371,6 +518,11 @@
 - [Ταξινομώντας τα Άλματα](../questions/exams/exam-2023-fall-ex15-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 3 · ★★★ · programming
 - [Μίνι Βάση Δεδομένων](../questions/exams/exam-2023-fall-ex2-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 3 · ★★★ · programming
 - [Ταξινόμηση Πακέτων](../questions/exams/exam-2023-fall-ex8-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 4 · ★★★ · programming
+- [stdin και αρχεία](../questions/kahoot/kahoot-stdin-vs-files.md): Kahoot «Δομές + Αρχεία», «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★☆☆ · multiple-choice · 84% σωστές απαντήσεις
+- [Αποτυχία της fopen](../questions/kahoot/kahoot-fopen-failure.md): Kahoot «Δομές + Αρχεία» · ★★☆ · multiple-choice · 50% σωστές απαντήσεις
+- [Ανάγνωση int σε little endian](../questions/kahoot/kahoot-little-endian-read.md): Kahoot «Δομές + Αρχεία» · ★★☆ · multiple-choice · 62% σωστές απαντήσεις
+- [Ο file descriptor του stderr](../questions/kahoot/kahoot-stderr-fd.md): Kahoot «Δομές + Αρχεία», «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★★☆ · multiple-choice · 51% σωστές απαντήσεις
+- [Συνάρτηση σύγκρισης για αύξουσα ταξινόμηση](../questions/kahoot/kahoot-qsort-compare-ascending.md): Kahoot «Ταξινόμηση και Δομές» · ★★★ · multiple-choice · 12% σωστές απαντήσεις
 
 ## [Κεφάλαιο 19: Δομές](../chapters/19-structs/)
 
@@ -386,6 +538,15 @@
 - [Δομές και δείκτες](../questions/labs/lab-lab09-person.md): Εργαστήριο 9, Άσκηση 2 · ★★☆ · programming
 - [Πρωτάθλημα](../questions/exams/exam-2023-fall-ex13-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 3 · ★★★ · programming
 - [World Cup 2026](../questions/exams/exam-2026-jun-q4.md): Εξέταση Ιουνίου 2026, Θέμα 4 · ★★★ · programming
+- [Δικοί μας τύποι](../questions/kahoot/kahoot-custom-types.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★☆☆ · multiple-choice · 81% σωστές απαντήσεις
+- [Δομή χωρίς αρχικοποίηση](../questions/kahoot/kahoot-struct-uninitialized.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★☆☆ · multiple-choice · 74% σωστές απαντήσεις
+- [Σε τι χρησιμεύει το typedef](../questions/kahoot/kahoot-typedef-purpose.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★☆☆ · multiple-choice · 79% σωστές απαντήσεις
+- [Ο τελεστής ->](../questions/kahoot/kahoot-arrow-operator.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
+- [Ανάθεση δομών](../questions/kahoot/kahoot-struct-assignment.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 49% σωστές απαντήσεις
+- [Σύγκριση δομών με ==](../questions/kahoot/kahoot-struct-comparison.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
+- [Μέγεθος δομής και padding](../questions/kahoot/kahoot-struct-padding-size.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 52% σωστές απαντήσεις
+- [Μερική αρχικοποίηση δομής](../questions/kahoot/kahoot-struct-partial-init.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 42% σωστές απαντήσεις
+- [sizeof ενός typedef πίνακα](../questions/kahoot/kahoot-typedef-array-size.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 66% σωστές απαντήσεις
 
 ## [Κεφάλαιο 20: Προχωρημένες Δομές](../chapters/20-advanced-structs/)
 
@@ -401,6 +562,14 @@
 - [Διάσχιση φακέλων](../questions/slides/slides-lec20-folder-iterate.md): Διάλεξη 20, διαφάνεια 35 · ★★☆ · trace
 - [Χρήση ένωσης και μέγεθος](../questions/slides/slides-lec20-union-size.md): Διάλεξη 20, διαφάνεια 19 · ★★☆ · trace
 - [Χάρτης ως γράφος](../questions/slides/slides-lec20-graph-map.md): Διάλεξη 20, διαφάνεια 46 · ★★★ · short-answer
+- [Περιορισμοί πεδίων bit](../questions/kahoot/kahoot-bitfield-limits.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 44% σωστές απαντήσεις
+- [Τιμές απαρίθμησης](../questions/kahoot/kahoot-enum-values.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
+- [Κόμβος με left και right](../questions/kahoot/kahoot-node-binary-tree.md): Kahoot «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 67% σωστές απαντήσεις
+- [Κόμβος με next](../questions/kahoot/kahoot-node-linked-list.md): Kahoot «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 52% σωστές απαντήσεις
+- [Αυτοαναφορική δομή](../questions/kahoot/kahoot-self-referential-struct.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 56% σωστές απαντήσεις
+- [Δομή ή ένωση;](../questions/kahoot/kahoot-struct-vs-union.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 63% σωστές απαντήσεις
+- [Σε τι χρησιμεύει η ένωση](../questions/kahoot/kahoot-union-purpose.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 65% σωστές απαντήσεις
+- [Μέγεθος ένωσης](../questions/kahoot/kahoot-union-size.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★★ · multiple-choice · 36% σωστές απαντήσεις
 
 ## [Κεφάλαιο 21: Λίστες και Δέντρα](../chapters/21-lists-trees/)
 
@@ -414,6 +583,9 @@
 - [Αντιστροφή λίστας](../questions/exams/exam-2024-sep-q5.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 5 · ★★☆ · programming
 - [Μεσαίο Στοιχείο Λίστας](../questions/exams/exam-2025-sep-q4.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 4 · ★★☆ · programming
 - [Ν-οστό Στοιχείο Λίστας](../questions/exams/exam-2026-sep-q4.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 4 · ★★☆ · programming
+- [Ανάγνωση διαγραμμένου στοιχείου](../questions/kahoot/kahoot-list-use-after-free.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★☆☆ · multiple-choice · 92% σωστές απαντήσεις
+- [Εργαλείο για memory leaks](../questions/kahoot/kahoot-valgrind.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★☆☆ · multiple-choice · 86% σωστές απαντήσεις
+- [Εισαγωγή στη μέση λίστας](../questions/kahoot/kahoot-list-insert-middle.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★★ · multiple-choice · 39% σωστές απαντήσεις
 
 ## [Κεφάλαιο 22: Δέντρα](../chapters/22-trees/)
 
@@ -437,6 +609,15 @@
 - [Αθροιστής Δέντρων - sumtree](../questions/exams/exam-2025-jan-q4.md): Εξέταση Ιανουαρίου 2025, Θέμα 4 · ★☆☆ · programming
 - [Reverse Inorder Traversal](../questions/exams/exam-2024-jul-q4.md): Εξέταση Ιουλίου 2024, Θέμα 4 · ★★☆ · programming
 - [Διερμηνέας Αριθμητικών Εκφράσεων - eval](../questions/exams/exam-2026-jan-q4.md): Εξέταση Ιανουαρίου 2026, Θέμα 4 · ★★☆ · programming
+- [Ο καλύτερος αλγόριθμος αναζήτησης](../questions/kahoot/kahoot-best-search-algorithm.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★☆☆ · multiple-choice · 75% σωστές απαντήσεις
+- [Κόμβοι τέλειου δυαδικού δέντρου](../questions/kahoot/kahoot-perfect-tree-nodes.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★☆☆ · multiple-choice · 81% σωστές απαντήσεις
+- [Ταξινομημένη εκτύπωση BST](../questions/kahoot/kahoot-bst-sorted-traversal.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★☆ · multiple-choice · 66% σωστές απαντήσεις
+- [Φύλλα τέλειου δυαδικού δέντρου](../questions/kahoot/kahoot-perfect-tree-leaves.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★☆ · multiple-choice · 45% σωστές απαντήσεις
+- [Κόμβοι δέντρου με n επίπεδα](../questions/kahoot/kahoot-tree-levels-nodes.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★☆ · multiple-choice · 53% σωστές απαντήσεις
+- [Ελάχιστο βάθος δυαδικού δέντρου](../questions/kahoot/kahoot-tree-min-depth.md): Kahoot «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 47% σωστές απαντήσεις
+- [BFS σε τέλειο δυαδικό δέντρο](../questions/kahoot/kahoot-bfs-perfect-tree.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★★ · multiple-choice · 37% σωστές απαντήσεις
+- [Χειρότερη περίπτωση αναζήτησης σε BST](../questions/kahoot/kahoot-bst-worst-case.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★★ · multiple-choice · 29% σωστές απαντήσεις
+- [Αποτίμηση δέντρου εκφράσεων](../questions/kahoot/kahoot-expression-tree-eval.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★★ · multiple-choice · 35% σωστές απαντήσεις
 
 ## [Κεφάλαιο 23: Οργάνωση Κώδικα](../chapters/23-code-organization/)
 

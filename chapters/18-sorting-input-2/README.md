@@ -820,6 +820,14 @@ Number: 42
 - [Μίνι Βάση Δεδομένων](../../questions/exams/exam-2023-fall-ex2-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 3 · ★★★ · programming
 - [Ταξινόμηση Πακέτων](../../questions/exams/exam-2023-fall-ex8-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 4 · ★★★ · programming
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Συνάρτηση σύγκρισης για αύξουσα ταξινόμηση](../../questions/kahoot/kahoot-qsort-compare-ascending.md): Kahoot «Ταξινόμηση και Δομές» · ★★★ · multiple-choice · 12% σωστές απαντήσεις
+- [Αποτυχία της fopen](../../questions/kahoot/kahoot-fopen-failure.md): Kahoot «Δομές + Αρχεία» · ★★☆ · multiple-choice · 50% σωστές απαντήσεις
+- [Ο file descriptor του stderr](../../questions/kahoot/kahoot-stderr-fd.md): Kahoot «Δομές + Αρχεία», «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★★☆ · multiple-choice · 51% σωστές απαντήσεις
+- [Ανάγνωση int σε little endian](../../questions/kahoot/kahoot-little-endian-read.md): Kahoot «Δομές + Αρχεία» · ★★☆ · multiple-choice · 62% σωστές απαντήσεις
+- [stdin και αρχεία](../../questions/kahoot/kahoot-stdin-vs-files.md): Kahoot «Δομές + Αρχεία», «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★☆☆ · multiple-choice · 84% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Περιστροφή Πίνακα](../../questions/exams/exam-2023-fall-ex1-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 3 · ★★☆ · programming (κεφ. 12)
@@ -833,6 +841,9 @@ Number: 42
 - [Το Δικό σου Chatbot (jason)](../../questions/homework/hw-2024-hw2-jason.md): Εργασία 2 (2024-25), Άσκηση 3 · ★★★ · programming (κεφ. 14)
 - [Χτίζοντας έναν Χιονάνθρωπο](../../questions/exams/exam-2023-fall-ex3-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 4 · ★★★ · programming (κεφ. 16)
 - [Μετρώντας τα Αστέρια - stars](../../questions/exams/exam-2025-jan-q6.md): Εξέταση Ιανουαρίου 2025, Θέμα 6 · ★★★ · programming (κεφ. 16)
+- [Μέση πολυπλοκότητα της quicksort](../../questions/kahoot/kahoot-quicksort-average.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★★☆ · multiple-choice · 66% σωστές απαντήσεις (κεφ. 17)
+- [Ταξινόμηση ενός εκατομμυρίου ακεραίων](../../questions/kahoot/kahoot-sort-million-ints.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) και «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» · ★★☆ · multiple-choice · 68% σωστές απαντήσεις (κεφ. 17)
+- [Η πιο γρήγορη ταξινόμηση στη χειρότερη περίπτωση](../../questions/kahoot/kahoot-sort-worst-case.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★★★ · multiple-choice · 28% σωστές απαντήσεις (κεφ. 17)
 - [Αναζήτηση χρήστη στο Instagram](../../questions/slides/slides-lec17-instagram.md): Διάλεξη 17: Δυαδική Αναζήτηση και Ταξινόμηση, διαφάνεια 19 · ★☆☆ · short-answer (κεφ. 17)
 - [Η συνάρτηση swap](../../questions/slides/slides-lec17-swap.md): Διάλεξη 17: Δυαδική Αναζήτηση και Ταξινόμηση, διαφάνεια 21 · ★☆☆ · programming (κεφ. 17)
 - [Πρωτάθλημα](../../questions/exams/exam-2023-fall-ex13-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 3 · ★★★ · programming (κεφ. 19)

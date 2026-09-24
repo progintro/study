@@ -648,6 +648,23 @@ int main(int argc, char **argv) {
 
 - [Ο Στέργιος Ξαναχτυπά](../../questions/exams/exam-2026-jan-q6.md): Εξέταση Ιανουαρίου 2026, Θέμα 6 · ★☆☆ · trace
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Δείκτης στη μέση πίνακα](../../questions/kahoot/kahoot-ptr-index-offset.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★★★ · short-answer · 12% σωστές απαντήσεις
+- [Άθροισμα δύο δεικτών](../../questions/kahoot/kahoot-pointer-addition.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★★★ · multiple-choice · 28% σωστές απαντήσεις
+- [Δείκτης συν 4 σε δεκαεξαδικό](../../questions/kahoot/kahoot-pointer-plus-int-hex.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★★ · multiple-choice · 31% σωστές απαντήσεις
+- [Αύξηση μέσω δείκτη](../../questions/kahoot/kahoot-deref-increment.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★★★ · multiple-choice · 34% σωστές απαντήσεις
+- [Η έκφραση *&x](../../questions/kahoot/kahoot-deref-address-of.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★★★ · multiple-choice · 35% σωστές απαντήσεις
+- [Αύξηση του ίδιου του δείκτη](../../questions/kahoot/kahoot-pointer-increment-scalar.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★★★ · multiple-choice · 37% σωστές απαντήσεις
+- [Μέγεθος δεικτών](../../questions/kahoot/kahoot-pointer-size.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★☆ · multiple-choice · 46% σωστές απαντήσεις
+- [Αλλαγή μεταβλητής και δείκτης](../../questions/kahoot/kahoot-variable-increment-via-ptr.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
+- [Διεύθυνση και ακέραιος](../../questions/kahoot/kahoot-address-is-integer.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★☆ · multiple-choice · 50% σωστές απαντήσεις
+- [Η τιμή του ptr + 1](../../questions/kahoot/kahoot-pointer-plus-one.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★☆ · multiple-choice · 61% σωστές απαντήσεις
+- [Η τιμή του NULL](../../questions/kahoot/kahoot-null-is-zero.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★★☆ · multiple-choice · 65% σωστές απαντήσεις
+- [*(ptr + 4) και ptr[4]](../../questions/kahoot/kahoot-ptr-offset-equals-index.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★☆ · multiple-choice · 67% σωστές απαντήσεις
+- [Πίνακας και δείκτης](../../questions/kahoot/kahoot-array-vs-pointer.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★☆☆ · multiple-choice · 71% σωστές απαντήσεις
+- [Τερματισμός αναδρομής](../../questions/kahoot/kahoot-recursion-terminates.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Πίνακες και συναρτήσεις](../../questions/labs/lab-lab06-judgement.md): Εργαστήριο 6, Άσκηση 4 · ★☆☆ · programming (κεφ. 10)

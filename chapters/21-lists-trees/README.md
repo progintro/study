@@ -780,11 +780,23 @@ Tree pop_last(List * list) {  // προϋπόθεση: *list != NULL
 - [Μεσαίο Στοιχείο Λίστας](../../questions/exams/exam-2025-sep-q4.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 4 · ★★☆ · programming
 - [Ν-οστό Στοιχείο Λίστας](../../questions/exams/exam-2026-sep-q4.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 4 · ★★☆ · programming
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Εισαγωγή στη μέση λίστας](../../questions/kahoot/kahoot-list-insert-middle.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★★ · multiple-choice · 39% σωστές απαντήσεις
+- [Εργαλείο για memory leaks](../../questions/kahoot/kahoot-valgrind.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★☆☆ · multiple-choice · 86% σωστές απαντήσεις
+- [Ανάγνωση διαγραμμένου στοιχείου](../../questions/kahoot/kahoot-list-use-after-free.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★☆☆ · multiple-choice · 92% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Debugging](../../questions/exams/exam-2023-fall-ex1-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 4 · ★★☆ · debug (κεφ. 13)
+- [Κόμβος με left και right](../../questions/kahoot/kahoot-node-binary-tree.md): Kahoot «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 67% σωστές απαντήσεις (κεφ. 20)
+- [Κόμβος με next](../../questions/kahoot/kahoot-node-linked-list.md): Kahoot «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 52% σωστές απαντήσεις (κεφ. 20)
 - [Η διάταξη των φακέλων](../../questions/slides/slides-lec20-list-layout.md): Διάλεξη 20, διαφάνεια 38 · ★☆☆ · short-answer (κεφ. 20)
 - [Αθροιστής Δέντρων - sumtree](../../questions/exams/exam-2025-jan-q4.md): Εξέταση Ιανουαρίου 2025, Θέμα 4 · ★☆☆ · programming (κεφ. 22)
+- [Ο καλύτερος αλγόριθμος αναζήτησης](../../questions/kahoot/kahoot-best-search-algorithm.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★☆☆ · multiple-choice · 75% σωστές απαντήσεις (κεφ. 22)
+- [BFS σε τέλειο δυαδικό δέντρο](../../questions/kahoot/kahoot-bfs-perfect-tree.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★★ · multiple-choice · 37% σωστές απαντήσεις (κεφ. 22)
+- [Ταξινομημένη εκτύπωση BST](../../questions/kahoot/kahoot-bst-sorted-traversal.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★☆ · multiple-choice · 66% σωστές απαντήσεις (κεφ. 22)
+- [Χειρότερη περίπτωση αναζήτησης σε BST](../../questions/kahoot/kahoot-bst-worst-case.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★★ · multiple-choice · 29% σωστές απαντήσεις (κεφ. 22)
 - [Δυαδικά δένδρα](../../questions/labs/lab-lab09-tree.md): Εργαστήριο 9, Άσκηση 4 · ★★☆ · programming (κεφ. 22)
 - [Ποιος αλγόριθμος αναζήτησης είναι καλύτερος;](../../questions/slides/slides-lec22-best-search.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 38 (διάλεξη 21: διαφάνεια 60) · ★☆☆ · short-answer (κεφ. 22)
 - [Έλεγχος ύπαρξης σε δυαδικό δέντρο αναζήτησης](../../questions/slides/slides-lec22-bst-exists.md): Διαλέξεις 21–22: Δέντρα, διαφάνειες 35–37 (διάλεξη 21: διαφάνειες 57–59) · ★☆☆ · programming (κεφ. 22)

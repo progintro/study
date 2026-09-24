@@ -558,6 +558,14 @@ switch (month) {
 
 - [Η Μέθοδος Newton-Raphson](../../questions/homework/hw-2023-hw1-newton.md): Εργασία 1 (2023-24), Άσκηση 1 · ★★☆ · programming
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [while(--i) με i = 0](../../questions/kahoot/kahoot-while-predecrement-overflow.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★★ · multiple-choice · 17% σωστές απαντήσεις
+- [for χωρίς συνθήκη με break](../../questions/kahoot/kahoot-for-break-overflow.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★★★ · multiple-choice · 36% σωστές απαντήσεις
+- [switch και if-else](../../questions/kahoot/kahoot-switch-if-else-equivalence.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★★☆ · multiple-choice · 46% σωστές απαντήσεις
+- [Μόνο με break σταματά ένας βρόχος;](../../questions/kahoot/kahoot-break-only-way.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★☆☆ · multiple-choice · 94% σωστές απαντήσεις
+- [goto στο διαγώνισμα](../../questions/kahoot/kahoot-goto-in-exam.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★☆☆ · multiple-choice · 97% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Συνεργασία (Prisoner's Dilemma)](../../questions/homework/hw-2023-hw2-coop.md): Εργασία 2 (2023-24), Άσκηση 3 · ★★☆ · programming (κεφ. 9)

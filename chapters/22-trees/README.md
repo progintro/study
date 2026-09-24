@@ -654,6 +654,18 @@ $ ./bfs
 - [Reverse Inorder Traversal](../../questions/exams/exam-2024-jul-q4.md): Εξέταση Ιουλίου 2024, Θέμα 4 · ★★☆ · programming
 - [Διερμηνέας Αριθμητικών Εκφράσεων - eval](../../questions/exams/exam-2026-jan-q4.md): Εξέταση Ιανουαρίου 2026, Θέμα 4 · ★★☆ · programming
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Χειρότερη περίπτωση αναζήτησης σε BST](../../questions/kahoot/kahoot-bst-worst-case.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★★ · multiple-choice · 29% σωστές απαντήσεις
+- [Αποτίμηση δέντρου εκφράσεων](../../questions/kahoot/kahoot-expression-tree-eval.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★★ · multiple-choice · 35% σωστές απαντήσεις
+- [BFS σε τέλειο δυαδικό δέντρο](../../questions/kahoot/kahoot-bfs-perfect-tree.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★★ · multiple-choice · 37% σωστές απαντήσεις
+- [Φύλλα τέλειου δυαδικού δέντρου](../../questions/kahoot/kahoot-perfect-tree-leaves.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★☆ · multiple-choice · 45% σωστές απαντήσεις
+- [Ελάχιστο βάθος δυαδικού δέντρου](../../questions/kahoot/kahoot-tree-min-depth.md): Kahoot «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 47% σωστές απαντήσεις
+- [Κόμβοι δέντρου με n επίπεδα](../../questions/kahoot/kahoot-tree-levels-nodes.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★☆ · multiple-choice · 53% σωστές απαντήσεις
+- [Ταξινομημένη εκτύπωση BST](../../questions/kahoot/kahoot-bst-sorted-traversal.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★★☆ · multiple-choice · 66% σωστές απαντήσεις
+- [Ο καλύτερος αλγόριθμος αναζήτησης](../../questions/kahoot/kahoot-best-search-algorithm.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★☆☆ · multiple-choice · 75% σωστές απαντήσεις
+- [Κόμβοι τέλειου δυαδικού δέντρου](../../questions/kahoot/kahoot-perfect-tree-nodes.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★☆☆ · multiple-choice · 81% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Γενεαλογικό δέντρο](../../questions/slides/slides-lec20-family-tree.md): Διάλεξη 20, διαφάνεια 43 · ★☆☆ · short-answer (κεφ. 20)

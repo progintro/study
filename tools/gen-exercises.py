@@ -30,6 +30,7 @@ KINDS = {  # directory -> (front-matter kind, heading in a chapter)
     "labs": ("lab", "Από τα εργαστήρια"),
     "homework": ("homework", "Από τις εργασίες"),
     "exams": ("exam", "Από τα θέματα εξετάσεων"),
+    "kahoot": ("kahoot", "Από τα Kahoot στο αμφιθέατρο"),
 }
 TYPES = {"programming", "short-answer", "trace", "debug", "multiple-choice", "tooling"}
 STARS = {1: "★☆☆", 2: "★★☆", 3: "★★★"}
@@ -93,6 +94,12 @@ def lint(qs, only=None):
             err(f"difficulty must be 1, 2 or 3, found {m.get('difficulty')!r}")
         if m.get("type") not in TYPES:
             err(f"type must be one of {sorted(TYPES)}, found {m.get('type')!r}")
+        if m.get("kind") == "kahoot":
+            st = m.get("stats") or {}
+            if not isinstance(st.get("responses"), int) or not isinstance(st.get("accuracy"), int):
+                err("kahoot questions need stats.responses and stats.accuracy (integers)")
+            if not m.get("answer"):
+                err("kahoot questions need the correct answer in `answer`")
         if "## Υπόδειξη" not in q["body"]:
             err("missing «## Υπόδειξη» section")
         if not q["body"].split("## Υπόδειξη")[0].strip():
@@ -105,7 +112,9 @@ def entry(q, rel):
     link = f"{rel}{q['path']}"
     years = (m.get("source") or {}).get("years")
     src = m["source"]["title"]
-    return f"- [{m['title']}]({link}): {src} · {STARS[m['difficulty']]} · {m['type']}"
+    stats = m.get("stats") or {}
+    acc = f" · {stats['accuracy']}% σωστές απαντήσεις" if "accuracy" in stats else ""
+    return f"- [{m['title']}]({link}): {src} · {STARS[m['difficulty']]} · {m['type']}{acc}"
 
 
 def chapter_block(n, qs):
@@ -116,7 +125,8 @@ def chapter_block(n, qs):
         out += ["Δεν υπάρχουν ακόμα ασκήσεις για αυτό το κεφάλαιο.", ""]
     for d, (kind, heading) in KINDS.items():
         group = sorted((q for q in primary if q["meta"]["kind"] == kind),
-                       key=lambda q: (q["meta"]["difficulty"], q["meta"]["id"]))
+                       key=lambda q: ((q["meta"].get("stats") or {}).get("accuracy", 0), q["meta"]["id"])
+                       if kind == "kahoot" else (q["meta"]["difficulty"], q["meta"]["id"]))
         if group:
             out += [f"### {heading}", ""] + [entry(q, "../../") for q in group] + [""]
     if related:
@@ -198,8 +208,9 @@ def build(qs, lectures, outdir):
         md += [f"## {label}: {l['title']}", ""]
         for q in group:
             m = q["meta"]
+            acc = f" · {m['stats']['accuracy']}% σωστές" if m.get("stats") else ""
             md += [f"### {m['title']}", "",
-                   f"*{m['source']['title']}* · {STARS[m['difficulty']]} · {m['type']} · `{m['id']}`", ""]
+                   f"*{m['source']['title']}* · {STARS[m['difficulty']]} · {m['type']}{acc} · `{m['id']}`", ""]
             # demote the question's own headings below the ### title
             md += [re.sub(r"^(#+) ", lambda h: "#" * max(4, len(h.group(1)) + 2) + " ", q["body"], flags=re.M), ""]
     open(os.path.join(outdir, "questions.md"), "w", encoding="utf-8").write("\n".join(md))

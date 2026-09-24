@@ -676,9 +676,23 @@ $0 \to 4 \to 47 \to 472$.
 - [Μαγικό Ζευγάρι](../../questions/exams/exam-2023-fall-ex5-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 2 · ★★☆ · programming
 - [Η συνάρτηση paws](../../questions/exams/exam-2026-jun-q2.md): Εξέταση Ιουνίου 2026, Θέμα 2 · ★★☆ · debug
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Διεύθυνση στοιχείου πίνακα char](../../questions/kahoot/kahoot-char-array-address.md): Kahoot «Πίνακες» (διάλεξη 10) · ★★★ · multiple-choice · 19% σωστές απαντήσεις
+- [Χαρακτήρας σε συμβολοσειρά](../../questions/kahoot/kahoot-string-char-index.md): Kahoot «Πίνακες» (διάλεξη 10) · ★★★ · multiple-choice · 27% σωστές απαντήσεις
+- [Διεύθυνση στοιχείου πίνακα int](../../questions/kahoot/kahoot-int-array-address.md): Kahoot «Πίνακες» (διάλεξη 10) · ★★☆ · multiple-choice · 47% σωστές απαντήσεις
+- [Μέγεθος πίνακα int](../../questions/kahoot/kahoot-int-array-bytes.md): Kahoot «Πίνακες» (διάλεξη 10) · ★★☆ · multiple-choice · 49% σωστές απαντήσεις
+- [Δείκτης μέσα σε δείκτη](../../questions/kahoot/kahoot-nested-index.md): Kahoot «Πίνακες» (διάλεξη 10) · ★★☆ · multiple-choice · 69% σωστές απαντήσεις
+- [Αρχικοποίηση με περισσότερες τιμές](../../questions/kahoot/kahoot-excess-initializers.md): Kahoot «Πίνακες» (διάλεξη 10) · ★☆☆ · multiple-choice · 71% σωστές απαντήσεις
+- [Το τελευταίο στοιχείο πίνακα](../../questions/kahoot/kahoot-last-element.md): Kahoot «Πίνακες» (διάλεξη 10) · ★☆☆ · multiple-choice · 81% σωστές απαντήσεις
+- [Ο δείκτης του πρώτου στοιχείου](../../questions/kahoot/kahoot-first-index.md): Kahoot «Πίνακες» (διάλεξη 10) · ★☆☆ · multiple-choice · 82% σωστές απαντήσεις
+- [Αντιγραφή πίνακα με ανάθεση](../../questions/kahoot/kahoot-array-assignment.md): Kahoot «Πίνακες» (διάλεξη 10) · ★☆☆ · multiple-choice · 84% σωστές απαντήσεις
+- [Πρόσβαση εκτός ορίων](../../questions/kahoot/kahoot-out-of-bounds.md): Kahoot «Πίνακες» (διάλεξη 10) · ★☆☆ · multiple-choice · 85% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Γραμμή και Γράμμα](../../questions/exams/exam-2023-fall-ex12-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 1 · ★☆☆ · programming (κεφ. 9)
+- [Δείκτης στη μέση πίνακα](../../questions/kahoot/kahoot-ptr-index-offset.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★★★ · short-answer · 12% σωστές απαντήσεις (κεφ. 11)
 - [Η δική μας atoi](../../questions/slides/slides-lec11-atoi.md): Διάλεξη 11, διαφάνειες 41–42 · ★★☆ · programming (κεφ. 11)
 - [Μέσος όρος πίνακα 100 ακεραίων](../../questions/slides/slides-lec11-average.md): Διάλεξη 11, διαφάνειες 37–38 · ★☆☆ · programming (κεφ. 11)
 - [Θέση στοιχείου σε πίνακα ή -1](../../questions/slides/slides-lec11-find.md): Διάλεξη 11, διαφάνειες 39–40 · ★☆☆ · programming (κεφ. 11)
@@ -690,6 +704,7 @@ $0 \to 4 \to 47 \to 472$.
 - [Εαυτοί Αριθμοί](../../questions/exams/exam-2023-fall-ex12-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 4 · ★★☆ · programming (κεφ. 16)
 - [Μέσος όρος πίνακα και πολυπλοκότητα](../../questions/slides/slides-lec16-average-complexity.md): Διάλεξη 16, διαφάνειες 8–9 · ★☆☆ · programming (κεφ. 16)
 - [Αναζήτηση σε πίνακα και πολυπλοκότητα](../../questions/slides/slides-lec16-find-complexity.md): Διάλεξη 16, διαφάνειες 10 και 15 · ★☆☆ · programming (κεφ. 16)
+- [sizeof ενός typedef πίνακα](../../questions/kahoot/kahoot-typedef-array-size.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 66% σωστές απαντήσεις (κεφ. 19)
 
 <!-- /exercises -->
 

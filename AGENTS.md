@@ -11,6 +11,11 @@ If a student has pointed you here:
   list), Ασκήσεις (exercises), Ερωτήσεις αυτοαξιολόγησης (self-check with answers).
 - **Exercises** have `chapters` (the first is the main one), `topics`, `difficulty`
   (1-3), `type`, a `statement` and a `hint`. There are deliberately **no solutions**.
+- **Kahoot questions** (`kind: kahoot`) were played live in lectures. They also carry
+  `answer` (the correct option, for checking the student's answer — do not reveal it
+  before they answer) and `stats` (`responses`, `accuracy` = % of the class that got
+  it right). Low accuracy marks a common misconception; the «Συχνή παρανόηση» section
+  explains the most popular wrong answer. Good for quizzing and for spotting gaps.
 - **Good ways to help:** quiz the student on a chapter, generate new exercises in the
   style of the bank (same topics and difficulty), explain a concept differently,
   review the student's own code and point to the relevant chapter section.

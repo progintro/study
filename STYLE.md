@@ -186,7 +186,7 @@ and agents read the source. Memory layouts (addresses and contents) stay tables.
 ## The question bank: `questions/`
 
 One question per file, `questions/<kind>/<id>.md`, where kind is `slides`, `labs`,
-`homework` or `exams`.
+`homework`, `exams` or `kahoot`.
 
 ```markdown
 ---
@@ -215,6 +215,7 @@ type: programming
   - `lab-labNN-<file>`
   - `hw-<year>-hwN-<slug>`
   - `exam-<exam-id>-qN`, with a letter suffix for sub-parts if they are separate problems.
+  - `kahoot-<short-slug>`
 - `chapters`: the chapter numbers where the question belongs. **The first one is the
   primary chapter**, where most of the needed material is taught. List others only if
   the question genuinely needs them.
@@ -234,3 +235,25 @@ type: programming
 - If the same problem appeared in more than one year, keep one file and list every
   year in `source.years`, adding the other sources in the body under
   `## Εμφανίσεις`.
+
+### Kahoot questions
+
+`questions/kahoot/` holds the quiz questions played in lectures, with how the class
+did on them. They carry two extra front-matter fields:
+
+```yaml
+kind: kahoot
+type: multiple-choice
+answer: "(*robin).hood"          # the correct option(s), for tools and agents
+stats: {responses: 212, accuracy: 43}   # all plays, % answered correctly
+```
+
+- The statement gives the question and **all the options** as a list. It does
+  **not** say which option is correct. The page shows only the question, the options
+  and the hint; `answer` is machine-readable, for agents that quiz students.
+- Add `## Συχνή παρανόηση` before the hint when one wrong option drew a large share of
+  the answers. Say which misconception it reveals, e.g. "Το 38% επέλεξε `*robin.hood`,
+  ξεχνώντας ότι η `.` έχει μεγαλύτερη προτεραιότητα από το `*`." This is allowed
+  even though it names a wrong option, because it is the point of the data.
+- Leave out questions that depend on a figure or code the export does not include.
+- Keep no player names or per-player data. The stats are aggregates only.

@@ -727,11 +727,23 @@ flowchart TD
 - [Εύρεση μηδενός σε πίνακα](../../questions/exams/exam-2024-sep-q3.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 3 · ★★☆ · programming
 - [Η συνάρτηση compute](../../questions/exams/exam-2026-jan-q2.md): Εξέταση Ιανουαρίου 2026, Θέμα 2 · ★★☆ · trace
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Η πιο γρήγορη ταξινόμηση στη χειρότερη περίπτωση](../../questions/kahoot/kahoot-sort-worst-case.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★★★ · multiple-choice · 28% σωστές απαντήσεις
+- [Αναζήτηση αριθμημένης θέσης σε αίθουσα](../../questions/kahoot/kahoot-find-seat-sorted.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) και «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
+- [Βήματα δυαδικής αναζήτησης σε 2^50 στοιχεία](../../questions/kahoot/kahoot-binary-search-steps.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) και «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» · ★★☆ · multiple-choice · 52% σωστές απαντήσεις
+- [Μέση πολυπλοκότητα της quicksort](../../questions/kahoot/kahoot-quicksort-average.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★★☆ · multiple-choice · 66% σωστές απαντήσεις
+- [Ταξινόμηση ενός εκατομμυρίου ακεραίων](../../questions/kahoot/kahoot-sort-million-ints.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) και «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» · ★★☆ · multiple-choice · 68% σωστές απαντήσεις
+- [Πολυπλοκότητα της bubblesort](../../questions/kahoot/kahoot-bubblesort-complexity.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★☆☆ · multiple-choice · 75% σωστές απαντήσεις
+- [Αναζήτηση σε μη ταξινομημένο πίνακα](../../questions/kahoot/kahoot-linear-vs-binary-search.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) και «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» · ★☆☆ · multiple-choice · 85% σωστές απαντήσεις
+- [Δυαδική αναζήτηση σε μη ταξινομημένο πίνακα](../../questions/kahoot/kahoot-binary-search-unsorted.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★☆☆ · multiple-choice · 94% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Χτίζοντας έναν Χιονάνθρωπο](../../questions/exams/exam-2023-fall-ex3-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 4 · ★★★ · programming (κεφ. 16)
 - [Μετρήσεις Θερμοκρασίας](../../questions/exams/exam-2023-fall-ex14-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 3 · ★★☆ · programming (κεφ. 18)
 - [Ταξινομώντας τα Άλματα](../../questions/exams/exam-2023-fall-ex15-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 3 · ★★★ · programming (κεφ. 18)
+- [Συνάρτηση σύγκρισης για αύξουσα ταξινόμηση](../../questions/kahoot/kahoot-qsort-compare-ascending.md): Kahoot «Ταξινόμηση και Δομές» · ★★★ · multiple-choice · 12% σωστές απαντήσεις (κεφ. 18)
 - [Πρωτάθλημα](../../questions/exams/exam-2023-fall-ex13-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 3 · ★★★ · programming (κεφ. 19)
 - [Μένοντας στις Σωστές Θερμίδες](../../questions/exams/exam-2023-fall-ex14-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 2 · ★★☆ · programming (κεφ. 25)
 - [Η Τριπλέτα Στόχος](../../questions/exams/exam-2024-dec-q3.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 3 · ★★★ · programming (κεφ. 25)

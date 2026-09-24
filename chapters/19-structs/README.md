@@ -553,6 +553,18 @@ flowchart LR
 - [Πρωτάθλημα](../../questions/exams/exam-2023-fall-ex13-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 3 · ★★★ · programming
 - [World Cup 2026](../../questions/exams/exam-2026-jun-q4.md): Εξέταση Ιουνίου 2026, Θέμα 4 · ★★★ · programming
 
+### Από τα Kahoot στο αμφιθέατρο
+
+- [Μερική αρχικοποίηση δομής](../../questions/kahoot/kahoot-struct-partial-init.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 42% σωστές απαντήσεις
+- [Ο τελεστής ->](../../questions/kahoot/kahoot-arrow-operator.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
+- [Ανάθεση δομών](../../questions/kahoot/kahoot-struct-assignment.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 49% σωστές απαντήσεις
+- [Μέγεθος δομής και padding](../../questions/kahoot/kahoot-struct-padding-size.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 52% σωστές απαντήσεις
+- [Σύγκριση δομών με ==](../../questions/kahoot/kahoot-struct-comparison.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
+- [sizeof ενός typedef πίνακα](../../questions/kahoot/kahoot-typedef-array-size.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 66% σωστές απαντήσεις
+- [Δομή χωρίς αρχικοποίηση](../../questions/kahoot/kahoot-struct-uninitialized.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★☆☆ · multiple-choice · 74% σωστές απαντήσεις
+- [Σε τι χρησιμεύει το typedef](../../questions/kahoot/kahoot-typedef-purpose.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★☆☆ · multiple-choice · 79% σωστές απαντήσεις
+- [Δικοί μας τύποι](../../questions/kahoot/kahoot-custom-types.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★☆☆ · multiple-choice · 81% σωστές απαντήσεις
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Πλησιάζοντας στον Στόχο](../../questions/exams/exam-2023-fall-ex10-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 4 · ★★☆ · programming (κεφ. 17)
@@ -560,6 +572,8 @@ flowchart LR
 - [Μετρήσεις Θερμοκρασίας](../../questions/exams/exam-2023-fall-ex14-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 3 · ★★☆ · programming (κεφ. 18)
 - [Ταξινομώντας τα Άλματα](../../questions/exams/exam-2023-fall-ex15-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 3 · ★★★ · programming (κεφ. 18)
 - [Μίνι Βάση Δεδομένων](../../questions/exams/exam-2023-fall-ex2-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 3 · ★★★ · programming (κεφ. 18)
+- [Συνάρτηση σύγκρισης για αύξουσα ταξινόμηση](../../questions/kahoot/kahoot-qsort-compare-ascending.md): Kahoot «Ταξινόμηση και Δομές» · ★★★ · multiple-choice · 12% σωστές απαντήσεις (κεφ. 18)
+- [Δομή ή ένωση;](../../questions/kahoot/kahoot-struct-vs-union.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 63% σωστές απαντήσεις (κεφ. 20)
 - [Συνδεδεμένες λίστες](../../questions/labs/lab-lab09-grades.md): Εργαστήριο 9, Άσκηση 3 · ★★☆ · programming (κεφ. 21)
 - [Η Newton-Raphson Ξαναχτυπά! (Bonus)](../../questions/homework/hw-2023-hw3-fractal.md): Εργασία 3 (2023-24), Άσκηση 2 (Bonus) και 2.1 (Bonus) · ★★★ · programming (κεφ. 23)
 
