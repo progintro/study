@@ -1,0 +1,39 @@
+lecture: 23
+pages: 27
+outline:
+  - {pages: "1", section: "(τίτλος)"}
+  - {pages: "2", section: "(ανακοινώσεις: Εργασία #2)"}
+  - {pages: "3-4", section: "(προηγούμενη φορά / σήμερα)"}
+  - {pages: "5-9", section: "Το μέγεθος ενός προγράμματος: γραμμές κώδικα"}
+  - {pages: "10", section: "Πόσες γραμμές γράψαμε στις εργασίες"}  # in Παραδείγματα
+  - {pages: "11-12", section: "Λύση #1: όλος ο κώδικας σε ένα αρχείο"}
+  - {pages: "13", section: "Αφαίρεση και διάσπαση σε υποπροβλήματα"}
+  - {pages: "14", section: "Λύση #2: οργάνωση σε πολλά αρχεία"}
+  - {pages: "15", section: "Εξαρτήσεις: διεπαφή και υλοποίηση"}
+  - {pages: "16", section: "Χωριστή μεταγλώττιση και σύνδεση"}
+  - {pages: "17", section: "Τα στάδια της μεταγλώττισης"}
+  - {pages: "18", section: "Γιατί χωριστά: η μεταγλώττιση είναι χρονοβόρα"}
+  - {pages: "19-21", section: "Η μεταγλώττιση είναι γραμμική: πρωτότυπα συναρτήσεων"}
+  - {pages: "22-24", section: "Ο προσδιοριστής const"}
+  - {pages: "25", section: "const σε ορισμούς συναρτήσεων: συμβόλαια"}
+  - {pages: "26-27", section: "(αναφορές / κλείσιμο)"}
+pointers:
+  - {page: 4, text: "Makefiles: προσκεκλημένη διάλεξη με τον βοηθό του μαθήματος Πέτρο Πλαστήρα (make.pdf, κεφάλαιο 26-make)"}
+  - {page: 14, text: "openssl: https://github.com/openssl/openssl/tree/master"}
+  - {page: 18, text: "Makefiles: https://en.wikipedia.org/wiki/Make_(software)"}
+  - {page: 26, text: "Από τις διαφάνειες του κ. Σταματόπουλου (K04) έχει πλέον καλυφθεί όλη η ύλη"}
+  - {page: 26, text: "Lines of Code Written: https://medium.com/modern-stack/how-much-computer-code-has-been-written-c8c03100f459"}
+  - {page: 26, text: "Linux Kernel surpasses 40MLOC: https://www.stackscale.com/blog/linux-kernel-surpasses-40-million-lines-code/"}
+takeaways_slide: null
+issues:
+  - "No explicit key-takeaways slide; Κύρια σημεία were derived from the lecture content."
+  - "p. 2: announcement of Εργασία #2 (deadline 23:59, Σάββατο 10 Ιανουαρίου 2026) is course policy, not put in the chapter."
+  - "p. 4 lists 'Δηλώσεις μεταβλητών και συναρτήσεων', but the slides only show function prototypes. The chapter section «Δηλώσεις και ορισμοί σε πολλά αρχεία» (definition vs declaration, extern, static at file scope, \"\" vs <> in #include, include guards) comes from notes 04-functions «Εμβέλεια και χρόνος ζωής μεταβλητών», notes 10-preprocessor and the lab10 appendix, not from the slides."
+  - "p. 15 shows the dependency picture and asks 'Με τι μοιάζουν αυτές οι εξαρτήσεις;' without an answer on the slide; the chapter answers 'a graph' (the one make reads). Interpretation, not stated on the slide."
+  - "p. 16: the nm-style boxes (T / U print_err) are schematic; the chapter's nm transcript (addresses, grep) was reconstructed from a local run (macOS clang prints _print_err with a leading underscore; the Linux form is given)."
+  - "p. 17: the compilation diagram shows three unlabeled stages inside gcc with outputs 'Preprocessed File', 'Object File', 'Linked Binary File'; the stage names (προεπεξεργασία, μεταγλώττιση, σύνδεση) are supplied by the chapter."
+  - "p. 19: the slide's gcc prints a warning for the implicit declaration; gcc 14+ (verified locally with gcc-14) makes it an error, so the chapter mentions both and marks the block does-not-compile."
+  - "p. 22-23: 'const char const * msg_ptr' has both const before the '*', so it is only a pointer to const char (gcc -Wall warns 'duplicate const declaration specifier', verified with gcc-14). The slide probably meant 'const char * const'; the chapter explains the difference with a table of const placements that is not on the slides."
+  - "p. 24: the Segmentation fault happens because a const global array is placed in read-only memory (.rodata); the slides only show the crash, the explanation is the chapter's. Verified locally (bus error / signal on macOS)."
+  - "Συχνά λάθη: 'undefined reference', 'multiple definition' and 'No such file or directory' for <err.h> are standard gcc/ld messages (and faq.md #97, #98), not shown on the slides."
+  - "p. 10: the question 'Πόσες γραμμές γράψαμε στις εργασίες μας;' is answered on the slide (sloccount output), so no question file was written for it. p. 19-21 and 23-24 are demonstrations rather than posed questions; they were turned into the debug/trace questions slides-lec23-implicit-declaration and slides-lec23-const-violations."

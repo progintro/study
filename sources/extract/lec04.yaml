@@ -1,0 +1,58 @@
+lecture: 4
+pages: 44
+outline:
+  - {pages: "1-4", section: "Pair programming"}  # title, announcements, recap, agenda
+  - {pages: "5-7", section: "Pair programming"}
+  - {pages: "8-9", section: "Πρόγραμμα υπολογισμού βαθμολογίας"}  # in Παραδείγματα
+  - {pages: "10", section: "Ορίσματα της main: argc, argv και atoi"}
+  - {pages: "11-12", section: "Version control"}
+  - {pages: "13-19", section: "Git και GitHub"}
+  - {pages: "15-18", section: "Ο κύκλος του git βήμα προς βήμα"}  # in Παραδείγματα
+  - {pages: "20", section: "Κατηγοριοποίηση των τελεστών"}
+  - {pages: "21-22", section: "Τελεστής και τελεστέος"}
+  - {pages: "23-24", section: "Κατηγοριοποίηση των τελεστών"}
+  - {pages: "25", section: "Αριθμητικοί τελεστές"}
+  - {pages: "26", section: "Συγκριτικοί τελεστές"}
+  - {pages: "27", section: "Λογικοί τελεστές"}
+  - {pages: "28-30", section: "Bitwise τελεστές"}
+  - {pages: "31", section: "Τελεστής συνθήκης"}
+  - {pages: "32-33", section: "Τελεστής μετατροπής και σιωπηρή μετατροπή τύπων"}
+  - {pages: "34", section: "Τελεστής ανάθεσης"}
+  - {pages: "35", section: "Συνδυαστικοί τελεστές ανάθεσης"}
+  - {pages: "36", section: "Τελεστές αύξησης και μείωσης"}
+  - {pages: "37", section: "Τελεστής παράθεσης"}
+  - {pages: "38", section: "Πρόγραμμα υπολογισμού βαθμολογίας"}  # revisited before precedence
+  - {pages: "39-41", section: "Προτεραιότητα και προσεταιριστικότητα"}
+  - {pages: "42-44", section: "Προτεραιότητα και προσεταιριστικότητα"}  # Kahoot, next time, closing
+pointers:
+  - {page: 5, text: "Wikipedia: Software development, Computer programmer, Source code, Code review (links in the pair programming definition)"}
+  - {page: 6, text: "Jeff Dean quote (https://www.brainyquote.com/authors/jeff-dean-quotes)"}
+  - {page: 9, text: "Comment in the grade program: https://progintro.github.io (grading rules)"}
+  - {page: 13, text: "Wikipedia: Git (https://en.wikipedia.org/wiki/Git)"}
+  - {page: 13, text: "GitHub: https://github.com/"}
+  - {page: 15, text: "git clone git@github.com:progintro/hw0-barbouni-2005.git; SSH key and configuration as in Φυλλάδιο 1 του εργαστηρίου (lab01, Βήμα 6)"}
+  - {page: 23, text: "Wikipedia: Arity (https://en.wikipedia.org/wiki/Arity)"}
+  - {page: 37, text: "Wikipedia: Comma operator (https://en.wikipedia.org/wiki/Comma_operator)"}
+  - {page: 43, text: "Σημειώσεις κ. Σταματόπουλου: όλα μέχρι τη σελίδα 43 (K04)"}
+  - {page: 43, text: "Type conversion (https://www.geeksforgeeks.org/type-conversion-c/)"}
+  - {page: 43, text: "List of operators (https://www.tutorialspoint.com/cprogramming/c_operators.htm)"}
+  - {page: 43, text: "lvalues and rvalues (https://en.wikipedia.org/wiki/Value_(computer_science))"}
+  - {page: 43, text: "Precedence and associativity (https://en.cppreference.com/w/c/language/operator_precedence)"}
+  - {page: 43, text: "Προαιρετικό: Git Cheat Sheet (https://education.github.com/git-cheat-sheet-education.pdf)"}
+  - {page: 43, text: "Προαιρετικό: Git Tutorial (https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)"}
+  - {page: 43, text: "Jeff and Sanjay (https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge)"}
+takeaways_slide: null
+issues:
+  - "No explicit key-takeaways slide; the red callouts (p. 20 'Don't forget to add your files', p. 27 zero = false, p. 32 truncation not rounding, p. 40 use parentheses) were treated as takeaways."
+  - "p. 2 announces that 'η Εργασία' (hw0) comes out that day; not a concept, omitted. p. 3 recap and p. 4 agenda are not separate sections."
+  - "p. 7 (volunteers) and p. 8-9 are live coding; the grade program on p. 9/38 is 'μια περσινή λύση'. Its terminal output (79, usage message) was produced by compiling it locally, not transcribed from the slides."
+  - "p. 8 asks to express a 'Κανόνας Αναπροσαρμογής' (homework capped at final_exam + 3); the slides give no solution, so the chapter leaves it as an exercise (slides-lec04-grade-adjustment)."
+  - "Audience questions on pp. 21, 25, 26, 27, 28, 31 ('Τι τύπου τελεστές είναι;', 'τι τύπο θα είχαν αν ήταν συναρτήσεις;') are answered in the chapter from standard C, not from the slides."
+  - "p. 28: the ~ examples (~0xF0 -> 0x0F, ~0x05 -> 0xFA) hold for 8 bits only; on a 32-bit int the result is 0xFFFFFF0F / 0xFFFFFFFA (verified locally). The chapter keeps the slide values with '(σε 8 bit)' and explains."
+  - "p. 33: the implicit conversion hierarchy is an image (from GeeksforGeeks) listing bool, char, short int, int, unsigned int, long, unsigned, long long, float, double, long double; 'unsigned' after 'long' is kept as shown (presumably unsigned long). The real C rules (integer promotions, usual arithmetic conversions) are more nuanced; not expanded."
+  - "p. 41: the precedence table is an image; transcribed as a Markdown table. sizeof is highlighted in red on the slide, no explanation given."
+  - "p. 42 is only 'Kahoot Time!'; the quiz questions are not in the slides, so none were transcribed."
+  - "p. 43 says to cover the notes 'μέχρι την σελίδα 43'; per k04-map.tsv K04 p. 43 is 02-types-operators «Εντολές αντικατάστασης, τελεστές και παραστάσεις» (pp. 35-44)."
+  - "p. 13 '~90% των χρηστών/project' is transcribed as is; no source is given on the slide."
+  - "The gcc -Wall warning text for 'if (x = 42)' in «Συχνά λάθη» comes from knowledge of gcc, not verified locally (local gcc is clang). The git error messages (Permission denied (publickey), rejected fetch first) come from faq.md #96 and #106."
+  - "The comma pitfall (x = 12, 42 assigns 12) and (int)-42.67 == -42 are standard C, verified locally, not from the slides."

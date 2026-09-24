@@ -1,0 +1,54 @@
+lecture: 1
+pages: 43
+outline:
+  - {pages: "1-2", section: "Γιατί C;"}              # title, announcements (lab starts Monday, map of the building)
+  - {pages: "3", section: "Γιατί C;"}
+  - {pages: "4-5", section: "Αρχιτεκτονική υπολογιστικών συστημάτων"}  # recap of lecture 0 and today's agenda
+  - {pages: "6-8", section: "Αρχιτεκτονική υπολογιστικών συστημάτων"}
+  - {pages: "9", section: "Λειτουργικά συστήματα"}
+  - {pages: "10", section: "Linux"}
+  - {pages: "11-12", section: "Γραφική διεπαφή και γραμμή εντολών"}
+  - {pages: "13", section: "Kernel και shell"}
+  - {pages: "14-17", section: "Εκτέλεση προγραμμάτων από το shell"}
+  - {pages: "18-19", section: "Πρόσβαση στη γραμμή εντολών"}
+  - {pages: "20-24", section: "Απομακρυσμένη σύνδεση με ssh"}
+  - {pages: "25-26", section: "Βασικές εντολές"}
+  - {pages: "27-28", section: "Το σύστημα αρχείων"}
+  - {pages: "29-30", section: "Εντολές χειρισμού αρχείων"}
+  - {pages: "31", section: "Coreutils και άλλα εργαλεία"}
+  - {pages: "32-34", section: "Μεταγλωττιστές"}
+  - {pages: "35-40", section: "Ανατομία του Hello World"}
+  - {pages: "41-43", section: "Ανατομία του Hello World"}  # Kahoot, reading for next time, closing
+pointers:
+  - {page: 3, text: "Quora: Why do universities still teach C and C++? (https://qr.ae/p2wHA3)"}
+  - {page: 9, text: "Wikipedia: Operating system (https://en.wikipedia.org/wiki/Operating_system)"}
+  - {page: 10, text: "Wikipedia: Unix (https://en.wikipedia.org/wiki/Unix)"}
+  - {page: 10, text: "Linux kernel source, 'γλώσσα C' link (https://github.com/torvalds/linux)"}
+  - {page: 11, text: "Terminal vs console vs shell vs command line (https://www.geeksforgeeks.org/difference-between-terminal-console-shell-and-command-line/)"}
+  - {page: 18, text: "Lab machines linuxXY.di.uoa.gr via ssh / putty; WSL 2; Google Cloud console"}
+  - {page: 19, text: "Touch typing: https://blindtyping.com/, https://www.typingclub.com/, https://www.typingstudy.com/"}
+  - {page: 27, text: "Wikipedia: Computer file (https://en.wikipedia.org/wiki/Computer_file)"}
+  - {page: 27, text: "Wikipedia: Everything is a file (https://en.wikipedia.org/wiki/Everything_is_a_file)"}
+  - {page: 31, text: "Wikipedia: GNU Core Utilities (https://en.wikipedia.org/wiki/GNU_Core_Utilities)"}
+  - {page: 31, text: "coreutils source, 'γραμμένα σε C' link (https://github.com/coreutils/coreutils)"}
+  - {page: 31, text: "apt and command line editors: 'Περισσότερα στα εργαστήρια'"}
+  - {page: 32, text: "Wikipedia: GNU Compiler Collection (https://en.wikipedia.org/wiki/GNU_Compiler_Collection)"}
+  - {page: 38, text: "Συναρτήσεις: next time"}
+  - {page: 42, text: "Σημειώσεις κ. Σταματόπουλου σελίδες 58-60, 98-99 (printed page numbers = K04 PDF pages 59-61 and 99-100)"}
+  - {page: 42, text: "Εγκαταστήστε WSL και τρέξτε τις εντολές της διάλεξης"}
+  - {page: 42, text: "Προαιρετικό: The Unix Programming Environment (https://scis.uohyd.ac.in/~apcs/itw/UNIXProgrammingEnvironment.pdf)"}
+  - {page: 42, text: "Προαιρετικό #2: Common Linux Interview Questions (https://www.geeksforgeeks.org/linux-interview-questions/)"}
+takeaways_slide: null   # p. 42 is a reading/to-do list, not a takeaways slide
+issues:
+  - "p. 42 cites Stamatopoulos' notes 'σελίδες 58-60, 98-99'. These match the page numbers printed on K04.pdf, which are one less than the PDF page numbers used by k04-map.tsv: printed 58-60 = PDF 59-61 (04-functions «Δομή ενός προγράμματος C – Συναρτήσεις»: main, return value to the OS) and printed 98-99 = PDF 99-100 (06-memory-strings «Ορίσματα γραμμής εντολών»). PDF pages 58 and 98 (goto; arrays of pointers) do not fit the lecture, so the chapter cites K04 59-61 and 99-100."
+  - "No explicit key-takeaways slide; Κύρια σημεία are synthesised from the definition slides (9, 14, 27, 32, 35-40)."
+  - "p. 41 is only 'Kahoot Time!'; the quiz questions are not in the slides, none transcribed."
+  - "pp. 20-24 (DevOps story: CloudWatch alert, maps zooming to a data center, 'ssh is the remote control', volunteer demo 'ssh ubuntu@...' with a demo password) are mostly images; kept the point in words. The demo host is elided in the slide and the demo password was deliberately not copied into the chapter."
+  - "p. 25 shows `uname -a` output starting with lowercase 'linux linux14 ...'; transcribed as on the slide (real uname prints the kernel name 'Linux')."
+  - "p. 29-30: the hello.c shown by `cat` has no `return 0;` (62 bytes), while pp. 33-40 show helloworld.c with `return 0;`. p. 34 compiles hello.c although p. 33's comment names the file helloworld.c. Kept both as on the slides."
+  - "p. 25 lists `last` output as '…' and `top`, `man`, `ps` without output (interactive); the chapter's one-line descriptions of these commands are standard Unix knowledge, not slide text."
+  - "p. 16 ('Ας τρέξουμε το πρόγραμμα /bin/echo') shows no output; the chapter shows the standard output 'hello good world'. The `echo $?` example (0, and 1 after `return 1;`) is derived from p. 39's text, not a slide transcript."
+  - "p. 11 calls CLI also Terminal/Console/Shell and links an article on their differences; the chapter does not detail those differences beyond the kernel/shell distinction of p. 13."
+  - "Relative/absolute paths, '~' and case sensitivity are not defined on the slides (they appear implicitly in pp. 28-30 prompts and `cp ../hello.c .`); definitions follow lab01's introduction."
+  - "Common-mistake compiler/shell messages (command not found, Directory not empty, expected ';' before 'return') are standard gcc/bash/coreutils wording, not verified locally (local gcc is clang)."
+  - "Lab mapping: lab00 steps 4-5, 7 and lab01 steps 1-3, 5 practise this lecture; lab01 step 4 (permissions) and step 6 / info.txt (git) go beyond it (git is chapter 4)."

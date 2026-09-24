@@ -1,0 +1,43 @@
+lecture: 19
+pages: 47
+outline:
+  - {pages: "1", section: "(τίτλος)"}
+  - {pages: "2", section: "(ανακοινώσεις: φροντιστηριακό στο Linux Lab, όχι ώρες γραφείου)"}
+  - {pages: "3-5", section: "(προηγούμενη φορά / σήμερα / εισαγωγή)"}
+  - {pages: "6-7", section: "Γιατί χρειαζόμαστε δομές"}
+  - {pages: "8-9", section: "Δήλωση τύπου δομής"}
+  - {pages: "10", section: "Μεταβλητές τύπου δομής"}
+  - {pages: "11-13", section: "Προσπέλαση πεδίων με τον τελεστή `.`"}
+  - {pages: "14-16", section: "Αρχικοποίηση δομής"}
+  - {pages: "17-21", section: "Η δομή στη μνήμη"}
+  - {pages: "22-28", section: "Μέγεθος δομής και padding"}
+  - {pages: "29-31", section: "Ανάθεση δομών"}
+  - {pages: "32", section: "Σύγκριση δομών"}
+  - {pages: "33-37", section: "Το `typedef`"}
+  - {pages: "38-41", section: "Ένθετες δομές"}
+  - {pages: "42-45", section: "Δείκτες σε δομές και ο τελεστής `->`"}
+  - {pages: "46-47", section: "(για την επόμενη φορά / κλείσιμο)"}
+pointers:
+  - {page: 24, text: "memory alignment: https://en.wikipedia.org/wiki/Data_structure_alignment"}
+  - {page: 46, text: "Διαφάνειες (σημειώσεις) κ. Σταματόπουλου σελ. 109-119, 126 (K04): 07-structs «Απαριθμήσεις», «Δομές», «Εύρεση τριγώνων μεγίστου και ελαχίστου εμβαδού», «Δημιουργία νέων ονομάτων τύπων»"}
+  - {page: 46, text: "struct: https://en.wikipedia.org/wiki/Struct_(C_programming_language)"}
+  - {page: 46, text: "C structures: https://www.geeksforgeeks.org/structures-c/"}
+  - {page: 46, text: "initializations: https://en.cppreference.com/w/c/language/struct_initialization"}
+  - {page: 46, text: "typedef: https://en.wikipedia.org/wiki/Typedef"}
+  - {page: 46, text: "Padding: https://www.geeksforgeeks.org/structure-member-alignment-padding-and-data-packing/"}
+  - {page: 46, text: "alignment: https://en.wikipedia.org/wiki/Data_structure_alignment"}
+  - {page: 46, text: "Η δομή FILE (~216 bytes): https://codebrowser.dev/glibc/glibc/libio/bits/types/struct_FILE.h.html#_IO_FILE"}
+  - {page: 46, text: "Arrow operator: https://www.geeksforgeeks.org/arrow-operator-in-c-c-with-examples/"}
+takeaways_slide: null         # p. 28 «Συνοψίζοντας» only summarises sizeof; p. 46 is a reading list
+issues:
+  - "p. 2: announcements (tutorial session in Linux Lab Tue 9 Dec 9-11pm, no office hours that day) are course logistics; not put in the chapter."
+  - "p. 4: 'Σήμερα' lists «Επίλυση Προβλημάτων», but no problem-solving slides follow in this PDF (deck ends at p. 47 after pointers to structs)."
+  - "p. 17-21: the memory diagram places grade at byte 31260 right after year (no padding), total 268. This matches gcc -m32 (p. 21 output 268); on x86-64/arm64 sizeof(struct student) is 272 with grade at offset 264. The chapter states both."
+  - "p. 39: sizeof(prod) = 40 is the 64-bit value (8-byte char *); the slide shows no -m32 flag here. With -m32 it would be 36. Chapter says 40 with the 64-bit breakdown."
+  - "p. 35-37: the typedef'd student uses `int year` but printf still uses %u; harmless but a format mismatch. The chapter keeps `unsigned int` in compiled examples."
+  - "p. 12-13: the program on the slide omits #include lines and the struct definition; the chapter adds <stdio.h>, <string.h> and the struct so it compiles."
+  - "p. 30: the first line of output (-29387249 0) is uninitialized garbage and varies per run; transcribed as on the slide."
+  - "p. 42-45: the program never frees d3 or checks malloc for NULL; the chapter notes this and links chapter 13."
+  - "p. 46: the lecture cites notes pages 109-119 and 126. k04-map.tsv maps 109 to «Απαριθμήσεις» (not taught in this lecture), 118-120 to «Εύρεση τριγώνων…», 126 to «Αυτο-αναφορικές δομές» and 127 to «Δημιουργία νέων ονομάτων τύπων». Page 126 was presumably meant for typedef; the chapter lists «Δημιουργία νέων ονομάτων τύπων» as 126-127."
+  - "Chapter adds from the notes / standard C, not stated on the slides: designated initializers (only linked on p. 46), declaring variables together with the type, why *p.x needs parentheses (precedence of . over *), and `.` left associativity. Compiler error messages in «Συχνά λάθη» were checked with gcc 14."
+  - "Question files: slides-lec19-many-students merges the rhetorical questions of p. 6 and p. 7; slides-lec19-sizeof-student merges p. 20-21 with the «Συνοψίζοντας» question on p. 28."

@@ -1,0 +1,39 @@
+lecture: 5
+pages: 35
+outline:
+  - {pages: "1-6", section: "Κατηγορίες τελεστών"}
+  - {pages: "7", section: "Αριθμητικοί τελεστές"}
+  - {pages: "8", section: "Συγκριτικοί τελεστές"}
+  - {pages: "9", section: "Λογικοί τελεστές"}
+  - {pages: "10-12", section: "Bitwise τελεστές"}
+  - {pages: "13", section: "Ο τελεστής συνθήκης"}
+  - {pages: "14", section: "Ο τελεστής μετατροπής (cast)"}
+  - {pages: "15", section: "Σιωπηρή μετατροπή τύπων"}
+  - {pages: "16", section: "Ο τελεστής ανάθεσης"}
+  - {pages: "17", section: "Συνδυαστικοί τελεστές ανάθεσης"}
+  - {pages: "18", section: "Τελεστές αύξησης και μείωσης"}
+  - {pages: "19", section: "Ο τελεστής παράθεσης (κόμμα)"}
+  - {pages: "20", section: "Εκφράσεις και εντολές"}
+  - {pages: "21-24", section: "Προτεραιότητα και προσεταιριστικότητα"}
+  - {pages: "25", section: "Εκφράσεις και εντολές"}
+  - {pages: "26-28", section: "Κατηγορίες εντολών"}
+  - {pages: "29-35", section: "Ροή ελέγχου: οι εντολές if και if-else"}
+pointers:
+  - {page: 2, text: "Εργασία 0: repositories progintro/hw0-yourusername και yourusername/yourusername.github.io (http://yourusername.github.io)"}
+  - {page: 19, text: "Wikipedia: Comma operator (https://en.wikipedia.org/wiki/Comma_operator)"}
+  - {page: 34, text: "Σημειώσεις κ. Σταματόπουλου: όλα μέχρι τη σελίδα 62 (K04)"}
+  - {page: 34, text: "Wikipedia: Control flow (https://en.wikipedia.org/wiki/Control_flow)"}
+  - {page: 34, text: "Wikipedia: Conditional statements (https://en.wikipedia.org/wiki/Conditional_(computer_programming))"}
+takeaways_slide: null
+issues:
+  - "No explicit key-takeaways slide; the red callouts on p. 9 (0 is false, any non-zero is true), p. 22 (use parentheses when unsure) and p. 31 (the if parentheses are mandatory) were treated as takeaways."
+  - "p. 2 (announcements: hw0 pages question, Coding Club meeting) and p. 3 (recap: pair programming, git, operators) are course logistics/recap and are not in the chapter."
+  - "p. 15: the implicit-conversion image lists 'bool, char, short int, int, unsigned int, long, unsigned, long long, float, double, long double'. The 'unsigned' after 'long' was read as 'unsigned long' in the chapter's diagram. The slide's rule 'convert to the larger operand' is a simplification of C's usual arithmetic conversions (integer promotion of char/short is not mentioned in the slides or the chapter)."
+  - "p. 10: the ~ examples (~0xF0 = 0x0F, ~0x05 = 0xFA) only hold for 8-bit values; the chapter says so and gives 0xFFFFFFFA for a 32-bit int (verified with gcc/clang)."
+  - "p. 20: the grade program is shown without #include lines; the chapter adds stdio.h and stdlib.h. The sample runs (83 for 85/75/95, 7 for 9/9/9) were produced locally, not taken from the slides."
+  - "Answers to audience questions (pp. 7-10, 13, 14, 21, 27, 33) are not in the slides; the chapter's answers are standard C, verified by compiling where numeric."
+  - "Additions beyond the slides, from standard C: short-circuit evaluation of && and ||, truncation toward zero for negative / and %, % only for integers, the `x = 12, 42;` pitfall, undefined behaviour when modifying a variable twice in one expression, and the gcc -Wall warning texts in «Συχνά λάθη» (written from knowledge of gcc; local compiler is clang)."
+  - "pp. 26-33 (statement categories, empty/expression/compound statements, if, if-else and the max example with its three questions) are repeated almost verbatim in lecture 6 (lec06 pp. 5-13). The chapter covers them briefly and links to chapter 6. The two slide questions they contain (p. 27 x/y/z trace, p. 33 if-else max) already exist as slides-lec06-expression-statements and slides-lec06-if-else-max, so no lec05 duplicates were written; consider adding chapter 5 to those files' chapters (the ++/-- trace is taught here)."
+  - "p. 7 question 2 ('Τι τύπο θα είχαν οι τελεστές αν ήταν συναρτήσεις;') is interpreted as asking for a function prototype such as int add(int, int)."
+  - "p. 34 says to cover the notes 'μέχρι την σελίδα 62'; interpreted as K04 page 62, as in lec06.yaml."
+  - "Chapter length is ~725 lines, above the 350-550 target, mainly because of the four operator tables and the full precedence table (p. 24)."

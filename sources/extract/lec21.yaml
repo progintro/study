@@ -1,0 +1,47 @@
+lecture: 21
+pages: 65
+outline:
+  - {pages: "1", section: "(τίτλος)"}
+  - {pages: "2", section: "(ανακοινώσεις: διάλεξη 15/12 στο Α2 για δέντρα, διασχίσεις και ΤΝ· έρχεται η Εργασία #2)"}
+  - {pages: "3-4", section: "(προηγούμενη φορά / σήμερα)"}
+  - {pages: "5-7", section: "Απλά συνδεδεμένη λίστα"}
+  - {pages: "8", section: "Βασικές λειτουργίες με λίστες"}
+  - {pages: "9-10", section: "Βασικές λειτουργίες με λίστες"}   # is_empty program -> Παραδείγματα «Ένα πρώτο πρόγραμμα: is_empty»
+  - {pages: "11-16", section: "Εισαγωγή στην αρχή της λίστας"}  # code/output -> Παραδείγματα «Εισαγωγή και τύπωμα»
+  - {pages: "17-20", section: "Μήκος λίστας: επανάληψη και αναδρομή"}
+  - {pages: "21-25", section: "Αναζήτηση και αφαίρεση στοιχείου"}  # code -> Παραδείγματα «Αναζήτηση: find», «Αφαίρεση: delete»
+  - {pages: "26", section: "Πίνακες ή λίστες;"}
+  - {pages: "27-31", section: "Δυαδικό δέντρο"}
+  - {pages: "32-36", section: "Τύποι δυαδικών δέντρων"}
+  - {pages: "37", section: "Ν-αδικά δέντρα"}
+  - {pages: "38-42", section: "Βασικές λειτουργίες με δυαδικά δέντρα"}  # depth program -> Παραδείγματα «Βάθος δέντρου»
+  - {pages: "43-51", section: "Διάσχιση κατά βάθος (DFS)"}  # traversals -> Παραδείγματα «Οι τρεις διασχίσεις DFS»
+  - {pages: "52-53", section: "Αναζήτηση σε δυαδικό δέντρο"}
+  - {pages: "54-56", section: "Διάσχιση κατά πλάτος (BFS)"}  # code -> Παραδείγματα «BFS με λίστα από κόμβους δέντρου»
+  - {pages: "57-59", section: "Δυαδικό δέντρο αναζήτησης (BST)"}
+  - {pages: "60-63", section: "DFS ή BFS;"}
+  - {pages: "64-65", section: "(για την επόμενη φορά / κλείσιμο)"}
+pointers:
+  - {page: 64, text: "Διαφάνειες κ. Σταματόπουλου σελ. 120-135 (K04): 07-structs «Αυτο-αναφορικές δομές» (120-125), «Δημιουργία νέων ονομάτων τύπων» (126), «Ενώσεις και πεδία bit» (127); 08-lists-trees «Διαχείριση συνδεδεμένων λιστών» (128-131), «Διαχείριση δυαδικών δέντρων» (132-135)"}
+  - {page: 64, text: "Linked List: https://en.wikipedia.org/wiki/Linked_list"}
+  - {page: 64, text: "Binary Tree Problems: http://cslibrary.stanford.edu/110/BinaryTrees.pdf"}
+  - {page: 64, text: "Tree traversal: https://en.wikipedia.org/wiki/Tree_traversal"}
+  - {page: 64, text: "Depth-first search: https://en.wikipedia.org/wiki/Depth-first_search"}
+  - {page: 64, text: "Breadth-first search: https://en.wikipedia.org/wiki/Breadth-first_search"}
+  - {page: 64, text: "Binary Search Tree: https://en.wikipedia.org/wiki/Binary_search_tree"}
+  - {page: 64, text: "Visualization: https://www.cs.usfca.edu/~galles/visualization/BST.html"}
+  - {page: 64, text: "Αφηρημένοι Τύποι Δεδομένων (ΑΤΔ): https://el.wikipedia.org/wiki/Αφηρημένος_τύπος_δεδομένων"}
+takeaways_slide: null   # p. 64 is a reading list, not a takeaways slide; Κύρια σημεία derived from content
+issues:
+  - "Link texts on p. 64 were matched to URLs from pdftohtml -xml by order; the mapping is unambiguous but not verified online."
+  - "p. 2: announcements (joint lecture on Mon 15/12 in A2; Εργασία #2 coming) are course logistics and were only alluded to in the chapter (Σύνοψη mentions Εργασία #2)."
+  - "p. 17, 40, 52, 58: title-only build slides (blank bodies) preceding the code reveals; no content lost."
+  - "p. 22: find prints pointers with %x (gcc -Wall warns, truncates to 32 bits on 64-bit); output '161862c0' transcribed as on the slide; the chapter recommends %p. The find program on p. 21 uses insert without defining it (defined on p. 13); the chapter marks that block with '....'."
+  - "p. 28-29: slides define depth (root to leaves) and height (leaves to root) of the whole tree, both 2; they do not distinguish per-node depth/height. Level (p. 31) counts nodes, root = level 1."
+  - "p. 42, 50, 53, 59: complexities O(logn) for space (and time in BST exists) assume a perfect/balanced tree (p. 42 says so explicitly for depth); the chapter adds that a degenerate tree gives O(n)."
+  - "p. 55-56: pop_last is used but never defined, and List would need to hold Tree instead of int (the slide asks this as a question). The chapter gives a pop_last and the changed node type; the full program was compiled and printed '5 7 1 2 9' (BFS order of 5 (7 (2, 9), 1)), which the slides do not show."
+  - "p. 55 names the list 'worklist', p. 56 'frontier'; same code."
+  - "p. 60-63: questions (DFS vs BFS, 1 PB storage, maze shortest path, max element) are left open on the slides; the chapter's «DFS ή BFS;» section answers the maze/max ones in line with faq2.md #119-120."
+  - "p. 37: the N-ary tree example is a tic-tac-toe game tree image with scores +10/0/-10; described in words only."
+  - "p. 38: insert/delete for trees are 'μόνοι σας' (exercise); question slides-lec21-tree-insert-delete; the hint points to BST insertion as in lab09 tree.c addtree."
+  - "Chapter length is ~790 lines, above the 350-550 target, because the lecture has 65 slides with many complete programs (all kept)."

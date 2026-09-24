@@ -1,0 +1,44 @@
+lecture: 20
+pages: 49
+outline:
+  - {pages: "1", section: "(τίτλος)"}
+  - {pages: "2", section: "(ανακοινώσεις: προθεσμία Εργασίας #1, φροντιστήριο Linux Lab, Εργασία #2)"}
+  - {pages: "3-4", section: "(προηγούμενη φορά / σήμερα)"}
+  - {pages: "5-6", section: "Πεδία bit"}
+  - {pages: "7-11", section: "Αναπαράσταση πεδίων bit στη μνήμη"}
+  - {pages: "12-14", section: "Εύρος τιμών και ανάθεση σε πεδία bit"}
+  - {pages: "15", section: "Περιορισμοί των πεδίων bit"}
+  - {pages: "16-18", section: "Ενώσεις"}
+  - {pages: "19-22", section: "Μέγεθος και κοινή μνήμη της ένωσης"}
+  - {pages: "23-28", section: "Απαριθμήσεις"}
+  - {pages: "29-30", section: "Αυτοαναφορά"}
+  - {pages: "31-37", section: "Αυτοαναφορικές δομές"}
+  - {pages: "38-41", section: "Απλά συνδεδεμένη λίστα"}
+  - {pages: "42-43", section: "Αυτοαναφορικές δομές"}
+  - {pages: "44-45", section: "Δυαδικό δέντρο"}
+  - {pages: "46-47", section: "Γράφοι και συστήματα αρχείων"}
+  - {pages: "48-49", section: "(για την επόμενη φορά / κλείσιμο)"}
+pointers:
+  - {page: 29, text: "Self-Reference: https://en.wikipedia.org/wiki/Self-reference"}
+  - {page: 30, text: "Επιμενίδης: https://en.wikipedia.org/wiki/Epimenides_paradox"}
+  - {page: 48, text: "Διαφάνειες κ. Σταματόπουλου σελ. 108, 120-135 (K04): 07-structs «Απαριθμήσεις» έως 08-lists-trees «Διαχείριση δυαδικών δέντρων»"}
+  - {page: 48, text: "Bit fields: https://www.geeksforgeeks.org/bit-fields-c/"}
+  - {page: 48, text: "Bit fields reference: https://en.cppreference.com/w/cpp/language/bit_field"}
+  - {page: 48, text: "Unions: https://en.cppreference.com/w/c/language/union"}
+  - {page: 48, text: "Enums: https://www.geeksforgeeks.org/enumeration-enum-c/"}
+  - {page: 48, text: "Linked List: https://en.wikipedia.org/wiki/Linked_list"}
+  - {page: 48, text: "Binary Tree: https://en.wikipedia.org/wiki/Binary_tree"}
+takeaways_slide: null         # p. 48 is a reading assignment, not a takeaways slide
+issues:
+  - "p. 2: announcements (Εργασία #1 deadline 'την Τετάρτη', tutorial in Linux Lab Tuesday 9 Dec 9-11, Εργασία #2 release) are course policy and were left out of the chapter."
+  - "p. 48: 'σελίδες 108, 120-135' of the K04 slides. By k04-map.tsv p. 108 is 06-memory-strings «Πρόσθεση πολυψήφιων αριθμών» and p. 120 is «Εύρεση τριγώνων...»; the matching sections are p. 109 «Απαριθμήσεις» and 121-128 (07-structs) plus 129-135 (08-lists-trees). Possibly an off-by-one in the slide; the chapter cites the mapped sections (109, 121-128, 129-136)."
+  - "p. 11: the bit picture draws the byte as '1 001 1010' with registered leftmost. On gcc/x86-64 the actual byte is 0xA3 (registered is the least significant bit). The chapter shows the three bit groups in a table and says the bit order is up to the compiler."
+  - "p. 14: callout writes '2 + 7 % 8 = 1 % 8'; meant (2 + 7) mod 8 = 1. The chapter writes it with parentheses."
+  - "p. 7-10: the int/char bit-field and plain-char versions are separate programs all named struct student_status (./bitfields, ./bitfields2 used twice: output 1 on p. 9/11 and 3 on p. 10). The chapter combines them into one program with three struct names; the outputs 4 / 1 / 3 are from the slides and verified with gcc."
+  - "p. 15: the compiler messages are gcc's; clang words them differently ('invalid application of sizeof to bit-field', 'address of bit-field requested')."
+  - "p. 19-22: the union output (66 B / 67 C) relies on little-endian byte order and on a1.i's upper bytes being 0 from the first assignment; the chapter explains this (not stated on the slide)."
+  - "p. 37: memory picture shows the strings as \"hw0\", \"thanos\", \"newton\" without the trailing slash used in the code; cosmetic, the program output uses the slashes."
+  - "p. 33-37: hw1 is declared but unused (gcc -Wall warns); kept as on the slides."
+  - "p. 46-47: open design questions with no answer on the slides; turned into question files (graph-map, filesystem-children) with hints only. The graph edge weights are read from the picture (A-B 20, A-C 42, A-D 35, B-C 30, B-D 34, C-D 12); the two diagonals' labels (30 near C, 35 near D) were assigned by position."
+  - "Chapter length is ~685 lines, above the 350-550 target: the lecture has seven complete programs with outputs, all kept."
+  - "Συχνά λάθη mentions that a 1-bit plain int bit-field is signed under gcc (values 0 and -1): general C fact, not in the slides."

@@ -1,0 +1,52 @@
+lecture: 11
+pages: 50
+outline:
+  - {pages: "1", section: "(τίτλος)"}
+  - {pages: "2", section: "(ανακοινώσεις: η Εργασία #1 έρχεται την επόμενη εβδομάδα)"}
+  - {pages: "3-4", section: "(προηγούμενη φορά / σήμερα)"}
+  - {pages: "5-9", section: "Η μνήμη και οι διευθύνσεις"}
+  - {pages: "10-11", section: "Ο τελεστής `&`: η διεύθυνση μιας μεταβλητής"}
+  - {pages: "12-14", section: "Ο τύπος δείκτη"}
+  - {pages: "15-16", section: "Αρχικοποίηση ενός δείκτη"}
+  - {pages: "17-18", section: "Ο τελεστής `sizeof`"}
+  - {pages: "19", section: "Η ειδική τιμή `NULL`"}
+  - {pages: "20-21", section: "Αποαναφορά: ο τελεστής `*`"}
+  - {pages: "22", section: "Μη έγκυροι δείκτες"}
+  - {pages: "23", section: "Οι τελεστές `*` και `&` είναι συμπληρωματικοί"}
+  - {pages: "24", section: "Τι τυπώνει: αναθέσεις μέσω δεικτών (Παραδείγματα)"}
+  - {pages: "25-28", section: "Πράξεις με δείκτες"}
+  - {pages: "29-30", section: "Αναφορά σε στοιχεία πίνακα μέσω δείκτη (Παραδείγματα)"}
+  - {pages: "31-32", section: "Δείκτες και πίνακες: `*(ptr + n)` και `ptr[n]`"}
+  - {pages: "33", section: "Διαφορές πινάκων και δεικτών"}
+  - {pages: "34-35", section: "Πώς τυπώνω μόνο το `\"World\\n\"`; (Παραδείγματα)"}
+  - {pages: "36-38", section: "Μέσος όρος ενός πίνακα 100 ακεραίων (Παραδείγματα)"}
+  - {pages: "39-40", section: "Αναζήτηση στοιχείου σε πίνακα (Παραδείγματα)"}
+  - {pages: "41-42", section: "Η δική μας `atoi` (Παραδείγματα)"}
+  - {pages: "43-48", section: "Αναδρομή"}
+  - {pages: "44-46", section: "Παραγοντικό από τη γραμμή εντολών (Παραδείγματα)"}
+  - {pages: "49-50", section: "(για την επόμενη φορά / κλείσιμο)"}
+pointers:
+  - {page: 19, text: "The billion dollar mistake: https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/"}
+  - {page: 49, text: "Σημειώσεις κ. Σταματόπουλου σελ. 73-103 (για αυτή και την επόμενη διάλεξη): 05-pointers-arrays «Δείκτες» έως 06-memory-strings «Πολυδιάστατοι πίνακες»"}
+  - {page: 49, text: "Pointer tutorial [1]: https://www.w3schools.com/c/c_pointers.php"}
+  - {page: 49, text: "Pointer tutorial [2]: https://www.tutorialspoint.com/cprogramming/c_pointers.htm"}
+  - {page: 49, text: "Pointer tutorial [3]: https://www.geeksforgeeks.org/c-pointers/"}
+  - {page: 49, text: "Pointer tutorial [4]: https://www.programiz.com/c-programming/c-pointers"}
+takeaways_slide: null          # p. 47 (definition of recursion) and p. 49 (reading) are not takeaways slides
+issues:
+  - "Read tool could not render the PDF (no poppler for it); pages were rendered with pdftoppm -r 110 and read as PNGs. Link URLs recovered with pdftohtml -xml (xref warning, links intact)."
+  - "p. 2: announcement 'Η Εργασία #1 έρχεται την επόμενη εβδομάδα!' (course policy, not put in the chapter)."
+  - "p. 8-11, 15, 21, 27: memory diagrams draw the int 42 with its value in the last byte (103), i.e. big-endian order; the chapter notes this and points to chapter 12 (endianness)."
+  - "p. 15-16, 27-28: slides print addresses with %d (e.g. '100, 200', '104', '149') using illustrative small addresses; the chapter keeps the outputs and recommends %p. p. 18 prints sizeof with %d; chapter recommends %zu."
+  - "p. 16, 28: text says 'Λέμε ότι ο pointer δείχνει στην μεταβλητή x' but the variable is c (copy-paste slip); p. 27 subtitle about '*' is copied from p. 21 though the slide is about ++pointer. Chapter uses the correct wording."
+  - "p. 18: no answer shown on the slides; chapter states 8 8 8 on a 64-bit system (4 on 32-bit)."
+  - "p. 24: no answer shown on the slides; the chapter's worked answer '200 100 100' is derived by tracing."
+  - "p. 26: formula written as 'pointer = (int)pointer + N * sizeof(τύπος)'; the (int) cast would truncate a 64-bit address, so the chapter states the rule in words (address moves by N * sizeof(τύπος) bytes)."
+  - "p. 25: slides list 'subtraction of two pointers' and 'comparison' without explanation; the chapter adds from notes «Δείκτες» that these are meaningful only within the same block/array."
+  - "p. 31: 'Μας θυμίζει κάτι;' is rhetorical and answered on p. 32; no question file written for it."
+  - "p. 33: slide says '&a == &a[0]'; true as an address value, though the types differ (int (*)[100] vs int *). Chapter keeps the slide's claim phrased as 'has the address of the first element' without going into the type."
+  - "p. 38: average() returns sum / 100 with integer division; chapter points it out. p. 42: 'Τι μπορεί να πάει στραβά;' has no answer on the slides; the chapter's list (non-digits, overflow, missing '\\0', clash with stdlib atoi) is our own."
+  - "p. 45: the program calls atoi(argv[1]) with stdlib.h included, i.e. the library atoi, not the one from p. 42."
+  - "p. 46: the call-chain diagram ends '2 * factorial(1) -> 1', skipping factorial(0); the chapter draws the full chain down to factorial(0) and counts 5 recursive calls for factorial(5). Answers to the three questions are not on the slides: overflow from 13! upward (20! = -2102132736 checked), N recursive calls, and non-termination/stack exhaustion for negative input."
+  - "p. 48: xkcd 'tail recursion is its own reward' plus a recursive screenshot; kept only the point ('recursion must terminate, write correct base cases')."
+  - "Chapter adds from the notes: array parameters are passed as a pointer to the first element (05-pointers-arrays «Πίνακες»)."

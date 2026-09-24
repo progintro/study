@@ -1,0 +1,55 @@
+lecture: 10
+pages: 53
+outline:
+  - {pages: "1", section: "(τίτλος)"}
+  - {pages: "2", section: "(ανακοινώσεις / διευκρινίσεις: κενή διαφάνεια)"}
+  - {pages: "3-4", section: "(προηγούμενη φορά / σήμερα)"}
+  - {pages: "5", section: "Η `getinteger` με `getchar` (Παραδείγματα)"}
+  - {pages: "6-8", section: "Η συνάρτηση `scanf`"}
+  - {pages: "9-11", section: "Γιατί η `scanf` θέλει `&`"}
+  - {pages: "12-14", section: "Η τιμή επιστροφής της `scanf`"}
+  - {pages: "15-16", section: "Πολλά ορίσματα και κενοί χαρακτήρες"}
+  - {pages: "17", section: "Η `getinteger` με `getchar` (Παραδείγματα)"}
+  - {pages: "18", section: "Συχνότητες γραμμάτων με πίνακα (Παραδείγματα)"}
+  - {pages: "19-27", section: "Γιατί χρειαζόμαστε πίνακες: ο γρίφος με τα αρκουδάκια"}
+  - {pages: "28-29", section: "Δήλωση πίνακα"}
+  - {pages: "30-34", section: "Ο πίνακας στη μνήμη"}
+  - {pages: "35", section: "Χρήση στοιχείων πίνακα"}
+  - {pages: "36", section: "Αρχικοποίηση πίνακα"}
+  - {pages: "37-38", section: "Εύρεση μέγιστου στοιχείου: `find_max` (Παραδείγματα)"}
+  - {pages: "39", section: "Ο πίνακας στη μνήμη"}
+  - {pages: "40", section: "Δήλωση πίνακα"}
+  - {pages: "41", section: "Πίνακας χαρακτήρων (string)"}
+  - {pages: "42", section: "Οι πίνακες δεν ανατίθενται"}
+  - {pages: "43", section: "Πού είναι χρήσιμοι οι πίνακες"}
+  - {pages: "44", section: "Πρόσβαση εκτός ορίων"}
+  - {pages: "45-46", section: "Μέσος όρος (Παραδείγματα)"}
+  - {pages: "47-48", section: "Αναζήτηση στοιχείου: `find` (Παραδείγματα)"}
+  - {pages: "49-50", section: "Η `atoi`: από string σε ακέραιο (Παραδείγματα)"}
+  - {pages: "51-52", section: "(για την επόμενη φορά / κλείσιμο)"}
+  - {pages: "53", section: "(άσχετη διαφάνεια: The Iron Triangle of Project Management)"}
+pointers:
+  - {page: 6, text: "man scanf"}
+  - {page: 51, text: "Σημειώσεις κ. Σταματόπουλου σελ. 73-103 (K04), για αυτήν και την επόμενη διάλεξη: 05-pointers-arrays «Δείκτες» έως 06-memory-strings"}
+  - {page: 51, text: "Array (data type): https://en.wikipedia.org/wiki/Array_(data_type)"}
+  - {page: 51, text: "Array as a data structure: https://en.wikipedia.org/wiki/Array_(data_structure)"}
+  - {page: 51, text: "Array Programming: https://en.wikipedia.org/wiki/Array_programming"}
+  - {page: 51, text: "Play with C Strings: https://www.w3schools.com/c/c_strings.php"}
+  - {page: 51, text: "Buffers: https://en.wikipedia.org/wiki/Data_buffer"}
+  - {page: 51, text: "Memoization: https://en.wikipedia.org/wiki/Memoization"}
+takeaways_slide: null         # p. 51 is a reading assignment, not a takeaways slide
+issues:
+  - "p. 2: 'Ανακοινώσεις / Διευκρινίσεις' slide has a title and no content."
+  - "p. 53: stray slide 'The Iron Triangle of Project Management' (Scope / Cost / Time around Quality) after the closing slide; unrelated to arrays, left out of the chapter."
+  - "p. 14: the second run ('Gimme a number: Square:' then 1068701481) shows no input; the chapter interprets it as EOF (Ctrl-D), which the slide does not state."
+  - "p. 17: the comment 'No need to declare ch as int - no EOF handling' sits next to 'int ch;' (as in the notes); transcribed as is."
+  - "p. 18: the slide shows only a fragment of notes' histogram.c; the chapter wraps it in main and adds a print loop, marked 'not on the slide'."
+  - "p. 23: doors picture with 'Στόχος: ελαχιστοποίηση του κόπου (efficient aka τεμπέλης)'; the chapter's reading (look at each bear once) is inferred, the slide gives no algorithm text."
+  - "p. 27: xkcd 1205 'Is It Worth the Time?' chart with 'Πολύ επαναληπτικό - μπορούμε να γλυτώσουμε χρόνο;' kept only as the point about repetitive code."
+  - "p. 30-34, 39: memory diagram puts bears[0] at bytes 4-7 (array occupies 4-403, as the p. 34 callout says) and bears[2] at 12; kept as is (same as chapter 12)."
+  - "p. 36: initializer lists 100 values; the chapter shows the first 10."
+  - "p. 40: 'Ποιος πίνακας καταλαμβάνει περισσότερη μνήμη;' has no answer on the slides; the self-assessment gives 4096 bytes for double c[512] assuming sizeof(double) == 8 (int a[1024] is also 4096 with 4-byte int, a tie)."
+  - "p. 46: average returns int with integer division sum / 100; the chapter points this out."
+  - "p. 50: 'Τι μπορεί να πάει στραβά;' is not answered on the slides; the chapter lists likely answers (non-digits, sign, int overflow, missing '\\0', clash with stdlib atoi)."
+  - "Added from the notes / general C, not on the slides: passing an array to a function passes the address of its first element (notes «Πίνακες»); the gcc error text for b = a; local arrays hold garbage if uninitialized."
+  - "Chapter length ~665 lines (excluding the generated exercises list), above the 350-550 target: every slide program is kept (scanf x3, getinteger, letfr, find_max, average, find, atoi)."

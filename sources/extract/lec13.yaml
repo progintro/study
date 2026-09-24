@@ -1,0 +1,47 @@
+lecture: 13
+pages: 64
+outline:
+  - {pages: "1", section: "(τίτλος)"}
+  - {pages: "2", section: "(ανακοινώσεις: Εργασία #0 τελείωσε, Εργασία #1, γρίφοι & bonus)"}
+  - {pages: "3-4", section: "(προηγούμενη φορά / σήμερα)"}
+  - {pages: "5-7", section: "Endianness"}
+  - {pages: "8", section: "Η μνήμη οργανώνεται σε bytes"}
+  - {pages: "9", section: "Κατηγορίες μνήμης"}
+  - {pages: "10-15", section: "Η στοίβα (stack)"}
+  - {pages: "16-26", section: "Τι αποθηκεύεται στη στοίβα: το stack frame"}
+  - {pages: "27", section: "Γιατί η αναδρομή πρέπει να τελειώνει"}
+  - {pages: "28-31", section: "Το μέγεθος της στοίβας"}
+  - {pages: "32-33", section: "Ο σωρός (heap)"}
+  - {pages: "34-40", section: "Δυναμικοί πίνακες με malloc"}
+  - {pages: "41-42", section: "Οι τύποι void και void *"}
+  - {pages: "43-46", section: "Ελέγχουμε ΠΑΝΤΑ το αποτέλεσμα της malloc"}
+  - {pages: "47-51", section: "Αποδέσμευση μνήμης με free"}
+  - {pages: "52-55", section: "Αλλαγή μεγέθους με realloc"}
+  - {pages: "56-58", section: "Δυναμικοί δισδιάστατοι πίνακες"}
+  - {pages: "59-60", section: "(για την επόμενη φορά / κλείσιμο)"}
+  - {pages: "61-63", section: "(κουίζ, στα Παραδείγματα: «Κουίζ: ένας πίνακας 5 × 5 μέσα σε συνάρτηση»)"}
+  - {pages: "64", section: "Δυναμικοί δισδιάστατοι πίνακες"}
+pointers:
+  - {page: 35, text: "stdlib.h (για τη malloc)"}
+  - {page: 47, text: "free από το stdlib.h"}
+  - {page: 59, text: "Memory management and heap: https://en.wikipedia.org/wiki/Memory_management"}
+  - {page: 59, text: "Stack memory: https://en.wikipedia.org/wiki/Stack-based_memory_allocation"}
+  - {page: 59, text: "Activation records: https://www.codingninjas.com/studio/library/activation-record-in-compiler-design"}
+  - {page: 59, text: "Dynamic memory allocation in C: https://en.wikipedia.org/wiki/C_dynamic_memory_allocation"}
+  - {page: 59, text: "Memory leaks: https://en.wikipedia.org/wiki/Memory_leak"}
+  - {page: 59, text: "Data segment (https://en.wikipedia.org/wiki/Data_segment) and bss section (https://en.wikipedia.org/wiki/.bss) (another time)"}
+  - {page: 59, text: "Endianness: https://en.wikipedia.org/wiki/Endianness"}
+takeaways_slide: null         # p. 59 is a further-reading list, not a takeaways slide
+issues:
+  - "p. 2: announcements (Εργασία #0 finished; Εργασία #1 deadline Wednesday 10 December 23:59; 'Συζήτηση'; γρίφοι & bonus) are course policy and were not put in the chapter."
+  - "No slide cites K04 / notes pages or labs; the Διάβασμα notes sections (06-memory-strings «Δυναμική δέσμευση μνήμης», «Πολυδιάστατοι πίνακες»; 04-functions «Εμβέλεια και χρόνος ζωής μεταβλητών») and lab07 (array.c, mines.c, my_prog.c) were chosen from the course material."
+  - "p. 5-7 (endianness example) and p. 37-38 (how much memory malloc allocates / sizeof of the pointers prints 8 8 8) repeat lecture 12 slides 41-43 and 39-40. The questions already exist as slides-lec12-endianness and slides-lec12-malloc-sizeof, so no duplicate lec13 question files were written; consider adding lecture 13 to their source/Εμφανίσεις."
+  - "p. 9: global/static memory is marked 'όχι σήμερα'; the chapter describes it in one sentence from the notes (04-functions) and links chapter 14 as a guess for where it is covered."
+  - "p. 17-26: CompTmp1..CompTmp5 are schematic names for compiler temporaries; the chapter says so. The slides' own tolower clashes with the libc builtin (gcc/clang warn 'incompatible redeclaration'); the chapter mentions the warning."
+  - "p. 37: slide prints sizeof with %d; the chapter does not repeat that code (covered in chapter 12 with %zu)."
+  - "p. 44: the literal 900000000000L is 9e11 bytes (900 GB); that the program still prints Hello World relies on malloc returning NULL for an impossible request (behaviour with Linux overcommit may vary); transcribed as shown."
+  - "p. 46, 56: fprintf(stderr, ...)/exit(1) without free(bomb); the chapter's version adds free(bomb) and says so."
+  - "p. 52-55: the slides assign realloc's result straight back to array; the chapter adds (in Συχνά λάθη) that on failure the old block leaks, which is standard C behaviour but not stated in the slides."
+  - "p. 61-63: quiz screenshots with the question 'Θέλω να δημιουργήσω έναν πίνακα 5x5 - αυτή η υλοποίηση είναι:'; the answer options area is blank/cut off, so the options could not be transcribed. On p. 61 the malloc line is cut off at the right edge ('malloc(5 * sizeof(int*)'); the question file closes it as 'malloc(5 * sizeof(int*));'."
+  - "p. 61-64 come after the closing 'Ευχαριστώ' slide (p. 60): appendix slides (quiz, perror variant of the 2D allocation)."
+  - "Chapter length is ~700 lines (above the 350-550 target) because the lecture has 64 slides with many programs; comparable to other chapters (e.g. 05, 10)."

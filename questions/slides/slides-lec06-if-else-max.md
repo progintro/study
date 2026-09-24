@@ -6,7 +6,7 @@ source:
   title: "Διάλεξη 6: Εντολές και Ροή Ελέγχου, διαφάνεια 13"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec06.pdf
   years: [2025]
-chapters: [6]
+chapters: [6, 5]
 topics: [conditionals]
 difficulty: 1
 type: short-answer

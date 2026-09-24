@@ -1,0 +1,41 @@
+lecture: 14
+pages: 46
+outline:
+  - {pages: "1", section: "(τίτλος)"}
+  - {pages: "2", section: "(ανακοινώσεις: αναπλήρωση 27/11, προφορικές εξετάσεις Εργασίας #0)"}
+  - {pages: "3-4", section: "(προηγούμενη φορά / σήμερα)"}
+  - {pages: "5", section: "Εμβέλεια μεταβλητής"}
+  - {pages: "6-12", section: "Τοπικές μεταβλητές"}
+  - {pages: "13", section: "Παγκόσμιες μεταβλητές"}
+  - {pages: "14-16", section: "Επισκίαση μεταβλητής"}
+  - {pages: "17-19", section: "Στατικές μεταβλητές"}
+  - {pages: "20-22", section: "Η παγκόσμια / στατική μνήμη"}
+  - {pages: "23-25", section: "Σύμβολα, .bss και data"}
+  - {pages: "26-27", section: "String literals στη στατική μνήμη"}
+  - {pages: "28", section: "Συμβολοσειρές"}
+  - {pages: "29-33", section: "Οι συναρτήσεις της string.h"}
+  - {pages: "34", section: "Η έκφραση *str++"}
+  - {pages: "35-41", section: "Οι συναρτήσεις της string.h"}
+  - {pages: "42-44", section: "(ερωτήσεις: --boo, παλινδρομικό· Παράδειγμα «Είναι παλινδρομικό;»)"}
+  - {pages: "45-46", section: "(για την επόμενη φορά / κλείσιμο)"}
+pointers:
+  - {page: 38, text: "man strncpy (μια λίγο καλύτερη, αλλά πάλι κακή, εκδοχή της strcpy)"}
+  - {page: 45, text: "Από τις διαφάνειες του κ. Σταματόπουλου (K04) καλύψαμε τις σελίδες 63-68, 74-76, 93-96"}
+  - {page: 45, text: "Static variables: https://en.wikipedia.org/wiki/Static_variable and more: https://www.geeksforgeeks.org/static-variables-in-c/"}
+  - {page: 45, text: "Data segment: https://en.wikipedia.org/wiki/Data_segment and bss section: https://en.wikipedia.org/wiki/.bss (another time)"}
+  - {page: 45, text: "Variable shadowing: https://en.wikipedia.org/wiki/Variable_shadowing"}
+  - {page: 45, text: "strcpy και strncpy: https://www.geeksforgeeks.org/why-strcpy-and-strncpy-are-not-safe-to-use/"}
+  - {page: 45, text: "strdup: https://en.cppreference.com/w/c/experimental/dynamic/strdup, strchr: https://cplusplus.com/reference/cstring/strchr/, strtok: https://cplusplus.com/reference/cstring/strtok/"}
+takeaways_slide: null         # p. 45 is a reading list, not a takeaways slide
+issues:
+  - "p. 2: announcements (make-up lecture Thu 27 Nov 6-8pm; oral exams for Εργασία #0 starting next week) are course logistics and were left out of the chapter."
+  - "p. 45: 'σελίδες 63-68, 74-76, 93-96' of Stamatopoulos's slides. Per k04-map.tsv these are 04-functions p. 63 (factorial), 64-68 (scope); 05-pointers-arrays «Δείκτες» 74-76; 06-memory-strings p. 93 (dynamic memory) and 94-96 (strings). The chapter cites «Εμβέλεια και χρόνος ζωής μεταβλητών» 64-69 and «Συμβολοσειρές» 94-97 (the full sections), and «Δείκτες» 74-76."
+  - "p. 28: the second declaration is partly hidden behind the 'null byte' callout; reconstructed as {72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 10, 0}, consistent with chapter 10."
+  - "p. 29-32: printf uses %d for strlen's size_t result; the chapter uses %zu and lists %d as a common mistake."
+  - "p. 22: tmp[1] = 255 into a plain (usually signed) char is implementation-defined (-1 on x86); the slide's diagram shows 255 and the chapter keeps it. The malloc'd block is never freed (memory leak); the chapter points it out. The stack addresses (31998-32000) and global bytes 1-3 are illustrative."
+  - "p. 24: the nm output for global_buffer[100000000] shows counter.0 at 0x17d78400 (= 400,000,000) and du 4.0K; transcribed in prose, not as a separate block."
+  - "p. 35: the slide defines the return as 'θετική αν A > B (αρνητική αν B > A)'. The exact values (4, -4, -1, 114) are the byte differences glibc returned; the C standard guarantees only the sign. The chapter says so."
+  - "p. 26-27: the slides say only that literals are stored in static memory; the statement that literals must not be modified comes from notes 06-memory-strings «Συμβολοσειρές»."
+  - "Additions from the notes, not on the slides: uninitialised globals are 0 and locals indeterminate; static on a global limits it to the file; the drawbacks of globals. -Wshadow and the strncpy null-termination caveat are standard gcc/libc facts added for context."
+  - "p. 29-32 (strlen of 'hello world' = 11) and p. 35 (strcmp runs) are revealed step by step like audience questions, but not phrased as questions; no question files for them."
+  - "p. 42 ('--boo') has no answer on the slides; the chapter gives none and the question file gives only a hint."

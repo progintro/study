@@ -1,0 +1,41 @@
+lecture: 22
+pages: 43
+outline:
+  - {pages: "1", section: "(τίτλος)"}
+  - {pages: "2", section: "(ανακοινώσεις: Εργασία #2)"}
+  - {pages: "3-4", section: "(προηγούμενη φορά / σήμερα)"}
+  - {pages: "5", section: "Το δυαδικό δέντρο"}
+  - {pages: "6-9", section: "Ρίζα, φύλλα, βάθος, ύψος, επίπεδο"}
+  - {pages: "10-14", section: "Είδη δυαδικών δέντρων"}
+  - {pages: "15", section: "Ν-αδικά δέντρα και δέντρα καταστάσεων"}
+  - {pages: "16-17", section: "Βασικές λειτουργίες και πολυπλοκότητα"}
+  - {pages: "18-20", section: "Βάθος με αναδρομή"}
+  - {pages: "21-29", section: "Διάσχιση κατά βάθος (DFS)"}
+  - {pages: "30-31", section: "Αναζήτηση στοιχείου σε δυαδικό δέντρο"}
+  - {pages: "32-34", section: "Διάσχιση κατά πλάτος (BFS)"}
+  - {pages: "35-37", section: "Δυαδικό δέντρο αναζήτησης (BST)"}
+  - {pages: "38-41", section: "DFS ή BFS;"}
+  - {pages: "42-43", section: "(για την επόμενη φορά / κλείσιμο)"}
+pointers:
+  - {page: 42, text: "Διαφάνειες κ. Σταματόπουλου σελ. 120-135 (K04): 07-structs «Αυτο-αναφορικές δομές» έως 08-lists-trees «Διαχείριση δυαδικών δέντρων»"}
+  - {page: 42, text: "Binary Tree Problems: http://cslibrary.stanford.edu/110/BinaryTrees.pdf"}
+  - {page: 42, text: "Tree traversal: https://en.wikipedia.org/wiki/Tree_traversal"}
+  - {page: 42, text: "Depth-first search: https://en.wikipedia.org/wiki/Depth-first_search"}
+  - {page: 42, text: "Breadth-first search: https://en.wikipedia.org/wiki/Breadth-first_search"}
+  - {page: 42, text: "Binary Search Tree: https://en.wikipedia.org/wiki/Binary_search_tree"}
+  - {page: 42, text: "BST Visualization: https://www.cs.usfca.edu/~galles/visualization/BST.html"}
+  - {page: 42, text: "Αφηρημένοι Τύποι Δεδομένων (ΑΤΔ): https://el.wikipedia.org/wiki/Αφηρημένος_τύπος_δεδομένων"}
+takeaways_slide: null         # p. 42 is a reading assignment, not a takeaways slide
+issues:
+  - "p. 2: announcement 'Η εργασία #2 βγήκε την Παρασκευή - προθεσμία 10 Ιανουαρίου 23:59' (course policy, not put in the chapter)."
+  - "p. 3-4: xkcd comic (Christmas tree with a heap of presents) is a joke only; not described in the chapter."
+  - "The tree part of lec21.pdf (lists and trees) overlaps heavily with these slides (same is_empty/depth/traversal/BFS code); the chapter covers it fully here and chapter 21 may repeat part of it."
+  - "p. 9: the slide defines node level as 'the number of nodes that intervene up to the root', but the picture puts the root at Level 1; the chapter follows the picture (level = nodes on the path from the root, inclusive)."
+  - "p. 6-7: depth (root to leaves) and height (leaves to root) are both defined for the whole tree and both equal 2; the slides do not define per-node depth/height, and the chapter does not either."
+  - "p. 18, 30, 36: blank title-only slides (question posed, answer on the next slide)."
+  - "p. 33-34: bfs uses insert/pop_last on a List of Tree, but the slides never define them; the chapter's complete BFS program supplies its own insert (at the head, as in lec21) and pop_last (walks to the tail). Output 5 7 1 2 9 was obtained by compiling it, not from the slides. The slides' O(n) time implies an O(1) pop_last (e.g. a tail pointer); noted in the chapter."
+  - "p. 20, 28, 31, 34, 37: complexities are stated for a perfect/balanced tree; the chapter adds that a degenerate tree/BST makes space (and BST search) O(n), which the slides do not state."
+  - "p. 29, 38-41: questions to the audience with no answer on the slides; the chapter's answers (post-order for the evaluator, BFS for the shortest path, DFS for less memory when visiting all nodes) are standard and agree with the course FAQ (faq2.md #118-120)."
+  - "p. 16: insert and delete are left as exercises ('μόνοι σας'); written as question files for a BST, since the slides do not say which kind of tree."
+  - "Notes' treedepth (K04 p. 132-135) returns 0 for the empty tree, i.e. counts levels, whereas the slides return -1 (count links); the chapter points out the difference."
+  - "Chapter is ~645 lines, above the 350-550 target, mainly because of the three complete programs (depth, traversals, BFS) and the tables."

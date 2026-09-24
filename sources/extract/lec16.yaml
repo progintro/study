@@ -1,0 +1,41 @@
+lecture: 16
+pages: 28
+outline:
+  - {pages: "1", section: "(τίτλος)"}
+  - {pages: "2", section: "(ανακοινώσεις: συνάντηση με τον/την εξεταστή/τρια)"}
+  - {pages: "3-4", section: "(προηγούμενη φορά / σήμερα)"}
+  - {pages: "5-6", section: "Γιατί εξασκούμαστε στην επίλυση προβλημάτων"}
+  - {pages: "7", section: "(Προθέρμανση: τίτλος ενότητας)"}
+  - {pages: "8-10", section: "Χρονική και χωρική πολυπλοκότητα μιας συνάρτησης"}
+  - {pages: "11", section: "Χρόνος ή μνήμη: το αντιστάθμισμα"}
+  - {pages: "12", section: "(εθελοντές για ζωντανή επίλυση)"}
+  - {pages: "13", section: "Τα ψηφία ενός αριθμού"}
+  - {pages: "14", section: "Χρόνος ή μνήμη: το αντιστάθμισμα"}
+  - {pages: "15", section: "Χρονική και χωρική πολυπλοκότητα μιας συνάρτησης"}
+  - {pages: "16-17", section: "Από χαρακτήρες σε αριθμό: η `atoi` και τα όριά της"}
+  - {pages: "18", section: "Λίγα μαθηματικά αντί για εξαντλητική αναζήτηση"}
+  - {pages: "19", section: "`char *array[]`, `char **array` και `char array[10][10]`"}
+  - {pages: "20", section: "Πολλές τιμές από μία συνάρτηση: δείκτες ως ορίσματα"}
+  - {pages: "21", section: "Τα ψηφία ενός αριθμού"}
+  - {pages: "22-23", section: "Πολλές τιμές από μία συνάρτηση: δείκτες ως ορίσματα"}
+  - {pages: "24", section: "Έξοδος από εμφωλευμένους βρόχους"}
+  - {pages: "25", section: "Δισδιάστατος πίνακας στον σωρό"}
+  - {pages: "26", section: "Αναδρομή χωρίς επανυπολογισμούς"}
+  - {pages: "27", section: "Εργαλεία για την Εργασία #1"}
+  - {pages: "28", section: "(κλείσιμο)"}
+pointers:
+  - {page: 27, text: "Εντολές /usr/bin/time -v και memusage (μνήμη προγράμματος)"}
+  - {page: 27, text: "Εντολές cmp / xxd / hexdump / hexedit / vbindiff (δυαδικά δεδομένα)"}
+takeaways_slide: null
+issues:
+  - "No external links in the PDF (pdftohtml found no link annotations). p. 3 is an xkcd-style 'Algorithms by complexity' comic and p. 6 a brain-development chart (MRI phenotypes by age), both images without source links; their points are kept in words only."
+  - "p. 12 shows an ssh login (user@IP) and a plaintext password for a lecture VM used by volunteers. Deliberately NOT copied into the chapter or the questions."
+  - "Slides pose the problems only; they give code for average (p. 9), find (p. 15), atoi (p. 17) and swap (p. 23). The solutions for the duplicate, unpaired (XOR), reverse, palindrome, perfect squares, get_two_chars, 2D search, heap 2D array, efficient Fibonacci and subcommands are the chapter's own standard solutions (compiled and run locally), not transcribed from the lecture."
+  - "p. 8 and p. 10 ask 'Χρονική και χωρική πολυπλοκότητα;' but the answer slides (p. 9, 15) drop that line and show only code; the O(n)/O(1) analysis is the chapter's."
+  - "p. 11 does not say whether the value range is bounded; the chapter presents the counting-array O(n) idea only under that assumption."
+  - "p. 18 does not define the interval semantics (inclusive, integer bounds); the chapter assumes an inclusive integer interval [a, b]."
+  - "p. 20 does not say where the two chars are read from; the chapter assumes stdin via getchar, as in Homework #1."
+  - "p. 27: the slide lists the tools without explanation; the one-line descriptions (Maximum resident set size, cmp reports first differing byte, etc.) come from the tools' standard behaviour. 'Πως φτιάχνω υποεντολές;' has no answer on the slide; the argv[1]/strcmp skeleton is the chapter's, tied to hw1 soundwave subcommands (info, rate, ...)."
+  - "p. 2 announcement (book a meeting with the examiner) is course logistics; not put in the chapter."
+  - "Chapter is ~690 lines, above the 350-550 guideline, because the lecture has 14 separate problems; examples were reduced to function-only snippets where the theory already explains them."
+  - "Several of these problems (average, find, atoi) also appear in lectures 10 and 11 with their own question files; the lec16 files add the complexity question as posed here."

@@ -6,7 +6,7 @@ source:
   title: "Διάλεξη 12, διαφάνειες 39–40"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec12.pdf
   years: [2025]
-chapters: [12]
+chapters: [12, 13]
 topics: [dynamic-memory, pointers, types]
 difficulty: 2
 type: short-answer

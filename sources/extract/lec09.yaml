@@ -1,0 +1,46 @@
+lecture: 9
+pages: 41
+outline:
+  - {pages: "2-4", section: "Σύγκριση αριθμών κινητής υποδιαστολής με =="}
+  - {pages: "5", section: "Ονόματα: camelCase και snake_case"}
+  - {pages: "1-8", section: "Δεδομένα εισόδου και εξόδου"}
+  - {pages: "9-13", section: "Οι τέσσερις πηγές εισόδου"}
+  - {pages: "14-17", section: "Η συνάρτηση getchar"}
+  - {pages: "18-19", section: "Buffer, Enter και Ctrl+D"}
+  - {pages: "20-21", section: "Η συνάρτηση getchar"}
+  - {pages: "22", section: "Η συνάρτηση putchar"}
+  - {pages: "23-24", section: "Η τιμή της getchar πάει σε int, όχι σε char"}
+  - {pages: "25-26", section: "Διάβασμα αριθμών χαρακτήρα-χαρακτήρα"}
+  - {pages: "27-32", section: "Η συνάρτηση scanf"}
+  - {pages: "33-35", section: "Η τιμή επιστροφής της scanf"}
+  - {pages: "36-37", section: "Κενά και πολλές τιμές"}
+  - {pages: "38", section: "Διάβασμα αριθμών χαρακτήρα-χαρακτήρα"}
+  - {pages: "39", section: "Η συνάρτηση getchar"}
+pointers:
+  - {page: 2, text: "Wikipedia: Camel case (https://en.wikipedia.org/wiki/Camel_case)"}
+  - {page: 2, text: "Wikipedia: Snake case (https://en.wikipedia.org/wiki/Snake_case)"}
+  - {page: 15, text: "man getchar"}
+  - {page: 18, text: "Wikipedia: Data buffer (https://en.wikipedia.org/wiki/Data_buffer)"}
+  - {page: 27, text: "man scanf"}
+  - {page: 40, text: "Σημειώσεις κ. Σταματόπουλου, σελ. 28-29, 70-71, 78-79, 86-87"}
+  - {page: 40, text: "getchar (https://en.cppreference.com/w/c/io/getchar)"}
+  - {page: 40, text: "putchar (https://en.cppreference.com/w/c/io/putchar)"}
+  - {page: 40, text: "scanf (https://cplusplus.com/reference/cstdio/scanf/)"}
+  - {page: 40, text: "printf (https://cplusplus.com/reference/cstdio/printf/)"}
+  - {page: 40, text: "Wikipedia: Data buffer (https://en.wikipedia.org/wiki/Data_buffer)"}
+  - {page: 40, text: "Wikipedia: End of transmission (https://en.wikipedia.org/wiki/End-of-Transmission_character)"}
+  - {page: 40, text: "POSIX termios, Canonical mode (https://pubs.opengroup.org/onlinepubs/7908799/xbd/termios.html#tag_008_001_006)"}
+takeaways_slide: null
+issues:
+  - "No explicit key-takeaways slide; p. 40 ('Για την επόμενη φορά') lists reading pointers only. Κύρια σημεία were built from the red callouts (p. 17 one char, p. 18-19 buffer/Ctrl+D, p. 24 int not char, p. 31 address, p. 34 check return value, p. 37 whitespace skipping, p. 29 'συμμετρική της printf')."
+  - "p. 40 cites notes pages 28-29, 70-71, 78-79, 86-87; k04-map.tsv puts the matching sections one page later (29-30, 71-72, 79-80, 87-88). The chapter cites the section names with the k04-map pages and quotes the slides' numbers; probably printed-vs-PDF page numbering."
+  - "p. 3-4: the slides ask 'Υπάρχει κάποια εξήγηση;' but give no answer; the explanation (float rounding vs double constant) and the fix (fabs with tolerance, or 3.1f) are standard C, verified locally (a == 3.1 false, a == 3.1f true)."
+  - "p. 24: the callout 'πάντα αναθέτουμε την τιμή επιστροφής της getchar() εκτός και αν είμαστε σίγουροι για το τι κάνουμε' is ambiguous; interpreted together with the other callout as 'always store it in an int'."
+  - "p. 26 and p. 38: getinteger declares `int ch;` but keeps the comment 'No need to declare ch as int - no EOF handling', which only makes sense for the notes' version (`char ch;`, notes ch. 04). Transcribed as on the slide; the reformatted comment columns differ from the slide."
+  - "p. 21: the charcount terminal output shows no blank line before 'Total characters: 24' although the program prints '\\n' before it (after the echoed newline); transcribed as on the slide."
+  - "p. 35: the second run ('Gimme a number: Square: 1068701481') is interpreted as Ctrl+D (scanf returns EOF); the slide does not say what was typed."
+  - "Ctrl+D behaviour with a non-empty line (needs a second Ctrl+D for EOF) and the unsigned-char infinite-loop case come from standard termios/C knowledge (p. 40 links canonical mode), not from the slides."
+  - "p. 10: the 'trolley' program in the stdin screenshot is presumably a homework exercise; not identified, so the chapter only names it."
+  - "Audience questions on p. 15 and p. 27 ('πως μπορώ να βρω πως συμπεριφέρεται;') are answered on the same slide (man getchar / man scanf); no question files were written for them."
+  - "p. 39 is a code fragment without main (histogram from notes ch. 05); kept as a fragment."
+  - "Running `tools/gen-exercises.py --help` accidentally ran the generator (it has no --help), which refreshed the generated exercise blocks in other chapters, questions/README.md and README.md."

@@ -1,0 +1,46 @@
+lecture: 15
+pages: 54
+outline:
+  - {pages: "1", section: "(τίτλος)"}
+  - {pages: "2", section: "(ανακοινώσεις: αναπλήρωση Πέμπτη 27/11)"}
+  - {pages: "3-4", section: "(προηγούμενη φορά / σήμερα)"}
+  - {pages: "5-8", section: "Τι είναι η πολυπλοκότητα"}
+  - {pages: "9-10", section: "Ο συμβολισμός Big-O, Ω και Θ"}
+  - {pages: "11-12", section: "Διάταξη των κλάσεων πολυπλοκότητας"}
+  - {pages: "13-14", section: "Γινόμενο των περιττών πολλαπλασίων του 7"}
+  - {pages: "15-16", section: "Η `atoi`"}
+  - {pages: "17-18", section: "Μέτρηση χαρακτήρων με `getchar`"}
+  - {pages: "19-20", section: "Δυναμικός πίνακας με `malloc`"}
+  - {pages: "21-22", section: "Υπολογισμός βαθμολογίας"}
+  - {pages: "23-24", section: "Μέγιστο στοιχείο σε πίνακα N × N"}
+  - {pages: "25-28", section: "Παραγοντικό και Fibonacci"}
+  - {pages: "29-32", section: "`strlen` και `strcmp`"}
+  - {pages: "33-36", section: "Άθροισμα τέλειων τετραγώνων"}
+  - {pages: "37-38", section: "Κατοπτρικός αριθμός"}
+  - {pages: "39", section: "Κατοπτρικός αριθμός (ανοιχτό ερώτημα για τους πρώτους, τέλος της ενότητας)"}
+  - {pages: "40-43", section: "Μεταγλωττιστής και προεπεξεργαστής"}
+  - {pages: "44", section: "Οδηγίες προεπεξεργαστή"}
+  - {pages: "45", section: "Η οδηγία `#include`"}
+  - {pages: "46", section: "Η οδηγία `#define` και οι μακροεντολές"}
+  - {pages: "47-49", section: "Η μακροεντολή `PROD`"}
+  - {pages: "50-51", section: "`#if 0` / `#else`"}
+  - {pages: "52", section: "Μηνύματα αποσφαλμάτωσης με `#ifdef DEBUG`"}
+  - {pages: "53-54", section: "(για την επόμενη φορά / κλείσιμο)"}
+pointers:
+  - {page: 53, text: "Διαφάνειες κ. Σταματόπουλου σελ. 154-159, 161 (K04): 10-preprocessor «Ο προεπεξεργαστής της C», 11-sorting-searching «Ταξινόμηση πινάκων» (πολυπλοκότητα)"}
+  - {page: 53, text: "Big-O Notation: https://en.wikipedia.org/wiki/Big_O_notation"}
+  - {page: 53, text: "C Preprocessor: https://en.wikipedia.org/wiki/C_preprocessor"}
+takeaways_slide: null         # p. 53 is a reading assignment, not a takeaways slide
+issues:
+  - "p. 53 cites 'σελίδες 154-159, 161' of the Stamatopoulos slides; sources/k04-map.tsv puts «Ο προεπεξεργαστής της C» at K04 pp. 155-160 and p. 154 in 09-io. Probably an off-by-one between printed and PDF page numbers; the chapter lists the sections with the map's pages (155-160, 161) and quotes the slide's numbers."
+  - "p. 5 shows only a photo of Christos Papadimitriou and the Logicomix cover, p. 6 Top Trumps supercar cards, p. 8 a wristwatch titled 'Ένα Λεπτό'. No text; the chapter keeps the points in words (compare algorithms by measurable metrics; wall-clock time depends on the machine) - this reading of p. 6 and p. 8 is an interpretation."
+  - "p. 9: definitions use strict inequalities and ∃c without c > 0; transcribed as on the slide."
+  - "p. 13: the loop uses i < N although the problem says 'από το 1 μέχρι το N'; the chapter notes that i <= N is needed if N is included."
+  - "p. 23: find_max starts from max = -1, which is wrong for matrices with all-negative elements; also compares int i with size_t n. Chapter notes the first."
+  - "p. 33-36: code fragments without main/includes (need math.h, stdlib.h, -lm). The second version (p. 35) starts at i = sqrt(low), which truncates: for low = 5 it adds 4, outside the range. Chapter and question file point this out. The slide states O(n) and O(√n) without defining n; the chapter takes n = size of the interval."
+  - "p. 39: open question 'Έλεγχος αν ένας αριθμός είναι πρώτος - τι χρονική πολυπλοκότητα έχει;' has no answer on the slides; the chapter does not give one, only the question file's hint (divisors up to √n)."
+  - "p. 42: the diagram shows three unlabeled stages inside gcc, the first labelled Προεπεξεργαστής; the chapter labels the rest generically ('Μεταγλώττιση', 'Υπόλοιπα στάδια')."
+  - "p. 48, 51: cpp / gcc -E output transcribed from the slides (Linux gcc). p. 49 shows prod.c without the #define line when compiling with -DPROD=10. Outputs verified locally (exit codes 50 and 2; getchar program output for 'hello')."
+  - "p. 52: fragment only (printf outside a function); chapter states the output with and without '#define DEBUG', verified by compiling an equivalent program."
+  - "Chapter adds from notes 10-preprocessor: #elif, defined(NAME), double evaluation in MAX(i++, j++), SQUARE parentheses pitfall, include guards (also lab10 appendix). The ';' after #define and the -lm pitfall (faq.md #53, #57) are added in Συχνά λάθη."
+  - "Chapter length ~765 lines, above the 350-550 target: the lecture has ~15 separate code examples, all kept."

@@ -1,0 +1,53 @@
+lecture: 17
+pages: 37
+outline:
+  - {pages: "1", section: "(τίτλος)"}
+  - {pages: "2", section: "(ανακοινώσεις: γράφημα κατάταξης CTF, χωρίς άλλο περιεχόμενο)"}
+  - {pages: "3-4", section: "(προηγούμενη φορά / σήμερα)"}
+  - {pages: "5-8", section: "Αναζήτηση και η ιδέα της διχοτόμησης"}
+  - {pages: "9-11", section: "Γραμμική αναζήτηση"}
+  - {pages: "12", section: "Ταξινομημένη ακολουθία"}
+  - {pages: "13-15", section: "Δυαδική αναζήτηση"}
+  - {pages: "16-17", section: "Υπερχείλιση στον υπολογισμό του μέσου"}
+  - {pages: "18-19", section: "Πολυπλοκότητα της δυαδικής αναζήτησης"}
+  - {pages: "20-22", section: "Αλγόριθμοι ταξινόμησης και η swap"}
+  - {pages: "23-24", section: "Ταξινόμηση επιλογής (selection sort)"}
+  - {pages: "25-26", section: "Ταξινόμηση εισαγωγής (insertion sort)"}
+  - {pages: "27-28", section: "Ταξινόμηση φυσαλίδας (bubblesort)"}
+  - {pages: "29", section: "Διαίρει και βασίλευε"}
+  - {pages: "29-32", section: "Ταξινόμηση συγχώνευσης (merge sort)"}
+  - {pages: "33-35", section: "Ταχυταξινόμηση (quicksort)"}
+  - {pages: "18, 35", section: "Σύνοψη αλγορίθμων και η βιβλιοθήκη"}
+  - {pages: "36-37", section: "(για την επόμενη φορά / κλείσιμο)"}
+pointers:
+  - {page: 5, text: "Microsoft Interview Question by Steve Ballmer: https://www.youtube.com/watch?v=p8hk3kwxeS4"}
+  - {page: 15, text: "«Παράδειγμα»: https://www.cs.usfca.edu/~galles/visualization/Search.html"}
+  - {page: 17, text: "«δύσκολος»: https://dl.acm.org/doi/pdf/10.1145/52964.53012"}
+  - {page: 17, text: "«σωστά»: https://en.wikipedia.org/wiki/Binary_search_algorithm#Implementation_issues"}
+  - {page: 17, text: "https://biowpn.github.io/bioweapon/2025/03/23/generalizing-std-midpoint.html"}
+  - {page: 17, text: "https://www.youtube.com/watch?v=sBtAGxBh-XI"}
+  - {page: 18, text: "bsearch της stdlib.h"}
+  - {page: 32, text: "John von Neumann: https://en.wikipedia.org/wiki/John_von_Neumann"}
+  - {page: 35, text: "O(logn) χώρος: https://www.geeksforgeeks.org/quicksort-tail-call-optimization-reducing-worst-case-space-log-n/"}
+  - {page: 35, text: "qsort της stdlib.h"}
+  - {page: 35, text: "Tony Hoare: https://en.wikipedia.org/wiki/Tony_Hoare"}
+  - {page: 36, text: "Σημειώσεις κ. Σταματόπουλου σελ. 160-177 (K04): 11-sorting-searching «Ταξινόμηση πινάκων» έως «Μέθοδοι αναζήτησης»"}
+  - {page: 36, text: "Visualizing binary search: https://www.cs.usfca.edu/~galles/visualization/Search.html"}
+  - {page: 36, text: "Binary Search: https://en.wikipedia.org/wiki/Binary_search_algorithm"}
+  - {page: 36, text: "δυσκολίες υλοποίησης: https://www.uni-weimar.de/fileadmin/user/fak/medien/professuren/Mediensicherheit/Teaching/SS15/SSS/p190-pattis.pdf"}
+  - {page: 36, text: "δυσκολίες: https://en.wikipedia.org/wiki/Binary_search_algorithm#Implementation_issues"}
+  - {page: 36, text: "Divide and conquer: https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm (δύο φορές)"}
+  - {page: 36, text: "Sorting algorithm: https://en.wikipedia.org/wiki/Sorting_algorithm"}
+  - {page: 36, text: "Quicksort analysis: https://www.khanacademy.org/computing/computer-science/algorithms/quick-sort/a/analysis-of-quicksort"}
+takeaways_slide: null         # p. 36 is a reading list, not a takeaways slide
+issues:
+  - "p. 2: announcements slide is only a CTF scoreboard screenshot with ':)'; nothing carried into the chapter."
+  - "p. 8: Guess Who slide is a prompt without a concrete question; folded into the theory (no question file)."
+  - "p. 16-17: the slides do not say what the bug is; p. 17 only underlines the fixed line mid = low + (high - low) / 2. The chapter explains it as int overflow of low + high (the standard reading, consistent with the linked Wikipedia/midpoint pages). The -397483648 value is what gcc on x86-64 printed in a test; the overflow is undefined behavior."
+  - "p. 17 / 36: the two binary-search-errors links (dl.acm.org DOI 10.1145/52964.53012 and the p190-pattis.pdf) were not opened; the chapter describes them generically as an article on textbook binary-search errors (file name suggests R. Pattis) without naming author or title. The YouTube video sBtAGxBh-XI was not opened; described only as 'βίντεο'."
+  - "p. 35: quicksort still computes the pivot index as (lower + upper) / 2, the same overflow pattern fixed on p. 17; the chapter points this out."
+  - "p. 34: quicksort code has a stray indented closing brace after the for loop; transcribed with normal indentation. All slide code (find, binary_search, swap, selection_sort, insertion_sort, bubblesort, merge_sort, merge, quicksort) was compiled and run on test arrays; traces in the chapter are real output."
+  - "p. 29: the slide says merge sort has 'θεωρητικά την καλύτερη πολυπλοκότητα'; the chapter phrases it as O(n log n) even in the worst case, optimal for comparison sorting (standard fact, not stated on the slide)."
+  - "Chapter additions not on the slides: loop invariants, the insertion-sort best case on nearly sorted input, short-circuit reasoning for j >= 0 && ..., the tail-call explanation of O(log n) quicksort space (from the linked page), and the mention of a comparison function for qsort/bsearch (man pages)."
+  - "No lab practises sorting or searching (checked lab01-lab10); labs: [] in the front matter."
+  - "Chapter length is ~740 lines, above the 350-550 target, mainly because of the complete merge sort + quicksort program and the step-by-step traces."

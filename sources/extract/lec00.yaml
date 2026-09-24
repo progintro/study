@@ -1,0 +1,43 @@
+lecture: 0
+pages: 36
+outline:
+  - {pages: "1-6", section: "Γιατί προγραμματισμός"}
+  - {pages: "7-16", section: "Τα διαδικαστικά του μαθήματος"}
+  - {pages: "17-19", section: "Σκοπός και περιεχόμενο του μαθήματος"}
+  - {pages: "20", section: "Τι είναι ο υπολογιστής"}
+  - {pages: "21-24", section: "Προγραμματισμός και πρόγραμμα"}
+  - {pages: "25-27", section: "Αμφισημία και γλώσσες προγραμματισμού"}
+  - {pages: "28-31", section: "Η γλώσσα C"}
+  - {pages: "32", section: "Η δομή του Hello World"}
+  - {pages: "33", section: "Πού να εξασκηθείτε"}         # H3 of Παραδείγματα
+  - {pages: "34-36", section: "Για την επόμενη φορά"}      # H3 of Παραδείγματα
+pointers:
+  - {page: 4, text: "QS ranking του Τμήματος: https://hub.uoa.gr/qs-wur-department-of-informatics-nkua/"}
+  - {page: 4, text: "ΕΚΠΑ πιο βελτιωμένο στην Ευρώπη: https://hub.uoa.gr/nkua-the-most-improved-university-in-europe-according-to-qs-world-university-rankings/"}
+  - {page: 8, text: "Site μαθήματος: https://progintro.github.io"}
+  - {page: 12, text: "Εγγραφή σε εργαστηριακή ομάδα: https://eclass.uoa.gr/modules/group/index.php?course=DI681&urlview=1"}
+  - {page: 13, text: "Gmail (https://gmail.google.com), GitHub (https://github.com), webadm (http://webadm.uoa.gr/), Piazza (https://piazza.com/uoa.gr/fall2025/197af), eclass (https://eclass.uoa.gr/courses/DI681/), φόρμα μαθήματος (https://forms.gle/vvMY6Nkjbh3STXdEA)"}
+  - {page: 14, text: "Browsing Time: progintro, sign ups, φόρμα, σημειώσεις, συγγράμματα, delos"}
+  - {page: 30, text: "TIOBE index: https://www.tiobe.com/tiobe-index/"}
+  - {page: 31, text: "Programming Language Shootout: https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html"}
+  - {page: 32, text: "Online compiler: https://www.programiz.com/c-programming/online-compiler/"}
+  - {page: 33, text: "Εξάσκηση: hackerrank.com, leetcode.com, adventofcode.com, codechef.com, codewars.com, topcoder.com, usaco.org, projecteuler.net; Coursera, edX, Udacity"}
+  - {page: 34, text: "Σημειώσεις κ. Σταματόπουλου μέχρι τη σελίδα 19 (K04)"}
+  - {page: 34, text: "Wikipedia: Programming language (https://en.wikipedia.org/wiki/Programming_language)"}
+  - {page: 34, text: "Wikipedia: List of linguistic example sentences (https://en.wikipedia.org/wiki/List_of_linguistic_example_sentences)"}
+  - {page: 34, text: "History of C and Applications (https://www.geeksforgeeks.org/c/history-and-application-of-c/)"}
+takeaways_slide: 34
+issues:
+  - "No explicit key-takeaways slide; p. 34 ('Για την επόμενη φορά') is the closest summary and is used as takeaways_slide. Κύρια σημεία were synthesised from the definitions on pp. 17, 20, 21, 24, 27, 28."
+  - "p. 13 links the course form (forms.gle) and p. 32 shows a QR code; the form link is recorded here but left out of the chapter (it is a per-year sign-up form). The QR codes on pp. 8 and 32 were not decoded; p. 8's is presumably the site URL printed next to it."
+  - "p. 15 is a bare 'Denial of Service Attacks' diagram right after 'Browsing Time' (p. 14); presumably a joke about everyone opening the site at once. Not course content, so it is not in the chapter."
+  - "p. 16 poses 'Έχω μια ερώτηση - τι κάνω;' with options A (email) and B (Piazza) without marking an answer; the chapter presents B as the course's channel, which is the evident intent but not written on the slide."
+  - "p. 18 (course roadmap) lists lectures/labs from an older syllabus (e.g. 'Guest Lecture on Memory Management', 'Guest Lecture on Integer Factorization', 23 lectures, lab00-lab11) that does not match the 2025 manifest; the chapter only uses the five part names and hw0/hw1/hw2/project."
+  - "p. 29 (curriculum map) is a small image; zoomed in, K04 has dashed (recommended-prerequisite) arrows to K08 Δομές δεδομένων and K10 Αντικειμενοστρεφής προγραμματισμός. Further courses named in the chapter (K22, K24, K31) follow from K08 in the same map."
+  - "p. 31: the table's (c)/(v)/(i) markers (compiled / virtual machine / interpreted, from Pereira et al. 'Energy Efficiency across Programming Languages') are not explained on the slide and not in the chapter. The slide links it as 'Programming Language Shootout' (Benchmarks Game)."
+  - "p. 30: the TIOBE chart covers 2001-2025 only; the title says 'από το 1970'. The chapter states what the chart shows."
+  - "p. 32: Hello World has no 'return 0;' (lab00's hello.c does). The chapter mentions both and defers the meaning of main's return value to chapter 3."
+  - "The compile/link process, the computer structure, bits/bytes and the algorithm definition come from notes 00-intro (assigned reading up to K04 p. 19), not from the slides. Terminal output of gcc comes from notes 01-first-programs («Καλημέρα κόσμε της C»), with $ as the prompt instead of %."
+  - "Συχνά λάθη on compiler messages (expected ';', implicit declaration of printf) are from general gcc knowledge, not the slides or FAQ; the FAQ/field notes had nothing specific to this lecture."
+  - "p. 35 is 'Kahoot!' without questions; nothing transcribed."
+  - "While self-checking, `tools/gen-exercises.py --help` was run by mistake; the script ignores unknown flags and regenerated the exercises blocks in all chapters, questions/README.md and the home-page chapter table (only generated content)."

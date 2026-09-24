@@ -1,0 +1,33 @@
+lecture: 8
+pages: 25
+outline:
+  - {pages: "1-2", section: "Υπερχείλιση σε βρόχους που πολλαπλασιάζουν"}
+  - {pages: "3-5", section: "Δύο τρόποι να διατρέξουμε τις τιμές"}
+  - {pages: "6-8", section: "Πρόωρος τερματισμός με μεταβλητή-σημαία"}
+  - {pages: "9-10", section: "Η εντολή break"}
+  - {pages: "11-12", section: "Η εντολή continue"}
+  - {pages: "13-16", section: "Η εντολή switch"}
+  - {pages: "17-18", section: "Πολλά case μαζί και περιορισμοί της switch"}
+  - {pages: "19-20", section: "Η εντολή goto και οι ετικέτες"}
+  - {pages: "21-25", section: "Δομημένος προγραμματισμός: γιατί όχι goto"}
+pointers:
+  - {page: 21, text: "obfuscation contests: https://ioccc.org/"}
+  - {page: 21, text: "Wikipedia: Spaghetti code (https://en.wikipedia.org/wiki/Spaghetti_code)"}
+  - {page: 21, text: "Edsger Dijkstra, Go To Statement Considered Harmful (screenshot of the paper)"}
+  - {page: 22, text: "xkcd comic on goto (image, no link)"}
+  - {page: 24, text: "Σημειώσεις κ. Σταματόπουλου: όλα μέχρι τη σελίδα 71 (K04)"}
+  - {page: 24, text: "Break and Continue: https://www.w3schools.com/c/c_break_continue.php"}
+  - {page: 24, text: "Switch statement: https://www.geeksforgeeks.org/c-switch-statement/"}
+  - {page: 24, text: "Considered harmful: https://en.wikipedia.org/wiki/Considered_harmful"}
+takeaways_slide: null
+issues:
+  - "No explicit key-takeaways slide. The callouts on pp. 16-18 (break ends the switch; several cases together; only equality; integer expression and constants) and p. 21-22 (structured programming means no goto) were treated as takeaways."
+  - "p. 2: the question 'τι συμβαίνει;' has no answer on the slides. The chapter explains it as signed int overflow (standard C). Verified locally: the loop multiplies 64 factors and, with 32-bit wraparound, prints -1187656959 as on the slide."
+  - "p. 5: the first solution starts at i = 100 with i += 2, so it visits even numbers although the problem asks for odd ones. The chapter keeps the slide code and points out the bug (should start at 101). Also the range text '105, …, 987' is computed (the largest odd three-digit multiple of 7 is 987)."
+  - "p. 20: the slide's goto example ends with the label 'exit_for:' and no statement after it; the chapter adds an empty statement ';' so it is valid C."
+  - "pp. 15-16 and 17-18 elide cases with '...'. The chapter's digit-name program fills in cases 2-8, and the season example adds autumn (9-11) and a default branch; these are completions, not slide content."
+  - "p. 23 is only a title slide 'Συζήτηση για εργασία / README'; its content (homework discussion) is not in the slides and is not in the chapter."
+  - "p. 24 says to cover Stamatopoulos' notes 'μέχρι την σελίδα 71'; interpreted as K04 page 71, which per k04-map.tsv is notes 04-functions «Μετατροπές μεταξύ δεκαδικών και δυαδικών αριθμών»."
+  - "The 1968 date is omitted; Dijkstra's paper title comes from the p. 21 screenshot. The rule that goto is forbidden in the course comes from the notes (03-control-flow footnote), the slides say only 'ΟΧΙ'."
+  - "The gcc error messages in «Συχνά λάθη» (switch quantity not an integer; case label does not reduce to an integer constant) were written from knowledge of gcc and not verified locally (local gcc is clang)."
+  - "No lab covers switch/break/continue/goto directly; lab03 (seq.c, birthdate.c) is the closest. The birthdate.c-with-switch suggestion is the chapter's, not the lecture's."

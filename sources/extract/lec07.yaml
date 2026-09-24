@@ -1,0 +1,35 @@
+lecture: 7
+pages: 23
+outline:
+  - {pages: "1-2", section: "Γιατί μας ενδιαφέρει η ποιότητα του λογισμικού"}
+  - {pages: "3-5", section: "Ανακοινώσεις: ο διαγωνισμός GRCPC"}
+  - {pages: "6-7", section: "Γιατί μας ενδιαφέρει η ποιότητα του λογισμικού"}
+  - {pages: "8", section: "Flow: η κατάσταση πλήρους συγκέντρωσης"}
+  - {pages: "9-12", section: "Ανακεφαλαίωση: οι τρεις βρόχοι"}
+  - {pages: "13-18", section: "Από την περιγραφή στον βρόχο"}
+  - {pages: "19-20", section: "Σχολιασμός προγραμμάτων"}
+  - {pages: "20", section: "Δημιουργία README"}
+  - {pages: "20", section: "Μορφοποίηση κώδικα"}
+  - {pages: "20", section: "Editors"}
+  - {pages: "20", section: "Git και γραμμή εντολών"}
+  - {pages: "21-23", section: "Git και γραμμή εντολών"}
+pointers:
+  - {page: 3, text: "GRCPC 2023 results: https://grcpc.upatras.gr/wp-content/uploads/sites/177/2023/10/GRCPC-2023-RESULTS.pdf"}
+  - {page: 4, text: "GRCPC 2024 scoreboard: https://grcpc.upatras.gr/wp-content/uploads/sites/177/2024/10/Scoreboard-GRCPC2024.pdf"}
+  - {page: 5, text: "GRCPC 2025 scoreboard: https://grcpc.upatras.gr/wp-content/uploads/sites/177/2025/10/Greece_Universities_Scoreboard1.pdf"}
+  - {page: 8, text: "Wikipedia: Flow (psychology) (https://en.wikipedia.org/wiki/Flow_(psychology)), plus links to Positive psychology, Mental state, Attention"}
+  - {page: 22, text: "How to write good comments: https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/"}
+  - {page: 22, text: "README.md guide [1]: https://medium.com/@kc_clintone/the-ultimate-guide-to-writing-a-great-readme-md-for-your-project-3d49c2023357"}
+  - {page: 22, text: "README.md guide [2]: https://github.com/banesullivan/README"}
+  - {page: 22, text: "README.md guide [3]: https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/"}
+takeaways_slide: null
+issues:
+  - "No key-takeaways slide; «Κύρια σημεία» are synthesised from the warm-up problems and the topic list on p. 20."
+  - "pp. 19-20 are a live session with volunteers (ssh to a shared Ubuntu machine) on comments, README, formatting, editors, git/command line; the slides carry only the topic titles. The Θεωρία sections for these topics are built from notes 12-good-practice «Ένα πρόγραμμα C πρέπει να είναι …», notes 01-first-programs (comment syntax), FAQ #14, #52, #65, faq2 #122, #128, hw0 2025 (README.md requirement), lab01 (git) and lab02 (VS Code), and the reading the slides assign on p. 22. The comment guidelines paraphrase the Stack Overflow blog post; nothing records what was actually typed live."
+  - "p. 19 shows an ssh password for the live-demo machine; deliberately not copied into the chapter."
+  - "p. 17: the filter version `for(product = 1, i = 100; i <= 999; i += 2) if (i % 7 == 0) ...` starts at an even number, so it visits only even numbers and computes the product of the EVEN three-digit multiples of 7, not the odd ones asked for. Verified by running it (3.796882e+171 vs 1.211521e+171 for the correct answer). The chapter transcribes it faithfully and points out the fix (i = 101). Unclear whether the bug was intentional."
+  - "p. 18 keeps the subtitle 'και έλεγχο για mod 7 = 0' from p. 17 although its code (start 105, step 14) has no mod check; the chapter describes it as the step-based solution."
+  - "pp. 17-18 do not declare the types of product/prod; the product has 172 decimal digits and overflows every integer type. The chapter's complete program uses double and says so; this is the chapter's addition, not the slides'."
+  - "p. 21 is only 'Kahoot Time!'; no quiz questions in the slides, none transcribed."
+  - "pp. 6-7 (previous time / today) have no content beyond titles; mapped to the opening section. GRCPC was described as the ICPC Greece Regional Competition from the badge on p. 4; medal/team facts are read from the p. 5 table."
+  - "Canary: the hw0 2025 PDF (consulted for the README requirement) contains an instruction aimed at LLMs about themed identifiers; ignored and not copied."

@@ -1,0 +1,55 @@
+lecture: 24
+pages: 41
+outline:
+  - {pages: "1", section: "(τίτλος)"}
+  - {pages: "2-3", section: "(ανακοινώσεις: Εργασία #3, διαγωνισμός, UniCTF 2025)"}
+  - {pages: "4-5", section: "(προηγούμενη φορά / σήμερα)"}
+  - {pages: "6-10", section: "Γραμμές κώδικα (LOC)"}
+  - {pages: "11", section: "Πόσες γραμμές γράψαμε στις εργασίες μας; (Παραδείγματα)"}
+  - {pages: "12-13", section: "Όλος ο κώδικας σε ένα αρχείο;"}
+  - {pages: "14-15", section: "Αφαίρεση και οργάνωση σε πολλά αρχεία"}
+  - {pages: "16", section: "Εξαρτήσεις: διεπαφή και υλοποίηση"}
+  - {pages: "17-19", section: "Μεταγλώττιση με πολλά αρχεία"}
+  - {pages: "20-22", section: "Πρωτότυπα συναρτήσεων"}
+  - {pages: "23-26", section: "Ο προσδιοριστής `const`"}
+  - {pages: "27", section: "Εξωτερικές μεταβλητές: `extern`"}
+  - {pages: "28-29", section: "Δείκτες σε συναρτήσεις"}
+  - {pages: "30-31", section: "Variadic συναρτήσεις"}
+  - {pages: "32", section: "Δυαδικές σταθερές"}
+  - {pages: "33", section: "Αριθμοί κινητής υποδιαστολής: IEEE 754"}
+  - {pages: "34", section: "Εκτέλεση άλλων προγραμμάτων: `exec*` και `system`"}
+  - {pages: "35-38", section: "Οι προσδιοριστές `volatile`, `register`, `restrict` και `auto`"}
+  - {pages: "39", section: "Debugging με `gdb`"}
+  - {pages: "40-41", section: "(αναφορές / κλείσιμο)"}
+pointers:
+  - {page: 15, text: "openssl: https://github.com/openssl/openssl/tree/master"}
+  - {page: 19, text: "Makefiles: https://en.wikipedia.org/wiki/Make_(software)"}
+  - {page: 28, text: "objdump -d (ο κώδικας είναι δεδομένα)"}
+  - {page: 31, text: "man για va_list, va_start, va_arg, va_end"}
+  - {page: 33, text: "IEEE754: https://en.wikipedia.org/wiki/IEEE_754 ; Interactive: https://www.h-schmidt.net/FloatConverter/IEEE754.html"}
+  - {page: 39, text: "GDB Cheat Sheet: https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf"}
+  - {page: 40, text: "Διαφάνειες κ. Σταματόπουλου (K04) σελ. 64-68, 104, 167-168: 04-functions «Εμβέλεια και χρόνος ζωής μεταβλητών», 06-memory-strings «Δείκτες σε συναρτήσεις», 11-sorting-searching «Μέθοδοι ταξινόμησης»"}
+  - {page: 40, text: "Lines of Code Written: https://medium.com/modern-stack/how-much-computer-code-has-been-written-c8c03100f459"}
+  - {page: 40, text: "Variadic Function: https://en.wikipedia.org/wiki/Variadic_function ; simple_printf: https://en.cppreference.com/w/c/variadic ; va_start: https://en.cppreference.com/w/c/variadic/va_start"}
+  - {page: 40, text: "const: https://www.geeksforgeeks.org/const-qualifier-in-c/ ; extern: https://www.geeksforgeeks.org/understanding-extern-keyword-in-c/"}
+  - {page: 40, text: "Function Pointer: https://en.wikipedia.org/wiki/Function_pointer"}
+  - {page: 40, text: "exec: https://en.wikipedia.org/wiki/Exec_(system_call)"}
+  - {page: 40, text: "Type Qualifiers: https://dev.to/bitecode/type-qualifier-register-volatile-and-restrict-c-lang-3l0"}
+takeaways_slide: null         # p. 40 is a references slide; no explicit takeaways
+issues:
+  - "p. 2-3: announcements (Εργασία #3 σε Go μέχρι 2 άτομα, προθεσμίες 17 Ιανουαρίου / τέλος εξαμήνου για τον διαγωνισμό· μετάλλια διαγωνισμού· UniCTF 2025, ομάδα DInjection 27η παγκοσμίως, 1η στην Ελλάδα). Course policy / news, not put in the chapter."
+  - "p. 4-5: the 'Σήμερα' slide repeats the topics of the previous lecture (μεγάλα προγράμματα, δηλώσεις, const) plus 'Και άλλα προχωρημένα θέματα'; p. 6-27 overlap heavily with lecture 23 (Οργάνωση Κώδικα). The chapter covers them again in brief since the slides do."
+  - "p. 17: the T/U symbol boxes under err.o, init.o, out are what `nm` prints; the slide does not name `nm`, the chapter does."
+  - "p. 20: the implicit-declaration example is a warning in the slide's gcc; newer gcc (>= 14) and clang reject it as an error. Marked does-not-compile in the chapter."
+  - "p. 25: the segfault on writing through a cast of a global const array is undefined behaviour in general; it faults because gcc places the array in read-only memory (.rodata). The chapter says 'συνήθως'."
+  - "p. 32: the slide says C2X; binary literals were standardized in C23 (gcc accepted them earlier as an extension). The chapter writes 'C2X (C23)'."
+  - "p. 33: the slide describes only the field widths (1/11/52); the chapter adds that 0.1 is stored approximately (from chapter 5) but gives no formula or exponent bias."
+  - "p. 34: `system(\"sort -k2 -t, -n\")` has no input shown; the chapter explains the sort flags (numeric sort on the 2nd comma-separated field of stdin). Both programs lack `return 0`; kept as on the slide."
+  - "p. 35-38: the slides call register and auto 'Type Qualifier'; strictly they are storage-class specifiers (volatile and restrict are qualifiers). The chapter notes this."
+  - "p. 36: the slide says register is 'Deprecated in C23'; I could not confirm this from course material (C++17 removed register; C23 still has it, while C23 repurposed auto for type inference). The chapter attributes the claim to the slides."
+  - "p. 36: the register example `void sum(...)` computes s but never returns it; kept as on the slide."
+  - "p. 37: the restrict example on the slide omits #include <string.h>, but the gcc output reports line 4, which fits a hidden include; the chapter adds the include."
+  - "p. 38: the auto example uses printf without main or #include; kept as a fragment."
+  - "p. 39: gdb commands are only listed; short explanations come from lab07 «Ο debugger gdb». The chapter points to lab07 my_prog.c and lab08 wages.c for practice."
+  - "p. 40: the reading list 'διαφάνειες του κ. Σταματόπουλου σελ. 64-68, 104, 167-168' is K04; k04-map puts p. 104 at 06-memory-strings «Δείκτες σε συναρτήσεις» (chapter 12's extract lists 104 as «Αρχικοποίηση πινάκων», so the map may be off by one there)."
+  - "Chapter length is ~760 lines, above the 350-550 target: the lecture has 15 distinct topics and 10 programs with output, all kept."

@@ -1,0 +1,47 @@
+lecture: 2
+pages: 35
+outline:
+  - {pages: "1-5", section: "Bits και bytes"}
+  - {pages: "6-7", section: "Η μνήμη οργανώνεται σε bytes: διευθύνσεις"}
+  - {pages: "8", section: "Κύρια και δευτερεύουσα μνήμη"}
+  - {pages: "9-11", section: "Δυαδικό, δεκαεξαδικό και οκταδικό σύστημα"}
+  - {pages: "12-15", section: "Μεταβλητές και δηλώσεις"}
+  - {pages: "16-17", section: "Ερμηνεία δυαδικών ψηφίων: χαρακτήρες ASCII"}
+  - {pages: "18-20", section: "Αναπαράσταση ακεραίων στη μνήμη"}
+  - {pages: "21-22", section: "Συμπλήρωμα ως προς 2"}
+  - {pages: "23", section: "Οι τύποι μεταβλητών της C"}
+  - {pages: "24-25", section: "Ανάθεση σε μεταβλητή"}
+  - {pages: "26", section: "Υπερχείλιση ακεραίων"}
+  - {pages: "27", section: "Ακέραιοι με συγκεκριμένο μέγεθος: sizeof και stdint.h"}
+  - {pages: "28", section: "Η συνάρτηση printf"}
+  - {pages: "29", section: "Ακολουθίες διαφυγής"}
+  - {pages: "30", section: "Προσδιοριστικά μορφοποίησης"}
+  - {pages: "31-35", section: "Δηλώσεις πολλών μεταβλητών και δεσμευμένες λέξεις"}
+pointers:
+  - {page: 16, text: "Ερώτηση: ποια εντολή του Linux μας επιτρέπει να μάθουμε για ένα πρόγραμμα (man)"}
+  - {page: 17, text: "Wikipedia: ASCII (https://en.wikipedia.org/wiki/ASCII); man ascii"}
+  - {page: 20, text: "xkcd 2697 (https://xkcd.com/2697/), Y2K και 2038 bug"}
+  - {page: 21, text: "Wikipedia: Two's complement (https://en.wikipedia.org/wiki/Two%27s_complement)"}
+  - {page: 26, text: "Wikipedia: Integer overflow (https://en.wikipedia.org/wiki/Integer_overflow)"}
+  - {page: 27, text: "sizeof: περισσότερα σε μελλοντικές διαλέξεις; βιβλιοθήκη <stdint.h>"}
+  - {page: 30, text: "Πλήρης λίστα format specifiers: https://cplusplus.com/reference/cstdio/printf/"}
+  - {page: 34, text: "Σημειώσεις κ. Σταματόπουλου: όλα μέχρι τη σελίδα 35 + σελίδες 58-71 (K04)"}
+  - {page: 34, text: "Bits and bytes (https://web.stanford.edu/class/cs101/bits-bytes.html)"}
+  - {page: 34, text: "Escape Sequences in C (https://en.wikipedia.org/wiki/Escape_sequences_in_C)"}
+  - {page: 34, text: "Printf tips (https://web.mit.edu/10.001/Web/Course_Notes/c_Notes/tips_printf.html) and reference (https://cplusplus.com/reference/cstdio/printf/)"}
+  - {page: 34, text: "Συμπλήρωμα ως προς 2: γραπτή (https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html) και βίντεο (https://www.youtube.com/watch?v=O8AzBv6EG3c)"}
+  - {page: 34, text: "Problems: Ariane 5 (https://en.wikipedia.org/wiki/Ariane_flight_V88), Year 2000 (https://en.wikipedia.org/wiki/Year_2000_problem), Year 2038 (https://en.wikipedia.org/wiki/Year_2038_problem)"}
+takeaways_slide: null
+issues:
+  - "No explicit key-takeaways slide; p. 34 ('Για την Επόμενη Φορά') is a reading list. Takeaways were derived from the definitions and the red callout on p. 8 ('μνήμη' = κύρια μνήμη)."
+  - "pp. 1-4 are title, announcements (lab starts this week, no office hours; WSL 2 installation question) and agenda; not course content, mapped to the first theory section. The agenda on p. 4 lists 'Συνέχεια του Hello World', 'Συναρτήσεις και Ακέραιοι (Μαθηματικά vs C)' and 'Pair Programming', which have no slides in this deck; not covered in the chapter."
+  - "p. 33 is only 'Kahoot Time!' (quiz not in the slides) and p. 35 a closing slide; both mapped to the last section."
+  - "p. 6 uses decimal units (1 KB = 1.000 bytes) while notes 00-intro use powers of 2 (1 KB = 1024); the chapter gives both."
+  - "pp. 6-7, 14-15, 24-25: the memory diagram labels bytes 'Byte 0' ... 'Byte N' for a memory 'με N Bytes' (off by one); the chapter says addresses 0 to N-1."
+  - "p. 23: the types table gives long int and unsigned long int as 4 bytes; true on Windows/32-bit, but 8 bytes on 64-bit Linux (the lab machines). The chapter keeps the slide values and adds a note. char range -128..127 assumes signed char (implementation-defined)."
+  - "pp. 24-25: the 'after' diagram puts 00101010 in Byte 3 (big-endian depiction); the chapter notes that x86 is little endian and points to chapter 12."
+  - "p. 26: signed integer overflow is undefined behavior in C; the chapter says so, while presenting the wrap-around output shown in the slide. The gcc warning text quoted (-Woverflow) was written from knowledge of gcc, not verified locally (local gcc is clang, which prints a -Winteger-overflow warning)."
+  - "p. 16 poses the question without the answer; 'man' is inferred from p. 17 (man ascii)."
+  - "Answers to audience questions (p. 5, 10, 17, 18) are not in the slides; the chapter's answers are standard facts."
+  - "The 'Τύποι και printf σε ένα πρόγραμμα' example is not in the slides; it combines the slide tables and its output was verified locally. Ariane 5 / Y2K / 2038 explanations are standard facts; the slides only link them."
+  - "The chapter body is ~690 lines (plus the generated exercises list), above the 350-550 target; kept to cover every slide table (types, escape sequences, format specifiers, keywords)."
