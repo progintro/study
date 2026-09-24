@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render every ```mermaid block in the chapters to build/mermaid/<hash>.pdf.
+"""Render every ```mermaid block in the chapters and questions to build/mermaid/<hash>.pdf.
 
 The site draws mermaid diagrams in the browser (see _includes/head-custom.html) and
 the Markdown keeps them as text, which is what agents read. Only the PDF needs them
@@ -38,7 +38,9 @@ def blocks(text):
 def main(argv):
     os.makedirs(OUT, exist_ok=True)
     todo = {}
-    for path in sorted(glob.glob(os.path.join(ROOT, "chapters", "*", "README.md"))):
+    paths = glob.glob(os.path.join(ROOT, "chapters", "*", "README.md")) + \
+        glob.glob(os.path.join(ROOT, "questions", "*", "*.md"))
+    for path in sorted(paths):
         for _, src, h in blocks(open(path, encoding="utf-8").read()):
             if not os.path.exists(os.path.join(OUT, h + ".pdf")):
                 todo[h] = src

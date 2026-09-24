@@ -51,7 +51,10 @@ def diagrams(text):
         pdf = os.path.join("build", "mermaid", h + ".pdf")
         if not os.path.exists(os.path.join(ROOT, pdf)):
             sys.exit(f"missing {pdf}: run tools/mermaid.py")
-        out += [text[last:m.start()], f"{m.group(1)}![]({pdf})"]
+        # capped so a tall flowchart does not take a whole page; never scaled up
+        out += [text[last:m.start()],
+                "```{=latex}\n\\begin{center}\\includegraphics[max width=0.9\\linewidth,"
+                f"max height=0.6\\textheight]{{{pdf}}}\\end{{center}}\n```"]
         last = m.end()
     return "".join(out) + text[last:]
 
@@ -101,7 +104,8 @@ def book(plain):
         if not plain and not appendix:
             out.append(latex("\\appendix"))
         # the bank's H1 is a chapter of its own; its per-chapter H2s stay sections
-        out.append(links(open(qpath, encoding="utf-8").read()))
+        qtext = links(open(qpath, encoding="utf-8").read())
+        out.append(qtext if plain else diagrams(qtext))
     return "\n\n".join(out)
 
 

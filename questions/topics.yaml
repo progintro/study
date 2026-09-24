@@ -46,6 +46,7 @@ files: Αρχεία (fopen, fread, fwrite)
 code-organization: Οργάνωση κώδικα σε πολλαπλά αρχεία
 make: make και Makefiles
 problem-solving: Επίλυση προβλημάτων
+dynamic-programming: Δυναμικός προγραμματισμός
 math-algorithms: Μαθηματικοί αλγόριθμοι (πρώτοι, ΜΚΔ, …)
 simulation: Προσομοίωση
 graphs: Γράφοι και αναζήτηση (BFS / DFS)
