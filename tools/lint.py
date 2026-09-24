@@ -29,7 +29,7 @@ import sys
 import yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SECTIONS = ["Σύνοψη", "Θεωρία", "Κύρια σημεία", "Ορολογία", "Συχνά λάθη", "Διάβασμα",
+SECTIONS = ["Σύνοψη", "Θεωρία", "Παραδείγματα", "Κύρια σημεία", "Ορολογία", "Συχνά λάθη", "Διάβασμα",
             "Ασκήσεις", "Ερωτήσεις αυτοαξιολόγησης"]
 REQUIRED = ["lecture", "title", "date", "part", "slides", "topics", "notes", "labs"]
 

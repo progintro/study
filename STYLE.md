@@ -76,10 +76,16 @@ labs: [lab06]
 One paragraph (4–6 sentences): what the lecture is about and why it matters.
 
 ## Θεωρία
-### <one H3 per topic of the lecture, in the lecture's order>
-Explanatory prose. Definitions in **bold** at the point where they are defined.
-Code examples, output shown as ```text blocks. Diagrams from the slides are described
-in words or redrawn as text / ASCII / tables; memory layouts as tables.
+### <one H3 per concept of the lecture, in the lecture's order>
+The concepts: definitions in **bold** where they are defined, the rules of the
+language, how things work and why. Small illustrative snippets only; diagrams
+as mermaid (see below).
+
+## Παραδείγματα
+### <one H3 per worked example>
+The lecture's worked examples, live-coding sessions, programs with their output,
+and tips for the homework or labs that the lecture gave. Each one says which
+concepts of «Θεωρία» it applies.
 
 ## Κύρια σημεία
 1. Numbered list of the key takeaways. Every takeaway the slides state explicitly
@@ -123,8 +129,14 @@ in words or redrawn as text / ASCII / tables; memory layouts as tables.
 - K04 page numbers come from `sources/k04-map.tsv` (page → notes chapter and section).
   Give notes sections by their exact heading text in «».
 
-### Writing the theory section
+### Writing the theory and examples
 
+- **Concepts first, examples after.** «Θεωρία» teaches the concepts; complete
+  programs, walkthroughs, live coding and homework/lab tips go in «Παραδείγματα».
+  A concept may show a 2–6 line snippet inline; anything longer is an example.
+- **Concise.** Say each thing once, in plain sentences; no filler ("Όπως είναι
+  γνωστό…", "Ας δούμε τώρα…"), no repeating the slide text and then paraphrasing
+  it. A typical chapter is 350–550 lines.
 - **Transform, don't transcribe.** Slides are bullets plus the lecturer's voice; the
   chapter supplies the missing sentences that connect them. Explain *why*, not only
   *what*. Keep every fact, example and program from the slides. Drop nothing that
@@ -134,13 +146,13 @@ in words or redrawn as text / ASCII / tables; memory layouts as tables.
   `sources/extract/lecNN.yaml` under `issues`.
 - Where the slides show live-coding output (terminal screenshots), transcribe it as a
   ```text block with the `$` prompt.
-- Where the slides use an image to make a point (a meme, a diagram), keep the point
-  in words. Do not describe the meme itself unless it teaches something.
+- Where the slides use an image to make a point (a meme), keep the point in words.
+  Do not describe the meme itself unless it teaches something.
 - Cross-reference earlier chapters by link: `[Κεφάλαιο 6](../06-control-flow/)`.
 
 ### Code
 
-- Fence every block with a language: `c`, `text`, `sh`, `make`, `diff`, `yaml`.
+- Fence every block with a language: `c`, `text`, `sh`, `make`, `diff`, `yaml`, `mermaid`.
 - A ```c block that defines `main` must compile: `tools/check-code.py` runs
   `gcc -fsyntax-only` on it (with `-std=gnu11`). If a program is deliberately
   incomplete or wrong (for example "find the bug"), put a line containing only `....`
@@ -148,13 +160,28 @@ in words or redrawn as text / ASCII / tables; memory layouts as tables.
 - Write code the way the slides do (modern C, `int main(int argc, char **argv)` where
   the slides use it). Keep lines ≤ 80 characters so the PDF does not wrap.
 
+### Diagrams: mermaid
+
+Draw flowcharts, control flow, call trees, recursion trees, linked lists, trees,
+graphs, pointer diagrams, state machines and processes (compile → link → run) as
+```mermaid blocks. The site renders them, the PDF build renders them to images,
+and agents read the source. Memory layouts (addresses and contents) stay tables.
+
+- Use `flowchart TD` / `flowchart LR` for almost everything. `sequenceDiagram`
+  and `stateDiagram-v2` are fine when they fit. Avoid experimental diagram types.
+- Quote every label that has punctuation, operators or Greek: `A["i < 42"]`,
+  `B{"x > 0;"}`. Use `#quot;` for a double quote inside a label, and `#lt;` / `#gt;`
+  if a label has `<` or `>` next to letters.
+- Keep a diagram to roughly 15 nodes, and give it a one-line caption in italics
+  underneath (`*Σχήμα: …*`).
+
 ### Math, HTML and figures
 
 - Math: `$x$` inline, `$$x$$` display on its own line. No spaces just inside the
   delimiters. Write `\lbrace`/`\rbrace` rather than `\{`/`\}`.
 - No raw HTML except `<a id="..."></a>` anchors (the PDF drops HTML).
-- Figures are allowed only when words and tables truly cannot carry the point. Put them in
-  `figures/` as SVG plus PDF (the build needs both) and reference the `.svg`.
+- Image figures are a last resort, when neither mermaid nor a table can carry the
+  point. Put them in `figures/` as SVG plus PDF (the build needs both) and reference the `.svg`.
 
 ## The question bank: `questions/`
 

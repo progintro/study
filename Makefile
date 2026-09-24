@@ -1,6 +1,7 @@
 # Build the downloadable artifacts from chapters/*/README.md and questions/:
 #
-#   build/NN-slug.pdf        one PDF per chapter
+#   build/NN-slug.pdf        one PDF per chapter (mermaid diagrams rendered by
+#                            tools/mermaid.py into build/mermaid/, cached by hash)
 #   build/study.pdf          the whole book: cover, contents, parts, question bank
 #   build/study-md.zip       the Markdown sources
 #   build/questions.json     the question bank, for tools and agents
@@ -25,7 +26,7 @@ QUESTIONS := $(sort $(wildcard questions/*/*.md))
 SLUGS := $(patsubst chapters/%/README.md,%,$(CHAPTERS))
 CHAPTER_PDFS := $(SLUGS:%=$(BUILD)/%.pdf)
 FIGURES := $(wildcard figures/*.pdf)
-DEPS := tex/header.tex tex/table-widths.lua tools/pdf-prep.py $(FIGURES)
+DEPS := tex/header.tex tex/table-widths.lua tools/pdf-prep.py tools/mermaid.py $(FIGURES)
 
 # The same typesetting flags for every PDF. -V babel-lang= and the \babelprovide in
 # tex/header.tex work around pandoc 3.7's babel wiring; see lab-material/CLAUDE.md.
@@ -43,6 +44,7 @@ $(BUILD):
 
 # The running header carries the chapter title, without its "Κεφάλαιο N:" prefix.
 $(BUILD)/%.pdf: chapters/%/README.md $(DEPS) | $(BUILD)
+	python3 tools/mermaid.py
 	python3 tools/pdf-prep.py $< > $(BUILD)/$*.md
 	$(PANDOC) $(BUILD)/$*.md $(PDF_FLAGS) --toc-depth=2 \
 		-V header-includes='\def\chaptitle{$(shell grep -m1 '^# ' $< | sed -e 's/^# //' -e 's/^[^:]*: //')}' \
@@ -52,6 +54,7 @@ $(BUILD)/questions.json $(BUILD)/questions.md: $(QUESTIONS) sources/manifest.yam
 	python3 tools/gen-exercises.py --check --build $(BUILD)
 
 $(BUILD)/study.pdf: $(CHAPTERS) $(DEPS) tex/book.tex $(BUILD)/questions.md | $(BUILD)
+	python3 tools/mermaid.py
 	python3 tools/pdf-prep.py --all > $(BUILD)/study.md
 	$(PANDOC) $(BUILD)/study.md $(PDF_FLAGS) --toc-depth=1 --top-level-division=chapter \
 		-V documentclass=report -H tex/book.tex \

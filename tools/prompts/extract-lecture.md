@@ -47,10 +47,15 @@ for the C course "Εισαγωγή στον Προγραμματισμό" (ΕΚ�
      `/Users/ethan/github/progintro/lab-material/field.md` (TA field notes). Use them
      for «Συχνά λάθη» where relevant.
 3. **Write `chapters/{{SLUG}}/README.md`**, following STYLE.md: front matter, Στόχοι,
-   Σύνοψη, Θεωρία, Κύρια σημεία, Ορολογία, Συχνά λάθη, Διάβασμα, the empty exercises
-   markers, and Ερωτήσεις αυτοαξιολόγησης. The theory must be real explanatory Greek
-   prose that a student can learn from without the slides, covering *everything* in the
-   lecture. Chapters are typically 250–600 lines.
+   Σύνοψη, Θεωρία, Παραδείγματα, Κύρια σημεία, Ορολογία, Συχνά λάθη, Διάβασμα, the
+   empty exercises markers, and Ερωτήσεις αυτοαξιολόγησης.
+   - **Θεωρία holds the concepts** as concise, explanatory Greek prose that a student
+     can learn from without the slides, and it covers *every* concept in the lecture.
+   - **Παραδείγματα comes after**, with the worked examples, live coding, programs and
+     their output, and homework or lab tips.
+   - Draw flowcharts, trees, lists, pointer diagrams and processes as ```mermaid
+     (STYLE.md, «Diagrams»).
+   - Aim for 350–550 lines. Be concise: say each thing once.
 4. **Write one question file per question or exercise found in the slides** in
    `questions/slides/slides-lec{{NN}}-<short-slug>.md`, following STYLE.md (hints only).
    This covers questions posed to the audience, "try it yourself" exercises and quizzes.

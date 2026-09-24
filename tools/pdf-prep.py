@@ -8,6 +8,8 @@ The PDF is a different renderer from GitHub and the Pages site, and needs:
     to the repository root, which is where pandoc runs;
   * footnote labels unique across chapters, because the book concatenates them all
     and every chapter numbers its notes from 1;
+  * mermaid diagrams as the PDFs tools/mermaid.py rendered (the plain Markdown for
+    agents keeps the mermaid source, which is the more useful form for them);
   * links that work outside the site: links to other chapters and to questions are
     relative on GitHub and the site, and become absolute site URLs here.
 
@@ -29,6 +31,9 @@ import sys
 
 import yaml
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import mermaid  # noqa: E402
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://progintro.github.io/study"
 
@@ -40,10 +45,23 @@ def links(text):
     return text
 
 
-def prepare(path):
+def diagrams(text):
+    out, last = [], 0
+    for m, _, h in mermaid.blocks(text):
+        pdf = os.path.join("build", "mermaid", h + ".pdf")
+        if not os.path.exists(os.path.join(ROOT, pdf)):
+            sys.exit(f"missing {pdf}: run tools/mermaid.py")
+        out += [text[last:m.start()], f"{m.group(1)}![]({pdf})"]
+        last = m.end()
+    return "".join(out) + text[last:]
+
+
+def prepare(path, plain=False):
     text = io.open(path, encoding="utf-8").read()
     if text.startswith("---\n"):
         text = text[text.index("\n---\n", 3) + 5:]
+    if not plain:
+        text = diagrams(text)
     text = re.sub(r"\]\((?:\.\./)+figures/(\w+)\.svg\)", r"](figures/\1.pdf)", text)
     slug = os.path.basename(os.path.dirname(path))[:2]
     text = re.sub(r"\[\^(\w+)\]", lambda m: "[^c%s-%s]" % (slug, m.group(1)), text)
@@ -73,7 +91,7 @@ def book(plain):
             title = m["parts"][part]
             label = "Παραρτήματα" if part == "X" else f"Μέρος {'ΑΒΓΔΕ'['ABCDE'.index(part)]}: {title}"
             out.append(latex("\\part*{%s}\n\\addcontentsline{toc}{part}{%s}" % (label, label)))
-        text = prepare(path)
+        text = prepare(path, plain)
         if plain:
             meta = f"> Διάλεξη {l['n']} · {l['date']} · [διαφάνειες]({m['release']}/{l['slides']})"
             text = re.sub(r"^(# .+\n)", lambda h: h.group(1) + "\n" + meta + "\n", text, count=1, flags=re.M)
