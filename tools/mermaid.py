@@ -50,7 +50,7 @@ def main(argv):
     for h, src in todo.items():
         open(os.path.join(OUT, h + ".mmd"), "w", encoding="utf-8").write(src)
     # one container, one Chromium, a shell loop over the diagrams
-    script = " && ".join(f"/home/mermaidcli/node_modules/.bin/mmdc -p /puppeteer-config.json -i {h}.mmd -o {h}.pdf --pdfFit -q"
+    script = "; ".join(f"/home/mermaidcli/node_modules/.bin/mmdc -p /puppeteer-config.json -i {h}.mmd -o {h}.pdf --pdfFit -q"
                          for h in todo)
     cmd = ["docker", "run", "--rm", "--tmpfs", "/tmp:size=1g,mode=1777,exec",
            "-u", f"{os.getuid()}:{os.getgid()}", "-e", "HOME=/tmp",
