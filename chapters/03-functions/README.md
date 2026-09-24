@@ -568,9 +568,9 @@ Pi is approximately: 3.141583
 
 - **Διαφάνειες:** [Διάλεξη 3](https://github.com/progintro/progintro.github.io/releases/download/2025/lec03.pdf), σελ. 1–47. Τύποι, ανάθεση, υπερχείλιση: σελ. 5–9· `printf`, ακολουθίες διαφυγής, προσδιοριστικά: σελ. 10–12· συμμετρία και μηνύματα λάθους: σελ. 13–14· δηλώσεις και δεσμευμένες λέξεις: σελ. 15–16· μεταγλώττιση και ανάλυση του Hello World: σελ. 17–27· συναρτήσεις: σελ. 28–37· pair programming και challenges: σελ. 38–44.
 - **Σημειώσεις:** οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 35, και τις σελίδες 58–71. Συγκεκριμένα για αυτή τη διάλεξη:
-  - [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), ενότητες «Καλημέρα κόσμε της C» και «Πόσο είναι το $\pi$;» (K04, σελ. 20–24)
-  - [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Μεταβλητές, σταθερές, τύποι και δηλώσεις στην C» (K04, σελ. 31–34)
-  - [Κεφάλαιο 4: Συναρτήσεις, εμβέλεια και αναδρομή](https://progintro.github.io/notes/chapters/04-functions/), ενότητες «Δομή ενός προγράμματος C – Συναρτήσεις», «Συνάρτηση ύψωσης σε δύναμη», «Συνάρτηση υπολογισμού παραγοντικού» (K04, σελ. 59–63)· οι σελ. 64–71 («Εμβέλεια και χρόνος ζωής μεταβλητών», «Υπολογισμός παραγοντικού με αναδρομή») προετοιμάζουν επόμενα κεφάλαια.
+  - [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), ενότητες «Καλημέρα κόσμε της C» και «Πόσο είναι το $\pi$;» (K04, σελ. 19–23)
+  - [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Μεταβλητές, σταθερές, τύποι και δηλώσεις στην C» (K04, σελ. 30–33)
+  - [Κεφάλαιο 4: Συναρτήσεις, εμβέλεια και αναδρομή](https://progintro.github.io/notes/chapters/04-functions/), ενότητες «Δομή ενός προγράμματος C – Συναρτήσεις», «Συνάρτηση ύψωσης σε δύναμη», «Συνάρτηση υπολογισμού παραγοντικού» (K04, σελ. 58–62)· οι σελ. 63–69 («Εμβέλεια και χρόνος ζωής μεταβλητών», «Υπολογισμός παραγοντικού με αναδρομή») προετοιμάζουν επόμενα κεφάλαια.
 - **Εργαστήριο:**
   - [Εργαστήριο 2](https://progintro.github.io/lab-material/labs/lab02/): άσκηση `pyth.c` (το Challenge #1 με είσοδο από τον χρήστη) και το παράρτημα «Αποσφαλμάτωση προγραμμάτων (Πράξη 1η)» για τα συντακτικά λάθη
   - [Εργαστήριο 5](https://progintro.github.io/lab-material/labs/lab05/): άσκηση `collatz.c`, ερωτήματα 1.1–1.2 (συναρτήσεις `isodd` και `collatz_it`)
@@ -584,13 +584,41 @@ Pi is approximately: 3.141583
 
 <!-- exercises -->
 
+### Από τις διαφάνειες
+
+- [Τιμή μετά από κλήση συνάρτησης](../../questions/slides/slides-lec03-function-call.md): Διάλεξη 3: Συναρτήσεις, διαφάνεια 37 · ★☆☆ · trace
+- [Πόσα bytes είναι ένας int;](../../questions/slides/slides-lec03-int-size.md): Διάλεξη 3: Συναρτήσεις, διαφάνεια 9 · ★☆☆ · short-answer
+- [Διακοπή ρεύματος και μνήμη](../../questions/slides/slides-lec03-power-outage.md): Διάλεξη 3: Συναρτήσεις, διαφάνεια 3 · ★☆☆ · multiple-choice
+- [Πυθαγόρειο θεώρημα (pyth.c)](../../questions/slides/slides-lec03-pyth.md): Διάλεξη 3: Συναρτήσεις, διαφάνεια 40 · ★☆☆ · programming
+- [Προσέγγιση του π με τη σειρά Leibniz](../../questions/slides/slides-lec03-leibniz-pi.md): Διάλεξη 3: Συναρτήσεις, διαφάνεια 43 · ★★☆ · programming
+- [Υπερχείλιση ακεραίων](../../questions/slides/slides-lec03-overflow.md): Διάλεξη 3: Συναρτήσεις, διαφάνεια 8 · ★★☆ · trace
+
+### Από τα εργαστήρια
+
+- [Πυθαγόρειο θεώρημα](../../questions/labs/lab-lab02-pyth.md): Εργαστήριο 2, Άσκηση 2 · ★☆☆ · programming
+
+### Από τα θέματα εξετάσεων
+
+- [Η συνάρτηση about](../../questions/exams/exam-2024-sep-q1.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 1 · ★☆☆ · programming
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
-- [Η συνάρτηση about](../../questions/exams/exam-2024-sep-q1.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 1 · ★☆☆ · programming (κεφ. 0)
+- [Υπολογισμός βαθμολογίας πρωτοετών](../../questions/slides/slides-lec04-grade-program.md): Διάλεξη 4: Git και Τελεστές, διαφάνεια 8 · ★☆☆ · programming (κεφ. 4)
+- [Συνάρτηση max με τον τελεστή συνθήκης](../../questions/slides/slides-lec04-max-conditional.md): Διάλεξη 4: Git και Τελεστές, διαφάνεια 31 · ★☆☆ · programming (κεφ. 4)
+- [Τελεστές ως συναρτήσεις](../../questions/slides/slides-lec04-operators-as-functions.md): Διάλεξη 4: Git και Τελεστές, διαφάνειες 21 και 25 · ★☆☆ · short-answer (κεφ. 4)
+- [Συνάρτηση max με τον τελεστή συνθήκης](../../questions/slides/slides-lec05-ternary-max.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 13 · ★☆☆ · programming (κεφ. 5)
+- [Κάντο όπως ο Βιετά](../../questions/exams/exam-2023-dec-q1.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 1 · ★★☆ · programming (κεφ. 6)
+- [Ασημένιο Κλάσμα](../../questions/exams/exam-2023-fall-ex10-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 2 · ★★☆ · programming (κεφ. 6)
+- [Κάντο όπως ο Βιετά](../../questions/exams/exam-2023-fall-ex13-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 1 · ★★☆ · programming (κεφ. 6)
+- [Προσεγγίζοντας το π](../../questions/exams/exam-2024-dec-q1.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 1 · ★☆☆ · programming (κεφ. 6)
 - [Υπολογισμός αθροίσματος σειράς](../../questions/labs/lab-lab03-seq.md): Εργαστήριο 3, Άσκηση 1 · ★★☆ · programming (κεφ. 6)
-- [Clyde Πρώτοι](../../questions/exams/exam-2023-fall-ex11-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #11, Θέμα 4 · ★★☆ · programming (κεφ. 7)
-- [Εαυτοί Αριθμοί](../../questions/exams/exam-2023-fall-ex12-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 4 · ★★☆ · programming (κεφ. 7)
-- [Τυχεροί Αριθμοί](../../questions/exams/exam-2023-fall-ex13-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 4 · ★★☆ · programming (κεφ. 7)
+- [Η Μέθοδος Newton-Raphson](../../questions/homework/hw-2023-hw1-newton.md): Εργασία 1 (2023-24), Άσκηση 1 · ★★☆ · programming (κεφ. 8)
+- [Η εικασία του Collatz](../../questions/labs/lab-lab05-collatz.md): Εργαστήριο 5, Άσκηση 1 · ★★☆ · programming (κεφ. 11)
+- [Πέρασμα δεδομένων μέσω δεικτών](../../questions/labs/lab-lab06-myprog.md): Εργαστήριο 6, Άσκηση 1 · ★☆☆ · programming (κεφ. 11)
+- [Αύξηση παραμέτρου μέσα σε συνάρτηση](../../questions/slides/slides-lec14-local-param.md): Διάλεξη 14, διαφάνειες 11–12 · ★☆☆ · trace (κεφ. 14)
+- [Κατοπτρικά Πρώτα Τετράγωνα](../../questions/homework/hw-2023-hw1-mirror.md): Εργασία 1 (2023-24), Άσκηση 2 · ★★★ · programming (κεφ. 15)
+- [Κλήση πριν από τον ορισμό](../../questions/slides/slides-lec23-implicit-declaration.md): Διάλεξη 23, διαφάνειες 19-21 · ★☆☆ · debug (κεφ. 23)
+- [Compiler error ή linking error; (math.h και libm.so)](../../questions/slides/slides-lecmake-sqrt-errors.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 6-8 · ★☆☆ · debug (κεφ. 26)
 
 <!-- /exercises -->
 

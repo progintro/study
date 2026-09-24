@@ -6,7 +6,7 @@ source:
   title: "Εργαστήριο 5, Άσκηση 3"
   url: https://progintro.github.io/lab-material/labs/lab05/
   years: [2025]
-chapters: [11, 2]
+chapters: [16, 11, 2]
 topics: [recursion, dynamic-programming, integer-representation]
 difficulty: 3
 type: programming

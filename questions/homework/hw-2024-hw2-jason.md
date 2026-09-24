@@ -6,7 +6,7 @@ source:
   title: "Εργασία 2 (2024-25), Άσκηση 3"
   url: https://github.com/progintro/progintro.github.io/releases/download/2024/hw2.pdf
   years: [2024]
-chapters: [14, 13, 23]
+chapters: [14, 11, 18]
 topics: [strings, dynamic-memory, files, recursion, code-organization, input-output]
 difficulty: 3
 type: programming

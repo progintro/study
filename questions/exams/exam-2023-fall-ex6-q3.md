@@ -6,7 +6,7 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 3"
   url: https://progintro.github.io/exams/2023/fall/ex6/
   years: [2023]
-chapters: [7, 14, 8]
+chapters: [14, 8]
 topics: [problem-solving, strings, loops]
 difficulty: 2
 type: programming

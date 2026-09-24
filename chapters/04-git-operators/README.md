@@ -556,7 +556,7 @@ int max(int a, int b) {
 ## Διάβασμα
 
 - **Διαφάνειες:** [Διάλεξη 4](https://github.com/progintro/progintro.github.io/releases/download/2025/lec04.pdf), σελ. 1–44. Pair programming: σελ. 5–7· πρόγραμμα βαθμολογίας και `argc`/`argv`/`atoi`: σελ. 8–10, 38· version control και git: σελ. 11–19· τελεστές: σελ. 20–37· προτεραιότητα και προσεταιριστικότητα: σελ. 39–41.
-- **Σημειώσεις:** [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Εντολές αντικατάστασης, τελεστές και παραστάσεις» (K04, σελ. 35–44). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 43, δηλαδή σχεδόν ολόκληρη αυτή την ενότητα.
+- **Σημειώσεις:** [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Εντολές αντικατάστασης, τελεστές και παραστάσεις» (K04, σελ. 34–43). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 43, δηλαδή ολόκληρη αυτή την ενότητα.
 - **Εργαστήριο:** [Εργαστήριο 1](https://progintro.github.io/lab-material/labs/lab01/): «Βήμα 6: Git και GitHub» (λογαριασμός, κλειδί SSH, `git config`) και «Άσκηση 1: Το πρώτο σας repository (info.txt)».
 - **Βιβλίο:** K&R, §2.5–§2.12, όπως προτείνουν οι σημειώσεις.
 - **Άλλα:**
@@ -570,14 +570,25 @@ int max(int a, int b) {
 
 <!-- exercises -->
 
+### Από τις διαφάνειες
+
+- [Η τιμή του 0xbeef | 0xcafe0000](../../questions/slides/slides-lec04-cafebeef.md): Διάλεξη 4: Git και Τελεστές, διαφάνεια 30 · ★☆☆ · multiple-choice
+- [Ο κύκλος clone, add, commit, push, pull](../../questions/slides/slides-lec04-git-cycle.md): Διάλεξη 4: Git και Τελεστές, διαφάνειες 15-18 · ★☆☆ · tooling
+- [Κανόνας αναπροσαρμογής βαθμού ασκήσεων](../../questions/slides/slides-lec04-grade-adjustment.md): Διάλεξη 4: Git και Τελεστές, διαφάνεια 8 · ★☆☆ · programming
+- [Υπολογισμός βαθμολογίας πρωτοετών](../../questions/slides/slides-lec04-grade-program.md): Διάλεξη 4: Git και Τελεστές, διαφάνεια 8 · ★☆☆ · programming
+- [Συνάρτηση max με τον τελεστή συνθήκης](../../questions/slides/slides-lec04-max-conditional.md): Διάλεξη 4: Git και Τελεστές, διαφάνεια 31 · ★☆☆ · programming
+- [Απομόνωση του πιο σημαντικού bit](../../questions/slides/slides-lec04-msb.md): Διάλεξη 4: Git και Τελεστές, διαφάνεια 29 · ★☆☆ · multiple-choice
+- [Τι τύπου τελεστές είναι;](../../questions/slides/slides-lec04-operator-arity.md): Διάλεξη 4: Git και Τελεστές, διαφάνειες 25-28 και 31 · ★☆☆ · short-answer
+- [Τελεστές ως συναρτήσεις](../../questions/slides/slides-lec04-operators-as-functions.md): Διάλεξη 4: Git και Τελεστές, διαφάνειες 21 και 25 · ★☆☆ · short-answer
+- [Προτεραιότητα και προσεταιριστικότητα](../../questions/slides/slides-lec04-precedence.md): Διάλεξη 4: Git και Τελεστές, διαφάνεια 39 · ★☆☆ · trace
+- [Τι επιστρέφει το (double)3/4;](../../questions/slides/slides-lec04-cast-division.md): Διάλεξη 4: Git και Τελεστές, διαφάνεια 32 · ★★☆ · trace
+
 ### Από τα εργαστήρια
 
 - [Το πρώτο σας repository](../../questions/labs/lab-lab01-info.md): Εργαστήριο 1, Άσκηση 1 · ★☆☆ · tooling
 
 ### Από τις εργασίες
 
-- [Νέο URL στο GitHub](../../questions/homework/hw-2023-hw0-github-pages.md): Εργασία 0 (2023-24), Άσκηση 1 · ★☆☆ · tooling
-- [Νέο URL στο GitHub (pages)](../../questions/homework/hw-2024-hw0-pages.md): Εργασία 0 (2024-25), Άσκηση 1 · ★☆☆ · tooling
 - [Νέο URL στο GitHub (pages)](../../questions/homework/hw-2025-hw0-pages.md): Εργασία 0 (2025-26), Άσκηση 1 · ★☆☆ · tooling
 
 ### Από τα θέματα εξετάσεων
@@ -587,10 +598,19 @@ int max(int a, int b) {
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Ξεκινώντας με την γραμμή εντολών (bandit)](../../questions/homework/hw-2023-hw0-bandit.md): Εργασία 0 (2023-24), Άσκηση 2 · ★★☆ · tooling (κεφ. 1)
-- [Παιχνίδια με Κονσόλα (cmdline)](../../questions/homework/hw-2024-hw0-cmdline.md): Εργασία 0 (2024-25), Άσκηση 2 · ★★☆ · tooling (κεφ. 1)
 - [Παιχνίδια με Κονσόλα (cmdline)](../../questions/homework/hw-2025-hw0-cmdline.md): Εργασία 0 (2025-26), Άσκηση 2 · ★★☆ · tooling (κεφ. 1)
+- [Κάντο όπως ο Βιετά](../../questions/exams/exam-2023-dec-q1.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 1 · ★★☆ · programming (κεφ. 6)
+- [Ασημένιο Κλάσμα](../../questions/exams/exam-2023-fall-ex10-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 2 · ★★☆ · programming (κεφ. 6)
+- [Κάντο όπως ο Βιετά](../../questions/exams/exam-2023-fall-ex13-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 1 · ★★☆ · programming (κεφ. 6)
+- [Τυπώνοντας τον Πίνακα ASCII](../../questions/exams/exam-2023-fall-ex15-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 2 · ★★☆ · programming (κεφ. 6)
+- [Μέγιστος Κοινός Διαιρέτης](../../questions/exams/exam-2023-fall-ex6-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 1 · ★☆☆ · programming (κεφ. 6)
+- [Προσεγγίζοντας το π](../../questions/exams/exam-2024-dec-q1.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 1 · ★☆☆ · programming (κεφ. 6)
+- [Εύρεση Πρώτων Παραγόντων - factor](../../questions/exams/exam-2026-jan-q3.md): Εξέταση Ιανουαρίου 2026, Θέμα 3 · ★★☆ · programming (κεφ. 6)
 - [Η εικασία Collatz](../../questions/homework/hw-2023-hw0-collatz.md): Εργασία 0 (2023-24), Άσκηση 3 · ★★☆ · programming (κεφ. 6)
+- [Η Μέθοδος Newton-Raphson](../../questions/homework/hw-2023-hw1-newton.md): Εργασία 1 (2023-24), Άσκηση 1 · ★★☆ · programming (κεφ. 8)
 - [Αποκωδικοποίηση](../../questions/exams/exam-2023-fall-ex8-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 2 · ★★☆ · programming (κεφ. 9)
+- [Εαυτοί Αριθμοί](../../questions/exams/exam-2023-dec-q2.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 2 · ★★☆ · programming (κεφ. 16)
+- [Το στοιχείο χωρίς ζευγάρι](../../questions/slides/slides-lec16-single-unpaired.md): Διάλεξη 16, διαφάνεια 14 · ★★☆ · programming (κεφ. 16)
 
 <!-- /exercises -->
 

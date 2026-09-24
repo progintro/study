@@ -6,8 +6,8 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 2"
   url: https://progintro.github.io/exams/2023/fall/ex15/
   years: [2023]
-chapters: [6, 2]
-topics: [loops, input-output, types]
+chapters: [6, 2, 4]
+topics: [loops, input-output, computers, command-line-args]
 difficulty: 2
 type: programming
 ---

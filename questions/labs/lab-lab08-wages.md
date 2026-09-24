@@ -6,7 +6,7 @@ source:
   title: "Εργαστήριο 8, Άσκηση 4"
   url: https://progintro.github.io/lab-material/labs/lab08/
   years: [2025]
-chapters: [13, 10]
+chapters: [11, 24]
 topics: [debugging, dynamic-memory, pointers]
 difficulty: 2
 type: debug

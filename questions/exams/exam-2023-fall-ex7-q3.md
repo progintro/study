@@ -6,8 +6,8 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 3"
   url: https://progintro.github.io/exams/2023/fall/ex7/
   years: [2023]
-chapters: [7, 13, 15]
-topics: [math-algorithms, dynamic-memory, complexity]
+chapters: [15, 13, 10]
+topics: [math-algorithms, complexity, dynamic-memory, arrays]
 difficulty: 3
 type: programming
 ---

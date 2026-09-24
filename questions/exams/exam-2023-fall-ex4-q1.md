@@ -6,8 +6,8 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 1"
   url: https://progintro.github.io/exams/2023/fall/ex4/
   years: [2023]
-chapters: [14, 10]
-topics: [strings, arrays, command-line-args]
+chapters: [10, 14]
+topics: [arrays, strings, command-line-args]
 difficulty: 2
 type: programming
 ---

@@ -6,8 +6,8 @@ source:
   title: "Εργασία 2 (2024-25), Άσκηση 2"
   url: https://github.com/progintro/progintro.github.io/releases/download/2024/hw2.pdf
   years: [2024]
-chapters: [16, 14, 18]
-topics: [graphs, problem-solving, complexity, strings, files, multidim-arrays]
+chapters: [25, 18, 14]
+topics: [graphs, dynamic-programming, complexity, strings, files, multidim-arrays]
 difficulty: 3
 type: programming
 ---

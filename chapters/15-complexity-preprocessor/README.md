@@ -719,7 +719,7 @@ int main() {
 - **Σημειώσεις:** η διάλεξη ζητά τις σελ. 154–159 και 161 των διαφανειών του
   κ. Σταματόπουλου:
   - [Κεφάλαιο 10: Ο προεπεξεργαστής της C](https://progintro.github.io/notes/chapters/10-preprocessor/),
-    ενότητα «Ο προεπεξεργαστής της C» (K04, σελ. 155–160).
+    ενότητα «Ο προεπεξεργαστής της C» (K04, σελ. 154–159).
   - [Κεφάλαιο 11: Ταξινόμηση και αναζήτηση](https://progintro.github.io/notes/chapters/11-sorting-searching/),
     ενότητα «Ταξινόμηση πινάκων», οι παράγραφοι για την πολυπλοκότητα χρόνου και τον
     συμβολισμό $O$ (K04, σελ. 161).
@@ -734,6 +734,50 @@ int main() {
 ## Ασκήσεις
 
 <!-- exercises -->
+
+### Από τις διαφάνειες
+
+- [Πολυπλοκότητα της atoi](../../questions/slides/slides-lec15-complexity-atoi.md): Διάλεξη 15, διαφάνεια 15 · ★☆☆ · short-answer
+- [Πολυπλοκότητα εύρεσης μέγιστου σε πίνακα N x N](../../questions/slides/slides-lec15-complexity-find-max-2d.md): Διάλεξη 15, διαφάνεια 23 · ★☆☆ · short-answer
+- [Πολυπλοκότητα υπολογισμού βαθμολογίας](../../questions/slides/slides-lec15-complexity-grade.md): Διάλεξη 15, διαφάνεια 21 · ★☆☆ · short-answer
+- [Πολυπλοκότητα δυναμικού πίνακα με malloc](../../questions/slides/slides-lec15-complexity-malloc.md): Διάλεξη 15, διαφάνεια 19 · ★☆☆ · short-answer
+- [Πολυπλοκότητα: γινόμενο περιττών πολλαπλασίων του 7](../../questions/slides/slides-lec15-complexity-odd-multiples-of-7.md): Διάλεξη 15, διαφάνεια 13 · ★☆☆ · short-answer
+- [Πολυπλοκότητα της strlen](../../questions/slides/slides-lec15-complexity-strlen.md): Διάλεξη 15, διαφάνεια 29 · ★☆☆ · short-answer
+- [Τι κάνει το πρόγραμμα με την getchar](../../questions/slides/slides-lec15-getchar-count.md): Διάλεξη 15, διαφάνεια 17 · ★☆☆ · trace
+- [Τι επιστρέφει το πρόγραμμα με τη μακροεντολή PROD](../../questions/slides/slides-lec15-macro-prod.md): Διάλεξη 15, διαφάνεια 47 · ★☆☆ · trace
+- [Σε τι προεπεξεργάζεται το #if 0](../../questions/slides/slides-lec15-preprocess-if-else.md): Διάλεξη 15, διαφάνεια 50 · ★☆☆ · trace
+- [Πολυπλοκότητα του αναδρομικού παραγοντικού](../../questions/slides/slides-lec15-complexity-factorial.md): Διάλεξη 15, διαφάνεια 25 · ★★☆ · short-answer
+- [Πολυπλοκότητα του αναδρομικού Fibonacci](../../questions/slides/slides-lec15-complexity-fibonacci.md): Διάλεξη 15, διαφάνεια 27 · ★★☆ · short-answer
+- [Πολυπλοκότητα εύρεσης κατόπτρου ακεραίου](../../questions/slides/slides-lec15-complexity-mirror.md): Διάλεξη 15, διαφάνεια 37 · ★★☆ · short-answer
+- [Άθροισμα τέλειων τετραγώνων: δύο εκδοχές](../../questions/slides/slides-lec15-complexity-perfect-squares.md): Διάλεξη 15, διαφάνεια 33 · ★★☆ · short-answer
+- [Πολυπλοκότητα της strcmp](../../questions/slides/slides-lec15-complexity-strcmp.md): Διάλεξη 15, διαφάνεια 31 · ★★☆ · short-answer
+- [Πολυπλοκότητα ελέγχου αν ένας αριθμός είναι πρώτος](../../questions/slides/slides-lec15-prime-complexity.md): Διάλεξη 15, διαφάνεια 39 · ★★☆ · short-answer
+
+### Από τις εργασίες
+
+- [Κατοπτρικά Πρώτα Τετράγωνα](../../questions/homework/hw-2023-hw1-mirror.md): Εργασία 1 (2023-24), Άσκηση 2 · ★★★ · programming
+- [Παραγοντοποίηση ημιπρώτων (factor)](../../questions/homework/hw-2024-hw1-factor.md): Εργασία 1 (2024-25), Άσκηση 3 (Bonus) · ★★★ · programming
+
+### Από τα θέματα εξετάσεων
+
+- [Δίδυμοι Πρώτοι](../../questions/exams/exam-2023-fall-ex7-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 3 · ★★★ · programming
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Η ακολουθία Fibonacci](../../questions/labs/lab-lab05-fib.md): Εργαστήριο 5, Άσκηση 2 · ★★☆ · programming (κεφ. 11)
+- [Συνένωση Αλφαριθμητικών - join](../../questions/exams/exam-2025-jan-q5.md): Εξέταση Ιανουαρίου 2025, Θέμα 5 · ★★☆ · programming (κεφ. 14)
+- [Εύρεση μηδενός σε πίνακα](../../questions/exams/exam-2024-sep-q3.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 3 · ★★☆ · programming (κεφ. 17)
+- [Αντιστροφή λίστας](../../questions/exams/exam-2024-sep-q5.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 5 · ★★☆ · programming (κεφ. 21)
+- [Μεσαίο Στοιχείο Λίστας](../../questions/exams/exam-2025-sep-q4.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 4 · ★★☆ · programming (κεφ. 21)
+- [Ν-οστό Στοιχείο Λίστας](../../questions/exams/exam-2026-sep-q4.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 4 · ★★☆ · programming (κεφ. 21)
+- [Reverse Inorder Traversal](../../questions/exams/exam-2024-jul-q4.md): Εξέταση Ιουλίου 2024, Θέμα 4 · ★★☆ · programming (κεφ. 22)
+- [Αθροιστής Δέντρων - sumtree](../../questions/exams/exam-2025-jan-q4.md): Εξέταση Ιανουαρίου 2025, Θέμα 4 · ★☆☆ · programming (κεφ. 22)
+- [Διερμηνέας Αριθμητικών Εκφράσεων - eval](../../questions/exams/exam-2026-jan-q4.md): Εξέταση Ιανουαρίου 2026, Θέμα 4 · ★★☆ · programming (κεφ. 22)
+- [Το Νερό Νεράκι](../../questions/exams/exam-2023-dec-q4.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 4 · ★★★ · programming (κεφ. 25)
+- [Βέλτιστη Μοιρασιά Πίτσας](../../questions/exams/exam-2024-jul-q3.md): Εξέταση Ιουλίου 2024, Θέμα 3 · ★★★ · programming (κεφ. 25)
+- [Επενδύσεις στο Χρηματιστήριο](../../questions/exams/exam-2026-jun-q3.md): Εξέταση Ιουνίου 2026, Θέμα 3 · ★★☆ · programming (κεφ. 25)
+- [Η Μεγαλύτερη Χωρητικότητα - capacity](../../questions/exams/exam-2026-sep-q5.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 5 · ★★★ · programming (κεφ. 25)
+
 <!-- /exercises -->
 
 ## Ερωτήσεις αυτοαξιολόγησης

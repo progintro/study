@@ -6,8 +6,8 @@ source:
   title: "Κατατακτήριες Δεκεμβρίου 2024, Θέμα 4"
   url: https://progintro.github.io/exams/2024/progintro-exam-dec-24.pdf
   years: [2024]
-chapters: [12, 15, 11]
-topics: [multidim-arrays, problem-solving, complexity]
+chapters: [25, 12, 11]
+topics: [dynamic-programming, multidim-arrays, recursion, complexity]
 difficulty: 3
 type: programming
 ---

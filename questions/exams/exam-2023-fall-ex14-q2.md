@@ -6,8 +6,8 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 2"
   url: https://progintro.github.io/exams/2023/fall/ex14/
   years: [2023]
-chapters: [17, 12]
-topics: [sorting, command-line-args, problem-solving]
+chapters: [25, 17]
+topics: [sorting, problem-solving, command-line-args, input-validation]
 difficulty: 2
 type: programming
 ---

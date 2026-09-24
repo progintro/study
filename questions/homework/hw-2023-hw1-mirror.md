@@ -6,8 +6,8 @@ source:
   title: "Εργασία 1 (2023-24), Άσκηση 2"
   url: https://github.com/progintro/progintro.github.io/releases/download/2023/hw1.pdf
   years: [2023]
-chapters: [7, 3, 2]
-topics: [math-algorithms, functions, loops, integer-representation]
+chapters: [15, 3, 2]
+topics: [math-algorithms, complexity, functions, integer-representation]
 difficulty: 3
 type: programming
 ---

@@ -505,12 +505,12 @@ $ ./int
   endianness 41–43.
 - **Σημειώσεις:** η διάλεξη ζητά να διαβάσετε τις σελ. 73–103:
   - [Κεφάλαιο 5](https://progintro.github.io/notes/chapters/05-pointers-arrays/):
-    «Δείκτες» (K04, σελ. 73–78), «Περί ανάγνωσης ακεραίων (και όχι μόνο)» (79–80),
-    «Πίνακες» (81–86), «Ιστόγραμμα συχνοτήτων γραμμάτων στην είσοδο» (87–88).
+    «Δείκτες» (K04, σελ. 72–77), «Περί ανάγνωσης ακεραίων (και όχι μόνο)» (78–79),
+    «Πίνακες» (80–85), «Ιστόγραμμα συχνοτήτων γραμμάτων στην είσοδο» (86–87).
   - [Κεφάλαιο 6](https://progintro.github.io/notes/chapters/06-memory-strings/):
-    «Δυναμική δέσμευση μνήμης» (K04, σελ. 89–93), «Συμβολοσειρές» (94–97), «Πίνακες
-    δεικτών και δείκτες σε δείκτες» (98), «Ορίσματα γραμμής εντολών» (99–100),
-    «Πολυδιάστατοι πίνακες» (101–103), «Αρχικοποίηση πινάκων» (104).
+    «Δυναμική δέσμευση μνήμης» (K04, σελ. 88–92), «Συμβολοσειρές» (93–96), «Πίνακες
+    δεικτών και δείκτες σε δείκτες» (97), «Ορίσματα γραμμής εντολών» (98–99),
+    «Πολυδιάστατοι πίνακες» (100–102), «Αρχικοποίηση πινάκων» (103).
 - **Εργαστήριο:** [Εργαστήριο 6](https://progintro.github.io/lab-material/labs/lab06/):
   `pointers.c`· [Εργαστήριο 7](https://progintro.github.io/lab-material/labs/lab07/):
   `twodim.c`, `array.c`, `mines.c`·
@@ -533,6 +533,17 @@ $ ./int
 - [Είναι απαραίτητοι οι πολυδιάστατοι πίνακες;](../../questions/slides/slides-lec12-multidim-necessary.md): Διάλεξη 12, διαφάνεια 23 · ★★☆ · short-answer
 - [Περιεχόμενα του x μετά από βρόχο με δείκτη](../../questions/slides/slides-lec12-pointer-copy-loop.md): Διάλεξη 12, διαφάνεια 25 · ★★☆ · trace
 
+### Από τα εργαστήρια
+
+- [Δυναμική δέσμευση μνήμης για μονοδιάστατο πίνακα](../../questions/labs/lab-lab07-array.md): Εργαστήριο 7, Άσκηση 2 · ★☆☆ · programming
+- [Ορίσματα γραμμής εντολής](../../questions/labs/lab-lab08-argcalc.md): Εργαστήριο 8, Άσκηση 2 · ★☆☆ · programming
+- [Δισδιάστατοι πίνακες](../../questions/labs/lab-lab07-twodim.md): Εργαστήριο 7, Άσκηση 1 · ★★☆ · programming
+- [Πετυχαίνοντας τον στόχο (Παλιό θέμα)](../../questions/labs/lab-lab08-legolas.md): Εργαστήριο 8, Άσκηση 3 · ★★☆ · programming
+
+### Από τις εργασίες
+
+- [FauxtoShop: περιστροφή εικόνας BMP](../../questions/homework/hw-2023-hw2-fauxtoshop.md): Εργασία 2 (2023-24), Άσκηση 1 · ★★★ · programming
+
 ### Από τα θέματα εξετάσεων
 
 - [Αλλαγή Τέρματος](../../questions/exams/exam-2023-fall-ex13-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 2 · ★☆☆ · programming
@@ -543,31 +554,49 @@ $ ./int
 - [Πολλαπλασιασμός Πινάκων](../../questions/exams/exam-2023-fall-ex8-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 3 · ★★☆ · programming
 - [Πολύτιμοι Πίνακες](../../questions/exams/exam-2023-fall-ex9-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 3 · ★★☆ · programming
 - [Στατιστικές](../../questions/exams/exam-2024-jul-q2.md): Εξέταση Ιουλίου 2024, Θέμα 2 · ★★☆ · programming
-- [Λύσε τον Λαβύρινθο](../../questions/exams/exam-2024-dec-q4.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 4 · ★★★ · programming
+- [Κινούμενος Μέσος Όρος - sma](../../questions/exams/exam-2025-jan-q3.md): Εξέταση Ιανουαρίου 2025, Θέμα 3 · ★★☆ · programming
+- [Το μεγαλύτερο άλμα - polevault](../../questions/exams/exam-2026-sep-q3.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 3 · ★★☆ · programming
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Άρτια Bits](../../questions/exams/exam-2023-fall-ex8-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 1 · ★☆☆ · programming (κεφ. 4)
 - [Πετυχαίνοντας τον Στόχο](../../questions/exams/exam-2023-fall-ex9-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 2 · ★★☆ · programming (κεφ. 6)
-- [Προσεγγίζοντας το π](../../questions/exams/exam-2024-dec-q1.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 1 · ★☆☆ · programming (κεφ. 6)
-- [Μέγιστος Κοινός Διαιρέτης](../../questions/exams/exam-2023-fall-ex6-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 1 · ★☆☆ · programming (κεφ. 7)
-- [Οι Καλύτεροι Αριθμοί, Παμψηφεί](../../questions/exams/exam-2024-dec-q2.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 2 · ★★☆ · programming (κεφ. 7)
-- [Κάντο όπως ο Βιετά](../../questions/exams/exam-2023-dec-q1.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 1 · ★★☆ · programming (κεφ. 8)
-- [Εαυτοί Αριθμοί](../../questions/exams/exam-2023-dec-q2.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 2 · ★★☆ · programming (κεφ. 8)
+- [Επεξεργασία Ήχου (soundwave)](../../questions/homework/hw-2025-hw1-soundwave.md): Εργασία 1 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 9)
 - [Τοποθέτηση του Pacman](../../questions/exams/exam-2023-fall-ex11-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #11, Θέμα 2 · ★★☆ · programming (κεφ. 10)
 - [Φορτωμένο Έλκηθρο](../../questions/exams/exam-2023-fall-ex3-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 2 · ★★☆ · programming (κεφ. 10)
 - [Μαγικό Ζευγάρι](../../questions/exams/exam-2023-fall-ex5-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 2 · ★★☆ · programming (κεφ. 10)
-- [Γεμίζοντας με χρώμα](../../questions/exams/exam-2024-sep-q6.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 6 · ★★★ · programming (κεφ. 11)
 - [Ο Αλγόριθμος του Ευκλείδη (gcd)](../../questions/homework/hw-2024-hw1-gcd.md): Εργασία 1 (2024-25), Άσκηση 1 · ★★☆ · programming (κεφ. 11)
+- [Ο Αλγόριθμος RSA (rsa)](../../questions/homework/hw-2024-hw1-rsa.md): Εργασία 1 (2024-25), Άσκηση 2 · ★★★ · programming (κεφ. 11)
+- [Πίνακες και αριθμητική δεικτών](../../questions/labs/lab-lab06-pointers.md): Εργαστήριο 6, Άσκηση 3 · ★★☆ · trace (κεφ. 11)
+- [Δυναμική δέσμευση μνήμης για δισδιάστατο πίνακα](../../questions/labs/lab-lab07-mines.md): Εργαστήριο 7, Άσκηση 3 · ★★☆ · programming (κεφ. 13)
+- [Κινήσεις σε πλέγμα (Παλιό θέμα)](../../questions/labs/lab-lab07-pacman.md): Εργαστήριο 7, Άσκηση 5 · ★★★ · programming (κεφ. 13)
+- [Δυναμικός δισδιάστατος πίνακας MxN](../../questions/slides/slides-lec13-dynamic-2d.md): Διάλεξη 13, διαφάνειες 56–58 · ★★☆ · programming (κεφ. 13)
 - [Ταιριαστές Καρδιές](../../questions/exams/exam-2023-fall-ex0-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 2 · ★★☆ · programming (κεφ. 14)
 - [Εντοπισμός Διπλών Ορισμάτων](../../questions/exams/exam-2023-fall-ex1-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 2 · ★★☆ · programming (κεφ. 14)
 - [Μεταμορφώσιμες Προτάσεις](../../questions/exams/exam-2023-fall-ex5-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 4 · ★★★ · programming (κεφ. 14)
 - [Η συνάρτηση transform](../../questions/exams/exam-2025-sep-q2.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 2 · ★☆☆ · trace (κεφ. 14)
+- [Επεξεργασία συμβολοσειρών](../../questions/labs/lab-lab08-string.md): Εργαστήριο 8, Άσκηση 1 · ★★☆ · programming (κεφ. 14)
+- [Είναι το πρώτο όρισμα "--boo";](../../questions/slides/slides-lec14-check-boo.md): Διάλεξη 14, διαφάνεια 42 · ★☆☆ · programming (κεφ. 14)
+- [Πολυπλοκότητα εύρεσης μέγιστου σε πίνακα N x N](../../questions/slides/slides-lec15-complexity-find-max-2d.md): Διάλεξη 15, διαφάνεια 23 · ★☆☆ · short-answer (κεφ. 15)
+- [Πολυπλοκότητα δυναμικού πίνακα με malloc](../../questions/slides/slides-lec15-complexity-malloc.md): Διάλεξη 15, διαφάνεια 19 · ★☆☆ · short-answer (κεφ. 15)
+- [char *array[], char **array και char array[10][10]](../../questions/slides/slides-lec16-char-pointer-arrays.md): Διάλεξη 16, διαφάνεια 19 · ★★☆ · short-answer (κεφ. 16)
+- [yes αν ένα στοιχείο υπάρχει σε δισδιάστατο πίνακα](../../questions/slides/slides-lec16-search-2d.md): Διάλεξη 16, διαφάνεια 24 · ★☆☆ · programming (κεφ. 16)
 - [Πλησιάζοντας στον Στόχο](../../questions/exams/exam-2023-fall-ex10-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 4 · ★★☆ · programming (κεφ. 17)
-- [Μένοντας στις Σωστές Θερμίδες](../../questions/exams/exam-2023-fall-ex14-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 2 · ★★☆ · programming (κεφ. 17)
+- [Η συνάρτηση compute](../../questions/exams/exam-2026-jan-q2.md): Εξέταση Ιανουαρίου 2026, Θέμα 2 · ★★☆ · trace (κεφ. 17)
 - [Αλλαγή Μεγέθους](../../questions/exams/exam-2023-fall-ex4-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 4 · ★★☆ · programming (κεφ. 18)
 - [Κόψιμο Αρχείων](../../questions/exams/exam-2023-fall-ex7-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 4 · ★☆☆ · programming (κεφ. 18)
+- [Προβλέποντας το Μέλλον (future)](../../questions/homework/hw-2024-hw2-future.md): Εργασία 2 (2024-25), Άσκηση 1 · ★★☆ · programming (κεφ. 18)
+- [Μέτρηση στατιστικών αρχείων](../../questions/labs/lab-lab10-count.md): Εργαστήριο 10, Άσκηση 4 · ★☆☆ · programming (κεφ. 18)
+- [Σύγκριση αρχείων](../../questions/labs/lab-lab10-filediff.md): Εργαστήριο 10, Άσκηση 3 · ★☆☆ · programming (κεφ. 18)
+- [Αρχεία κειμένου](../../questions/labs/lab-lab10-more.md): Εργαστήριο 10, Άσκηση 1 · ★★☆ · programming (κεφ. 18)
+- [Μέγεθος δισδιάστατου πίνακα και μιας γραμμής του](../../questions/slides/slides-lec18-2d-sizeof.md): Διάλεξη 18, διαφάνεια 2 · ★☆☆ · short-answer (κεφ. 18)
+- [Ακέραιοι από αρχείο κειμένου με fread](../../questions/slides/slides-lec18-fread-int.md): Διάλεξη 18, διαφάνειες 50–51 · ★★☆ · trace (κεφ. 18)
+- [Μια λέξη σε char[7] με scanf](../../questions/slides/slides-lec18-scanf-string.md): Διάλεξη 18, διαφάνειες 31–35 · ★★☆ · debug (κεφ. 18)
+- [Zoomba: συντομότερη διαδρομή σε δωμάτιο](../../questions/homework/hw-2023-hw3-zoomba.md): Εργασία 3 (2023-24), Άσκηση 1 · ★★★ · programming (κεφ. 22)
+- [Λύσε τον Λαβύρινθο](../../questions/exams/exam-2024-dec-q4.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 4 · ★★★ · programming (κεφ. 25)
+- [Γεμίζοντας με χρώμα](../../questions/exams/exam-2024-sep-q6.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 6 · ★★★ · programming (κεφ. 25)
 - [Το Καλό το Μονοπάτι - path](../../questions/exams/exam-2025-sep-q5.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 5 · ★★★ · programming (κεφ. 25)
+- [Περικύκλωση - encirclement](../../questions/exams/exam-2026-jan-q5.md): Εξέταση Ιανουαρίου 2026, Θέμα 5 · ★★★ · programming (κεφ. 25)
 
 <!-- /exercises -->
 

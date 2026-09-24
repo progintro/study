@@ -6,8 +6,8 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 4"
   url: https://progintro.github.io/exams/2023/fall/ex1/
   years: [2023]
-chapters: [21, 13]
-topics: [linked-lists, dynamic-memory, debugging]
+chapters: [13, 21]
+topics: [dynamic-memory, memory-model, linked-lists, debugging]
 difficulty: 2
 type: debug
 ---

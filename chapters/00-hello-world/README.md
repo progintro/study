@@ -475,8 +475,8 @@ flowchart TD
 
 - **Διαφάνειες:** [Διάλεξη 0](https://github.com/progintro/progintro.github.io/releases/download/2025/lec00.pdf), σελ. 1–36. Γιατί προγραμματισμός: σελ. 3–6· διαδικαστικά: σελ. 7–16· σκοπός και περιεχόμενο: σελ. 17–19· υπολογιστής και προγραμματισμός: σελ. 20–24· αμφισημία και γλώσσες: σελ. 25–27· η C: σελ. 28–31· Hello World: σελ. 32· εξάσκηση και επόμενη φορά: σελ. 33–34.
 - **Σημειώσεις:** Οι διαφάνειες ζητούν τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 19 (K04):
-  - [Κεφάλαιο 0: Εισαγωγή](https://progintro.github.io/notes/chapters/00-intro/), ολόκληρο, ιδίως «Γενικά περί υπολογιστών», «Γενικά περί προγραμματισμού υπολογιστών», «Πώς να μάθουμε να προγραμματίζουμε;», «Η δομή του υπολογιστή», «Λογισμικό και γλώσσες προγραμματισμού», «Πώς κατασκευάζουμε εκτελέσιμο πρόγραμμα;» (K04, σελ. 2–18)
-  - [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), ενότητα «Η γλώσσα προγραμματισμού C» (K04, σελ. 19), και για το Hello World η «Καλημέρα κόσμε της C» (K04, σελ. 20)
+  - [Κεφάλαιο 0: Εισαγωγή](https://progintro.github.io/notes/chapters/00-intro/), ολόκληρο, ιδίως «Γενικά περί υπολογιστών», «Γενικά περί προγραμματισμού υπολογιστών», «Πώς να μάθουμε να προγραμματίζουμε;», «Η δομή του υπολογιστή», «Λογισμικό και γλώσσες προγραμματισμού», «Πώς κατασκευάζουμε εκτελέσιμο πρόγραμμα;» (K04, σελ. 1–17)
+  - [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), ενότητα «Η γλώσσα προγραμματισμού C» (K04, σελ. 18), και για το Hello World η «Καλημέρα κόσμε της C» (K04, σελ. 19)
 - **Εργαστήριο:** [Εργαστήριο 0](https://progintro.github.io/lab-material/labs/lab00/): Βήματα 1–2 (webmail, Piazza) για τα εργαλεία του μαθήματος, Βήμα 7 `hello.c`, Άσκηση 1 `about.c`
 - **Άλλα:**
   - Site του μαθήματος: [progintro.github.io](https://progintro.github.io)· [Piazza](https://piazza.com/uoa.gr/fall2025/197af)· [eclass](https://eclass.uoa.gr/courses/DI681/) και [εγγραφή σε εργαστηριακή ομάδα](https://eclass.uoa.gr/modules/group/index.php?course=DI681&urlview=1)· [webadm](http://webadm.uoa.gr/)
@@ -490,19 +490,21 @@ flowchart TD
 
 <!-- exercises -->
 
-### Από τα εργαστήρια
+### Από τις διαφάνειες
 
-- [Στοιχεία φοιτητή (Παλιό θέμα)](../../questions/labs/lab-lab00-about.md): Εργαστήριο 0, Άσκηση 1 · ★☆☆ · programming
-
-### Από τα θέματα εξετάσεων
-
-- [Η συνάρτηση about](../../questions/exams/exam-2024-sep-q1.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 1 · ★☆☆ · programming
+- [Έχω μια ερώτηση, τι κάνω;](../../questions/slides/slides-lec00-ask-question.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 16 · ★☆☆ · multiple-choice
+- [Ψωμί και αυγά](../../questions/slides/slides-lec00-bread-and-eggs.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 26 · ★☆☆ · short-answer
+- [Hello World σε online compiler](../../questions/slides/slides-lec00-hello-world.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 32 · ★☆☆ · tooling
+- [Το πιο ψηλό βουνό του κόσμου](../../questions/slides/slides-lec00-highest-mountain.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 25 · ★☆☆ · short-answer
+- [Περνάω χωρίς εργασίες και εργαστήριο;](../../questions/slides/slides-lec00-pass-without-labs.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 11 · ★☆☆ · short-answer
+- [Παραδείγματα προγραμμάτων](../../questions/slides/slides-lec00-programs-you-know.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 23 · ★☆☆ · short-answer
+- [Γιατί προγραμματισμός το 2025;](../../questions/slides/slides-lec00-why-programming.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 5 · ★☆☆ · short-answer
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
-- [Παιχνίδια με Κονσόλα (cmdline)](../../questions/homework/hw-2024-hw0-cmdline.md): Εργασία 0 (2024-25), Άσκηση 2 · ★★☆ · tooling (κεφ. 1)
 - [Μεταγλώττιση, σύνδεση και εκτέλεση](../../questions/labs/lab-lab01-step2-compile-link.md): Εργαστήριο 1, Βήμα 2 · ★☆☆ · tooling (κεφ. 1)
-- [Υπερχείλιση ακεραίων](../../questions/labs/lab-lab00-overflow.md): Εργαστήριο 0, Άσκηση 2 · ★☆☆ · short-answer (κεφ. 2)
+- [Στοιχεία φοιτητή (Παλιό θέμα)](../../questions/labs/lab-lab00-about.md): Εργαστήριο 0, Άσκηση 1 · ★☆☆ · programming (κεφ. 2)
+- [Τα στάδια του C build process](../../questions/slides/slides-lecmake-build-pipeline.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνεια 5 · ★☆☆ · short-answer (κεφ. 26)
 
 <!-- /exercises -->
 

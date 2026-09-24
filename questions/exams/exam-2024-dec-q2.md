@@ -6,8 +6,8 @@ source:
   title: "Κατατακτήριες Δεκεμβρίου 2024, Θέμα 2"
   url: https://progintro.github.io/exams/2024/progintro-exam-dec-24.pdf
   years: [2024]
-chapters: [7, 12, 2]
-topics: [math-algorithms, loops, command-line-args]
+chapters: [16, 2]
+topics: [math-algorithms, loops, command-line-args, integer-representation]
 difficulty: 2
 type: programming
 ---

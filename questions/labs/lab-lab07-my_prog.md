@@ -6,7 +6,7 @@ source:
   title: "Εργαστήριο 7, Άσκηση 6"
   url: https://progintro.github.io/lab-material/labs/lab07/
   years: [2025]
-chapters: [13, 10]
+chapters: [10, 24]
 topics: [debugging, arrays, undefined-behavior]
 difficulty: 1
 type: debug

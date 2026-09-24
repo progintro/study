@@ -6,8 +6,8 @@ source:
   title: "Κατατακτήριες Δεκεμβρίου 2024, Θέμα 3"
   url: https://progintro.github.io/exams/2024/progintro-exam-dec-24.pdf
   years: [2024]
-chapters: [17, 15, 13]
-topics: [sorting, complexity, dynamic-memory]
+chapters: [25, 17, 13]
+topics: [sorting, complexity, dynamic-memory, problem-solving]
 difficulty: 3
 type: programming
 ---

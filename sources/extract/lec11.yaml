@@ -27,7 +27,7 @@ outline:
   - {pages: "49-50", section: "(για την επόμενη φορά / κλείσιμο)"}
 pointers:
   - {page: 19, text: "The billion dollar mistake: https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/"}
-  - {page: 49, text: "Σημειώσεις κ. Σταματόπουλου σελ. 73-103 (για αυτή και την επόμενη διάλεξη): 05-pointers-arrays «Δείκτες» έως 06-memory-strings «Πολυδιάστατοι πίνακες»"}
+  - {page: 49, text: "Σημειώσεις κ. Σταματόπουλου σελ. 73-103 (για αυτή και την επόμενη διάλεξη): 05-pointers-arrays «Δείκτες» έως 06-memory-strings «Αρχικοποίηση πινάκων»"}
   - {page: 49, text: "Pointer tutorial [1]: https://www.w3schools.com/c/c_pointers.php"}
   - {page: 49, text: "Pointer tutorial [2]: https://www.tutorialspoint.com/cprogramming/c_pointers.htm"}
   - {page: 49, text: "Pointer tutorial [3]: https://www.geeksforgeeks.org/c-pointers/"}

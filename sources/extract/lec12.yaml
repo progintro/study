@@ -19,7 +19,7 @@ outline:
   - {pages: "44-45", section: "(για την επόμενη φορά / κλείσιμο)"}
 pointers:
   - {page: 26, text: "Βίντεο «Εισαγωγή στους Pointers» από τους βοηθούς του μαθήματος (QR code· link στο PDF: http://www.youtube.com/watch?v=tH2JW8HsPNw)"}
-  - {page: 44, text: "Σημειώσεις κ. Σταματόπουλου σελ. 73-103 (K04): 05-pointers-arrays «Δείκτες» έως 06-memory-strings «Πολυδιάστατοι πίνακες»"}
+  - {page: 44, text: "Σημειώσεις κ. Σταματόπουλου σελ. 73-103 (K04): 05-pointers-arrays «Δείκτες» έως 06-memory-strings «Αρχικοποίηση πινάκων»"}
   - {page: 44, text: "Endianness: https://en.wikipedia.org/wiki/Endianness"}
 takeaways_slide: null         # p. 44 is a reading assignment, not a takeaways slide
 issues:

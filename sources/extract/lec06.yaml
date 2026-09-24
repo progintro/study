@@ -28,7 +28,7 @@ issues:
   - "No explicit key-takeaways slide; the red callouts on p. 11 (parentheses are mandatory) and p. 16 (use braces when unsure) were treated as takeaways."
   - "p. 23: `for (;;)` is shown without a body, so it is not a complete statement; the chapter adds an empty statement `;` as body (noted in the example text)."
   - "p. 27 is only 'Kahoot Time!'; the quiz questions are not in the slides, so none were transcribed. The chapter's 'Σύγκριση των τριών βρόχων' is a synthesis section (supported by lab03's intro), mapped to pp. 27-29. Worked examples of pp. 7, 13, 15, 19-21, 22-24, 26 are in «Παραδείγματα»."
-  - "p. 28 says to cover Stamatopoulos' notes 'μέχρι την σελίδα 62'; interpreted as K04 page 62, which per k04-map.tsv is notes 04-functions «Συνάρτηση ύψωσης σε δύναμη»."
+  - "p. 28 says to cover Stamatopoulos' notes 'μέχρι την σελίδα 62'; interpreted as K04 page 62, which per k04-map.tsv is notes 04-functions «Συνάρτηση υπολογισμού παραγοντικού»."
   - "p. 2 references the aliquot exercise without naming the homework; identified as hw0 2025 (sources/hw/2025/hw0.pdf, exercise 3). Input 138/0/f = start, max length (0 = unlimited), full output."
   - "Answers to audience questions (p. 13 alternatives, p. 20 usefulness of always-true conditions, p. 24 changing init/step) were not in the slides; the chapter's answers are standard C, not lecture quotes."
   - "switch, break, continue, goto (notes ch. 03) are not in this lecture; the chapter points to chapter 8 (Ροή Ελέγχου #2) without asserting its content."

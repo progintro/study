@@ -6,7 +6,7 @@ source:
   title: "Εργασία 1 (2023-24), Άσκηση 3 (Bonus)"
   url: https://github.com/progintro/progintro.github.io/releases/download/2023/hw1.pdf
   years: [2023]
-chapters: [11, 7]
+chapters: [11, 16]
 topics: [recursion, math-algorithms, integer-representation]
 difficulty: 3
 type: programming

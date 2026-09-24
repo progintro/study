@@ -6,8 +6,8 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 1"
   url: https://progintro.github.io/exams/2023/fall/ex1/
   years: [2023]
-chapters: [9]
-topics: [input-output]
+chapters: [9, 2]
+topics: [input-output, computers]
 difficulty: 1
 type: programming
 ---

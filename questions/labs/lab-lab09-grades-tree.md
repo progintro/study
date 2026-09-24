@@ -6,8 +6,8 @@ source:
   title: "Εργαστήριο 9, Άσκηση 5"
   url: https://progintro.github.io/lab-material/labs/lab09/
   years: [2025]
-chapters: [21, 22, 13]
-topics: [dynamic-memory, debugging, linked-lists, trees]
+chapters: [25, 21, 22]
+topics: [debugging, dynamic-memory, linked-lists, trees]
 difficulty: 2
 type: programming
 ---

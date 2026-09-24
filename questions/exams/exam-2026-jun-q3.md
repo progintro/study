@@ -6,7 +6,7 @@ source:
   title: "Εξέταση Ιουνίου 2026, Θέμα 3"
   url: https://progintro.github.io/exams/2026/progintro-exam-jun-26.pdf
   years: [2026]
-chapters: [15, 12, 9]
+chapters: [25, 15, 9]
 topics: [complexity, problem-solving, command-line-args, input-output]
 difficulty: 2
 type: programming

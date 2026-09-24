@@ -7,7 +7,7 @@ source:
   url: https://progintro.github.io/exams/2023/fall/ex8/
   years: [2023]
 chapters: [9, 4]
-topics: [input-output, input-validation]
+topics: [input-output, bitwise, input-validation]
 difficulty: 2
 type: programming
 ---

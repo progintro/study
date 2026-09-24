@@ -3,10 +3,10 @@ id: slides-lec22-tree-insert
 kind: slides
 title: "Προσθήκη στοιχείου σε δυαδικό δέντρο"
 source:
-  title: "Διάλεξη 22: Δέντρα, διαφάνεια 16"
+  title: "Διαλέξεις 21–22: Δέντρα, διαφάνεια 16 (διάλεξη 21: διαφάνεια 38)"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec22.pdf
   years: [2025]
-chapters: [22]
+chapters: [22, 21]
 topics: [trees, dynamic-memory, recursion]
 difficulty: 2
 type: programming

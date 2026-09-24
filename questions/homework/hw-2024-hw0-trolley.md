@@ -6,7 +6,7 @@ source:
   title: "Εργασία 0 (2024-25), Άσκηση 3"
   url: https://github.com/progintro/progintro.github.io/releases/download/2024/hw0.pdf
   years: [2024]
-chapters: [9, 10, 6]
+chapters: [9, 2, 6]
 topics: [input-output, input-validation, loops, integer-representation]
 difficulty: 2
 type: programming

@@ -6,7 +6,7 @@ source:
   title: "Εργασία 3 (2025-26), Άσκηση 1"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/hw3.pdf
   years: [2025]
-chapters: [23, 26, 12]
+chapters: [22, 23, 26]
 topics: [game-ai, graphs, multidim-arrays, code-organization, make, strings]
 difficulty: 3
 type: programming

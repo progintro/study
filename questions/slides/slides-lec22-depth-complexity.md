@@ -3,10 +3,10 @@ id: slides-lec22-depth-complexity
 kind: slides
 title: "Πολυπλοκότητα της depth"
 source:
-  title: "Διάλεξη 22: Δέντρα, διαφάνεια 20"
+  title: "Διαλέξεις 21–22: Δέντρα, διαφάνεια 20 (διάλεξη 21: διαφάνειες 41–42)"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec22.pdf
   years: [2025]
-chapters: [22, 15]
+chapters: [22, 21]
 topics: [trees, recursion, complexity]
 difficulty: 2
 type: short-answer

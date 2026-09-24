@@ -6,7 +6,7 @@ source:
   title: "Εξέταση Σεπτεμβρίου 2024, Θέμα 6"
   url: https://progintro.github.io/exams/2024/progintro-exam-sep-24.pdf
   years: [2024]
-chapters: [11, 12, 18]
+chapters: [25, 11, 12]
 topics: [recursion, multidim-arrays, command-line-args, files]
 difficulty: 3
 type: programming

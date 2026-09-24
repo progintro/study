@@ -693,11 +693,11 @@ int isPalindrome(char *str) {
 - **Σημειώσεις:** η διάλεξη λέει ότι κάλυψε τις σελ. 63–68, 74–76 και 93–96 των
   διαφανειών του κ. Σταματόπουλου:
   - [Κεφάλαιο 4: Συναρτήσεις, εμβέλεια και αναδρομή](https://progintro.github.io/notes/chapters/04-functions/),
-    ενότητα «Εμβέλεια και χρόνος ζωής μεταβλητών» (K04, σελ. 64–69)·
+    ενότητα «Εμβέλεια και χρόνος ζωής μεταβλητών» (K04, σελ. 63–68)·
   - [Κεφάλαιο 5: Δείκτες και πίνακες](https://progintro.github.io/notes/chapters/05-pointers-arrays/),
     ενότητα «Δείκτες» (K04, σελ. 74–76)·
   - [Κεφάλαιο 6: Δυναμική μνήμη, συμβολοσειρές και πολυδιάστατοι πίνακες](https://progintro.github.io/notes/chapters/06-memory-strings/),
-    ενότητα «Συμβολοσειρές» (K04, σελ. 94–97).
+    ενότητα «Συμβολοσειρές» (K04, σελ. 93–96).
 - **Εργαστήριο:** [Εργαστήριο 8](https://progintro.github.io/lab-material/labs/lab08/):
   άσκηση `string.c` (`strcpy`, `mystrlen`, `mystrcat`, `strcmp`, `strcat`, `strtok`)
   και `argcalc.c` (ορίσματα γραμμής εντολών ως string).
@@ -714,6 +714,59 @@ int isPalindrome(char *str) {
 ## Ασκήσεις
 
 <!-- exercises -->
+
+### Από τις διαφάνειες
+
+- [Είναι το πρώτο όρισμα "--boo";](../../questions/slides/slides-lec14-check-boo.md): Διάλεξη 14, διαφάνεια 42 · ★☆☆ · programming
+- [Αύξηση παραμέτρου μέσα σε συνάρτηση](../../questions/slides/slides-lec14-local-param.md): Διάλεξη 14, διαφάνειες 11–12 · ★☆☆ · trace
+- [Τοπική μεταβλητή με το ίδιο όνομα σε δύο συναρτήσεις](../../questions/slides/slides-lec14-local-same-name.md): Διάλεξη 14, διαφάνειες 9–10 · ★☆☆ · trace
+- [Παλινδρομικό string](../../questions/slides/slides-lec14-palindrome.md): Διάλεξη 14, διαφάνειες 43–44 · ★☆☆ · programming
+- [Επισκίαση παγκόσμιας μεταβλητής](../../questions/slides/slides-lec14-shadowing.md): Διάλεξη 14, διαφάνειες 14–16 · ★☆☆ · trace
+- [Στατική και τοπική μεταβλητή σε τρεις κλήσεις](../../questions/slides/slides-lec14-static-counter.md): Διάλεξη 14, διαφάνειες 17–18 · ★☆☆ · trace
+- [Στατική μεταβλητή με ανάθεση εκτός δήλωσης](../../questions/slides/slides-lec14-static-assign.md): Διάλεξη 14, διαφάνεια 19 · ★★☆ · trace
+- [Η έκφραση *str++](../../questions/slides/slides-lec14-str-plus-plus.md): Διάλεξη 14, διαφάνεια 34 · ★★☆ · short-answer
+
+### Από τα εργαστήρια
+
+- [Επεξεργασία συμβολοσειρών](../../questions/labs/lab-lab08-string.md): Εργαστήριο 8, Άσκηση 1 · ★★☆ · programming
+
+### Από τις εργασίες
+
+- [Το Δικό σου Chatbot (jason)](../../questions/homework/hw-2024-hw2-jason.md): Εργασία 2 (2024-25), Άσκηση 3 · ★★★ · programming
+
+### Από τα θέματα εξετάσεων
+
+- [Η συνάρτηση dog](../../questions/exams/exam-2025-jan-q2.md): Εξέταση Ιανουαρίου 2025, Θέμα 2 · ★☆☆ · trace
+- [Η συνάρτηση transform](../../questions/exams/exam-2025-sep-q2.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 2 · ★☆☆ · trace
+- [Ταιριαστές Καρδιές](../../questions/exams/exam-2023-fall-ex0-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 2 · ★★☆ · programming
+- [Εντοπισμός Διπλών Ορισμάτων](../../questions/exams/exam-2023-fall-ex1-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 2 · ★★☆ · programming
+- [Προσεγγίζοντας την Λέξη](../../questions/exams/exam-2023-fall-ex12-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 2 · ★★☆ · programming
+- [Κρεμάλα](../../questions/exams/exam-2023-fall-ex12-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 3 · ★★☆ · programming
+- [Δυνατότητες](../../questions/exams/exam-2023-fall-ex15-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 4 · ★★☆ · programming
+- [Εύρεση Λέξεων](../../questions/exams/exam-2023-fall-ex3-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 3 · ★★☆ · programming
+- [Τα Πάνω Κάτω](../../questions/exams/exam-2023-fall-ex4-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 2 · ★★☆ · programming
+- [Σπάσε το PIN](../../questions/exams/exam-2023-fall-ex6-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 3 · ★★☆ · programming
+- [Συνένωση Αλφαριθμητικών - join](../../questions/exams/exam-2025-jan-q5.md): Εξέταση Ιανουαρίου 2025, Θέμα 5 · ★★☆ · programming
+- [Μεταμορφώσιμες Προτάσεις](../../questions/exams/exam-2023-fall-ex5-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 4 · ★★★ · programming
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Αναζητώντας τον Blinky](../../questions/exams/exam-2023-fall-ex11-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #11, Θέμα 1 · ★★☆ · programming (κεφ. 9)
+- [Αναγράμματα](../../questions/exams/exam-2023-fall-ex4-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 1 · ★★☆ · programming (κεφ. 10)
+- [Η ακολουθία Fibonacci](../../questions/labs/lab-lab05-fib.md): Εργαστήριο 5, Άσκηση 2 · ★★☆ · programming (κεφ. 11)
+- [Κάδρο](../../questions/exams/exam-2023-fall-ex9-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 4 · ★★★ · programming (κεφ. 13)
+- [Πολυπλοκότητα της strcmp](../../questions/slides/slides-lec15-complexity-strcmp.md): Διάλεξη 15, διαφάνεια 31 · ★★☆ · short-answer (κεφ. 15)
+- [Πολυπλοκότητα της strlen](../../questions/slides/slides-lec15-complexity-strlen.md): Διάλεξη 15, διαφάνεια 29 · ★☆☆ · short-answer (κεφ. 15)
+- [Κρυμμένο Μήνυμα](../../questions/exams/exam-2023-fall-ex10-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 3 · ★★☆ · programming (κεφ. 18)
+- [Επιλογή](../../questions/exams/exam-2023-fall-ex5-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 3 · ★★☆ · programming (κεφ. 18)
+- [Ταξινόμηση Αρχείων Καταγραφής](../../questions/exams/exam-2023-fall-ex6-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 4 · ★★☆ · programming (κεφ. 18)
+- [Ταξινόμηση Πακέτων](../../questions/exams/exam-2023-fall-ex8-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 4 · ★★★ · programming (κεφ. 18)
+- [World Cup 2026](../../questions/exams/exam-2026-jun-q4.md): Εξέταση Ιουνίου 2026, Θέμα 4 · ★★★ · programming (κεφ. 19)
+- [Δομές και δείκτες](../../questions/labs/lab-lab09-person.md): Εργαστήριο 9, Άσκηση 2 · ★★☆ · programming (κεφ. 19)
+- [Σπάστε το πρόγραμμά σας σε αρθρώματα](../../questions/labs/lab-lab10-more-modules.md): Εργαστήριο 10, Άσκηση 5 · ★★☆ · tooling (κεφ. 23)
+- [DNA Matching](../../questions/homework/hw-2023-hw2-dna.md): Εργασία 2 (2023-24), Άσκηση 2 · ★★★ · programming (κεφ. 25)
+- [Το Καλύτερο GPS (jabbamaps)](../../questions/homework/hw-2024-hw2-jabbamaps.md): Εργασία 2 (2024-25), Άσκηση 2 · ★★★ · programming (κεφ. 25)
+
 <!-- /exercises -->
 
 ## Ερωτήσεις αυτοαξιολόγησης

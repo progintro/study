@@ -6,7 +6,7 @@ source:
   title: "Εργαστήριο 2, Άσκηση 1"
   url: https://progintro.github.io/lab-material/labs/lab02/
   years: [2025]
-chapters: [2, 9]
+chapters: [9, 2]
 topics: [variables, input-output, types, input-validation]
 difficulty: 1
 type: programming

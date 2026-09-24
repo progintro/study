@@ -32,7 +32,7 @@ pointers:
   - {page: 53, text: "C Preprocessor: https://en.wikipedia.org/wiki/C_preprocessor"}
 takeaways_slide: null         # p. 53 is a reading assignment, not a takeaways slide
 issues:
-  - "p. 53 cites 'σελίδες 154-159, 161' of the Stamatopoulos slides; sources/k04-map.tsv puts «Ο προεπεξεργαστής της C» at K04 pp. 155-160 and p. 154 in 09-io. Probably an off-by-one between printed and PDF page numbers; the chapter lists the sections with the map's pages (155-160, 161) and quotes the slide's numbers."
+  - "p. 53 cites 'σελίδες 154-159, 161' of the Stamatopoulos slides; these are printed page numbers and sources/k04-map.tsv puts «Ο προεπεξεργαστής της C» at K04 pp. 154-159 and p. 161 in «Ταξινόμηση πινάκων» (160-166). The earlier off-by-one was the map's old PDF numbering; the chapter cites 154-159 and 161."
   - "p. 5 shows only a photo of Christos Papadimitriou and the Logicomix cover, p. 6 Top Trumps supercar cards, p. 8 a wristwatch titled 'Ένα Λεπτό'. No text; the chapter keeps the points in words (compare algorithms by measurable metrics; wall-clock time depends on the machine) - this reading of p. 6 and p. 8 is an interpretation."
   - "p. 9: definitions use strict inequalities and ∃c without c > 0; transcribed as on the slide."
   - "p. 13: the loop uses i < N although the problem says 'από το 1 μέχρι το N'; the chapter notes that i <= N is needed if N is included."

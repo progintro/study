@@ -6,8 +6,8 @@ source:
   title: "Εργασία 0 (2025-26), Άσκηση 3"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/hw0.pdf
   years: [2025]
-chapters: [7, 9, 2]
-topics: [math-algorithms, loops, integer-representation, input-validation]
+chapters: [6, 9, 2]
+topics: [loops, math-algorithms, integer-representation, input-validation]
 difficulty: 2
 type: programming
 ---

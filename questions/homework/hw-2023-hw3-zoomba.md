@@ -6,7 +6,7 @@ source:
   title: "Εργασία 3 (2023-24), Άσκηση 1"
   url: https://github.com/progintro/progintro.github.io/releases/download/2023/hw3.pdf
   years: [2023]
-chapters: [22, 12, 19]
+chapters: [22, 13, 12]
 topics: [graphs, multidim-arrays, dynamic-memory, input-validation]
 difficulty: 3
 type: programming

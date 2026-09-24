@@ -6,7 +6,7 @@ source:
   title: "Εργαστήριο 5, Άσκηση 2"
   url: https://progintro.github.io/lab-material/labs/lab05/
   years: [2025]
-chapters: [11, 15]
+chapters: [11, 15, 14]
 topics: [recursion, complexity, scope]
 difficulty: 2
 type: programming

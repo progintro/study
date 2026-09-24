@@ -6,8 +6,8 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 1"
   url: https://progintro.github.io/exams/2023/fall/ex2/
   years: [2023]
-chapters: [9, 14]
-topics: [input-output, strings]
+chapters: [9]
+topics: [input-output]
 difficulty: 2
 type: programming
 ---

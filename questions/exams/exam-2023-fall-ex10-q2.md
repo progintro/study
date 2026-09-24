@@ -6,7 +6,7 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 2"
   url: https://progintro.github.io/exams/2023/fall/ex10/
   years: [2023]
-chapters: [6, 2]
+chapters: [6, 3, 4]
 topics: [floating-point, loops, math-algorithms]
 difficulty: 2
 type: programming

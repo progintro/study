@@ -6,7 +6,7 @@ source:
   title: "Εργαστήριο 7, Άσκηση 4"
   url: https://progintro.github.io/lab-material/labs/lab07/
   years: [2025]
-chapters: [12, 16, 13]
+chapters: [16, 13]
 topics: [problem-solving, dynamic-memory, arrays]
 difficulty: 3
 type: programming

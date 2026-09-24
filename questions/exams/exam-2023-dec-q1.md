@@ -6,7 +6,7 @@ source:
   title: "Κατατακτήριες Δεκεμβρίου 2023, Θέμα 1"
   url: https://progintro.github.io/exams/2023/progintro-exam-dec-23.pdf
   years: [2023]
-chapters: [8, 12, 2]
+chapters: [6, 3, 4]
 topics: [floating-point, loops, command-line-args, math-algorithms]
 difficulty: 2
 type: programming

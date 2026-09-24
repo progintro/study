@@ -6,7 +6,7 @@ source:
   title: "Εργαστήριο 4, Άσκηση 4"
   url: https://progintro.github.io/lab-material/labs/lab04/
   years: [2025]
-chapters: [9, 1]
+chapters: [9, 2, 1]
 topics: [input-output, redirection, integer-representation]
 difficulty: 2
 type: programming

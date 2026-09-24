@@ -6,8 +6,8 @@ source:
   title: "Εργασία 2 (2025-26), Άσκηση 1"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/hw2.pdf
   years: [2025]
-chapters: [11, 13, 23]
-topics: [recursion, complexity, dynamic-memory, multidim-arrays, code-organization, files]
+chapters: [25, 11, 23]
+topics: [dynamic-programming, recursion, complexity, dynamic-memory, code-organization, files]
 difficulty: 3
 type: programming
 ---

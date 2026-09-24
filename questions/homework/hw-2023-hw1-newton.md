@@ -6,8 +6,8 @@ source:
   title: "Εργασία 1 (2023-24), Άσκηση 1"
   url: https://github.com/progintro/progintro.github.io/releases/download/2023/hw1.pdf
   years: [2023]
-chapters: [8, 2, 4]
-topics: [floating-point, loops, command-line-args, math-algorithms]
+chapters: [8, 3, 4]
+topics: [floating-point, loops, functions, command-line-args, math-algorithms]
 difficulty: 2
 type: programming
 ---

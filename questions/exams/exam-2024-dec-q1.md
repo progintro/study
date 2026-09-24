@@ -6,7 +6,7 @@ source:
   title: "Κατατακτήριες Δεκεμβρίου 2024, Θέμα 1"
   url: https://progintro.github.io/exams/2024/progintro-exam-dec-24.pdf
   years: [2024]
-chapters: [6, 12, 2]
+chapters: [6, 3, 4]
 topics: [loops, floating-point, command-line-args]
 difficulty: 1
 type: programming

@@ -6,8 +6,8 @@ source:
   title: "Εξέταση Ιουνίου 2026, Θέμα 2"
   url: https://progintro.github.io/exams/2026/progintro-exam-jun-26.pdf
   years: [2026]
-chapters: [12, 10]
-topics: [arrays, pointers, strings, undefined-behavior]
+chapters: [10, 2]
+topics: [arrays, strings, undefined-behavior, types]
 difficulty: 2
 type: debug
 ---

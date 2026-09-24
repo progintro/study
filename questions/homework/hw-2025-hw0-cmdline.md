@@ -5,7 +5,7 @@ title: "Παιχνίδια με Κονσόλα (cmdline)"
 source:
   title: "Εργασία 0 (2025-26), Άσκηση 2"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/hw0.pdf
-  years: [2025]
+  years: [2024, 2025]
 chapters: [1, 4]
 topics: [shell, unix, redirection, git, compilation]
 difficulty: 2
@@ -197,6 +197,11 @@ byte2: ...
 μπορούν να σου δώσουν ιδέες. Σημείωση: μέχρι το επίπεδο 11 τα προβλήματα σε αυτό το site
 είναι εντός θέματος για το μάθημα, από εκεί και πέρα γίνονται πιο δύσκολα / απαιτούν
 γνώσεις που θα αποκτήσουμε σε μεγαλύτερα έτη.
+
+## Εμφανίσεις
+
+- [Εργασία 0 (2024-25), Άσκηση 2](https://github.com/progintro/progintro.github.io/releases/download/2024/hw0.pdf): 12 επίπεδα (`byte0`–`byte11`) στον server `52.86.144.139`, 12 commits· το `byte10` ζητά το 10ο όνομα αντί για το 42ο.
+- [Εργασία 0 (2025-26), Άσκηση 2](https://github.com/progintro/progintro.github.io/releases/download/2025/hw0.pdf): η εκφώνηση που δίνεται εδώ, με τα νέα επίπεδα `byte12`–`byte15` (`which`/`PATH`, `git log`, `git log -p`, bonus vault) και τουλάχιστον 15 commits.
 
 ## Υπόδειξη
 

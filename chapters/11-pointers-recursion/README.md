@@ -593,10 +593,10 @@ int main(int argc, char **argv) {
 - **Σημειώσεις:** η διάλεξη μαζί με την επόμενη καλύπτει τις σελίδες 73–103 των
   σημειώσεων του κ. Σταματόπουλου:
   - [Κεφάλαιο 5: Δείκτες και πίνακες](https://progintro.github.io/notes/chapters/05-pointers-arrays/),
-    ενότητες «Δείκτες» (K04, σελ. 73–78) και «Πίνακες» (K04, σελ. 81–86).
+    ενότητες «Δείκτες» (K04, σελ. 72–77) και «Πίνακες» (K04, σελ. 80–85).
   - [Κεφάλαιο 4: Συναρτήσεις, εμβέλεια και αναδρομή](https://progintro.github.io/notes/chapters/04-functions/),
-    ενότητες «Συνάρτηση υπολογισμού παραγοντικού» (K04, σελ. 63) και «Υπολογισμός
-    παραγοντικού με αναδρομή» (K04, σελ. 70).
+    ενότητες «Συνάρτηση υπολογισμού παραγοντικού» (K04, σελ. 62) και «Υπολογισμός
+    παραγοντικού με αναδρομή» (K04, σελ. 69).
 - **Εργαστήριο:**
   - [Εργαστήριο 6](https://progintro.github.io/lab-material/labs/lab06/): ασκήσεις
     `myprog.c` (πέρασμα δεδομένων μέσω δεικτών), `pointers.c` (πίνακες και αριθμητική
@@ -614,23 +614,62 @@ int main(int argc, char **argv) {
 
 <!-- exercises -->
 
+### Από τις διαφάνειες
+
+- [Πρόσβαση σε μεταβλητή μόνο μέσω της διεύθυνσής της](../../questions/slides/slides-lec11-access-by-address.md): Διάλεξη 11, διαφάνεια 20 · ★☆☆ · short-answer
+- [Αναφορά σε στοιχεία πίνακα μέσω δείκτη](../../questions/slides/slides-lec11-array-pointer-trace.md): Διάλεξη 11, διαφάνειες 29–30 · ★☆☆ · trace
+- [Αναθέσεις μέσω δεικτών](../../questions/slides/slides-lec11-assign-through-pointers.md): Διάλεξη 11, διαφάνεια 24 · ★☆☆ · trace
+- [Μέσος όρος πίνακα 100 ακεραίων](../../questions/slides/slides-lec11-average.md): Διάλεξη 11, διαφάνειες 37–38 · ★☆☆ · programming
+- [Το παραγοντικό αναδρομικά σε C](../../questions/slides/slides-lec11-factorial.md): Διάλεξη 11, διαφάνειες 44–45 · ★☆☆ · programming
+- [Πόσες αναδρομικές κλήσεις κάνει το factorial](../../questions/slides/slides-lec11-factorial-calls.md): Διάλεξη 11, διαφάνεια 46 · ★☆☆ · short-answer
+- [Αρνητικό παραγοντικό](../../questions/slides/slides-lec11-factorial-overflow.md): Διάλεξη 11, διαφάνεια 46 · ★☆☆ · short-answer
+- [Θέση στοιχείου σε πίνακα ή -1](../../questions/slides/slides-lec11-find.md): Διάλεξη 11, διαφάνειες 39–40 · ★☆☆ · programming
+- [Το μέγεθος δεικτών διαφορετικών τύπων](../../questions/slides/slides-lec11-pointer-sizes.md): Διάλεξη 11, διαφάνεια 18 · ★☆☆ · trace
+- [Πώς τυπώνω μόνο το World](../../questions/slides/slides-lec11-print-world.md): Διάλεξη 11, διαφάνειες 34–35 · ★☆☆ · programming
+- [Η δική μας atoi](../../questions/slides/slides-lec11-atoi.md): Διάλεξη 11, διαφάνειες 41–42 · ★★☆ · programming
+- [Τι μπορεί να πάει στραβά με την atoi](../../questions/slides/slides-lec11-atoi-pitfalls.md): Διάλεξη 11, διαφάνεια 42 · ★★☆ · debug
+- [Αρνητικό όρισμα στο αναδρομικό παραγοντικό](../../questions/slides/slides-lec11-factorial-negative.md): Διάλεξη 11, διαφάνεια 46 · ★★☆ · short-answer
+
+### Από τα εργαστήρια
+
+- [Πέρασμα δεδομένων μέσω δεικτών](../../questions/labs/lab-lab06-myprog.md): Εργαστήριο 6, Άσκηση 1 · ★☆☆ · programming
+- [Η εικασία του Collatz](../../questions/labs/lab-lab05-collatz.md): Εργαστήριο 5, Άσκηση 1 · ★★☆ · programming
+- [Η ακολουθία Fibonacci](../../questions/labs/lab-lab05-fib.md): Εργαστήριο 5, Άσκηση 2 · ★★☆ · programming
+- [Πίνακες και αριθμητική δεικτών](../../questions/labs/lab-lab06-pointers.md): Εργαστήριο 6, Άσκηση 3 · ★★☆ · trace
+- [Υπολογισμός μισθών](../../questions/labs/lab-lab08-wages.md): Εργαστήριο 8, Άσκηση 4 · ★★☆ · debug
+
 ### Από τις εργασίες
 
 - [Ο Αλγόριθμος του Ευκλείδη (gcd)](../../questions/homework/hw-2024-hw1-gcd.md): Εργασία 1 (2024-25), Άσκηση 1 · ★★☆ · programming
+- [Άψογα Τετράγωνα (Bonus)](../../questions/homework/hw-2023-hw1-flawless.md): Εργασία 1 (2023-24), Άσκηση 3 (Bonus) · ★★★ · programming
+- [Ο Αλγόριθμος RSA (rsa)](../../questions/homework/hw-2024-hw1-rsa.md): Εργασία 1 (2024-25), Άσκηση 2 · ★★★ · programming
 
 ### Από τα θέματα εξετάσεων
 
-- [Σκαλί-Σκαλί](../../questions/exams/exam-2023-dec-q3.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 3 · ★★☆ · programming
-- [Ανεβαίνοντας Επίπεδο](../../questions/exams/exam-2023-fall-ex2-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 4 · ★★☆ · programming
-- [Τρόποι να Φάμε Παϊδάκια](../../questions/exams/exam-2023-fall-ex14-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 4 · ★★★ · programming
-- [Γεμίζοντας με χρώμα](../../questions/exams/exam-2024-sep-q6.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 6 · ★★★ · programming
+- [Ο Στέργιος Ξαναχτυπά](../../questions/exams/exam-2026-jan-q6.md): Εξέταση Ιανουαρίου 2026, Θέμα 6 · ★☆☆ · trace
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
+- [Πίνακες και συναρτήσεις](../../questions/labs/lab-lab06-judgement.md): Εργαστήριο 6, Άσκηση 4 · ★☆☆ · programming (κεφ. 10)
 - [scanf χωρίς &](../../questions/slides/slides-lec10-scanf-no-ampersand.md): Διάλεξη 10, διαφάνεια 11 · ★★☆ · debug (κεφ. 10)
-- [Λύσε τον Λαβύρινθο](../../questions/exams/exam-2024-dec-q4.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 4 · ★★★ · programming (κεφ. 12)
 - [Περιεχόμενα του x μετά από βρόχο με δείκτη](../../questions/slides/slides-lec12-pointer-copy-loop.md): Διάλεξη 12, διαφάνεια 25 · ★★☆ · trace (κεφ. 12)
+- [Γιατί η αναδρομή πρέπει να τελειώνει;](../../questions/slides/slides-lec13-infinite-recursion.md): Διάλεξη 13, διαφάνεια 27 · ★☆☆ · short-answer (κεφ. 13)
+- [Το Δικό σου Chatbot (jason)](../../questions/homework/hw-2024-hw2-jason.md): Εργασία 2 (2024-25), Άσκηση 3 · ★★★ · programming (κεφ. 14)
+- [Πολυπλοκότητα του αναδρομικού παραγοντικού](../../questions/slides/slides-lec15-complexity-factorial.md): Διάλεξη 15, διαφάνεια 25 · ★★☆ · short-answer (κεφ. 15)
+- [Πολυπλοκότητα του αναδρομικού Fibonacci](../../questions/slides/slides-lec15-complexity-fibonacci.md): Διάλεξη 15, διαφάνεια 27 · ★★☆ · short-answer (κεφ. 15)
+- [Ο Γρίφος του Στέργιου](../../questions/homework/hw-2025-bonus0-stergios.md): Bonus #0 (2025-26, προαιρετική) · ★★★ · programming (κεφ. 16)
+- [Σκαλί-σκαλί (Παλιό θέμα, Προαιρετικό)](../../questions/labs/lab-lab05-ladder.md): Εργαστήριο 5, Άσκηση 3 · ★★★ · programming (κεφ. 16)
+- [Η atoi και τι μπορεί να πάει στραβά](../../questions/slides/slides-lec16-atoi.md): Διάλεξη 16, διαφάνειες 16–17 · ★★☆ · programming (κεφ. 16)
+- [Αποδοτική αναδρομική Fibonacci](../../questions/slides/slides-lec16-fibonacci-efficient.md): Διάλεξη 16, διαφάνεια 26 · ★★☆ · programming (κεφ. 16)
+- [Η συνάρτηση get_two_chars](../../questions/slides/slides-lec16-get-two-chars.md): Διάλεξη 16, διαφάνεια 20 · ★☆☆ · programming (κεφ. 16)
+- [Η συνάρτηση swap](../../questions/slides/slides-lec16-swap.md): Διάλεξη 16, διαφάνειες 22–23 · ★☆☆ · programming (κεφ. 16)
 - [Reverse Inorder Traversal](../../questions/exams/exam-2024-jul-q4.md): Εξέταση Ιουλίου 2024, Θέμα 4 · ★★☆ · programming (κεφ. 22)
+- [Δυαδικά δένδρα](../../questions/labs/lab-lab09-tree.md): Εργαστήριο 9, Άσκηση 4 · ★★☆ · programming (κεφ. 22)
+- [Σκαλί-Σκαλί](../../questions/exams/exam-2023-dec-q3.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 3 · ★★☆ · programming (κεφ. 25)
+- [Ανεβαίνοντας Επίπεδο](../../questions/exams/exam-2023-fall-ex2-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 4 · ★★☆ · programming (κεφ. 25)
+- [Λύσε τον Λαβύρινθο](../../questions/exams/exam-2024-dec-q4.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 4 · ★★★ · programming (κεφ. 25)
+- [Γεμίζοντας με χρώμα](../../questions/exams/exam-2024-sep-q6.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 6 · ★★★ · programming (κεφ. 25)
+- [Ανελκυστήρες για Ανυπόμονους και Ανυπόμονες (elevate)](../../questions/homework/hw-2025-hw2-elevate.md): Εργασία 2 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 25)
 
 <!-- /exercises -->
 

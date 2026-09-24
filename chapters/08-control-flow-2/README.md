@@ -533,7 +533,7 @@ switch (month) {
 ## Διάβασμα
 
 - **Διαφάνειες:** [Διάλεξη 8](https://github.com/progintro/progintro.github.io/releases/download/2025/lec08.pdf), σελ. 1–25. Υπερχείλιση στο γινόμενο: σελ. 2· παραδείγματα βρόχων και σημαία: σελ. 5–8· `break`: σελ. 9–10· `continue`: σελ. 11–12· `switch`: σελ. 13–18· `goto` και δομημένος προγραμματισμός: σελ. 19–22.
-- **Σημειώσεις:** [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Εντολή `switch`», «Εντολές `break` και `continue`», «Εντολή `goto` και ετικέτες» (K04, σελ. 51–52 και 57–58). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι και τη σελίδα 71, δηλαδή και το [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/) μέχρι την ενότητα «Μετατροπές μεταξύ δεκαδικών και δυαδικών αριθμών».
+- **Σημειώσεις:** [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Εντολή `switch`», «Εντολές `break` και `continue`», «Εντολή `goto` και ετικέτες» (K04, σελ. 50–51 και 56–57). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι και τη σελίδα 71, δηλαδή και το [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/) μέχρι την ενότητα «Μετατροπές μεταξύ δεκαδικών και δυαδικών αριθμών».
 - **Εργαστήριο:** [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): ασκήσεις `seq.c` (βρόχοι), `birthdate.c` (αντιστοίχιση `IDAY % 7` σε ημέρα, κατάλληλη για `switch`)
 - **Άλλα:**
   - [Break and Continue (W3Schools)](https://www.w3schools.com/c/c_break_continue.php)
@@ -554,15 +554,19 @@ switch (month) {
 - [Η εποχή κάθε μήνα](../../questions/slides/slides-lec08-season.md): Διάλεξη 8: Ροή Ελέγχου #2, διαφάνεια 17 · ★☆☆ · programming
 - [Ο μικρότερος τριψήφιος πολλαπλάσιο του 2 και του 5 αλλά όχι του 4](../../questions/slides/slides-lec08-smallest-three-digit.md): Διάλεξη 8: Ροή Ελέγχου #2, διαφάνεια 6 · ★☆☆ · programming
 
-### Από τα θέματα εξετάσεων
+### Από τις εργασίες
 
-- [Κάντο όπως ο Βιετά](../../questions/exams/exam-2023-dec-q1.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 1 · ★★☆ · programming
-- [Εαυτοί Αριθμοί](../../questions/exams/exam-2023-dec-q2.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 2 · ★★☆ · programming
+- [Η Μέθοδος Newton-Raphson](../../questions/homework/hw-2023-hw1-newton.md): Εργασία 1 (2023-24), Άσκηση 1 · ★★☆ · programming
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
-- [Σπάσε το PIN](../../questions/exams/exam-2023-fall-ex6-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 3 · ★★☆ · programming (κεφ. 7)
+- [Συνεργασία (Prisoner's Dilemma)](../../questions/homework/hw-2023-hw2-coop.md): Εργασία 2 (2023-24), Άσκηση 3 · ★★☆ · programming (κεφ. 9)
+- [Ο Αλγόριθμος RSA (rsa)](../../questions/homework/hw-2024-hw1-rsa.md): Εργασία 1 (2024-25), Άσκηση 2 · ★★★ · programming (κεφ. 11)
 - [Τουρνουά](../../questions/exams/exam-2023-fall-ex2-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 2 · ★☆☆ · programming (κεφ. 12)
+- [Ορίσματα γραμμής εντολής](../../questions/labs/lab-lab08-argcalc.md): Εργαστήριο 8, Άσκηση 2 · ★☆☆ · programming (κεφ. 12)
+- [Σπάσε το PIN](../../questions/exams/exam-2023-fall-ex6-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 3 · ★★☆ · programming (κεφ. 14)
+- [Παλινδρομικός αριθμός](../../questions/slides/slides-lec16-palindrome-number.md): Διάλεξη 16, διαφάνεια 21 · ★☆☆ · programming (κεφ. 16)
+- [Αντιστροφή ψηφίων αριθμού](../../questions/slides/slides-lec16-reverse-digits.md): Διάλεξη 16, διαφάνεια 13 · ★☆☆ · programming (κεφ. 16)
 
 <!-- /exercises -->
 

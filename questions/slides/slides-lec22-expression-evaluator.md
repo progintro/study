@@ -3,10 +3,10 @@ id: slides-lec22-expression-evaluator
 kind: slides
 title: "Διάσχιση για αποτιμητή εκφράσεων"
 source:
-  title: "Διάλεξη 22: Δέντρα, διαφάνεια 29"
+  title: "Διαλέξεις 21–22: Δέντρα, διαφάνεια 29 (διάλεξη 21: διαφάνεια 51)"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec22.pdf
   years: [2025]
-chapters: [22]
+chapters: [22, 21]
 topics: [trees, recursion]
 difficulty: 2
 type: short-answer

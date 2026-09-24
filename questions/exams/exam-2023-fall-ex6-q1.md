@@ -6,8 +6,8 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 1"
   url: https://progintro.github.io/exams/2023/fall/ex6/
   years: [2023]
-chapters: [7, 12]
-topics: [math-algorithms, command-line-args, input-validation]
+chapters: [6, 4, 2]
+topics: [math-algorithms, command-line-args, input-validation, integer-representation]
 difficulty: 1
 type: programming
 ---

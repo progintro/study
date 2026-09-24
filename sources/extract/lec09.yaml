@@ -33,7 +33,7 @@ pointers:
 takeaways_slide: null
 issues:
   - "No explicit key-takeaways slide; p. 40 ('Για την επόμενη φορά') lists reading pointers only. Κύρια σημεία were built from the red callouts (p. 17 one char, p. 18-19 buffer/Ctrl+D, p. 24 int not char, p. 31 address, p. 34 check return value, p. 37 whitespace skipping, p. 29 'συμμετρική της printf')."
-  - "p. 40 cites notes pages 28-29, 70-71, 78-79, 86-87; k04-map.tsv puts the matching sections one page later (29-30, 71-72, 79-80, 87-88). The chapter cites the section names with the k04-map pages and quotes the slides' numbers; probably printed-vs-PDF page numbering."
+  - "p. 40 cites notes pages 28-29, 70-71, 78-79, 86-87; these are printed page numbers and match k04-map.tsv exactly (28-29, 70-71, 78-79, 86-87); the chapter cites the section names with these pages and quotes the slides' numbers."
   - "p. 3-4: the slides ask 'Υπάρχει κάποια εξήγηση;' but give no answer; the explanation (float rounding vs double constant) and the fix (fabs with tolerance, or 3.1f) are standard C, verified locally (a == 3.1 false, a == 3.1f true)."
   - "p. 24: the callout 'πάντα αναθέτουμε την τιμή επιστροφής της getchar() εκτός και αν είμαστε σίγουροι για το τι κάνουμε' is ambiguous; interpreted together with the other callout as 'always store it in an int'."
   - "p. 26 and p. 38: getinteger declares `int ch;` but keeps the comment 'No need to declare ch as int - no EOF handling', which only makes sense for the notes' version (`char ch;`, notes ch. 04). Transcribed as on the slide; the reformatted comment columns differ from the slide."

@@ -516,7 +516,7 @@ echo -e "2856\n0\nf\n" | ./aliquot | ttyplot
 ## Διάβασμα
 
 - **Διαφάνειες:** [Διάλεξη 6](https://github.com/progintro/progintro.github.io/releases/download/2025/lec06.pdf), σελ. 1–29. Pipes και `time`: σελ. 2· κατηγορίες εντολών: σελ. 5–8· ροή ελέγχου, `if`, `if-else`: σελ. 9–13· εμφωλευμένες `if` και dangling else: σελ. 14–16· `while`: σελ. 17–21· `for`: σελ. 22–24· `do-while`: σελ. 25–26.
-- **Σημειώσεις:** [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Η ροή του ελέγχου στην C», «Εντολή `if`», «Εντολές βρόχου `while`», «Εντολή βρόχου `for`» (K04, σελ. 47–50 και 53–56). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι και τη σελίδα 62, δηλαδή και το [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/) μέχρι την ενότητα «Συνάρτηση ύψωσης σε δύναμη».
+- **Σημειώσεις:** [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Η ροή του ελέγχου στην C», «Εντολή `if`», «Εντολές βρόχου `while`», «Εντολή βρόχου `for`» (K04, σελ. 46–49 και 52–55). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι και τη σελίδα 62, δηλαδή και το [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/) μέχρι την ενότητα «Συνάρτηση υπολογισμού παραγοντικού».
 - **Εργαστήριο:** [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): εισαγωγή για τους τρεις βρόχους και τα διαγράμματα ροής τους, ασκήσεις `seq.c` (`while`, `for`, `do...while`), `root.c` (`if...else`), `birthdate.c`, `limit.c`
 - **Βιβλίο:** K&R, κεφ. 3 (σελ. 85–100), όπως προτείνουν οι σημειώσεις.
 - **Άλλα:**
@@ -542,24 +542,35 @@ echo -e "2856\n0\nf\n" | ./aliquot | ttyplot
 ### Από τα εργαστήρια
 
 - [Αποσφαλμάτωση αθροίσματος με όριο](../../questions/labs/lab-lab03-limit.md): Εργαστήριο 3, Άσκηση 4 · ★☆☆ · debug
+- [Κατασκευή πυραμίδας](../../questions/labs/lab-lab04-pyramid.md): Εργαστήριο 4, Άσκηση 2 · ★☆☆ · programming
 - [Υπολογισμός ριζών τριωνύμου](../../questions/labs/lab-lab03-root.md): Εργαστήριο 3, Άσκηση 2 · ★★☆ · programming
 - [Υπολογισμός αθροίσματος σειράς](../../questions/labs/lab-lab03-seq.md): Εργαστήριο 3, Άσκηση 1 · ★★☆ · programming
 
 ### Από τις εργασίες
 
 - [Η εικασία Collatz](../../questions/homework/hw-2023-hw0-collatz.md): Εργασία 0 (2023-24), Άσκηση 3 · ★★☆ · programming
+- [Οι Ακολουθίες Aliquot](../../questions/homework/hw-2025-hw0-aliquot.md): Εργασία 0 (2025-26), Άσκηση 3 · ★★☆ · programming
 
 ### Από τα θέματα εξετάσεων
 
+- [Μέγιστος Κοινός Διαιρέτης](../../questions/exams/exam-2023-fall-ex6-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 1 · ★☆☆ · programming
 - [Προσεγγίζοντας το π](../../questions/exams/exam-2024-dec-q1.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 1 · ★☆☆ · programming
 - [Mystery](../../questions/exams/exam-2025-sep-q1.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 1 · ★☆☆ · trace
+- [Mystery](../../questions/exams/exam-2026-sep-q1.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 1 · ★☆☆ · trace
+- [Κάντο όπως ο Βιετά](../../questions/exams/exam-2023-dec-q1.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 1 · ★★☆ · programming
 - [Ασημένιο Κλάσμα](../../questions/exams/exam-2023-fall-ex10-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 2 · ★★☆ · programming
 - [Κάντο όπως ο Βιετά](../../questions/exams/exam-2023-fall-ex13-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 1 · ★★☆ · programming
 - [Τυπώνοντας τον Πίνακα ASCII](../../questions/exams/exam-2023-fall-ex15-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 2 · ★★☆ · programming
 - [Πετυχαίνοντας τον Στόχο](../../questions/exams/exam-2023-fall-ex9-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 2 · ★★☆ · programming
+- [Εύρεση Πρώτων Παραγόντων - factor](../../questions/exams/exam-2026-jan-q3.md): Εξέταση Ιανουαρίου 2026, Θέμα 3 · ★★☆ · programming
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
+- [Εκτύπωση χαρακτήρων](../../questions/labs/lab-lab04-printchar.md): Εργαστήριο 4, Άσκηση 1 · ★☆☆ · programming (κεφ. 2)
+- [Προσέγγιση του π με τη σειρά Leibniz](../../questions/slides/slides-lec03-leibniz-pi.md): Διάλεξη 3: Συναρτήσεις, διαφάνεια 43 · ★★☆ · programming (κεφ. 3)
+- [Mystery](../../questions/exams/exam-2025-jan-q1.md): Εξέταση Ιανουαρίου 2025, Θέμα 1 · ★☆☆ · trace (κεφ. 5)
+- [Mystery](../../questions/exams/exam-2026-jan-q1.md): Εξέταση Ιανουαρίου 2026, Θέμα 1 · ★☆☆ · trace (κεφ. 5)
+- [Η συνάρτηση mystery](../../questions/exams/exam-2026-jun-q1.md): Εξέταση Ιουνίου 2026, Θέμα 1 · ★☆☆ · trace (κεφ. 5)
 - [Υπολογισμός ημέρας μίας δεδομένης ημερομηνίας](../../questions/labs/lab-lab03-birthdate.md): Εργαστήριο 3, Άσκηση 3 · ★☆☆ · programming (κεφ. 5)
 - [Το Πρόβλημα του Τρόλεϊ (trolley)](../../questions/homework/hw-2024-hw0-trolley.md): Εργασία 0 (2024-25), Άσκηση 3 · ★★☆ · programming (κεφ. 9)
 

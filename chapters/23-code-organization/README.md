@@ -565,16 +565,16 @@ Segmentation fault
 - **Σημειώσεις:** η διάλεξη σημειώνει ότι με αυτήν έχει καλυφθεί όλη η ύλη των
   διαφανειών του κ. Σταματόπουλου. Για τα θέματα της διάλεξης:
   - [Κεφάλαιο 4](https://progintro.github.io/notes/chapters/04-functions/): «Δομή ενός
-    προγράμματος C – Συναρτήσεις» (K04, σελ. 59–61) για τα πρωτότυπα· «Εμβέλεια και
-    χρόνος ζωής μεταβλητών» (64–69) για `extern` και `static` σε πολλά αρχεία.
+    προγράμματος C – Συναρτήσεις» (K04, σελ. 58–60) για τα πρωτότυπα· «Εμβέλεια και
+    χρόνος ζωής μεταβλητών» (63–68) για `extern` και `static` σε πολλά αρχεία.
   - [Κεφάλαιο 2](https://progintro.github.io/notes/chapters/02-types-operators/):
-    «Μεταβλητές, σταθερές, τύποι και δηλώσεις στην C» (K04, σελ. 31–34) για το `const`.
+    «Μεταβλητές, σταθερές, τύποι και δηλώσεις στην C» (K04, σελ. 30–33) για το `const`.
   - [Κεφάλαιο 6](https://progintro.github.io/notes/chapters/06-memory-strings/):
     «Συμβολοσειρές» (K04, σελ. 93–96) για τις παραμέτρους `const char *` της βιβλιοθήκης.
   - [Κεφάλαιο 10](https://progintro.github.io/notes/chapters/10-preprocessor/): «Ο
-    προεπεξεργαστής της C» (K04, σελ. 155–160) για το `#include` και το `#ifndef`.
+    προεπεξεργαστής της C» (K04, σελ. 154–159) για το `#include` και το `#ifndef`.
   - [Κεφάλαιο 12](https://progintro.github.io/notes/chapters/12-good-practice/): «Ένα
-    πρόγραμμα C πρέπει να είναι …» (K04, σελ. 179).
+    πρόγραμμα C πρέπει να είναι …» (K04, σελ. 178).
 - **Εργαστήριο:** [Εργαστήριο 10](https://progintro.github.io/lab-material/labs/lab10/):
   «Παράρτημα: Οργάνωση προγράμματος σε πολλαπλά αρχεία» και Άσκηση 5 (`more.c` σε
   `pager.c`/`pager.h`)· [Εργαστήριο 1](https://progintro.github.io/lab-material/labs/lab01/):
@@ -588,6 +588,28 @@ Segmentation fault
 ## Ασκήσεις
 
 <!-- exercises -->
+
+### Από τις διαφάνειες
+
+- [Κλήση πριν από τον ορισμό](../../questions/slides/slides-lec23-implicit-declaration.md): Διάλεξη 23, διαφάνειες 19-21 · ★☆☆ · debug
+- [Ένα σύστημα 40.000 γραμμών](../../questions/slides/slides-lec23-organize-40kloc.md): Διαλέξεις 23–24, διαφάνειες 11 και 14 (διάλεξη 24: διαφάνειες 12 και 15) · ★☆☆ · short-answer
+- [Αλλάζοντας κάτι const](../../questions/slides/slides-lec23-const-violations.md): Διάλεξη 23, διαφάνειες 23-24 · ★★☆ · trace
+- [Εξαρτήσεις ανάμεσα σε αρχεία](../../questions/slides/slides-lec23-dependencies.md): Διαλέξεις 23–24, διαφάνεια 15 (διάλεξη 24: διαφάνεια 16) · ★★☆ · short-answer
+
+### Από τα εργαστήρια
+
+- [Σπάστε το πρόγραμμά σας σε αρθρώματα](../../questions/labs/lab-lab10-more-modules.md): Εργαστήριο 10, Άσκηση 5 · ★★☆ · tooling
+
+### Από τις εργασίες
+
+- [Η Newton-Raphson Ξαναχτυπά! (Bonus)](../../questions/homework/hw-2023-hw3-fractal.md): Εργασία 3 (2023-24), Άσκηση 2 (Bonus) και 2.1 (Bonus) · ★★★ · programming
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Νέα Μηχανή Σκακιού (chess engine)](../../questions/homework/hw-2024-hw3-chess.md): Εργασία 3 (2024-25), Άσκηση 1 · ★★★ · programming (κεφ. 22)
+- [Νέα Μηχανή Go (goteam)](../../questions/homework/hw-2025-hw3-goteam.md): Εργασία 3 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 22)
+- [Ανελκυστήρες για Ανυπόμονους και Ανυπόμονες (elevate)](../../questions/homework/hw-2025-hw2-elevate.md): Εργασία 2 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 25)
+
 <!-- /exercises -->
 
 ## Ερωτήσεις αυτοαξιολόγησης

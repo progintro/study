@@ -38,6 +38,6 @@ issues:
   - "p. 12-13: the program on the slide omits #include lines and the struct definition; the chapter adds <stdio.h>, <string.h> and the struct so it compiles."
   - "p. 30: the first line of output (-29387249 0) is uninitialized garbage and varies per run; transcribed as on the slide."
   - "p. 42-45: the program never frees d3 or checks malloc for NULL; the chapter notes this and links chapter 13."
-  - "p. 46: the lecture cites notes pages 109-119 and 126. k04-map.tsv maps 109 to «Απαριθμήσεις» (not taught in this lecture), 118-120 to «Εύρεση τριγώνων…», 126 to «Αυτο-αναφορικές δομές» and 127 to «Δημιουργία νέων ονομάτων τύπων». Page 126 was presumably meant for typedef; the chapter lists «Δημιουργία νέων ονομάτων τύπων» as 126-127."
+  - "p. 46: the lecture cites notes pages 109-119 and 126. k04-map.tsv (printed pages) maps 109-116 to «Δομές», 117-119 to «Εύρεση τριγώνων…» and 126 to «Δημιουργία νέων ονομάτων τύπων»; «Απαριθμήσεις» (108) is not cited. The chapter uses these pages."
   - "Chapter adds from the notes / standard C, not stated on the slides: designated initializers (only linked on p. 46), declaring variables together with the type, why *p.x needs parentheses (precedence of . over *), and `.` left associativity. Compiler error messages in «Συχνά λάθη» were checked with gcc 14."
   - "Question files: slides-lec19-many-students merges the rhetorical questions of p. 6 and p. 7; slides-lec19-sizeof-student merges p. 20-21 with the «Συνοψίζοντας» question on p. 28."

@@ -621,6 +621,45 @@ $ ./bfs
 ## Ασκήσεις
 
 <!-- exercises -->
+
+### Από τις διαφάνειες
+
+- [Ποιος αλγόριθμος αναζήτησης είναι καλύτερος;](../../questions/slides/slides-lec22-best-search.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 38 (διάλεξη 21: διαφάνεια 60) · ★☆☆ · short-answer
+- [Έλεγχος ύπαρξης σε δυαδικό δέντρο αναζήτησης](../../questions/slides/slides-lec22-bst-exists.md): Διαλέξεις 21–22: Δέντρα, διαφάνειες 35–37 (διάλεξη 21: διαφάνειες 57–59) · ★☆☆ · programming
+- [Κόμβοι τέλειου δυαδικού δέντρου](../../questions/slides/slides-lec22-perfect-tree-nodes.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 10 (διάλεξη 21: διαφάνεια 32) · ★☆☆ · short-answer
+- [Διασχίσεις pre-order, in-order, post-order](../../questions/slides/slides-lec22-traversals.md): Διαλέξεις 21–22: Δέντρα, διαφάνειες 22–28 (διάλεξη 21: διαφάνειες 44–50) · ★☆☆ · trace
+- [Μέγιστο στοιχείο δέντρου: BFS ή DFS;](../../questions/slides/slides-lec22-tree-max.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 41 (διάλεξη 21: διαφάνεια 63) · ★☆☆ · short-answer
+- [Πολυπλοκότητα της depth](../../questions/slides/slides-lec22-depth-complexity.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 20 (διάλεξη 21: διαφάνειες 41–42) · ★★☆ · short-answer
+- [Διάσχιση για αποτιμητή εκφράσεων](../../questions/slides/slides-lec22-expression-evaluator.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 29 (διάλεξη 21: διαφάνεια 51) · ★★☆ · short-answer
+- [Λίστα για το BFS και λίστες κάθε τύπου](../../questions/slides/slides-lec22-generic-list.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 33 (διάλεξη 21: διαφάνεια 55) · ★★☆ · short-answer
+- [Συντομότερο μονοπάτι σε δέντρα-λαβύρινθους: BFS ή DFS;](../../questions/slides/slides-lec22-maze-shortest-path.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 40 (διάλεξη 21: διαφάνεια 62) · ★★☆ · short-answer
+- [Αποθήκευση και αναζήτηση σε 1 PetaByte](../../questions/slides/slides-lec22-petabyte.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 39 (διάλεξη 21: διαφάνεια 61) · ★★☆ · short-answer
+- [Δέντρο καταστάσεων τρίλιζας](../../questions/slides/slides-lec22-tictactoe-tree.md): Διάλεξη 22: Δέντρα, διαφάνεια 15 · ★★☆ · short-answer
+- [Προσθήκη στοιχείου σε δυαδικό δέντρο](../../questions/slides/slides-lec22-tree-insert.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 16 (διάλεξη 21: διαφάνεια 38) · ★★☆ · programming
+- [Αφαίρεση στοιχείου από δυαδικό δέντρο](../../questions/slides/slides-lec22-tree-delete.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 16 (διάλεξη 21: διαφάνεια 38) · ★★★ · programming
+
+### Από τα εργαστήρια
+
+- [Δυαδικά δένδρα](../../questions/labs/lab-lab09-tree.md): Εργαστήριο 9, Άσκηση 4 · ★★☆ · programming
+
+### Από τις εργασίες
+
+- [Zoomba: συντομότερη διαδρομή σε δωμάτιο](../../questions/homework/hw-2023-hw3-zoomba.md): Εργασία 3 (2023-24), Άσκηση 1 · ★★★ · programming
+- [Νέα Μηχανή Σκακιού (chess engine)](../../questions/homework/hw-2024-hw3-chess.md): Εργασία 3 (2024-25), Άσκηση 1 · ★★★ · programming
+- [Νέα Μηχανή Go (goteam)](../../questions/homework/hw-2025-hw3-goteam.md): Εργασία 3 (2025-26), Άσκηση 1 · ★★★ · programming
+
+### Από τα θέματα εξετάσεων
+
+- [Αθροιστής Δέντρων - sumtree](../../questions/exams/exam-2025-jan-q4.md): Εξέταση Ιανουαρίου 2025, Θέμα 4 · ★☆☆ · programming
+- [Reverse Inorder Traversal](../../questions/exams/exam-2024-jul-q4.md): Εξέταση Ιουλίου 2024, Θέμα 4 · ★★☆ · programming
+- [Διερμηνέας Αριθμητικών Εκφράσεων - eval](../../questions/exams/exam-2026-jan-q4.md): Εξέταση Ιανουαρίου 2026, Θέμα 4 · ★★☆ · programming
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Γενεαλογικό δέντρο](../../questions/slides/slides-lec20-family-tree.md): Διάλεξη 20, διαφάνεια 43 · ★☆☆ · short-answer (κεφ. 20)
+- [Περικύκλωση - encirclement](../../questions/exams/exam-2026-jan-q5.md): Εξέταση Ιανουαρίου 2026, Θέμα 5 · ★★★ · programming (κεφ. 25)
+- [Καθαρή διαχείριση μνήμης](../../questions/labs/lab-lab09-grades-tree.md): Εργαστήριο 9, Άσκηση 5 · ★★☆ · programming (κεφ. 25)
+
 <!-- /exercises -->
 
 ## Ερωτήσεις αυτοαξιολόγησης

@@ -675,7 +675,7 @@ else
 ## Διάβασμα
 
 - **Διαφάνειες:** [Διάλεξη 5](https://github.com/progintro/progintro.github.io/releases/download/2025/lec05.pdf), σελ. 1–35. Κατηγορίες τελεστών: σελ. 5· αριθμητικοί, συγκριτικοί, λογικοί: σελ. 7–9· bitwise: σελ. 10–12· συνθήκης και cast: σελ. 13–15· ανάθεση, αύξηση/μείωση, κόμμα: σελ. 16–19· πρόγραμμα βαθμολογίας: σελ. 20· προτεραιότητα: σελ. 21–24· εκφράσεις και εντολές: σελ. 25–28· `if` και `if-else`: σελ. 29–33.
-- **Σημειώσεις:** [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Εντολές αντικατάστασης, τελεστές και παραστάσεις» (K04, σελ. 35–44)· [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Η ροή του ελέγχου στην C», «Εντολή `if`» (K04, σελ. 47–50). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι και τη σελίδα 62.
+- **Σημειώσεις:** [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Εντολές αντικατάστασης, τελεστές και παραστάσεις» (K04, σελ. 34–43)· [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Η ροή του ελέγχου στην C», «Εντολή `if`» (K04, σελ. 46–49). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι και τη σελίδα 62.
 - **Εργαστήριο:** [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): ασκήσεις `root.c` (`if...else`), `birthdate.c` (ακέραια διαίρεση και `%`), `limit.c` (αποσφαλμάτωση εκφράσεων)
 - **Βιβλίο:** K&R, §2.5–2.12 (τελεστές και παραστάσεις), όπως προτείνουν οι σημειώσεις.
 - **Άλλα:** Wikipedia: [Comma operator](https://en.wikipedia.org/wiki/Comma_operator), [Control flow](https://en.wikipedia.org/wiki/Control_flow), [Conditional (computer programming)](https://en.wikipedia.org/wiki/Conditional_(computer_programming))
@@ -684,17 +684,38 @@ else
 
 <!-- exercises -->
 
+### Από τις διαφάνειες
+
+- [Η τιμή της 0xbeef | 0xcafe0000](../../questions/slides/slides-lec05-bitwise-or-hex.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 12 · ★☆☆ · multiple-choice
+- [Cast και διαίρεση: (double)3/4](../../questions/slides/slides-lec05-cast-division.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 14 · ★☆☆ · trace
+- [Απομόνωση του πιο σημαντικού bit](../../questions/slides/slides-lec05-msb.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 11 · ★☆☆ · multiple-choice
+- [Τι τύπου τελεστές είναι;](../../questions/slides/slides-lec05-operator-arity.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνειες 7-10, 13 · ★☆☆ · short-answer
+- [Οι αριθμητικοί τελεστές ως συναρτήσεις](../../questions/slides/slides-lec05-operator-as-function.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 7 · ★☆☆ · short-answer
+- [Προτεραιότητα και προσεταιριστικότητα](../../questions/slides/slides-lec05-precedence.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 21 · ★☆☆ · trace
+- [Συνάρτηση max με τον τελεστή συνθήκης](../../questions/slides/slides-lec05-ternary-max.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 13 · ★☆☆ · programming
+
 ### Από τα εργαστήρια
 
 - [Υπολογισμός ημέρας μίας δεδομένης ημερομηνίας](../../questions/labs/lab-lab03-birthdate.md): Εργαστήριο 3, Άσκηση 3 · ★☆☆ · programming
 
+### Από τα θέματα εξετάσεων
+
+- [Mystery](../../questions/exams/exam-2025-jan-q1.md): Εξέταση Ιανουαρίου 2025, Θέμα 1 · ★☆☆ · trace
+- [Mystery](../../questions/exams/exam-2026-jan-q1.md): Εξέταση Ιανουαρίου 2026, Θέμα 1 · ★☆☆ · trace
+- [Η συνάρτηση mystery](../../questions/exams/exam-2026-jun-q1.md): Εξέταση Ιουνίου 2026, Θέμα 1 · ★☆☆ · trace
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Rickroll Τριπλέτες](../../questions/exams/exam-2023-fall-ex4-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 3 · ★★★ · programming (κεφ. 2)
-- [Πυθαγόρειο θεώρημα](../../questions/labs/lab-lab02-pyth.md): Εργαστήριο 2, Άσκηση 2 · ★☆☆ · programming (κεφ. 2)
+- [Πυθαγόρειο θεώρημα](../../questions/labs/lab-lab02-pyth.md): Εργαστήριο 2, Άσκηση 2 · ★☆☆ · programming (κεφ. 3)
 - [Υπολογισμός ριζών τριωνύμου](../../questions/labs/lab-lab03-root.md): Εργαστήριο 3, Άσκηση 2 · ★★☆ · programming (κεφ. 6)
+- [Τιμές μετά από εντολές έκφρασης](../../questions/slides/slides-lec06-expression-statements.md): Διάλεξη 6: Εντολές και Ροή Ελέγχου, διαφάνεια 7 · ★☆☆ · trace (κεφ. 6)
+- [Μέγιστο με if-else και εναλλακτικές](../../questions/slides/slides-lec06-if-else-max.md): Διάλεξη 6: Εντολές και Ροή Ελέγχου, διαφάνεια 13 · ★☆☆ · short-answer (κεφ. 6)
 - [Μήνυμα από τον Καίσαρα](../../questions/exams/exam-2023-fall-ex6-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 2 · ★☆☆ · programming (κεφ. 9)
 - [Μετρητής λέξεων](../../questions/exams/exam-2024-sep-q4.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 4 · ★★☆ · programming (κεφ. 9)
+- [Επεξεργασία Ήχου (soundwave)](../../questions/homework/hw-2025-hw1-soundwave.md): Εργασία 1 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 9)
+- [Η έκφραση *str++](../../questions/slides/slides-lec14-str-plus-plus.md): Διάλεξη 14, διαφάνεια 34 · ★★☆ · short-answer (κεφ. 14)
+- [Πολυπλοκότητα υπολογισμού βαθμολογίας](../../questions/slides/slides-lec15-complexity-grade.md): Διάλεξη 15, διαφάνεια 21 · ★☆☆ · short-answer (κεφ. 15)
 - [Κρυφό Μήνυμα](../../questions/exams/exam-2023-fall-ex7-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 2 · ★☆☆ · programming (κεφ. 18)
 
 <!-- /exercises -->

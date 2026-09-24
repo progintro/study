@@ -6,8 +6,8 @@ source:
   title: "Εργαστήριο 8, Άσκηση 3"
   url: https://progintro.github.io/lab-material/labs/lab08/
   years: [2025]
-chapters: [12, 16]
-topics: [command-line-args, problem-solving, integer-representation]
+chapters: [12, 2]
+topics: [command-line-args, loops, integer-representation]
 difficulty: 2
 type: programming
 ---

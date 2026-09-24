@@ -5,7 +5,7 @@ title: "Νέο URL στο GitHub (pages)"
 source:
   title: "Εργασία 0 (2025-26), Άσκηση 1"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/hw0.pdf
-  years: [2025]
+  years: [2023, 2024, 2025]
 chapters: [4, 1]
 topics: [git, shell]
 difficulty: 1
@@ -47,6 +47,12 @@ URL exists
 ```
 
 Το αρχείο `README.md` είναι προαιρετικό αν θέλετε να προσθέσετε κάτι στην υποβολή σας.
+
+## Εμφανίσεις
+
+- [Εργασία 0 (2023-24), Άσκηση 1](https://github.com/progintro/progintro.github.io/releases/download/2023/hw0.pdf): ίδια εκφώνηση, χωρίς τον σύνδεσμο προς το tutorial του GitHub Pages.
+- [Εργασία 0 (2024-25), Άσκηση 1](https://github.com/progintro/progintro.github.io/releases/download/2024/hw0.pdf): ίδια εκφώνηση (20 μονάδες).
+- [Εργασία 0 (2025-26), Άσκηση 1](https://github.com/progintro/progintro.github.io/releases/download/2025/hw0.pdf): η εκφώνηση που δίνεται εδώ.
 
 ## Υπόδειξη
 

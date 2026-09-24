@@ -648,10 +648,10 @@ $ ./dyn2d
   κουίζ σελ. 61–63.
 - **Σημειώσεις:**
   - [Κεφάλαιο 6: Δυναμική μνήμη, συμβολοσειρές και πολυδιάστατοι πίνακες](https://progintro.github.io/notes/chapters/06-memory-strings/),
-    ενότητες «Δυναμική δέσμευση μνήμης» (K04, σελ. 89–93) και «Πολυδιάστατοι
-    πίνακες» (K04, σελ. 101–103, για τη δυναμική δέσμευση με `int **`).
+    ενότητες «Δυναμική δέσμευση μνήμης» (K04, σελ. 88–92) και «Πολυδιάστατοι
+    πίνακες» (K04, σελ. 100–102, για τη δυναμική δέσμευση με `int **`).
   - [Κεφάλαιο 4: Συναρτήσεις, εμβέλεια και αναδρομή](https://progintro.github.io/notes/chapters/04-functions/),
-    ενότητα «Εμβέλεια και χρόνος ζωής μεταβλητών» (K04, σελ. 64–69), για τη στοίβα,
+    ενότητα «Εμβέλεια και χρόνος ζωής μεταβλητών» (K04, σελ. 63–68), για τη στοίβα,
     τη στατική μνήμη και την αναδρομή.
 - **Εργαστήριο:** [Εργαστήριο 7](https://progintro.github.io/lab-material/labs/lab07/):
   ασκήσεις `array.c`, `mines.c`, και το παράρτημα «Σφάλματα διαχείρισης μνήμης» με
@@ -671,27 +671,58 @@ $ ./dyn2d
 
 <!-- exercises -->
 
+### Από τις διαφάνειες
+
+- [Τι γίνεται μετά την free;](../../questions/slides/slides-lec13-after-free.md): Διάλεξη 13, διαφάνειες 47–51 · ★☆☆ · short-answer
+- [Γιατί η αναδρομή πρέπει να τελειώνει;](../../questions/slides/slides-lec13-infinite-recursion.md): Διάλεξη 13, διαφάνεια 27 · ★☆☆ · short-answer
+- [Τα stack frames της equalIgnoreCase](../../questions/slides/slides-lec13-stack-frames.md): Διάλεξη 13, διαφάνειες 20–26 · ★☆☆ · short-answer
+- [Δυναμικός δισδιάστατος πίνακας MxN](../../questions/slides/slides-lec13-dynamic-2d.md): Διάλεξη 13, διαφάνειες 56–58 · ★★☆ · programming
+- [Ένας τεράστιος πίνακας στον σωρό](../../questions/slides/slides-lec13-heap-bomb.md): Διάλεξη 13, διαφάνειες 43–46 · ★★☆ · trace
+- [Κουίζ: πίνακας 5x5 σε συνάρτηση](../../questions/slides/slides-lec13-quiz-5x5.md): Διάλεξη 13, διαφάνειες 61–63 · ★★☆ · debug
+- [Ένας τεράστιος πίνακας στη στοίβα](../../questions/slides/slides-lec13-stack-bomb.md): Διάλεξη 13, διαφάνειες 28–31 · ★★☆ · trace
+
+### Από τα εργαστήρια
+
+- [Δυναμική δέσμευση μνήμης για δισδιάστατο πίνακα](../../questions/labs/lab-lab07-mines.md): Εργαστήριο 7, Άσκηση 3 · ★★☆ · programming
+- [Κινήσεις σε πλέγμα (Παλιό θέμα)](../../questions/labs/lab-lab07-pacman.md): Εργαστήριο 7, Άσκηση 5 · ★★★ · programming
+
 ### Από τα θέματα εξετάσεων
 
+- [Debugging](../../questions/exams/exam-2023-fall-ex1-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 4 · ★★☆ · debug
 - [Κάδρο](../../questions/exams/exam-2023-fall-ex9-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 4 · ★★★ · programming
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
-- [Δίδυμοι Πρώτοι](../../questions/exams/exam-2023-fall-ex7-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 3 · ★★★ · programming (κεφ. 7)
-- [Το Νερό Νεράκι](../../questions/exams/exam-2023-dec-q4.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 4 · ★★★ · programming (κεφ. 10)
+- [Ο Στέργιος Ξαναχτυπά](../../questions/exams/exam-2026-jan-q6.md): Εξέταση Ιανουαρίου 2026, Θέμα 6 · ★☆☆ · trace (κεφ. 11)
 - [Περιστροφή Πίνακα](../../questions/exams/exam-2023-fall-ex1-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 3 · ★★☆ · programming (κεφ. 12)
 - [Αλλαγή Τέρματος](../../questions/exams/exam-2023-fall-ex13-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 2 · ★☆☆ · programming (κεφ. 12)
 - [Πολλαπλασιασμός Πινάκων](../../questions/exams/exam-2023-fall-ex8-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 3 · ★★☆ · programming (κεφ. 12)
 - [Πολύτιμοι Πίνακες](../../questions/exams/exam-2023-fall-ex9-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 3 · ★★☆ · programming (κεφ. 12)
-- [Χτίζοντας έναν Χιονάνθρωπο](../../questions/exams/exam-2023-fall-ex3-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 4 · ★★★ · programming (κεφ. 16)
-- [Η Τριπλέτα Στόχος](../../questions/exams/exam-2024-dec-q3.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 3 · ★★★ · programming (κεφ. 17)
+- [FauxtoShop: περιστροφή εικόνας BMP](../../questions/homework/hw-2023-hw2-fauxtoshop.md): Εργασία 2 (2023-24), Άσκηση 1 · ★★★ · programming (κεφ. 12)
+- [Δυναμική δέσμευση μνήμης για μονοδιάστατο πίνακα](../../questions/labs/lab-lab07-array.md): Εργαστήριο 7, Άσκηση 2 · ★☆☆ · programming (κεφ. 12)
+- [Παράδειγμα endianness](../../questions/slides/slides-lec12-endianness.md): Διάλεξη 12, διαφάνεια 42 · ★★☆ · trace (κεφ. 12)
+- [Πόση μνήμη δεσμεύει η malloc και τι λέει το sizeof](../../questions/slides/slides-lec12-malloc-sizeof.md): Διάλεξη 12, διαφάνειες 39–40 · ★★☆ · short-answer (κεφ. 12)
+- [Η συνάρτηση dog](../../questions/exams/exam-2025-jan-q2.md): Εξέταση Ιανουαρίου 2025, Θέμα 2 · ★☆☆ · trace (κεφ. 14)
+- [Συνένωση Αλφαριθμητικών - join](../../questions/exams/exam-2025-jan-q5.md): Εξέταση Ιανουαρίου 2025, Θέμα 5 · ★★☆ · programming (κεφ. 14)
+- [Δίδυμοι Πρώτοι](../../questions/exams/exam-2023-fall-ex7-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 3 · ★★★ · programming (κεφ. 15)
+- [Μετρώντας τα Αστέρια - stars](../../questions/exams/exam-2025-jan-q6.md): Εξέταση Ιανουαρίου 2025, Θέμα 6 · ★★★ · programming (κεφ. 16)
+- [Χτίζοντας έναν χιονάνθρωπο (Παλιό θέμα)](../../questions/labs/lab-lab07-olaf.md): Εργαστήριο 7, Άσκηση 4 · ★★★ · programming (κεφ. 16)
+- [Δισδιάστατος πίνακας στον σωρό](../../questions/slides/slides-lec16-heap-2d-array.md): Διάλεξη 16, διαφάνεια 25 · ★★☆ · programming (κεφ. 16)
+- [Η συνάρτηση compute](../../questions/exams/exam-2026-jan-q2.md): Εξέταση Ιανουαρίου 2026, Θέμα 2 · ★★☆ · trace (κεφ. 17)
 - [Καλύτερο Ταίριασμα](../../questions/exams/exam-2023-fall-ex0-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 3 · ★★★ · programming (κεφ. 18)
 - [Κρυμμένο Μήνυμα](../../questions/exams/exam-2023-fall-ex10-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 3 · ★★☆ · programming (κεφ. 18)
 - [Μίνι Βάση Δεδομένων](../../questions/exams/exam-2023-fall-ex2-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 3 · ★★★ · programming (κεφ. 18)
 - [Ταξινόμηση Αρχείων Καταγραφής](../../questions/exams/exam-2023-fall-ex6-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 4 · ★★☆ · programming (κεφ. 18)
-- [Debugging](../../questions/exams/exam-2023-fall-ex1-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 4 · ★★☆ · debug (κεφ. 21)
+- [Ταξινόμηση Πακέτων](../../questions/exams/exam-2023-fall-ex8-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 4 · ★★★ · programming (κεφ. 18)
+- [Προβλέποντας το Μέλλον (future)](../../questions/homework/hw-2024-hw2-future.md): Εργασία 2 (2024-25), Άσκηση 1 · ★★☆ · programming (κεφ. 18)
+- [Δομές και δείκτες](../../questions/labs/lab-lab09-person.md): Εργαστήριο 9, Άσκηση 2 · ★★☆ · programming (κεφ. 19)
 - [Αντιστροφή λίστας](../../questions/exams/exam-2024-sep-q5.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 5 · ★★☆ · programming (κεφ. 21)
 - [Μεσαίο Στοιχείο Λίστας](../../questions/exams/exam-2025-sep-q4.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 4 · ★★☆ · programming (κεφ. 21)
+- [Ν-οστό Στοιχείο Λίστας](../../questions/exams/exam-2026-sep-q4.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 4 · ★★☆ · programming (κεφ. 21)
+- [Zoomba: συντομότερη διαδρομή σε δωμάτιο](../../questions/homework/hw-2023-hw3-zoomba.md): Εργασία 3 (2023-24), Άσκηση 1 · ★★★ · programming (κεφ. 22)
+- [Το Νερό Νεράκι](../../questions/exams/exam-2023-dec-q4.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 4 · ★★★ · programming (κεφ. 25)
+- [Η Τριπλέτα Στόχος](../../questions/exams/exam-2024-dec-q3.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 3 · ★★★ · programming (κεφ. 25)
+- [Η Μεγαλύτερη Χωρητικότητα - capacity](../../questions/exams/exam-2026-sep-q5.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 5 · ★★★ · programming (κεφ. 25)
 
 <!-- /exercises -->
 

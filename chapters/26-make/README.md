@@ -677,6 +677,21 @@ cc   main.o primes.o   -o main
 ## Ασκήσεις
 
 <!-- exercises -->
+
+### Από τις διαφάνειες
+
+- [Τα στάδια του C build process](../../questions/slides/slides-lecmake-build-pipeline.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνεια 5 · ★☆☆ · short-answer
+- [Script ή recompile με το χέρι;](../../questions/slides/slides-lecmake-forgot-recompile.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 17-21 · ★☆☆ · short-answer
+- [Διαφορετικά flags ανά αρχείο](../../questions/slides/slides-lecmake-per-file-flags.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 10-14 · ★☆☆ · tooling
+- [Compiler error ή linking error; (math.h και libm.so)](../../questions/slides/slides-lecmake-sqrt-errors.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 6-8 · ★☆☆ · debug
+- [Ένα Makefile 2-3 γραμμών](../../questions/slides/slides-lecmake-short-makefile.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 31-39 · ★★☆ · tooling
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Νέα Μηχανή Σκακιού (chess engine)](../../questions/homework/hw-2024-hw3-chess.md): Εργασία 3 (2024-25), Άσκηση 1 · ★★★ · programming (κεφ. 22)
+- [Νέα Μηχανή Go (goteam)](../../questions/homework/hw-2025-hw3-goteam.md): Εργασία 3 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 22)
+- [Σπάστε το πρόγραμμά σας σε αρθρώματα](../../questions/labs/lab-lab10-more-modules.md): Εργαστήριο 10, Άσκηση 5 · ★★☆ · tooling (κεφ. 23)
+
 <!-- /exercises -->
 
 ## Ερωτήσεις αυτοαξιολόγησης

@@ -3,7 +3,7 @@ id: slides-lec22-generic-list
 kind: slides
 title: "Λίστα για το BFS και λίστες κάθε τύπου"
 source:
-  title: "Διάλεξη 22: Δέντρα, διαφάνεια 33"
+  title: "Διαλέξεις 21–22: Δέντρα, διαφάνεια 33 (διάλεξη 21: διαφάνεια 55)"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec22.pdf
   years: [2025]
 chapters: [22, 21]

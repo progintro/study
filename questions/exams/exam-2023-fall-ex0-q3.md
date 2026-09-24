@@ -7,7 +7,7 @@ source:
   url: https://progintro.github.io/exams/2023/fall/ex0/
   years: [2023]
 chapters: [18, 19, 13]
-topics: [sorting, files, structs]
+topics: [sorting, files, structs, dynamic-memory]
 difficulty: 3
 type: programming
 ---

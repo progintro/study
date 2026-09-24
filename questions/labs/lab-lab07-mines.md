@@ -6,7 +6,7 @@ source:
   title: "Εργαστήριο 7, Άσκηση 3"
   url: https://progintro.github.io/lab-material/labs/lab07/
   years: [2025]
-chapters: [12, 13]
+chapters: [13, 12]
 topics: [multidim-arrays, dynamic-memory, redirection]
 difficulty: 2
 type: programming

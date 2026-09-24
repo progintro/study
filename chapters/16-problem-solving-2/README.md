@@ -618,16 +618,16 @@ int main(int argc, char **argv) {
   Εργασία #1 σελ. 27.
 - **Σημειώσεις:**
   - [Κεφάλαιο 11: Ταξινόμηση και αναζήτηση](https://progintro.github.io/notes/chapters/11-sorting-searching/),
-    ενότητες «Ταξινόμηση πινάκων» (K04, σελ. 161–167, για τον συμβολισμό $O$) και
-    «Αναζήτηση σε πίνακες» (K04, σελ. 173).
+    ενότητες «Ταξινόμηση πινάκων» (K04, σελ. 160–166, για τον συμβολισμό $O$) και
+    «Αναζήτηση σε πίνακες» (K04, σελ. 172).
   - [Κεφάλαιο 5: Δείκτες και πίνακες](https://progintro.github.io/notes/chapters/05-pointers-arrays/),
-    ενότητα «Δείκτες» (K04, σελ. 73–78, για τη `swap`).
+    ενότητα «Δείκτες» (K04, σελ. 72–77, για τη `swap`).
   - [Κεφάλαιο 6: Δυναμική μνήμη, συμβολοσειρές και πολυδιάστατοι πίνακες](https://progintro.github.io/notes/chapters/06-memory-strings/),
-    ενότητες «Πίνακες δεικτών και δείκτες σε δείκτες» (K04, σελ. 98) και
-    «Πολυδιάστατοι πίνακες» (K04, σελ. 101–103).
+    ενότητες «Πίνακες δεικτών και δείκτες σε δείκτες» (K04, σελ. 97) και
+    «Πολυδιάστατοι πίνακες» (K04, σελ. 100–102).
   - [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/),
     ενότητες «Εντολές `break` και `continue`» και «Εντολή `goto` και ετικέτες» (K04,
-    σελ. 57–58).
+    σελ. 56–57).
 - **Εργαστήρια:**
   [Εργαστήριο 5](https://progintro.github.io/lab-material/labs/lab05/): άσκηση `fib.c`
   (ερωτήματα 2.3–2.6)·
@@ -641,6 +641,53 @@ int main(int argc, char **argv) {
 ## Ασκήσεις
 
 <!-- exercises -->
+
+### Από τις διαφάνειες
+
+- [Μέσος όρος πίνακα και πολυπλοκότητα](../../questions/slides/slides-lec16-average-complexity.md): Διάλεξη 16, διαφάνειες 8–9 · ★☆☆ · programming
+- [Αναζήτηση σε πίνακα και πολυπλοκότητα](../../questions/slides/slides-lec16-find-complexity.md): Διάλεξη 16, διαφάνειες 10 και 15 · ★☆☆ · programming
+- [Η συνάρτηση get_two_chars](../../questions/slides/slides-lec16-get-two-chars.md): Διάλεξη 16, διαφάνεια 20 · ★☆☆ · programming
+- [Παλινδρομικός αριθμός](../../questions/slides/slides-lec16-palindrome-number.md): Διάλεξη 16, διαφάνεια 21 · ★☆☆ · programming
+- [Αντιστροφή ψηφίων αριθμού](../../questions/slides/slides-lec16-reverse-digits.md): Διάλεξη 16, διαφάνεια 13 · ★☆☆ · programming
+- [yes αν ένα στοιχείο υπάρχει σε δισδιάστατο πίνακα](../../questions/slides/slides-lec16-search-2d.md): Διάλεξη 16, διαφάνεια 24 · ★☆☆ · programming
+- [Η συνάρτηση swap](../../questions/slides/slides-lec16-swap.md): Διάλεξη 16, διαφάνειες 22–23 · ★☆☆ · programming
+- [Γιατί εξάσκηση στην επίλυση προβλημάτων;](../../questions/slides/slides-lec16-why-practice.md): Διάλεξη 16, διαφάνειες 5–6 · ★☆☆ · short-answer
+- [Η atoi και τι μπορεί να πάει στραβά](../../questions/slides/slides-lec16-atoi.md): Διάλεξη 16, διαφάνειες 16–17 · ★★☆ · programming
+- [char *array[], char **array και char array[10][10]](../../questions/slides/slides-lec16-char-pointer-arrays.md): Διάλεξη 16, διαφάνεια 19 · ★★☆ · short-answer
+- [Αποδοτική αναδρομική Fibonacci](../../questions/slides/slides-lec16-fibonacci-efficient.md): Διάλεξη 16, διαφάνεια 26 · ★★☆ · programming
+- [Το στοιχείο που υπάρχει δύο φορές](../../questions/slides/slides-lec16-find-duplicate.md): Διάλεξη 16, διαφάνεια 11 · ★★☆ · programming
+- [Δισδιάστατος πίνακας στον σωρό](../../questions/slides/slides-lec16-heap-2d-array.md): Διάλεξη 16, διαφάνεια 25 · ★★☆ · programming
+- [Το στοιχείο χωρίς ζευγάρι](../../questions/slides/slides-lec16-single-unpaired.md): Διάλεξη 16, διαφάνεια 14 · ★★☆ · programming
+- [Άθροισμα τέλειων τετραγώνων σε διάστημα](../../questions/slides/slides-lec16-sum-perfect-squares.md): Διάλεξη 16, διαφάνεια 18 · ★★☆ · programming
+
+### Από τα εργαστήρια
+
+- [Σκαλί-σκαλί (Παλιό θέμα, Προαιρετικό)](../../questions/labs/lab-lab05-ladder.md): Εργαστήριο 5, Άσκηση 3 · ★★★ · programming
+- [Χτίζοντας έναν χιονάνθρωπο (Παλιό θέμα)](../../questions/labs/lab-lab07-olaf.md): Εργαστήριο 7, Άσκηση 4 · ★★★ · programming
+
+### Από τις εργασίες
+
+- [Ο Γρίφος του Στέργιου](../../questions/homework/hw-2025-bonus0-stergios.md): Bonus #0 (2025-26, προαιρετική) · ★★★ · programming
+
+### Από τα θέματα εξετάσεων
+
+- [Εαυτοί Αριθμοί](../../questions/exams/exam-2023-dec-q2.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 2 · ★★☆ · programming
+- [Αγαπήσιμοι Αριθμοί](../../questions/exams/exam-2023-fall-ex0-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 4 · ★★☆ · programming
+- [Clyde Πρώτοι](../../questions/exams/exam-2023-fall-ex11-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #11, Θέμα 4 · ★★☆ · programming
+- [Εαυτοί Αριθμοί](../../questions/exams/exam-2023-fall-ex12-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 4 · ★★☆ · programming
+- [Τυχεροί Αριθμοί](../../questions/exams/exam-2023-fall-ex13-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 4 · ★★☆ · programming
+- [Οι Καλύτεροι Αριθμοί, Παμψηφεί](../../questions/exams/exam-2024-dec-q2.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 2 · ★★☆ · programming
+- [Χτίζοντας έναν Χιονάνθρωπο](../../questions/exams/exam-2023-fall-ex3-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 4 · ★★★ · programming
+- [Μετρώντας τα Αστέρια - stars](../../questions/exams/exam-2025-jan-q6.md): Εξέταση Ιανουαρίου 2025, Θέμα 6 · ★★★ · programming
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Άψογα Τετράγωνα (Bonus)](../../questions/homework/hw-2023-hw1-flawless.md): Εργασία 1 (2023-24), Άσκηση 3 (Bonus) · ★★★ · programming (κεφ. 11)
+- [Παραγοντοποίηση ημιπρώτων (factor)](../../questions/homework/hw-2024-hw1-factor.md): Εργασία 1 (2024-25), Άσκηση 3 (Bonus) · ★★★ · programming (κεφ. 15)
+- [Σκαλί-Σκαλί](../../questions/exams/exam-2023-dec-q3.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 3 · ★★☆ · programming (κεφ. 25)
+- [Τρόποι να Φάμε Παϊδάκια](../../questions/exams/exam-2023-fall-ex14-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 4 · ★★★ · programming (κεφ. 25)
+- [Ανεβαίνοντας Επίπεδο](../../questions/exams/exam-2023-fall-ex2-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 4 · ★★☆ · programming (κεφ. 25)
+
 <!-- /exercises -->
 
 ## Ερωτήσεις αυτοαξιολόγησης

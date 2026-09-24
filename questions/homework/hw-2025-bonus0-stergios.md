@@ -6,7 +6,7 @@ source:
   title: "Bonus #0 (2025-26, προαιρετική)"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/stergios.pdf
   years: [2025]
-chapters: [7, 2, 11]
+chapters: [16, 2, 11]
 topics: [math-algorithms, problem-solving, integer-representation, recursion]
 difficulty: 3
 type: programming

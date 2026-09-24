@@ -6,8 +6,8 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 1"
   url: https://progintro.github.io/exams/2023/fall/ex3/
   years: [2023]
-chapters: [9, 14]
-topics: [input-output, strings]
+chapters: [9]
+topics: [input-output]
 difficulty: 2
 type: programming
 ---

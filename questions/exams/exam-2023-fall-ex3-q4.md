@@ -6,8 +6,8 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 4"
   url: https://progintro.github.io/exams/2023/fall/ex3/
   years: [2023]
-chapters: [16, 18, 13]
-topics: [problem-solving, files, complexity]
+chapters: [16, 17, 18]
+topics: [problem-solving, complexity, sorting, files]
 difficulty: 3
 type: programming
 ---

@@ -3,10 +3,10 @@ id: slides-lec23-organize-40kloc
 kind: slides
 title: "Ένα σύστημα 40.000 γραμμών"
 source:
-  title: "Διάλεξη 23, διαφάνειες 11 και 14"
+  title: "Διαλέξεις 23–24, διαφάνειες 11 και 14 (διάλεξη 24: διαφάνειες 12 και 15)"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec23.pdf
   years: [2025]
-chapters: [23]
+chapters: [23, 24]
 topics: [code-organization, good-practice]
 difficulty: 1
 type: short-answer

@@ -6,7 +6,7 @@ source:
   title: "Εργαστήριο 2, Άσκηση 2"
   url: https://progintro.github.io/lab-material/labs/lab02/
   years: [2025]
-chapters: [2, 5]
+chapters: [3, 5, 9]
 topics: [floating-point, operators, input-output]
 difficulty: 1
 type: programming

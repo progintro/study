@@ -3,10 +3,10 @@ id: slides-lec22-traversals
 kind: slides
 title: "Διασχίσεις pre-order, in-order, post-order"
 source:
-  title: "Διάλεξη 22: Δέντρα, διαφάνειες 22–28"
+  title: "Διαλέξεις 21–22: Δέντρα, διαφάνειες 22–28 (διάλεξη 21: διαφάνειες 44–50)"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec22.pdf
   years: [2025]
-chapters: [22]
+chapters: [22, 21]
 topics: [trees, recursion]
 difficulty: 1
 type: trace

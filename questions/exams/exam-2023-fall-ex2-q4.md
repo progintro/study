@@ -6,8 +6,8 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 4"
   url: https://progintro.github.io/exams/2023/fall/ex2/
   years: [2023]
-chapters: [11, 15]
-topics: [recursion, complexity]
+chapters: [25, 16, 11]
+topics: [dynamic-programming, recursion, complexity, integer-representation]
 difficulty: 2
 type: programming
 ---

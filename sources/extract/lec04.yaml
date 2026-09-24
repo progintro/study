@@ -52,7 +52,7 @@ issues:
   - "p. 33: the implicit conversion hierarchy is an image (from GeeksforGeeks) listing bool, char, short int, int, unsigned int, long, unsigned, long long, float, double, long double; 'unsigned' after 'long' is kept as shown (presumably unsigned long). The real C rules (integer promotions, usual arithmetic conversions) are more nuanced; not expanded."
   - "p. 41: the precedence table is an image; transcribed as a Markdown table. sizeof is highlighted in red on the slide, no explanation given."
   - "p. 42 is only 'Kahoot Time!'; the quiz questions are not in the slides, so none were transcribed."
-  - "p. 43 says to cover the notes 'μέχρι την σελίδα 43'; per k04-map.tsv K04 p. 43 is 02-types-operators «Εντολές αντικατάστασης, τελεστές και παραστάσεις» (pp. 35-44)."
+  - "p. 43 says to cover the notes 'μέχρι την σελίδα 43'; per k04-map.tsv K04 p. 43 is 02-types-operators «Εντολές αντικατάστασης, τελεστές και παραστάσεις» (pp. 34-43), its last page."
   - "p. 13 '~90% των χρηστών/project' is transcribed as is; no source is given on the slide."
   - "The gcc -Wall warning text for 'if (x = 42)' in «Συχνά λάθη» comes from knowledge of gcc, not verified locally (local gcc is clang). The git error messages (Permission denied (publickey), rejected fetch first) come from faq.md #96 and #106."
   - "The comma pitfall (x = 12, 42 assigns 12) and (int)-42.67 == -42 are standard C, verified locally, not from the slides."

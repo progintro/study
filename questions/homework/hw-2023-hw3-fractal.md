@@ -6,7 +6,7 @@ source:
   title: "Εργασία 3 (2023-24), Άσκηση 2 (Bonus) και 2.1 (Bonus)"
   url: https://github.com/progintro/progintro.github.io/releases/download/2023/hw3.pdf
   years: [2023]
-chapters: [19, 23]
+chapters: [23, 19, 18]
 topics: [structs, code-organization, floating-point, files, image-audio]
 difficulty: 3
 type: programming

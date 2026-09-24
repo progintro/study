@@ -6,8 +6,8 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 4"
   url: https://progintro.github.io/exams/2023/fall/ex14/
   years: [2023]
-chapters: [11, 7]
-topics: [recursion, math-algorithms, integer-representation]
+chapters: [25, 16]
+topics: [dynamic-programming, recursion, math-algorithms, integer-representation]
 difficulty: 3
 type: programming
 ---

@@ -29,7 +29,7 @@ pointers:
 takeaways_slide: null         # p. 45 is a reading list, not a takeaways slide
 issues:
   - "p. 2: announcements (make-up lecture Thu 27 Nov 6-8pm; oral exams for Εργασία #0 starting next week) are course logistics and were left out of the chapter."
-  - "p. 45: 'σελίδες 63-68, 74-76, 93-96' of Stamatopoulos's slides. Per k04-map.tsv these are 04-functions p. 63 (factorial), 64-68 (scope); 05-pointers-arrays «Δείκτες» 74-76; 06-memory-strings p. 93 (dynamic memory) and 94-96 (strings). The chapter cites «Εμβέλεια και χρόνος ζωής μεταβλητών» 64-69 and «Συμβολοσειρές» 94-97 (the full sections), and «Δείκτες» 74-76."
+  - "p. 45: 'σελίδες 63-68, 74-76, 93-96' of Stamatopoulos's slides. Per k04-map.tsv (printed pages) these are exactly 04-functions «Εμβέλεια και χρόνος ζωής μεταβλητών» 63-68, part of 05-pointers-arrays «Δείκτες» (72-77) and 06-memory-strings «Συμβολοσειρές» 93-96. The chapter cites «Εμβέλεια και χρόνος ζωής μεταβλητών» 63-68, «Συμβολοσειρές» 93-96 and «Δείκτες» 74-76 (the slides' pages)."
   - "p. 28: the second declaration is partly hidden behind the 'null byte' callout; reconstructed as {72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 10, 0}, consistent with chapter 10."
   - "p. 29-32: printf uses %d for strlen's size_t result; the chapter uses %zu and lists %d as a common mistake."
   - "p. 22: tmp[1] = 255 into a plain (usually signed) char is implementation-defined (-1 on x86); the slide's diagram shows 255 and the chapter keeps it. The malloc'd block is never freed (memory leak); the chapter points it out. The stack addresses (31998-32000) and global bytes 1-3 are illustrative."

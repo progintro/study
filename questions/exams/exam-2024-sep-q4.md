@@ -7,7 +7,7 @@ source:
   url: https://progintro.github.io/exams/2024/progintro-exam-sep-24.pdf
   years: [2024]
 chapters: [9, 5]
-topics: [input-output, problem-solving, redirection]
+topics: [input-output, operators]
 difficulty: 2
 type: programming
 ---

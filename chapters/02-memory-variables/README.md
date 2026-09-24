@@ -636,8 +636,8 @@ tab και `\\` μια `\`.
 
 - **Διαφάνειες:** [Διάλεξη 2](https://github.com/progintro/progintro.github.io/releases/download/2025/lec02.pdf), σελ. 1–35. Bits, bytes και διευθύνσεις: σελ. 5–8· βάσεις αρίθμησης: σελ. 9–11· δήλωση μεταβλητής: σελ. 12–15· ASCII: σελ. 16–17· αναπαράσταση ακεραίων και συμπλήρωμα ως προς 2: σελ. 18–22· τύποι: σελ. 23· ανάθεση: σελ. 24–25· υπερχείλιση και `<stdint.h>`: σελ. 26–27· `printf`: σελ. 28–30· δηλώσεις πολλών μεταβλητών και δεσμευμένες λέξεις: σελ. 31–32.
 - **Σημειώσεις:** Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 35 και τις σελίδες 58–71 (K04). Για αυτό το κεφάλαιο ειδικά:
-  - [Κεφάλαιο 0: Εισαγωγή](https://progintro.github.io/notes/chapters/00-intro/), ενότητες «Η δομή του υπολογιστή», «Η πληροφορία στον υπολογιστή» (K04, σελ. 10–11)
-  - [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Μεταβλητές, σταθερές, τύποι και δηλώσεις στην C» (K04, σελ. 31–34)
+  - [Κεφάλαιο 0: Εισαγωγή](https://progintro.github.io/notes/chapters/00-intro/), ενότητες «Η δομή του υπολογιστή», «Η πληροφορία στον υπολογιστή» (K04, σελ. 9–10)
+  - [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Μεταβλητές, σταθερές, τύποι και δηλώσεις στην C» (K04, σελ. 30–33)
   - Οι σελίδες 58–71 καλύπτουν το [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/) μέχρι την ενότητα «Μετατροπές μεταξύ δεκαδικών και δυαδικών αριθμών», προετοιμασία για το [Κεφάλαιο 3](../03-functions/).
 - **Εργαστήριο:**
   - [Εργαστήριο 2](https://progintro.github.io/lab-material/labs/lab02/): «Βήμα 3» (`readint.c`), ασκήσεις `calc.c` (με την επέκταση «Υψηλή ακρίβεια») και `pyth.c`
@@ -655,11 +655,22 @@ tab και `\\` μια `\`.
 
 <!-- exercises -->
 
+### Από τις διαφάνειες
+
+- [Πόσοι χαρακτήρες ASCII υπάρχουν](../../questions/slides/slides-lec02-ascii-count.md): Διάλεξη 2: Μνήμη και Μεταβλητές, διαφάνεια 17 · ★☆☆ · short-answer
+- [Πόσα διαφορετικά bytes υπάρχουν](../../questions/slides/slides-lec02-byte-values.md): Διάλεξη 2: Μνήμη και Μεταβλητές, διαφάνεια 5 · ★☆☆ · short-answer
+- [Δεκαεξαδικά ψηφία ενός byte](../../questions/slides/slides-lec02-hex-digits.md): Διάλεξη 2: Μνήμη και Μεταβλητές, διαφάνεια 10 · ★☆☆ · short-answer
+- [Πόσο μεγάλος είναι ένας int](../../questions/slides/slides-lec02-int-size.md): Διάλεξη 2: Μνήμη και Μεταβλητές, διαφάνεια 27 · ★☆☆ · short-answer
+- [Ακέραιοι με 32 bit](../../questions/slides/slides-lec02-int32-count.md): Διάλεξη 2: Μνήμη και Μεταβλητές, διαφάνεια 18 · ★☆☆ · short-answer
+- [Η εντολή για να μάθουμε για ένα πρόγραμμα](../../questions/slides/slides-lec02-man.md): Διάλεξη 2: Μνήμη και Μεταβλητές, διαφάνεια 16 · ★☆☆ · tooling
+- [Αρνητικοί αριθμοί σε συμπλήρωμα ως προς 2](../../questions/slides/slides-lec02-twos-complement.md): Διάλεξη 2: Μνήμη και Μεταβλητές, διαφάνεια 21 · ★☆☆ · short-answer
+- [Υπερχείλιση ακεραίων](../../questions/slides/slides-lec02-overflow.md): Διάλεξη 2: Μνήμη και Μεταβλητές, διαφάνεια 26 · ★★☆ · debug
+
 ### Από τα εργαστήρια
 
+- [Στοιχεία φοιτητή (Παλιό θέμα)](../../questions/labs/lab-lab00-about.md): Εργαστήριο 0, Άσκηση 1 · ★☆☆ · programming
 - [Υπερχείλιση ακεραίων](../../questions/labs/lab-lab00-overflow.md): Εργαστήριο 0, Άσκηση 2 · ★☆☆ · short-answer
-- [Ένα απλό κομπιουτεράκι](../../questions/labs/lab-lab02-calc.md): Εργαστήριο 2, Άσκηση 1 · ★☆☆ · programming
-- [Πυθαγόρειο θεώρημα](../../questions/labs/lab-lab02-pyth.md): Εργαστήριο 2, Άσκηση 2 · ★☆☆ · programming
+- [Εκτύπωση χαρακτήρων](../../questions/labs/lab-lab04-printchar.md): Εργαστήριο 4, Άσκηση 1 · ★☆☆ · programming
 
 ### Από τα θέματα εξετάσεων
 
@@ -667,20 +678,34 @@ tab και `\\` μια `\`.
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
-- [Ασημένιο Κλάσμα](../../questions/exams/exam-2023-fall-ex10-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 2 · ★★☆ · programming (κεφ. 6)
-- [Κάντο όπως ο Βιετά](../../questions/exams/exam-2023-fall-ex13-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 1 · ★★☆ · programming (κεφ. 6)
+- [Η συνάρτηση about](../../questions/exams/exam-2024-sep-q1.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 1 · ★☆☆ · programming (κεφ. 3)
+- [Διακοπή ρεύματος και μνήμη](../../questions/slides/slides-lec03-power-outage.md): Διάλεξη 3: Συναρτήσεις, διαφάνεια 3 · ★☆☆ · multiple-choice (κεφ. 3)
 - [Τυπώνοντας τον Πίνακα ASCII](../../questions/exams/exam-2023-fall-ex15-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 2 · ★★☆ · programming (κεφ. 6)
-- [Προσεγγίζοντας το π](../../questions/exams/exam-2024-dec-q1.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 1 · ★☆☆ · programming (κεφ. 6)
+- [Μέγιστος Κοινός Διαιρέτης](../../questions/exams/exam-2023-fall-ex6-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 1 · ★☆☆ · programming (κεφ. 6)
 - [Mystery](../../questions/exams/exam-2025-sep-q1.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 1 · ★☆☆ · trace (κεφ. 6)
+- [Mystery](../../questions/exams/exam-2026-sep-q1.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 1 · ★☆☆ · trace (κεφ. 6)
 - [Η εικασία Collatz](../../questions/homework/hw-2023-hw0-collatz.md): Εργασία 0 (2023-24), Άσκηση 3 · ★★☆ · programming (κεφ. 6)
-- [Αγαπήσιμοι Αριθμοί](../../questions/exams/exam-2023-fall-ex0-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 4 · ★★☆ · programming (κεφ. 7)
-- [Οι Καλύτεροι Αριθμοί, Παμψηφεί](../../questions/exams/exam-2024-dec-q2.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 2 · ★★☆ · programming (κεφ. 7)
-- [Κάντο όπως ο Βιετά](../../questions/exams/exam-2023-dec-q1.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 1 · ★★☆ · programming (κεφ. 8)
+- [Οι Ακολουθίες Aliquot](../../questions/homework/hw-2025-hw0-aliquot.md): Εργασία 0 (2025-26), Άσκηση 3 · ★★☆ · programming (κεφ. 6)
 - [Αρνητικό γινόμενο σε βρόχο](../../questions/slides/slides-lec08-product-overflow.md): Διάλεξη 8: Ροή Ελέγχου #2, διαφάνεια 2 · ★☆☆ · debug (κεφ. 8)
+- [Δεκαεξαδικοί](../../questions/exams/exam-2023-fall-ex1-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 1 · ★☆☆ · programming (κεφ. 9)
 - [ASCII Encoding](../../questions/exams/exam-2024-jul-q1.md): Εξέταση Ιουλίου 2024, Θέμα 1 · ★☆☆ · programming (κεφ. 9)
+- [Το Πρόβλημα του Τρόλεϊ (trolley)](../../questions/homework/hw-2024-hw0-trolley.md): Εργασία 0 (2024-25), Άσκηση 3 · ★★☆ · programming (κεφ. 9)
+- [Ένα απλό κομπιουτεράκι](../../questions/labs/lab-lab02-calc.md): Εργαστήριο 2, Άσκηση 1 · ★☆☆ · programming (κεφ. 9)
 - [Διάβασμα ακεραίου με scanf](../../questions/labs/lab-lab02-readint.md): Εργαστήριο 2, Βήμα 3 · ★☆☆ · short-answer (κεφ. 9)
-- [Σκαλί-Σκαλί](../../questions/exams/exam-2023-dec-q3.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 3 · ★★☆ · programming (κεφ. 11)
+- [Κωδικοποίηση και αποκωδικοποίηση κειμένου](../../questions/labs/lab-lab04-encode-decode.md): Εργαστήριο 4, Άσκηση 4 · ★★☆ · programming (κεφ. 9)
+- [Η συνάρτηση paws](../../questions/exams/exam-2026-jun-q2.md): Εξέταση Ιουνίου 2026, Θέμα 2 · ★★☆ · debug (κεφ. 10)
 - [Μέση Τιμή Τυχαίων Μεταβλητών - mean](../../questions/exams/exam-2025-sep-q3.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 3 · ★☆☆ · programming (κεφ. 12)
+- [Πετυχαίνοντας τον στόχο (Παλιό θέμα)](../../questions/labs/lab-lab08-legolas.md): Εργαστήριο 8, Άσκηση 3 · ★★☆ · programming (κεφ. 12)
+- [Η συνάρτηση dog](../../questions/exams/exam-2025-jan-q2.md): Εξέταση Ιανουαρίου 2025, Θέμα 2 · ★☆☆ · trace (κεφ. 14)
+- [Κατοπτρικά Πρώτα Τετράγωνα](../../questions/homework/hw-2023-hw1-mirror.md): Εργασία 1 (2023-24), Άσκηση 2 · ★★★ · programming (κεφ. 15)
+- [Παραγοντοποίηση ημιπρώτων (factor)](../../questions/homework/hw-2024-hw1-factor.md): Εργασία 1 (2024-25), Άσκηση 3 (Bonus) · ★★★ · programming (κεφ. 15)
+- [Αγαπήσιμοι Αριθμοί](../../questions/exams/exam-2023-fall-ex0-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 4 · ★★☆ · programming (κεφ. 16)
+- [Clyde Πρώτοι](../../questions/exams/exam-2023-fall-ex11-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #11, Θέμα 4 · ★★☆ · programming (κεφ. 16)
+- [Τυχεροί Αριθμοί](../../questions/exams/exam-2023-fall-ex13-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 4 · ★★☆ · programming (κεφ. 16)
+- [Οι Καλύτεροι Αριθμοί, Παμψηφεί](../../questions/exams/exam-2024-dec-q2.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 2 · ★★☆ · programming (κεφ. 16)
+- [Ο Γρίφος του Στέργιου](../../questions/homework/hw-2025-bonus0-stergios.md): Bonus #0 (2025-26, προαιρετική) · ★★★ · programming (κεφ. 16)
+- [Σκαλί-σκαλί (Παλιό θέμα, Προαιρετικό)](../../questions/labs/lab-lab05-ladder.md): Εργαστήριο 5, Άσκηση 3 · ★★★ · programming (κεφ. 16)
+- [Ο τυχερός αριθμός σε δυαδικό](../../questions/slides/slides-lec24-binary-literal.md): Διάλεξη 24: Προχωρημένα Θέματα, διαφάνεια 32 · ★☆☆ · trace (κεφ. 24)
 
 <!-- /exercises -->
 

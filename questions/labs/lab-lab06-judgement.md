@@ -6,7 +6,7 @@ source:
   title: "Εργαστήριο 6, Άσκηση 4"
   url: https://progintro.github.io/lab-material/labs/lab06/
   years: [2025]
-chapters: [10, 12]
+chapters: [10, 11]
 topics: [arrays, functions, redirection]
 difficulty: 1
 type: programming

@@ -6,7 +6,7 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 3"
   url: https://progintro.github.io/exams/2023/fall/ex14/
   years: [2023]
-chapters: [17, 19, 18]
+chapters: [18, 19, 17]
 topics: [sorting, structs, files, floating-point]
 difficulty: 2
 type: programming

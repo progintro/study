@@ -759,11 +759,11 @@ Number: 42
   57–61· διάβασμα για την επόμενη φορά 62.
 - **Σημειώσεις:** η διάλεξη αναφέρει ότι κάλυψε τις σελ. 136–151 και 160–177:
   - [Κεφάλαιο 9: Είσοδος και έξοδος](https://progintro.github.io/notes/chapters/09-io/),
-    ενότητες «Είσοδος και έξοδος» (K04, σελ. 137–150) και «Αντιγραφή αρχείων»
-    (151–152).
+    ενότητες «Είσοδος και έξοδος» (K04, σελ. 136–149) και «Αντιγραφή αρχείων»
+    (150–151).
   - [Κεφάλαιο 11: Ταξινόμηση και αναζήτηση](https://progintro.github.io/notes/chapters/11-sorting-searching/),
-    ενότητες «Ταξινόμηση πινάκων» (K04, σελ. 161–167), «Μέθοδοι ταξινόμησης»
-    (168–172), «Αναζήτηση σε πίνακες» (173) και «Μέθοδοι αναζήτησης» (174–178).
+    ενότητες «Ταξινόμηση πινάκων» (K04, σελ. 160–166), «Μέθοδοι ταξινόμησης»
+    (167–171), «Αναζήτηση σε πίνακες» (172) και «Μέθοδοι αναζήτησης» (173–177).
 - **Εργαστήριο:** [Εργαστήριο 10](https://progintro.github.io/lab-material/labs/lab10/):
   ασκήσεις `more.c`, `bgrades.c`, `filediff.c`, `count.c`.
 - **Άλλα:** οπτικοποιήσεις ταξινόμησης [1](https://www.toptal.com/developers/sorting-algorithms),
@@ -784,6 +784,64 @@ Number: 42
 ## Ασκήσεις
 
 <!-- exercises -->
+
+### Από τις διαφάνειες
+
+- [Μέγεθος δισδιάστατου πίνακα και μιας γραμμής του](../../questions/slides/slides-lec18-2d-sizeof.md): Διάλεξη 18, διαφάνεια 2 · ★☆☆ · short-answer
+- [Γιατί μπορεί να αποτύχει η fopen;](../../questions/slides/slides-lec18-fopen-fail.md): Διάλεξη 18, διαφάνειες 43–44 · ★☆☆ · short-answer
+- [Υποτείνουσα με scanf](../../questions/slides/slides-lec18-hypotenuse.md): Διάλεξη 18, διαφάνειες 29–30 · ★☆☆ · trace
+- [Ανακατεύθυνση της stderr](../../questions/slides/slides-lec18-stderr-redirect.md): Διάλεξη 18, διαφάνεια 56 · ★☆☆ · tooling
+- [Ακέραιοι από αρχείο κειμένου με fread](../../questions/slides/slides-lec18-fread-int.md): Διάλεξη 18, διαφάνειες 50–51 · ★★☆ · trace
+- [Μια λέξη σε char[7] με scanf](../../questions/slides/slides-lec18-scanf-string.md): Διάλεξη 18, διαφάνειες 31–35 · ★★☆ · debug
+
+### Από τα εργαστήρια
+
+- [Μέτρηση στατιστικών αρχείων](../../questions/labs/lab-lab10-count.md): Εργαστήριο 10, Άσκηση 4 · ★☆☆ · programming
+- [Σύγκριση αρχείων](../../questions/labs/lab-lab10-filediff.md): Εργαστήριο 10, Άσκηση 3 · ★☆☆ · programming
+- [Δυαδικά αρχεία](../../questions/labs/lab-lab10-bgrades.md): Εργαστήριο 10, Άσκηση 2 · ★★☆ · programming
+- [Αρχεία κειμένου](../../questions/labs/lab-lab10-more.md): Εργαστήριο 10, Άσκηση 1 · ★★☆ · programming
+
+### Από τις εργασίες
+
+- [Προβλέποντας το Μέλλον (future)](../../questions/homework/hw-2024-hw2-future.md): Εργασία 2 (2024-25), Άσκηση 1 · ★★☆ · programming
+
+### Από τα θέματα εξετάσεων
+
+- [Κρυφό Μήνυμα](../../questions/exams/exam-2023-fall-ex7-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 2 · ★☆☆ · programming
+- [Κόψιμο Αρχείων](../../questions/exams/exam-2023-fall-ex7-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 4 · ★☆☆ · programming
+- [Έλεγχος Εκτελέσιμου](../../questions/exams/exam-2023-fall-ex9-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 1 · ★☆☆ · programming
+- [Κρυμμένο Μήνυμα](../../questions/exams/exam-2023-fall-ex10-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 3 · ★★☆ · programming
+- [Μετρήσεις Θερμοκρασίας](../../questions/exams/exam-2023-fall-ex14-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 3 · ★★☆ · programming
+- [Αλλαγή Μεγέθους](../../questions/exams/exam-2023-fall-ex4-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 4 · ★★☆ · programming
+- [Επιλογή](../../questions/exams/exam-2023-fall-ex5-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 3 · ★★☆ · programming
+- [Ταξινόμηση Αρχείων Καταγραφής](../../questions/exams/exam-2023-fall-ex6-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 4 · ★★☆ · programming
+- [Καλύτερο Ταίριασμα](../../questions/exams/exam-2023-fall-ex0-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 3 · ★★★ · programming
+- [Ταξινομώντας τα Άλματα](../../questions/exams/exam-2023-fall-ex15-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 3 · ★★★ · programming
+- [Μίνι Βάση Δεδομένων](../../questions/exams/exam-2023-fall-ex2-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 3 · ★★★ · programming
+- [Ταξινόμηση Πακέτων](../../questions/exams/exam-2023-fall-ex8-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 4 · ★★★ · programming
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Περιστροφή Πίνακα](../../questions/exams/exam-2023-fall-ex1-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 3 · ★★☆ · programming (κεφ. 12)
+- [Κινήσεις σε Πλέγμα](../../questions/exams/exam-2023-fall-ex11-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #11, Θέμα 3 · ★★☆ · programming (κεφ. 12)
+- [Πολλαπλασιασμός Πινάκων](../../questions/exams/exam-2023-fall-ex8-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 3 · ★★☆ · programming (κεφ. 12)
+- [Πολύτιμοι Πίνακες](../../questions/exams/exam-2023-fall-ex9-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 3 · ★★☆ · programming (κεφ. 12)
+- [FauxtoShop: περιστροφή εικόνας BMP](../../questions/homework/hw-2023-hw2-fauxtoshop.md): Εργασία 2 (2023-24), Άσκηση 1 · ★★★ · programming (κεφ. 12)
+- [Κρεμάλα](../../questions/exams/exam-2023-fall-ex12-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 3 · ★★☆ · programming (κεφ. 14)
+- [Δυνατότητες](../../questions/exams/exam-2023-fall-ex15-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 4 · ★★☆ · programming (κεφ. 14)
+- [Εύρεση Λέξεων](../../questions/exams/exam-2023-fall-ex3-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 3 · ★★☆ · programming (κεφ. 14)
+- [Το Δικό σου Chatbot (jason)](../../questions/homework/hw-2024-hw2-jason.md): Εργασία 2 (2024-25), Άσκηση 3 · ★★★ · programming (κεφ. 14)
+- [Χτίζοντας έναν Χιονάνθρωπο](../../questions/exams/exam-2023-fall-ex3-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 4 · ★★★ · programming (κεφ. 16)
+- [Μετρώντας τα Αστέρια - stars](../../questions/exams/exam-2025-jan-q6.md): Εξέταση Ιανουαρίου 2025, Θέμα 6 · ★★★ · programming (κεφ. 16)
+- [Αναζήτηση χρήστη στο Instagram](../../questions/slides/slides-lec17-instagram.md): Διάλεξη 17: Δυαδική Αναζήτηση και Ταξινόμηση, διαφάνεια 19 · ★☆☆ · short-answer (κεφ. 17)
+- [Η συνάρτηση swap](../../questions/slides/slides-lec17-swap.md): Διάλεξη 17: Δυαδική Αναζήτηση και Ταξινόμηση, διαφάνεια 21 · ★☆☆ · programming (κεφ. 17)
+- [Πρωτάθλημα](../../questions/exams/exam-2023-fall-ex13-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 3 · ★★★ · programming (κεφ. 19)
+- [World Cup 2026](../../questions/exams/exam-2026-jun-q4.md): Εξέταση Ιουνίου 2026, Θέμα 4 · ★★★ · programming (κεφ. 19)
+- [Η Newton-Raphson Ξαναχτυπά! (Bonus)](../../questions/homework/hw-2023-hw3-fractal.md): Εργασία 3 (2023-24), Άσκηση 2 (Bonus) και 2.1 (Bonus) · ★★★ · programming (κεφ. 23)
+- [Το Καλό το Μονοπάτι - path](../../questions/exams/exam-2025-sep-q5.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 5 · ★★★ · programming (κεφ. 25)
+- [DNA Matching](../../questions/homework/hw-2023-hw2-dna.md): Εργασία 2 (2023-24), Άσκηση 2 · ★★★ · programming (κεφ. 25)
+- [Το Καλύτερο GPS (jabbamaps)](../../questions/homework/hw-2024-hw2-jabbamaps.md): Εργασία 2 (2024-25), Άσκηση 2 · ★★★ · programming (κεφ. 25)
+
 <!-- /exercises -->
 
 ## Ερωτήσεις αυτοαξιολόγησης

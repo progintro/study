@@ -3,10 +3,10 @@ id: slides-lec22-tree-max
 kind: slides
 title: "Μέγιστο στοιχείο δέντρου: BFS ή DFS;"
 source:
-  title: "Διάλεξη 22: Δέντρα, διαφάνεια 41"
+  title: "Διαλέξεις 21–22: Δέντρα, διαφάνεια 41 (διάλεξη 21: διαφάνεια 63)"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec22.pdf
   years: [2025]
-chapters: [22]
+chapters: [22, 21]
 topics: [graphs, trees]
 difficulty: 1
 type: short-answer

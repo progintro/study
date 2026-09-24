@@ -6,7 +6,7 @@ source:
   title: "Εργαστήριο 6, Άσκηση 3"
   url: https://progintro.github.io/lab-material/labs/lab06/
   years: [2025]
-chapters: [12, 10]
+chapters: [11, 12]
 topics: [pointer-arithmetic, arrays, pointers]
 difficulty: 2
 type: trace

@@ -3,10 +3,10 @@ id: slides-lec23-dependencies
 kind: slides
 title: "Εξαρτήσεις ανάμεσα σε αρχεία"
 source:
-  title: "Διάλεξη 23, διαφάνεια 15"
+  title: "Διαλέξεις 23–24, διαφάνεια 15 (διάλεξη 24: διαφάνεια 16)"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec23.pdf
   years: [2025]
-chapters: [23]
+chapters: [23, 24]
 topics: [code-organization, compilation, make]
 difficulty: 2
 type: short-answer

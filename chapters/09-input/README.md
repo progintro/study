@@ -553,10 +553,10 @@ while ((ch = getchar()) != EOF) {
 
 - **Διαφάνειες:** [Διάλεξη 9](https://github.com/progintro/progintro.github.io/releases/download/2025/lec09.pdf), σελ. 1–41. Σύγκριση `float` και ονόματα: σελ. 2–5· πηγές εισόδου: σελ. 8–13· `getchar`: σελ. 14–21· `putchar` και `cat`: σελ. 22–24· `getinteger`: σελ. 25–26, 38· `scanf`: σελ. 27–37· συχνότητες γραμμάτων: σελ. 39.
 - **Σημειώσεις:** οι διαφάνειες παραπέμπουν στις σελίδες 28–29, 70–71, 78–79 και 86–87 των σημειώσεων του κ. Σταματόπουλου, δηλαδή στις ενότητες:
-  - [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), «Μετατροπή πεζών γραμμάτων σε κεφαλαία» (K04, σελ. 29–30)
-  - [Κεφάλαιο 4: Συναρτήσεις, εμβέλεια και αναδρομή](https://progintro.github.io/notes/chapters/04-functions/), «Μετατροπές μεταξύ δεκαδικών και δυαδικών αριθμών» (K04, σελ. 71–72)
-  - [Κεφάλαιο 5: Δείκτες και πίνακες](https://progintro.github.io/notes/chapters/05-pointers-arrays/), «Περί ανάγνωσης ακεραίων (και όχι μόνο)» (K04, σελ. 79–80) και «Ιστόγραμμα συχνοτήτων γραμμάτων στην είσοδο» (K04, σελ. 87–88)
-  - Για αναφορά: [Κεφάλαιο 9: Είσοδος και έξοδος](https://progintro.github.io/notes/chapters/09-io/), «Είσοδος και έξοδος» (K04, σελ. 137–150), με τις `getchar`, `putchar`, `printf`, `scanf` και την ανακατεύθυνση.
+  - [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), «Μετατροπή πεζών γραμμάτων σε κεφαλαία» (K04, σελ. 28–29)
+  - [Κεφάλαιο 4: Συναρτήσεις, εμβέλεια και αναδρομή](https://progintro.github.io/notes/chapters/04-functions/), «Μετατροπές μεταξύ δεκαδικών και δυαδικών αριθμών» (K04, σελ. 70–71)
+  - [Κεφάλαιο 5: Δείκτες και πίνακες](https://progintro.github.io/notes/chapters/05-pointers-arrays/), «Περί ανάγνωσης ακεραίων (και όχι μόνο)» (K04, σελ. 78–79) και «Ιστόγραμμα συχνοτήτων γραμμάτων στην είσοδο» (K04, σελ. 86–87)
+  - Για αναφορά: [Κεφάλαιο 9: Είσοδος και έξοδος](https://progintro.github.io/notes/chapters/09-io/), «Είσοδος και έξοδος» (K04, σελ. 136–149), με τις `getchar`, `putchar`, `printf`, `scanf` και την ανακατεύθυνση.
 - **Εργαστήριο:** [Εργαστήριο 4](https://progintro.github.io/lab-material/labs/lab04/): ασκήσεις `pyramid.c` (`putchar` και `scanf`), `lowercase.c` (βρόχος `getchar`/`putchar`), `encode.c` και `decode.c` (φίλτρα με ανακατεύθυνση και σωληνώσεις)
 - **Άλλα:**
   - Αναφορά συναρτήσεων: [getchar](https://en.cppreference.com/w/c/io/getchar), [putchar](https://en.cppreference.com/w/c/io/putchar), [scanf](https://cplusplus.com/reference/cstdio/scanf/), [printf](https://cplusplus.com/reference/cstdio/printf/), και οι σελίδες `man getchar`, `man scanf`
@@ -566,6 +566,66 @@ while ((ch = getchar()) != EOF) {
 ## Ασκήσεις
 
 <!-- exercises -->
+
+### Από τις διαφάνειες
+
+- [Μετρητής χαρακτήρων με getchar](../../questions/slides/slides-lec09-charcount.md): Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 20 · ★☆☆ · trace
+- [Τι κάνει το πρόγραμμα με τη scanf;](../../questions/slides/slides-lec09-scanf-square.md): Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 30 · ★☆☆ · trace
+- [scanf με πολλά ορίσματα](../../questions/slides/slides-lec09-scanf-two.md): Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 36–37 · ★☆☆ · trace
+- [Άθροισμα δύο αριθμών από την πρότυπη είσοδο](../../questions/slides/slides-lec09-addnums.md): Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 25–26 · ★★☆ · programming
+- [Μια cat με char](../../questions/slides/slides-lec09-cat-char.md): Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 23 · ★★☆ · debug
+- [OK ή Not OK;](../../questions/slides/slides-lec09-float-equality.md): Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 3 · ★★☆ · trace
+- [Η συνάρτηση getinteger](../../questions/slides/slides-lec09-getinteger.md): Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 26, 38 · ★★☆ · trace
+- [Μέτρηση γραμμάτων στην είσοδο](../../questions/slides/slides-lec09-letter-frequencies.md): Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 39 · ★★☆ · trace
+- [scanf χωρίς &](../../questions/slides/slides-lec09-scanf-no-ampersand.md): Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 32 · ★★☆ · short-answer
+- [Είναι σωστό αυτό το πρόγραμμα;](../../questions/slides/slides-lec09-scanf-return.md): Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 33–35 · ★★☆ · debug
+
+### Από τα εργαστήρια
+
+- [Ένα απλό κομπιουτεράκι](../../questions/labs/lab-lab02-calc.md): Εργαστήριο 2, Άσκηση 1 · ★☆☆ · programming
+- [Διάβασμα ακεραίου με scanf](../../questions/labs/lab-lab02-readint.md): Εργαστήριο 2, Βήμα 3 · ★☆☆ · short-answer
+- [Τροποποίηση κειμένου](../../questions/labs/lab-lab04-lowercase.md): Εργαστήριο 4, Άσκηση 3 · ★☆☆ · programming
+- [Κωδικοποίηση και αποκωδικοποίηση κειμένου](../../questions/labs/lab-lab04-encode-decode.md): Εργαστήριο 4, Άσκηση 4 · ★★☆ · programming
+
+### Από τις εργασίες
+
+- [Συνεργασία (Prisoner's Dilemma)](../../questions/homework/hw-2023-hw2-coop.md): Εργασία 2 (2023-24), Άσκηση 3 · ★★☆ · programming
+- [Το Πρόβλημα του Τρόλεϊ (trolley)](../../questions/homework/hw-2024-hw0-trolley.md): Εργασία 0 (2024-25), Άσκηση 3 · ★★☆ · programming
+- [Επεξεργασία Ήχου (soundwave)](../../questions/homework/hw-2025-hw1-soundwave.md): Εργασία 1 (2025-26), Άσκηση 1 · ★★★ · programming
+
+### Από τα θέματα εξετάσεων
+
+- [Ραβασάκι](../../questions/exams/exam-2023-fall-ex0-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 1 · ★☆☆ · programming
+- [Δεκαεξαδικοί](../../questions/exams/exam-2023-fall-ex1-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 1 · ★☆☆ · programming
+- [Γραμμή και Γράμμα](../../questions/exams/exam-2023-fall-ex12-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 1 · ★☆☆ · programming
+- [Ορεκτικό](../../questions/exams/exam-2023-fall-ex14-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 1 · ★☆☆ · programming
+- [Πλαγιαστά Γράμματα](../../questions/exams/exam-2023-fall-ex15-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 1 · ★☆☆ · programming
+- [Μήνυμα από τον Καίσαρα](../../questions/exams/exam-2023-fall-ex6-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 2 · ★☆☆ · programming
+- [Ανάβεις Φωτιές](../../questions/exams/exam-2023-fall-ex7-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 1 · ★☆☆ · programming
+- [ASCII Encoding](../../questions/exams/exam-2024-jul-q1.md): Εξέταση Ιουλίου 2024, Θέμα 1 · ★☆☆ · programming
+- [Αφαίρεση Μη Λατινικών Χαρακτήρων](../../questions/exams/exam-2023-fall-ex10-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 1 · ★★☆ · programming
+- [Αναζητώντας τον Blinky](../../questions/exams/exam-2023-fall-ex11-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #11, Θέμα 1 · ★★☆ · programming
+- [Pikaκίστικα](../../questions/exams/exam-2023-fall-ex2-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 1 · ★★☆ · programming
+- [Προσθήκη Νιφάδων](../../questions/exams/exam-2023-fall-ex3-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 1 · ★★☆ · programming
+- [Αποκωδικοποίηση](../../questions/exams/exam-2023-fall-ex8-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 2 · ★★☆ · programming
+- [Μετρητής λέξεων](../../questions/exams/exam-2024-sep-q4.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 4 · ★★☆ · programming
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Πυθαγόρειο θεώρημα](../../questions/labs/lab-lab02-pyth.md): Εργαστήριο 2, Άσκηση 2 · ★☆☆ · programming (κεφ. 3)
+- [Οι Ακολουθίες Aliquot](../../questions/homework/hw-2025-hw0-aliquot.md): Εργασία 0 (2025-26), Άσκηση 3 · ★★☆ · programming (κεφ. 6)
+- [Κατασκευή πυραμίδας](../../questions/labs/lab-lab04-pyramid.md): Εργαστήριο 4, Άσκηση 2 · ★☆☆ · programming (κεφ. 6)
+- [Αναποδογύρισμα](../../questions/exams/exam-2023-fall-ex5-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 1 · ★☆☆ · programming (κεφ. 10)
+- [Πρόσθεση δύο αριθμών από την είσοδο](../../questions/slides/slides-lec10-addnums.md): Διάλεξη 10, διαφάνεια 5 · ★☆☆ · programming (κεφ. 10)
+- [Τι κάνει η getinteger;](../../questions/slides/slides-lec10-getinteger.md): Διάλεξη 10, διαφάνεια 17 · ★★☆ · trace (κεφ. 10)
+- [Αλλαγή Τέρματος](../../questions/exams/exam-2023-fall-ex13-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 2 · ★☆☆ · programming (κεφ. 12)
+- [Το μεγαλύτερο άλμα - polevault](../../questions/exams/exam-2026-sep-q3.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 3 · ★★☆ · programming (κεφ. 12)
+- [Κάδρο](../../questions/exams/exam-2023-fall-ex9-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 4 · ★★★ · programming (κεφ. 13)
+- [Τα Πάνω Κάτω](../../questions/exams/exam-2023-fall-ex4-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 2 · ★★☆ · programming (κεφ. 14)
+- [Τι κάνει το πρόγραμμα με την getchar](../../questions/slides/slides-lec15-getchar-count.md): Διάλεξη 15, διαφάνεια 17 · ★☆☆ · trace (κεφ. 15)
+- [Υποτείνουσα με scanf](../../questions/slides/slides-lec18-hypotenuse.md): Διάλεξη 18, διαφάνειες 29–30 · ★☆☆ · trace (κεφ. 18)
+- [Επενδύσεις στο Χρηματιστήριο](../../questions/exams/exam-2026-jun-q3.md): Εξέταση Ιουνίου 2026, Θέμα 3 · ★★☆ · programming (κεφ. 25)
+
 <!-- /exercises -->
 
 ## Ερωτήσεις αυτοαξιολόγησης

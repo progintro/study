@@ -6,7 +6,7 @@ source:
   title: "Εξέταση Ιανουαρίου 2026, Θέμα 6"
   url: https://progintro.github.io/exams/2026/progintro-exam-jan-26.pdf
   years: [2026]
-chapters: [13, 11]
+chapters: [11, 13]
 topics: [pointers, undefined-behavior, memory-model]
 difficulty: 1
 type: trace

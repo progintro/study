@@ -6,8 +6,8 @@ source:
   title: "Κατατακτήριες Δεκεμβρίου 2023, Θέμα 3"
   url: https://progintro.github.io/exams/2023/progintro-exam-dec-23.pdf
   years: [2023]
-chapters: [11, 15, 2]
-topics: [recursion, complexity, integer-representation, problem-solving]
+chapters: [25, 16, 11]
+topics: [dynamic-programming, recursion, complexity, integer-representation]
 difficulty: 2
 type: programming
 ---

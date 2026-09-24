@@ -31,7 +31,7 @@ pointers:
 takeaways_slide: null         # p. 48 is a reading assignment, not a takeaways slide
 issues:
   - "p. 2: announcements (Εργασία #1 deadline 'την Τετάρτη', tutorial in Linux Lab Tuesday 9 Dec 9-11, Εργασία #2 release) are course policy and were left out of the chapter."
-  - "p. 48: 'σελίδες 108, 120-135' of the K04 slides. By k04-map.tsv p. 108 is 06-memory-strings «Πρόσθεση πολυψήφιων αριθμών» and p. 120 is «Εύρεση τριγώνων...»; the matching sections are p. 109 «Απαριθμήσεις» and 121-128 (07-structs) plus 129-135 (08-lists-trees). Possibly an off-by-one in the slide; the chapter cites the mapped sections (109, 121-128, 129-136)."
+  - "p. 48: 'σελίδες 108, 120-135' of the K04 slides. These are printed page numbers; by k04-map.tsv p. 108 is 07-structs «Απαριθμήσεις», 120-127 is «Αυτο-αναφορικές δομές» through «Ενώσεις και πεδία bit», and 128-135 is 08-lists-trees. The earlier off-by-one was the map's old PDF numbering; the chapter cites 108, 120-127, 128-135."
   - "p. 11: the bit picture draws the byte as '1 001 1010' with registered leftmost. On gcc/x86-64 the actual byte is 0xA3 (registered is the least significant bit). The chapter shows the three bit groups in a table and says the bit order is up to the compiler."
   - "p. 14: callout writes '2 + 7 % 8 = 1 % 8'; meant (2 + 7) mod 8 = 1. The chapter writes it with parentheses."
   - "p. 7-10: the int/char bit-field and plain-char versions are separate programs all named struct student_status (./bitfields, ./bitfields2 used twice: output 1 on p. 9/11 and 3 on p. 10). The chapter combines them into one program with three struct names; the outputs 4 / 1 / 3 are from the slides and verified with gcc."

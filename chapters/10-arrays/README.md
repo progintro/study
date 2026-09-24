@@ -625,9 +625,9 @@ $0 \to 4 \to 47 \to 472$.
 - **Σημειώσεις:** η διάλεξη μαζί με την επόμενη καλύπτει τις σελίδες 73–103 των
   σημειώσεων του κ. Σταματόπουλου. Για αυτό το κεφάλαιο:
   [Κεφάλαιο 5: Δείκτες και πίνακες](https://progintro.github.io/notes/chapters/05-pointers-arrays/),
-  ενότητες «Περί ανάγνωσης ακεραίων (και όχι μόνο)» (K04, σελ. 79–80), «Πίνακες»
-  (K04, σελ. 81–86) και «Ιστόγραμμα συχνοτήτων γραμμάτων στην είσοδο» (K04,
-  σελ. 87–88). Η ενότητα «Δείκτες» (K04, σελ. 73–78) ανήκει στο
+  ενότητες «Περί ανάγνωσης ακεραίων (και όχι μόνο)» (K04, σελ. 78–79), «Πίνακες»
+  (K04, σελ. 80–85) και «Ιστόγραμμα συχνοτήτων γραμμάτων στην είσοδο» (K04,
+  σελ. 86–87). Η ενότητα «Δείκτες» (K04, σελ. 72–77) ανήκει στο
   [Κεφάλαιο 11](../11-pointers-recursion/).
 - **Εργαστήριο:** [Εργαστήριο 6](https://progintro.github.io/lab-material/labs/lab06/):
   ασκήσεις `sieve.c`, `judgement.c`.
@@ -660,23 +660,36 @@ $0 \to 4 \to 47 \to 472$.
 - [Είναι σωστό αυτό το πρόγραμμα;](../../questions/slides/slides-lec10-scanf-correct.md): Διάλεξη 10, διαφάνειες 12-14 · ★★☆ · debug
 - [scanf χωρίς &](../../questions/slides/slides-lec10-scanf-no-ampersand.md): Διάλεξη 10, διαφάνεια 11 · ★★☆ · debug
 
+### Από τα εργαστήρια
+
+- [Πίνακες και συναρτήσεις](../../questions/labs/lab-lab06-judgement.md): Εργαστήριο 6, Άσκηση 4 · ★☆☆ · programming
+- [Το κόσκινο του Ερατοσθένη](../../questions/labs/lab-lab06-sieve.md): Εργαστήριο 6, Άσκηση 2 · ★☆☆ · programming
+- [Εντοπισμός σφάλματος μνήμης με τον gdb](../../questions/labs/lab-lab07-my_prog.md): Εργαστήριο 7, Άσκηση 6 · ★☆☆ · debug
+
 ### Από τα θέματα εξετάσεων
 
 - [Αναποδογύρισμα](../../questions/exams/exam-2023-fall-ex5-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 1 · ★☆☆ · programming
+- [Η συνάρτηση cons](../../questions/exams/exam-2026-sep-q2.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 2 · ★☆☆ · trace
 - [Τοποθέτηση του Pacman](../../questions/exams/exam-2023-fall-ex11-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #11, Θέμα 2 · ★★☆ · programming
 - [Φορτωμένο Έλκηθρο](../../questions/exams/exam-2023-fall-ex3-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 2 · ★★☆ · programming
+- [Αναγράμματα](../../questions/exams/exam-2023-fall-ex4-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 1 · ★★☆ · programming
 - [Μαγικό Ζευγάρι](../../questions/exams/exam-2023-fall-ex5-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 2 · ★★☆ · programming
-- [Το Νερό Νεράκι](../../questions/exams/exam-2023-dec-q4.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 4 · ★★★ · programming
+- [Η συνάρτηση paws](../../questions/exams/exam-2026-jun-q2.md): Εξέταση Ιουνίου 2026, Θέμα 2 · ★★☆ · debug
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
-- [Εαυτοί Αριθμοί](../../questions/exams/exam-2023-fall-ex12-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 4 · ★★☆ · programming (κεφ. 7)
 - [Γραμμή και Γράμμα](../../questions/exams/exam-2023-fall-ex12-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 1 · ★☆☆ · programming (κεφ. 9)
-- [Το Πρόβλημα του Τρόλεϊ (trolley)](../../questions/homework/hw-2024-hw0-trolley.md): Εργασία 0 (2024-25), Άσκηση 3 · ★★☆ · programming (κεφ. 9)
+- [Η δική μας atoi](../../questions/slides/slides-lec11-atoi.md): Διάλεξη 11, διαφάνειες 41–42 · ★★☆ · programming (κεφ. 11)
+- [Μέσος όρος πίνακα 100 ακεραίων](../../questions/slides/slides-lec11-average.md): Διάλεξη 11, διαφάνειες 37–38 · ★☆☆ · programming (κεφ. 11)
+- [Θέση στοιχείου σε πίνακα ή -1](../../questions/slides/slides-lec11-find.md): Διάλεξη 11, διαφάνειες 39–40 · ★☆☆ · programming (κεφ. 11)
 - [Στατιστικές](../../questions/exams/exam-2024-jul-q2.md): Εξέταση Ιουλίου 2024, Θέμα 2 · ★★☆ · programming (κεφ. 12)
+- [Κινούμενος Μέσος Όρος - sma](../../questions/exams/exam-2025-jan-q3.md): Εξέταση Ιανουαρίου 2025, Θέμα 3 · ★★☆ · programming (κεφ. 12)
 - [Προσεγγίζοντας την Λέξη](../../questions/exams/exam-2023-fall-ex12-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 2 · ★★☆ · programming (κεφ. 14)
-- [Αναγράμματα](../../questions/exams/exam-2023-fall-ex4-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 1 · ★★☆ · programming (κεφ. 14)
-- [Βέλτιστη Μοιρασιά Πίτσας](../../questions/exams/exam-2024-jul-q3.md): Εξέταση Ιουλίου 2024, Θέμα 3 · ★★★ · programming (κεφ. 17)
+- [Δίδυμοι Πρώτοι](../../questions/exams/exam-2023-fall-ex7-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 3 · ★★★ · programming (κεφ. 15)
+- [Πολυπλοκότητα της atoi](../../questions/slides/slides-lec15-complexity-atoi.md): Διάλεξη 15, διαφάνεια 15 · ★☆☆ · short-answer (κεφ. 15)
+- [Εαυτοί Αριθμοί](../../questions/exams/exam-2023-fall-ex12-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 4 · ★★☆ · programming (κεφ. 16)
+- [Μέσος όρος πίνακα και πολυπλοκότητα](../../questions/slides/slides-lec16-average-complexity.md): Διάλεξη 16, διαφάνειες 8–9 · ★☆☆ · programming (κεφ. 16)
+- [Αναζήτηση σε πίνακα και πολυπλοκότητα](../../questions/slides/slides-lec16-find-complexity.md): Διάλεξη 16, διαφάνειες 10 και 15 · ★☆☆ · programming (κεφ. 16)
 
 <!-- /exercises -->
 

@@ -7,7 +7,7 @@ source:
   url: https://progintro.github.io/exams/2023/fall/ex13/
   years: [2023]
 chapters: [12, 9, 13]
-topics: [multidim-arrays, dynamic-memory, input-output]
+topics: [multidim-arrays, dynamic-memory, input-output, input-validation]
 difficulty: 1
 type: programming
 ---

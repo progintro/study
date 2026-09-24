@@ -34,13 +34,13 @@ pointers:
   - {page: 31, text: "apt and command line editors: 'Περισσότερα στα εργαστήρια'"}
   - {page: 32, text: "Wikipedia: GNU Compiler Collection (https://en.wikipedia.org/wiki/GNU_Compiler_Collection)"}
   - {page: 38, text: "Συναρτήσεις: next time"}
-  - {page: 42, text: "Σημειώσεις κ. Σταματόπουλου σελίδες 58-60, 98-99 (printed page numbers = K04 PDF pages 59-61 and 99-100)"}
+  - {page: 42, text: "Σημειώσεις κ. Σταματόπουλου σελίδες 58-60, 98-99 (K04, printed page numbers)"}
   - {page: 42, text: "Εγκαταστήστε WSL και τρέξτε τις εντολές της διάλεξης"}
   - {page: 42, text: "Προαιρετικό: The Unix Programming Environment (https://scis.uohyd.ac.in/~apcs/itw/UNIXProgrammingEnvironment.pdf)"}
   - {page: 42, text: "Προαιρετικό #2: Common Linux Interview Questions (https://www.geeksforgeeks.org/linux-interview-questions/)"}
 takeaways_slide: null   # p. 42 is a reading/to-do list, not a takeaways slide
 issues:
-  - "p. 42 cites Stamatopoulos' notes 'σελίδες 58-60, 98-99'. These match the page numbers printed on K04.pdf, which are one less than the PDF page numbers used by k04-map.tsv: printed 58-60 = PDF 59-61 (04-functions «Δομή ενός προγράμματος C – Συναρτήσεις»: main, return value to the OS) and printed 98-99 = PDF 99-100 (06-memory-strings «Ορίσματα γραμμής εντολών»). PDF pages 58 and 98 (goto; arrays of pointers) do not fit the lecture, so the chapter cites K04 59-61 and 99-100."
+  - "p. 42 cites Stamatopoulos' notes 'σελίδες 58-60, 98-99'. These are the page numbers printed on K04.pdf, which k04-map.tsv now uses: 58-60 = 04-functions «Δομή ενός προγράμματος C – Συναρτήσεις» (main, return value to the OS) and 98-99 = 06-memory-strings «Ορίσματα γραμμής εντολών». The chapter cites K04 58-60 and 98-99."
   - "No explicit key-takeaways slide; Κύρια σημεία are synthesised from the definition slides (9, 14, 27, 32, 35-40)."
   - "p. 41 is only 'Kahoot Time!'; the quiz questions are not in the slides, none transcribed."
   - "pp. 20-24 (DevOps story: CloudWatch alert, maps zooming to a data center, 'ssh is the remote control', volunteer demo 'ssh ubuntu@...' with a demo password) are mostly images; kept the point in words. The demo host is elided in the slide and the demo password was deliberately not copied into the chapter."

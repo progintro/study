@@ -510,7 +510,7 @@ prod    = 1.211521e+171 (64 terms)
 ## Διάβασμα
 
 - **Διαφάνειες:** [Διάλεξη 7](https://github.com/progintro/progintro.github.io/releases/download/2025/lec07.pdf), σελ. 1–23. AWS και ανοχή σε σφάλματα: σελ. 2· GRCPC: σελ. 3–5· flow: σελ. 8· βρόχοι: σελ. 9–12· προθέρμανση: σελ. 13–18· θέματα ζωντανής επίλυσης: σελ. 19–20· επόμενη φορά: σελ. 22.
-- **Σημειώσεις:** [Κεφάλαιο 12: Καλές πρακτικές, συχνά λάθη και βιβλιογραφία](https://progintro.github.io/notes/chapters/12-good-practice/), ενότητες «Ένα πρόγραμμα C πρέπει να είναι …» και «Συχνά προγραμματιστικά λάθη στην C» (K04, σελ. 179–183)· [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), ενότητες «Καλημέρα κόσμε της C» (σύνταξη σχολίων) και «Πόσο είναι το $\pi$;» (πρόγραμμα με σχόλια ανά γραμμή) (K04, σελ. 20–24)· [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Εντολές βρόχου `while`» και «Εντολή βρόχου `for`» (K04, σελ. 53–56).
+- **Σημειώσεις:** [Κεφάλαιο 12: Καλές πρακτικές, συχνά λάθη και βιβλιογραφία](https://progintro.github.io/notes/chapters/12-good-practice/), ενότητες «Ένα πρόγραμμα C πρέπει να είναι …» και «Συχνά προγραμματιστικά λάθη στην C» (K04, σελ. 178–182)· [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), ενότητες «Καλημέρα κόσμε της C» (σύνταξη σχολίων) και «Πόσο είναι το $\pi$;» (πρόγραμμα με σχόλια ανά γραμμή) (K04, σελ. 19–23)· [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Εντολές βρόχου `while`» και «Εντολή βρόχου `for`» (K04, σελ. 52–55).
 - **Εργαστήριο:** [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): εισαγωγή για τους τρεις βρόχους, άσκηση `seq.c` (`while`, `for`, `do...while`) και το παράρτημα για τα λογικά λάθη (`limit.c`)· [Εργαστήριο 2](https://progintro.github.io/lab-material/labs/lab02/): «Βήμα 1: Το περιβάλλον προγραμματισμού Visual Studio Code»· [Εργαστήριο 1](https://progintro.github.io/lab-material/labs/lab01/): «Βήμα 6: Git και GitHub» και «Άσκηση 1: Το πρώτο σας repository (info.txt)».
 - **Άλλα:**
   - [How to write good comments](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/) (Stack Overflow Blog)
@@ -527,20 +527,10 @@ prod    = 1.211521e+171 (64 terms)
 - [Τριψήφιοι άρτιοι σε φθίνουσα σειρά](../../questions/slides/slides-lec07-even-descending.md): Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 14 · ★☆☆ · programming
 - [Γινόμενο τριψήφιων περιττών πολλαπλασίων του 7](../../questions/slides/slides-lec07-odd-multiples-of-7.md): Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 16 · ★★☆ · programming
 
-### Από τα θέματα εξετάσεων
-
-- [Μέγιστος Κοινός Διαιρέτης](../../questions/exams/exam-2023-fall-ex6-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 1 · ★☆☆ · programming
-- [Αγαπήσιμοι Αριθμοί](../../questions/exams/exam-2023-fall-ex0-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 4 · ★★☆ · programming
-- [Clyde Πρώτοι](../../questions/exams/exam-2023-fall-ex11-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #11, Θέμα 4 · ★★☆ · programming
-- [Εαυτοί Αριθμοί](../../questions/exams/exam-2023-fall-ex12-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 4 · ★★☆ · programming
-- [Τυχεροί Αριθμοί](../../questions/exams/exam-2023-fall-ex13-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 4 · ★★☆ · programming
-- [Σπάσε το PIN](../../questions/exams/exam-2023-fall-ex6-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 3 · ★★☆ · programming
-- [Οι Καλύτεροι Αριθμοί, Παμψηφεί](../../questions/exams/exam-2024-dec-q2.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 2 · ★★☆ · programming
-- [Δίδυμοι Πρώτοι](../../questions/exams/exam-2023-fall-ex7-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 3 · ★★★ · programming
-
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
-- [Τρόποι να Φάμε Παϊδάκια](../../questions/exams/exam-2023-fall-ex14-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 4 · ★★★ · programming (κεφ. 11)
+- [Πολυπλοκότητα: γινόμενο περιττών πολλαπλασίων του 7](../../questions/slides/slides-lec15-complexity-odd-multiples-of-7.md): Διάλεξη 15, διαφάνεια 13 · ★☆☆ · short-answer (κεφ. 15)
+- [Γιατί εξάσκηση στην επίλυση προβλημάτων;](../../questions/slides/slides-lec16-why-practice.md): Διάλεξη 16, διαφάνειες 5–6 · ★☆☆ · short-answer (κεφ. 16)
 
 <!-- /exercises -->
 

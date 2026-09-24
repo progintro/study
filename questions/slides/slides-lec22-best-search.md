@@ -3,10 +3,10 @@ id: slides-lec22-best-search
 kind: slides
 title: "Ποιος αλγόριθμος αναζήτησης είναι καλύτερος;"
 source:
-  title: "Διάλεξη 22: Δέντρα, διαφάνεια 38"
+  title: "Διαλέξεις 21–22: Δέντρα, διαφάνεια 38 (διάλεξη 21: διαφάνεια 60)"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec22.pdf
   years: [2025]
-chapters: [22]
+chapters: [22, 21]
 topics: [trees, graphs]
 difficulty: 1
 type: short-answer

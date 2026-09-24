@@ -6,7 +6,7 @@ source:
   title: "Εργασία 1 (2024-25), Άσκηση 3 (Bonus)"
   url: https://github.com/progintro/progintro.github.io/releases/download/2024/hw1.pdf
   years: [2024]
-chapters: [15, 8, 12]
+chapters: [15, 16, 2]
 topics: [math-algorithms, complexity, integer-representation, command-line-args]
 difficulty: 3
 type: programming

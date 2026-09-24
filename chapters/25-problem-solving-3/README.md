@@ -632,6 +632,37 @@ height = 4
 ## Ασκήσεις
 
 <!-- exercises -->
+
+### Από τα εργαστήρια
+
+- [Καθαρή διαχείριση μνήμης](../../questions/labs/lab-lab09-grades-tree.md): Εργαστήριο 9, Άσκηση 5 · ★★☆ · programming
+
+### Από τις εργασίες
+
+- [DNA Matching](../../questions/homework/hw-2023-hw2-dna.md): Εργασία 2 (2023-24), Άσκηση 2 · ★★★ · programming
+- [Το Καλύτερο GPS (jabbamaps)](../../questions/homework/hw-2024-hw2-jabbamaps.md): Εργασία 2 (2024-25), Άσκηση 2 · ★★★ · programming
+- [Ανελκυστήρες για Ανυπόμονους και Ανυπόμονες (elevate)](../../questions/homework/hw-2025-hw2-elevate.md): Εργασία 2 (2025-26), Άσκηση 1 · ★★★ · programming
+
+### Από τα θέματα εξετάσεων
+
+- [Σκαλί-Σκαλί](../../questions/exams/exam-2023-dec-q3.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 3 · ★★☆ · programming
+- [Μένοντας στις Σωστές Θερμίδες](../../questions/exams/exam-2023-fall-ex14-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 2 · ★★☆ · programming
+- [Ανεβαίνοντας Επίπεδο](../../questions/exams/exam-2023-fall-ex2-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 4 · ★★☆ · programming
+- [Επενδύσεις στο Χρηματιστήριο](../../questions/exams/exam-2026-jun-q3.md): Εξέταση Ιουνίου 2026, Θέμα 3 · ★★☆ · programming
+- [Το Νερό Νεράκι](../../questions/exams/exam-2023-dec-q4.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 4 · ★★★ · programming
+- [Τρόποι να Φάμε Παϊδάκια](../../questions/exams/exam-2023-fall-ex14-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 4 · ★★★ · programming
+- [Η Τριπλέτα Στόχος](../../questions/exams/exam-2024-dec-q3.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 3 · ★★★ · programming
+- [Λύσε τον Λαβύρινθο](../../questions/exams/exam-2024-dec-q4.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 4 · ★★★ · programming
+- [Βέλτιστη Μοιρασιά Πίτσας](../../questions/exams/exam-2024-jul-q3.md): Εξέταση Ιουλίου 2024, Θέμα 3 · ★★★ · programming
+- [Γεμίζοντας με χρώμα](../../questions/exams/exam-2024-sep-q6.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 6 · ★★★ · programming
+- [Το Καλό το Μονοπάτι - path](../../questions/exams/exam-2025-sep-q5.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 5 · ★★★ · programming
+- [Περικύκλωση - encirclement](../../questions/exams/exam-2026-jan-q5.md): Εξέταση Ιανουαρίου 2026, Θέμα 5 · ★★★ · programming
+- [Η Μεγαλύτερη Χωρητικότητα - capacity](../../questions/exams/exam-2026-sep-q5.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 5 · ★★★ · programming
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Η συνάρτηση cons](../../questions/exams/exam-2026-sep-q2.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 2 · ★☆☆ · trace (κεφ. 10)
+
 <!-- /exercises -->
 
 ## Ερωτήσεις αυτοαξιολόγησης

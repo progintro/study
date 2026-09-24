@@ -6,7 +6,7 @@ source:
   title: "Εργαστήριο 0, Άσκηση 1"
   url: https://progintro.github.io/lab-material/labs/lab00/
   years: [2025]
-chapters: [0]
+chapters: [2, 0]
 topics: [input-output, compilation]
 difficulty: 1
 type: programming

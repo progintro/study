@@ -6,7 +6,7 @@ source:
   title: "Εξέταση Σεπτεμβρίου 2026, Θέμα 5"
   url: https://progintro.github.io/exams/2026/progintro-exam-sep-26.pdf
   years: [2026]
-chapters: [15, 10, 9]
+chapters: [25, 15, 13]
 topics: [complexity, arrays, problem-solving]
 difficulty: 3
 type: programming

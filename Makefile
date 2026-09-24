@@ -42,12 +42,13 @@ all: $(CHAPTER_PDFS) $(BUILD)/study.pdf $(BUILD)/study-md.zip $(BUILD)/llms.txt
 $(BUILD):
 	mkdir -p $(BUILD)
 
-# The running header carries the chapter title, without its "Κεφάλαιο N:" prefix.
+# The running header carries the chapter title, without its "Κεφάλαιο N:" prefix and
+# with LaTeX's special characters escaped ("Ροή Ελέγχου #2").
 $(BUILD)/%.pdf: chapters/%/README.md $(DEPS) | $(BUILD)
 	python3 tools/mermaid.py
 	python3 tools/pdf-prep.py $< > $(BUILD)/$*.md
 	$(PANDOC) $(BUILD)/$*.md $(PDF_FLAGS) --toc-depth=2 \
-		-V header-includes='\def\chaptitle{$(shell grep -m1 '^# ' $< | sed -e 's/^# //' -e 's/^[^:]*: //')}' \
+		-V header-includes='\def\chaptitle{$(shell grep -m1 '^# ' $< | sed -e 's/^# //' -e 's/^[^:]*: //' -e 's/[#&%$$_]/\\&/g')}' \
 		-o $@
 
 $(BUILD)/questions.json $(BUILD)/questions.md: $(QUESTIONS) sources/manifest.yaml tools/gen-exercises.py | $(BUILD)

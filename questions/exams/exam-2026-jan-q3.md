@@ -6,7 +6,7 @@ source:
   title: "Εξέταση Ιανουαρίου 2026, Θέμα 3"
   url: https://progintro.github.io/exams/2026/progintro-exam-jan-26.pdf
   years: [2026]
-chapters: [7, 12]
+chapters: [6, 4]
 topics: [math-algorithms, loops, command-line-args]
 difficulty: 2
 type: programming

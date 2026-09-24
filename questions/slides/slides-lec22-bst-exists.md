@@ -3,10 +3,10 @@ id: slides-lec22-bst-exists
 kind: slides
 title: "Έλεγχος ύπαρξης σε δυαδικό δέντρο αναζήτησης"
 source:
-  title: "Διάλεξη 22: Δέντρα, διαφάνειες 35–37"
+  title: "Διαλέξεις 21–22: Δέντρα, διαφάνειες 35–37 (διάλεξη 21: διαφάνειες 57–59)"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec22.pdf
   years: [2025]
-chapters: [22]
+chapters: [22, 21]
 topics: [trees, searching, recursion]
 difficulty: 1
 type: programming

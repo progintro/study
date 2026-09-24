@@ -6,7 +6,7 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 4"
   url: https://progintro.github.io/exams/2023/fall/ex12/
   years: [2023]
-chapters: [7, 10, 3]
+chapters: [16, 10]
 topics: [math-algorithms, arrays, loops]
 difficulty: 2
 type: programming

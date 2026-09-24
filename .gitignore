@@ -8,3 +8,5 @@ vendor
 _data
 sources/slides
 sources/hw
+__pycache__
+old-reports.xlsx

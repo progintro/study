@@ -6,7 +6,7 @@ source:
   title: "Κατατακτήριες Δεκεμβρίου 2023, Θέμα 2"
   url: https://progintro.github.io/exams/2023/progintro-exam-dec-23.pdf
   years: [2023]
-chapters: [8, 12]
+chapters: [16, 4]
 topics: [math-algorithms, loops, command-line-args]
 difficulty: 2
 type: programming

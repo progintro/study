@@ -6,8 +6,8 @@ source:
   title: "Εργαστήριο 8, Άσκηση 2"
   url: https://progintro.github.io/lab-material/labs/lab08/
   years: [2025]
-chapters: [12, 14]
-topics: [command-line-args, strings, operators]
+chapters: [12, 8]
+topics: [command-line-args, conditionals, operators]
 difficulty: 1
 type: programming
 ---

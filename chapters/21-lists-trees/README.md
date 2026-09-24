@@ -760,6 +760,46 @@ Tree pop_last(List * list) {  // προϋπόθεση: *list != NULL
 ## Ασκήσεις
 
 <!-- exercises -->
+
+### Από τις διαφάνειες
+
+- [Προσθήκη στοιχείου σε λίστα](../../questions/slides/slides-lec21-insert-how.md): Διάλεξη 21, διαφάνειες 11–12 · ★☆☆ · short-answer
+- [Τι τυπώνει η εισαγωγή σε λίστα;](../../questions/slides/slides-lec21-insert-output.md): Διάλεξη 21, διαφάνειες 13–16 · ★☆☆ · trace
+- [Αναδρομικό μήκος λίστας](../../questions/slides/slides-lec21-recursive-length.md): Διάλεξη 21, διαφάνεια 18 · ★☆☆ · programming
+- [Αφαίρεση στοιχείου από λίστα](../../questions/slides/slides-lec21-delete-how.md): Διάλεξη 21, διαφάνειες 23–25 · ★★☆ · short-answer
+- [Τι τυπώνει η find σε λίστα;](../../questions/slides/slides-lec21-find-output.md): Διάλεξη 21, διαφάνειες 21–22 · ★★☆ · trace
+- [Πολυπλοκότητα του μήκους λίστας](../../questions/slides/slides-lec21-length-complexity.md): Διάλεξη 21, διαφάνειες 19–20 · ★★☆ · short-answer
+
+### Από τα εργαστήρια
+
+- [Συνδεδεμένες λίστες](../../questions/labs/lab-lab09-grades.md): Εργαστήριο 9, Άσκηση 3 · ★★☆ · programming
+
+### Από τα θέματα εξετάσεων
+
+- [Αντιστροφή λίστας](../../questions/exams/exam-2024-sep-q5.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 5 · ★★☆ · programming
+- [Μεσαίο Στοιχείο Λίστας](../../questions/exams/exam-2025-sep-q4.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 4 · ★★☆ · programming
+- [Ν-οστό Στοιχείο Λίστας](../../questions/exams/exam-2026-sep-q4.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 4 · ★★☆ · programming
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Debugging](../../questions/exams/exam-2023-fall-ex1-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 4 · ★★☆ · debug (κεφ. 13)
+- [Η διάταξη των φακέλων](../../questions/slides/slides-lec20-list-layout.md): Διάλεξη 20, διαφάνεια 38 · ★☆☆ · short-answer (κεφ. 20)
+- [Αθροιστής Δέντρων - sumtree](../../questions/exams/exam-2025-jan-q4.md): Εξέταση Ιανουαρίου 2025, Θέμα 4 · ★☆☆ · programming (κεφ. 22)
+- [Δυαδικά δένδρα](../../questions/labs/lab-lab09-tree.md): Εργαστήριο 9, Άσκηση 4 · ★★☆ · programming (κεφ. 22)
+- [Ποιος αλγόριθμος αναζήτησης είναι καλύτερος;](../../questions/slides/slides-lec22-best-search.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 38 (διάλεξη 21: διαφάνεια 60) · ★☆☆ · short-answer (κεφ. 22)
+- [Έλεγχος ύπαρξης σε δυαδικό δέντρο αναζήτησης](../../questions/slides/slides-lec22-bst-exists.md): Διαλέξεις 21–22: Δέντρα, διαφάνειες 35–37 (διάλεξη 21: διαφάνειες 57–59) · ★☆☆ · programming (κεφ. 22)
+- [Πολυπλοκότητα της depth](../../questions/slides/slides-lec22-depth-complexity.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 20 (διάλεξη 21: διαφάνειες 41–42) · ★★☆ · short-answer (κεφ. 22)
+- [Διάσχιση για αποτιμητή εκφράσεων](../../questions/slides/slides-lec22-expression-evaluator.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 29 (διάλεξη 21: διαφάνεια 51) · ★★☆ · short-answer (κεφ. 22)
+- [Λίστα για το BFS και λίστες κάθε τύπου](../../questions/slides/slides-lec22-generic-list.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 33 (διάλεξη 21: διαφάνεια 55) · ★★☆ · short-answer (κεφ. 22)
+- [Συντομότερο μονοπάτι σε δέντρα-λαβύρινθους: BFS ή DFS;](../../questions/slides/slides-lec22-maze-shortest-path.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 40 (διάλεξη 21: διαφάνεια 62) · ★★☆ · short-answer (κεφ. 22)
+- [Κόμβοι τέλειου δυαδικού δέντρου](../../questions/slides/slides-lec22-perfect-tree-nodes.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 10 (διάλεξη 21: διαφάνεια 32) · ★☆☆ · short-answer (κεφ. 22)
+- [Αποθήκευση και αναζήτηση σε 1 PetaByte](../../questions/slides/slides-lec22-petabyte.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 39 (διάλεξη 21: διαφάνεια 61) · ★★☆ · short-answer (κεφ. 22)
+- [Διασχίσεις pre-order, in-order, post-order](../../questions/slides/slides-lec22-traversals.md): Διαλέξεις 21–22: Δέντρα, διαφάνειες 22–28 (διάλεξη 21: διαφάνειες 44–50) · ★☆☆ · trace (κεφ. 22)
+- [Αφαίρεση στοιχείου από δυαδικό δέντρο](../../questions/slides/slides-lec22-tree-delete.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 16 (διάλεξη 21: διαφάνεια 38) · ★★★ · programming (κεφ. 22)
+- [Προσθήκη στοιχείου σε δυαδικό δέντρο](../../questions/slides/slides-lec22-tree-insert.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 16 (διάλεξη 21: διαφάνεια 38) · ★★☆ · programming (κεφ. 22)
+- [Μέγιστο στοιχείο δέντρου: BFS ή DFS;](../../questions/slides/slides-lec22-tree-max.md): Διαλέξεις 21–22: Δέντρα, διαφάνεια 41 (διάλεξη 21: διαφάνεια 63) · ★☆☆ · short-answer (κεφ. 22)
+- [Καθαρή διαχείριση μνήμης](../../questions/labs/lab-lab09-grades-tree.md): Εργαστήριο 9, Άσκηση 5 · ★★☆ · programming (κεφ. 25)
+
 <!-- /exercises -->
 
 ## Ερωτήσεις αυτοαξιολόγησης

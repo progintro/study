@@ -6,7 +6,7 @@ source:
   title: "Εξέταση Σεπτεμβρίου 2026, Θέμα 2"
   url: https://progintro.github.io/exams/2026/progintro-exam-sep-26.pdf
   years: [2026]
-chapters: [10, 6]
+chapters: [10, 25]
 topics: [arrays, loops, undefined-behavior]
 difficulty: 1
 type: trace

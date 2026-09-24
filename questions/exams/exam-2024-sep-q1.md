@@ -6,7 +6,7 @@ source:
   title: "Εξέταση Σεπτεμβρίου 2024, Θέμα 1"
   url: https://progintro.github.io/exams/2024/progintro-exam-sep-24.pdf
   years: [2024]
-chapters: [0, 3]
+chapters: [3, 2]
 topics: [input-output, functions, strings]
 difficulty: 1
 type: programming

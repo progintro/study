@@ -6,8 +6,8 @@ source:
   title: "Εργαστήριο 7, Άσκηση 5"
   url: https://progintro.github.io/lab-material/labs/lab07/
   years: [2025]
-chapters: [12, 13]
-topics: [multidim-arrays, command-line-args, simulation]
+chapters: [13, 12]
+topics: [multidim-arrays, dynamic-memory, command-line-args, simulation]
 difficulty: 3
 type: programming
 ---

@@ -6,7 +6,7 @@ source:
   title: "Εξέταση Ιουλίου 2024, Θέμα 3"
   url: https://progintro.github.io/exams/2024/progintro-exam-jul-24.pdf
   years: [2024]
-chapters: [17, 15, 10]
+chapters: [25, 17, 15]
 topics: [sorting, complexity, problem-solving, arrays]
 difficulty: 3
 type: programming

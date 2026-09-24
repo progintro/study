@@ -7,7 +7,7 @@ source:
   url: https://progintro.github.io/exams/2023/fall/ex3/
   years: [2023]
 chapters: [10, 12]
-topics: [arrays, loops, command-line-args]
+topics: [arrays, loops, command-line-args, input-validation]
 difficulty: 2
 type: programming
 ---

@@ -6,8 +6,8 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 4"
   url: https://progintro.github.io/exams/2023/fall/ex0/
   years: [2023]
-chapters: [7, 2]
-topics: [math-algorithms, integer-representation]
+chapters: [16, 2]
+topics: [math-algorithms, integer-representation, complexity]
 difficulty: 2
 type: programming
 ---

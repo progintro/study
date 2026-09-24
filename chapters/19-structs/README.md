@@ -511,9 +511,9 @@ flowchart LR
   δείκτες σε δομές και `->` 42–45.
 - **Σημειώσεις:** η διάλεξη καλύπτει τις σελ. 109–119 και 126 των σημειώσεων:
   [Κεφάλαιο 7: Απαριθμήσεις, δομές και ενώσεις](https://progintro.github.io/notes/chapters/07-structs/),
-  ενότητες «Δομές» (K04, σελ. 110–117), «Εύρεση τριγώνων μεγίστου και ελαχίστου
-  εμβαδού» (118–120) και «Δημιουργία νέων ονομάτων τύπων» (126–127). Η ενότητα
-  «Απαριθμήσεις» (σελ. 109) δεν καλύπτεται σε αυτή τη διάλεξη.
+  ενότητες «Δομές» (K04, σελ. 109–116), «Εύρεση τριγώνων μεγίστου και ελαχίστου
+  εμβαδού» (117–119) και «Δημιουργία νέων ονομάτων τύπων» (126). Η ενότητα
+  «Απαριθμήσεις» (σελ. 108) δεν καλύπτεται σε αυτή τη διάλεξη.
 - **Εργαστήριο:** [Εργαστήριο 9](https://progintro.github.io/lab-material/labs/lab09/):
   ασκήσεις `point.c`, `person.c`.
 - **Βιβλίο:** K&R, §6.1–6.7 (παραπομπή των σημειώσεων).
@@ -531,6 +531,38 @@ flowchart LR
 ## Ασκήσεις
 
 <!-- exercises -->
+
+### Από τις διαφάνειες
+
+- [Ανάθεση και χρήση πεδίων δομής](../../questions/slides/slides-lec19-field-assignment.md): Διάλεξη 19, διαφάνειες 12–13 · ★☆☆ · trace
+- [Πώς αναπαριστούμε 100 φοιτητές;](../../questions/slides/slides-lec19-many-students.md): Διάλεξη 19, διαφάνειες 6–7 · ★☆☆ · short-answer
+- [Ανάθεση με δομές](../../questions/slides/slides-lec19-struct-assign.md): Διάλεξη 19, διαφάνειες 29–30 · ★☆☆ · trace
+- [Σύγκριση με δομές](../../questions/slides/slides-lec19-struct-compare.md): Διάλεξη 19, διαφάνεια 32 · ★☆☆ · short-answer
+- [Δείκτες σε δομές: διαφορά ημερομηνιών](../../questions/slides/slides-lec19-date-pointers.md): Διάλεξη 19, διαφάνειες 42–43 · ★★☆ · trace
+- [Padding: η σειρά των πεδίων μετράει](../../questions/slides/slides-lec19-padding-interleaved.md): Διάλεξη 19, διαφάνειες 25–27 · ★★☆ · trace
+- [Padding: το μέγεθος ενός pixel](../../questions/slides/slides-lec19-padding-pixel.md): Διάλεξη 19, διαφάνειες 22–24 · ★★☆ · trace
+- [Το μέγεθος του struct student](../../questions/slides/slides-lec19-sizeof-student.md): Διάλεξη 19, διαφάνειες 20–21, 28 · ★★☆ · trace
+
+### Από τα εργαστήρια
+
+- [Δομές και συναρτήσεις](../../questions/labs/lab-lab09-point.md): Εργαστήριο 9, Άσκηση 1 · ★☆☆ · programming
+- [Δομές και δείκτες](../../questions/labs/lab-lab09-person.md): Εργαστήριο 9, Άσκηση 2 · ★★☆ · programming
+
+### Από τα θέματα εξετάσεων
+
+- [Πρωτάθλημα](../../questions/exams/exam-2023-fall-ex13-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 3 · ★★★ · programming
+- [World Cup 2026](../../questions/exams/exam-2026-jun-q4.md): Εξέταση Ιουνίου 2026, Θέμα 4 · ★★★ · programming
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Πλησιάζοντας στον Στόχο](../../questions/exams/exam-2023-fall-ex10-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 4 · ★★☆ · programming (κεφ. 17)
+- [Καλύτερο Ταίριασμα](../../questions/exams/exam-2023-fall-ex0-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 3 · ★★★ · programming (κεφ. 18)
+- [Μετρήσεις Θερμοκρασίας](../../questions/exams/exam-2023-fall-ex14-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 3 · ★★☆ · programming (κεφ. 18)
+- [Ταξινομώντας τα Άλματα](../../questions/exams/exam-2023-fall-ex15-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 3 · ★★★ · programming (κεφ. 18)
+- [Μίνι Βάση Δεδομένων](../../questions/exams/exam-2023-fall-ex2-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 3 · ★★★ · programming (κεφ. 18)
+- [Συνδεδεμένες λίστες](../../questions/labs/lab-lab09-grades.md): Εργαστήριο 9, Άσκηση 3 · ★★☆ · programming (κεφ. 21)
+- [Η Newton-Raphson Ξαναχτυπά! (Bonus)](../../questions/homework/hw-2023-hw3-fractal.md): Εργασία 3 (2023-24), Άσκηση 2 (Bonus) και 2.1 (Bonus) · ★★★ · programming (κεφ. 23)
+
 <!-- /exercises -->
 
 ## Ερωτήσεις αυτοαξιολόγησης

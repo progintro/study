@@ -6,7 +6,7 @@ source:
   title: "Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 4"
   url: https://progintro.github.io/exams/2023/fall/ex8/
   years: [2023]
-chapters: [17, 18, 14]
+chapters: [18, 13, 14]
 topics: [sorting, files, strings, dynamic-memory]
 difficulty: 3
 type: programming

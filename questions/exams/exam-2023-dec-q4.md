@@ -6,7 +6,7 @@ source:
   title: "Κατατακτήριες Δεκεμβρίου 2023, Θέμα 4"
   url: https://progintro.github.io/exams/2023/progintro-exam-dec-23.pdf
   years: [2023]
-chapters: [10, 15, 13]
+chapters: [25, 15, 13]
 topics: [arrays, complexity, dynamic-memory, problem-solving]
 difficulty: 3
 type: programming
