@@ -36,6 +36,10 @@ TYPES = {"programming", "short-answer", "trace", "debug", "multiple-choice", "to
 STARS = {1: "★☆☆", 2: "★★☆", 3: "★★★"}
 BEGIN, END = "<!-- exercises -->", "<!-- /exercises -->"
 SITE = "https://progintro.github.io/study"
+NOTE_2023 = ("Στα θέματα της online εξέτασης Δεκεμβρίου 2023 (`exam-2023-fall-*`) ισχύει "
+             "για όλες τις ασκήσεις: τα προγράμματα πρέπει να είναι ευανάγνωστα, αποδοτικά σε "
+             "χώρο και χρόνο και να έχουν έξοδο ίδια με τα παραδείγματα εκτέλεσης. Για είσοδο "
+             "εκτός προδιαγραφών το πρόγραμμα τερματίζει με exit code 1 και μήνυμα σφάλματος.")
 
 
 def manifest():
@@ -144,7 +148,8 @@ def index(qs, lectures):
            "εργασίες και τα θέματα εξετάσεων, ανά κεφάλαιο. Κάθε άσκηση έχει υπόδειξη,",
            "όχι λύση. Δυσκολία: ★☆☆ άμεση εφαρμογή, ★★☆ συνδυασμός ιδεών, ★★★ επιπέδου εξέτασης.",
            "",
-           f"Σε μορφή για εργαλεία: [`questions.json`]({SITE}/downloads/questions.json).", ""]
+           f"Σε μορφή για εργαλεία: [`questions.json`]({SITE}/downloads/questions.json).", "",
+           NOTE_2023, ""]
     for l in lectures:
         group = sorted((q for q in qs if q["meta"]["chapters"][0] == l["n"]),
                        key=lambda q: (list(KINDS).index(q["path"].split(os.sep)[1]),
@@ -197,7 +202,7 @@ def home_table(m, qs):
 
 def build(qs, lectures, outdir):
     os.makedirs(outdir, exist_ok=True)
-    md = ["# Τράπεζα ασκήσεων", ""]
+    md = ["# Τράπεζα ασκήσεων", "", NOTE_2023, ""]
     for l in lectures:
         group = sorted((q for q in qs if q["meta"]["chapters"][0] == l["n"]),
                        key=lambda q: (list(KINDS).index(q["path"].split(os.sep)[1]),
