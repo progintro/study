@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 """Build everything that derives from the question bank in questions/.
 
-  * each chapter's «Ασκήσεις» list, between <!-- exercises --> and <!-- /exercises -->
-    (only the questions whose *primary* chapter is this one get a full entry; the
-    ones that merely also need it are listed under «Σχετικές»);
+  * three generated blocks in each chapter (only questions whose *primary* chapter is
+    this one, except «Σχετικές»):
+      - <!-- misconceptions -->, closing «Συχνά λάθη»: the chapter's Kahoot questions
+        that have a «Συχνή παρανόηση», hardest first, with the class's % correct;
+      - <!-- kahoot -->, closing «Ερωτήσεις κατανόησης»: all the chapter's Kahoot
+        questions, easiest first, with the % correct;
+      - <!-- exercises -->, the «Ασκήσεις» ladder: slide questions (warm-up), labs,
+        homework, exams, each easiest first, then «Σχετικές» from other chapters;
   * questions/README.md, the index by chapter and by source;
   * the chapter table on the home page, README.md, between <!-- chapters --> markers;
   * with --build DIR: DIR/questions.md (every statement, grouped by chapter, for the
@@ -25,16 +30,18 @@ import sys
 import yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-KINDS = {  # directory -> (front-matter kind, heading in a chapter)
-    "slides": ("slides", "Από τις διαφάνειες"),
-    "labs": ("lab", "Από τα εργαστήρια"),
-    "homework": ("homework", "Από τις εργασίες"),
-    "exams": ("exam", "Από τα θέματα εξετάσεων"),
-    "kahoot": ("kahoot", "Από τα Kahoot στο αμφιθέατρο"),
+KINDS = {  # directory -> (front-matter kind, heading in a chapter), in ladder order
+    "slides": ("slides", "Ζέσταμα: από τις διαφάνειες"),
+    "labs": ("lab", "Εργαστήριο"),
+    "homework": ("homework", "Εργασίες"),
+    "exams": ("exam", "Θέματα εξετάσεων"),
+    "kahoot": ("kahoot", "Kahoot από το αμφιθέατρο"),
 }
 TYPES = {"programming", "short-answer", "trace", "debug", "multiple-choice", "tooling"}
 STARS = {1: "★☆☆", 2: "★★☆", 3: "★★★"}
 BEGIN, END = "<!-- exercises -->", "<!-- /exercises -->"
+MISC = ("<!-- misconceptions -->", "<!-- /misconceptions -->")
+KAHOOT = ("<!-- kahoot -->", "<!-- /kahoot -->")
 SITE = "https://progintro.github.io/study"
 NOTE_2023 = ("Στα θέματα της online εξέτασης Δεκεμβρίου 2023 (`exam-2023-fall-*`) ισχύει "
              "για όλες τις ασκήσεις: τα προγράμματα πρέπει να είναι ευανάγνωστα, αποδοτικά σε "
@@ -121,7 +128,13 @@ def entry(q, rel):
     return f"- [{m['title']}]({link}): {src} · {STARS[m['difficulty']]} · {m['type']}{acc}"
 
 
+def accuracy(q):
+    return (q["meta"].get("stats") or {}).get("accuracy", 0)
+
+
 def chapter_block(n, qs):
+    """«Ασκήσεις»: everything but Kahoot, from warm-up to exam level."""
+    qs = [q for q in qs if q["meta"]["kind"] != "kahoot"]
     primary = [q for q in qs if q["meta"]["chapters"][0] == n]
     related = [q for q in qs if n in q["meta"]["chapters"][1:]]
     out = [BEGIN, ""]
@@ -129,8 +142,7 @@ def chapter_block(n, qs):
         out += ["Δεν υπάρχουν ακόμα ασκήσεις για αυτό το κεφάλαιο.", ""]
     for d, (kind, heading) in KINDS.items():
         group = sorted((q for q in primary if q["meta"]["kind"] == kind),
-                       key=lambda q: ((q["meta"].get("stats") or {}).get("accuracy", 0), q["meta"]["id"])
-                       if kind == "kahoot" else (q["meta"]["difficulty"], q["meta"]["id"]))
+                       key=lambda q: (q["meta"]["difficulty"], q["meta"]["id"]))
         if group:
             out += [f"### {heading}", ""] + [entry(q, "../../") for q in group] + [""]
     if related:
@@ -139,6 +151,42 @@ def chapter_block(n, qs):
                 for q in sorted(related, key=lambda q: (q["meta"]["chapters"][0], q["meta"]["id"]))]
         out += [""]
     out.append(END)
+    return "\n".join(out)
+
+
+def kahoot_block(n, qs):
+    """«Ερωτήσεις κατανόησης»: the chapter's Kahoot questions, easiest first."""
+    group = sorted((q for q in qs if q["meta"]["kind"] == "kahoot" and q["meta"]["chapters"][0] == n),
+                   key=lambda q: (-accuracy(q), q["meta"]["id"]))
+    out = [KAHOOT[0], ""]
+    if group:
+        out += ["### Kahoot από το αμφιθέατρο", "",
+                "Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που "
+                "απάντησαν σωστά.", ""]
+        out += [f"- [{q['meta']['title']}](../../{q['path']}): {accuracy(q)}% σωστές απαντήσεις"
+                for q in group] + [""]
+    out.append(KAHOOT[1])
+    return "\n".join(out)
+
+
+def misconception(q):
+    """The first paragraph of a question's «Συχνή παρανόηση» section, or None."""
+    m = re.search(r"^## Συχνή παρανόηση\n+(.+?)(?:\n\n|\n## |\Z)", q["body"], re.M | re.S)
+    return " ".join(m.group(1).split()) if m else None
+
+
+def misconceptions_block(n, qs):
+    """«Συχνά λάθη»: what the class actually got wrong, hardest first."""
+    group = sorted((q for q in qs if q["meta"]["kind"] == "kahoot" and q["meta"]["chapters"][0] == n
+                    and misconception(q)), key=lambda q: (accuracy(q), q["meta"]["id"]))
+    out = [MISC[0], ""]
+    if group:
+        out += ["### Τι δυσκόλεψε την τάξη", "",
+                "Από τα Kahoot των διαλέξεων: οι ερωτήσεις όπου μια λάθος απάντηση "
+                "μάζεψε πολλές ψήφους, με το ποσοστό σωστών απαντήσεων.", ""]
+        out += [f"- **[{q['meta']['title']}](../../{q['path']})** ({accuracy(q)}% σωστές): {misconception(q)}"
+                for q in group] + [""]
+    out.append(MISC[1])
     return "\n".join(out)
 
 
@@ -249,10 +297,16 @@ def main(argv):
         if not os.path.exists(path):
             continue
         text = open(path, encoding="utf-8").read()
-        new = fill(text, chapter_block(l["n"], qs))
-        if new is None:
-            stale.append(f"{os.path.relpath(path, ROOT)}: no {BEGIN} markers")
-        elif new != text:
+        new = text
+        for markers, block in ((MISC, misconceptions_block(l["n"], qs)),
+                               (KAHOOT, kahoot_block(l["n"], qs)),
+                               ((BEGIN, END), chapter_block(l["n"], qs))):
+            filled = fill(new, block, *markers)
+            if filled is None:
+                stale.append(f"{os.path.relpath(path, ROOT)}: no {markers[0]} markers")
+            else:
+                new = filled
+        if new != text:
             stale.append(os.path.relpath(path, ROOT))
             if not check:
                 open(path, "w", encoding="utf-8").write(new)

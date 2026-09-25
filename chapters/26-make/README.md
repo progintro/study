@@ -625,30 +625,6 @@ cc   main.o primes.o   -o main
 | ενσωματωμένος κανόνας | built-in rule | Rule που το Make ξέρει ήδη (π.χ. `.o` από `.c`) |
 | παρωχημένο | out of date | Target που λείπει ή είναι παλαιότερο από prerequisite του |
 
-## Συχνά λάθη
-
-- **Κενά αντί για tab στο recipe.** Το GNU Make απαντά
-  `Makefile:2: *** missing separator.  Stop.` Ρυθμίστε τον editor να βάζει tab στα
-  Makefiles.
-- **`#include <math.h>` χωρίς `-lm`.** `undefined reference to 'sqrt'`: είναι linking
-  error, όχι compiler error· προσθέστε `-lm` στη σύνδεση (ή `LDLIBS = -lm` όταν
-  χρησιμοποιείτε built-in rules).
-- **Μπέρδεμα compiler error και linking error.** Αν το μήνυμα λέει `ld returned 1 exit
-  status`, ψάξτε για βιβλιοθήκη ή `.o` που λείπει από την εντολή σύνδεσης, όχι για
-  λάθος σύνταξης.
-- **Ξεχασμένο αρχείο επικεφαλίδας στα prerequisites.** Αν το `main.o` δεν εξαρτάται
-  από το `primes.h`, μια αλλαγή στο `primes.h` δεν ξαναφτιάχνει το `main.o` και το
-  πρόγραμμα τρέχει με παλιό κώδικα. Βάλτε κάθε `.h` που κάνει `#include` ένα `.c` στα
-  prerequisites του `.o` του.
-- **Λάθος πρώτο rule.** Αν πρώτο στο αρχείο είναι το `primes.o: …`, το σκέτο `make`
-  φτιάχνει μόνο αυτό. Βάλτε πρώτο το rule του εκτελέσιμου.
-- **Εισαγωγικά στην τιμή ενός macro.** `CC = "gcc"` κάνει τα εισαγωγικά μέρος του
-  string· γράψτε `CC = gcc`.
-- **`:=` όπου χρειάζεται `=`.** Με `C := $(B)` πριν οριστεί το `B`, το `C` μένει κενό.
-- **Build με script σε μεγάλο project.** Κάθε αλλαγή ξαναμεταγλωττίζει τα πάντα· στο
-  άλλο άκρο, το χειροκίνητο compile μόνο όσων αλλάξατε κάποτε ξεχνά ένα αρχείο και
-  τρέχετε παλιό `.o`.
-
 ## Διάβασμα
 
 - **Διαφάνειες:** [How to Make?](https://github.com/progintro/progintro.github.io/releases/download/2025/make.pdf),
@@ -674,27 +650,35 @@ cc   main.o primes.o   -o main
   [Stephen C. Johnson](https://en.wikipedia.org/wiki/Stephen_C._Johnson),
   [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy).
 
-## Ασκήσεις
+## Συχνά λάθη
 
-<!-- exercises -->
+- **Κενά αντί για tab στο recipe.** Το GNU Make απαντά
+  `Makefile:2: *** missing separator.  Stop.` Ρυθμίστε τον editor να βάζει tab στα
+  Makefiles.
+- **`#include <math.h>` χωρίς `-lm`.** `undefined reference to 'sqrt'`: είναι linking
+  error, όχι compiler error· προσθέστε `-lm` στη σύνδεση (ή `LDLIBS = -lm` όταν
+  χρησιμοποιείτε built-in rules).
+- **Μπέρδεμα compiler error και linking error.** Αν το μήνυμα λέει `ld returned 1 exit
+  status`, ψάξτε για βιβλιοθήκη ή `.o` που λείπει από την εντολή σύνδεσης, όχι για
+  λάθος σύνταξης.
+- **Ξεχασμένο αρχείο επικεφαλίδας στα prerequisites.** Αν το `main.o` δεν εξαρτάται
+  από το `primes.h`, μια αλλαγή στο `primes.h` δεν ξαναφτιάχνει το `main.o` και το
+  πρόγραμμα τρέχει με παλιό κώδικα. Βάλτε κάθε `.h` που κάνει `#include` ένα `.c` στα
+  prerequisites του `.o` του.
+- **Λάθος πρώτο rule.** Αν πρώτο στο αρχείο είναι το `primes.o: …`, το σκέτο `make`
+  φτιάχνει μόνο αυτό. Βάλτε πρώτο το rule του εκτελέσιμου.
+- **Εισαγωγικά στην τιμή ενός macro.** `CC = "gcc"` κάνει τα εισαγωγικά μέρος του
+  string· γράψτε `CC = gcc`.
+- **`:=` όπου χρειάζεται `=`.** Με `C := $(B)` πριν οριστεί το `B`, το `C` μένει κενό.
+- **Build με script σε μεγάλο project.** Κάθε αλλαγή ξαναμεταγλωττίζει τα πάντα· στο
+  άλλο άκρο, το χειροκίνητο compile μόνο όσων αλλάξατε κάποτε ξεχνά ένα αρχείο και
+  τρέχετε παλιό `.o`.
 
-### Από τις διαφάνειες
+<!-- misconceptions -->
 
-- [Τα στάδια του C build process](../../questions/slides/slides-lecmake-build-pipeline.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνεια 5 · ★☆☆ · short-answer
-- [Script ή recompile με το χέρι;](../../questions/slides/slides-lecmake-forgot-recompile.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 17-21 · ★☆☆ · short-answer
-- [Διαφορετικά flags ανά αρχείο](../../questions/slides/slides-lecmake-per-file-flags.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 10-14 · ★☆☆ · tooling
-- [Compiler error ή linking error; (math.h και libm.so)](../../questions/slides/slides-lecmake-sqrt-errors.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 6-8 · ★☆☆ · debug
-- [Ένα Makefile 2-3 γραμμών](../../questions/slides/slides-lecmake-short-makefile.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 31-39 · ★★☆ · tooling
+<!-- /misconceptions -->
 
-### Σχετικές ασκήσεις από άλλα κεφάλαια
-
-- [Νέα Μηχανή Σκακιού (chess engine)](../../questions/homework/hw-2024-hw3-chess.md): Εργασία 3 (2024-25), Άσκηση 1 · ★★★ · programming (κεφ. 22)
-- [Νέα Μηχανή Go (goteam)](../../questions/homework/hw-2025-hw3-goteam.md): Εργασία 3 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 22)
-- [Σπάστε το πρόγραμμά σας σε αρθρώματα](../../questions/labs/lab-lab10-more-modules.md): Εργαστήριο 10, Άσκηση 5 · ★★☆ · tooling (κεφ. 23)
-
-<!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
+## Ερωτήσεις κατανόησης
 
 1. Ποια τρία στάδια μεσολαβούν από ένα `.c` σε ένα εκτελέσιμο, και τι βγάζει το
    καθένα;[^q1]
@@ -709,6 +693,30 @@ cc   main.o primes.o   -o main
 9. Στο rule `main: main.o primes.o`, τι τιμή έχουν τα `$@`, `$^` και `$<`;[^q9]
 10. Τι σημαίνει `%.o: %.c`, και γιατί ένα Makefile για C μπορεί να είναι 2–3
     γραμμές;[^q10]
+
+<!-- kahoot -->
+
+<!-- /kahoot -->
+
+## Ασκήσεις
+
+<!-- exercises -->
+
+### Ζέσταμα: από τις διαφάνειες
+
+- [Τα στάδια του C build process](../../questions/slides/slides-lecmake-build-pipeline.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνεια 5 · ★☆☆ · short-answer
+- [Script ή recompile με το χέρι;](../../questions/slides/slides-lecmake-forgot-recompile.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 17-21 · ★☆☆ · short-answer
+- [Διαφορετικά flags ανά αρχείο](../../questions/slides/slides-lecmake-per-file-flags.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 10-14 · ★☆☆ · tooling
+- [Compiler error ή linking error; (math.h και libm.so)](../../questions/slides/slides-lecmake-sqrt-errors.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 6-8 · ★☆☆ · debug
+- [Ένα Makefile 2-3 γραμμών](../../questions/slides/slides-lecmake-short-makefile.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 31-39 · ★★☆ · tooling
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Νέα Μηχανή Σκακιού (chess engine)](../../questions/homework/hw-2024-hw3-chess.md): Εργασία 3 (2024-25), Άσκηση 1 · ★★★ · programming (κεφ. 22)
+- [Νέα Μηχανή Go (goteam)](../../questions/homework/hw-2025-hw3-goteam.md): Εργασία 3 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 22)
+- [Σπάστε το πρόγραμμά σας σε αρθρώματα](../../questions/labs/lab-lab10-more-modules.md): Εργαστήριο 10, Άσκηση 5 · ★★☆ · tooling (κεφ. 23)
+
+<!-- /exercises -->
 
 [^q1]: Preprocessor (προεπεξεργασμένο `.c`), compiler (object file `.o`), linker
     (εκτελέσιμο, από τα `.o` και τις βιβλιοθήκες).

@@ -34,7 +34,7 @@ Read tool with `pages`, at most 20 per call).
 make fetch          # download slides + homework PDFs (needs gh)
 make lint           # chapters (tools/lint.py --strict) + questions (gen-exercises --lint)
 make check-code     # every complete C program in the chapters compiles
-make exercises      # regenerate chapter exercise lists, questions/README.md, home table
+make exercises      # regenerate the chapters' generated blocks, questions/README.md, home table, glossary
 make check          # all of the above in check mode, as CI runs it
 make                # PDFs, study.pdf, study-md.zip, questions.json, llms*.txt (Docker)
 ```
@@ -43,7 +43,8 @@ Do not use `make -j`: parallel pandoc containers have produced truncated PDFs.
 
 ## Rules
 
-- The content between `<!-- exercises -->` markers, in `questions/README.md`, and
+- The content between the `<!-- exercises -->`, `<!-- kahoot -->` and
+  `<!-- misconceptions -->` markers, in `questions/README.md`, `glossary.md`, and
   between `<!-- chapters -->` markers in `README.md` is **generated**. Edit
   `questions/` and run `make exercises`.
 - Keep the chapter front matter and the `<!-- {% raw %} -->` wrapper (see STYLE.md).

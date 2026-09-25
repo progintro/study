@@ -527,6 +527,19 @@ int max(int a, int b) {
 | προτεραιότητα | precedence | Ποιος τελεστής εφαρμόζεται πρώτος |
 | προσεταιριστικότητα | associativity | Σειρά υπολογισμού για ίση προτεραιότητα |
 
+## Διάβασμα
+
+- **Διαφάνειες:** [Διάλεξη 4](https://github.com/progintro/progintro.github.io/releases/download/2025/lec04.pdf), σελ. 1–44. Pair programming: σελ. 5–7· πρόγραμμα βαθμολογίας και `argc`/`argv`/`atoi`: σελ. 8–10, 38· version control και git: σελ. 11–19· τελεστές: σελ. 20–37· προτεραιότητα και προσεταιριστικότητα: σελ. 39–41.
+- **Σημειώσεις:** [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Εντολές αντικατάστασης, τελεστές και παραστάσεις» (K04, σελ. 34–43). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 43, δηλαδή ολόκληρη αυτή την ενότητα.
+- **Εργαστήριο:** [Εργαστήριο 1](https://progintro.github.io/lab-material/labs/lab01/): «Βήμα 6: Git και GitHub» (λογαριασμός, κλειδί SSH, `git config`) και «Άσκηση 1: Το πρώτο σας repository (info.txt)».
+- **Βιβλίο:** K&R, §2.5–§2.12, όπως προτείνουν οι σημειώσεις.
+- **Άλλα:**
+  - Wikipedia (σελ. 5): [Software development](https://en.wikipedia.org/wiki/Software_development), [Computer programmer](https://en.wikipedia.org/wiki/Computer_programmer), [Source code](https://en.wikipedia.org/wiki/Source_code), [Code review](https://en.wikipedia.org/wiki/Code_review)
+  - Wikipedia: [Git](https://en.wikipedia.org/wiki/Git), [Arity](https://en.wikipedia.org/wiki/Arity), [Comma operator](https://en.wikipedia.org/wiki/Comma_operator), [Value (lvalues και rvalues)](https://en.wikipedia.org/wiki/Value_(computer_science))
+  - [Type conversion in C](https://www.geeksforgeeks.org/type-conversion-c/), [List of operators](https://www.tutorialspoint.com/cprogramming/c_operators.htm), [Precedence and associativity (cppreference)](https://en.cppreference.com/w/c/language/operator_precedence)
+  - Προαιρετικά: [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf), [Git Tutorial](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+  - Για το pair programming: [Jeff Dean quotes](https://www.brainyquote.com/authors/jeff-dean-quotes), [Jeff and Sanjay (The New Yorker)](https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge)
+
 ## Συχνά λάθη
 
 - **`git commit` χωρίς `git add`.** Το νέο αρχείο μένει untracked και δεν ανεβαίνει
@@ -553,24 +566,53 @@ int max(int a, int b) {
 - **Υποθέσεις για την προτεραιότητα.** `x & 1 == 0` σημαίνει `x & (1 == 0)`, γιατί το
   `==` (θέση 7) προηγείται του `&` (θέση 8). Διόρθωση: `(x & 1) == 0`.
 
-## Διάβασμα
+<!-- misconceptions -->
 
-- **Διαφάνειες:** [Διάλεξη 4](https://github.com/progintro/progintro.github.io/releases/download/2025/lec04.pdf), σελ. 1–44. Pair programming: σελ. 5–7· πρόγραμμα βαθμολογίας και `argc`/`argv`/`atoi`: σελ. 8–10, 38· version control και git: σελ. 11–19· τελεστές: σελ. 20–37· προτεραιότητα και προσεταιριστικότητα: σελ. 39–41.
-- **Σημειώσεις:** [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Εντολές αντικατάστασης, τελεστές και παραστάσεις» (K04, σελ. 34–43). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 43, δηλαδή ολόκληρη αυτή την ενότητα.
-- **Εργαστήριο:** [Εργαστήριο 1](https://progintro.github.io/lab-material/labs/lab01/): «Βήμα 6: Git και GitHub» (λογαριασμός, κλειδί SSH, `git config`) και «Άσκηση 1: Το πρώτο σας repository (info.txt)».
-- **Βιβλίο:** K&R, §2.5–§2.12, όπως προτείνουν οι σημειώσεις.
-- **Άλλα:**
-  - Wikipedia (σελ. 5): [Software development](https://en.wikipedia.org/wiki/Software_development), [Computer programmer](https://en.wikipedia.org/wiki/Computer_programmer), [Source code](https://en.wikipedia.org/wiki/Source_code), [Code review](https://en.wikipedia.org/wiki/Code_review)
-  - Wikipedia: [Git](https://en.wikipedia.org/wiki/Git), [Arity](https://en.wikipedia.org/wiki/Arity), [Comma operator](https://en.wikipedia.org/wiki/Comma_operator), [Value (lvalues και rvalues)](https://en.wikipedia.org/wiki/Value_(computer_science))
-  - [Type conversion in C](https://www.geeksforgeeks.org/type-conversion-c/), [List of operators](https://www.tutorialspoint.com/cprogramming/c_operators.htm), [Precedence and associativity (cppreference)](https://en.cppreference.com/w/c/language/operator_precedence)
-  - Προαιρετικά: [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf), [Git Tutorial](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
-  - Για το pair programming: [Jeff Dean quotes](https://www.brainyquote.com/authors/jeff-dean-quotes), [Jeff and Sanjay (The New Yorker)](https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge)
+### Τι δυσκόλεψε την τάξη
+
+Από τα Kahoot των διαλέξεων: οι ερωτήσεις όπου μια λάθος απάντηση μάζεψε πολλές ψήφους, με το ποσοστό σωστών απαντήσεων.
+
+- **[Απομόνωση του πιο σημαντικού bit](../../questions/kahoot/kahoot-msb-mask.md)** (14% σωστές): Το 29% διάλεξε `byte & 0xFF`: η μάσκα `0xFF` έχει και τα 8 bits στο 1, άρα κρατάει ολόκληρο το byte αντί να απομονώνει μόνο το πιο σημαντικό.
+- **[0x42 & 0xFF](../../questions/kahoot/kahoot-and-mask-ff.md)** (18% σωστές): Το 30% απάντησε `0`, πιθανότατα επειδή μπέρδεψε το bitwise `&` με το λογικό `&&` ή υπέθεσε ότι το AND «σβήνει» τα bits· στην πραγματικότητα το AND με `0xFF` αφήνει το byte ανέπαφο.
+- **[0xbeef | 0xcafe0000](../../questions/kahoot/kahoot-or-combine.md)** (29% σωστές): Το 29% απάντησε `0xbeefcafe`, διαβάζοντας το OR σαν «παράθεση με τη σειρά που γράφονται»· όμως το OR δεν μετακινεί bits, το καθένα μένει στη θέση του, και το `0xcafe` βρίσκεται στα πάνω 16 bits.
+- **[Ποιες είναι εντολές git;](../../questions/kahoot/kahoot-git-commands.md)** (34% σωστές): Το 35% διάλεξε μόνο `git push` και `git commit`, ξεχνώντας το `git status`, που δεν αλλάζει τίποτα αλλά δείχνει ποια αρχεία έχουν αλλάξει ή είναι staged.
+
+<!-- /misconceptions -->
+
+## Ερωτήσεις κατανόησης
+
+1. Ποιοι είναι οι δύο ρόλοι στο pair programming και τι κάνει ο καθένας;[^q1]
+2. Αν τρέξετε `./grade 70 80 100`, ποια είναι η τιμή του `argc` και τι περιέχει το `argv[2]`;[^q2]
+3. Σε ποια κατάσταση είναι ένα αρχείο που μόλις δημιουργήσατε με `touch` και σε ποια μετά το `git add`;[^q3]
+4. Κάνατε `git commit` αλλά οι αλλαγές δεν φαίνονται στο GitHub. Γιατί;[^q4]
+5. Ποια η τιμή των `85 / 2`, `85.0 / 2`, `7 % 2` και `-5 && 42`;[^q5]
+6. Τι επιστρέφει το `(int)-42.67`, και γιατί όχι `-43`;[^q6]
+7. Με `a = 3`, ποιες είναι οι τιμές των `a` και `b` μετά το `b = a++ * 2;`;[^q7]
+8. Γιατί στο πρόγραμμα βαθμολογίας γράφουμε `final_exam*50/100` και όχι `50/100*final_exam`;[^q8]
+
+<!-- kahoot -->
+
+### Kahoot από το αμφιθέατρο
+
+Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που απάντησαν σωστά.
+
+- [Ξέχασα κάτι στο git;](../../questions/kahoot/kahoot-git-forgot-commit.md): 95% σωστές απαντήσεις
+- [Git και GitHub](../../questions/kahoot/kahoot-git-vs-github.md): 82% σωστές απαντήσεις
+- [0xFF | 0x42](../../questions/kahoot/kahoot-or-mask-ff.md): 57% σωστές απαντήσεις
+- [3 << 2](../../questions/kahoot/kahoot-shift-left.md): 55% σωστές απαντήσεις
+- [Ποιες είναι εντολές git;](../../questions/kahoot/kahoot-git-commands.md): 34% σωστές απαντήσεις
+- [Η σειρά των εντολών git](../../questions/kahoot/kahoot-git-order.md): 34% σωστές απαντήσεις
+- [0xbeef | 0xcafe0000](../../questions/kahoot/kahoot-or-combine.md): 29% σωστές απαντήσεις
+- [0x42 & 0xFF](../../questions/kahoot/kahoot-and-mask-ff.md): 18% σωστές απαντήσεις
+- [Απομόνωση του πιο σημαντικού bit](../../questions/kahoot/kahoot-msb-mask.md): 14% σωστές απαντήσεις
+
+<!-- /kahoot -->
 
 ## Ασκήσεις
 
 <!-- exercises -->
 
-### Από τις διαφάνειες
+### Ζέσταμα: από τις διαφάνειες
 
 - [Η τιμή του 0xbeef | 0xcafe0000](../../questions/slides/slides-lec04-cafebeef.md): Διάλεξη 4: Git και Τελεστές, διαφάνεια 30 · ★☆☆ · multiple-choice
 - [Ο κύκλος clone, add, commit, push, pull](../../questions/slides/slides-lec04-git-cycle.md): Διάλεξη 4: Git και Τελεστές, διαφάνειες 15-18 · ★☆☆ · tooling
@@ -583,35 +625,22 @@ int max(int a, int b) {
 - [Προτεραιότητα και προσεταιριστικότητα](../../questions/slides/slides-lec04-precedence.md): Διάλεξη 4: Git και Τελεστές, διαφάνεια 39 · ★☆☆ · trace
 - [Τι επιστρέφει το (double)3/4;](../../questions/slides/slides-lec04-cast-division.md): Διάλεξη 4: Git και Τελεστές, διαφάνεια 32 · ★★☆ · trace
 
-### Από τα εργαστήρια
+### Εργαστήριο
 
 - [Το πρώτο σας repository](../../questions/labs/lab-lab01-info.md): Εργαστήριο 1, Άσκηση 1 · ★☆☆ · tooling
 
-### Από τις εργασίες
+### Εργασίες
 
 - [Νέο URL στο GitHub (pages)](../../questions/homework/hw-2025-hw0-pages.md): Εργασία 0 (2025-26), Άσκηση 1 · ★☆☆ · tooling
 
-### Από τα θέματα εξετάσεων
+### Θέματα εξετάσεων
 
 - [Άρτια Bits](../../questions/exams/exam-2023-fall-ex8-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 1 · ★☆☆ · programming
-
-### Από τα Kahoot στο αμφιθέατρο
-
-- [Απομόνωση του πιο σημαντικού bit](../../questions/kahoot/kahoot-msb-mask.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 14% σωστές απαντήσεις
-- [0x42 & 0xFF](../../questions/kahoot/kahoot-and-mask-ff.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 18% σωστές απαντήσεις
-- [0xbeef | 0xcafe0000](../../questions/kahoot/kahoot-or-combine.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 29% σωστές απαντήσεις
-- [Ποιες είναι εντολές git;](../../questions/kahoot/kahoot-git-commands.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 34% σωστές απαντήσεις
-- [Η σειρά των εντολών git](../../questions/kahoot/kahoot-git-order.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · short-answer · 34% σωστές απαντήσεις
-- [3 << 2](../../questions/kahoot/kahoot-shift-left.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★☆ · multiple-choice · 55% σωστές απαντήσεις
-- [0xFF | 0x42](../../questions/kahoot/kahoot-or-mask-ff.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
-- [Git και GitHub](../../questions/kahoot/kahoot-git-vs-github.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★☆☆ · multiple-choice · 82% σωστές απαντήσεις
-- [Ξέχασα κάτι στο git;](../../questions/kahoot/kahoot-git-forgot-commit.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★☆☆ · multiple-choice · 95% σωστές απαντήσεις
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Ξεκινώντας με την γραμμή εντολών (bandit)](../../questions/homework/hw-2023-hw0-bandit.md): Εργασία 0 (2023-24), Άσκηση 2 · ★★☆ · tooling (κεφ. 1)
 - [Παιχνίδια με Κονσόλα (cmdline)](../../questions/homework/hw-2025-hw0-cmdline.md): Εργασία 0 (2025-26), Άσκηση 2 · ★★☆ · tooling (κεφ. 1)
-- [Το 2ο όρισμα του echo](../../questions/kahoot/kahoot-echo-second-arg.md): Kahoot «Command Line» (διάλεξη 1) · ★☆☆ · multiple-choice · 73% σωστές απαντήσεις (κεφ. 1)
 - [Κάντο όπως ο Βιετά](../../questions/exams/exam-2023-dec-q1.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 1 · ★★☆ · programming (κεφ. 6)
 - [Ασημένιο Κλάσμα](../../questions/exams/exam-2023-fall-ex10-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 2 · ★★☆ · programming (κεφ. 6)
 - [Κάντο όπως ο Βιετά](../../questions/exams/exam-2023-fall-ex13-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 1 · ★★☆ · programming (κεφ. 6)
@@ -626,17 +655,6 @@ int max(int a, int b) {
 - [Το στοιχείο χωρίς ζευγάρι](../../questions/slides/slides-lec16-single-unpaired.md): Διάλεξη 16, διαφάνεια 14 · ★★☆ · programming (κεφ. 16)
 
 <!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
-
-1. Ποιοι είναι οι δύο ρόλοι στο pair programming και τι κάνει ο καθένας;[^q1]
-2. Αν τρέξετε `./grade 70 80 100`, ποια είναι η τιμή του `argc` και τι περιέχει το `argv[2]`;[^q2]
-3. Σε ποια κατάσταση είναι ένα αρχείο που μόλις δημιουργήσατε με `touch` και σε ποια μετά το `git add`;[^q3]
-4. Κάνατε `git commit` αλλά οι αλλαγές δεν φαίνονται στο GitHub. Γιατί;[^q4]
-5. Ποια η τιμή των `85 / 2`, `85.0 / 2`, `7 % 2` και `-5 && 42`;[^q5]
-6. Τι επιστρέφει το `(int)-42.67`, και γιατί όχι `-43`;[^q6]
-7. Με `a = 3`, ποιες είναι οι τιμές των `a` και `b` μετά το `b = a++ * 2;`;[^q7]
-8. Γιατί στο πρόγραμμα βαθμολογίας γράφουμε `final_exam*50/100` και όχι `50/100*final_exam`;[^q8]
 
 [^q1]: Ο driver γράφει τον κώδικα και ο observer/navigator ελέγχει (review) κάθε γραμμή καθώς γράφεται· αλλάζουν ρόλους συχνά.
 [^q2]: `argc == 4` (το όνομα του προγράμματος και τρία ορίσματα)· το `argv[2]` είναι το κείμενο `"80"`, που το `atoi` κάνει ακέραιο `80`.

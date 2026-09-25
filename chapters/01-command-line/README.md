@@ -614,6 +614,22 @@ $ echo $?
 | οδηγία | directive | Γραμμή που αρχίζει με `#`, π.χ. `#include` |
 | κωδικός εξόδου | exit code | Η τιμή που επιστρέφει η `main`· `0` = επιτυχία |
 
+## Διάβασμα
+
+- **Διαφάνειες:** [Διάλεξη 1](https://github.com/progintro/progintro.github.io/releases/download/2025/lec01.pdf), σελ. 1–43. Αρχιτεκτονική και λειτουργικά συστήματα: σελ. 6–10· GUI, CLI, kernel και shell: σελ. 11–13· εκτέλεση προγραμμάτων και ορίσματα: σελ. 14–17· πρόσβαση σε γραμμή εντολών και `ssh`: σελ. 18–24· βασικές εντολές: σελ. 25· σύστημα αρχείων και εντολές αρχείων: σελ. 27–31· `gcc` και ανάλυση του Hello World: σελ. 32–40.
+- **Σημειώσεις:** οι διαφάνειες ζητούν τις σελίδες 58–60 και 98–99 των σημειώσεων του κ. Σταματόπουλου (αριθμημένες σελίδες, δηλαδή K04, σελ. 58–60 και 98–99):
+  - [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/), ενότητα «Δομή ενός προγράμματος C – Συναρτήσεις» (K04, σελ. 58–60): η `main` και η τιμή που επιστρέφει.
+  - [Κεφάλαιο 6: Μνήμη και συμβολοσειρές](https://progintro.github.io/notes/chapters/06-memory-strings/), ενότητα «Ορίσματα γραμμής εντολών» (K04, σελ. 98–99): πώς ένα πρόγραμμα C διαβάζει τα ορίσματά του (θα το δούμε αναλυτικά αργότερα).
+  - Για το υπόβαθρο: [Κεφάλαιο 0: Εισαγωγή](https://progintro.github.io/notes/chapters/00-intro/), ενότητες «Λογισμικό και γλώσσες προγραμματισμού», «Πώς κατασκευάζουμε εκτελέσιμο πρόγραμμα;», «Η διαδικασία της μεταγλώττισης και σύνδεσης», «Προγραμματιστικά περιβάλλοντα για την C», «Παραδείγματα χρήσης του gcc» (K04, σελ. 11, 14–17), και [Κεφάλαιο 1](https://progintro.github.io/notes/chapters/01-first-programs/), ενότητα «Καλημέρα κόσμε της C» (K04, σελ. 19).
+- **Εργαστήριο:** [Εργαστήριο 0](https://progintro.github.io/lab-material/labs/lab00/): Βήματα 4–5 (`ssh`, `ls`, `cd`) και 7 (`hello.c`)· [Εργαστήριο 1](https://progintro.github.io/lab-material/labs/lab01/): Βήματα 1–3 (πλοήγηση, μεταγλώττιση, αντιγραφή και προβολή αρχείων) και 5 (`man`, `grep`, ανακατεύθυνση).
+- **Άλλα:**
+  - Wikipedia: [Operating system](https://en.wikipedia.org/wiki/Operating_system), [Unix](https://en.wikipedia.org/wiki/Unix), [Computer file](https://en.wikipedia.org/wiki/Computer_file), [Everything is a file](https://en.wikipedia.org/wiki/Everything_is_a_file), [GNU Core Utilities](https://en.wikipedia.org/wiki/GNU_Core_Utilities), [GNU Compiler Collection](https://en.wikipedia.org/wiki/GNU_Compiler_Collection)
+  - Ο κώδικας του [Linux kernel](https://github.com/torvalds/linux) και των [coreutils](https://github.com/coreutils/coreutils) στο GitHub
+  - [Διαφορές terminal, console, shell και command line](https://www.geeksforgeeks.org/difference-between-terminal-console-shell-and-command-line/)
+  - [Γιατί τα πανεπιστήμια διδάσκουν ακόμα C και C++ (Quora)](https://qr.ae/p2wHA3)
+  - Τυφλό σύστημα: [blindtyping.com](https://blindtyping.com/), [typingclub.com](https://www.typingclub.com/), [typingstudy.com](https://www.typingstudy.com/)
+  - Προαιρετικά: [The Unix Programming Environment (PDF)](https://scis.uohyd.ac.in/~apcs/itw/UNIXProgrammingEnvironment.pdf), [Common Linux Interview Questions](https://www.geeksforgeeks.org/linux-interview-questions/)
+
 ## Συχνά λάθη
 
 - **Τρέξιμο χωρίς `./`.** Το `a.out` σκέτο δίνει `a.out: command not found`, γιατί το
@@ -636,70 +652,18 @@ $ echo $?
 - **`echo $?` αργότερα.** Αν τρέξετε άλλη εντολή ανάμεσα, το `echo $?` δείχνει τον
   κωδικό εξόδου εκείνης (π.χ. `0` της `ls`), όχι του προγράμματός σας.
 
-## Διάβασμα
+<!-- misconceptions -->
 
-- **Διαφάνειες:** [Διάλεξη 1](https://github.com/progintro/progintro.github.io/releases/download/2025/lec01.pdf), σελ. 1–43. Αρχιτεκτονική και λειτουργικά συστήματα: σελ. 6–10· GUI, CLI, kernel και shell: σελ. 11–13· εκτέλεση προγραμμάτων και ορίσματα: σελ. 14–17· πρόσβαση σε γραμμή εντολών και `ssh`: σελ. 18–24· βασικές εντολές: σελ. 25· σύστημα αρχείων και εντολές αρχείων: σελ. 27–31· `gcc` και ανάλυση του Hello World: σελ. 32–40.
-- **Σημειώσεις:** οι διαφάνειες ζητούν τις σελίδες 58–60 και 98–99 των σημειώσεων του κ. Σταματόπουλου (αριθμημένες σελίδες, δηλαδή K04, σελ. 58–60 και 98–99):
-  - [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/), ενότητα «Δομή ενός προγράμματος C – Συναρτήσεις» (K04, σελ. 58–60): η `main` και η τιμή που επιστρέφει.
-  - [Κεφάλαιο 6: Μνήμη και συμβολοσειρές](https://progintro.github.io/notes/chapters/06-memory-strings/), ενότητα «Ορίσματα γραμμής εντολών» (K04, σελ. 98–99): πώς ένα πρόγραμμα C διαβάζει τα ορίσματά του (θα το δούμε αναλυτικά αργότερα).
-  - Για το υπόβαθρο: [Κεφάλαιο 0: Εισαγωγή](https://progintro.github.io/notes/chapters/00-intro/), ενότητες «Λογισμικό και γλώσσες προγραμματισμού», «Πώς κατασκευάζουμε εκτελέσιμο πρόγραμμα;», «Η διαδικασία της μεταγλώττισης και σύνδεσης», «Προγραμματιστικά περιβάλλοντα για την C», «Παραδείγματα χρήσης του gcc» (K04, σελ. 11, 14–17), και [Κεφάλαιο 1](https://progintro.github.io/notes/chapters/01-first-programs/), ενότητα «Καλημέρα κόσμε της C» (K04, σελ. 19).
-- **Εργαστήριο:** [Εργαστήριο 0](https://progintro.github.io/lab-material/labs/lab00/): Βήματα 4–5 (`ssh`, `ls`, `cd`) και 7 (`hello.c`)· [Εργαστήριο 1](https://progintro.github.io/lab-material/labs/lab01/): Βήματα 1–3 (πλοήγηση, μεταγλώττιση, αντιγραφή και προβολή αρχείων) και 5 (`man`, `grep`, ανακατεύθυνση).
-- **Άλλα:**
-  - Wikipedia: [Operating system](https://en.wikipedia.org/wiki/Operating_system), [Unix](https://en.wikipedia.org/wiki/Unix), [Computer file](https://en.wikipedia.org/wiki/Computer_file), [Everything is a file](https://en.wikipedia.org/wiki/Everything_is_a_file), [GNU Core Utilities](https://en.wikipedia.org/wiki/GNU_Core_Utilities), [GNU Compiler Collection](https://en.wikipedia.org/wiki/GNU_Compiler_Collection)
-  - Ο κώδικας του [Linux kernel](https://github.com/torvalds/linux) και των [coreutils](https://github.com/coreutils/coreutils) στο GitHub
-  - [Διαφορές terminal, console, shell και command line](https://www.geeksforgeeks.org/difference-between-terminal-console-shell-and-command-line/)
-  - [Γιατί τα πανεπιστήμια διδάσκουν ακόμα C και C++ (Quora)](https://qr.ae/p2wHA3)
-  - Τυφλό σύστημα: [blindtyping.com](https://blindtyping.com/), [typingclub.com](https://www.typingclub.com/), [typingstudy.com](https://www.typingstudy.com/)
-  - Προαιρετικά: [The Unix Programming Environment (PDF)](https://scis.uohyd.ac.in/~apcs/itw/UNIXProgrammingEnvironment.pdf), [Common Linux Interview Questions](https://www.geeksforgeeks.org/linux-interview-questions/)
+### Τι δυσκόλεψε την τάξη
 
-## Ασκήσεις
+Από τα Kahoot των διαλέξεων: οι ερωτήσεις όπου μια λάθος απάντηση μάζεψε πολλές ψήφους, με το ποσοστό σωστών απαντήσεων.
 
-<!-- exercises -->
+- **[Το μονοπάτι ενός αρχείου](../../questions/kahoot/kahoot-filepath.md)** (20% σωστές): Το 66% διάλεξε `/home/users/ethan/example/`, δηλαδή τον κατάλογο (dirname) που περιέχει το αρχείο· το filepath όμως περιλαμβάνει και το όνομα του αρχείου.
+- **[Εκτύπωση περιεχομένων αρχείου](../../questions/kahoot/kahoot-cat-prints-file.md)** (29% σωστές): Το 47% διάλεξε `printf`, μπερδεύοντας τη συνάρτηση της C (και την ομώνυμη εντολή του shell), που τυπώνει το κείμενο που της δίνουμε, με μια εντολή που διαβάζει αρχεία.
 
-### Από τις διαφάνειες
+<!-- /misconceptions -->
 
-- [Παραδείγματα για κάθε επίπεδο ενός υπολογιστικού συστήματος](../../questions/slides/slides-lec01-architecture-examples.md): Διάλεξη 1: Η Γραμμή Εντολών, διαφάνεια 7 · ★☆☆ · short-answer
-- [Πρόγραμμα και ορίσματα στο /bin/echo](../../questions/slides/slides-lec01-echo-arguments.md): Διάλεξη 1: Η Γραμμή Εντολών, διαφάνεια 15 · ★☆☆ · tooling
-- [Τρέξτε μόνοι σας τις εντολές της διάλεξης](../../questions/slides/slides-lec01-try-commands.md): Διάλεξη 1: Η Γραμμή Εντολών, διαφάνεια 42 · ★☆☆ · tooling
-- [Γιατί χρειαζόμαστε λειτουργικό σύστημα](../../questions/slides/slides-lec01-why-os.md): Διάλεξη 1: Η Γραμμή Εντολών, διαφάνεια 9 · ★☆☆ · short-answer
-- [Εξερευνήστε κι άλλα βασικά προγράμματα](../../questions/slides/slides-lec01-explore-coreutils.md): Διάλεξη 1: Η Γραμμή Εντολών, διαφάνεια 31 · ★★☆ · tooling
-
-### Από τα εργαστήρια
-
-- [Πλοήγηση στο σύστημα αρχείων](../../questions/labs/lab-lab01-step1-navigation.md): Εργαστήριο 1, Βήμα 1 · ★☆☆ · tooling
-- [Μεταγλώττιση, σύνδεση και εκτέλεση](../../questions/labs/lab-lab01-step2-compile-link.md): Εργαστήριο 1, Βήμα 2 · ★☆☆ · tooling
-- [Αντιγραφή, μετονομασία και προβολή αρχείων](../../questions/labs/lab-lab01-step3-copy-view.md): Εργαστήριο 1, Βήμα 3 · ★☆☆ · tooling
-- [Δικαιώματα προστασίας](../../questions/labs/lab-lab01-step4-permissions.md): Εργαστήριο 1, Βήμα 4 · ★☆☆ · tooling
-- [Αναζήτηση, ανακατεύθυνση και σωληνώσεις](../../questions/labs/lab-lab01-step5-grep-pipes.md): Εργαστήριο 1, Βήμα 5 · ★★☆ · tooling
-
-### Από τις εργασίες
-
-- [Ξεκινώντας με την γραμμή εντολών (bandit)](../../questions/homework/hw-2023-hw0-bandit.md): Εργασία 0 (2023-24), Άσκηση 2 · ★★☆ · tooling
-- [Παιχνίδια με Κονσόλα (cmdline)](../../questions/homework/hw-2025-hw0-cmdline.md): Εργασία 0 (2025-26), Άσκηση 2 · ★★☆ · tooling
-
-### Από τα Kahoot στο αμφιθέατρο
-
-- [Το μονοπάτι ενός αρχείου](../../questions/kahoot/kahoot-filepath.md): Kahoot «Command Line» (διάλεξη 1) · ★★★ · multiple-choice · 20% σωστές απαντήσεις
-- [Εκτύπωση περιεχομένων αρχείου](../../questions/kahoot/kahoot-cat-prints-file.md): Kahoot «Command Line» (διάλεξη 1) · ★★★ · multiple-choice · 29% σωστές απαντήσεις
-- [Το basename ενός αρχείου](../../questions/kahoot/kahoot-basename.md): Kahoot «Command Line» (διάλεξη 1) · ★★☆ · multiple-choice · 53% σωστές απαντήσεις
-- [Φορτίο απομακρυσμένου server](../../questions/kahoot/kahoot-uptime.md): Kahoot «Command Line» (διάλεξη 1) · ★★☆ · multiple-choice · 53% σωστές απαντήσεις
-- [Το ΛΣ των web servers](../../questions/kahoot/kahoot-linux-servers.md): Kahoot «Command Line» (διάλεξη 1) · ★★☆ · multiple-choice · 65% σωστές απαντήσεις
-- [Δικαιώματα υπερχρήστη](../../questions/kahoot/kahoot-sudo.md): Kahoot «Command Line» (διάλεξη 1) · ★★☆ · multiple-choice · 68% σωστές απαντήσεις
-- [Στο Linux όλα είναι…](../../questions/kahoot/kahoot-everything-is-a-file.md): Kahoot «Command Line» (διάλεξη 1) · ★☆☆ · multiple-choice · 71% σωστές απαντήσεις
-- [Η εντολή man](../../questions/kahoot/kahoot-man-command.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★☆☆ · multiple-choice · 72% σωστές απαντήσεις
-- [Το 2ο όρισμα του echo](../../questions/kahoot/kahoot-echo-second-arg.md): Kahoot «Command Line» (διάλεξη 1) · ★☆☆ · multiple-choice · 73% σωστές απαντήσεις
-- [Η καταγωγή του Linux](../../questions/kahoot/kahoot-linux-unix.md): Kahoot «Command Line» (διάλεξη 1) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις
-
-### Σχετικές ασκήσεις από άλλα κεφάλαια
-
-- [Νέο URL στο GitHub (pages)](../../questions/homework/hw-2025-hw0-pages.md): Εργασία 0 (2025-26), Άσκηση 1 · ★☆☆ · tooling (κεφ. 4)
-- [Το πρώτο σας repository](../../questions/labs/lab-lab01-info.md): Εργαστήριο 1, Άσκηση 1 · ★☆☆ · tooling (κεφ. 4)
-- [Κωδικοποίηση και αποκωδικοποίηση κειμένου](../../questions/labs/lab-lab04-encode-decode.md): Εργαστήριο 4, Άσκηση 4 · ★★☆ · programming (κεφ. 9)
-- [Ανακατεύθυνση της stderr](../../questions/slides/slides-lec18-stderr-redirect.md): Διάλεξη 18, διαφάνεια 56 · ★☆☆ · tooling (κεφ. 18)
-
-<!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
+## Ερωτήσεις κατανόησης
 
 1. Ποια τρία πράγματα αναλαμβάνει ένα λειτουργικό σύστημα;[^q1]
 2. Ποια είναι η διαφορά ανάμεσα σε kernel και shell;[^q2]
@@ -711,6 +675,59 @@ $ echo $?
 7. Τι τυπώνει το `echo $?` αμέσως μετά από ένα πρόγραμμα που τελείωσε με
    `return 3;`, και τι σημαίνει αυτό;[^q7]
 8. Πόσες συναρτήσεις `main` πρέπει να έχει ένα πρόγραμμα C;[^q8]
+
+<!-- kahoot -->
+
+### Kahoot από το αμφιθέατρο
+
+Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που απάντησαν σωστά.
+
+- [Η καταγωγή του Linux](../../questions/kahoot/kahoot-linux-unix.md): 87% σωστές απαντήσεις
+- [Το 2ο όρισμα του echo](../../questions/kahoot/kahoot-echo-second-arg.md): 73% σωστές απαντήσεις
+- [Η εντολή man](../../questions/kahoot/kahoot-man-command.md): 72% σωστές απαντήσεις
+- [Στο Linux όλα είναι…](../../questions/kahoot/kahoot-everything-is-a-file.md): 71% σωστές απαντήσεις
+- [Δικαιώματα υπερχρήστη](../../questions/kahoot/kahoot-sudo.md): 68% σωστές απαντήσεις
+- [Το ΛΣ των web servers](../../questions/kahoot/kahoot-linux-servers.md): 65% σωστές απαντήσεις
+- [Το basename ενός αρχείου](../../questions/kahoot/kahoot-basename.md): 53% σωστές απαντήσεις
+- [Φορτίο απομακρυσμένου server](../../questions/kahoot/kahoot-uptime.md): 53% σωστές απαντήσεις
+- [Εκτύπωση περιεχομένων αρχείου](../../questions/kahoot/kahoot-cat-prints-file.md): 29% σωστές απαντήσεις
+- [Το μονοπάτι ενός αρχείου](../../questions/kahoot/kahoot-filepath.md): 20% σωστές απαντήσεις
+
+<!-- /kahoot -->
+
+## Ασκήσεις
+
+<!-- exercises -->
+
+### Ζέσταμα: από τις διαφάνειες
+
+- [Παραδείγματα για κάθε επίπεδο ενός υπολογιστικού συστήματος](../../questions/slides/slides-lec01-architecture-examples.md): Διάλεξη 1: Η Γραμμή Εντολών, διαφάνεια 7 · ★☆☆ · short-answer
+- [Πρόγραμμα και ορίσματα στο /bin/echo](../../questions/slides/slides-lec01-echo-arguments.md): Διάλεξη 1: Η Γραμμή Εντολών, διαφάνεια 15 · ★☆☆ · tooling
+- [Τρέξτε μόνοι σας τις εντολές της διάλεξης](../../questions/slides/slides-lec01-try-commands.md): Διάλεξη 1: Η Γραμμή Εντολών, διαφάνεια 42 · ★☆☆ · tooling
+- [Γιατί χρειαζόμαστε λειτουργικό σύστημα](../../questions/slides/slides-lec01-why-os.md): Διάλεξη 1: Η Γραμμή Εντολών, διαφάνεια 9 · ★☆☆ · short-answer
+- [Εξερευνήστε κι άλλα βασικά προγράμματα](../../questions/slides/slides-lec01-explore-coreutils.md): Διάλεξη 1: Η Γραμμή Εντολών, διαφάνεια 31 · ★★☆ · tooling
+
+### Εργαστήριο
+
+- [Πλοήγηση στο σύστημα αρχείων](../../questions/labs/lab-lab01-step1-navigation.md): Εργαστήριο 1, Βήμα 1 · ★☆☆ · tooling
+- [Μεταγλώττιση, σύνδεση και εκτέλεση](../../questions/labs/lab-lab01-step2-compile-link.md): Εργαστήριο 1, Βήμα 2 · ★☆☆ · tooling
+- [Αντιγραφή, μετονομασία και προβολή αρχείων](../../questions/labs/lab-lab01-step3-copy-view.md): Εργαστήριο 1, Βήμα 3 · ★☆☆ · tooling
+- [Δικαιώματα προστασίας](../../questions/labs/lab-lab01-step4-permissions.md): Εργαστήριο 1, Βήμα 4 · ★☆☆ · tooling
+- [Αναζήτηση, ανακατεύθυνση και σωληνώσεις](../../questions/labs/lab-lab01-step5-grep-pipes.md): Εργαστήριο 1, Βήμα 5 · ★★☆ · tooling
+
+### Εργασίες
+
+- [Ξεκινώντας με την γραμμή εντολών (bandit)](../../questions/homework/hw-2023-hw0-bandit.md): Εργασία 0 (2023-24), Άσκηση 2 · ★★☆ · tooling
+- [Παιχνίδια με Κονσόλα (cmdline)](../../questions/homework/hw-2025-hw0-cmdline.md): Εργασία 0 (2025-26), Άσκηση 2 · ★★☆ · tooling
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Νέο URL στο GitHub (pages)](../../questions/homework/hw-2025-hw0-pages.md): Εργασία 0 (2025-26), Άσκηση 1 · ★☆☆ · tooling (κεφ. 4)
+- [Το πρώτο σας repository](../../questions/labs/lab-lab01-info.md): Εργαστήριο 1, Άσκηση 1 · ★☆☆ · tooling (κεφ. 4)
+- [Κωδικοποίηση και αποκωδικοποίηση κειμένου](../../questions/labs/lab-lab04-encode-decode.md): Εργαστήριο 4, Άσκηση 4 · ★★☆ · programming (κεφ. 9)
+- [Ανακατεύθυνση της stderr](../../questions/slides/slides-lec18-stderr-redirect.md): Διάλεξη 18, διαφάνεια 56 · ★☆☆ · tooling (κεφ. 18)
+
+<!-- /exercises -->
 
 [^q1]: Διαχειρίζεται το υλικό (συσκευές), διαχειρίζεται τους πόρους (μνήμη, χρόνο επεξεργαστή) και προσφέρει υπηρεσίες στα προγράμματα (δίσκο, δίκτυο).
 [^q2]: Ο kernel είναι ο πυρήνας του λειτουργικού συστήματος και μιλάει με το υλικό. Το shell είναι το πρόγραμμα με το οποίο μιλάμε εμείς: διαβάζει τις εντολές μας και ζητά από το OS να τρέξει προγράμματα.

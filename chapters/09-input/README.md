@@ -530,6 +530,20 @@ while ((ch = getchar()) != EOF) {
 | κινητή υποδιαστολή | floating point | Αναπαράσταση πραγματικών (`float`, `double`), κατά προσέγγιση. |
 | camelCase / snake_case | camelCase / snake_case | Στυλ ονομάτων: `piApprox` / `pi_approx`. |
 
+## Διάβασμα
+
+- **Διαφάνειες:** [Διάλεξη 9](https://github.com/progintro/progintro.github.io/releases/download/2025/lec09.pdf), σελ. 1–41. Σύγκριση `float` και ονόματα: σελ. 2–5· πηγές εισόδου: σελ. 8–13· `getchar`: σελ. 14–21· `putchar` και `cat`: σελ. 22–24· `getinteger`: σελ. 25–26, 38· `scanf`: σελ. 27–37· συχνότητες γραμμάτων: σελ. 39.
+- **Σημειώσεις:** οι διαφάνειες παραπέμπουν στις σελίδες 28–29, 70–71, 78–79 και 86–87 των σημειώσεων του κ. Σταματόπουλου, δηλαδή στις ενότητες:
+  - [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), «Μετατροπή πεζών γραμμάτων σε κεφαλαία» (K04, σελ. 28–29)
+  - [Κεφάλαιο 4: Συναρτήσεις, εμβέλεια και αναδρομή](https://progintro.github.io/notes/chapters/04-functions/), «Μετατροπές μεταξύ δεκαδικών και δυαδικών αριθμών» (K04, σελ. 70–71)
+  - [Κεφάλαιο 5: Δείκτες και πίνακες](https://progintro.github.io/notes/chapters/05-pointers-arrays/), «Περί ανάγνωσης ακεραίων (και όχι μόνο)» (K04, σελ. 78–79) και «Ιστόγραμμα συχνοτήτων γραμμάτων στην είσοδο» (K04, σελ. 86–87)
+  - Για αναφορά: [Κεφάλαιο 9: Είσοδος και έξοδος](https://progintro.github.io/notes/chapters/09-io/), «Είσοδος και έξοδος» (K04, σελ. 136–149), με τις `getchar`, `putchar`, `printf`, `scanf` και την ανακατεύθυνση.
+- **Εργαστήριο:** [Εργαστήριο 4](https://progintro.github.io/lab-material/labs/lab04/): ασκήσεις `pyramid.c` (`putchar` και `scanf`), `lowercase.c` (βρόχος `getchar`/`putchar`), `encode.c` και `decode.c` (φίλτρα με ανακατεύθυνση και σωληνώσεις)
+- **Άλλα:**
+  - Αναφορά συναρτήσεων: [getchar](https://en.cppreference.com/w/c/io/getchar), [putchar](https://en.cppreference.com/w/c/io/putchar), [scanf](https://cplusplus.com/reference/cstdio/scanf/), [printf](https://cplusplus.com/reference/cstdio/printf/), και οι σελίδες `man getchar`, `man scanf`
+  - Wikipedia: [Data buffer](https://en.wikipedia.org/wiki/Data_buffer), [End-of-Transmission character](https://en.wikipedia.org/wiki/End-of-Transmission_character), [Camel case](https://en.wikipedia.org/wiki/Camel_case), [Snake case](https://en.wikipedia.org/wiki/Snake_case)
+  - POSIX: [Canonical mode input processing](https://pubs.opengroup.org/onlinepubs/7908799/xbd/termios.html#tag_008_001_006)
+
 ## Συχνά λάθη
 
 - **`==` με αριθμούς κινητής υποδιαστολής.** Το `float a = 3.1; if (a == 3.1)`
@@ -549,25 +563,51 @@ while ((ch = getchar()) != EOF) {
 - **Μπερδεύετε το `0` με το `EOF`.** Ο έλεγχος `scanf(...) == EOF` μόνος του δεν πιάνει
   την είσοδο `hello`, για την οποία η `scanf` επιστρέφει `0`.
 
-## Διάβασμα
+<!-- misconceptions -->
 
-- **Διαφάνειες:** [Διάλεξη 9](https://github.com/progintro/progintro.github.io/releases/download/2025/lec09.pdf), σελ. 1–41. Σύγκριση `float` και ονόματα: σελ. 2–5· πηγές εισόδου: σελ. 8–13· `getchar`: σελ. 14–21· `putchar` και `cat`: σελ. 22–24· `getinteger`: σελ. 25–26, 38· `scanf`: σελ. 27–37· συχνότητες γραμμάτων: σελ. 39.
-- **Σημειώσεις:** οι διαφάνειες παραπέμπουν στις σελίδες 28–29, 70–71, 78–79 και 86–87 των σημειώσεων του κ. Σταματόπουλου, δηλαδή στις ενότητες:
-  - [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), «Μετατροπή πεζών γραμμάτων σε κεφαλαία» (K04, σελ. 28–29)
-  - [Κεφάλαιο 4: Συναρτήσεις, εμβέλεια και αναδρομή](https://progintro.github.io/notes/chapters/04-functions/), «Μετατροπές μεταξύ δεκαδικών και δυαδικών αριθμών» (K04, σελ. 70–71)
-  - [Κεφάλαιο 5: Δείκτες και πίνακες](https://progintro.github.io/notes/chapters/05-pointers-arrays/), «Περί ανάγνωσης ακεραίων (και όχι μόνο)» (K04, σελ. 78–79) και «Ιστόγραμμα συχνοτήτων γραμμάτων στην είσοδο» (K04, σελ. 86–87)
-  - Για αναφορά: [Κεφάλαιο 9: Είσοδος και έξοδος](https://progintro.github.io/notes/chapters/09-io/), «Είσοδος και έξοδος» (K04, σελ. 136–149), με τις `getchar`, `putchar`, `printf`, `scanf` και την ανακατεύθυνση.
-- **Εργαστήριο:** [Εργαστήριο 4](https://progintro.github.io/lab-material/labs/lab04/): ασκήσεις `pyramid.c` (`putchar` και `scanf`), `lowercase.c` (βρόχος `getchar`/`putchar`), `encode.c` και `decode.c` (φίλτρα με ανακατεύθυνση και σωληνώσεις)
-- **Άλλα:**
-  - Αναφορά συναρτήσεων: [getchar](https://en.cppreference.com/w/c/io/getchar), [putchar](https://en.cppreference.com/w/c/io/putchar), [scanf](https://cplusplus.com/reference/cstdio/scanf/), [printf](https://cplusplus.com/reference/cstdio/printf/), και οι σελίδες `man getchar`, `man scanf`
-  - Wikipedia: [Data buffer](https://en.wikipedia.org/wiki/Data_buffer), [End-of-Transmission character](https://en.wikipedia.org/wiki/End-of-Transmission_character), [Camel case](https://en.wikipedia.org/wiki/Camel_case), [Snake case](https://en.wikipedia.org/wiki/Snake_case)
-  - POSIX: [Canonical mode input processing](https://pubs.opengroup.org/onlinepubs/7908799/xbd/termios.html#tag_008_001_006)
+### Τι δυσκόλεψε την τάξη
+
+Από τα Kahoot των διαλέξεων: οι ερωτήσεις όπου μια λάθος απάντηση μάζεψε πολλές ψήφους, με το ποσοστό σωστών απαντήσεων.
+
+- **[Τιμή επιστροφής της scanf με λάθος είσοδο](../../questions/kahoot/kahoot-scanf-return-partial.md)** (11% σωστές): Το 42% επέλεξε `42 43`, μπερδεύοντας την τιμή επιστροφής της `scanf` με τις τιμές που αποθηκεύει στις μεταβλητές, και ξεχνώντας ότι σταματά στο `hello`.
+- **[Πόσες τιμές επιστρέφει η getchar](../../questions/kahoot/kahoot-getchar-257-values.md)** (18% σωστές): Το 64% επέλεξε 256, μετρώντας μόνο τις τιμές ενός byte και ξεχνώντας την επιπλέον τιμή `EOF`, που είναι και ο λόγος που η `getchar` επιστρέφει `int`.
+- **[Μετρητής χαρακτήρων μέχρι την αλλαγή γραμμής](../../questions/kahoot/kahoot-charcount-eof.md)** (31% σωστές): Το 36% επέλεξε ότι θα τυπώνει 0 1 2 3 …, θεωρώντας ότι η `printf` είναι μέσα στον βρόχο· χωρίς άγκιστρα το σώμα της `while` είναι μόνο η `charcount++;`.
+
+<!-- /misconceptions -->
+
+## Ερωτήσεις κατανόησης
+
+1. Γιατί η `getchar` επιστρέφει `int` και όχι `char`;[^q1]
+2. Ποιες είναι οι τέσσερις πηγές δεδομένων εισόδου ενός προγράμματος;[^q2]
+3. Γράφετε `abc` και Enter. Ποιους χαρακτήρες διαβάζει η `getchar` από τη γραμμή;[^q3]
+4. Γιατί η `getchar` δεν επιστρέφει αμέσως μόλις πατήσετε ένα πλήκτρο;[^q4]
+5. Γιατί γράφουμε `&n` στη `scanf` αλλά `n` στην `printf`;[^q5]
+6. Τι επιστρέφει το `scanf("%d %d", &a, &b)` με είσοδο `7 x`;[^q6]
+7. Τι επιστρέφει η `getinteger(10)` με είσοδο `4a2` και Enter;[^q7]
+
+<!-- kahoot -->
+
+### Kahoot από το αμφιθέατρο
+
+Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που απάντησαν σωστά.
+
+- [Σύγκριση float με ==](../../questions/kahoot/kahoot-float-equality.md): 94% σωστές απαντήσεις
+- [Πώς στέλνω EOF](../../questions/kahoot/kahoot-eof-key.md): 90% σωστές απαντήσεις
+- [Φτάνουν αμέσως τα δεδομένα;](../../questions/kahoot/kahoot-input-buffering.md): 82% σωστές απαντήσεις
+- [Η τιμή του EOF](../../questions/kahoot/kahoot-eof-value.md): 79% σωστές απαντήσεις
+- [Ο τύπος επιστροφής της getchar](../../questions/kahoot/kahoot-getchar-return-type.md): 66% σωστές απαντήσεις
+- [Διάβασμα ακεραίου με scanf](../../questions/kahoot/kahoot-scanf-int-syntax.md): 53% σωστές απαντήσεις
+- [Μετρητής χαρακτήρων μέχρι την αλλαγή γραμμής](../../questions/kahoot/kahoot-charcount-eof.md): 31% σωστές απαντήσεις
+- [Πόσες τιμές επιστρέφει η getchar](../../questions/kahoot/kahoot-getchar-257-values.md): 18% σωστές απαντήσεις
+- [Τιμή επιστροφής της scanf με λάθος είσοδο](../../questions/kahoot/kahoot-scanf-return-partial.md): 11% σωστές απαντήσεις
+
+<!-- /kahoot -->
 
 ## Ασκήσεις
 
 <!-- exercises -->
 
-### Από τις διαφάνειες
+### Ζέσταμα: από τις διαφάνειες
 
 - [Μετρητής χαρακτήρων με getchar](../../questions/slides/slides-lec09-charcount.md): Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 20 · ★☆☆ · trace
 - [Τι κάνει το πρόγραμμα με τη scanf;](../../questions/slides/slides-lec09-scanf-square.md): Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 30 · ★☆☆ · trace
@@ -580,20 +620,20 @@ while ((ch = getchar()) != EOF) {
 - [scanf χωρίς &](../../questions/slides/slides-lec09-scanf-no-ampersand.md): Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 32 · ★★☆ · short-answer
 - [Είναι σωστό αυτό το πρόγραμμα;](../../questions/slides/slides-lec09-scanf-return.md): Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 33–35 · ★★☆ · debug
 
-### Από τα εργαστήρια
+### Εργαστήριο
 
 - [Ένα απλό κομπιουτεράκι](../../questions/labs/lab-lab02-calc.md): Εργαστήριο 2, Άσκηση 1 · ★☆☆ · programming
 - [Διάβασμα ακεραίου με scanf](../../questions/labs/lab-lab02-readint.md): Εργαστήριο 2, Βήμα 3 · ★☆☆ · short-answer
 - [Τροποποίηση κειμένου](../../questions/labs/lab-lab04-lowercase.md): Εργαστήριο 4, Άσκηση 3 · ★☆☆ · programming
 - [Κωδικοποίηση και αποκωδικοποίηση κειμένου](../../questions/labs/lab-lab04-encode-decode.md): Εργαστήριο 4, Άσκηση 4 · ★★☆ · programming
 
-### Από τις εργασίες
+### Εργασίες
 
 - [Συνεργασία (Prisoner's Dilemma)](../../questions/homework/hw-2023-hw2-coop.md): Εργασία 2 (2023-24), Άσκηση 3 · ★★☆ · programming
 - [Το Πρόβλημα του Τρόλεϊ (trolley)](../../questions/homework/hw-2024-hw0-trolley.md): Εργασία 0 (2024-25), Άσκηση 3 · ★★☆ · programming
 - [Επεξεργασία Ήχου (soundwave)](../../questions/homework/hw-2025-hw1-soundwave.md): Εργασία 1 (2025-26), Άσκηση 1 · ★★★ · programming
 
-### Από τα θέματα εξετάσεων
+### Θέματα εξετάσεων
 
 - [Ραβασάκι](../../questions/exams/exam-2023-fall-ex0-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 1 · ★☆☆ · programming
 - [Δεκαεξαδικοί](../../questions/exams/exam-2023-fall-ex1-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 1 · ★☆☆ · programming
@@ -609,18 +649,6 @@ while ((ch = getchar()) != EOF) {
 - [Προσθήκη Νιφάδων](../../questions/exams/exam-2023-fall-ex3-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 1 · ★★☆ · programming
 - [Αποκωδικοποίηση](../../questions/exams/exam-2023-fall-ex8-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 2 · ★★☆ · programming
 - [Μετρητής λέξεων](../../questions/exams/exam-2024-sep-q4.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 4 · ★★☆ · programming
-
-### Από τα Kahoot στο αμφιθέατρο
-
-- [Τιμή επιστροφής της scanf με λάθος είσοδο](../../questions/kahoot/kahoot-scanf-return-partial.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★★★ · multiple-choice · 11% σωστές απαντήσεις
-- [Πόσες τιμές επιστρέφει η getchar](../../questions/kahoot/kahoot-getchar-257-values.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★★★ · multiple-choice · 18% σωστές απαντήσεις
-- [Μετρητής χαρακτήρων μέχρι την αλλαγή γραμμής](../../questions/kahoot/kahoot-charcount-eof.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★★★ · multiple-choice · 31% σωστές απαντήσεις
-- [Διάβασμα ακεραίου με scanf](../../questions/kahoot/kahoot-scanf-int-syntax.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★★☆ · multiple-choice · 53% σωστές απαντήσεις
-- [Ο τύπος επιστροφής της getchar](../../questions/kahoot/kahoot-getchar-return-type.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) και «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★☆☆ · multiple-choice · 66% σωστές απαντήσεις
-- [Η τιμή του EOF](../../questions/kahoot/kahoot-eof-value.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★☆☆ · multiple-choice · 79% σωστές απαντήσεις
-- [Φτάνουν αμέσως τα δεδομένα;](../../questions/kahoot/kahoot-input-buffering.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★☆☆ · multiple-choice · 82% σωστές απαντήσεις
-- [Πώς στέλνω EOF](../../questions/kahoot/kahoot-eof-key.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★☆☆ · multiple-choice · 90% σωστές απαντήσεις
-- [Σύγκριση float με ==](../../questions/kahoot/kahoot-float-equality.md): Kahoot «Δεδομένα Εισόδου» (διάλεξη 9) · ★☆☆ · multiple-choice · 94% σωστές απαντήσεις
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
@@ -639,16 +667,6 @@ while ((ch = getchar()) != EOF) {
 - [Επενδύσεις στο Χρηματιστήριο](../../questions/exams/exam-2026-jun-q3.md): Εξέταση Ιουνίου 2026, Θέμα 3 · ★★☆ · programming (κεφ. 25)
 
 <!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
-
-1. Γιατί η `getchar` επιστρέφει `int` και όχι `char`;[^q1]
-2. Ποιες είναι οι τέσσερις πηγές δεδομένων εισόδου ενός προγράμματος;[^q2]
-3. Γράφετε `abc` και Enter. Ποιους χαρακτήρες διαβάζει η `getchar` από τη γραμμή;[^q3]
-4. Γιατί η `getchar` δεν επιστρέφει αμέσως μόλις πατήσετε ένα πλήκτρο;[^q4]
-5. Γιατί γράφουμε `&n` στη `scanf` αλλά `n` στην `printf`;[^q5]
-6. Τι επιστρέφει το `scanf("%d %d", &a, &b)` με είσοδο `7 x`;[^q6]
-7. Τι επιστρέφει η `getinteger(10)` με είσοδο `4a2` και Enter;[^q7]
 
 [^q1]: Για να χωράει, εκτός από όλους τους δυνατούς χαρακτήρες, και την τιμή `EOF` (`-1`), που δεν πρέπει να συμπίπτει με κανέναν χαρακτήρα.
 [^q2]: Ορίσματα στη γραμμή εντολών, πρότυπη είσοδος (`stdin`), αρχεία, και δίκτυο ή άλλες πηγές.

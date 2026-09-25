@@ -479,6 +479,17 @@ prod    = 1.211521e+171 (64 terms)
 | ολοκληρωμένο περιβάλλον ανάπτυξης | IDE | Editor με ενσωματωμένη μεταγλώττιση, τερματικό και debugger. |
 | αποθετήριο | repository | Φάκελος που παρακολουθείται από το git, μαζί με το ιστορικό του. |
 
+## Διάβασμα
+
+- **Διαφάνειες:** [Διάλεξη 7](https://github.com/progintro/progintro.github.io/releases/download/2025/lec07.pdf), σελ. 1–23. AWS και ανοχή σε σφάλματα: σελ. 2· GRCPC: σελ. 3–5· flow: σελ. 8· βρόχοι: σελ. 9–12· προθέρμανση: σελ. 13–18· θέματα ζωντανής επίλυσης: σελ. 19–20· επόμενη φορά: σελ. 22.
+- **Σημειώσεις:** [Κεφάλαιο 12: Καλές πρακτικές, συχνά λάθη και βιβλιογραφία](https://progintro.github.io/notes/chapters/12-good-practice/), ενότητες «Ένα πρόγραμμα C πρέπει να είναι …» και «Συχνά προγραμματιστικά λάθη στην C» (K04, σελ. 178–182)· [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), ενότητες «Καλημέρα κόσμε της C» (σύνταξη σχολίων) και «Πόσο είναι το $\pi$;» (πρόγραμμα με σχόλια ανά γραμμή) (K04, σελ. 19–23)· [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Εντολές βρόχου `while`» και «Εντολή βρόχου `for`» (K04, σελ. 52–55).
+- **Εργαστήριο:** [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): εισαγωγή για τους τρεις βρόχους, άσκηση `seq.c` (`while`, `for`, `do...while`) και το παράρτημα για τα λογικά λάθη (`limit.c`)· [Εργαστήριο 2](https://progintro.github.io/lab-material/labs/lab02/): «Βήμα 1: Το περιβάλλον προγραμματισμού Visual Studio Code»· [Εργαστήριο 1](https://progintro.github.io/lab-material/labs/lab01/): «Βήμα 6: Git και GitHub» και «Άσκηση 1: Το πρώτο σας repository (info.txt)».
+- **Άλλα:**
+  - [How to write good comments](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/) (Stack Overflow Blog)
+  - Οδηγοί για `README.md`: [Medium](https://medium.com/@kc_clintone/the-ultimate-guide-to-writing-a-great-readme-md-for-your-project-3d49c2023357), [banesullivan/README](https://github.com/banesullivan/README), [freeCodeCamp](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
+  - Wikipedia: [Flow (psychology)](https://en.wikipedia.org/wiki/Flow_(psychology))
+  - Αποτελέσματα GRCPC: [2023](https://grcpc.upatras.gr/wp-content/uploads/sites/177/2023/10/GRCPC-2023-RESULTS.pdf), [2024](https://grcpc.upatras.gr/wp-content/uploads/sites/177/2024/10/Scoreboard-GRCPC2024.pdf), [2025](https://grcpc.upatras.gr/wp-content/uploads/sites/177/2025/10/Greece_Universities_Scoreboard1.pdf)
+
 ## Συχνά λάθη
 
 - **Λάθος ισοτιμία στην αρχική τιμή.** `for (i = 100; i <= 999; i += 2)` με σκοπό
@@ -507,42 +518,18 @@ prod    = 1.211521e+171 (64 terms)
   υποβολή στο GitHub είναι παλιά. Διόρθωση: `git push` και έλεγχος της σελίδας του
   repository.
 
-## Διάβασμα
+<!-- misconceptions -->
 
-- **Διαφάνειες:** [Διάλεξη 7](https://github.com/progintro/progintro.github.io/releases/download/2025/lec07.pdf), σελ. 1–23. AWS και ανοχή σε σφάλματα: σελ. 2· GRCPC: σελ. 3–5· flow: σελ. 8· βρόχοι: σελ. 9–12· προθέρμανση: σελ. 13–18· θέματα ζωντανής επίλυσης: σελ. 19–20· επόμενη φορά: σελ. 22.
-- **Σημειώσεις:** [Κεφάλαιο 12: Καλές πρακτικές, συχνά λάθη και βιβλιογραφία](https://progintro.github.io/notes/chapters/12-good-practice/), ενότητες «Ένα πρόγραμμα C πρέπει να είναι …» και «Συχνά προγραμματιστικά λάθη στην C» (K04, σελ. 178–182)· [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), ενότητες «Καλημέρα κόσμε της C» (σύνταξη σχολίων) και «Πόσο είναι το $\pi$;» (πρόγραμμα με σχόλια ανά γραμμή) (K04, σελ. 19–23)· [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Εντολές βρόχου `while`» και «Εντολή βρόχου `for`» (K04, σελ. 52–55).
-- **Εργαστήριο:** [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): εισαγωγή για τους τρεις βρόχους, άσκηση `seq.c` (`while`, `for`, `do...while`) και το παράρτημα για τα λογικά λάθη (`limit.c`)· [Εργαστήριο 2](https://progintro.github.io/lab-material/labs/lab02/): «Βήμα 1: Το περιβάλλον προγραμματισμού Visual Studio Code»· [Εργαστήριο 1](https://progintro.github.io/lab-material/labs/lab01/): «Βήμα 6: Git και GitHub» και «Άσκηση 1: Το πρώτο σας repository (info.txt)».
-- **Άλλα:**
-  - [How to write good comments](https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/) (Stack Overflow Blog)
-  - Οδηγοί για `README.md`: [Medium](https://medium.com/@kc_clintone/the-ultimate-guide-to-writing-a-great-readme-md-for-your-project-3d49c2023357), [banesullivan/README](https://github.com/banesullivan/README), [freeCodeCamp](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
-  - Wikipedia: [Flow (psychology)](https://en.wikipedia.org/wiki/Flow_(psychology))
-  - Αποτελέσματα GRCPC: [2023](https://grcpc.upatras.gr/wp-content/uploads/sites/177/2023/10/GRCPC-2023-RESULTS.pdf), [2024](https://grcpc.upatras.gr/wp-content/uploads/sites/177/2024/10/Scoreboard-GRCPC2024.pdf), [2025](https://grcpc.upatras.gr/wp-content/uploads/sites/177/2025/10/Greece_Universities_Scoreboard1.pdf)
+### Τι δυσκόλεψε την τάξη
 
-## Ασκήσεις
+Από τα Kahoot των διαλέξεων: οι ερωτήσεις όπου μια λάθος απάντηση μάζεψε πολλές ψήφους, με το ποσοστό σωστών απαντήσεων.
 
-<!-- exercises -->
+- **[Καλό σχόλιο;](../../questions/kahoot/kahoot-good-comment.md)** (61% σωστές): Το 34% απάντησε True· όμως ένα σχόλιο που επαναλαμβάνει τι κάνει ο κώδικας δεν προσθέτει τίποτα, ένα καλό σχόλιο εξηγεί το «γιατί».
+- **[Εργασία χωρίς σχόλια](../../questions/kahoot/kahoot-homework-comments.md)** (71% σωστές): Το 25% απάντησε True, θεωρώντας τα σχόλια προαιρετικά· στο μάθημα όμως τα σχόλια και η τεκμηρίωση είναι μέρος αυτού που βαθμολογείται.
 
-### Από τις διαφάνειες
+<!-- /misconceptions -->
 
-- [Τριψήφιοι άρτιοι σε φθίνουσα σειρά](../../questions/slides/slides-lec07-even-descending.md): Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 14 · ★☆☆ · programming
-- [Γινόμενο τριψήφιων περιττών πολλαπλασίων του 7](../../questions/slides/slides-lec07-odd-multiples-of-7.md): Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 16 · ★★☆ · programming
-
-### Από τα Kahoot στο αμφιθέατρο
-
-- [Πώς γράφουμε σχόλια](../../questions/kahoot/kahoot-comment-syntax.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★☆ · multiple-choice · 46% σωστές απαντήσεις
-- [Καλό σχόλιο;](../../questions/kahoot/kahoot-good-comment.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★☆ · multiple-choice · 61% σωστές απαντήσεις
-- [Εργασία χωρίς σχόλια](../../questions/kahoot/kahoot-homework-comments.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★☆☆ · multiple-choice · 71% σωστές απαντήσεις
-- [Η γλώσσα του README.md](../../questions/kahoot/kahoot-readme-markdown.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★☆☆ · multiple-choice · 84% σωστές απαντήσεις
-- [Αξίζει να σχολιάζω τον κώδικα;](../../questions/kahoot/kahoot-comments-good-practice.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★☆☆ · multiple-choice · 91% σωστές απαντήσεις
-
-### Σχετικές ασκήσεις από άλλα κεφάλαια
-
-- [Πολυπλοκότητα: γινόμενο περιττών πολλαπλασίων του 7](../../questions/slides/slides-lec15-complexity-odd-multiples-of-7.md): Διάλεξη 15, διαφάνεια 13 · ★☆☆ · short-answer (κεφ. 15)
-- [Γιατί εξάσκηση στην επίλυση προβλημάτων;](../../questions/slides/slides-lec16-why-practice.md): Διάλεξη 16, διαφάνειες 5–6 · ★☆☆ · short-answer (κεφ. 16)
-
-<!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
+## Ερωτήσεις κατανόησης
 
 1. Ποια είναι η διαφορά ανάμεσα σε `while` και `do-while` ως προς το πόσες φορές
    μπορεί να εκτελεστεί το σώμα;[^q1]
@@ -557,6 +544,36 @@ prod    = 1.211521e+171 (64 terms)
 8. Τι κάνει η εντολή `clang-format -i -style=Google prog.c`;[^q8]
 9. Με ποια σειρά εκτελείτε `git commit`, `git add` και `git push` για να ανεβάσετε
    μια αλλαγή στο GitHub;[^q9]
+
+<!-- kahoot -->
+
+### Kahoot από το αμφιθέατρο
+
+Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που απάντησαν σωστά.
+
+- [Αξίζει να σχολιάζω τον κώδικα;](../../questions/kahoot/kahoot-comments-good-practice.md): 91% σωστές απαντήσεις
+- [Η γλώσσα του README.md](../../questions/kahoot/kahoot-readme-markdown.md): 84% σωστές απαντήσεις
+- [Εργασία χωρίς σχόλια](../../questions/kahoot/kahoot-homework-comments.md): 71% σωστές απαντήσεις
+- [Καλό σχόλιο;](../../questions/kahoot/kahoot-good-comment.md): 61% σωστές απαντήσεις
+- [Πώς γράφουμε σχόλια](../../questions/kahoot/kahoot-comment-syntax.md): 46% σωστές απαντήσεις
+
+<!-- /kahoot -->
+
+## Ασκήσεις
+
+<!-- exercises -->
+
+### Ζέσταμα: από τις διαφάνειες
+
+- [Τριψήφιοι άρτιοι σε φθίνουσα σειρά](../../questions/slides/slides-lec07-even-descending.md): Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 14 · ★☆☆ · programming
+- [Γινόμενο τριψήφιων περιττών πολλαπλασίων του 7](../../questions/slides/slides-lec07-odd-multiples-of-7.md): Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 16 · ★★☆ · programming
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Πολυπλοκότητα: γινόμενο περιττών πολλαπλασίων του 7](../../questions/slides/slides-lec15-complexity-odd-multiples-of-7.md): Διάλεξη 15, διαφάνεια 13 · ★☆☆ · short-answer (κεφ. 15)
+- [Γιατί εξάσκηση στην επίλυση προβλημάτων;](../../questions/slides/slides-lec16-why-practice.md): Διάλεξη 16, διαφάνειες 5–6 · ★☆☆ · short-answer (κεφ. 16)
+
+<!-- /exercises -->
 
 [^q1]: Η `while` ελέγχει τη συνθήκη πριν από το σώμα, άρα μπορεί να το εκτελέσει μηδέν φορές· η `do-while` εκτελεί το σώμα πρώτα, άρα τουλάχιστον μία φορά.
 [^q2]: `for (i = 995; i >= 100; i -= 5)`: το 995 είναι το μεγαλύτερο τριψήφιο πολλαπλάσιο του 5 και το 100 περιλαμβάνεται.

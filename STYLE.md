@@ -61,6 +61,11 @@ labs: [lab06]
 
 ### Body: sections in this order
 
+The order follows one principle, from least to most effort: **learn** (Σύνοψη,
+Θεωρία, Παραδείγματα) → **consolidate** (Κύρια σημεία, Ορολογία) → **read further**
+(Διάβασμα) → **avoid the known mistakes** (Συχνά λάθη) → **check understanding**
+(Ερωτήσεις κατανόησης) → **practise**, from warm-up to exam level (Ασκήσεις).
+
 ```markdown
 # Κεφάλαιο 12: Δείκτες και Πίνακες
 
@@ -96,10 +101,6 @@ concepts of «Θεωρία» it applies.
 | Ελληνικά | English | Σύντομος ορισμός |
 | --- | --- | --- |
 
-## Συχνά λάθη
-- Mistakes and misconceptions, each with a one-line example or symptom (compiler
-  message, crash, wrong output) and the fix.
-
 ## Διάβασμα
 - **Διαφάνειες:** [Διάλεξη 12](<slides url>), σελ. 1–30. <per-topic page ranges if useful>
 - **Σημειώσεις:** [Κεφάλαιο 5: Δείκτες και πίνακες](https://progintro.github.io/notes/chapters/05-pointers-arrays/), ενότητες «Δείκτες», «Πίνακες» (K04, σελ. 78–92)
@@ -107,13 +108,23 @@ concepts of «Θεωρία» it applies.
 - **Βιβλίο:** K&R, κεφ. 5 (only where the slides cite a book)
 - **Άλλα:** external links the slides give (Wikipedia, man pages, videos)
 
+## Συχνά λάθη
+- Mistakes and misconceptions, each with a one-line example or symptom (compiler
+  message, crash, wrong output) and the fix.
+
+<!-- misconceptions -->
+<!-- /misconceptions -->
+
+## Ερωτήσεις κατανόησης
+1. Short conceptual question.[^q1]
+...
+
+<!-- kahoot -->
+<!-- /kahoot -->
+
 ## Ασκήσεις
 <!-- exercises -->
 <!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
-1. Short conceptual question.[^q1]
-...
 
 [^q1]: Short answer.
 
@@ -123,9 +134,18 @@ concepts of «Θεωρία» it applies.
 - **One H1**, `# Κεφάλαιο N: <title>`. The appendix chapter is `# Παράρτημα Α: <title>`.
 - The body sits between `<!-- {% raw %} -->` and `<!-- {% endraw %} -->`. C code such as
   `{{1, 2}}` is Liquid syntax and would otherwise break the site build.
-- **Never edit between the `<!-- exercises -->` markers by hand.**
-  `tools/gen-exercises.py` fills them from `questions/`.
-- Self-assessment answers go in footnotes named `[^q1]`, `[^q2]`, … .
+- **Never edit between the generated markers by hand.** `tools/gen-exercises.py`
+  fills them from `questions/`:
+  - `misconceptions`, closing «Συχνά λάθη»: «Τι δυσκόλεψε την τάξη», the chapter's
+    Kahoot questions with a «Συχνή παρανόηση», hardest first, with the class's %
+    correct;
+  - `kahoot`, closing «Ερωτήσεις κατανόησης»: the chapter's Kahoot questions,
+    easiest first, with the % correct;
+  - `exercises`: the practice ladder. Slide questions (Ζέσταμα) → Εργαστήριο →
+    Εργασίες → Θέματα εξετάσεων, each easiest first, then related questions from other
+    chapters.
+- Answers to «Ερωτήσεις κατανόησης» go in footnotes named `[^q1]`, `[^q2]`, …,
+  defined at the very end of the file.
 - K04 page numbers come from `sources/k04-map.tsv` (printed K04 page → notes chapter and section).
   Give notes sections by their exact heading text in «».
 

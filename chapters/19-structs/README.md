@@ -481,28 +481,6 @@ flowchart LR
 | ένθετη / εμφωλευμένη δομή | nested struct | Δομή που είναι πεδίο άλλης δομής. |
 | τελεστής βέλους | arrow operator (`->`) | `ptr->f` ισοδυναμεί με `(*ptr).f`. |
 
-## Συχνά λάθη
-
-- **Ξεχασμένο `;` μετά το `}` της δομής.** Ο `gcc` αναφέρει σφάλμα στην *επόμενη*
-  γραμμή: `expected ';', identifier or '(' before 'int'`. Κλείνετε με `};`.
-- **`student st1;` χωρίς `typedef`.** `unknown type name 'student'; use 'struct'
-  keyword to refer to the type`: ο τύπος είναι `struct student`.
-- **Ανάθεση συμβολοσειράς σε πεδίο-πίνακα.** Το `st1.first_name = "Thanos";` δίνει
-  `assignment to expression with array type`. Χρησιμοποιήστε `strncpy` (και βάλτε
-  `'\0'`) ή αρχικοποίηση.
-- **Σύγκριση δομών με `==`.** `invalid operands to binary ==`: συγκρίνετε πεδίο προς
-  πεδίο.
-- **Ανάθεση ανάμεσα σε δομές με ίδια πεδία αλλά διαφορετικό όνομα.**
-  `incompatible types when assigning to type 'struct point2' from type
-  'struct point1'`: είναι διαφορετικοί τύποι.
-- **Υπολογισμός μεγέθους με το χέρι.** Το `malloc(268)` για `struct student` είναι
-  λίγο σε 64 bit (272). Γράψτε `malloc(sizeof(struct student))`.
-- **`.` σε δείκτη (και `*ptr.field`).** Με `Date *d2`, τα `d2.day` και `*d2.day`
-  δίνουν `'d2' is a pointer; did you mean to use '->'?`. Γράψτε `d2->day`. Το
-  αντίστροφο, `d1->day` με `Date d1`, δίνει `invalid type argument of '->'`.
-- **Ανάγνωση πεδίων χωρίς αρχικοποίηση.** Μια τοπική δομή χωρίς `= { ... }` έχει
-  σκουπίδια (`-29387249 0`)· αρκεί `= {0}` για να μηδενιστεί.
-
 ## Διάβασμα
 
 - **Διαφάνειες:** [Διάλεξη 19](https://github.com/progintro/progintro.github.io/releases/download/2025/lec19.pdf),
@@ -528,58 +506,43 @@ flowchart LR
   η δομή [`FILE` της glibc](https://codebrowser.dev/glibc/glibc/libio/bits/types/struct_FILE.h.html#_IO_FILE)
   (περίπου 216 bytes): δείτε τι περιέχει.
 
-## Ασκήσεις
+## Συχνά λάθη
 
-<!-- exercises -->
+- **Ξεχασμένο `;` μετά το `}` της δομής.** Ο `gcc` αναφέρει σφάλμα στην *επόμενη*
+  γραμμή: `expected ';', identifier or '(' before 'int'`. Κλείνετε με `};`.
+- **`student st1;` χωρίς `typedef`.** `unknown type name 'student'; use 'struct'
+  keyword to refer to the type`: ο τύπος είναι `struct student`.
+- **Ανάθεση συμβολοσειράς σε πεδίο-πίνακα.** Το `st1.first_name = "Thanos";` δίνει
+  `assignment to expression with array type`. Χρησιμοποιήστε `strncpy` (και βάλτε
+  `'\0'`) ή αρχικοποίηση.
+- **Σύγκριση δομών με `==`.** `invalid operands to binary ==`: συγκρίνετε πεδίο προς
+  πεδίο.
+- **Ανάθεση ανάμεσα σε δομές με ίδια πεδία αλλά διαφορετικό όνομα.**
+  `incompatible types when assigning to type 'struct point2' from type
+  'struct point1'`: είναι διαφορετικοί τύποι.
+- **Υπολογισμός μεγέθους με το χέρι.** Το `malloc(268)` για `struct student` είναι
+  λίγο σε 64 bit (272). Γράψτε `malloc(sizeof(struct student))`.
+- **`.` σε δείκτη (και `*ptr.field`).** Με `Date *d2`, τα `d2.day` και `*d2.day`
+  δίνουν `'d2' is a pointer; did you mean to use '->'?`. Γράψτε `d2->day`. Το
+  αντίστροφο, `d1->day` με `Date d1`, δίνει `invalid type argument of '->'`.
+- **Ανάγνωση πεδίων χωρίς αρχικοποίηση.** Μια τοπική δομή χωρίς `= { ... }` έχει
+  σκουπίδια (`-29387249 0`)· αρκεί `= {0}` για να μηδενιστεί.
 
-### Από τις διαφάνειες
+<!-- misconceptions -->
 
-- [Ανάθεση και χρήση πεδίων δομής](../../questions/slides/slides-lec19-field-assignment.md): Διάλεξη 19, διαφάνειες 12–13 · ★☆☆ · trace
-- [Πώς αναπαριστούμε 100 φοιτητές;](../../questions/slides/slides-lec19-many-students.md): Διάλεξη 19, διαφάνειες 6–7 · ★☆☆ · short-answer
-- [Ανάθεση με δομές](../../questions/slides/slides-lec19-struct-assign.md): Διάλεξη 19, διαφάνειες 29–30 · ★☆☆ · trace
-- [Σύγκριση με δομές](../../questions/slides/slides-lec19-struct-compare.md): Διάλεξη 19, διαφάνεια 32 · ★☆☆ · short-answer
-- [Δείκτες σε δομές: διαφορά ημερομηνιών](../../questions/slides/slides-lec19-date-pointers.md): Διάλεξη 19, διαφάνειες 42–43 · ★★☆ · trace
-- [Padding: η σειρά των πεδίων μετράει](../../questions/slides/slides-lec19-padding-interleaved.md): Διάλεξη 19, διαφάνειες 25–27 · ★★☆ · trace
-- [Padding: το μέγεθος ενός pixel](../../questions/slides/slides-lec19-padding-pixel.md): Διάλεξη 19, διαφάνειες 22–24 · ★★☆ · trace
-- [Το μέγεθος του struct student](../../questions/slides/slides-lec19-sizeof-student.md): Διάλεξη 19, διαφάνειες 20–21, 28 · ★★☆ · trace
+### Τι δυσκόλεψε την τάξη
 
-### Από τα εργαστήρια
+Από τα Kahoot των διαλέξεων: οι ερωτήσεις όπου μια λάθος απάντηση μάζεψε πολλές ψήφους, με το ποσοστό σωστών απαντήσεων.
 
-- [Δομές και συναρτήσεις](../../questions/labs/lab-lab09-point.md): Εργαστήριο 9, Άσκηση 1 · ★☆☆ · programming
-- [Δομές και δείκτες](../../questions/labs/lab-lab09-person.md): Εργαστήριο 9, Άσκηση 2 · ★★☆ · programming
+- **[Μερική αρχικοποίηση δομής](../../questions/kahoot/kahoot-struct-partial-init.md)** (42% σωστές): Το 26% επέλεξε `42`, πιστεύοντας ότι η μία τιμή αντιγράφεται σε όλα τα πεδία, και άλλο 26% «ό,τι έτυχε να έχει η μνήμη», ξεχνώντας ότι με αρχικοποιητή τα πεδία που λείπουν μηδενίζονται.
+- **[Ανάθεση δομών](../../questions/kahoot/kahoot-struct-assignment.md)** (49% σωστές): Το 28% επέλεξε `2`, σαν η ανάθεση `bar = cafe` να μην άλλαζε τα πεδία της `bar`· στην πραγματικότητα η ανάθεση δομών αντιγράφει όλα τα πεδία.
+- **[Μέγεθος δομής και padding](../../questions/kahoot/kahoot-struct-padding-size.md)** (52% σωστές): Το 24% επέλεξε `4 + 4 + 8 = 16`, την τιμή που δίνει συνήθως ένας 64-bit υπολογιστής· όμως το padding ανάμεσα στα πεδία και τα μεγέθη των τύπων δεν ορίζονται από το πρότυπο.
+- **[Σύγκριση δομών με ==](../../questions/kahoot/kahoot-struct-comparison.md)** (57% σωστές): Το 24% επέλεξε `0`, υποθέτοντας ότι το `==` συγκρίνει τις δομές πεδίο προς πεδίο, όπως το `=` τις αντιγράφει.
+- **[sizeof ενός typedef πίνακα](../../questions/kahoot/kahoot-typedef-array-size.md)** (66% σωστές): Το 24% επέλεξε «Εξαρτάται», ενώ το `typedef` απλώς δίνει όνομα στον τύπο «πίνακας 1024 `double`», που έχει σταθερό μέγεθος.
 
-### Από τα θέματα εξετάσεων
+<!-- /misconceptions -->
 
-- [Πρωτάθλημα](../../questions/exams/exam-2023-fall-ex13-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 3 · ★★★ · programming
-- [World Cup 2026](../../questions/exams/exam-2026-jun-q4.md): Εξέταση Ιουνίου 2026, Θέμα 4 · ★★★ · programming
-
-### Από τα Kahoot στο αμφιθέατρο
-
-- [Μερική αρχικοποίηση δομής](../../questions/kahoot/kahoot-struct-partial-init.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 42% σωστές απαντήσεις
-- [Ο τελεστής ->](../../questions/kahoot/kahoot-arrow-operator.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
-- [Ανάθεση δομών](../../questions/kahoot/kahoot-struct-assignment.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 49% σωστές απαντήσεις
-- [Μέγεθος δομής και padding](../../questions/kahoot/kahoot-struct-padding-size.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 52% σωστές απαντήσεις
-- [Σύγκριση δομών με ==](../../questions/kahoot/kahoot-struct-comparison.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
-- [sizeof ενός typedef πίνακα](../../questions/kahoot/kahoot-typedef-array-size.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 66% σωστές απαντήσεις
-- [Δομή χωρίς αρχικοποίηση](../../questions/kahoot/kahoot-struct-uninitialized.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★☆☆ · multiple-choice · 74% σωστές απαντήσεις
-- [Σε τι χρησιμεύει το typedef](../../questions/kahoot/kahoot-typedef-purpose.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★☆☆ · multiple-choice · 79% σωστές απαντήσεις
-- [Δικοί μας τύποι](../../questions/kahoot/kahoot-custom-types.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★☆☆ · multiple-choice · 81% σωστές απαντήσεις
-
-### Σχετικές ασκήσεις από άλλα κεφάλαια
-
-- [Πλησιάζοντας στον Στόχο](../../questions/exams/exam-2023-fall-ex10-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 4 · ★★☆ · programming (κεφ. 17)
-- [Καλύτερο Ταίριασμα](../../questions/exams/exam-2023-fall-ex0-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 3 · ★★★ · programming (κεφ. 18)
-- [Μετρήσεις Θερμοκρασίας](../../questions/exams/exam-2023-fall-ex14-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 3 · ★★☆ · programming (κεφ. 18)
-- [Ταξινομώντας τα Άλματα](../../questions/exams/exam-2023-fall-ex15-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 3 · ★★★ · programming (κεφ. 18)
-- [Μίνι Βάση Δεδομένων](../../questions/exams/exam-2023-fall-ex2-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 3 · ★★★ · programming (κεφ. 18)
-- [Συνάρτηση σύγκρισης για αύξουσα ταξινόμηση](../../questions/kahoot/kahoot-qsort-compare-ascending.md): Kahoot «Ταξινόμηση και Δομές» · ★★★ · multiple-choice · 12% σωστές απαντήσεις (κεφ. 18)
-- [Δομή ή ένωση;](../../questions/kahoot/kahoot-struct-vs-union.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 63% σωστές απαντήσεις (κεφ. 20)
-- [Συνδεδεμένες λίστες](../../questions/labs/lab-lab09-grades.md): Εργαστήριο 9, Άσκηση 3 · ★★☆ · programming (κεφ. 21)
-- [Η Newton-Raphson Ξαναχτυπά! (Bonus)](../../questions/homework/hw-2023-hw3-fractal.md): Εργασία 3 (2023-24), Άσκηση 2 (Bonus) και 2.1 (Bonus) · ★★★ · programming (κεφ. 23)
-
-<!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
+## Ερωτήσεις κατανόησης
 
 1. Πόση μνήμη δεσμεύει η δήλωση `struct student { ... };` χωρίς μεταβλητές;[^q1]
 2. Με `struct student st1 = { "Ada", "Lovelace" };`, ποια είναι η τιμή του
@@ -596,24 +559,73 @@ flowchart LR
 7. Ποια η διαφορά ανάμεσα σε `d3 = d2;` και `*d3 = *d2;` για δύο δείκτες
    `Date *`;[^q7]
 
+<!-- kahoot -->
+
+### Kahoot από το αμφιθέατρο
+
+Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που απάντησαν σωστά.
+
+- [Δικοί μας τύποι](../../questions/kahoot/kahoot-custom-types.md): 81% σωστές απαντήσεις
+- [Σε τι χρησιμεύει το typedef](../../questions/kahoot/kahoot-typedef-purpose.md): 79% σωστές απαντήσεις
+- [Δομή χωρίς αρχικοποίηση](../../questions/kahoot/kahoot-struct-uninitialized.md): 74% σωστές απαντήσεις
+- [sizeof ενός typedef πίνακα](../../questions/kahoot/kahoot-typedef-array-size.md): 66% σωστές απαντήσεις
+- [Σύγκριση δομών με ==](../../questions/kahoot/kahoot-struct-comparison.md): 57% σωστές απαντήσεις
+- [Μέγεθος δομής και padding](../../questions/kahoot/kahoot-struct-padding-size.md): 52% σωστές απαντήσεις
+- [Ανάθεση δομών](../../questions/kahoot/kahoot-struct-assignment.md): 49% σωστές απαντήσεις
+- [Ο τελεστής ->](../../questions/kahoot/kahoot-arrow-operator.md): 48% σωστές απαντήσεις
+- [Μερική αρχικοποίηση δομής](../../questions/kahoot/kahoot-struct-partial-init.md): 42% σωστές απαντήσεις
+
+<!-- /kahoot -->
+
+## Ασκήσεις
+
+<!-- exercises -->
+
+### Ζέσταμα: από τις διαφάνειες
+
+- [Ανάθεση και χρήση πεδίων δομής](../../questions/slides/slides-lec19-field-assignment.md): Διάλεξη 19, διαφάνειες 12–13 · ★☆☆ · trace
+- [Πώς αναπαριστούμε 100 φοιτητές;](../../questions/slides/slides-lec19-many-students.md): Διάλεξη 19, διαφάνειες 6–7 · ★☆☆ · short-answer
+- [Ανάθεση με δομές](../../questions/slides/slides-lec19-struct-assign.md): Διάλεξη 19, διαφάνειες 29–30 · ★☆☆ · trace
+- [Σύγκριση με δομές](../../questions/slides/slides-lec19-struct-compare.md): Διάλεξη 19, διαφάνεια 32 · ★☆☆ · short-answer
+- [Δείκτες σε δομές: διαφορά ημερομηνιών](../../questions/slides/slides-lec19-date-pointers.md): Διάλεξη 19, διαφάνειες 42–43 · ★★☆ · trace
+- [Padding: η σειρά των πεδίων μετράει](../../questions/slides/slides-lec19-padding-interleaved.md): Διάλεξη 19, διαφάνειες 25–27 · ★★☆ · trace
+- [Padding: το μέγεθος ενός pixel](../../questions/slides/slides-lec19-padding-pixel.md): Διάλεξη 19, διαφάνειες 22–24 · ★★☆ · trace
+- [Το μέγεθος του struct student](../../questions/slides/slides-lec19-sizeof-student.md): Διάλεξη 19, διαφάνειες 20–21, 28 · ★★☆ · trace
+
+### Εργαστήριο
+
+- [Δομές και συναρτήσεις](../../questions/labs/lab-lab09-point.md): Εργαστήριο 9, Άσκηση 1 · ★☆☆ · programming
+- [Δομές και δείκτες](../../questions/labs/lab-lab09-person.md): Εργαστήριο 9, Άσκηση 2 · ★★☆ · programming
+
+### Θέματα εξετάσεων
+
+- [Πρωτάθλημα](../../questions/exams/exam-2023-fall-ex13-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 3 · ★★★ · programming
+- [World Cup 2026](../../questions/exams/exam-2026-jun-q4.md): Εξέταση Ιουνίου 2026, Θέμα 4 · ★★★ · programming
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Πλησιάζοντας στον Στόχο](../../questions/exams/exam-2023-fall-ex10-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 4 · ★★☆ · programming (κεφ. 17)
+- [Καλύτερο Ταίριασμα](../../questions/exams/exam-2023-fall-ex0-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 3 · ★★★ · programming (κεφ. 18)
+- [Μετρήσεις Θερμοκρασίας](../../questions/exams/exam-2023-fall-ex14-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 3 · ★★☆ · programming (κεφ. 18)
+- [Ταξινομώντας τα Άλματα](../../questions/exams/exam-2023-fall-ex15-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 3 · ★★★ · programming (κεφ. 18)
+- [Μίνι Βάση Δεδομένων](../../questions/exams/exam-2023-fall-ex2-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 3 · ★★★ · programming (κεφ. 18)
+- [Συνδεδεμένες λίστες](../../questions/labs/lab-lab09-grades.md): Εργαστήριο 9, Άσκηση 3 · ★★☆ · programming (κεφ. 21)
+- [Η Newton-Raphson Ξαναχτυπά! (Bonus)](../../questions/homework/hw-2023-hw3-fractal.md): Εργασία 3 (2023-24), Άσκηση 2 (Bonus) και 2.1 (Bonus) · ★★★ · programming (κεφ. 23)
+
+<!-- /exercises -->
+
 [^q1]: Καμία. Η δήλωση ορίζει μόνο τον τύπο· μνήμη δεσμεύεται όταν δηλωθεί μεταβλητή
     (ή κληθεί `malloc`).
-
 [^q2]: `0.0`: τα πεδία που λείπουν από τη λίστα αρχικοποίησης γίνονται 0 (και το
     `year` επίσης 0).
-
 [^q3]: Λόγω padding: ο μεταγλωττιστής αφήνει κενά bytes ώστε κάθε πεδίο να ξεκινά σε
     διεύθυνση κατάλληλη για τον τύπο του (memory alignment), για λόγους απόδοσης.
-
 [^q4]: Βάζοντας μαζί τα `int` και μαζί τα `char`, π.χ.
     `int alpha, beta, gamma; char red, green, blue;`: 12 + 3 = 15 bytes, που με
     padding στο τέλος γίνονται 16 αντί για 24.
-
 [^q5]: Αντιγράφει όλα τα πεδία του `pt1` στο `pt2`. Η C δεν ορίζει `==` για δομές
     (`invalid operands to binary ==`)· συγκρίνουμε `pt1.x == pt2.x && pt1.y == pt2.y`.
-
 [^q6]: `p->created.day`: το `->` για τον δείκτη, το `.` για την ένθετη δομή.
-
 [^q7]: Το `d3 = d2;` αντιγράφει τη διεύθυνση (και οι δύο δείχνουν στην ίδια δομή, ενώ
     χάνεται το μπλοκ του `d3`)· το `*d3 = *d2;` αντιγράφει τα περιεχόμενα της δομής.
 

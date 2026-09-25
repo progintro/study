@@ -606,6 +606,35 @@ $ ./dyn2d
 | χρήση μετά την αποδέσμευση | use after free | Πρόσβαση σε μνήμη μετά την `free` της. |
 | διπλή αποδέσμευση | double free | Δεύτερη `free` στον ίδιο pointer. |
 
+## Διάβασμα
+
+- **Διαφάνειες:** [Διάλεξη 13](https://github.com/progintro/progintro.github.io/releases/download/2025/lec13.pdf),
+  σελ. 1–64: endianness σελ. 5–7· κατηγορίες μνήμης σελ. 8–9· στοίβα και stack
+  frames σελ. 10–26· αναδρομή και μέγεθος στοίβας σελ. 27–31· σωρός και `malloc`
+  σελ. 32–40· `void` και `void *` σελ. 41–42· έλεγχος για `NULL` σελ. 43–46· `free`
+  σελ. 47–51· `realloc` σελ. 52–55· δυναμικοί δισδιάστατοι πίνακες σελ. 56–58 και 64·
+  κουίζ σελ. 61–63.
+- **Σημειώσεις:**
+  - [Κεφάλαιο 6: Δυναμική μνήμη, συμβολοσειρές και πολυδιάστατοι πίνακες](https://progintro.github.io/notes/chapters/06-memory-strings/),
+    ενότητες «Δυναμική δέσμευση μνήμης» (K04, σελ. 88–92) και «Πολυδιάστατοι
+    πίνακες» (K04, σελ. 100–102, για τη δυναμική δέσμευση με `int **`).
+  - [Κεφάλαιο 4: Συναρτήσεις, εμβέλεια και αναδρομή](https://progintro.github.io/notes/chapters/04-functions/),
+    ενότητα «Εμβέλεια και χρόνος ζωής μεταβλητών» (K04, σελ. 63–68), για τη στοίβα,
+    τη στατική μνήμη και την αναδρομή.
+- **Εργαστήριο:** [Εργαστήριο 7](https://progintro.github.io/lab-material/labs/lab07/):
+  ασκήσεις `array.c`, `mines.c`, και το παράρτημα «Σφάλματα διαχείρισης μνήμης» με
+  την άσκηση `my_prog.c` (εντοπισμός σφάλματος μνήμης με τον `gdb`).
+- **Άλλα** (οι σύνδεσμοι της σελ. 59):
+  - [Memory management and heap](https://en.wikipedia.org/wiki/Memory_management) (Wikipedia).
+  - [Stack memory](https://en.wikipedia.org/wiki/Stack-based_memory_allocation) (Wikipedia).
+  - [Activation records](https://www.codingninjas.com/studio/library/activation-record-in-compiler-design) (Coding Ninjas).
+  - [Dynamic memory allocation in C](https://en.wikipedia.org/wiki/C_dynamic_memory_allocation) (Wikipedia).
+  - [Memory leaks](https://en.wikipedia.org/wiki/Memory_leak) (Wikipedia).
+  - [Data segment](https://en.wikipedia.org/wiki/Data_segment) και
+    [bss section](https://en.wikipedia.org/wiki/.bss) (Wikipedia· για άλλη φορά).
+  - [Endianness](https://en.wikipedia.org/wiki/Endianness) (Wikipedia).
+  - `man 3 malloc` (καλύπτει `malloc`, `calloc`, `realloc`, `free`).
+
 ## Συχνά λάθη
 
 - **Μεγάλος τοπικός πίνακας.** Το `char bomb[9000000];` ή ένα `int grid[5000][5000];`
@@ -638,116 +667,18 @@ $ ./dyn2d
 - **`void a;`.** Δεν μεταγλωττίζεται (`variable or field 'a' declared void`): `void`
   δεν είναι τύπος μεταβλητής, μόνο `void *` είναι.
 
-## Διάβασμα
+<!-- misconceptions -->
 
-- **Διαφάνειες:** [Διάλεξη 13](https://github.com/progintro/progintro.github.io/releases/download/2025/lec13.pdf),
-  σελ. 1–64: endianness σελ. 5–7· κατηγορίες μνήμης σελ. 8–9· στοίβα και stack
-  frames σελ. 10–26· αναδρομή και μέγεθος στοίβας σελ. 27–31· σωρός και `malloc`
-  σελ. 32–40· `void` και `void *` σελ. 41–42· έλεγχος για `NULL` σελ. 43–46· `free`
-  σελ. 47–51· `realloc` σελ. 52–55· δυναμικοί δισδιάστατοι πίνακες σελ. 56–58 και 64·
-  κουίζ σελ. 61–63.
-- **Σημειώσεις:**
-  - [Κεφάλαιο 6: Δυναμική μνήμη, συμβολοσειρές και πολυδιάστατοι πίνακες](https://progintro.github.io/notes/chapters/06-memory-strings/),
-    ενότητες «Δυναμική δέσμευση μνήμης» (K04, σελ. 88–92) και «Πολυδιάστατοι
-    πίνακες» (K04, σελ. 100–102, για τη δυναμική δέσμευση με `int **`).
-  - [Κεφάλαιο 4: Συναρτήσεις, εμβέλεια και αναδρομή](https://progintro.github.io/notes/chapters/04-functions/),
-    ενότητα «Εμβέλεια και χρόνος ζωής μεταβλητών» (K04, σελ. 63–68), για τη στοίβα,
-    τη στατική μνήμη και την αναδρομή.
-- **Εργαστήριο:** [Εργαστήριο 7](https://progintro.github.io/lab-material/labs/lab07/):
-  ασκήσεις `array.c`, `mines.c`, και το παράρτημα «Σφάλματα διαχείρισης μνήμης» με
-  την άσκηση `my_prog.c` (εντοπισμός σφάλματος μνήμης με τον `gdb`).
-- **Άλλα** (οι σύνδεσμοι της σελ. 59):
-  - [Memory management and heap](https://en.wikipedia.org/wiki/Memory_management) (Wikipedia).
-  - [Stack memory](https://en.wikipedia.org/wiki/Stack-based_memory_allocation) (Wikipedia).
-  - [Activation records](https://www.codingninjas.com/studio/library/activation-record-in-compiler-design) (Coding Ninjas).
-  - [Dynamic memory allocation in C](https://en.wikipedia.org/wiki/C_dynamic_memory_allocation) (Wikipedia).
-  - [Memory leaks](https://en.wikipedia.org/wiki/Memory_leak) (Wikipedia).
-  - [Data segment](https://en.wikipedia.org/wiki/Data_segment) και
-    [bss section](https://en.wikipedia.org/wiki/.bss) (Wikipedia· για άλλη φορά).
-  - [Endianness](https://en.wikipedia.org/wiki/Endianness) (Wikipedia).
-  - `man 3 malloc` (καλύπτει `malloc`, `calloc`, `realloc`, `free`).
+### Τι δυσκόλεψε την τάξη
 
-## Ασκήσεις
+Από τα Kahoot των διαλέξεων: οι ερωτήσεις όπου μια λάθος απάντηση μάζεψε πολλές ψήφους, με το ποσοστό σωστών απαντήσεων.
 
-<!-- exercises -->
+- **[Βάθος αναδρομής μέχρι να γεμίσει η στοίβα](../../questions/kahoot/kahoot-stack-overflow-depth.md)** (20% σωστές): Το 48% επέλεξε `~8`, θεωρώντας ότι το 8192 είναι bytes. Το `ulimit -s` μετράει σε KB, άρα η στοίβα είναι 8 MB.
+- **[malloc, calloc, realloc και free](../../questions/kahoot/kahoot-memory-functions.md)** (27% σωστές): Περίπου οι μισοί (50%) συμπεριέλαβαν ότι αποδεσμεύουμε μνήμη της στοίβας με την `free`. Η `free` είναι μόνο για μνήμη του σωρού· οι τοπικές μεταβλητές αποδεσμεύονται αυτόματα όταν επιστρέφει η συνάρτηση.
 
-### Από τις διαφάνειες
+<!-- /misconceptions -->
 
-- [Τι γίνεται μετά την free;](../../questions/slides/slides-lec13-after-free.md): Διάλεξη 13, διαφάνειες 47–51 · ★☆☆ · short-answer
-- [Γιατί η αναδρομή πρέπει να τελειώνει;](../../questions/slides/slides-lec13-infinite-recursion.md): Διάλεξη 13, διαφάνεια 27 · ★☆☆ · short-answer
-- [Τα stack frames της equalIgnoreCase](../../questions/slides/slides-lec13-stack-frames.md): Διάλεξη 13, διαφάνειες 20–26 · ★☆☆ · short-answer
-- [Δυναμικός δισδιάστατος πίνακας MxN](../../questions/slides/slides-lec13-dynamic-2d.md): Διάλεξη 13, διαφάνειες 56–58 · ★★☆ · programming
-- [Ένας τεράστιος πίνακας στον σωρό](../../questions/slides/slides-lec13-heap-bomb.md): Διάλεξη 13, διαφάνειες 43–46 · ★★☆ · trace
-- [Κουίζ: πίνακας 5x5 σε συνάρτηση](../../questions/slides/slides-lec13-quiz-5x5.md): Διάλεξη 13, διαφάνειες 61–63 · ★★☆ · debug
-- [Ένας τεράστιος πίνακας στη στοίβα](../../questions/slides/slides-lec13-stack-bomb.md): Διάλεξη 13, διαφάνειες 28–31 · ★★☆ · trace
-
-### Από τα εργαστήρια
-
-- [Δυναμική δέσμευση μνήμης για δισδιάστατο πίνακα](../../questions/labs/lab-lab07-mines.md): Εργαστήριο 7, Άσκηση 3 · ★★☆ · programming
-- [Κινήσεις σε πλέγμα (Παλιό θέμα)](../../questions/labs/lab-lab07-pacman.md): Εργαστήριο 7, Άσκηση 5 · ★★★ · programming
-
-### Από τα θέματα εξετάσεων
-
-- [Debugging](../../questions/exams/exam-2023-fall-ex1-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 4 · ★★☆ · debug
-- [Κάδρο](../../questions/exams/exam-2023-fall-ex9-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 4 · ★★★ · programming
-
-### Από τα Kahoot στο αμφιθέατρο
-
-- [Βάθος αναδρομής μέχρι να γεμίσει η στοίβα](../../questions/kahoot/kahoot-stack-overflow-depth.md): Kahoot «Μνήμη» (διάλεξη 13) · ★★★ · multiple-choice · 20% σωστές απαντήσεις
-- [malloc, calloc, realloc και free](../../questions/kahoot/kahoot-memory-functions.md): Kahoot «Μνήμη» (διάλεξη 13) · ★★★ · multiple-choice · 27% σωστές απαντήσεις
-- [malloc για πίνακα 10000 int](../../questions/kahoot/kahoot-malloc-int-array.md): Kahoot «Ταξινόμηση και Δομές» · ★★☆ · multiple-choice · 60% σωστές απαντήσεις
-- [Πού βάζω έναν μεγάλο πίνακα](../../questions/kahoot/kahoot-large-array-placement.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★★☆ · multiple-choice · 65% σωστές απαντήσεις
-- [Δέσμευση 10⁹ double](../../questions/kahoot/kahoot-malloc-doubles.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★★☆ · multiple-choice · 66% σωστές απαντήσεις
-- [Αποδέσμευση από τον σωρό](../../questions/kahoot/kahoot-heap-free-any.md): Kahoot «Μνήμη» (διάλεξη 13) · ★★☆ · multiple-choice · 67% σωστές απαντήσεις
-- [Πάντα πετυχαίνει η malloc;](../../questions/kahoot/kahoot-malloc-may-fail.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 70% σωστές απαντήσεις
-- [Είναι συνεχόμενος ο σωρός;](../../questions/kahoot/kahoot-heap-not-contiguous.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 75% σωστές απαντήσεις
-- [Αφαίρεση από στοίβα](../../questions/kahoot/kahoot-stack-lifo.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 80% σωστές απαντήσεις
-- [Κατηγορίες μνήμης](../../questions/kahoot/kahoot-memory-categories.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις
-- [Διπλό free](../../questions/kahoot/kahoot-double-free.md): Kahoot «Μνήμη» (διάλεξη 13) · ★☆☆ · multiple-choice · 92% σωστές απαντήσεις
-
-### Σχετικές ασκήσεις από άλλα κεφάλαια
-
-- [Ο Στέργιος Ξαναχτυπά](../../questions/exams/exam-2026-jan-q6.md): Εξέταση Ιανουαρίου 2026, Θέμα 6 · ★☆☆ · trace (κεφ. 11)
-- [Τερματισμός αναδρομής](../../questions/kahoot/kahoot-recursion-terminates.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) και «Δείκτες Παντού!» (διάλεξη 12) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις (κεφ. 11)
-- [Περιστροφή Πίνακα](../../questions/exams/exam-2023-fall-ex1-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 3 · ★★☆ · programming (κεφ. 12)
-- [Αλλαγή Τέρματος](../../questions/exams/exam-2023-fall-ex13-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 2 · ★☆☆ · programming (κεφ. 12)
-- [Πολλαπλασιασμός Πινάκων](../../questions/exams/exam-2023-fall-ex8-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 3 · ★★☆ · programming (κεφ. 12)
-- [Πολύτιμοι Πίνακες](../../questions/exams/exam-2023-fall-ex9-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 3 · ★★☆ · programming (κεφ. 12)
-- [FauxtoShop: περιστροφή εικόνας BMP](../../questions/homework/hw-2023-hw2-fauxtoshop.md): Εργασία 2 (2023-24), Άσκηση 1 · ★★★ · programming (κεφ. 12)
-- [Στατικοί και δυναμικοί πίνακες](../../questions/kahoot/kahoot-static-vs-dynamic-arrays.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★☆☆ · multiple-choice · 92% σωστές απαντήσεις (κεφ. 12)
-- [Δυναμική δέσμευση μνήμης για μονοδιάστατο πίνακα](../../questions/labs/lab-lab07-array.md): Εργαστήριο 7, Άσκηση 2 · ★☆☆ · programming (κεφ. 12)
-- [Παράδειγμα endianness](../../questions/slides/slides-lec12-endianness.md): Διάλεξη 12, διαφάνεια 42 · ★★☆ · trace (κεφ. 12)
-- [Πόση μνήμη δεσμεύει η malloc και τι λέει το sizeof](../../questions/slides/slides-lec12-malloc-sizeof.md): Διάλεξη 12, διαφάνειες 39–40 · ★★☆ · short-answer (κεφ. 12)
-- [Η συνάρτηση dog](../../questions/exams/exam-2025-jan-q2.md): Εξέταση Ιανουαρίου 2025, Θέμα 2 · ★☆☆ · trace (κεφ. 14)
-- [Συνένωση Αλφαριθμητικών - join](../../questions/exams/exam-2025-jan-q5.md): Εξέταση Ιανουαρίου 2025, Θέμα 5 · ★★☆ · programming (κεφ. 14)
-- [Πού αποθηκεύεται το char str[]](../../questions/kahoot/kahoot-char-array-storage.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★☆ · multiple-choice · 49% σωστές απαντήσεις (κεφ. 14)
-- [Πού αποθηκεύονται οι τοπικές μεταβλητές](../../questions/kahoot/kahoot-local-variable-storage.md): Kahoot «Εμβέλεια, Μνήμη και Συμβολοσειρές» (διάλεξη 14) · ★★★ · multiple-choice · 23% σωστές απαντήσεις (κεφ. 14)
-- [Δίδυμοι Πρώτοι](../../questions/exams/exam-2023-fall-ex7-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 3 · ★★★ · programming (κεφ. 15)
-- [Μετρώντας τα Αστέρια - stars](../../questions/exams/exam-2025-jan-q6.md): Εξέταση Ιανουαρίου 2025, Θέμα 6 · ★★★ · programming (κεφ. 16)
-- [Χτίζοντας έναν χιονάνθρωπο (Παλιό θέμα)](../../questions/labs/lab-lab07-olaf.md): Εργαστήριο 7, Άσκηση 4 · ★★★ · programming (κεφ. 16)
-- [Δισδιάστατος πίνακας στον σωρό](../../questions/slides/slides-lec16-heap-2d-array.md): Διάλεξη 16, διαφάνεια 25 · ★★☆ · programming (κεφ. 16)
-- [Η συνάρτηση compute](../../questions/exams/exam-2026-jan-q2.md): Εξέταση Ιανουαρίου 2026, Θέμα 2 · ★★☆ · trace (κεφ. 17)
-- [Καλύτερο Ταίριασμα](../../questions/exams/exam-2023-fall-ex0-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 3 · ★★★ · programming (κεφ. 18)
-- [Κρυμμένο Μήνυμα](../../questions/exams/exam-2023-fall-ex10-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 3 · ★★☆ · programming (κεφ. 18)
-- [Μίνι Βάση Δεδομένων](../../questions/exams/exam-2023-fall-ex2-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 3 · ★★★ · programming (κεφ. 18)
-- [Ταξινόμηση Αρχείων Καταγραφής](../../questions/exams/exam-2023-fall-ex6-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 4 · ★★☆ · programming (κεφ. 18)
-- [Ταξινόμηση Πακέτων](../../questions/exams/exam-2023-fall-ex8-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 4 · ★★★ · programming (κεφ. 18)
-- [Προβλέποντας το Μέλλον (future)](../../questions/homework/hw-2024-hw2-future.md): Εργασία 2 (2024-25), Άσκηση 1 · ★★☆ · programming (κεφ. 18)
-- [Δομή χωρίς αρχικοποίηση](../../questions/kahoot/kahoot-struct-uninitialized.md): Kahoot «Δομές + Αρχεία», «Ταξινόμηση και Δομές» · ★☆☆ · multiple-choice · 74% σωστές απαντήσεις (κεφ. 19)
-- [Δομές και δείκτες](../../questions/labs/lab-lab09-person.md): Εργαστήριο 9, Άσκηση 2 · ★★☆ · programming (κεφ. 19)
-- [Αντιστροφή λίστας](../../questions/exams/exam-2024-sep-q5.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 5 · ★★☆ · programming (κεφ. 21)
-- [Μεσαίο Στοιχείο Λίστας](../../questions/exams/exam-2025-sep-q4.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 4 · ★★☆ · programming (κεφ. 21)
-- [Ν-οστό Στοιχείο Λίστας](../../questions/exams/exam-2026-sep-q4.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 4 · ★★☆ · programming (κεφ. 21)
-- [Ανάγνωση διαγραμμένου στοιχείου](../../questions/kahoot/kahoot-list-use-after-free.md): Kahoot «Λίστες, Δέντρα and Beyond» · ★☆☆ · multiple-choice · 92% σωστές απαντήσεις (κεφ. 21)
-- [Εργαλείο για memory leaks](../../questions/kahoot/kahoot-valgrind.md): Kahoot «Δυαδική Αναζήτηση και Ταξινόμηση» (διάλεξη 17) · ★☆☆ · multiple-choice · 86% σωστές απαντήσεις (κεφ. 21)
-- [Zoomba: συντομότερη διαδρομή σε δωμάτιο](../../questions/homework/hw-2023-hw3-zoomba.md): Εργασία 3 (2023-24), Άσκηση 1 · ★★★ · programming (κεφ. 22)
-- [Το Νερό Νεράκι](../../questions/exams/exam-2023-dec-q4.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 4 · ★★★ · programming (κεφ. 25)
-- [Η Τριπλέτα Στόχος](../../questions/exams/exam-2024-dec-q3.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 3 · ★★★ · programming (κεφ. 25)
-- [Η Μεγαλύτερη Χωρητικότητα - capacity](../../questions/exams/exam-2026-sep-q5.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 5 · ★★★ · programming (κεφ. 25)
-
-<!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
+## Ερωτήσεις κατανόησης
 
 1. Τι σημαίνει LIFO και γιατί ταιριάζει στις κλήσεις συναρτήσεων;[^q1]
 2. Ποια τρία είδη δεδομένων μπαίνουν σε ένα stack frame;[^q2]
@@ -759,22 +690,95 @@ $ ./dyn2d
 7. Πόσες κλήσεις `malloc` και πόσες `free` χρειάζεται ένας δυναμικός πίνακας
    `M × N` με `int **`;[^q7]
 
+<!-- kahoot -->
+
+### Kahoot από το αμφιθέατρο
+
+Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που απάντησαν σωστά.
+
+- [Διπλό free](../../questions/kahoot/kahoot-double-free.md): 92% σωστές απαντήσεις
+- [Κατηγορίες μνήμης](../../questions/kahoot/kahoot-memory-categories.md): 87% σωστές απαντήσεις
+- [Αφαίρεση από στοίβα](../../questions/kahoot/kahoot-stack-lifo.md): 80% σωστές απαντήσεις
+- [Είναι συνεχόμενος ο σωρός;](../../questions/kahoot/kahoot-heap-not-contiguous.md): 75% σωστές απαντήσεις
+- [Πάντα πετυχαίνει η malloc;](../../questions/kahoot/kahoot-malloc-may-fail.md): 70% σωστές απαντήσεις
+- [Αποδέσμευση από τον σωρό](../../questions/kahoot/kahoot-heap-free-any.md): 67% σωστές απαντήσεις
+- [Δέσμευση 10⁹ double](../../questions/kahoot/kahoot-malloc-doubles.md): 66% σωστές απαντήσεις
+- [Πού βάζω έναν μεγάλο πίνακα](../../questions/kahoot/kahoot-large-array-placement.md): 65% σωστές απαντήσεις
+- [malloc για πίνακα 10000 int](../../questions/kahoot/kahoot-malloc-int-array.md): 60% σωστές απαντήσεις
+- [malloc, calloc, realloc και free](../../questions/kahoot/kahoot-memory-functions.md): 27% σωστές απαντήσεις
+- [Βάθος αναδρομής μέχρι να γεμίσει η στοίβα](../../questions/kahoot/kahoot-stack-overflow-depth.md): 20% σωστές απαντήσεις
+
+<!-- /kahoot -->
+
+## Ασκήσεις
+
+<!-- exercises -->
+
+### Ζέσταμα: από τις διαφάνειες
+
+- [Τι γίνεται μετά την free;](../../questions/slides/slides-lec13-after-free.md): Διάλεξη 13, διαφάνειες 47–51 · ★☆☆ · short-answer
+- [Γιατί η αναδρομή πρέπει να τελειώνει;](../../questions/slides/slides-lec13-infinite-recursion.md): Διάλεξη 13, διαφάνεια 27 · ★☆☆ · short-answer
+- [Τα stack frames της equalIgnoreCase](../../questions/slides/slides-lec13-stack-frames.md): Διάλεξη 13, διαφάνειες 20–26 · ★☆☆ · short-answer
+- [Δυναμικός δισδιάστατος πίνακας MxN](../../questions/slides/slides-lec13-dynamic-2d.md): Διάλεξη 13, διαφάνειες 56–58 · ★★☆ · programming
+- [Ένας τεράστιος πίνακας στον σωρό](../../questions/slides/slides-lec13-heap-bomb.md): Διάλεξη 13, διαφάνειες 43–46 · ★★☆ · trace
+- [Κουίζ: πίνακας 5x5 σε συνάρτηση](../../questions/slides/slides-lec13-quiz-5x5.md): Διάλεξη 13, διαφάνειες 61–63 · ★★☆ · debug
+- [Ένας τεράστιος πίνακας στη στοίβα](../../questions/slides/slides-lec13-stack-bomb.md): Διάλεξη 13, διαφάνειες 28–31 · ★★☆ · trace
+
+### Εργαστήριο
+
+- [Δυναμική δέσμευση μνήμης για δισδιάστατο πίνακα](../../questions/labs/lab-lab07-mines.md): Εργαστήριο 7, Άσκηση 3 · ★★☆ · programming
+- [Κινήσεις σε πλέγμα (Παλιό θέμα)](../../questions/labs/lab-lab07-pacman.md): Εργαστήριο 7, Άσκηση 5 · ★★★ · programming
+
+### Θέματα εξετάσεων
+
+- [Debugging](../../questions/exams/exam-2023-fall-ex1-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 4 · ★★☆ · debug
+- [Κάδρο](../../questions/exams/exam-2023-fall-ex9-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 4 · ★★★ · programming
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Ο Στέργιος Ξαναχτυπά](../../questions/exams/exam-2026-jan-q6.md): Εξέταση Ιανουαρίου 2026, Θέμα 6 · ★☆☆ · trace (κεφ. 11)
+- [Περιστροφή Πίνακα](../../questions/exams/exam-2023-fall-ex1-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 3 · ★★☆ · programming (κεφ. 12)
+- [Αλλαγή Τέρματος](../../questions/exams/exam-2023-fall-ex13-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 2 · ★☆☆ · programming (κεφ. 12)
+- [Πολλαπλασιασμός Πινάκων](../../questions/exams/exam-2023-fall-ex8-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 3 · ★★☆ · programming (κεφ. 12)
+- [Πολύτιμοι Πίνακες](../../questions/exams/exam-2023-fall-ex9-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 3 · ★★☆ · programming (κεφ. 12)
+- [FauxtoShop: περιστροφή εικόνας BMP](../../questions/homework/hw-2023-hw2-fauxtoshop.md): Εργασία 2 (2023-24), Άσκηση 1 · ★★★ · programming (κεφ. 12)
+- [Δυναμική δέσμευση μνήμης για μονοδιάστατο πίνακα](../../questions/labs/lab-lab07-array.md): Εργαστήριο 7, Άσκηση 2 · ★☆☆ · programming (κεφ. 12)
+- [Παράδειγμα endianness](../../questions/slides/slides-lec12-endianness.md): Διάλεξη 12, διαφάνεια 42 · ★★☆ · trace (κεφ. 12)
+- [Πόση μνήμη δεσμεύει η malloc και τι λέει το sizeof](../../questions/slides/slides-lec12-malloc-sizeof.md): Διάλεξη 12, διαφάνειες 39–40 · ★★☆ · short-answer (κεφ. 12)
+- [Η συνάρτηση dog](../../questions/exams/exam-2025-jan-q2.md): Εξέταση Ιανουαρίου 2025, Θέμα 2 · ★☆☆ · trace (κεφ. 14)
+- [Συνένωση Αλφαριθμητικών - join](../../questions/exams/exam-2025-jan-q5.md): Εξέταση Ιανουαρίου 2025, Θέμα 5 · ★★☆ · programming (κεφ. 14)
+- [Δίδυμοι Πρώτοι](../../questions/exams/exam-2023-fall-ex7-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 3 · ★★★ · programming (κεφ. 15)
+- [Μετρώντας τα Αστέρια - stars](../../questions/exams/exam-2025-jan-q6.md): Εξέταση Ιανουαρίου 2025, Θέμα 6 · ★★★ · programming (κεφ. 16)
+- [Χτίζοντας έναν χιονάνθρωπο (Παλιό θέμα)](../../questions/labs/lab-lab07-olaf.md): Εργαστήριο 7, Άσκηση 4 · ★★★ · programming (κεφ. 16)
+- [Δισδιάστατος πίνακας στον σωρό](../../questions/slides/slides-lec16-heap-2d-array.md): Διάλεξη 16, διαφάνεια 25 · ★★☆ · programming (κεφ. 16)
+- [Η συνάρτηση compute](../../questions/exams/exam-2026-jan-q2.md): Εξέταση Ιανουαρίου 2026, Θέμα 2 · ★★☆ · trace (κεφ. 17)
+- [Καλύτερο Ταίριασμα](../../questions/exams/exam-2023-fall-ex0-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 3 · ★★★ · programming (κεφ. 18)
+- [Κρυμμένο Μήνυμα](../../questions/exams/exam-2023-fall-ex10-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 3 · ★★☆ · programming (κεφ. 18)
+- [Μίνι Βάση Δεδομένων](../../questions/exams/exam-2023-fall-ex2-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 3 · ★★★ · programming (κεφ. 18)
+- [Ταξινόμηση Αρχείων Καταγραφής](../../questions/exams/exam-2023-fall-ex6-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 4 · ★★☆ · programming (κεφ. 18)
+- [Ταξινόμηση Πακέτων](../../questions/exams/exam-2023-fall-ex8-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 4 · ★★★ · programming (κεφ. 18)
+- [Προβλέποντας το Μέλλον (future)](../../questions/homework/hw-2024-hw2-future.md): Εργασία 2 (2024-25), Άσκηση 1 · ★★☆ · programming (κεφ. 18)
+- [Δομές και δείκτες](../../questions/labs/lab-lab09-person.md): Εργαστήριο 9, Άσκηση 2 · ★★☆ · programming (κεφ. 19)
+- [Αντιστροφή λίστας](../../questions/exams/exam-2024-sep-q5.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 5 · ★★☆ · programming (κεφ. 21)
+- [Μεσαίο Στοιχείο Λίστας](../../questions/exams/exam-2025-sep-q4.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 4 · ★★☆ · programming (κεφ. 21)
+- [Ν-οστό Στοιχείο Λίστας](../../questions/exams/exam-2026-sep-q4.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 4 · ★★☆ · programming (κεφ. 21)
+- [Zoomba: συντομότερη διαδρομή σε δωμάτιο](../../questions/homework/hw-2023-hw3-zoomba.md): Εργασία 3 (2023-24), Άσκηση 1 · ★★★ · programming (κεφ. 22)
+- [Το Νερό Νεράκι](../../questions/exams/exam-2023-dec-q4.md): Κατατακτήριες Δεκεμβρίου 2023, Θέμα 4 · ★★★ · programming (κεφ. 25)
+- [Η Τριπλέτα Στόχος](../../questions/exams/exam-2024-dec-q3.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 3 · ★★★ · programming (κεφ. 25)
+- [Η Μεγαλύτερη Χωρητικότητα - capacity](../../questions/exams/exam-2026-sep-q5.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 5 · ★★★ · programming (κεφ. 25)
+
+<!-- /exercises -->
+
 [^q1]: Last-In-First-Out: βγαίνει πρώτο ό,τι μπήκε τελευταίο. Η συνάρτηση που
     κλήθηκε τελευταία είναι η πρώτη που επιστρέφει.
-
 [^q2]: Οι τοπικές μεταβλητές, τα ορίσματα και προσωρινά δεδομένα του μεταγλωττιστή.
-
 [^q3]: Η στοίβα είναι περιορισμένη (συνήθως 8 MB) ενώ ο σωρός μπορεί να δεσμεύσει
     όλη τη διαθέσιμη μνήμη.
-
 [^q4]: Μνήμη που δεσμεύτηκε και δεν αποδεσμεύτηκε· την αποφεύγουμε με μία `free` για
     κάθε `malloc`, σε κάθε δρόμο εξόδου.
-
 [^q5]: Την ίδια διεύθυνση με πριν, που όμως δεν είναι πια δική μας (dangling
     pointer).
-
 [^q6]: Γιατί η `realloc` μπορεί να μετακινήσει το μπλοκ σε άλλη διεύθυνση.
-
 [^q7]: $M + 1$ κλήσεις `malloc` και $M + 1$ κλήσεις `free`.
 
 <!-- {% endraw %} -->

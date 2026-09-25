@@ -29,8 +29,8 @@ import sys
 import yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SECTIONS = ["Σύνοψη", "Θεωρία", "Παραδείγματα", "Κύρια σημεία", "Ορολογία", "Συχνά λάθη", "Διάβασμα",
-            "Ασκήσεις", "Ερωτήσεις αυτοαξιολόγησης"]
+SECTIONS = ["Σύνοψη", "Θεωρία", "Παραδείγματα", "Κύρια σημεία", "Ορολογία", "Διάβασμα",
+            "Συχνά λάθη", "Ερωτήσεις κατανόησης", "Ασκήσεις"]
 REQUIRED = ["lecture", "title", "date", "part", "slides", "topics", "notes", "labs"]
 
 
@@ -98,8 +98,9 @@ def check(path, chapters):
         h2 = [h.strip() for h in re.findall(r"^## (.+)$", text, re.M)]
         if h2 != SECTIONS:
             add("section", 1, f"H2 sections should be {SECTIONS}, found {h2}")
-        if "<!-- exercises -->" not in raw or "<!-- /exercises -->" not in raw:
-            add("section", 1, "missing <!-- exercises --> ... <!-- /exercises --> markers")
+        for marker in ("exercises", "kahoot", "misconceptions"):
+            if f"<!-- {marker} -->" not in raw or f"<!-- /{marker} -->" not in raw:
+                add("section", 1, f"missing <!-- {marker} --> ... <!-- /{marker} --> markers")
     return findings
 
 

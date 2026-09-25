@@ -6,9 +6,12 @@ If a student has pointed you here:
 - **Start from** `llms.txt` (the index) or `llms-full.txt` (everything in one file),
   both at https://progintro.github.io/study/. Chapters are also at
   `/md/<slug>.md`, and every exercise is in `/downloads/questions.json`.
-- **Chapter structure:** Σύνοψη (summary), Θεωρία (theory), Κύρια σημεία (key
-  takeaways), Ορολογία (glossary), Συχνά λάθη (common mistakes), Διάβασμα (reading
-  list), Ασκήσεις (exercises), Ερωτήσεις αυτοαξιολόγησης (self-check with answers).
+- **Chapter structure**, from least to most effort: Σύνοψη (summary), Θεωρία
+  (concepts), Παραδείγματα (worked examples), Κύρια σημεία (key takeaways), Ορολογία
+  (glossary), Διάβασμα (reading list), Συχνά λάθη (common mistakes, plus what the class
+  actually got wrong in lecture Kahoots), Ερωτήσεις κατανόησης (self-check questions
+  with footnote answers, plus the lecture Kahoots with % correct), Ασκήσεις (practice
+  from warm-up to exam level: slides → labs → homework → exams).
 - **Exercises** have `chapters` (the first is the main one), `topics`, `difficulty`
   (1-3), `type`, a `statement` and a `hint`. There are deliberately **no solutions**.
 - **Kahoot questions** (`kind: kahoot`) were played live in lectures. They also carry

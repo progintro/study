@@ -47,8 +47,8 @@ for the C course "Εισαγωγή στον Προγραμματισμό" (ΕΚ�
      `/Users/ethan/github/progintro/lab-material/field.md` (TA field notes). Use them
      for «Συχνά λάθη» where relevant.
 3. **Write `chapters/{{SLUG}}/README.md`**, following STYLE.md: front matter, Στόχοι,
-   Σύνοψη, Θεωρία, Παραδείγματα, Κύρια σημεία, Ορολογία, Συχνά λάθη, Διάβασμα, the
-   empty exercises markers, and Ερωτήσεις αυτοαξιολόγησης.
+   Σύνοψη, Θεωρία, Παραδείγματα, Κύρια σημεία, Ορολογία, Διάβασμα, Συχνά λάθη,
+   Ερωτήσεις κατανόησης and Ασκήσεις, with the three generated marker pairs left empty.
    - **Θεωρία holds the concepts** as concise, explanatory Greek prose that a student
      can learn from without the slides, and it covers *every* concept in the lecture.
    - **Παραδείγματα comes after**, with the worked examples, live coding, programs and

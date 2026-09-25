@@ -646,6 +646,14 @@ else
 | εντολή | statement | Συντακτική δομή που εκτελείται |
 | ροή ελέγχου | control flow | Η σειρά εκτέλεσης των εντολών |
 
+## Διάβασμα
+
+- **Διαφάνειες:** [Διάλεξη 5](https://github.com/progintro/progintro.github.io/releases/download/2025/lec05.pdf), σελ. 1–35. Κατηγορίες τελεστών: σελ. 5· αριθμητικοί, συγκριτικοί, λογικοί: σελ. 7–9· bitwise: σελ. 10–12· συνθήκης και cast: σελ. 13–15· ανάθεση, αύξηση/μείωση, κόμμα: σελ. 16–19· πρόγραμμα βαθμολογίας: σελ. 20· προτεραιότητα: σελ. 21–24· εκφράσεις και εντολές: σελ. 25–28· `if` και `if-else`: σελ. 29–33.
+- **Σημειώσεις:** [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Εντολές αντικατάστασης, τελεστές και παραστάσεις» (K04, σελ. 34–43)· [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Η ροή του ελέγχου στην C», «Εντολή `if`» (K04, σελ. 46–49). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι και τη σελίδα 62.
+- **Εργαστήριο:** [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): ασκήσεις `root.c` (`if...else`), `birthdate.c` (ακέραια διαίρεση και `%`), `limit.c` (αποσφαλμάτωση εκφράσεων)
+- **Βιβλίο:** K&R, §2.5–2.12 (τελεστές και παραστάσεις), όπως προτείνουν οι σημειώσεις.
+- **Άλλα:** Wikipedia: [Comma operator](https://en.wikipedia.org/wiki/Comma_operator), [Control flow](https://en.wikipedia.org/wiki/Control_flow), [Conditional (computer programming)](https://en.wikipedia.org/wiki/Conditional_(computer_programming))
+
 ## Συχνά λάθη
 
 - **Ακέραια διαίρεση εκεί που θέλατε δεκαδικά.** `double avg = sum / n;` με `int sum,
@@ -672,65 +680,11 @@ else
   `x = (12, 42);`, ή καλύτερα απλώς `x = 42;`.
 - **Ξεχασμένες παρενθέσεις στην `if`.** `if x > 1` δεν μεταγλωττίζεται.
 
-## Διάβασμα
+<!-- misconceptions -->
 
-- **Διαφάνειες:** [Διάλεξη 5](https://github.com/progintro/progintro.github.io/releases/download/2025/lec05.pdf), σελ. 1–35. Κατηγορίες τελεστών: σελ. 5· αριθμητικοί, συγκριτικοί, λογικοί: σελ. 7–9· bitwise: σελ. 10–12· συνθήκης και cast: σελ. 13–15· ανάθεση, αύξηση/μείωση, κόμμα: σελ. 16–19· πρόγραμμα βαθμολογίας: σελ. 20· προτεραιότητα: σελ. 21–24· εκφράσεις και εντολές: σελ. 25–28· `if` και `if-else`: σελ. 29–33.
-- **Σημειώσεις:** [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Εντολές αντικατάστασης, τελεστές και παραστάσεις» (K04, σελ. 34–43)· [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Η ροή του ελέγχου στην C», «Εντολή `if`» (K04, σελ. 46–49). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι και τη σελίδα 62.
-- **Εργαστήριο:** [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): ασκήσεις `root.c` (`if...else`), `birthdate.c` (ακέραια διαίρεση και `%`), `limit.c` (αποσφαλμάτωση εκφράσεων)
-- **Βιβλίο:** K&R, §2.5–2.12 (τελεστές και παραστάσεις), όπως προτείνουν οι σημειώσεις.
-- **Άλλα:** Wikipedia: [Comma operator](https://en.wikipedia.org/wiki/Comma_operator), [Control flow](https://en.wikipedia.org/wiki/Control_flow), [Conditional (computer programming)](https://en.wikipedia.org/wiki/Conditional_(computer_programming))
+<!-- /misconceptions -->
 
-## Ασκήσεις
-
-<!-- exercises -->
-
-### Από τις διαφάνειες
-
-- [Η τιμή της 0xbeef | 0xcafe0000](../../questions/slides/slides-lec05-bitwise-or-hex.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 12 · ★☆☆ · multiple-choice
-- [Cast και διαίρεση: (double)3/4](../../questions/slides/slides-lec05-cast-division.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 14 · ★☆☆ · trace
-- [Απομόνωση του πιο σημαντικού bit](../../questions/slides/slides-lec05-msb.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 11 · ★☆☆ · multiple-choice
-- [Τι τύπου τελεστές είναι;](../../questions/slides/slides-lec05-operator-arity.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνειες 7-10, 13 · ★☆☆ · short-answer
-- [Οι αριθμητικοί τελεστές ως συναρτήσεις](../../questions/slides/slides-lec05-operator-as-function.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 7 · ★☆☆ · short-answer
-- [Προτεραιότητα και προσεταιριστικότητα](../../questions/slides/slides-lec05-precedence.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 21 · ★☆☆ · trace
-- [Συνάρτηση max με τον τελεστή συνθήκης](../../questions/slides/slides-lec05-ternary-max.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 13 · ★☆☆ · programming
-
-### Από τα εργαστήρια
-
-- [Υπολογισμός ημέρας μίας δεδομένης ημερομηνίας](../../questions/labs/lab-lab03-birthdate.md): Εργαστήριο 3, Άσκηση 3 · ★☆☆ · programming
-
-### Από τα θέματα εξετάσεων
-
-- [Mystery](../../questions/exams/exam-2025-jan-q1.md): Εξέταση Ιανουαρίου 2025, Θέμα 1 · ★☆☆ · trace
-- [Mystery](../../questions/exams/exam-2026-jan-q1.md): Εξέταση Ιανουαρίου 2026, Θέμα 1 · ★☆☆ · trace
-- [Η συνάρτηση mystery](../../questions/exams/exam-2026-jun-q1.md): Εξέταση Ιουνίου 2026, Θέμα 1 · ★☆☆ · trace
-
-### Από τα Kahoot στο αμφιθέατρο
-
-- [x++ και ++y](../../questions/kahoot/kahoot-post-pre-increment.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
-- [Ποιος αριθμός ικανοποιεί τη συνθήκη](../../questions/kahoot/kahoot-num-divisible-3-31.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★☆ · multiple-choice · 58% σωστές απαντήσεις
-- [Μετατροπή double σε int](../../questions/kahoot/kahoot-cast-truncation.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★☆☆ · multiple-choice · 86% σωστές απαντήσεις
-
-### Σχετικές ασκήσεις από άλλα κεφάλαια
-
-- [Rickroll Τριπλέτες](../../questions/exams/exam-2023-fall-ex4-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 3 · ★★★ · programming (κεφ. 2)
-- [Πυθαγόρειο θεώρημα](../../questions/labs/lab-lab02-pyth.md): Εργαστήριο 2, Άσκηση 2 · ★☆☆ · programming (κεφ. 3)
-- [Απομόνωση του πιο σημαντικού bit](../../questions/kahoot/kahoot-msb-mask.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 14% σωστές απαντήσεις (κεφ. 4)
-- [0xbeef | 0xcafe0000](../../questions/kahoot/kahoot-or-combine.md): Kahoot «Git και Τελεστές» (διάλεξη 4) · ★★★ · multiple-choice · 29% σωστές απαντήσεις (κεφ. 4)
-- [while(!42)](../../questions/kahoot/kahoot-while-not-42.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★★ · multiple-choice · 17% σωστές απαντήσεις (κεφ. 6)
-- [Υπολογισμός ριζών τριωνύμου](../../questions/labs/lab-lab03-root.md): Εργαστήριο 3, Άσκηση 2 · ★★☆ · programming (κεφ. 6)
-- [Τιμές μετά από εντολές έκφρασης](../../questions/slides/slides-lec06-expression-statements.md): Διάλεξη 6: Εντολές και Ροή Ελέγχου, διαφάνεια 7 · ★☆☆ · trace (κεφ. 6)
-- [Μέγιστο με if-else και εναλλακτικές](../../questions/slides/slides-lec06-if-else-max.md): Διάλεξη 6: Εντολές και Ροή Ελέγχου, διαφάνεια 13 · ★☆☆ · short-answer (κεφ. 6)
-- [Μήνυμα από τον Καίσαρα](../../questions/exams/exam-2023-fall-ex6-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 2 · ★☆☆ · programming (κεφ. 9)
-- [Μετρητής λέξεων](../../questions/exams/exam-2024-sep-q4.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 4 · ★★☆ · programming (κεφ. 9)
-- [Επεξεργασία Ήχου (soundwave)](../../questions/homework/hw-2025-hw1-soundwave.md): Εργασία 1 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 9)
-- [Η έκφραση *str++](../../questions/slides/slides-lec14-str-plus-plus.md): Διάλεξη 14, διαφάνεια 34 · ★★☆ · short-answer (κεφ. 14)
-- [Πολυπλοκότητα μέτρησης bit](../../questions/kahoot/kahoot-count-set-bits.md): Kahoot «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★☆ · multiple-choice · 43% σωστές απαντήσεις (κεφ. 15)
-- [Πολυπλοκότητα υπολογισμού βαθμολογίας](../../questions/slides/slides-lec15-complexity-grade.md): Διάλεξη 15, διαφάνεια 21 · ★☆☆ · short-answer (κεφ. 15)
-- [Κρυφό Μήνυμα](../../questions/exams/exam-2023-fall-ex7-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 2 · ★☆☆ · programming (κεφ. 18)
-
-<!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
+## Ερωτήσεις κατανόησης
 
 1. Τι δίνουν οι εκφράσεις `85 / 2`, `85.0 / 2`, `85 % 2` και `-7 / 2`;[^q1]
 2. Ποια από τα `0`, `1`, `42`, `-5` θεωρούνται «αληθή» σε μια συνθήκη της C;[^q2]
@@ -742,6 +696,58 @@ else
 8. Πόσο κάνουν `5 * 6 + 3 * 4` και `90 * 50 / 100`;[^q8]
 9. Τι σημαίνει `if (x & 1 == 0)` και πώς το διορθώνουμε;[^q9]
 10. Ποια η διαφορά ανάμεσα σε έκφραση και εντολή;[^q10]
+
+<!-- kahoot -->
+
+### Kahoot από το αμφιθέατρο
+
+Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που απάντησαν σωστά.
+
+- [Μετατροπή double σε int](../../questions/kahoot/kahoot-cast-truncation.md): 86% σωστές απαντήσεις
+- [Ποιος αριθμός ικανοποιεί τη συνθήκη](../../questions/kahoot/kahoot-num-divisible-3-31.md): 58% σωστές απαντήσεις
+- [x++ και ++y](../../questions/kahoot/kahoot-post-pre-increment.md): 48% σωστές απαντήσεις
+
+<!-- /kahoot -->
+
+## Ασκήσεις
+
+<!-- exercises -->
+
+### Ζέσταμα: από τις διαφάνειες
+
+- [Η τιμή της 0xbeef | 0xcafe0000](../../questions/slides/slides-lec05-bitwise-or-hex.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 12 · ★☆☆ · multiple-choice
+- [Cast και διαίρεση: (double)3/4](../../questions/slides/slides-lec05-cast-division.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 14 · ★☆☆ · trace
+- [Απομόνωση του πιο σημαντικού bit](../../questions/slides/slides-lec05-msb.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 11 · ★☆☆ · multiple-choice
+- [Τι τύπου τελεστές είναι;](../../questions/slides/slides-lec05-operator-arity.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνειες 7-10, 13 · ★☆☆ · short-answer
+- [Οι αριθμητικοί τελεστές ως συναρτήσεις](../../questions/slides/slides-lec05-operator-as-function.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 7 · ★☆☆ · short-answer
+- [Προτεραιότητα και προσεταιριστικότητα](../../questions/slides/slides-lec05-precedence.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 21 · ★☆☆ · trace
+- [Συνάρτηση max με τον τελεστή συνθήκης](../../questions/slides/slides-lec05-ternary-max.md): Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 13 · ★☆☆ · programming
+
+### Εργαστήριο
+
+- [Υπολογισμός ημέρας μίας δεδομένης ημερομηνίας](../../questions/labs/lab-lab03-birthdate.md): Εργαστήριο 3, Άσκηση 3 · ★☆☆ · programming
+
+### Θέματα εξετάσεων
+
+- [Mystery](../../questions/exams/exam-2025-jan-q1.md): Εξέταση Ιανουαρίου 2025, Θέμα 1 · ★☆☆ · trace
+- [Mystery](../../questions/exams/exam-2026-jan-q1.md): Εξέταση Ιανουαρίου 2026, Θέμα 1 · ★☆☆ · trace
+- [Η συνάρτηση mystery](../../questions/exams/exam-2026-jun-q1.md): Εξέταση Ιουνίου 2026, Θέμα 1 · ★☆☆ · trace
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Rickroll Τριπλέτες](../../questions/exams/exam-2023-fall-ex4-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 3 · ★★★ · programming (κεφ. 2)
+- [Πυθαγόρειο θεώρημα](../../questions/labs/lab-lab02-pyth.md): Εργαστήριο 2, Άσκηση 2 · ★☆☆ · programming (κεφ. 3)
+- [Υπολογισμός ριζών τριωνύμου](../../questions/labs/lab-lab03-root.md): Εργαστήριο 3, Άσκηση 2 · ★★☆ · programming (κεφ. 6)
+- [Τιμές μετά από εντολές έκφρασης](../../questions/slides/slides-lec06-expression-statements.md): Διάλεξη 6: Εντολές και Ροή Ελέγχου, διαφάνεια 7 · ★☆☆ · trace (κεφ. 6)
+- [Μέγιστο με if-else και εναλλακτικές](../../questions/slides/slides-lec06-if-else-max.md): Διάλεξη 6: Εντολές και Ροή Ελέγχου, διαφάνεια 13 · ★☆☆ · short-answer (κεφ. 6)
+- [Μήνυμα από τον Καίσαρα](../../questions/exams/exam-2023-fall-ex6-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 2 · ★☆☆ · programming (κεφ. 9)
+- [Μετρητής λέξεων](../../questions/exams/exam-2024-sep-q4.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 4 · ★★☆ · programming (κεφ. 9)
+- [Επεξεργασία Ήχου (soundwave)](../../questions/homework/hw-2025-hw1-soundwave.md): Εργασία 1 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 9)
+- [Η έκφραση *str++](../../questions/slides/slides-lec14-str-plus-plus.md): Διάλεξη 14, διαφάνεια 34 · ★★☆ · short-answer (κεφ. 14)
+- [Πολυπλοκότητα υπολογισμού βαθμολογίας](../../questions/slides/slides-lec15-complexity-grade.md): Διάλεξη 15, διαφάνεια 21 · ★☆☆ · short-answer (κεφ. 15)
+- [Κρυφό Μήνυμα](../../questions/exams/exam-2023-fall-ex7-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 2 · ★☆☆ · programming (κεφ. 18)
+
+<!-- /exercises -->
 
 [^q1]: `42` (ακέραια διαίρεση), `42.5` (σιωπηρή μετατροπή σε `double`), `1`, `-3` (το πηλίκο κόβεται προς το μηδέν).
 [^q2]: Τα `1`, `42` και `-5`: κάθε μη μηδενική τιμή είναι αληθής· μόνο το `0` είναι ψευδές.

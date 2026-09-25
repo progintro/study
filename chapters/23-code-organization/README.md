@@ -536,27 +536,6 @@ Segmentation fault
 | προσδιοριστής const | const qualifier | Δηλώνει ότι μια θέση μνήμης δεν αλλάζει. |
 | συμβόλαιο | contract | Εγγύηση που δίνει η δήλωση μιας συνάρτησης στους χρήστες της. |
 
-## Συχνά λάθη
-
-- **Κλήση πριν από τη δήλωση.** `implicit declaration of function 'print_err'`
-  (προειδοποίηση ή, στον `gcc` 14+, σφάλμα). Βάλτε πρωτότυπο πριν από την κλήση ή
-  κάντε `#include` το `.h` που το περιέχει.
-- **Ξεχασμένο `.o` στη σύνδεση.** `gcc -o out init.o` δίνει
-  `undefined reference to 'print_err'`. Δώστε στη σύνδεση όλα τα `.o`.
-- **Κώδικας ή ορισμός μεταβλητής μέσα σε `.h`.** Αν δύο `.c` κάνουν `#include` ένα
-  `.h` με `int count = 0;`, η σύνδεση λέει `multiple definition of 'count'`. Στο `.h`
-  βάλτε `extern int count;` και τον ορισμό σε ένα `.c`.
-- **`#include` ενός `.c`.** Ο κώδικας αντιγράφεται σε δύο αρχεία και ορίζεται δύο
-  φορές. Κάνετε `#include` μόνο `.h`.
-- **`#include <err.h>` για δικό σας αρχείο.** `fatal error: err.h: No such file or
-  directory`: τα δικά σας αρχεία θέλουν εισαγωγικά, `#include "err.h"`.
-- **Αλλαγή μιας `const` μεταβλητής.** `error: increment of read-only variable 'x'`.
-  Αν η τιμή πρέπει να αλλάζει, μην τη δηλώνετε `const`.
-- **Cast για να αφαιρεθεί το `const`.** Το `(char*)message` μεταγλωττίζεται, αλλά η
-  εγγραφή δίνει `Segmentation fault`.
-- **`const` στη λάθος θέση.** Το `const char const *p` δεν κάνει σταθερό τον δείκτη
-  (`duplicate 'const'`)· για σταθερό δείκτη γράψτε `char * const p`.
-
 ## Διάβασμα
 
 - **Διαφάνειες:** [Διάλεξη 23](https://github.com/progintro/progintro.github.io/releases/download/2025/lec23.pdf),
@@ -585,34 +564,32 @@ Segmentation fault
   [Linux Kernel surpasses 40MLOC](https://www.stackscale.com/blog/linux-kernel-surpasses-40-million-lines-code/)·
   `man nm`.
 
-## Ασκήσεις
+## Συχνά λάθη
 
-<!-- exercises -->
+- **Κλήση πριν από τη δήλωση.** `implicit declaration of function 'print_err'`
+  (προειδοποίηση ή, στον `gcc` 14+, σφάλμα). Βάλτε πρωτότυπο πριν από την κλήση ή
+  κάντε `#include` το `.h` που το περιέχει.
+- **Ξεχασμένο `.o` στη σύνδεση.** `gcc -o out init.o` δίνει
+  `undefined reference to 'print_err'`. Δώστε στη σύνδεση όλα τα `.o`.
+- **Κώδικας ή ορισμός μεταβλητής μέσα σε `.h`.** Αν δύο `.c` κάνουν `#include` ένα
+  `.h` με `int count = 0;`, η σύνδεση λέει `multiple definition of 'count'`. Στο `.h`
+  βάλτε `extern int count;` και τον ορισμό σε ένα `.c`.
+- **`#include` ενός `.c`.** Ο κώδικας αντιγράφεται σε δύο αρχεία και ορίζεται δύο
+  φορές. Κάνετε `#include` μόνο `.h`.
+- **`#include <err.h>` για δικό σας αρχείο.** `fatal error: err.h: No such file or
+  directory`: τα δικά σας αρχεία θέλουν εισαγωγικά, `#include "err.h"`.
+- **Αλλαγή μιας `const` μεταβλητής.** `error: increment of read-only variable 'x'`.
+  Αν η τιμή πρέπει να αλλάζει, μην τη δηλώνετε `const`.
+- **Cast για να αφαιρεθεί το `const`.** Το `(char*)message` μεταγλωττίζεται, αλλά η
+  εγγραφή δίνει `Segmentation fault`.
+- **`const` στη λάθος θέση.** Το `const char const *p` δεν κάνει σταθερό τον δείκτη
+  (`duplicate 'const'`)· για σταθερό δείκτη γράψτε `char * const p`.
 
-### Από τις διαφάνειες
+<!-- misconceptions -->
 
-- [Κλήση πριν από τον ορισμό](../../questions/slides/slides-lec23-implicit-declaration.md): Διάλεξη 23, διαφάνειες 19-21 · ★☆☆ · debug
-- [Ένα σύστημα 40.000 γραμμών](../../questions/slides/slides-lec23-organize-40kloc.md): Διαλέξεις 23–24, διαφάνειες 11 και 14 (διάλεξη 24: διαφάνειες 12 και 15) · ★☆☆ · short-answer
-- [Αλλάζοντας κάτι const](../../questions/slides/slides-lec23-const-violations.md): Διάλεξη 23, διαφάνειες 23-24 · ★★☆ · trace
-- [Εξαρτήσεις ανάμεσα σε αρχεία](../../questions/slides/slides-lec23-dependencies.md): Διαλέξεις 23–24, διαφάνεια 15 (διάλεξη 24: διαφάνεια 16) · ★★☆ · short-answer
+<!-- /misconceptions -->
 
-### Από τα εργαστήρια
-
-- [Σπάστε το πρόγραμμά σας σε αρθρώματα](../../questions/labs/lab-lab10-more-modules.md): Εργαστήριο 10, Άσκηση 5 · ★★☆ · tooling
-
-### Από τις εργασίες
-
-- [Η Newton-Raphson Ξαναχτυπά! (Bonus)](../../questions/homework/hw-2023-hw3-fractal.md): Εργασία 3 (2023-24), Άσκηση 2 (Bonus) και 2.1 (Bonus) · ★★★ · programming
-
-### Σχετικές ασκήσεις από άλλα κεφάλαια
-
-- [Νέα Μηχανή Σκακιού (chess engine)](../../questions/homework/hw-2024-hw3-chess.md): Εργασία 3 (2024-25), Άσκηση 1 · ★★★ · programming (κεφ. 22)
-- [Νέα Μηχανή Go (goteam)](../../questions/homework/hw-2025-hw3-goteam.md): Εργασία 3 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 22)
-- [Ανελκυστήρες για Ανυπόμονους και Ανυπόμονες (elevate)](../../questions/homework/hw-2025-hw2-elevate.md): Εργασία 2 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 25)
-
-<!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
+## Ερωτήσεις κατανόησης
 
 1. Αναφέρετε ένα θετικό και δύο αρνητικά του να είναι όλος ο κώδικας σε ένα
    αρχείο.[^q1]
@@ -624,19 +601,45 @@ Segmentation fault
 5. Γιατί χρειάζεται πρωτότυπο μια συνάρτηση που ορίζεται κάτω από τη `main`;[^q5]
 6. Ποια είναι η διαφορά ανάμεσα σε `const char *p` και `char * const p`;[^q6]
 
+<!-- kahoot -->
+
+<!-- /kahoot -->
+
+## Ασκήσεις
+
+<!-- exercises -->
+
+### Ζέσταμα: από τις διαφάνειες
+
+- [Κλήση πριν από τον ορισμό](../../questions/slides/slides-lec23-implicit-declaration.md): Διάλεξη 23, διαφάνειες 19-21 · ★☆☆ · debug
+- [Ένα σύστημα 40.000 γραμμών](../../questions/slides/slides-lec23-organize-40kloc.md): Διαλέξεις 23–24, διαφάνειες 11 και 14 (διάλεξη 24: διαφάνειες 12 και 15) · ★☆☆ · short-answer
+- [Αλλάζοντας κάτι const](../../questions/slides/slides-lec23-const-violations.md): Διάλεξη 23, διαφάνειες 23-24 · ★★☆ · trace
+- [Εξαρτήσεις ανάμεσα σε αρχεία](../../questions/slides/slides-lec23-dependencies.md): Διαλέξεις 23–24, διαφάνεια 15 (διάλεξη 24: διαφάνεια 16) · ★★☆ · short-answer
+
+### Εργαστήριο
+
+- [Σπάστε το πρόγραμμά σας σε αρθρώματα](../../questions/labs/lab-lab10-more-modules.md): Εργαστήριο 10, Άσκηση 5 · ★★☆ · tooling
+
+### Εργασίες
+
+- [Η Newton-Raphson Ξαναχτυπά! (Bonus)](../../questions/homework/hw-2023-hw3-fractal.md): Εργασία 3 (2023-24), Άσκηση 2 (Bonus) και 2.1 (Bonus) · ★★★ · programming
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Νέα Μηχανή Σκακιού (chess engine)](../../questions/homework/hw-2024-hw3-chess.md): Εργασία 3 (2024-25), Άσκηση 1 · ★★★ · programming (κεφ. 22)
+- [Νέα Μηχανή Go (goteam)](../../questions/homework/hw-2025-hw3-goteam.md): Εργασία 3 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 22)
+- [Ανελκυστήρες για Ανυπόμονους και Ανυπόμονες (elevate)](../../questions/homework/hw-2025-hw2-elevate.md): Εργασία 2 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 25)
+
+<!-- /exercises -->
+
 [^q1]: Θετικό: απλή οργάνωση και μεταφορά. Αρνητικά: δύσκολη αναζήτηση και
     συντήρηση· κάθε αλλαγή ξαναμεταγλωττίζει τα πάντα.
-
 [^q2]: Το `.h` δηλώσεις (πρωτότυπα, τη διεπαφή)· το `.c` τον κώδικα των συναρτήσεων.
-
 [^q3]: `T`: σύμβολο ορισμένο στον κώδικα του αρχείου· `U`: σύμβολο που χρησιμοποιείται
     αλλά ορίζεται αλλού. Η σύνδεση ταιριάζει κάθε `U` με ένα `T`.
-
 [^q4]: Μόνο το `err.c` σε `err.o`, και μετά ξανά η σύνδεση.
-
 [^q5]: Ο μεταγλωττιστής διαβάζει γραμμικά και στην κλήση πρέπει να ξέρει ήδη τον τύπο
     επιστροφής και τα ορίσματα.
-
 [^q6]: Στο πρώτο δεν αλλάζουν οι χαρακτήρες (ο δείκτης αλλάζει)· στο δεύτερο δεν
     αλλάζει ο δείκτης (οι χαρακτήρες αλλάζουν).
 

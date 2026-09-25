@@ -476,27 +476,6 @@ $ ./int
 | σωρός | heap | Η περιοχή μνήμης από την οποία δεσμεύει η `malloc`. |
 | σειρά bytes | endianness | Η σειρά αποθήκευσης των bytes ενός ακεραίου. |
 
-## Συχνά λάθη
-
-- **`a[i, j]` αντί για `a[i][j]`.** Το κόμμα είναι τελεστής, άρα σημαίνει `a[j]`.
-- **Μπέρδεμα γραμμών και στηλών.** Στο `int a[2][4]` το `a[3][1]` είναι εκτός ορίων
-  (`Segmentation fault`): ο πρώτος δείκτης είναι η γραμμή.
-- **Παράλειψη της δεύτερης διάστασης.** Το `int m[][] = {{1, 2}, {3, 4}};` δίνει
-  `array type has incomplete element type`. Γράψτε `int m[][2]`.
-- **`sizeof` δείκτη ως μέγεθος πίνακα** (8, όχι 400) ή **`sizeof` με `%d`**
-  (`format '%d' expects argument of type 'int'`): κρατήστε το πλήθος σε μεταβλητή
-  και τυπώνετε το `sizeof` με `%zu`.
-- **Ξεχασμένο `sizeof` ή `stdlib.h` στη `malloc`.** Το `malloc(100)` χωρά μόνο 25
-  `int`· χωρίς `#include <stdlib.h>` ο `gcc` λέει
-  `implicit declaration of function 'malloc'`.
-- **Χωρίς έλεγχο για `NULL` ή αρχικοποίηση.** Η `malloc` μπορεί να αποτύχει και δεν
-  μηδενίζει τη μνήμη: ελέγξτε `if (array == NULL)` και γράψτε πριν διαβάσετε.
-- **`argv[1]` χωρίς έλεγχο του `argc`.** Χωρίς όρισμα το `argv[1]` είναι `NULL` και το
-  `atoi(argv[1])` δίνει `Segmentation fault`. Ελέγξτε `if (argc < 2)`· και θυμηθείτε
-  ότι για `./prog a b c` το `argc` είναι 4.
-- **Πίνακας από δείκτες χωρίς φρουρό `NULL`.** Το `for (i = 0; sentence[i]; i++)`
-  βγαίνει έξω από τον πίνακα.
-
 ## Διάβασμα
 
 - **Διαφάνειες:** [Διάλεξη 12](https://github.com/progintro/progintro.github.io/releases/download/2025/lec12.pdf),
@@ -519,11 +498,74 @@ $ ./int
   [«Εισαγωγή στους Pointers»](http://www.youtube.com/watch?v=tH2JW8HsPNw) από τους
   βοηθούς του μαθήματος· `man 3 malloc`.
 
+## Συχνά λάθη
+
+- **`a[i, j]` αντί για `a[i][j]`.** Το κόμμα είναι τελεστής, άρα σημαίνει `a[j]`.
+- **Μπέρδεμα γραμμών και στηλών.** Στο `int a[2][4]` το `a[3][1]` είναι εκτός ορίων
+  (`Segmentation fault`): ο πρώτος δείκτης είναι η γραμμή.
+- **Παράλειψη της δεύτερης διάστασης.** Το `int m[][] = {{1, 2}, {3, 4}};` δίνει
+  `array type has incomplete element type`. Γράψτε `int m[][2]`.
+- **`sizeof` δείκτη ως μέγεθος πίνακα** (8, όχι 400) ή **`sizeof` με `%d`**
+  (`format '%d' expects argument of type 'int'`): κρατήστε το πλήθος σε μεταβλητή
+  και τυπώνετε το `sizeof` με `%zu`.
+- **Ξεχασμένο `sizeof` ή `stdlib.h` στη `malloc`.** Το `malloc(100)` χωρά μόνο 25
+  `int`· χωρίς `#include <stdlib.h>` ο `gcc` λέει
+  `implicit declaration of function 'malloc'`.
+- **Χωρίς έλεγχο για `NULL` ή αρχικοποίηση.** Η `malloc` μπορεί να αποτύχει και δεν
+  μηδενίζει τη μνήμη: ελέγξτε `if (array == NULL)` και γράψτε πριν διαβάσετε.
+- **`argv[1]` χωρίς έλεγχο του `argc`.** Χωρίς όρισμα το `argv[1]` είναι `NULL` και το
+  `atoi(argv[1])` δίνει `Segmentation fault`. Ελέγξτε `if (argc < 2)`· και θυμηθείτε
+  ότι για `./prog a b c` το `argc` είναι 4.
+- **Πίνακας από δείκτες χωρίς φρουρό `NULL`.** Το `for (i = 0; sentence[i]; i++)`
+  βγαίνει έξω από τον πίνακα.
+
+<!-- misconceptions -->
+
+### Τι δυσκόλεψε την τάξη
+
+Από τα Kahoot των διαλέξεων: οι ερωτήσεις όπου μια λάθος απάντηση μάζεψε πολλές ψήφους, με το ποσοστό σωστών απαντήσεων.
+
+- **[Διεύθυνση στοιχείου δισδιάστατου πίνακα](../../questions/kahoot/kahoot-2d-element-address.md)** (33% σωστές): Το 29% επέλεξε `155`: μέτρησαν σωστά ότι προηγούνται 55 στοιχεία, αλλά ξέχασαν να τα πολλαπλασιάσουν με `sizeof(int)` για να τα κάνουν bytes.
+- **[Χαρακτήρας από πίνακα συμβολοσειρών](../../questions/kahoot/kahoot-string-array-element.md)** (38% σωστές): Το 23% επέλεξε `"fine"` και άλλο 22% `'e'`: οι πρώτοι σταμάτησαν στο `strings[1]` αγνοώντας τον δεύτερο δείκτη, οι δεύτεροι μέτρησαν τις θέσεις από το 1.
+- **[sizeof μιας γραμμής](../../questions/kahoot/kahoot-sizeof-row.md)** (42% σωστές): Το 26% επέλεξε `1`, θεωρώντας ότι το `map[5]` είναι ένας χαρακτήρας. Στην πραγματικότητα το `map[5]` είναι ολόκληρη η 6η γραμμή, ένας πίνακας 10 `char`.
+- **[Ο τύπος του argv](../../questions/kahoot/kahoot-argv-type.md)** (44% σωστές): Το 34% επέλεξε «Ένας δείκτης σε πίνακες από χαρακτήρες», διαβάζοντας τη δήλωση ανάποδα. Οι αγκύλες δένουν πιο ισχυρά από το `*`, άρα το `argv` είναι πρώτα πίνακας, και τα στοιχεία του είναι `char *`.
+
+<!-- /misconceptions -->
+
+## Ερωτήσεις κατανόησης
+
+1. Πόσα bytes έχει ο `double m[3][5];` (`sizeof(double) == 8`), και πού βρίσκεται το
+   `a[2][3]` του `int a[10][20];` αν αυτός ξεκινά στο 1000;[^q1]
+2. Γιατί ο αριθμός των γραμμών δεν εμφανίζεται στον τύπο της διεύθυνσης του
+   `a[i][j]`;[^q2]
+3. Για `./prog one two`, ποιο είναι το `argc` και τι περιέχει το `argv[0]`;[^q3]
+4. Τι δεσμεύει το `malloc(100 * sizeof(double))` και πόσο είναι το `sizeof` του
+   δείκτη που το κρατά;[^q4]
+5. Με ποια σειρά βρίσκονται τα bytes του `0x12345678` σε little endian;[^q5]
+
+<!-- kahoot -->
+
+### Kahoot από το αμφιθέατρο
+
+Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που απάντησαν σωστά.
+
+- [Διαστάσεις πίνακα](../../questions/kahoot/kahoot-3d-array-dims.md): 93% σωστές απαντήσεις
+- [Στατικοί και δυναμικοί πίνακες](../../questions/kahoot/kahoot-static-vs-dynamic-arrays.md): 92% σωστές απαντήσεις
+- [Πλήθος στοιχείων δισδιάστατου πίνακα](../../questions/kahoot/kahoot-2d-array-count.md): 81% σωστές απαντήσεις
+- [sizeof δισδιάστατου πίνακα](../../questions/kahoot/kahoot-sizeof-2d-double.md): 68% σωστές απαντήσεις
+- [Το τελευταίο στοιχείο δισδιάστατου πίνακα](../../questions/kahoot/kahoot-2d-last-element.md): 67% σωστές απαντήσεις
+- [Ο τύπος του argv](../../questions/kahoot/kahoot-argv-type.md): 44% σωστές απαντήσεις
+- [sizeof μιας γραμμής](../../questions/kahoot/kahoot-sizeof-row.md): 42% σωστές απαντήσεις
+- [Χαρακτήρας από πίνακα συμβολοσειρών](../../questions/kahoot/kahoot-string-array-element.md): 38% σωστές απαντήσεις
+- [Διεύθυνση στοιχείου δισδιάστατου πίνακα](../../questions/kahoot/kahoot-2d-element-address.md): 33% σωστές απαντήσεις
+
+<!-- /kahoot -->
+
 ## Ασκήσεις
 
 <!-- exercises -->
 
-### Από τις διαφάνειες
+### Ζέσταμα: από τις διαφάνειες
 
 - [Στοιχείο δισδιάστατου πίνακα](../../questions/slides/slides-lec12-2d-element.md): Διάλεξη 12, διαφάνεια 14 · ★☆☆ · trace
 - [Πίνακας από δείκτες](../../questions/slides/slides-lec12-array-of-pointers.md): Διάλεξη 12, διαφάνεια 29 · ★☆☆ · trace
@@ -533,18 +575,18 @@ $ ./int
 - [Είναι απαραίτητοι οι πολυδιάστατοι πίνακες;](../../questions/slides/slides-lec12-multidim-necessary.md): Διάλεξη 12, διαφάνεια 23 · ★★☆ · short-answer
 - [Περιεχόμενα του x μετά από βρόχο με δείκτη](../../questions/slides/slides-lec12-pointer-copy-loop.md): Διάλεξη 12, διαφάνεια 25 · ★★☆ · trace
 
-### Από τα εργαστήρια
+### Εργαστήριο
 
 - [Δυναμική δέσμευση μνήμης για μονοδιάστατο πίνακα](../../questions/labs/lab-lab07-array.md): Εργαστήριο 7, Άσκηση 2 · ★☆☆ · programming
 - [Ορίσματα γραμμής εντολής](../../questions/labs/lab-lab08-argcalc.md): Εργαστήριο 8, Άσκηση 2 · ★☆☆ · programming
 - [Δισδιάστατοι πίνακες](../../questions/labs/lab-lab07-twodim.md): Εργαστήριο 7, Άσκηση 1 · ★★☆ · programming
 - [Πετυχαίνοντας τον στόχο (Παλιό θέμα)](../../questions/labs/lab-lab08-legolas.md): Εργαστήριο 8, Άσκηση 3 · ★★☆ · programming
 
-### Από τις εργασίες
+### Εργασίες
 
 - [FauxtoShop: περιστροφή εικόνας BMP](../../questions/homework/hw-2023-hw2-fauxtoshop.md): Εργασία 2 (2023-24), Άσκηση 1 · ★★★ · programming
 
-### Από τα θέματα εξετάσεων
+### Θέματα εξετάσεων
 
 - [Αλλαγή Τέρματος](../../questions/exams/exam-2023-fall-ex13-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 2 · ★☆☆ · programming
 - [Τουρνουά](../../questions/exams/exam-2023-fall-ex2-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 2 · ★☆☆ · programming
@@ -556,18 +598,6 @@ $ ./int
 - [Στατιστικές](../../questions/exams/exam-2024-jul-q2.md): Εξέταση Ιουλίου 2024, Θέμα 2 · ★★☆ · programming
 - [Κινούμενος Μέσος Όρος - sma](../../questions/exams/exam-2025-jan-q3.md): Εξέταση Ιανουαρίου 2025, Θέμα 3 · ★★☆ · programming
 - [Το μεγαλύτερο άλμα - polevault](../../questions/exams/exam-2026-sep-q3.md): Εξέταση Σεπτεμβρίου 2026, Θέμα 3 · ★★☆ · programming
-
-### Από τα Kahoot στο αμφιθέατρο
-
-- [Διεύθυνση στοιχείου δισδιάστατου πίνακα](../../questions/kahoot/kahoot-2d-element-address.md): Kahoot «Πίνακες και Δείκτες» (διάλεξη 12) · ★★★ · multiple-choice · 33% σωστές απαντήσεις
-- [Χαρακτήρας από πίνακα συμβολοσειρών](../../questions/kahoot/kahoot-string-array-element.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★★★ · multiple-choice · 38% σωστές απαντήσεις
-- [sizeof μιας γραμμής](../../questions/kahoot/kahoot-sizeof-row.md): Kahoot «Πίνακες και Δείκτες» (διάλεξη 12) · ★★☆ · multiple-choice · 42% σωστές απαντήσεις
-- [Ο τύπος του argv](../../questions/kahoot/kahoot-argv-type.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★★☆ · multiple-choice · 44% σωστές απαντήσεις
-- [Το τελευταίο στοιχείο δισδιάστατου πίνακα](../../questions/kahoot/kahoot-2d-last-element.md): Kahoot «Πίνακες και Δείκτες» (διάλεξη 12) · ★★☆ · multiple-choice · 67% σωστές απαντήσεις
-- [sizeof δισδιάστατου πίνακα](../../questions/kahoot/kahoot-sizeof-2d-double.md): Kahoot «Πίνακες και Δείκτες» (διάλεξη 12) · ★★☆ · multiple-choice · 68% σωστές απαντήσεις
-- [Πλήθος στοιχείων δισδιάστατου πίνακα](../../questions/kahoot/kahoot-2d-array-count.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★☆☆ · multiple-choice · 81% σωστές απαντήσεις
-- [Στατικοί και δυναμικοί πίνακες](../../questions/kahoot/kahoot-static-vs-dynamic-arrays.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★☆☆ · multiple-choice · 92% σωστές απαντήσεις
-- [Διαστάσεις πίνακα](../../questions/kahoot/kahoot-3d-array-dims.md): Kahoot «Δείκτες Παντού!» (διάλεξη 12) και «Πίνακες και Δείκτες» (διάλεξη 12) · ★☆☆ · multiple-choice · 93% σωστές απαντήσεις
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
@@ -589,7 +619,6 @@ $ ./int
 - [Η συνάρτηση transform](../../questions/exams/exam-2025-sep-q2.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 2 · ★☆☆ · trace (κεφ. 14)
 - [Επεξεργασία συμβολοσειρών](../../questions/labs/lab-lab08-string.md): Εργαστήριο 8, Άσκηση 1 · ★★☆ · programming (κεφ. 14)
 - [Είναι το πρώτο όρισμα "--boo";](../../questions/slides/slides-lec14-check-boo.md): Διάλεξη 14, διαφάνεια 42 · ★☆☆ · programming (κεφ. 14)
-- [Πολυπλοκότητα πολλαπλασιασμού πινάκων](../../questions/kahoot/kahoot-matrix-multiplication.md): Kahoot «Δυαδική Αναζήτηση, Ταξινόμηση, Πολυπλοκότητα και άλλα» και «Πολυπλοκότητα και άλλα» (διάλεξη 15) · ★★☆ · multiple-choice · 49% σωστές απαντήσεις (κεφ. 15)
 - [Πολυπλοκότητα εύρεσης μέγιστου σε πίνακα N x N](../../questions/slides/slides-lec15-complexity-find-max-2d.md): Διάλεξη 15, διαφάνεια 23 · ★☆☆ · short-answer (κεφ. 15)
 - [Πολυπλοκότητα δυναμικού πίνακα με malloc](../../questions/slides/slides-lec15-complexity-malloc.md): Διάλεξη 15, διαφάνεια 19 · ★☆☆ · short-answer (κεφ. 15)
 - [char *array[], char **array και char array[10][10]](../../questions/slides/slides-lec16-char-pointer-arrays.md): Διάλεξη 16, διαφάνεια 19 · ★★☆ · short-answer (κεφ. 16)
@@ -613,25 +642,10 @@ $ ./int
 
 <!-- /exercises -->
 
-## Ερωτήσεις αυτοαξιολόγησης
-
-1. Πόσα bytes έχει ο `double m[3][5];` (`sizeof(double) == 8`), και πού βρίσκεται το
-   `a[2][3]` του `int a[10][20];` αν αυτός ξεκινά στο 1000;[^q1]
-2. Γιατί ο αριθμός των γραμμών δεν εμφανίζεται στον τύπο της διεύθυνσης του
-   `a[i][j]`;[^q2]
-3. Για `./prog one two`, ποιο είναι το `argc` και τι περιέχει το `argv[0]`;[^q3]
-4. Τι δεσμεύει το `malloc(100 * sizeof(double))` και πόσο είναι το `sizeof` του
-   δείκτη που το κρατά;[^q4]
-5. Με ποια σειρά βρίσκονται τα bytes του `0x12345678` σε little endian;[^q5]
-
 [^q1]: 120 bytes· $1000 + 2 \cdot 20 \cdot 4 + 3 \cdot 4 = 1172$.
-
 [^q2]: Για να φτάσουμε στη γραμμή `i` προσπερνάμε `i` γραμμές μήκους `Y`.
-
 [^q3]: `argc` είναι 3 και το `argv[0]` δείχνει στο `"./prog"`.
-
 [^q4]: 800 bytes στον σωρό· ο δείκτης είναι 8 bytes σε σύστημα 64 bit.
-
 [^q5]: `78`, `56`, `34`, `12`.
 
 <!-- {% endraw %} -->

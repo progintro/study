@@ -611,6 +611,25 @@ tab και `\\` μια `\`.
 | τυπική έξοδος | standard output (stdout) | Το αρχείο όπου γράφει η `printf` |
 | δεσμευμένη λέξη | reserved keyword | Λέξη της C που δεν γίνεται όνομα (`int`, `if`, …) |
 
+## Διάβασμα
+
+- **Διαφάνειες:** [Διάλεξη 2](https://github.com/progintro/progintro.github.io/releases/download/2025/lec02.pdf), σελ. 1–35. Bits, bytes και διευθύνσεις: σελ. 5–8· βάσεις αρίθμησης: σελ. 9–11· δήλωση μεταβλητής: σελ. 12–15· ASCII: σελ. 16–17· αναπαράσταση ακεραίων και συμπλήρωμα ως προς 2: σελ. 18–22· τύποι: σελ. 23· ανάθεση: σελ. 24–25· υπερχείλιση και `<stdint.h>`: σελ. 26–27· `printf`: σελ. 28–30· δηλώσεις πολλών μεταβλητών και δεσμευμένες λέξεις: σελ. 31–32.
+- **Σημειώσεις:** Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 35 και τις σελίδες 58–71 (K04). Για αυτό το κεφάλαιο ειδικά:
+  - [Κεφάλαιο 0: Εισαγωγή](https://progintro.github.io/notes/chapters/00-intro/), ενότητες «Η δομή του υπολογιστή», «Η πληροφορία στον υπολογιστή» (K04, σελ. 9–10)
+  - [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Μεταβλητές, σταθερές, τύποι και δηλώσεις στην C» (K04, σελ. 30–33)
+  - Οι σελίδες 58–71 καλύπτουν το [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/) μέχρι την ενότητα «Μετατροπές μεταξύ δεκαδικών και δυαδικών αριθμών», προετοιμασία για το [Κεφάλαιο 3](../03-functions/).
+- **Εργαστήριο:**
+  - [Εργαστήριο 2](https://progintro.github.io/lab-material/labs/lab02/): «Βήμα 3» (`readint.c`), ασκήσεις `calc.c` (με την επέκταση «Υψηλή ακρίβεια») και `pyth.c`
+  - [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): ο πίνακας προσδιοριστικών της `printf` και η άσκηση `seq.c`
+- **Βιβλίο:** K&R, §2.1–2.4, όπως προτείνουν οι σημειώσεις.
+- **Άλλα:**
+  - [Bits and bytes](https://web.stanford.edu/class/cs101/bits-bytes.html) (Stanford CS101)
+  - Wikipedia: [ASCII](https://en.wikipedia.org/wiki/ASCII), [Escape sequences in C](https://en.wikipedia.org/wiki/Escape_sequences_in_C), [Two's complement](https://en.wikipedia.org/wiki/Two%27s_complement), [Integer overflow](https://en.wikipedia.org/wiki/Integer_overflow)
+  - `printf`: [tips](https://web.mit.edu/10.001/Web/Course_Notes/c_Notes/tips_printf.html) και [reference](https://cplusplus.com/reference/cstdio/printf/)
+  - Συμπλήρωμα ως προς 2: [γραπτή εξήγηση](https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html) και [βίντεο](https://www.youtube.com/watch?v=O8AzBv6EG3c)
+  - Προβλήματα αναπαράστασης: [Ariane 5](https://en.wikipedia.org/wiki/Ariane_flight_V88), [Year 2000](https://en.wikipedia.org/wiki/Year_2000_problem), [Year 2038](https://en.wikipedia.org/wiki/Year_2038_problem), [xkcd 2697](https://xkcd.com/2697/)
+  - Τερματικό: `man ascii`, `man 3 printf`
+
 ## Συχνά λάθη
 
 - **Υπερχείλιση σε `int`.** Γινόμενα ή αθροίσματα μεγάλων αριθμών βγαίνουν ξαφνικά
@@ -632,30 +651,63 @@ tab και `\\` μια `\`.
 - **Δεσμευμένη λέξη ως όνομα.** `int int = 5;` ή `int new, for;` δεν μεταγλωττίζεται
   (`expected identifier`). Διόρθωση: άλλο όνομα.
 
-## Διάβασμα
+<!-- misconceptions -->
 
-- **Διαφάνειες:** [Διάλεξη 2](https://github.com/progintro/progintro.github.io/releases/download/2025/lec02.pdf), σελ. 1–35. Bits, bytes και διευθύνσεις: σελ. 5–8· βάσεις αρίθμησης: σελ. 9–11· δήλωση μεταβλητής: σελ. 12–15· ASCII: σελ. 16–17· αναπαράσταση ακεραίων και συμπλήρωμα ως προς 2: σελ. 18–22· τύποι: σελ. 23· ανάθεση: σελ. 24–25· υπερχείλιση και `<stdint.h>`: σελ. 26–27· `printf`: σελ. 28–30· δηλώσεις πολλών μεταβλητών και δεσμευμένες λέξεις: σελ. 31–32.
-- **Σημειώσεις:** Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 35 και τις σελίδες 58–71 (K04). Για αυτό το κεφάλαιο ειδικά:
-  - [Κεφάλαιο 0: Εισαγωγή](https://progintro.github.io/notes/chapters/00-intro/), ενότητες «Η δομή του υπολογιστή», «Η πληροφορία στον υπολογιστή» (K04, σελ. 9–10)
-  - [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Μεταβλητές, σταθερές, τύποι και δηλώσεις στην C» (K04, σελ. 30–33)
-  - Οι σελίδες 58–71 καλύπτουν το [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/) μέχρι την ενότητα «Μετατροπές μεταξύ δεκαδικών και δυαδικών αριθμών», προετοιμασία για το [Κεφάλαιο 3](../03-functions/).
-- **Εργαστήριο:**
-  - [Εργαστήριο 2](https://progintro.github.io/lab-material/labs/lab02/): «Βήμα 3» (`readint.c`), ασκήσεις `calc.c` (με την επέκταση «Υψηλή ακρίβεια») και `pyth.c`
-  - [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): ο πίνακας προσδιοριστικών της `printf` και η άσκηση `seq.c`
-- **Βιβλίο:** K&R, §2.1–2.4, όπως προτείνουν οι σημειώσεις.
-- **Άλλα:**
-  - [Bits and bytes](https://web.stanford.edu/class/cs101/bits-bytes.html) (Stanford CS101)
-  - Wikipedia: [ASCII](https://en.wikipedia.org/wiki/ASCII), [Escape sequences in C](https://en.wikipedia.org/wiki/Escape_sequences_in_C), [Two's complement](https://en.wikipedia.org/wiki/Two%27s_complement), [Integer overflow](https://en.wikipedia.org/wiki/Integer_overflow)
-  - `printf`: [tips](https://web.mit.edu/10.001/Web/Course_Notes/c_Notes/tips_printf.html) και [reference](https://cplusplus.com/reference/cstdio/printf/)
-  - Συμπλήρωμα ως προς 2: [γραπτή εξήγηση](https://www.cs.cornell.edu/~tomf/notes/cps104/twoscomp.html) και [βίντεο](https://www.youtube.com/watch?v=O8AzBv6EG3c)
-  - Προβλήματα αναπαράστασης: [Ariane 5](https://en.wikipedia.org/wiki/Ariane_flight_V88), [Year 2000](https://en.wikipedia.org/wiki/Year_2000_problem), [Year 2038](https://en.wikipedia.org/wiki/Year_2038_problem), [xkcd 2697](https://xkcd.com/2697/)
-  - Τερματικό: `man ascii`, `man 3 printf`
+### Τι δυσκόλεψε την τάξη
+
+Από τα Kahoot των διαλέξεων: οι ερωτήσεις όπου μια λάθος απάντηση μάζεψε πολλές ψήφους, με το ποσοστό σωστών απαντήσεων.
+
+- **[Ο κωδικός ASCII του 'J'](../../questions/kahoot/kahoot-ascii-next-letter.md)** (33% σωστές): Το 44% απάντησε `0x50`, κάνοντας την πρόσθεση σαν να ήταν δεκαδικό (49 + 1 = 50)· στο δεκαεξαδικό μετά το 9 έρχεται το A.
+- **[Το 0xFF σε signed char](../../questions/kahoot/kahoot-signed-char-ff.md)** (33% σωστές): Το 41% απάντησε 256, που δεν χωράει καν σε 8 bits (το `0xFF` ως unsigned είναι 255)· σε `signed char` με συμπλήρωμα ως προς 2 όλοι οι άσοι σημαίνουν αρνητικό αριθμό.
+- **[Το μέγεθος του int](../../questions/kahoot/kahoot-int-size.md)** (37% σωστές): Το 46% απάντησε 4, που είναι το συνηθισμένο μέγεθος στα σημερινά συστήματα, αλλά το πρότυπο της C δεν το ορίζει· σε άλλες αρχιτεκτονικές ο `int` μπορεί να είναι 2 bytes.
+- **[Πόσο είναι το 2^64](../../questions/kahoot/kahoot-two-pow-64.md)** (38% σωστές): Το 48% απάντησε $10^{30}$, υπερεκτιμώντας κατά 10 τάξεις μεγέθους· με $2^{10} \approx 10^3$, το $2^{64}$ είναι περίπου $1.8 \cdot 10^{19}$.
+- **[Ο μετρητής του Gangnam Style](../../questions/kahoot/kahoot-gangnam-views.md)** (41% σωστές): Το 26% διάλεξε `int64_t`, που είναι ο τύπος στον οποίο μετέβη η Google *μετά*· ένας 64-bit ακέραιος δεν θα κόντευε ποτέ να υπερχειλίσει στα 2 δις.
+- **[Πλήθος διευθύνσεων IPv4](../../questions/kahoot/kahoot-ip-address-count.md)** (57% σωστές): Το 25% απάντησε $2^{16}$, μετρώντας 16 bits αντί για 32 (4 bytes × 8 bits).
+- **[Άθροισμα θετικών unsigned int](../../questions/kahoot/kahoot-unsigned-sum-sign.md)** (63% σωστές): Το 30% απάντησε «Όχι», μεταφέροντας τη συμπεριφορά του `int` (όπου η υπερχείλιση δίνει αρνητικό) στους unsigned· ένας `unsigned int` αναδιπλώνεται modulo $2^{32}$ και δεν γίνεται ποτέ αρνητικός (αυστηρά, μπορεί να βγει 0 ή μικρότερος από τους προσθετέους).
+
+<!-- /misconceptions -->
+
+## Ερωτήσεις κατανόησης
+
+1. Πόσες διαφορετικές τιμές παίρνει μια ομάδα 16 bits;[^q1]
+2. Μετατρέψτε το $1100100_{(2)}$ σε δεκαδικό και σε δεκαεξαδικό.[^q2]
+3. Τι αποφασίζει ο μεταγλωττιστής από τον τύπο και τι από το όνομα μιας δήλωσης όπως `int x;`;[^q3]
+4. Ποια είναι η αναπαράσταση του $-1$ σε 8 bits με συμπλήρωμα ως προς 2;[^q4]
+5. Γιατί ο `char` έχει εύρος $-128$ έως $127$ ενώ ο `unsigned char` $0$ έως $255$;[^q5]
+6. Τι τιμή έχει η `int y = 0x10 + 010;`;[^q6]
+7. Τι τυπώνει η `printf("%c%c\n", 72, 0x69);`;[^q7]
+8. Γιατί το `long long r = 2000000000 + 2000000000;` δεν δίνει 4000000000;[^q8]
+9. Ποιο προσδιοριστικό χρησιμοποιείτε για `unsigned int` και ποιο για να τυπώσετε το σύμβολο `%`;[^q9]
+
+<!-- kahoot -->
+
+### Kahoot από το αμφιθέατρο
+
+Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που απάντησαν σωστά.
+
+- [Bit ή byte;](../../questions/kahoot/kahoot-bit-vs-byte.md): 93% σωστές απαντήσεις
+- [Άθροισμα θετικών int](../../questions/kahoot/kahoot-int-overflow-sign.md): 87% σωστές απαντήσεις
+- [Κύρια και δευτερεύουσα μνήμη](../../questions/kahoot/kahoot-volatile-memory.md): 84% σωστές απαντήσεις
+- [Η μορφή μιας IP διεύθυνσης](../../questions/kahoot/kahoot-ip-address-format.md): 82% σωστές απαντήσεις
+- [Τιμές ενός byte](../../questions/kahoot/kahoot-byte-values.md): 78% σωστές απαντήσεις
+- [Η ταχύτητα του Ariane 5](../../questions/kahoot/kahoot-ariane-uint16.md): 70% σωστές απαντήσεις
+- [Άθροισμα θετικών unsigned int](../../questions/kahoot/kahoot-unsigned-sum-sign.md): 63% σωστές απαντήσεις
+- [Πλήθος διευθύνσεων IPv4](../../questions/kahoot/kahoot-ip-address-count.md): 57% σωστές απαντήσεις
+- [Πόσους αριθμούς χωράει ένας uint64_t](../../questions/kahoot/kahoot-uint64-range.md): 57% σωστές απαντήσεις
+- [Πόσος χώρος για ένα κομμάτι IP](../../questions/kahoot/kahoot-ip-octet-size.md): 45% σωστές απαντήσεις
+- [Ο μετρητής του Gangnam Style](../../questions/kahoot/kahoot-gangnam-views.md): 41% σωστές απαντήσεις
+- [Πόσο είναι το 2^64](../../questions/kahoot/kahoot-two-pow-64.md): 38% σωστές απαντήσεις
+- [Το μέγεθος του int](../../questions/kahoot/kahoot-int-size.md): 37% σωστές απαντήσεις
+- [Ο κωδικός ASCII του 'J'](../../questions/kahoot/kahoot-ascii-next-letter.md): 33% σωστές απαντήσεις
+- [Το 0xFF σε signed char](../../questions/kahoot/kahoot-signed-char-ff.md): 33% σωστές απαντήσεις
+
+<!-- /kahoot -->
 
 ## Ασκήσεις
 
 <!-- exercises -->
 
-### Από τις διαφάνειες
+### Ζέσταμα: από τις διαφάνειες
 
 - [Πόσοι χαρακτήρες ASCII υπάρχουν](../../questions/slides/slides-lec02-ascii-count.md): Διάλεξη 2: Μνήμη και Μεταβλητές, διαφάνεια 17 · ★☆☆ · short-answer
 - [Πόσα διαφορετικά bytes υπάρχουν](../../questions/slides/slides-lec02-byte-values.md): Διάλεξη 2: Μνήμη και Μεταβλητές, διαφάνεια 5 · ★☆☆ · short-answer
@@ -666,37 +718,18 @@ tab και `\\` μια `\`.
 - [Αρνητικοί αριθμοί σε συμπλήρωμα ως προς 2](../../questions/slides/slides-lec02-twos-complement.md): Διάλεξη 2: Μνήμη και Μεταβλητές, διαφάνεια 21 · ★☆☆ · short-answer
 - [Υπερχείλιση ακεραίων](../../questions/slides/slides-lec02-overflow.md): Διάλεξη 2: Μνήμη και Μεταβλητές, διαφάνεια 26 · ★★☆ · debug
 
-### Από τα εργαστήρια
+### Εργαστήριο
 
 - [Στοιχεία φοιτητή (Παλιό θέμα)](../../questions/labs/lab-lab00-about.md): Εργαστήριο 0, Άσκηση 1 · ★☆☆ · programming
 - [Υπερχείλιση ακεραίων](../../questions/labs/lab-lab00-overflow.md): Εργαστήριο 0, Άσκηση 2 · ★☆☆ · short-answer
 - [Εκτύπωση χαρακτήρων](../../questions/labs/lab-lab04-printchar.md): Εργαστήριο 4, Άσκηση 1 · ★☆☆ · programming
 
-### Από τα θέματα εξετάσεων
+### Θέματα εξετάσεων
 
 - [Rickroll Τριπλέτες](../../questions/exams/exam-2023-fall-ex4-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 3 · ★★★ · programming
 
-### Από τα Kahoot στο αμφιθέατρο
-
-- [Ο κωδικός ASCII του 'J'](../../questions/kahoot/kahoot-ascii-next-letter.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★★ · multiple-choice · 33% σωστές απαντήσεις
-- [Το 0xFF σε signed char](../../questions/kahoot/kahoot-signed-char-ff.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★★ · multiple-choice · 33% σωστές απαντήσεις
-- [Το μέγεθος του int](../../questions/kahoot/kahoot-int-size.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★★ · multiple-choice · 37% σωστές απαντήσεις
-- [Πόσο είναι το 2^64](../../questions/kahoot/kahoot-two-pow-64.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★★ · multiple-choice · 38% σωστές απαντήσεις
-- [Ο μετρητής του Gangnam Style](../../questions/kahoot/kahoot-gangnam-views.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★☆ · multiple-choice · 41% σωστές απαντήσεις
-- [Πόσος χώρος για ένα κομμάτι IP](../../questions/kahoot/kahoot-ip-octet-size.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★☆ · multiple-choice · 45% σωστές απαντήσεις
-- [Πλήθος διευθύνσεων IPv4](../../questions/kahoot/kahoot-ip-address-count.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
-- [Πόσους αριθμούς χωράει ένας uint64_t](../../questions/kahoot/kahoot-uint64-range.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
-- [Άθροισμα θετικών unsigned int](../../questions/kahoot/kahoot-unsigned-sum-sign.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★★☆ · multiple-choice · 63% σωστές απαντήσεις
-- [Η ταχύτητα του Ariane 5](../../questions/kahoot/kahoot-ariane-uint16.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 70% σωστές απαντήσεις
-- [Τιμές ενός byte](../../questions/kahoot/kahoot-byte-values.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 78% σωστές απαντήσεις
-- [Η μορφή μιας IP διεύθυνσης](../../questions/kahoot/kahoot-ip-address-format.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 82% σωστές απαντήσεις
-- [Κύρια και δευτερεύουσα μνήμη](../../questions/kahoot/kahoot-volatile-memory.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 84% σωστές απαντήσεις
-- [Άθροισμα θετικών int](../../questions/kahoot/kahoot-int-overflow-sign.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις
-- [Bit ή byte;](../../questions/kahoot/kahoot-bit-vs-byte.md): Kahoot «Μεταβλητές και Μνήμη», «Μεταβλητές και Συναρτήσεις» (διάλεξη 2) · ★☆☆ · multiple-choice · 93% σωστές απαντήσεις
-
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
-- [Εκτύπωση με νέα γραμμή](../../questions/kahoot/kahoot-printf-newline.md): Kahoot «Καλημέρα Κόσμε - lec00!», «Καλημέρα Κόσμε!» (διάλεξη 0) · ★☆☆ · multiple-choice · 86% σωστές απαντήσεις (κεφ. 0)
 - [Η συνάρτηση about](../../questions/exams/exam-2024-sep-q1.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 1 · ★☆☆ · programming (κεφ. 3)
 - [Διακοπή ρεύματος και μνήμη](../../questions/slides/slides-lec03-power-outage.md): Διάλεξη 3: Συναρτήσεις, διαφάνεια 3 · ★☆☆ · multiple-choice (κεφ. 3)
 - [Τυπώνοντας τον Πίνακα ASCII](../../questions/exams/exam-2023-fall-ex15-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 2 · ★★☆ · programming (κεφ. 6)
@@ -713,9 +746,6 @@ tab και `\\` μια `\`.
 - [Διάβασμα ακεραίου με scanf](../../questions/labs/lab-lab02-readint.md): Εργαστήριο 2, Βήμα 3 · ★☆☆ · short-answer (κεφ. 9)
 - [Κωδικοποίηση και αποκωδικοποίηση κειμένου](../../questions/labs/lab-lab04-encode-decode.md): Εργαστήριο 4, Άσκηση 4 · ★★☆ · programming (κεφ. 9)
 - [Η συνάρτηση paws](../../questions/exams/exam-2026-jun-q2.md): Εξέταση Ιουνίου 2026, Θέμα 2 · ★★☆ · debug (κεφ. 10)
-- [Μέγεθος πίνακα int](../../questions/kahoot/kahoot-int-array-bytes.md): Kahoot «Πίνακες» (διάλεξη 10) · ★★☆ · multiple-choice · 49% σωστές απαντήσεις (κεφ. 10)
-- [Διεύθυνση και ακέραιος](../../questions/kahoot/kahoot-address-is-integer.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★☆ · multiple-choice · 50% σωστές απαντήσεις (κεφ. 11)
-- [Δείκτης συν 4 σε δεκαεξαδικό](../../questions/kahoot/kahoot-pointer-plus-int-hex.md): Kahoot «Δείκτες και Αναδρομή» (διάλεξη 11) · ★★★ · multiple-choice · 31% σωστές απαντήσεις (κεφ. 11)
 - [Μέση Τιμή Τυχαίων Μεταβλητών - mean](../../questions/exams/exam-2025-sep-q3.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 3 · ★☆☆ · programming (κεφ. 12)
 - [Πετυχαίνοντας τον στόχο (Παλιό θέμα)](../../questions/labs/lab-lab08-legolas.md): Εργαστήριο 8, Άσκηση 3 · ★★☆ · programming (κεφ. 12)
 - [Η συνάρτηση dog](../../questions/exams/exam-2025-jan-q2.md): Εξέταση Ιανουαρίου 2025, Θέμα 2 · ★☆☆ · trace (κεφ. 14)
@@ -727,22 +757,9 @@ tab και `\\` μια `\`.
 - [Οι Καλύτεροι Αριθμοί, Παμψηφεί](../../questions/exams/exam-2024-dec-q2.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 2 · ★★☆ · programming (κεφ. 16)
 - [Ο Γρίφος του Στέργιου](../../questions/homework/hw-2025-bonus0-stergios.md): Bonus #0 (2025-26, προαιρετική) · ★★★ · programming (κεφ. 16)
 - [Σκαλί-σκαλί (Παλιό θέμα, Προαιρετικό)](../../questions/labs/lab-lab05-ladder.md): Εργαστήριο 5, Άσκηση 3 · ★★★ · programming (κεφ. 16)
-- [Ανάγνωση int σε little endian](../../questions/kahoot/kahoot-little-endian-read.md): Kahoot «Δομές + Αρχεία» · ★★☆ · multiple-choice · 62% σωστές απαντήσεις (κεφ. 18)
 - [Ο τυχερός αριθμός σε δυαδικό](../../questions/slides/slides-lec24-binary-literal.md): Διάλεξη 24: Προχωρημένα Θέματα, διαφάνεια 32 · ★☆☆ · trace (κεφ. 24)
 
 <!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
-
-1. Πόσες διαφορετικές τιμές παίρνει μια ομάδα 16 bits;[^q1]
-2. Μετατρέψτε το $1100100_{(2)}$ σε δεκαδικό και σε δεκαεξαδικό.[^q2]
-3. Τι αποφασίζει ο μεταγλωττιστής από τον τύπο και τι από το όνομα μιας δήλωσης όπως `int x;`;[^q3]
-4. Ποια είναι η αναπαράσταση του $-1$ σε 8 bits με συμπλήρωμα ως προς 2;[^q4]
-5. Γιατί ο `char` έχει εύρος $-128$ έως $127$ ενώ ο `unsigned char` $0$ έως $255$;[^q5]
-6. Τι τιμή έχει η `int y = 0x10 + 010;`;[^q6]
-7. Τι τυπώνει η `printf("%c%c\n", 72, 0x69);`;[^q7]
-8. Γιατί το `long long r = 2000000000 + 2000000000;` δεν δίνει 4000000000;[^q8]
-9. Ποιο προσδιοριστικό χρησιμοποιείτε για `unsigned int` και ποιο για να τυπώσετε το σύμβολο `%`;[^q9]
 
 [^q1]: $2^{16} = 65.536$, όσες και οι τιμές του `short` ή του `unsigned short`.
 [^q2]: $64 + 32 + 4 = 100_{(10)}$· σε τετράδες `0110 0100`, δηλαδή $64_{(16)}$.

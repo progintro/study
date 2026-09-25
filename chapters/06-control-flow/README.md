@@ -499,6 +499,16 @@ echo -e "2856\n0\nf\n" | ./aliquot | ttyplot
 | ατέρμονας βρόχος | infinite loop | Βρόχος που δεν τερματίζει ποτέ |
 | αρχικοποίηση / βήμα | initialization / step | Το πρώτο και το τρίτο μέρος της `for` |
 
+## Διάβασμα
+
+- **Διαφάνειες:** [Διάλεξη 6](https://github.com/progintro/progintro.github.io/releases/download/2025/lec06.pdf), σελ. 1–29. Pipes και `time`: σελ. 2· κατηγορίες εντολών: σελ. 5–8· ροή ελέγχου, `if`, `if-else`: σελ. 9–13· εμφωλευμένες `if` και dangling else: σελ. 14–16· `while`: σελ. 17–21· `for`: σελ. 22–24· `do-while`: σελ. 25–26.
+- **Σημειώσεις:** [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Η ροή του ελέγχου στην C», «Εντολή `if`», «Εντολές βρόχου `while`», «Εντολή βρόχου `for`» (K04, σελ. 46–49 και 52–55). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι και τη σελίδα 62, δηλαδή και το [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/) μέχρι την ενότητα «Συνάρτηση υπολογισμού παραγοντικού».
+- **Εργαστήριο:** [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): εισαγωγή για τους τρεις βρόχους και τα διαγράμματα ροής τους, ασκήσεις `seq.c` (`while`, `for`, `do...while`), `root.c` (`if...else`), `birthdate.c`, `limit.c`
+- **Βιβλίο:** K&R, κεφ. 3 (σελ. 85–100), όπως προτείνουν οι σημειώσεις.
+- **Άλλα:**
+  - Wikipedia: [Control flow](https://en.wikipedia.org/wiki/Control_flow), [Conditional (computer programming)](https://en.wikipedia.org/wiki/Conditional_(computer_programming)), [While loop](https://en.wikipedia.org/wiki/While_loop), [For loop](https://en.wikipedia.org/wiki/For_loop), [Dangling else](https://en.wikipedia.org/wiki/Dangling_else)
+  - Για τις ακολουθίες aliquot: [σχετικό άρθρο (PDF)](https://math.dartmouth.edu/~carlp/upintconf.pdf)
+
 ## Συχνά λάθη
 
 - **`;` μετά τη συνθήκη βρόχου.** `while (i < 42); printf(...);` κολλάει χωρίς έξοδο·
@@ -513,21 +523,53 @@ echo -e "2856\n0\nf\n" | ./aliquot | ttyplot
 - **Χωρίς `;` στο τέλος της `do-while`.** `do i++; while (i < 42)` δίνει `expected ';'`.
 - **Ο μετρητής μετά τον βρόχο.** Μετά το `while (i < 42) { … i++; }` το `i` είναι `42`.
 
-## Διάβασμα
+<!-- misconceptions -->
 
-- **Διαφάνειες:** [Διάλεξη 6](https://github.com/progintro/progintro.github.io/releases/download/2025/lec06.pdf), σελ. 1–29. Pipes και `time`: σελ. 2· κατηγορίες εντολών: σελ. 5–8· ροή ελέγχου, `if`, `if-else`: σελ. 9–13· εμφωλευμένες `if` και dangling else: σελ. 14–16· `while`: σελ. 17–21· `for`: σελ. 22–24· `do-while`: σελ. 25–26.
-- **Σημειώσεις:** [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Η ροή του ελέγχου στην C», «Εντολή `if`», «Εντολές βρόχου `while`», «Εντολή βρόχου `for`» (K04, σελ. 46–49 και 52–55). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι και τη σελίδα 62, δηλαδή και το [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/) μέχρι την ενότητα «Συνάρτηση υπολογισμού παραγοντικού».
-- **Εργαστήριο:** [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): εισαγωγή για τους τρεις βρόχους και τα διαγράμματα ροής τους, ασκήσεις `seq.c` (`while`, `for`, `do...while`), `root.c` (`if...else`), `birthdate.c`, `limit.c`
-- **Βιβλίο:** K&R, κεφ. 3 (σελ. 85–100), όπως προτείνουν οι σημειώσεις.
-- **Άλλα:**
-  - Wikipedia: [Control flow](https://en.wikipedia.org/wiki/Control_flow), [Conditional (computer programming)](https://en.wikipedia.org/wiki/Conditional_(computer_programming)), [While loop](https://en.wikipedia.org/wiki/While_loop), [For loop](https://en.wikipedia.org/wiki/For_loop), [Dangling else](https://en.wikipedia.org/wiki/Dangling_else)
-  - Για τις ακολουθίες aliquot: [σχετικό άρθρο (PDF)](https://math.dartmouth.edu/~carlp/upintconf.pdf)
+### Τι δυσκόλεψε την τάξη
+
+Από τα Kahoot των διαλέξεων: οι ερωτήσεις όπου μια λάθος απάντηση μάζεψε πολλές ψήφους, με το ποσοστό σωστών απαντήσεων.
+
+- **[while(!42)](../../questions/kahoot/kahoot-while-not-42.md)** (17% σωστές): Το 53% απάντησε ότι δεν είναι έγκυρη C, πιστεύοντας ότι η συνθήκη πρέπει να είναι σύγκριση· στην C κάθε ακέραια έκφραση είναι συνθήκη, και το `!42` κάνει 0.
+- **[Πόσες φορές εκτελείται ένα for μέχρι N](../../questions/kahoot/kahoot-for-n-times-trap.md)** (23% σωστές): Το 34% απάντησε N, υποθέτοντας σιωπηρά ότι το `N` είναι θετικό· αν το `N` είναι 0 ή αρνητικό, το σώμα δεν εκτελείται καθόλου.
+- **[while γραμμένο ως for](../../questions/kahoot/kahoot-while-as-for.md)** (24% σωστές): Το 34% επέλεξε `for(; condition ; statement);`· αυτό δουλεύει μόνο αν το `statement` είναι απλή έκφραση, αφού το τρίτο μέρος της `for` δέχεται έκφραση και όχι οποιαδήποτε εντολή (π.χ. ένα μπλοκ `{…}` ή ένα `if`).
+- **[if χωρίς παρενθέσεις](../../questions/kahoot/kahoot-if-without-parens.md)** (42% σωστές): Το 53% απάντησε True, ίσως από γλώσσες όπως η Python· στην C η συνθήκη της `if` πρέπει να είναι σε παρενθέσεις.
+- **[Επαναλήψεις με βήμα 2](../../questions/kahoot/kahoot-for-step-two.md)** (57% σωστές): Το 27% επέλεξε 49 φορές, ένα κλασικό λάθος «κατά ένα» (off-by-one): ξεχνά ότι μετράει και η επανάληψη με `i = 0`.
+- **[Η σύνταξη του for](../../questions/kahoot/kahoot-for-empty-init.md)** (59% σωστές): Το 27% επέλεξε `for(i < 100; i++;)`, βάζοντας τη συνθήκη στη θέση της αρχικοποίησης. Τα τρία μέρη του `for` είναι πάντα αρχικοποίηση; συνθήκη; βήμα, και ένα κενό μέρος αφήνει μόνο το ερωτηματικό του.
+
+<!-- /misconceptions -->
+
+## Ερωτήσεις κατανόησης
+
+1. Πόσες εντολές περιέχει η γραμμή `;;;;;` και τι κάνουν;[^q1]
+2. Γιατί ένα block `{ … }` μπορεί να σταθεί ως σώμα μιας `if`, ενώ δύο σκέτες εντολές όχι;[^q2]
+3. Σε ποια `if` ανήκει ένα `else` όταν υπάρχουν δύο υποψήφιες και δεν υπάρχουν αγκύλες;[^q3]
+4. Ποια είναι η διαφορά ανάμεσα σε `while` και `do-while`; Δώστε μια περίπτωση όπου δίνουν διαφορετικό αποτέλεσμα.[^q4]
+5. Γράψτε έναν βρόχο `while` ισοδύναμο με το `for (i = 0; i < 100; i++) printf("Hello world\n");`.[^q5]
+6. Πόσες φορές εκτελείται το σώμα του `for (i = 0; i <= N; i++)`;[^q6]
+
+<!-- kahoot -->
+
+### Kahoot από το αμφιθέατρο
+
+Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που απάντησαν σωστά.
+
+- [Απλό if-else](../../questions/kahoot/kahoot-if-else-trace.md): 91% σωστές απαντήσεις
+- [while και do-while](../../questions/kahoot/kahoot-while-vs-do-while.md): 85% σωστές απαντήσεις
+- [Η σύνταξη του for](../../questions/kahoot/kahoot-for-empty-init.md): 59% σωστές απαντήσεις
+- [Επαναλήψεις με βήμα 2](../../questions/kahoot/kahoot-for-step-two.md): 57% σωστές απαντήσεις
+- [Ένα for χωρίς βήμα](../../questions/kahoot/kahoot-for-missing-increment.md): 56% σωστές απαντήσεις
+- [if χωρίς παρενθέσεις](../../questions/kahoot/kahoot-if-without-parens.md): 42% σωστές απαντήσεις
+- [while γραμμένο ως for](../../questions/kahoot/kahoot-while-as-for.md): 24% σωστές απαντήσεις
+- [Πόσες φορές εκτελείται ένα for μέχρι N](../../questions/kahoot/kahoot-for-n-times-trap.md): 23% σωστές απαντήσεις
+- [while(!42)](../../questions/kahoot/kahoot-while-not-42.md): 17% σωστές απαντήσεις
+
+<!-- /kahoot -->
 
 ## Ασκήσεις
 
 <!-- exercises -->
 
-### Από τις διαφάνειες
+### Ζέσταμα: από τις διαφάνειες
 
 - [Τι τυπώνει η do-while](../../questions/slides/slides-lec06-do-while.md): Διάλεξη 6: Εντολές και Ροή Ελέγχου, διαφάνεια 26 · ★☆☆ · trace
 - [Τιμές μετά από εντολές έκφρασης](../../questions/slides/slides-lec06-expression-statements.md): Διάλεξη 6: Εντολές και Ροή Ελέγχου, διαφάνεια 7 · ★☆☆ · trace
@@ -539,19 +581,19 @@ echo -e "2856\n0\nf\n" | ./aliquot | ttyplot
 - [Το πρόβλημα του dangling else](../../questions/slides/slides-lec06-dangling-else.md): Διάλεξη 6: Εντολές και Ροή Ελέγχου, διαφάνεια 15 · ★★☆ · trace
 - [Το ερωτηματικό μετά το while](../../questions/slides/slides-lec06-while-semicolon.md): Διάλεξη 6: Εντολές και Ροή Ελέγχου, διαφάνεια 21 · ★★☆ · trace
 
-### Από τα εργαστήρια
+### Εργαστήριο
 
 - [Αποσφαλμάτωση αθροίσματος με όριο](../../questions/labs/lab-lab03-limit.md): Εργαστήριο 3, Άσκηση 4 · ★☆☆ · debug
 - [Κατασκευή πυραμίδας](../../questions/labs/lab-lab04-pyramid.md): Εργαστήριο 4, Άσκηση 2 · ★☆☆ · programming
 - [Υπολογισμός ριζών τριωνύμου](../../questions/labs/lab-lab03-root.md): Εργαστήριο 3, Άσκηση 2 · ★★☆ · programming
 - [Υπολογισμός αθροίσματος σειράς](../../questions/labs/lab-lab03-seq.md): Εργαστήριο 3, Άσκηση 1 · ★★☆ · programming
 
-### Από τις εργασίες
+### Εργασίες
 
 - [Η εικασία Collatz](../../questions/homework/hw-2023-hw0-collatz.md): Εργασία 0 (2023-24), Άσκηση 3 · ★★☆ · programming
 - [Οι Ακολουθίες Aliquot](../../questions/homework/hw-2025-hw0-aliquot.md): Εργασία 0 (2025-26), Άσκηση 3 · ★★☆ · programming
 
-### Από τα θέματα εξετάσεων
+### Θέματα εξετάσεων
 
 - [Μέγιστος Κοινός Διαιρέτης](../../questions/exams/exam-2023-fall-ex6-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 1 · ★☆☆ · programming
 - [Προσεγγίζοντας το π](../../questions/exams/exam-2024-dec-q1.md): Κατατακτήριες Δεκεμβρίου 2024, Θέμα 1 · ★☆☆ · programming
@@ -564,18 +606,6 @@ echo -e "2856\n0\nf\n" | ./aliquot | ttyplot
 - [Πετυχαίνοντας τον Στόχο](../../questions/exams/exam-2023-fall-ex9-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 2 · ★★☆ · programming
 - [Εύρεση Πρώτων Παραγόντων - factor](../../questions/exams/exam-2026-jan-q3.md): Εξέταση Ιανουαρίου 2026, Θέμα 3 · ★★☆ · programming
 
-### Από τα Kahoot στο αμφιθέατρο
-
-- [while(!42)](../../questions/kahoot/kahoot-while-not-42.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★★ · multiple-choice · 17% σωστές απαντήσεις
-- [Πόσες φορές εκτελείται ένα for μέχρι N](../../questions/kahoot/kahoot-for-n-times-trap.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7), δύο εκδοχές · ★★★ · multiple-choice · 23% σωστές απαντήσεις
-- [while γραμμένο ως for](../../questions/kahoot/kahoot-while-as-for.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★★★ · multiple-choice · 24% σωστές απαντήσεις
-- [if χωρίς παρενθέσεις](../../questions/kahoot/kahoot-if-without-parens.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★★☆ · multiple-choice · 42% σωστές απαντήσεις
-- [Ένα for χωρίς βήμα](../../questions/kahoot/kahoot-for-missing-increment.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★☆ · multiple-choice · 56% σωστές απαντήσεις
-- [Επαναλήψεις με βήμα 2](../../questions/kahoot/kahoot-for-step-two.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
-- [Η σύνταξη του for](../../questions/kahoot/kahoot-for-empty-init.md): Kahoot «Πίνακες» (διάλεξη 10) · ★★☆ · multiple-choice · 59% σωστές απαντήσεις
-- [while και do-while](../../questions/kahoot/kahoot-while-vs-do-while.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★☆☆ · multiple-choice · 85% σωστές απαντήσεις
-- [Απλό if-else](../../questions/kahoot/kahoot-if-else-trace.md): Kahoot «Τελεστές, Εντολές και Ροή Ελέγχου» (διάλεξη 6) · ★☆☆ · multiple-choice · 91% σωστές απαντήσεις
-
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - [Εκτύπωση χαρακτήρων](../../questions/labs/lab-lab04-printchar.md): Εργαστήριο 4, Άσκηση 1 · ★☆☆ · programming (κεφ. 2)
@@ -584,20 +614,9 @@ echo -e "2856\n0\nf\n" | ./aliquot | ttyplot
 - [Mystery](../../questions/exams/exam-2026-jan-q1.md): Εξέταση Ιανουαρίου 2026, Θέμα 1 · ★☆☆ · trace (κεφ. 5)
 - [Η συνάρτηση mystery](../../questions/exams/exam-2026-jun-q1.md): Εξέταση Ιουνίου 2026, Θέμα 1 · ★☆☆ · trace (κεφ. 5)
 - [Υπολογισμός ημέρας μίας δεδομένης ημερομηνίας](../../questions/labs/lab-lab03-birthdate.md): Εργαστήριο 3, Άσκηση 3 · ★☆☆ · programming (κεφ. 5)
-- [switch και if-else](../../questions/kahoot/kahoot-switch-if-else-equivalence.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★★☆ · multiple-choice · 46% σωστές απαντήσεις (κεφ. 8)
-- [while(--i) με i = 0](../../questions/kahoot/kahoot-while-predecrement-overflow.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★★ · multiple-choice · 17% σωστές απαντήσεις (κεφ. 8)
 - [Το Πρόβλημα του Τρόλεϊ (trolley)](../../questions/homework/hw-2024-hw0-trolley.md): Εργασία 0 (2024-25), Άσκηση 3 · ★★☆ · programming (κεφ. 9)
 
 <!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
-
-1. Πόσες εντολές περιέχει η γραμμή `;;;;;` και τι κάνουν;[^q1]
-2. Γιατί ένα block `{ … }` μπορεί να σταθεί ως σώμα μιας `if`, ενώ δύο σκέτες εντολές όχι;[^q2]
-3. Σε ποια `if` ανήκει ένα `else` όταν υπάρχουν δύο υποψήφιες και δεν υπάρχουν αγκύλες;[^q3]
-4. Ποια είναι η διαφορά ανάμεσα σε `while` και `do-while`; Δώστε μια περίπτωση όπου δίνουν διαφορετικό αποτέλεσμα.[^q4]
-5. Γράψτε έναν βρόχο `while` ισοδύναμο με το `for (i = 0; i < 100; i++) printf("Hello world\n");`.[^q5]
-6. Πόσες φορές εκτελείται το σώμα του `for (i = 0; i <= N; i++)`;[^q6]
 
 [^q1]: Πέντε κενές εντολές· καμία δεν κάνει τίποτα (no-op).
 [^q2]: Η `if` δέχεται ως σώμα μία εντολή. Ένα block είναι συντακτικά μία (σύνθετη) εντολή, ενώ δύο σκέτες εντολές είναι δύο: μόνο η πρώτη ανήκει στην `if`.

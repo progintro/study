@@ -542,6 +542,22 @@ Pi is approximately: 3.141583
 | κλήση συνάρτησης | function call | Εκτέλεση της συνάρτησης με συγκεκριμένα ορίσματα |
 | προγραμματισμός σε ζεύγη | pair programming | Driver γράφει, navigator ελέγχει, αλλάζουν ρόλους |
 
+## Διάβασμα
+
+- **Διαφάνειες:** [Διάλεξη 3](https://github.com/progintro/progintro.github.io/releases/download/2025/lec03.pdf), σελ. 1–47. Τύποι, ανάθεση, υπερχείλιση: σελ. 5–9· `printf`, ακολουθίες διαφυγής, προσδιοριστικά: σελ. 10–12· συμμετρία και μηνύματα λάθους: σελ. 13–14· δηλώσεις και δεσμευμένες λέξεις: σελ. 15–16· μεταγλώττιση και ανάλυση του Hello World: σελ. 17–27· συναρτήσεις: σελ. 28–37· pair programming και challenges: σελ. 38–44.
+- **Σημειώσεις:** οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 35, και τις σελίδες 58–71. Συγκεκριμένα για αυτή τη διάλεξη:
+  - [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), ενότητες «Καλημέρα κόσμε της C» και «Πόσο είναι το $\pi$;» (K04, σελ. 19–23)
+  - [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Μεταβλητές, σταθερές, τύποι και δηλώσεις στην C» (K04, σελ. 30–33)
+  - [Κεφάλαιο 4: Συναρτήσεις, εμβέλεια και αναδρομή](https://progintro.github.io/notes/chapters/04-functions/), ενότητες «Δομή ενός προγράμματος C – Συναρτήσεις», «Συνάρτηση ύψωσης σε δύναμη», «Συνάρτηση υπολογισμού παραγοντικού» (K04, σελ. 58–62)· οι σελ. 63–69 («Εμβέλεια και χρόνος ζωής μεταβλητών», «Υπολογισμός παραγοντικού με αναδρομή») προετοιμάζουν επόμενα κεφάλαια.
+- **Εργαστήριο:**
+  - [Εργαστήριο 2](https://progintro.github.io/lab-material/labs/lab02/): άσκηση `pyth.c` (το Challenge #1 με είσοδο από τον χρήστη) και το παράρτημα «Αποσφαλμάτωση προγραμμάτων (Πράξη 1η)» για τα συντακτικά λάθη
+  - [Εργαστήριο 5](https://progintro.github.io/lab-material/labs/lab05/): άσκηση `collatz.c`, ερωτήματα 1.1–1.2 (συναρτήσεις `isodd` και `collatz_it`)
+- **Άλλα:**
+  - Wikipedia: [Integer overflow](https://en.wikipedia.org/wiki/Integer_overflow), [Escape sequences in C](https://en.wikipedia.org/wiki/Escape_sequences_in_C), [GNU Compiler Collection](https://en.wikipedia.org/wiki/GNU_Compiler_Collection)
+  - `printf`: [tips](https://web.mit.edu/10.001/Web/Course_Notes/c_Notes/tips_printf.html) και [reference](https://cplusplus.com/reference/cstdio/printf/)
+  - [Ubuntu: The Linux command line for beginners](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
+  - Pair programming: Wikipedia [Software development](https://en.wikipedia.org/wiki/Software_development), [Code review](https://en.wikipedia.org/wiki/Code_review)· [Jeff Dean quotes](https://www.brainyquote.com/authors/jeff-dean-quotes)
+
 ## Συχνά λάθη
 
 - **Ξεχασμένο `;`.** `printf("Hello world\n")` χωρίς `;` δίνει
@@ -564,27 +580,51 @@ Pi is approximately: 3.141583
 - **Χρήση μεταβλητής πριν την ανάθεση.** `int y; printf("%d\n", y);` τυπώνει ό,τι
   σκουπίδι υπάρχει στη μνήμη.
 
-## Διάβασμα
+<!-- misconceptions -->
 
-- **Διαφάνειες:** [Διάλεξη 3](https://github.com/progintro/progintro.github.io/releases/download/2025/lec03.pdf), σελ. 1–47. Τύποι, ανάθεση, υπερχείλιση: σελ. 5–9· `printf`, ακολουθίες διαφυγής, προσδιοριστικά: σελ. 10–12· συμμετρία και μηνύματα λάθους: σελ. 13–14· δηλώσεις και δεσμευμένες λέξεις: σελ. 15–16· μεταγλώττιση και ανάλυση του Hello World: σελ. 17–27· συναρτήσεις: σελ. 28–37· pair programming και challenges: σελ. 38–44.
-- **Σημειώσεις:** οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 35, και τις σελίδες 58–71. Συγκεκριμένα για αυτή τη διάλεξη:
-  - [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), ενότητες «Καλημέρα κόσμε της C» και «Πόσο είναι το $\pi$;» (K04, σελ. 19–23)
-  - [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Μεταβλητές, σταθερές, τύποι και δηλώσεις στην C» (K04, σελ. 30–33)
-  - [Κεφάλαιο 4: Συναρτήσεις, εμβέλεια και αναδρομή](https://progintro.github.io/notes/chapters/04-functions/), ενότητες «Δομή ενός προγράμματος C – Συναρτήσεις», «Συνάρτηση ύψωσης σε δύναμη», «Συνάρτηση υπολογισμού παραγοντικού» (K04, σελ. 58–62)· οι σελ. 63–69 («Εμβέλεια και χρόνος ζωής μεταβλητών», «Υπολογισμός παραγοντικού με αναδρομή») προετοιμάζουν επόμενα κεφάλαια.
-- **Εργαστήριο:**
-  - [Εργαστήριο 2](https://progintro.github.io/lab-material/labs/lab02/): άσκηση `pyth.c` (το Challenge #1 με είσοδο από τον χρήστη) και το παράρτημα «Αποσφαλμάτωση προγραμμάτων (Πράξη 1η)» για τα συντακτικά λάθη
-  - [Εργαστήριο 5](https://progintro.github.io/lab-material/labs/lab05/): άσκηση `collatz.c`, ερωτήματα 1.1–1.2 (συναρτήσεις `isodd` και `collatz_it`)
-- **Άλλα:**
-  - Wikipedia: [Integer overflow](https://en.wikipedia.org/wiki/Integer_overflow), [Escape sequences in C](https://en.wikipedia.org/wiki/Escape_sequences_in_C), [GNU Compiler Collection](https://en.wikipedia.org/wiki/GNU_Compiler_Collection)
-  - `printf`: [tips](https://web.mit.edu/10.001/Web/Course_Notes/c_Notes/tips_printf.html) και [reference](https://cplusplus.com/reference/cstdio/printf/)
-  - [Ubuntu: The Linux command line for beginners](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
-  - Pair programming: Wikipedia [Software development](https://en.wikipedia.org/wiki/Software_development), [Code review](https://en.wikipedia.org/wiki/Code_review)· [Jeff Dean quotes](https://www.brainyquote.com/authors/jeff-dean-quotes)
+### Τι δυσκόλεψε την τάξη
+
+Από τα Kahoot των διαλέξεων: οι ερωτήσεις όπου μια λάθος απάντηση μάζεψε πολλές ψήφους, με το ποσοστό σωστών απαντήσεων.
+
+- **[Ο τύπος επιστροφής μιας συνάρτησης](../../questions/kahoot/kahoot-function-return-type.md)** (28% σωστές): Το 25% επέλεξε `int`, μπερδεύοντας τον τύπο της παραμέτρου `x` με τον τύπο επιστροφής· η τιμή του `x * x` μετατρέπεται σε `double` κατά την επιστροφή.
+- **[printf με %c και 42](../../questions/kahoot/kahoot-printf-char-42.md)** (48% σωστές): Το 24% επέλεξε `42`, σαν το `%c` να τυπώνει τον αριθμό· το `%c` τυπώνει τον χαρακτήρα με αυτόν τον κωδικό ASCII.
+- **[Από τι αποτελείται ένα πρόγραμμα C](../../questions/kahoot/kahoot-c-program-functions.md)** (55% σωστές): Το 30% επέλεξε «μια σειρά από εντολές»· οι εντολές όμως υπάρχουν μόνο μέσα στο σώμα συναρτήσεων, και το πρόγραμμα οργανώνεται σε συναρτήσεις, με πρώτη τη `main`.
+
+<!-- /misconceptions -->
+
+## Ερωτήσεις κατανόησης
+
+1. Γιατί ο `unsigned char` φτάνει μέχρι το 255 ενώ ο `char` μέχρι το 127;[^q1]
+2. Ποια τιμή έχει η `x` μετά το `int x = 0x10;` και ποια μετά το `x = 010;`;[^q2]
+3. Τι θα τυπώσει το `printf("100%%\tOK\n");`;[^q3]
+4. Ποια τέσσερα πράγματα βλέπετε σε ένα μήνυμα λάθους του `gcc` όπως το `hello.c:4:26: error: ...`;[^q4]
+5. Πώς ξέρει το shell αν ένα πρόγραμμα C πέτυχε, και πώς το ελέγχετε εσείς;[^q5]
+6. Ονομάστε τα τρία μέρη του ορισμού `double compute_area(double a, double b) { ... }`.[^q6]
+7. Τι επιστρέφει η κλήση `g(0, 0, 0)` της συνάρτησης `g` της διάλεξης;[^q7]
+8. Γιατί το `#include <math.h>` δεν αρκεί για να χρησιμοποιήσετε την `sqrt`;[^q8]
+
+<!-- kahoot -->
+
+### Kahoot από το αμφιθέατρο
+
+Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που απάντησαν σωστά.
+
+- [Προσδιοριστικά %d με σειρά](../../questions/kahoot/kahoot-printf-format-order.md): 87% σωστές απαντήσεις
+- [Τιμή επιστροφής double](../../questions/kahoot/kahoot-square-double-return.md): 58% σωστές απαντήσεις
+- [Από τι αποτελείται ένα πρόγραμμα C](../../questions/kahoot/kahoot-c-program-functions.md): 55% σωστές απαντήσεις
+- [Η ακολουθία `\r`](../../questions/kahoot/kahoot-printf-carriage-return.md): 48% σωστές απαντήσεις
+- [printf με %c και 42](../../questions/kahoot/kahoot-printf-char-42.md): 48% σωστές απαντήσεις
+- [Ακολουθίες διαφυγής για `\\` και `"`](../../questions/kahoot/kahoot-printf-escapes-backslash-quote.md): 43% σωστές απαντήσεις
+- [Τα μέρη του ορισμού συνάρτησης](../../questions/kahoot/kahoot-function-definition-parts.md): 31% σωστές απαντήσεις
+- [Ο τύπος επιστροφής μιας συνάρτησης](../../questions/kahoot/kahoot-function-return-type.md): 28% σωστές απαντήσεις
+
+<!-- /kahoot -->
 
 ## Ασκήσεις
 
 <!-- exercises -->
 
-### Από τις διαφάνειες
+### Ζέσταμα: από τις διαφάνειες
 
 - [Τιμή μετά από κλήση συνάρτησης](../../questions/slides/slides-lec03-function-call.md): Διάλεξη 3: Συναρτήσεις, διαφάνεια 37 · ★☆☆ · trace
 - [Πόσα bytes είναι ένας int;](../../questions/slides/slides-lec03-int-size.md): Διάλεξη 3: Συναρτήσεις, διαφάνεια 9 · ★☆☆ · short-answer
@@ -593,24 +633,13 @@ Pi is approximately: 3.141583
 - [Προσέγγιση του π με τη σειρά Leibniz](../../questions/slides/slides-lec03-leibniz-pi.md): Διάλεξη 3: Συναρτήσεις, διαφάνεια 43 · ★★☆ · programming
 - [Υπερχείλιση ακεραίων](../../questions/slides/slides-lec03-overflow.md): Διάλεξη 3: Συναρτήσεις, διαφάνεια 8 · ★★☆ · trace
 
-### Από τα εργαστήρια
+### Εργαστήριο
 
 - [Πυθαγόρειο θεώρημα](../../questions/labs/lab-lab02-pyth.md): Εργαστήριο 2, Άσκηση 2 · ★☆☆ · programming
 
-### Από τα θέματα εξετάσεων
+### Θέματα εξετάσεων
 
 - [Η συνάρτηση about](../../questions/exams/exam-2024-sep-q1.md): Εξέταση Σεπτεμβρίου 2024, Θέμα 1 · ★☆☆ · programming
-
-### Από τα Kahoot στο αμφιθέατρο
-
-- [Ο τύπος επιστροφής μιας συνάρτησης](../../questions/kahoot/kahoot-function-return-type.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★★ · multiple-choice · 28% σωστές απαντήσεις
-- [Τα μέρη του ορισμού συνάρτησης](../../questions/kahoot/kahoot-function-definition-parts.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★★ · multiple-choice · 31% σωστές απαντήσεις
-- [Ακολουθίες διαφυγής για `\\` και `"`](../../questions/kahoot/kahoot-printf-escapes-backslash-quote.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★☆ · multiple-choice · 43% σωστές απαντήσεις
-- [Η ακολουθία `\r`](../../questions/kahoot/kahoot-printf-carriage-return.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
-- [printf με %c και 42](../../questions/kahoot/kahoot-printf-char-42.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
-- [Από τι αποτελείται ένα πρόγραμμα C](../../questions/kahoot/kahoot-c-program-functions.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★☆ · multiple-choice · 55% σωστές απαντήσεις
-- [Τιμή επιστροφής double](../../questions/kahoot/kahoot-square-double-return.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★★☆ · multiple-choice · 58% σωστές απαντήσεις
-- [Προσδιοριστικά %d με σειρά](../../questions/kahoot/kahoot-printf-format-order.md): Kahoot «Τύπωμα και Συναρτήσεις» (διάλεξη 3) · ★☆☆ · multiple-choice · 87% σωστές απαντήσεις
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
@@ -632,17 +661,6 @@ Pi is approximately: 3.141583
 - [Compiler error ή linking error; (math.h και libm.so)](../../questions/slides/slides-lecmake-sqrt-errors.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 6-8 · ★☆☆ · debug (κεφ. 26)
 
 <!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
-
-1. Γιατί ο `unsigned char` φτάνει μέχρι το 255 ενώ ο `char` μέχρι το 127;[^q1]
-2. Ποια τιμή έχει η `x` μετά το `int x = 0x10;` και ποια μετά το `x = 010;`;[^q2]
-3. Τι θα τυπώσει το `printf("100%%\tOK\n");`;[^q3]
-4. Ποια τέσσερα πράγματα βλέπετε σε ένα μήνυμα λάθους του `gcc` όπως το `hello.c:4:26: error: ...`;[^q4]
-5. Πώς ξέρει το shell αν ένα πρόγραμμα C πέτυχε, και πώς το ελέγχετε εσείς;[^q5]
-6. Ονομάστε τα τρία μέρη του ορισμού `double compute_area(double a, double b) { ... }`.[^q6]
-7. Τι επιστρέφει η κλήση `g(0, 0, 0)` της συνάρτησης `g` της διάλεξης;[^q7]
-8. Γιατί το `#include <math.h>` δεν αρκεί για να χρησιμοποιήσετε την `sqrt`;[^q8]
 
 [^q1]: Ο `char` αφιερώνει ένα από τα 8 bits στο πρόσημο (εύρος -128…127), ενώ ο `unsigned char` τα χρησιμοποιεί όλα για το μέγεθος (0…255).
 [^q2]: 16 (δεκαεξαδικό 10) και 8 (οκταδικό 10).

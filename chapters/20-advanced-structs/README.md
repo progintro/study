@@ -590,6 +590,32 @@ folder: /
 | βάθος | depth | Ο μέγιστος αριθμός συνδέσμων από τη ρίζα ως ένα φύλλο. |
 | γράφος | graph | Κόμβοι συνδεδεμένοι με ακμές, π.χ. πόλεις και δρόμοι. |
 
+## Διάβασμα
+
+- **Διαφάνειες:** [Διάλεξη 20](https://github.com/progintro/progintro.github.io/releases/download/2025/lec20.pdf),
+  σελ. 1–49: πεδία bit 5–15· ενώσεις 16–22· απαριθμήσεις 23–28· αυτοαναφορά και
+  αυτοαναφορικές δομές 29–37, 42–43· συνδεδεμένη λίστα 38–41· δυαδικό δέντρο 44–45·
+  ανοιχτά ερωτήματα (γράφος, σύστημα αρχείων) 46–47.
+- **Σημειώσεις:** η διάλεξη προτείνει τις σελ. 108 και 120–135 των διαφανειών του κ.
+  Σταματόπουλου:
+  - [Κεφάλαιο 7: Απαριθμήσεις, δομές και ενώσεις](https://progintro.github.io/notes/chapters/07-structs/):
+    «Απαριθμήσεις» (K04, σελ. 108), «Αυτο-αναφορικές δομές» (120–125), «Δημιουργία
+    νέων ονομάτων τύπων» (126), «Ενώσεις και πεδία bit» (127).
+  - [Κεφάλαιο 8: Λίστες και δυαδικά δέντρα](https://progintro.github.io/notes/chapters/08-lists-trees/):
+    «Διαχείριση συνδεδεμένων λιστών» (K04, σελ. 128–131), «Διαχείριση δυαδικών
+    δέντρων» (132–135), για την επόμενη διάλεξη.
+- **Εργαστήριο:** [Εργαστήριο 9](https://progintro.github.io/lab-material/labs/lab09/):
+  ασκήσεις `grades.c` (αυτοαναφορική δομή λίστας) και `tree.c` (αυτοαναφορική δομή
+  δυαδικού δέντρου).
+- **Άλλα:** [Bit fields](https://www.geeksforgeeks.org/bit-fields-c/) (GeeksforGeeks) και
+  [reference](https://en.cppreference.com/w/cpp/language/bit_field) (cppreference)·
+  [Unions](https://en.cppreference.com/w/c/language/union) (cppreference)·
+  [Enums](https://www.geeksforgeeks.org/enumeration-enum-c/) (GeeksforGeeks)·
+  [Linked list](https://en.wikipedia.org/wiki/Linked_list) και
+  [Binary tree](https://en.wikipedia.org/wiki/Binary_tree) (Wikipedia)·
+  [Self-reference](https://en.wikipedia.org/wiki/Self-reference) και
+  [Epimenides paradox](https://en.wikipedia.org/wiki/Epimenides_paradox) (Wikipedia).
+
 ## Συχνά λάθη
 
 - **Πεδίο bit πολύ μικρό για τις τιμές του.** Με `unsigned char year : 3;` το
@@ -618,69 +644,19 @@ folder: /
   βρόχος `for (p = &newton; p; p = p->parent)` ακολουθεί σκουπίδια και καταλήγει σε
   `Segmentation fault`.
 
-## Διάβασμα
+<!-- misconceptions -->
 
-- **Διαφάνειες:** [Διάλεξη 20](https://github.com/progintro/progintro.github.io/releases/download/2025/lec20.pdf),
-  σελ. 1–49: πεδία bit 5–15· ενώσεις 16–22· απαριθμήσεις 23–28· αυτοαναφορά και
-  αυτοαναφορικές δομές 29–37, 42–43· συνδεδεμένη λίστα 38–41· δυαδικό δέντρο 44–45·
-  ανοιχτά ερωτήματα (γράφος, σύστημα αρχείων) 46–47.
-- **Σημειώσεις:** η διάλεξη προτείνει τις σελ. 108 και 120–135 των διαφανειών του κ.
-  Σταματόπουλου:
-  - [Κεφάλαιο 7: Απαριθμήσεις, δομές και ενώσεις](https://progintro.github.io/notes/chapters/07-structs/):
-    «Απαριθμήσεις» (K04, σελ. 108), «Αυτο-αναφορικές δομές» (120–125), «Δημιουργία
-    νέων ονομάτων τύπων» (126), «Ενώσεις και πεδία bit» (127).
-  - [Κεφάλαιο 8: Λίστες και δυαδικά δέντρα](https://progintro.github.io/notes/chapters/08-lists-trees/):
-    «Διαχείριση συνδεδεμένων λιστών» (K04, σελ. 128–131), «Διαχείριση δυαδικών
-    δέντρων» (132–135), για την επόμενη διάλεξη.
-- **Εργαστήριο:** [Εργαστήριο 9](https://progintro.github.io/lab-material/labs/lab09/):
-  ασκήσεις `grades.c` (αυτοαναφορική δομή λίστας) και `tree.c` (αυτοαναφορική δομή
-  δυαδικού δέντρου).
-- **Άλλα:** [Bit fields](https://www.geeksforgeeks.org/bit-fields-c/) (GeeksforGeeks) και
-  [reference](https://en.cppreference.com/w/cpp/language/bit_field) (cppreference)·
-  [Unions](https://en.cppreference.com/w/c/language/union) (cppreference)·
-  [Enums](https://www.geeksforgeeks.org/enumeration-enum-c/) (GeeksforGeeks)·
-  [Linked list](https://en.wikipedia.org/wiki/Linked_list) και
-  [Binary tree](https://en.wikipedia.org/wiki/Binary_tree) (Wikipedia)·
-  [Self-reference](https://en.wikipedia.org/wiki/Self-reference) και
-  [Epimenides paradox](https://en.wikipedia.org/wiki/Epimenides_paradox) (Wikipedia).
+### Τι δυσκόλεψε την τάξη
 
-## Ασκήσεις
+Από τα Kahoot των διαλέξεων: οι ερωτήσεις όπου μια λάθος απάντηση μάζεψε πολλές ψήφους, με το ποσοστό σωστών απαντήσεων.
 
-<!-- exercises -->
+- **[Μέγεθος ένωσης](../../questions/kahoot/kahoot-union-size.md)** (36% σωστές): Το 22% επέλεξε `sizeof(double)`, θεωρώντας τον `double` το μεγαλύτερο πεδίο, ενώ ο πίνακας `name` πιάνει 20 bytes· και το 18% πρόσθεσε τα μεγέθη, όπως σε μια δομή.
+- **[Περιορισμοί πεδίων bit](../../questions/kahoot/kahoot-bitfield-limits.md)** (44% σωστές): Το 26% επέλεξε μόνο το `sizeof`, χωρίς να δει ότι ένα πεδίο bit δεν έχει ούτε δική του διεύθυνση (δεν ξεκινάει απαραίτητα σε byte) ούτε χωράει τιμές πέρα από τα n bits του.
+- **[Αυτοαναφορική δομή](../../questions/kahoot/kahoot-self-referential-struct.md)** (56% σωστές): Το 22% επέλεξε «περιέχει τον εαυτό της», κάτι αδύνατο: μια δομή που περιέχει αντίγραφο του εαυτού της θα είχε άπειρο μέγεθος.
 
-### Από τις διαφάνειες
+<!-- /misconceptions -->
 
-- [Μέγεθος δομής με πεδία bit](../../questions/slides/slides-lec20-bitfield-sizeof.md): Διάλεξη 20, διαφάνεια 7 · ★☆☆ · trace
-- [Βρόχος με απαρίθμηση](../../questions/slides/slides-lec20-enum-loop.md): Διάλεξη 20, διαφάνεια 27 · ★☆☆ · trace
-- [Τιμές απαρίθμησης](../../questions/slides/slides-lec20-enum-values.md): Διάλεξη 20, διαφάνεια 25 · ★☆☆ · trace
-- [Γενεαλογικό δέντρο](../../questions/slides/slides-lec20-family-tree.md): Διάλεξη 20, διαφάνεια 43 · ★☆☆ · short-answer
-- [Γονικοί φάκελοι](../../questions/slides/slides-lec20-folder-parent.md): Διάλεξη 20, διαφάνεια 33 · ★☆☆ · trace
-- [Δομή για φάκελο](../../questions/slides/slides-lec20-folder-struct.md): Διάλεξη 20, διαφάνεια 31 · ★☆☆ · short-answer
-- [Η διάταξη των φακέλων](../../questions/slides/slides-lec20-list-layout.md): Διάλεξη 20, διαφάνεια 38 · ★☆☆ · short-answer
-- [Ανάθεση σε πεδία bit](../../questions/slides/slides-lec20-bitfield-assign.md): Διάλεξη 20, διαφάνεια 12 · ★★☆ · trace
-- [Σύστημα αρχείων με υποφακέλους](../../questions/slides/slides-lec20-filesystem-children.md): Διάλεξη 20, διαφάνεια 47 · ★★☆ · short-answer
-- [Διάσχιση φακέλων](../../questions/slides/slides-lec20-folder-iterate.md): Διάλεξη 20, διαφάνεια 35 · ★★☆ · trace
-- [Χρήση ένωσης και μέγεθος](../../questions/slides/slides-lec20-union-size.md): Διάλεξη 20, διαφάνεια 19 · ★★☆ · trace
-- [Χάρτης ως γράφος](../../questions/slides/slides-lec20-graph-map.md): Διάλεξη 20, διαφάνεια 46 · ★★★ · short-answer
-
-### Από τα Kahoot στο αμφιθέατρο
-
-- [Μέγεθος ένωσης](../../questions/kahoot/kahoot-union-size.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★★ · multiple-choice · 36% σωστές απαντήσεις
-- [Περιορισμοί πεδίων bit](../../questions/kahoot/kahoot-bitfield-limits.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 44% σωστές απαντήσεις
-- [Τιμές απαρίθμησης](../../questions/kahoot/kahoot-enum-values.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 48% σωστές απαντήσεις
-- [Κόμβος με next](../../questions/kahoot/kahoot-node-linked-list.md): Kahoot «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 52% σωστές απαντήσεις
-- [Αυτοαναφορική δομή](../../questions/kahoot/kahoot-self-referential-struct.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 56% σωστές απαντήσεις
-- [Δομή ή ένωση;](../../questions/kahoot/kahoot-struct-vs-union.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 63% σωστές απαντήσεις
-- [Σε τι χρησιμεύει η ένωση](../../questions/kahoot/kahoot-union-purpose.md): Kahoot «Προχωρημένες Δομές» (διάλεξη 20), «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 65% σωστές απαντήσεις
-- [Κόμβος με left και right](../../questions/kahoot/kahoot-node-binary-tree.md): Kahoot «Προχωρημένες Δομές #2» · ★★☆ · multiple-choice · 67% σωστές απαντήσεις
-
-### Σχετικές ασκήσεις από άλλα κεφάλαια
-
-- [Διερμηνέας Αριθμητικών Εκφράσεων - eval](../../questions/exams/exam-2026-jan-q4.md): Εξέταση Ιανουαρίου 2026, Θέμα 4 · ★★☆ · programming (κεφ. 22)
-
-<!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
+## Ερωτήσεις κατανόησης
 
 1. Πόσα bits χρειάζεται ένα πεδίο bit που κρατά τον μήνα (1–12);[^q1]
 2. Ένα `unsigned char x : 4;` έχει τιμή 12. Τι τιμή έχει μετά το `x += 5;`;[^q2]
@@ -696,20 +672,55 @@ folder: /
 8. Πόσους δείκτες σε `struct person` χρειάζεται κάθε κόμβος γενεαλογικού δέντρου,
    και σε ποια δομή δεδομένων της διάλεξης μοιάζει αυτό;[^q8]
 
+<!-- kahoot -->
+
+### Kahoot από το αμφιθέατρο
+
+Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που απάντησαν σωστά.
+
+- [Κόμβος με left και right](../../questions/kahoot/kahoot-node-binary-tree.md): 67% σωστές απαντήσεις
+- [Σε τι χρησιμεύει η ένωση](../../questions/kahoot/kahoot-union-purpose.md): 65% σωστές απαντήσεις
+- [Δομή ή ένωση;](../../questions/kahoot/kahoot-struct-vs-union.md): 63% σωστές απαντήσεις
+- [Αυτοαναφορική δομή](../../questions/kahoot/kahoot-self-referential-struct.md): 56% σωστές απαντήσεις
+- [Κόμβος με next](../../questions/kahoot/kahoot-node-linked-list.md): 52% σωστές απαντήσεις
+- [Τιμές απαρίθμησης](../../questions/kahoot/kahoot-enum-values.md): 48% σωστές απαντήσεις
+- [Περιορισμοί πεδίων bit](../../questions/kahoot/kahoot-bitfield-limits.md): 44% σωστές απαντήσεις
+- [Μέγεθος ένωσης](../../questions/kahoot/kahoot-union-size.md): 36% σωστές απαντήσεις
+
+<!-- /kahoot -->
+
+## Ασκήσεις
+
+<!-- exercises -->
+
+### Ζέσταμα: από τις διαφάνειες
+
+- [Μέγεθος δομής με πεδία bit](../../questions/slides/slides-lec20-bitfield-sizeof.md): Διάλεξη 20, διαφάνεια 7 · ★☆☆ · trace
+- [Βρόχος με απαρίθμηση](../../questions/slides/slides-lec20-enum-loop.md): Διάλεξη 20, διαφάνεια 27 · ★☆☆ · trace
+- [Τιμές απαρίθμησης](../../questions/slides/slides-lec20-enum-values.md): Διάλεξη 20, διαφάνεια 25 · ★☆☆ · trace
+- [Γενεαλογικό δέντρο](../../questions/slides/slides-lec20-family-tree.md): Διάλεξη 20, διαφάνεια 43 · ★☆☆ · short-answer
+- [Γονικοί φάκελοι](../../questions/slides/slides-lec20-folder-parent.md): Διάλεξη 20, διαφάνεια 33 · ★☆☆ · trace
+- [Δομή για φάκελο](../../questions/slides/slides-lec20-folder-struct.md): Διάλεξη 20, διαφάνεια 31 · ★☆☆ · short-answer
+- [Η διάταξη των φακέλων](../../questions/slides/slides-lec20-list-layout.md): Διάλεξη 20, διαφάνεια 38 · ★☆☆ · short-answer
+- [Ανάθεση σε πεδία bit](../../questions/slides/slides-lec20-bitfield-assign.md): Διάλεξη 20, διαφάνεια 12 · ★★☆ · trace
+- [Σύστημα αρχείων με υποφακέλους](../../questions/slides/slides-lec20-filesystem-children.md): Διάλεξη 20, διαφάνεια 47 · ★★☆ · short-answer
+- [Διάσχιση φακέλων](../../questions/slides/slides-lec20-folder-iterate.md): Διάλεξη 20, διαφάνεια 35 · ★★☆ · trace
+- [Χρήση ένωσης και μέγεθος](../../questions/slides/slides-lec20-union-size.md): Διάλεξη 20, διαφάνεια 19 · ★★☆ · trace
+- [Χάρτης ως γράφος](../../questions/slides/slides-lec20-graph-map.md): Διάλεξη 20, διαφάνεια 46 · ★★★ · short-answer
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Διερμηνέας Αριθμητικών Εκφράσεων - eval](../../questions/exams/exam-2026-jan-q4.md): Εξέταση Ιανουαρίου 2026, Θέμα 4 · ★★☆ · programming (κεφ. 22)
+
+<!-- /exercises -->
+
 [^q1]: 4 bits: οι 12 τιμές δεν χωράνε σε 3 bits ($2^3 = 8$), αλλά χωράνε σε 4 ($2^4 = 16$).
-
 [^q2]: $(12 + 5) \bmod 16 = 1$: το πεδίο κρατά μόνο τα 4 χαμηλά bits του 17.
-
 [^q3]: Δεν μπορούμε να πάρουμε τη διεύθυνση ενός πεδίου bit (`cannot take address of bit-field`). Διαβάστε σε κανονική μεταβλητή και αναθέστε.
-
 [^q4]: 8, όσο το μεγαλύτερο μέλος (`double`), γιατί όλα τα μέλη μοιράζονται την ίδια μνήμη.
-
 [^q5]: 6: το `BLUE` δεν έχει ρητή τιμή, οπότε παίρνει την προηγούμενη (`GREEN = 5`) συν 1.
-
 [^q6]: Μια δομή δεν μπορεί να περιέχει αντίγραφο του εαυτού της (θα είχε άπειρο μέγεθος)· ένας δείκτης έχει σταθερό μέγεθος.
-
 [^q7]: Η ρίζα έχει `parent = NULL`· ο βρόχος σταματά όταν ο δείκτης γίνει `NULL`.
-
 [^q8]: Δύο (`parent1`, `parent2`)· η δομή μοιάζει με δυαδικό δέντρο, όπου κάθε κόμβος έχει έως δύο δείκτες προς άλλους κόμβους.
 
 <!-- {% endraw %} -->

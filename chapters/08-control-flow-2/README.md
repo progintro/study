@@ -506,6 +506,17 @@ switch (month) {
 | δομημένος προγραμματισμός | structured programming | Προγράμματα μόνο από ακολουθία, επιλογή, επανάληψη |
 | κώδικας-μακαρονάδα | spaghetti code | Κώδικας με μπερδεμένη ροή, δύσκολος στην ανάγνωση |
 
+## Διάβασμα
+
+- **Διαφάνειες:** [Διάλεξη 8](https://github.com/progintro/progintro.github.io/releases/download/2025/lec08.pdf), σελ. 1–25. Υπερχείλιση στο γινόμενο: σελ. 2· παραδείγματα βρόχων και σημαία: σελ. 5–8· `break`: σελ. 9–10· `continue`: σελ. 11–12· `switch`: σελ. 13–18· `goto` και δομημένος προγραμματισμός: σελ. 19–22.
+- **Σημειώσεις:** [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Εντολή `switch`», «Εντολές `break` και `continue`», «Εντολή `goto` και ετικέτες» (K04, σελ. 50–51 και 56–57). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι και τη σελίδα 71, δηλαδή και το [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/) μέχρι την ενότητα «Μετατροπές μεταξύ δεκαδικών και δυαδικών αριθμών».
+- **Εργαστήριο:** [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): ασκήσεις `seq.c` (βρόχοι), `birthdate.c` (αντιστοίχιση `IDAY % 7` σε ημέρα, κατάλληλη για `switch`)
+- **Άλλα:**
+  - [Break and Continue (W3Schools)](https://www.w3schools.com/c/c_break_continue.php)
+  - [Switch statement (GeeksforGeeks)](https://www.geeksforgeeks.org/c-switch-statement/)
+  - Wikipedia: [Considered harmful](https://en.wikipedia.org/wiki/Considered_harmful), [Spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code)
+  - [IOCCC](https://ioccc.org/): διαγωνισμός δυσνόητου κώδικα C
+
 ## Συχνά λάθη
 
 - **Ξεχασμένο `break` σε `case`.** Για `number == 0` τυπώνονται `zero` και `one`
@@ -530,22 +541,49 @@ switch (month) {
 - **Λάθος αρχή ή βήμα.** Με `i = 100; i += 2` περνάτε από άρτιους αντί για
   περιττούς. Διόρθωση: γράψτε στο χαρτί τις πρώτες τιμές του μετρητή.
 
-## Διάβασμα
+<!-- misconceptions -->
 
-- **Διαφάνειες:** [Διάλεξη 8](https://github.com/progintro/progintro.github.io/releases/download/2025/lec08.pdf), σελ. 1–25. Υπερχείλιση στο γινόμενο: σελ. 2· παραδείγματα βρόχων και σημαία: σελ. 5–8· `break`: σελ. 9–10· `continue`: σελ. 11–12· `switch`: σελ. 13–18· `goto` και δομημένος προγραμματισμός: σελ. 19–22.
-- **Σημειώσεις:** [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Εντολή `switch`», «Εντολές `break` και `continue`», «Εντολή `goto` και ετικέτες» (K04, σελ. 50–51 και 56–57). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι και τη σελίδα 71, δηλαδή και το [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/) μέχρι την ενότητα «Μετατροπές μεταξύ δεκαδικών και δυαδικών αριθμών».
-- **Εργαστήριο:** [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): ασκήσεις `seq.c` (βρόχοι), `birthdate.c` (αντιστοίχιση `IDAY % 7` σε ημέρα, κατάλληλη για `switch`)
-- **Άλλα:**
-  - [Break and Continue (W3Schools)](https://www.w3schools.com/c/c_break_continue.php)
-  - [Switch statement (GeeksforGeeks)](https://www.geeksforgeeks.org/c-switch-statement/)
-  - Wikipedia: [Considered harmful](https://en.wikipedia.org/wiki/Considered_harmful), [Spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code)
-  - [IOCCC](https://ioccc.org/): διαγωνισμός δυσνόητου κώδικα C
+### Τι δυσκόλεψε την τάξη
+
+Από τα Kahoot των διαλέξεων: οι ερωτήσεις όπου μια λάθος απάντηση μάζεψε πολλές ψήφους, με το ποσοστό σωστών απαντήσεων.
+
+- **[while(--i) με i = 0](../../questions/kahoot/kahoot-while-predecrement-overflow.md)** (17% σωστές): Το 43% απάντησε ότι θα τυπώνει @ επ' άπειρον, χάνοντας ότι το `;` είναι η (κενή) εντολή του βρόχου και ότι το `i` κάποτε υπερχειλίζει και φτάνει ξανά στο 0.
+- **[for χωρίς συνθήκη με break](../../questions/kahoot/kahoot-for-break-overflow.md)** (36% σωστές): Το 32% απάντησε ότι τελειώνει «μόνο όταν λιώσει η CPU», θεωρώντας ότι το `i` δεν θα γίνει ποτέ 0· όμως μετά τη μέγιστη τιμή του ο ακέραιος υπερχειλίζει σε αρνητικούς και φτάνει ξανά στο 0.
+- **[switch και if-else](../../questions/kahoot/kahoot-switch-if-else-equivalence.md)** (46% σωστές): Το 53% απάντησε False, επειδή τα `case` δέχονται μόνο ακέραιες σταθερές· όμως μπορούμε να κάνουμε `switch` στην ίδια τη συνθήκη (`switch (x > 3.5)`), που είναι 0 ή 1.
+
+<!-- /misconceptions -->
+
+## Ερωτήσεις κατανόησης
+
+1. Γιατί ένα γινόμενο θετικών ακεραίων σε βρόχο μπορεί να τυπωθεί αρνητικό;[^q1]
+2. Ποιες τιμές παίρνει το `i` στο `for (i = 105; i <= 999; i += 14)` και γιατί το βήμα είναι 14;[^q2]
+3. Ποια η διαφορά ανάμεσα σε `break` και `continue`;[^q3]
+4. Σε μια `for`, εκτελείται το βήμα (`i++`) μετά από `continue`; Μετά από `break`;[^q4]
+5. Τι θα τυπωθεί αν σε μια `switch` λείπουν όλα τα `break` και ταιριάξει το πρώτο `case`;[^q5]
+6. Πώς γράφουμε ότι οι μήνες 12, 1 και 2 έχουν την ίδια συμπεριφορά σε μια `switch`;[^q6]
+7. Μπορεί μια `switch` να χειριστεί τη συνθήκη `x > 100`; Γιατί;[^q7]
+8. Σε ποιο σημείο μπορεί να μεταφέρει την εκτέλεση μια `goto`, και γιατί την αποφεύγουμε;[^q8]
+9. Μετά από τον βρόχο με τη σημαία `found`, πώς ξέρουμε αν βρέθηκε αριθμός;[^q9]
+
+<!-- kahoot -->
+
+### Kahoot από το αμφιθέατρο
+
+Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που απάντησαν σωστά.
+
+- [goto στο διαγώνισμα](../../questions/kahoot/kahoot-goto-in-exam.md): 97% σωστές απαντήσεις
+- [Μόνο με break σταματά ένας βρόχος;](../../questions/kahoot/kahoot-break-only-way.md): 94% σωστές απαντήσεις
+- [switch και if-else](../../questions/kahoot/kahoot-switch-if-else-equivalence.md): 46% σωστές απαντήσεις
+- [for χωρίς συνθήκη με break](../../questions/kahoot/kahoot-for-break-overflow.md): 36% σωστές απαντήσεις
+- [while(--i) με i = 0](../../questions/kahoot/kahoot-while-predecrement-overflow.md): 17% σωστές απαντήσεις
+
+<!-- /kahoot -->
 
 ## Ασκήσεις
 
 <!-- exercises -->
 
-### Από τις διαφάνειες
+### Ζέσταμα: από τις διαφάνειες
 
 - [Το αγγλικό όνομα κάθε ψηφίου](../../questions/slides/slides-lec08-digit-names.md): Διάλεξη 8: Ροή Ελέγχου #2, διαφάνεια 13 · ★☆☆ · programming
 - [Υπάρχει θέμα με αυτή την υλοποίηση;](../../questions/slides/slides-lec08-print-all-issue.md): Διάλεξη 8: Ροή Ελέγχου #2, διαφάνεια 7 · ★☆☆ · debug
@@ -554,17 +592,9 @@ switch (month) {
 - [Η εποχή κάθε μήνα](../../questions/slides/slides-lec08-season.md): Διάλεξη 8: Ροή Ελέγχου #2, διαφάνεια 17 · ★☆☆ · programming
 - [Ο μικρότερος τριψήφιος πολλαπλάσιο του 2 και του 5 αλλά όχι του 4](../../questions/slides/slides-lec08-smallest-three-digit.md): Διάλεξη 8: Ροή Ελέγχου #2, διαφάνεια 6 · ★☆☆ · programming
 
-### Από τις εργασίες
+### Εργασίες
 
 - [Η Μέθοδος Newton-Raphson](../../questions/homework/hw-2023-hw1-newton.md): Εργασία 1 (2023-24), Άσκηση 1 · ★★☆ · programming
-
-### Από τα Kahoot στο αμφιθέατρο
-
-- [while(--i) με i = 0](../../questions/kahoot/kahoot-while-predecrement-overflow.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★★ · multiple-choice · 17% σωστές απαντήσεις
-- [for χωρίς συνθήκη με break](../../questions/kahoot/kahoot-for-break-overflow.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★★★ · multiple-choice · 36% σωστές απαντήσεις
-- [switch και if-else](../../questions/kahoot/kahoot-switch-if-else-equivalence.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★★☆ · multiple-choice · 46% σωστές απαντήσεις
-- [Μόνο με break σταματά ένας βρόχος;](../../questions/kahoot/kahoot-break-only-way.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★☆☆ · multiple-choice · 94% σωστές απαντήσεις
-- [goto στο διαγώνισμα](../../questions/kahoot/kahoot-goto-in-exam.md): Kahoot «Ροή Ελέγχου #2» (διάλεξη 8) · ★☆☆ · multiple-choice · 97% σωστές απαντήσεις
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
@@ -577,18 +607,6 @@ switch (month) {
 - [Αντιστροφή ψηφίων αριθμού](../../questions/slides/slides-lec16-reverse-digits.md): Διάλεξη 16, διαφάνεια 13 · ★☆☆ · programming (κεφ. 16)
 
 <!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
-
-1. Γιατί ένα γινόμενο θετικών ακεραίων σε βρόχο μπορεί να τυπωθεί αρνητικό;[^q1]
-2. Ποιες τιμές παίρνει το `i` στο `for (i = 105; i <= 999; i += 14)` και γιατί το βήμα είναι 14;[^q2]
-3. Ποια η διαφορά ανάμεσα σε `break` και `continue`;[^q3]
-4. Σε μια `for`, εκτελείται το βήμα (`i++`) μετά από `continue`; Μετά από `break`;[^q4]
-5. Τι θα τυπωθεί αν σε μια `switch` λείπουν όλα τα `break` και ταιριάξει το πρώτο `case`;[^q5]
-6. Πώς γράφουμε ότι οι μήνες 12, 1 και 2 έχουν την ίδια συμπεριφορά σε μια `switch`;[^q6]
-7. Μπορεί μια `switch` να χειριστεί τη συνθήκη `x > 100`; Γιατί;[^q7]
-8. Σε ποιο σημείο μπορεί να μεταφέρει την εκτέλεση μια `goto`, και γιατί την αποφεύγουμε;[^q8]
-9. Μετά από τον βρόχο με τη σημαία `found`, πώς ξέρουμε αν βρέθηκε αριθμός;[^q9]
 
 [^q1]: Επειδή το γινόμενο ξεπερνά τη μέγιστη τιμή του `int` (υπερχείλιση)· στην πράξη κρατιούνται μόνο τα χαμηλά 32 bit και το bit του προσήμου μπορεί να γίνει 1. Για προσημασμένους ακεραίους είναι απροσδιόριστη συμπεριφορά.
 [^q2]: 105, 119, 133, …, 987 (64 τιμές, η τελευταία το $105 + 63 \cdot 14 = 987$). Το 14 είναι $2 \cdot 7$: κρατά τον αριθμό πολλαπλάσιο του 7 και περιττό.

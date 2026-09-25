@@ -453,6 +453,21 @@ flowchart TD
 | συμβολοσειρά | string | Κείμενο ανάμεσα σε διπλά εισαγωγικά, π.χ. `"Hello world\n"` |
 | αλλαγή γραμμής | newline | Ο χαρακτήρας `\n` |
 
+## Διάβασμα
+
+- **Διαφάνειες:** [Διάλεξη 0](https://github.com/progintro/progintro.github.io/releases/download/2025/lec00.pdf), σελ. 1–36. Γιατί προγραμματισμός: σελ. 3–6· διαδικαστικά: σελ. 7–16· σκοπός και περιεχόμενο: σελ. 17–19· υπολογιστής και προγραμματισμός: σελ. 20–24· αμφισημία και γλώσσες: σελ. 25–27· η C: σελ. 28–31· Hello World: σελ. 32· εξάσκηση και επόμενη φορά: σελ. 33–34.
+- **Σημειώσεις:** Οι διαφάνειες ζητούν τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 19 (K04):
+  - [Κεφάλαιο 0: Εισαγωγή](https://progintro.github.io/notes/chapters/00-intro/), ολόκληρο, ιδίως «Γενικά περί υπολογιστών», «Γενικά περί προγραμματισμού υπολογιστών», «Πώς να μάθουμε να προγραμματίζουμε;», «Η δομή του υπολογιστή», «Λογισμικό και γλώσσες προγραμματισμού», «Πώς κατασκευάζουμε εκτελέσιμο πρόγραμμα;» (K04, σελ. 1–17)
+  - [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), ενότητα «Η γλώσσα προγραμματισμού C» (K04, σελ. 18), και για το Hello World η «Καλημέρα κόσμε της C» (K04, σελ. 19)
+- **Εργαστήριο:** [Εργαστήριο 0](https://progintro.github.io/lab-material/labs/lab00/): Βήματα 1–2 (webmail, Piazza) για τα εργαλεία του μαθήματος, Βήμα 7 `hello.c`, Άσκηση 1 `about.c`
+- **Άλλα:**
+  - Site του μαθήματος: [progintro.github.io](https://progintro.github.io)· [Piazza](https://piazza.com/uoa.gr/fall2025/197af)· [eclass](https://eclass.uoa.gr/courses/DI681/) και [εγγραφή σε εργαστηριακή ομάδα](https://eclass.uoa.gr/modules/group/index.php?course=DI681&urlview=1)· [webadm](http://webadm.uoa.gr/)
+  - [Online compiler (Programiz)](https://www.programiz.com/c-programming/online-compiler/)
+  - [TIOBE index](https://www.tiobe.com/tiobe-index/)· [Programming Language Shootout (Benchmarks Game)](https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html)
+  - Wikipedia: [Programming language](https://en.wikipedia.org/wiki/Programming_language), [List of linguistic example sentences](https://en.wikipedia.org/wiki/List_of_linguistic_example_sentences) (γλωσσικές αμφισημίες)
+  - [History of C and Applications](https://www.geeksforgeeks.org/c/history-and-application-of-c/)
+  - Εξάσκηση: [HackerRank](https://hackerrank.com), [LeetCode](https://leetcode.com), [Advent of Code](https://adventofcode.com/), [CodeChef](https://codechef.com), [Codewars](https://www.codewars.com/), [Topcoder](https://topcoder.com), [USACO](http://www.usaco.org), [Project Euler](https://projecteuler.net)
+
 ## Συχνά λάθη
 
 - **Email αντί για Piazza.** Ερωτήσεις για την ύλη ή τις ασκήσεις πάνε στο Piazza,
@@ -471,54 +486,18 @@ flowchart TD
 - **Κεφαλαία στα ονόματα.** Η C ξεχωρίζει κεφαλαία και πεζά: `Main` ή `Printf` δεν είναι
   το ίδιο με `main` και `printf`.
 
-## Διάβασμα
+<!-- misconceptions -->
 
-- **Διαφάνειες:** [Διάλεξη 0](https://github.com/progintro/progintro.github.io/releases/download/2025/lec00.pdf), σελ. 1–36. Γιατί προγραμματισμός: σελ. 3–6· διαδικαστικά: σελ. 7–16· σκοπός και περιεχόμενο: σελ. 17–19· υπολογιστής και προγραμματισμός: σελ. 20–24· αμφισημία και γλώσσες: σελ. 25–27· η C: σελ. 28–31· Hello World: σελ. 32· εξάσκηση και επόμενη φορά: σελ. 33–34.
-- **Σημειώσεις:** Οι διαφάνειες ζητούν τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 19 (K04):
-  - [Κεφάλαιο 0: Εισαγωγή](https://progintro.github.io/notes/chapters/00-intro/), ολόκληρο, ιδίως «Γενικά περί υπολογιστών», «Γενικά περί προγραμματισμού υπολογιστών», «Πώς να μάθουμε να προγραμματίζουμε;», «Η δομή του υπολογιστή», «Λογισμικό και γλώσσες προγραμματισμού», «Πώς κατασκευάζουμε εκτελέσιμο πρόγραμμα;» (K04, σελ. 1–17)
-  - [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), ενότητα «Η γλώσσα προγραμματισμού C» (K04, σελ. 18), και για το Hello World η «Καλημέρα κόσμε της C» (K04, σελ. 19)
-- **Εργαστήριο:** [Εργαστήριο 0](https://progintro.github.io/lab-material/labs/lab00/): Βήματα 1–2 (webmail, Piazza) για τα εργαλεία του μαθήματος, Βήμα 7 `hello.c`, Άσκηση 1 `about.c`
-- **Άλλα:**
-  - Site του μαθήματος: [progintro.github.io](https://progintro.github.io)· [Piazza](https://piazza.com/uoa.gr/fall2025/197af)· [eclass](https://eclass.uoa.gr/courses/DI681/) και [εγγραφή σε εργαστηριακή ομάδα](https://eclass.uoa.gr/modules/group/index.php?course=DI681&urlview=1)· [webadm](http://webadm.uoa.gr/)
-  - [Online compiler (Programiz)](https://www.programiz.com/c-programming/online-compiler/)
-  - [TIOBE index](https://www.tiobe.com/tiobe-index/)· [Programming Language Shootout (Benchmarks Game)](https://benchmarksgame-team.pages.debian.net/benchmarksgame/index.html)
-  - Wikipedia: [Programming language](https://en.wikipedia.org/wiki/Programming_language), [List of linguistic example sentences](https://en.wikipedia.org/wiki/List_of_linguistic_example_sentences) (γλωσσικές αμφισημίες)
-  - [History of C and Applications](https://www.geeksforgeeks.org/c/history-and-application-of-c/)
-  - Εξάσκηση: [HackerRank](https://hackerrank.com), [LeetCode](https://leetcode.com), [Advent of Code](https://adventofcode.com/), [CodeChef](https://codechef.com), [Codewars](https://www.codewars.com/), [Topcoder](https://topcoder.com), [USACO](http://www.usaco.org), [Project Euler](https://projecteuler.net)
+### Τι δυσκόλεψε την τάξη
 
-## Ασκήσεις
+Από τα Kahoot των διαλέξεων: οι ερωτήσεις όπου μια λάθος απάντηση μάζεψε πολλές ψήφους, με το ποσοστό σωστών απαντήσεων.
 
-<!-- exercises -->
+- **[Έχω μια ερώτηση για το μάθημα](../../questions/kahoot/kahoot-ask-question.md)** (57% σωστές): Το 23% θα πόσταρε κατευθείαν στο Piazza με τίτλο «Ερώτηση»: το Piazza είναι το σωστό κανάλι, αλλά πρώτα ψάχνουμε αν έχει ήδη απαντηθεί, και ο τίτλος πρέπει να λέει τι ρωτάμε.
+- **[Το χαρακτηριστικό της C](../../questions/kahoot/kahoot-c-main-feature.md)** (61% σωστές): Το 27% διάλεξε «Γρήγορη/Αποδοτική»: η ταχύτητα είναι πράγματι ένα από τα πλεονεκτήματα της C, αλλά όχι το μόνο που τονίστηκε.
 
-### Από τις διαφάνειες
+<!-- /misconceptions -->
 
-- [Έχω μια ερώτηση, τι κάνω;](../../questions/slides/slides-lec00-ask-question.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 16 · ★☆☆ · multiple-choice
-- [Ψωμί και αυγά](../../questions/slides/slides-lec00-bread-and-eggs.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 26 · ★☆☆ · short-answer
-- [Hello World σε online compiler](../../questions/slides/slides-lec00-hello-world.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 32 · ★☆☆ · tooling
-- [Το πιο ψηλό βουνό του κόσμου](../../questions/slides/slides-lec00-highest-mountain.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 25 · ★☆☆ · short-answer
-- [Περνάω χωρίς εργασίες και εργαστήριο;](../../questions/slides/slides-lec00-pass-without-labs.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 11 · ★☆☆ · short-answer
-- [Παραδείγματα προγραμμάτων](../../questions/slides/slides-lec00-programs-you-know.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 23 · ★☆☆ · short-answer
-- [Γιατί προγραμματισμός το 2025;](../../questions/slides/slides-lec00-why-programming.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 5 · ★☆☆ · short-answer
-
-### Από τα Kahoot στο αμφιθέατρο
-
-- [Έχω μια ερώτηση για το μάθημα](../../questions/kahoot/kahoot-ask-question.md): Kahoot «Καλημέρα Κόσμε - lec00!», «Καλημέρα Κόσμε!» (διάλεξη 0) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις
-- [Το χαρακτηριστικό της C](../../questions/kahoot/kahoot-c-main-feature.md): Kahoot «Καλημέρα Κόσμε - lec00!» (διάλεξη 0) · ★★☆ · multiple-choice · 61% σωστές απαντήσεις
-- [Τα εργαλεία του μαθήματος](../../questions/kahoot/kahoot-course-tools.md): Kahoot «Καλημέρα Κόσμε - lec00!» (διάλεξη 0) · ★☆☆ · multiple-choice · 82% σωστές απαντήσεις
-- [Η φόρμα του μαθήματος](../../questions/kahoot/kahoot-course-form.md): Kahoot «Καλημέρα Κόσμε - lec00!», «Καλημέρα Κόσμε!» (διάλεξη 0) · ★☆☆ · multiple-choice · 85% σωστές απαντήσεις
-- [Εκτύπωση με νέα γραμμή](../../questions/kahoot/kahoot-printf-newline.md): Kahoot «Καλημέρα Κόσμε - lec00!», «Καλημέρα Κόσμε!» (διάλεξη 0) · ★☆☆ · multiple-choice · 86% σωστές απαντήσεις
-- [Τι κάνει η printf](../../questions/kahoot/kahoot-printf-prints.md): Kahoot «Καλημέρα Κόσμε - lec00!», «Καλημέρα Κόσμε!» (διάλεξη 0) · ★☆☆ · multiple-choice · 94% σωστές απαντήσεις
-
-### Σχετικές ασκήσεις από άλλα κεφάλαια
-
-- [Μεταγλώττιση, σύνδεση και εκτέλεση](../../questions/labs/lab-lab01-step2-compile-link.md): Εργαστήριο 1, Βήμα 2 · ★☆☆ · tooling (κεφ. 1)
-- [Στοιχεία φοιτητή (Παλιό θέμα)](../../questions/labs/lab-lab00-about.md): Εργαστήριο 0, Άσκηση 1 · ★☆☆ · programming (κεφ. 2)
-- [Πώς γράφουμε σχόλια](../../questions/kahoot/kahoot-comment-syntax.md): Kahoot «Επίλυση Προβλημάτων» (διάλεξη 7) · ★★☆ · multiple-choice · 46% σωστές απαντήσεις (κεφ. 7)
-- [Τα στάδια του C build process](../../questions/slides/slides-lecmake-build-pipeline.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνεια 5 · ★☆☆ · short-answer (κεφ. 26)
-
-<!-- /exercises -->
-
-## Ερωτήσεις αυτοαξιολόγησης
+## Ερωτήσεις κατανόησης
 
 1. Ποιοι είναι οι δύο βασικοί λόγοι για τους οποίους χρησιμοποιούμε υπολογιστές;[^q1]
 2. Δώστε τον ορισμό του προγραμματισμού που δίνει η διάλεξη.[^q2]
@@ -533,6 +512,43 @@ flowchart TD
 9. Ποια είναι η δουλειά του μεταγλωττιστή και ποια του συνδέτη;[^q9]
 10. Ένας πρωτοετής έχει 4 στις Ασκήσεις (με άριστα το 10) και 9 στην Τελική Εξέταση.
     Ισχύει η αναπροσαρμογή;[^q10]
+
+<!-- kahoot -->
+
+### Kahoot από το αμφιθέατρο
+
+Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που απάντησαν σωστά.
+
+- [Τι κάνει η printf](../../questions/kahoot/kahoot-printf-prints.md): 94% σωστές απαντήσεις
+- [Εκτύπωση με νέα γραμμή](../../questions/kahoot/kahoot-printf-newline.md): 86% σωστές απαντήσεις
+- [Η φόρμα του μαθήματος](../../questions/kahoot/kahoot-course-form.md): 85% σωστές απαντήσεις
+- [Τα εργαλεία του μαθήματος](../../questions/kahoot/kahoot-course-tools.md): 82% σωστές απαντήσεις
+- [Το χαρακτηριστικό της C](../../questions/kahoot/kahoot-c-main-feature.md): 61% σωστές απαντήσεις
+- [Έχω μια ερώτηση για το μάθημα](../../questions/kahoot/kahoot-ask-question.md): 57% σωστές απαντήσεις
+
+<!-- /kahoot -->
+
+## Ασκήσεις
+
+<!-- exercises -->
+
+### Ζέσταμα: από τις διαφάνειες
+
+- [Έχω μια ερώτηση, τι κάνω;](../../questions/slides/slides-lec00-ask-question.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 16 · ★☆☆ · multiple-choice
+- [Ψωμί και αυγά](../../questions/slides/slides-lec00-bread-and-eggs.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 26 · ★☆☆ · short-answer
+- [Hello World σε online compiler](../../questions/slides/slides-lec00-hello-world.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 32 · ★☆☆ · tooling
+- [Το πιο ψηλό βουνό του κόσμου](../../questions/slides/slides-lec00-highest-mountain.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 25 · ★☆☆ · short-answer
+- [Περνάω χωρίς εργασίες και εργαστήριο;](../../questions/slides/slides-lec00-pass-without-labs.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 11 · ★☆☆ · short-answer
+- [Παραδείγματα προγραμμάτων](../../questions/slides/slides-lec00-programs-you-know.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 23 · ★☆☆ · short-answer
+- [Γιατί προγραμματισμός το 2025;](../../questions/slides/slides-lec00-why-programming.md): Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 5 · ★☆☆ · short-answer
+
+### Σχετικές ασκήσεις από άλλα κεφάλαια
+
+- [Μεταγλώττιση, σύνδεση και εκτέλεση](../../questions/labs/lab-lab01-step2-compile-link.md): Εργαστήριο 1, Βήμα 2 · ★☆☆ · tooling (κεφ. 1)
+- [Στοιχεία φοιτητή (Παλιό θέμα)](../../questions/labs/lab-lab00-about.md): Εργαστήριο 0, Άσκηση 1 · ★☆☆ · programming (κεφ. 2)
+- [Τα στάδια του C build process](../../questions/slides/slides-lecmake-build-pipeline.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνεια 5 · ★☆☆ · short-answer (κεφ. 26)
+
+<!-- /exercises -->
 
 [^q1]: Την ταχύτητα στην επεξεργασία δεδομένων και τη μνήμη που διαθέτουν για αποθήκευση δεδομένων.
 [^q2]: Ο σαφής καθορισμός μιας διαδικασίας, σαν ένα σύνολο από εντολές (το πρόγραμμα), που περιγράφει λεπτομερώς τα βήματα που πρέπει να γίνουν για να επιλυθεί ένα πρόβλημα υπολογισμού.
