@@ -23,7 +23,8 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "build", "mermaid")
 FENCE = re.compile(r"^([ \t]*)```mermaid\n(.*?)^\1```[ \t]*$", re.M | re.S)
-IMAGE = os.environ.get("MERMAID_IMAGE", "minlag/mermaid-cli")
+# Pinned: later releases dropped the --pdfFit option this script relies on.
+IMAGE = os.environ.get("MERMAID_IMAGE", "minlag/mermaid-cli:11.17.0")
 
 
 def blocks(text):
