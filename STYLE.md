@@ -145,7 +145,33 @@ concepts of «Θεωρία» it applies.
     Εργασίες → Θέματα εξετάσεων, each easiest first, then related questions from other
     chapters.
 - Answers to «Ερωτήσεις κατανόησης» go in footnotes named `[^q1]`, `[^q2]`, …,
-  defined at the very end of the file.
+  defined at the very end of the file. Write the questions as a plain numbered list
+  (`1. …`); the generator turns them into labelled items.
+
+### Labels
+
+Everything a reader might want to cite has a label, written by
+`tools/gen-exercises.py` (never by hand) and identical on GitHub, the site, the PDF
+and `llms-full.txt`:
+
+| Label | What | Anchor | The label links to |
+| --- | --- | --- | --- |
+| `§12.3` | the H3 sections of «Θεωρία» then «Παραδείγματα», in one sequence | `s12-3` | — |
+| `Ε12.4` | the «Ερωτήσεις κατανόησης» items | `e12-4` | itself |
+| `Κ12.2` | the chapter's Kahoot questions | `k12-2` | the question's page |
+| `Α12.16` | «Ασκήσεις», numbered straight through the ladder | `a12-16` | the question's page |
+
+- A share link is the chapter URL plus the anchor, e.g.
+  `https://progintro.github.io/study/chapters/12-pointers-arrays/#e12-4`, or a
+  question's own page.
+- Group headings give their range, e.g. «Εργασίες (Α12.12)». Lines end with the
+  question's permanent id in backticks.
+- Numbers follow the current order, like an edition of a book: adding a question can
+  shift later numbers. **The question id (`exam-2025-jan-q2`) never changes**, so cite
+  it next to the number when a reference must last.
+- In the PDF, a label opens its web page (to share). In the book, a chapter's Α/Κ
+  labels jump to the full statement in the question appendix, where each exercise
+  starts with a heading «Α12.16 · title» and ends with a rule.
 - K04 page numbers come from `sources/k04-map.tsv` (printed K04 page → notes chapter and section).
   Give notes sections by their exact heading text in «».
 

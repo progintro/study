@@ -42,7 +42,9 @@ wildcard rules και built-in rules.
 
 ## Θεωρία
 
-### Η διαδικασία μετάφρασης της C
+<a id="s26-1"></a><a id="η-διαδικασία-μετάφρασης-της-c"></a>
+
+### §26.1 Η διαδικασία μετάφρασης της C
 
 Ένα εκτελέσιμο δεν βγαίνει από το `.c` σε ένα βήμα. Κάθε αρχείο `.c`, που λέγεται
 **translation unit** (μονάδα μετάφρασης), περνά από τρία στάδια
@@ -72,7 +74,9 @@ flowchart LR
 Η εντολή `gcc main.c -o main` κάνει και τα τρία στάδια μαζί· το `gcc` στην ουσία
 καλεί με τη σειρά τα `cpp`, τον compiler και το `ld`.
 
-### Σφάλματα μεταγλώττισης και σφάλματα σύνδεσης
+<a id="s26-2"></a><a id="σφάλματα-μεταγλώττισης-και-σφάλματα-σύνδεσης"></a>
+
+### §26.2 Σφάλματα μεταγλώττισης και σφάλματα σύνδεσης
 
 Κάθε στάδιο έχει τα δικά του λάθη, και το να καταλαβαίνετε ποιο στάδιο παραπονιέται
 είναι το μισό της διόρθωσης.
@@ -92,7 +96,9 @@ flowchart LR
 `sqrt` βρίσκεται στη μαθηματική βιβλιοθήκη του συστήματος, `libm.so`, και πρέπει να
 πείτε στον linker να τη χρησιμοποιήσει με το flag `-l:libm.so`, ή σύντομα `-lm`.
 
-### Projects με πολλά αρχεία
+<a id="s26-3"></a><a id="projects-με-πολλά-αρχεία"></a>
+
+### §26.3 Projects με πολλά αρχεία
 
 Τα πραγματικά projects αποτελούνται από πολλά αρχεία `.c`, που πρέπει να
 μεταγλωττιστούν με όμοιο τρόπο και να συνδεθούν. Το project της διάλεξης έχει ένα
@@ -104,7 +110,9 @@ flowchart LR
 Πίσω από αυτή τη γραμμή τρέχουν ξεχωριστά ο `cpp` και ο compiler για κάθε αρχείο και
 στο τέλος ένα `ld` με όλα τα `.o` (Παράδειγμα «Ένα project με δύο αρχεία»).
 
-### Τρία προβλήματα του χειροκίνητου compile
+<a id="s26-4"></a><a id="τρία-προβλήματα-του-χειροκίνητου-compile"></a>
+
+### §26.4 Τρία προβλήματα του χειροκίνητου compile
 
 Με περισσότερα από ένα αρχεία, η στρατηγική «γράφω την εντολή `gcc` με το χέρι» έχει
 τρία προβλήματα:
@@ -118,11 +126,13 @@ flowchart LR
    πρότυπο της C, άρα δεν μπορεί να μεταγλωττιστεί με `-std=c99` όπως το `main.c`.
 3. **Επαναμεταγλώττιση ολόκληρου του project** σε κάθε αλλαγή (βλ. παρακάτω).
 
-Ήδη με πέντε αρχεία (η [Εργασία 2, elevate](#elevate)) χρειάζονται έξι εντολές.
+Ήδη με πέντε αρχεία (η [Εργασία 2, elevate](#το-build-της-εργασίας-2-elevate)) χρειάζονται έξι εντολές.
 Κανείς δεν τις θυμάται απ' έξω, και σε μεγάλο project ο χρόνος να τις τρέχετε μία
 μία ξεπερνά τον χρόνο της ίδιας της αλλαγής στον κώδικα.
 
-### Build scripts σε bash
+<a id="s26-5"></a><a id="build-scripts-σε-bash"></a>
+
+### §26.5 Build scripts σε bash
 
 Η πρώτη λύση υπάρχει από τη δεκαετία του '70: βάζετε όλες τις εντολές σε ένα
 **bash script** (`build.sh`) και τρέχετε αυτό. Το `set -xe` κάνει το script να
@@ -133,7 +143,9 @@ flowchart LR
 αρχεία άλλαξαν, οπότε **κάθε εκτέλεση ξαναμεταγλωττίζει όλο το project από την
 αρχή**.
 
-### Γιατί η πλήρης επαναμεταγλώττιση είναι πρόβλημα
+<a id="s26-6"></a><a id="γιατί-η-πλήρης-επαναμεταγλώττιση-είναι-πρόβλημα"></a>
+
+### §26.6 Γιατί η πλήρης επαναμεταγλώττιση είναι πρόβλημα
 
 Η GNU C Library (glibc), η πιο διαδεδομένη υλοποίηση της standard library της C (και
 των προτύπων POSIX, GNU C, System V κ.ά.), έχει 1.524.568 γραμμές κώδικα σε πάνω από
@@ -149,7 +161,9 @@ flowchart LR
 έγιναν απλά αρχεία κειμένου, «printable, debuggable, understandable», όπως θέλει η
 [φιλοσοφία του Unix](https://en.wikipedia.org/wiki/Unix_philosophy).
 
-### Το Make και οι βασικές έννοιες
+<a id="s26-7"></a><a id="το-make-και-οι-βασικές-έννοιες"></a>
+
+### §26.7 Το Make και οι βασικές έννοιες
 
 Το **Make** είναι πρόγραμμα που εκτελεί εντολές με βάση προκαθορισμένες **σχέσεις
 εξάρτησης (dependencies)**. Υπάρχουν πολλές παραλλαγές του· εδώ χρησιμοποιούμε το
@@ -161,7 +175,9 @@ flowchart LR
 - **rule** (κανόνας): ορίζει ένα target, τα **prerequisites** (προαπαιτούμενα) από
   τα οποία εξαρτάται, και το recipe του.
 
-### Το Makefile και η σύνταξη ενός rule
+<a id="s26-8"></a><a id="το-makefile-και-η-σύνταξη-ενός-rule"></a>
+
+### §26.8 Το Makefile και η σύνταξη ενός rule
 
 Ένα **Makefile** είναι ένα σύνολο από rules με σκοπό την παραγωγή targets:
 
@@ -181,7 +197,9 @@ target_name1 target_name2: prerequisite1 prerequisite2
 Στο GNU Make κάθε γραμμή του recipe ξεκινά με **tab**, όχι με κενά (έτσι το γράφει και
 το [Εργαστήριο 10](https://progintro.github.io/lab-material/labs/lab10/)).
 
-### Η εντολή make
+<a id="s26-9"></a><a id="η-εντολή-make"></a>
+
+### §26.9 Η εντολή make
 
 Αν στον τρέχοντα φάκελο υπάρχει αρχείο με όνομα `Makefile` (ή ένα από λίγα άλλα
 αναγνωρισμένα ονόματα, όπως `makefile`), τρέχετε:
@@ -195,7 +213,9 @@ rule του Makefile που ορίζει recipe για αυτό το όνομα.
 χτίζει το target του **πρώτου** rule του αρχείου. Γι' αυτό το πρώτο rule είναι
 συνήθως το τελικό εκτελέσιμο.
 
-### Ο αλγόριθμος κατασκευής
+<a id="s26-10"></a><a id="ο-αλγόριθμος-κατασκευής"></a>
+
+### §26.10 Ο αλγόριθμος κατασκευής
 
 Αφού επιλεγεί το build target, το Make ακολουθεί περίπου τον εξής αναδρομικό
 αλγόριθμο (διαφάνεια 28):
@@ -233,7 +253,9 @@ flowchart TD
 `.o`, γιατί και τα δύο το κάνουν `#include`. Το Make δεν μπορεί να «ξεχάσει» ένα
 αρχείο, όπως εσείς: αρκεί οι εξαρτήσεις να είναι σωστά δηλωμένες.
 
-### Macros
+<a id="s26-11"></a><a id="macros"></a>
+
+### §26.11 Macros
 
 Αν κάποιος θέλει να χτίσει το project με `clang` αντί για `gcc` (π.χ. σε Mac), πρέπει
 να αλλάξει κάθε εμφάνιση του `gcc` στο Makefile. Η λύση είναι η ίδια με της C: μια
@@ -274,7 +296,9 @@ B = hello
 Εδώ το `$(A)` δίνει `hello` (αποτιμάται στη χρήση, όταν το `B` έχει ήδη τιμή), ενώ το
 `$(C)` είναι κενό (αποτιμήθηκε όταν το `B` δεν υπήρχε ακόμη).
 
-### Automatic variables
+<a id="s26-12"></a><a id="automatic-variables"></a>
+
+### §26.12 Automatic variables
 
 Μέσα σε ένα recipe μπορείτε να χρησιμοποιήσετε και **automatic variables**,
 μεταβλητές που αλλάζουν αυτόματα τιμή από rule σε rule:
@@ -288,7 +312,9 @@ B = hello
 Έτσι ένα recipe δεν επαναλαμβάνει ονόματα αρχείων: `$(CC) -o $@ $^` σημαίνει «σύνδεσε
 όλα τα prerequisites στο target».
 
-### Wildcard rules
+<a id="s26-13"></a><a id="wildcard-rules"></a>
+
+### §26.13 Wildcard rules
 
 Με macros και automatic variables, τα rules για `main.o` και `primes.o` γίνονται σχεδόν
 πανομοιότυπα. Όπως στον προγραμματισμό, όταν κάτι επαναλαμβάνεται, το αφαιρούμε (to
@@ -303,7 +329,9 @@ abstract it). Ένα **wildcard rule** (στο εγχειρίδιο του GNU M
 Αυτό λέει ότι **κάθε** `X.o` έχει prerequisite το αντίστοιχο `X.c` και φτιάχνεται με
 το ίδιο recipe. Μέσα στο recipe, το `$<` είναι το `X.c` και το `$@` το `X.o`.
 
-### Built-in rules
+<a id="s26-14"></a><a id="built-in-rules"></a>
+
+### §26.14 Built-in rules
 
 Το Make φτιάχτηκε για να χτίζει projects σε C, οπότε έχει ήδη ορισμένα **built-in
 rules** για τα πιο συνηθισμένα:
@@ -316,7 +344,9 @@ rules** για τα πιο συνηθισμένα:
 `CFLAGS` (τα flags του compiler). Ορίζοντας μόνο αυτά και τις εξαρτήσεις, το Makefile
 του project γίνεται 2–3 γραμμές (Παράδειγμα «Makefile με built-in rules»).
 
-### Το Make στον πραγματικό κόσμο
+<a id="s26-15"></a><a id="το-make-στον-πραγματικό-κόσμο"></a>
+
+### §26.15 Το Make στον πραγματικό κόσμο
 
 Η απλότητα και η δύναμη του Make το πάνε πολύ μακριά. Ο **Linux kernel** (~35
 εκατομμύρια γραμμές) χτίζεται με Make. Τα πιο προχωρημένα εργαλεία (`cmake`,
@@ -326,7 +356,9 @@ rules** για τα πιο συνηθισμένα:
 
 ## Παραδείγματα
 
-### Το math.h και η libm.so
+<a id="s26-16"></a><a id="το-mathh-και-η-libmso"></a>
+
+### §26.16 Το math.h και η libm.so
 
 *Εφαρμόζει: «Σφάλματα μεταγλώττισης και σφάλματα σύνδεσης».*
 
@@ -373,7 +405,9 @@ $ ./main
 1.73
 ```
 
-### Ένα project με δύο αρχεία
+<a id="s26-17"></a><a id="ένα-project-με-δύο-αρχεία"></a>
+
+### §26.17 Ένα project με δύο αρχεία
 
 *Εφαρμόζει: «Projects με πολλά αρχεία», «Τρία προβλήματα του χειροκίνητου compile».*
 
@@ -433,7 +467,9 @@ $ gcc -o main primes.o main.o
 
 <a id="elevate"></a>
 
-### Το build της Εργασίας 2 (elevate)
+<a id="s26-18"></a><a id="το-build-της-εργασίας-2-elevate"></a>
+
+### §26.18 Το build της Εργασίας 2 (elevate)
 
 *Εφαρμόζει: «Τρία προβλήματα του χειροκίνητου compile».*
 
@@ -451,7 +487,9 @@ $ gcc -Os -o elevate recurse.o brute.o memoize.o dp.o elevate.o
 
 Είναι το ιδανικό πρώτο `Makefile` σας (βλ. «Makefile με built-in rules»).
 
-### Το build.sh
+<a id="s26-19"></a><a id="το-buildsh"></a>
+
+### §26.19 Το build.sh
 
 *Εφαρμόζει: «Build scripts σε bash».*
 
@@ -474,7 +512,9 @@ Found primes: 2 3 5 7 11 13 17 19 23 29 31 37 41
 Το `2> /dev/null` κρύβει την έξοδο του `set -x`, που γράφεται στο stderr. Το script
 ξαναμεταγλωττίζει και τα δύο αρχεία σε κάθε εκτέλεση, όποιο κι αν άλλαξε.
 
-### Το πρώτο Makefile
+<a id="s26-20"></a><a id="το-πρώτο-makefile"></a>
+
+### §26.20 Το πρώτο Makefile
 
 *Εφαρμόζει: «Το Makefile και η σύνταξη ενός rule», «Ο αλγόριθμος κατασκευής».*
 
@@ -511,7 +551,9 @@ gcc -o main main.o primes.o
 Μετά το `touch main.c` το `primes.o` δεν ξαναφτιάχτηκε. Λειτουργεί· είναι καλό;
 Όχι ακόμη: το `gcc` και τα flags επαναλαμβάνονται παντού.
 
-### Makefile με macros, automatic variables και wildcard rule
+<a id="s26-21"></a><a id="makefile-με-macros-automatic-variables-και-wildcard-rule"></a>
+
+### §26.21 Makefile με macros, automatic variables και wildcard rule
 
 *Εφαρμόζει: «Macros», «Automatic variables», «Wildcard rules».*
 
@@ -545,7 +587,9 @@ clang -Wall -Wextra -Werror -pedantic -c primes.c
 clang -o main main.o primes.o
 ```
 
-### Makefile με built-in rules
+<a id="s26-22"></a><a id="makefile-με-built-in-rules"></a>
+
+### §26.22 Makefile με built-in rules
 
 *Εφαρμόζει: «Built-in rules».*
 
@@ -569,7 +613,9 @@ cc   main.o primes.o   -o main
 συνήθως το `gcc`). Ένα rule χωρίς recipe, όπως το `main.o primes.o: primes.h`, απλώς
 προσθέτει prerequisites.
 
-### Συμβουλή για το Εργαστήριο 10
+<a id="s26-23"></a><a id="συμβουλή-για-το-εργαστήριο-10"></a>
+
+### §26.23 Συμβουλή για το Εργαστήριο 10
 
 Το [Εργαστήριο 10](https://progintro.github.io/lab-material/labs/lab10/), ενότητα
 «Αυτοματοποίηση με make», χτίζει το `collatz` με ένα Makefile με `CC`, `CFLAGS` και
@@ -680,18 +726,18 @@ cc   main.o primes.o   -o main
 
 ## Ερωτήσεις κατανόησης
 
-1. Ποια τρία στάδια μεσολαβούν από ένα `.c` σε ένα εκτελέσιμο, και τι βγάζει το
+- <a id="e26-1"></a>**[Ε26.1](#e26-1)** Ποια τρία στάδια μεσολαβούν από ένα `.c` σε ένα εκτελέσιμο, και τι βγάζει το
    καθένα;[^q1]
-2. Γιατί το `#include <math.h>` δεν αρκεί για να χρησιμοποιήσετε τη `sqrt`;[^q2]
-3. Γιατί ένα linking error είναι λιγότερο κατατοπιστικό από ένα compiler error;[^q3]
-4. Ποιο πρόβλημα του χειροκίνητου compile δεν λύνει ένα bash script;[^q4]
-5. Σε ένα Makefile, τι είναι target, prerequisite, recipe και rule;[^q5]
-6. Ποιο target χτίζει το `make` όταν δεν του δώσετε όρισμα;[^q6]
-7. Με το Makefile του σχήματος εξαρτήσεων, ποια αρχεία ξαναφτιάχνονται αν αλλάξει το
+- <a id="e26-2"></a>**[Ε26.2](#e26-2)** Γιατί το `#include <math.h>` δεν αρκεί για να χρησιμοποιήσετε τη `sqrt`;[^q2]
+- <a id="e26-3"></a>**[Ε26.3](#e26-3)** Γιατί ένα linking error είναι λιγότερο κατατοπιστικό από ένα compiler error;[^q3]
+- <a id="e26-4"></a>**[Ε26.4](#e26-4)** Ποιο πρόβλημα του χειροκίνητου compile δεν λύνει ένα bash script;[^q4]
+- <a id="e26-5"></a>**[Ε26.5](#e26-5)** Σε ένα Makefile, τι είναι target, prerequisite, recipe και rule;[^q5]
+- <a id="e26-6"></a>**[Ε26.6](#e26-6)** Ποιο target χτίζει το `make` όταν δεν του δώσετε όρισμα;[^q6]
+- <a id="e26-7"></a>**[Ε26.7](#e26-7)** Με το Makefile του σχήματος εξαρτήσεων, ποια αρχεία ξαναφτιάχνονται αν αλλάξει το
    `primes.c`; Και αν αλλάξει το `primes.h`;[^q7]
-8. Ποια η διαφορά ανάμεσα σε `CFLAGS = …` και `CFLAGS := …`;[^q8]
-9. Στο rule `main: main.o primes.o`, τι τιμή έχουν τα `$@`, `$^` και `$<`;[^q9]
-10. Τι σημαίνει `%.o: %.c`, και γιατί ένα Makefile για C μπορεί να είναι 2–3
+- <a id="e26-8"></a>**[Ε26.8](#e26-8)** Ποια η διαφορά ανάμεσα σε `CFLAGS = …` και `CFLAGS := …`;[^q8]
+- <a id="e26-9"></a>**[Ε26.9](#e26-9)** Στο rule `main: main.o primes.o`, τι τιμή έχουν τα `$@`, `$^` και `$<`;[^q9]
+- <a id="e26-10"></a>**[Ε26.10](#e26-10)** Τι σημαίνει `%.o: %.c`, και γιατί ένα Makefile για C μπορεί να είναι 2–3
     γραμμές;[^q10]
 
 <!-- kahoot -->
@@ -702,19 +748,19 @@ cc   main.o primes.o   -o main
 
 <!-- exercises -->
 
-### Ζέσταμα: από τις διαφάνειες
+### Ζέσταμα: από τις διαφάνειες (Α26.1–Α26.5)
 
-- [Τα στάδια του C build process](../../questions/slides/slides-lecmake-build-pipeline.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνεια 5 · ★☆☆ · short-answer
-- [Script ή recompile με το χέρι;](../../questions/slides/slides-lecmake-forgot-recompile.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 17-21 · ★☆☆ · short-answer
-- [Διαφορετικά flags ανά αρχείο](../../questions/slides/slides-lecmake-per-file-flags.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 10-14 · ★☆☆ · tooling
-- [Compiler error ή linking error; (math.h και libm.so)](../../questions/slides/slides-lecmake-sqrt-errors.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 6-8 · ★☆☆ · debug
-- [Ένα Makefile 2-3 γραμμών](../../questions/slides/slides-lecmake-short-makefile.md): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 31-39 · ★★☆ · tooling
+- <a id="a26-1"></a>**[Α26.1](../../questions/slides/slides-lecmake-build-pipeline.md)** Τα στάδια του C build process: How to Make? (προσκεκλημένη διάλεξη), διαφάνεια 5 · ★☆☆ · short-answer · `slides-lecmake-build-pipeline`
+- <a id="a26-2"></a>**[Α26.2](../../questions/slides/slides-lecmake-forgot-recompile.md)** Script ή recompile με το χέρι;: How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 17-21 · ★☆☆ · short-answer · `slides-lecmake-forgot-recompile`
+- <a id="a26-3"></a>**[Α26.3](../../questions/slides/slides-lecmake-per-file-flags.md)** Διαφορετικά flags ανά αρχείο: How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 10-14 · ★☆☆ · tooling · `slides-lecmake-per-file-flags`
+- <a id="a26-4"></a>**[Α26.4](../../questions/slides/slides-lecmake-sqrt-errors.md)** Compiler error ή linking error; (math.h και libm.so): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 6-8 · ★☆☆ · debug · `slides-lecmake-sqrt-errors`
+- <a id="a26-5"></a>**[Α26.5](../../questions/slides/slides-lecmake-short-makefile.md)** Ένα Makefile 2-3 γραμμών: How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 31-39 · ★★☆ · tooling · `slides-lecmake-short-makefile`
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
-- [Νέα Μηχανή Σκακιού (chess engine)](../../questions/homework/hw-2024-hw3-chess.md): Εργασία 3 (2024-25), Άσκηση 1 · ★★★ · programming (κεφ. 22)
-- [Νέα Μηχανή Go (goteam)](../../questions/homework/hw-2025-hw3-goteam.md): Εργασία 3 (2025-26), Άσκηση 1 · ★★★ · programming (κεφ. 22)
-- [Σπάστε το πρόγραμμά σας σε αρθρώματα](../../questions/labs/lab-lab10-more-modules.md): Εργαστήριο 10, Άσκηση 5 · ★★☆ · tooling (κεφ. 23)
+- **[Α22.16](../../questions/homework/hw-2024-hw3-chess.md)** Νέα Μηχανή Σκακιού (chess engine): Εργασία 3 (2024-25), Άσκηση 1 · ★★★ · programming · `hw-2024-hw3-chess`
+- **[Α22.17](../../questions/homework/hw-2025-hw3-goteam.md)** Νέα Μηχανή Go (goteam): Εργασία 3 (2025-26), Άσκηση 1 · ★★★ · programming · `hw-2025-hw3-goteam`
+- **[Α23.5](../../questions/labs/lab-lab10-more-modules.md)** Σπάστε το πρόγραμμά σας σε αρθρώματα: Εργαστήριο 10, Άσκηση 5 · ★★☆ · tooling · `lab-lab10-more-modules`
 
 <!-- /exercises -->
 

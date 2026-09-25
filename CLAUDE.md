@@ -44,7 +44,8 @@ Do not use `make -j`: parallel pandoc containers have produced truncated PDFs.
 ## Rules
 
 - The content between the `<!-- exercises -->`, `<!-- kahoot -->` and
-  `<!-- misconceptions -->` markers, in `questions/README.md`, `glossary.md`, and
+  `<!-- misconceptions -->` markers, the labels (§/Ε/Κ/Α and their `<a id>` anchors,
+  see STYLE.md «Labels»), `_data/*.yml`, `questions/README.md`, `glossary.md`, and
   between `<!-- chapters -->` markers in `README.md` is **generated**. Edit
   `questions/` and run `make exercises`.
 - Keep the chapter front matter and the `<!-- {% raw %} -->` wrapper (see STYLE.md).

@@ -44,7 +44,9 @@ labs: [lab10]
 
 ## Θεωρία
 
-### Δύο διευκρινίσεις: sizeof και log n
+<a id="s18-1"></a><a id="δύο-διευκρινίσεις-sizeof-και-log-n"></a>
+
+### §18.1 Δύο διευκρινίσεις: sizeof και log n
 
 Η δήλωση `int array[5][10];` δεσμεύει $5 \cdot 10 \cdot$ `sizeof(int)` bytes, δηλαδή
 200 με `int` των 4 bytes. Το `array[3]` είναι μία γραμμή, πίνακας 10 ακεραίων, άρα
@@ -59,7 +61,9 @@ labs: [lab10]
   **γραμμικά** ενώ το $N$ αυξάνεται **εκθετικά**, η πολυπλοκότητα είναι $O(\log n)$:
   π.χ. $N = 10$ δίνει 1 επανάληψη, $N = 100$ δίνει 2, $N = 1000000$ δίνει 6.
 
-### Γιατί ταξινομούμε
+<a id="s18-2"></a><a id="γιατί-ταξινομούμε"></a>
+
+### §18.2 Γιατί ταξινομούμε
 
 Αν το Instagram κρατά 2 δισεκατομμύρια χρήστες σε έναν πίνακα ακεραίων, η γραμμική
 αναζήτηση για τον χρήστη 424242 κάνει έως $2 \cdot 10^9$ συγκρίσεις. Σε
@@ -69,7 +73,9 @@ $\log_2(2 \cdot 10^9) \approx 31$. Η ταξινόμηση πληρώνεται 
 bubblesort, selection sort, insertion sort, merge sort και quicksort. Όλοι παίρνουν
 πίνακα `int` μέσω δείκτη και τον ταξινομούν σε αύξουσα σειρά επί τόπου.
 
-### Η swap
+<a id="s18-3"></a><a id="η-swap"></a>
+
+### §18.3 Η swap
 
 Το βασικό βήμα των περισσότερων είναι η **αντιμετάθεση** (swap) δύο στοιχείων. Επειδή
 στη C τα ορίσματα περνούν με τιμή, η `swap` πρέπει να παίρνει **δείκτες** και να
@@ -85,7 +91,9 @@ void swap(int *a, int *b) {
 
 Την καλούμε με διευθύνσεις: `swap(&a, &b)` ή `swap(&x[i], &x[j])`.
 
-### Οι τρεις αλγόριθμοι O(n²)
+<a id="s18-4"></a><a id="οι-τρεις-αλγόριθμοι-on²"></a>
+
+### §18.4 Οι τρεις αλγόριθμοι O(n²)
 
 Και οι τρεις έχουν δύο φωλιασμένους βρόχους πάνω στον πίνακα, άρα **χρόνο $O(n^2)$**,
 και χρειάζονται μόνο λίγες τοπικές μεταβλητές, άρα **χώρο $O(1)$**. Ο αναλυτικός κώδικας
@@ -101,7 +109,9 @@ void swap(int *a, int *b) {
   `x[j-1] > x[j]` τα αντιμεταθέτει. Κάθε πέρασμα ανεβάζει το μικρότερο από τα
   υπόλοιπα στη θέση `i - 1`, σαν φυσαλίδα.
 
-### Διαίρει και βασίλευε: merge sort
+<a id="s18-5"></a><a id="διαίρει-και-βασίλευε-merge-sort"></a>
+
+### §18.5 Διαίρει και βασίλευε: merge sort
 
 Ένας αλγόριθμος **διαίρει και βασίλευε** (divide and conquer) χωρίζει το πρόβλημα σε
 μικρότερα του ίδιου είδους, τα λύνει αναδρομικά και συνδυάζει τις λύσεις. Η
@@ -167,7 +177,9 @@ flowchart TD
 αγγίζουν συνολικά $n$ στοιχεία: **χρόνος $O(n \log n)$**, πάντα. Οι βοηθητικοί
 πίνακες κοστίζουν **χώρο $O(n)$**.
 
-### Ταχυταξινόμηση (quicksort)
+<a id="s18-6"></a><a id="ταχυταξινόμηση-quicksort"></a>
+
+### §18.6 Ταχυταξινόμηση (quicksort)
 
 Η **ταχυταξινόμηση** (quicksort, του Tony Hoare) είναι επίσης διαίρει και βασίλευε και
 ιδιαίτερα δημοφιλής. Τρία βήματα:
@@ -206,7 +218,9 @@ void quicksort (int *x, int lower, int upper) {
 κομμάτι και το μεγαλύτερο χειρίζεται βρόχος. Η quicksort είναι υλοποιημένη στη
 συνάρτηση `qsort` της `stdlib.h` (`man 3 qsort`).
 
-### Σύγκριση των αλγορίθμων
+<a id="s18-7"></a><a id="σύγκριση-των-αλγορίθμων"></a>
+
+### §18.7 Σύγκριση των αλγορίθμων
 
 | Αλγόριθμος | Χρόνος | Χώρος |
 | --- | --- | --- |
@@ -219,7 +233,9 @@ void quicksort (int *x, int lower, int upper) {
 Η merge sort εγγυάται $O(n \log n)$ αλλά θέλει βοηθητικούς πίνακες· η quicksort δεν
 θέλει, αλλά η χειρότερη περίπτωσή της είναι $O(n^2)$.
 
-### Οι τέσσερις πηγές εισόδου
+<a id="s18-8"></a><a id="οι-τέσσερις-πηγές-εισόδου"></a>
+
+### §18.8 Οι τέσσερις πηγές εισόδου
 
 Τα **δεδομένα εισόδου** (input data) είναι μια σειρά από χαρακτήρες (bytes) που ο
 χρήστης δίνει στο πρόγραμμα, το οποίο παράγει δεδομένα εξόδου (output data).
@@ -229,7 +245,9 @@ void quicksort (int *x, int lower, int upper) {
 χρήστη) έχουν καλυφθεί. Σήμερα προστίθενται τα **αρχεία** (όπως η `cat hello.txt`),
 οπότε είμαστε στο «75%». Το δίκτυο (π.χ. `curl`) ανήκει σε επόμενα εξάμηνα.
 
-### Η scanf με double και συμβολοσειρές
+<a id="s18-9"></a><a id="η-scanf-με-double-και-συμβολοσειρές"></a>
+
+### §18.9 Η scanf με double και συμβολοσειρές
 
 Για `double` η `scanf` θέλει `%lf` και τη διεύθυνση της μεταβλητής, π.χ.
 `scanf("%lf %lf", &d1, &d2);`. (Η `printf` τυπώνει `double` με `%f`· το `%.1f`
@@ -247,7 +265,9 @@ void quicksort (int *x, int lower, int upper) {
 πίνακα − 1. Οι χαρακτήρες που δεν διαβάστηκαν μένουν στην είσοδο για την επόμενη
 ανάγνωση.
 
-### Η gets και το %ms
+<a id="s18-10"></a><a id="η-gets-και-το-ms"></a>
+
+### §18.10 Η gets και το %ms
 
 Η `gets(char *s)` διαβάζει μια ολόκληρη γραμμή από την `stdin` χωρίς κανένα όριο,
 όπως το `scanf("%s")`. Το εγχειρίδιο (`man gets`) τη χαρακτηρίζει DEPRECATED και
@@ -259,7 +279,9 @@ void quicksort (int *x, int lower, int upper) {
 `scanf` επέστρεψε 1 και στο τέλος καλούμε `free(string)`. Ο τροποποιητής `m` είναι
 επέκταση POSIX (υπάρχει στη glibc του Linux), όχι μέρος του προτύπου C.
 
-### Αρχεία και σύστημα αρχείων
+<a id="s18-11"></a><a id="αρχεία-και-σύστημα-αρχείων"></a>
+
+### §18.11 Αρχεία και σύστημα αρχείων
 
 Ένα **αρχείο** (file) είναι ένας πόρος για να καταγράφουμε δεδομένα σε έναν
 υπολογιστή, συνήθως στη δευτερεύουσα μνήμη (π.χ. σκληρό δίσκο). Στο Linux σχεδόν
@@ -274,7 +296,9 @@ void quicksort (int *x, int lower, int upper) {
 Το `.txt` λέγεται **επέκταση** (extension) και συνήθως περιγράφει τον τύπο του
 αρχείου ([Κεφάλαιο 1](../01-command-line/)).
 
-### Ο τύπος FILE και η fopen
+<a id="s18-12"></a><a id="ο-τύπος-file-και-η-fopen"></a>
+
+### §18.12 Ο τύπος FILE και η fopen
 
 Ο τύπος **`FILE`** ορίζεται στην `stdio.h` και αναπαριστά ένα αρχείο που άνοιξε το
 πρόγραμμα. Είναι μια δομή με πολλά εσωτερικά πεδία: το
@@ -302,7 +326,9 @@ FILE *fopen(const char *restrict pathname, const char *restrict mode);
 να φτιάξουμε ή να διαβάσουμε το αρχείο, αν έχουμε ανοίξει τον μέγιστο επιτρεπτό αριθμό
 αρχείων, κ.ά.
 
-### Η fclose
+<a id="s18-13"></a><a id="η-fclose"></a>
+
+### §18.13 Η fclose
 
 ```c
 int fclose(FILE *stream);
@@ -322,7 +348,9 @@ flowchart LR
 
 *Σχήμα: ο κύκλος ζωής ενός αρχείου μέσα στο πρόγραμμα.*
 
-### Διάβασμα και γράψιμο bytes: fread και fwrite
+<a id="s18-14"></a><a id="διάβασμα-και-γράψιμο-bytes-fread-και-fwrite"></a>
+
+### §18.14 Διάβασμα και γράψιμο bytes: fread και fwrite
 
 ```c
 size_t fread(void *ptr, size_t size, size_t nmemb, FILE *restrict stream);
@@ -344,7 +372,9 @@ size_t fwrite(const void *ptr, size_t size, size_t nmemb,
 `size` είναι 1 και τα δεδομένα είναι bytes· για να τυπώσουμε ό,τι διαβάσαμε ως
 συμβολοσειρά, αφήνουμε μία θέση και βάζουμε `'\0'` στο τέλος.
 
-### File descriptors: stdin, stdout, stderr
+<a id="s18-15"></a><a id="file-descriptors-stdin-stdout-stderr"></a>
+
+### §18.15 File descriptors: stdin, stdout, stderr
 
 Κάθε ανοιχτό αρχείο ενός προγράμματος έχει έναν μοναδικό ακέραιο, τον **file
 descriptor** (FD), που τον βρίσκουμε με τη `fileno(FILE *)`. Τρία ρεύματα
@@ -361,7 +391,9 @@ shell χρησιμοποιεί τους ίδιους αριθμούς στις �
 στέλνει στο αρχείο μόνο την έξοδο σφάλματος. Μηνύματα λάθους γράφονται λοιπόν στο
 `stderr` (`fprintf(stderr, ...)`), ώστε να μην ανακατεύονται με τα αποτελέσματα.
 
-### Κείμενο σε αρχεία: fscanf και fprintf
+<a id="s18-16"></a><a id="κείμενο-σε-αρχεία-fscanf-και-fprintf"></a>
+
+### §18.16 Κείμενο σε αρχεία: fscanf και fprintf
 
 ```c
 int fscanf(FILE *stream, const char *format, ...);
@@ -374,7 +406,9 @@ int fprintf(FILE *stream, const char *format, ...);
 `fprintf(stdout, x, y, z)`. Σε αντίθεση με τη `fread`, αυτές **μετατρέπουν** κείμενο
 σε τιμές και αντίστροφα: το `"%d"` διαβάζει τους χαρακτήρες `42` ως τον ακέραιο 42.
 
-### Άλλες χρήσιμες συναρτήσεις
+<a id="s18-17"></a><a id="άλλες-χρήσιμες-συναρτήσεις"></a>
+
+### §18.17 Άλλες χρήσιμες συναρτήσεις
 
 | Δήλωση | Τι κάνει (σημειώσεις, κεφ. 9) |
 | --- | --- |
@@ -386,7 +420,9 @@ int fprintf(FILE *stream, const char *format, ...);
 
 ## Παραδείγματα
 
-### Merge sort και quicksort βήμα προς βήμα
+<a id="s18-18"></a><a id="merge-sort-και-quicksort-βήμα-προς-βήμα"></a>
+
+### §18.18 Merge sort και quicksort βήμα προς βήμα
 
 Στον πίνακα `{5, 2, 4, 6, 1, 3}` η `merge_sort(x, 0, 5)` καλεί τις συγχωνεύσεις με
 τη σειρά `[0..1]`, `[0..2]`, `[3..4]`, `[3..5]`, `[0..5]`, όπως στο σχήμα της
@@ -402,7 +438,9 @@ int fprintf(FILE *stream, const char *format, ...);
 Οι υπόλοιπες κλήσεις έχουν `lower >= upper` και επιστρέφουν αμέσως. Πλήρη προγράμματα
 με `main` για όλους τους αλγορίθμους θα βρείτε στο [Κεφάλαιο 17](../17-binary-search-sorting/).
 
-### Υποτείνουσα με scanf
+<a id="s18-19"></a><a id="υποτείνουσα-με-scanf"></a>
+
+### §18.19 Υποτείνουσα με scanf
 
 «Τι κάνει το παρακάτω πρόγραμμα;» (Θεωρία: «Η scanf με double και συμβολοσειρές»).
 
@@ -429,7 +467,9 @@ Gimme two doubles: 3.0 4.0
 Hypotenuse: 5.0
 ```
 
-### Μια λέξη σε char[7]
+<a id="s18-20"></a><a id="μια-λέξη-σε-char7"></a>
+
+### §18.20 Μια λέξη σε char[7]
 
 (Θεωρία: «Η scanf με double και συμβολοσειρές».)
 
@@ -462,7 +502,9 @@ Segmentation fault
 Το `%s` διάβασε το `Houston,` (8 χαρακτήρες και `'\0'`) σε πίνακα 7 θέσεων, χωρίς
 κανέναν έλεγχο. Με `scanf("%6s", message);` το πρόγραμμα τυπώνει `Housto`.
 
-### Συμβολοσειρά οποιουδήποτε μήκους με %ms
+<a id="s18-21"></a><a id="συμβολοσειρά-οποιουδήποτε-μήκους-με-ms"></a>
+
+### §18.21 Συμβολοσειρά οποιουδήποτε μήκους με %ms
 
 (Θεωρία: «Η gets και το %ms».)
 
@@ -485,7 +527,9 @@ int main(int argc, char **argv) {
 }
 ```
 
-### Άνοιγμα και κλείσιμο αρχείων
+<a id="s18-22"></a><a id="άνοιγμα-και-κλείσιμο-αρχείων"></a>
+
+### §18.22 Άνοιγμα και κλείσιμο αρχείων
 
 (Θεωρία: «Ο τύπος FILE και η fopen», «Η fclose».) Το `input.txt` ανοίγει για
 διάβασμα και το `output.txt` για γράψιμο (δημιουργείται ή αδειάζει). Κάθε `fopen`
@@ -515,7 +559,9 @@ int main() {
 Αν η δεύτερη `fopen` αποτύχει, το πρώτο αρχείο είναι ήδη ανοιχτό· γι' αυτό το
 κλείνουμε πριν το `return 1` (η διαφάνεια απλώς επιστρέφει).
 
-### Διάβασμα κειμένου με fread
+<a id="s18-23"></a><a id="διάβασμα-κειμένου-με-fread"></a>
+
+### §18.23 Διάβασμα κειμένου με fread
 
 (Θεωρία: «Διάβασμα και γράψιμο bytes: fread και fwrite».)
 
@@ -549,7 +595,9 @@ String read: hello
 
 ```
 
-### «What?!»: ακέραιοι από αρχείο κειμένου
+<a id="s18-24"></a><a id="what-ακέραιοι-από-αρχείο-κειμένου"></a>
+
+### §18.24 «What?!»: ακέραιοι από αρχείο κειμένου
 
 Ίδιο πρόγραμμα, αλλά με πίνακα ακεραίων (το `'\0'` φεύγει):
 
@@ -574,7 +622,9 @@ $ hexdump -C input.txt
 γράψιμο bytes»). Η `fread` δεν ξέρει τίποτα από κείμενο· για να διαβάσετε αριθμούς
 γραμμένους με ψηφία χρησιμοποιήστε `fscanf`.
 
-### Γράψιμο με fwrite
+<a id="s18-25"></a><a id="γράψιμο-με-fwrite"></a>
+
+### §18.25 Γράψιμο με fwrite
 
 (Θεωρία: «Διάβασμα και γράψιμο bytes: fread και fwrite».)
 
@@ -604,7 +654,9 @@ $ hexdump -C output.txt
 endian). Το `hexdump` δείχνει δεξιά ως χαρακτήρες όσα bytes είναι εκτυπώσιμα:
 `0x42` είναι το `'B'`, και τα μηδενικά φαίνονται ως τελείες.
 
-### Οι file descriptors ενός προγράμματος
+<a id="s18-26"></a><a id="οι-file-descriptors-ενός-προγράμματος"></a>
+
+### §18.26 Οι file descriptors ενός προγράμματος
 
 (Θεωρία: «File descriptors: stdin, stdout, stderr».)
 
@@ -633,7 +685,9 @@ stderr: 2
 χωρίς δικαιώματα) πηγαίνουν στο `error.txt` και στην οθόνη μένουν μόνο τα
 αποτελέσματα.
 
-### fscanf και fprintf
+<a id="s18-27"></a><a id="fscanf-και-fprintf"></a>
+
+### §18.27 fscanf και fprintf
 
 (Θεωρία: «Κείμενο σε αρχεία: fscanf και fprintf».)
 
@@ -665,7 +719,9 @@ Number: 42
 χαρακτήρες `42` στον ακέραιο 42. Το πρόγραμμα δεν τυπώνει τίποτα στην οθόνη: όλη η
 έξοδος πήγε στο αρχείο.
 
-### Για το εργαστήριο
+<a id="s18-28"></a><a id="για-το-εργαστήριο"></a>
+
+### §18.28 Για το εργαστήριο
 
 Το [Εργαστήριο 10](https://progintro.github.io/lab-material/labs/lab10/) εξασκεί ακριβώς
 αυτά: το `more.c` διαβάζει αρχείο κειμένου γραμμή-γραμμή (`fgets`), το `bgrades.c`
@@ -787,34 +843,34 @@ Number: 42
 
 Από τα Kahoot των διαλέξεων: οι ερωτήσεις όπου μια λάθος απάντηση μάζεψε πολλές ψήφους, με το ποσοστό σωστών απαντήσεων.
 
-- **[Συνάρτηση σύγκρισης για αύξουσα ταξινόμηση](../../questions/kahoot/kahoot-qsort-compare-ascending.md)** (12% σωστές): Το 43% επέλεξε `s2.grade - s1.grade`, αντιστρέφοντας τη σύμβαση: αρνητική τιμή σημαίνει ότι το `s1` μπαίνει πρώτο, οπότε η αφαίρεση `s2 - s1` δίνει φθίνουσα σειρά. Οι επιλογές με `==` και `^` (20% η καθεμία) δεν δίνουν καν πρόσημο που να λέει ποιο στοιχείο προηγείται.
-- **[Ο file descriptor του stderr](../../questions/kahoot/kahoot-stderr-fd.md)** (51% σωστές): Το 29% επέλεξε `1`, που είναι ο αριθμός του `stdout`· τα τρία πρότυπα ρεύματα έχουν τους πρώτους αριθμούς με τη σειρά `stdin`, `stdout`, `stderr`.
+- **[Κ18.5](../../questions/kahoot/kahoot-qsort-compare-ascending.md)** Συνάρτηση σύγκρισης για αύξουσα ταξινόμηση (12% σωστές): Το 43% επέλεξε `s2.grade - s1.grade`, αντιστρέφοντας τη σύμβαση: αρνητική τιμή σημαίνει ότι το `s1` μπαίνει πρώτο, οπότε η αφαίρεση `s2 - s1` δίνει φθίνουσα σειρά. Οι επιλογές με `==` και `^` (20% η καθεμία) δεν δίνουν καν πρόσημο που να λέει ποιο στοιχείο προηγείται.
+- **[Κ18.3](../../questions/kahoot/kahoot-stderr-fd.md)** Ο file descriptor του stderr (51% σωστές): Το 29% επέλεξε `1`, που είναι ο αριθμός του `stdout`· τα τρία πρότυπα ρεύματα έχουν τους πρώτους αριθμούς με τη σειρά `stdin`, `stdout`, `stderr`.
 
 <!-- /misconceptions -->
 
 ## Ερωτήσεις κατανόησης
 
-1. Ποιοι από τους πέντε αλγορίθμους ταξινόμησης χρειάζονται χώρο $O(1)$, και γιατί η
+- <a id="e18-1"></a>**[Ε18.1](#e18-1)** Ποιοι από τους πέντε αλγορίθμους ταξινόμησης χρειάζονται χώρο $O(1)$, και γιατί η
    merge sort χρειάζεται $O(n)$;[^q1]
-2. Πότε η quicksort της διάλεξης κάνει $O(n^2)$ βήματα;[^q2]
-3. Ποιο πλάτος πεδίου δίνετε στη `scanf` για να διαβάσετε λέξη σε `char name[20]`;[^q3]
-4. Τι επιστρέφει η `fopen` όταν αποτύχει, και τι γίνεται στο περιεχόμενο ενός
+- <a id="e18-2"></a>**[Ε18.2](#e18-2)** Πότε η quicksort της διάλεξης κάνει $O(n^2)$ βήματα;[^q2]
+- <a id="e18-3"></a>**[Ε18.3](#e18-3)** Ποιο πλάτος πεδίου δίνετε στη `scanf` για να διαβάσετε λέξη σε `char name[20]`;[^q3]
+- <a id="e18-4"></a>**[Ε18.4](#e18-4)** Τι επιστρέφει η `fopen` όταν αποτύχει, και τι γίνεται στο περιεχόμενο ενός
    υπάρχοντος αρχείου που ανοίγει με `"w"`;[^q4]
-5. Ένα αρχείο έχει 10 bytes. Τι επιστρέφει η `fread(buf, sizeof(int), 100, fp)`;[^q5]
-6. Ποιοι είναι οι file descriptors των `stdin`, `stdout`, `stderr`, και τι κάνει το
+- <a id="e18-5"></a>**[Ε18.5](#e18-5)** Ένα αρχείο έχει 10 bytes. Τι επιστρέφει η `fread(buf, sizeof(int), 100, fp)`;[^q5]
+- <a id="e18-6"></a>**[Ε18.6](#e18-6)** Ποιοι είναι οι file descriptors των `stdin`, `stdout`, `stderr`, και τι κάνει το
    `2> error.txt`;[^q6]
 
 <!-- kahoot -->
 
-### Kahoot από το αμφιθέατρο
+### Kahoot από το αμφιθέατρο (Κ18.1–Κ18.5)
 
 Ερωτήσεις που παίχτηκαν στις διαλέξεις, με το ποσοστό των φοιτητών που απάντησαν σωστά.
 
-- [stdin και αρχεία](../../questions/kahoot/kahoot-stdin-vs-files.md): 84% σωστές απαντήσεις
-- [Ανάγνωση int σε little endian](../../questions/kahoot/kahoot-little-endian-read.md): 62% σωστές απαντήσεις
-- [Ο file descriptor του stderr](../../questions/kahoot/kahoot-stderr-fd.md): 51% σωστές απαντήσεις
-- [Αποτυχία της fopen](../../questions/kahoot/kahoot-fopen-failure.md): 50% σωστές απαντήσεις
-- [Συνάρτηση σύγκρισης για αύξουσα ταξινόμηση](../../questions/kahoot/kahoot-qsort-compare-ascending.md): 12% σωστές απαντήσεις
+- <a id="k18-1"></a>**[Κ18.1](../../questions/kahoot/kahoot-stdin-vs-files.md)** stdin και αρχεία: 84% σωστές απαντήσεις
+- <a id="k18-2"></a>**[Κ18.2](../../questions/kahoot/kahoot-little-endian-read.md)** Ανάγνωση int σε little endian: 62% σωστές απαντήσεις
+- <a id="k18-3"></a>**[Κ18.3](../../questions/kahoot/kahoot-stderr-fd.md)** Ο file descriptor του stderr: 51% σωστές απαντήσεις
+- <a id="k18-4"></a>**[Κ18.4](../../questions/kahoot/kahoot-fopen-failure.md)** Αποτυχία της fopen: 50% σωστές απαντήσεις
+- <a id="k18-5"></a>**[Κ18.5](../../questions/kahoot/kahoot-qsort-compare-ascending.md)** Συνάρτηση σύγκρισης για αύξουσα ταξινόμηση: 12% σωστές απαντήσεις
 
 <!-- /kahoot -->
 
@@ -822,62 +878,62 @@ Number: 42
 
 <!-- exercises -->
 
-### Ζέσταμα: από τις διαφάνειες
+### Ζέσταμα: από τις διαφάνειες (Α18.1–Α18.6)
 
-- [Μέγεθος δισδιάστατου πίνακα και μιας γραμμής του](../../questions/slides/slides-lec18-2d-sizeof.md): Διάλεξη 18, διαφάνεια 2 · ★☆☆ · short-answer
-- [Γιατί μπορεί να αποτύχει η fopen;](../../questions/slides/slides-lec18-fopen-fail.md): Διάλεξη 18, διαφάνειες 43–44 · ★☆☆ · short-answer
-- [Υποτείνουσα με scanf](../../questions/slides/slides-lec18-hypotenuse.md): Διάλεξη 18, διαφάνειες 29–30 · ★☆☆ · trace
-- [Ανακατεύθυνση της stderr](../../questions/slides/slides-lec18-stderr-redirect.md): Διάλεξη 18, διαφάνεια 56 · ★☆☆ · tooling
-- [Ακέραιοι από αρχείο κειμένου με fread](../../questions/slides/slides-lec18-fread-int.md): Διάλεξη 18, διαφάνειες 50–51 · ★★☆ · trace
-- [Μια λέξη σε char[7] με scanf](../../questions/slides/slides-lec18-scanf-string.md): Διάλεξη 18, διαφάνειες 31–35 · ★★☆ · debug
+- <a id="a18-1"></a>**[Α18.1](../../questions/slides/slides-lec18-2d-sizeof.md)** Μέγεθος δισδιάστατου πίνακα και μιας γραμμής του: Διάλεξη 18, διαφάνεια 2 · ★☆☆ · short-answer · `slides-lec18-2d-sizeof`
+- <a id="a18-2"></a>**[Α18.2](../../questions/slides/slides-lec18-fopen-fail.md)** Γιατί μπορεί να αποτύχει η fopen;: Διάλεξη 18, διαφάνειες 43–44 · ★☆☆ · short-answer · `slides-lec18-fopen-fail`
+- <a id="a18-3"></a>**[Α18.3](../../questions/slides/slides-lec18-hypotenuse.md)** Υποτείνουσα με scanf: Διάλεξη 18, διαφάνειες 29–30 · ★☆☆ · trace · `slides-lec18-hypotenuse`
+- <a id="a18-4"></a>**[Α18.4](../../questions/slides/slides-lec18-stderr-redirect.md)** Ανακατεύθυνση της stderr: Διάλεξη 18, διαφάνεια 56 · ★☆☆ · tooling · `slides-lec18-stderr-redirect`
+- <a id="a18-5"></a>**[Α18.5](../../questions/slides/slides-lec18-fread-int.md)** Ακέραιοι από αρχείο κειμένου με fread: Διάλεξη 18, διαφάνειες 50–51 · ★★☆ · trace · `slides-lec18-fread-int`
+- <a id="a18-6"></a>**[Α18.6](../../questions/slides/slides-lec18-scanf-string.md)** Μια λέξη σε char[7] με scanf: Διάλεξη 18, διαφάνειες 31–35 · ★★☆ · debug · `slides-lec18-scanf-string`
 
-### Εργαστήριο
+### Εργαστήριο (Α18.7–Α18.10)
 
-- [Μέτρηση στατιστικών αρχείων](../../questions/labs/lab-lab10-count.md): Εργαστήριο 10, Άσκηση 4 · ★☆☆ · programming
-- [Σύγκριση αρχείων](../../questions/labs/lab-lab10-filediff.md): Εργαστήριο 10, Άσκηση 3 · ★☆☆ · programming
-- [Δυαδικά αρχεία](../../questions/labs/lab-lab10-bgrades.md): Εργαστήριο 10, Άσκηση 2 · ★★☆ · programming
-- [Αρχεία κειμένου](../../questions/labs/lab-lab10-more.md): Εργαστήριο 10, Άσκηση 1 · ★★☆ · programming
+- <a id="a18-7"></a>**[Α18.7](../../questions/labs/lab-lab10-count.md)** Μέτρηση στατιστικών αρχείων: Εργαστήριο 10, Άσκηση 4 · ★☆☆ · programming · `lab-lab10-count`
+- <a id="a18-8"></a>**[Α18.8](../../questions/labs/lab-lab10-filediff.md)** Σύγκριση αρχείων: Εργαστήριο 10, Άσκηση 3 · ★☆☆ · programming · `lab-lab10-filediff`
+- <a id="a18-9"></a>**[Α18.9](../../questions/labs/lab-lab10-bgrades.md)** Δυαδικά αρχεία: Εργαστήριο 10, Άσκηση 2 · ★★☆ · programming · `lab-lab10-bgrades`
+- <a id="a18-10"></a>**[Α18.10](../../questions/labs/lab-lab10-more.md)** Αρχεία κειμένου: Εργαστήριο 10, Άσκηση 1 · ★★☆ · programming · `lab-lab10-more`
 
-### Εργασίες
+### Εργασίες (Α18.11)
 
-- [Προβλέποντας το Μέλλον (future)](../../questions/homework/hw-2024-hw2-future.md): Εργασία 2 (2024-25), Άσκηση 1 · ★★☆ · programming
+- <a id="a18-11"></a>**[Α18.11](../../questions/homework/hw-2024-hw2-future.md)** Προβλέποντας το Μέλλον (future): Εργασία 2 (2024-25), Άσκηση 1 · ★★☆ · programming · `hw-2024-hw2-future`
 
-### Θέματα εξετάσεων
+### Θέματα εξετάσεων (Α18.12–Α18.23)
 
-- [Κρυφό Μήνυμα](../../questions/exams/exam-2023-fall-ex7-q2.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 2 · ★☆☆ · programming
-- [Κόψιμο Αρχείων](../../questions/exams/exam-2023-fall-ex7-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 4 · ★☆☆ · programming
-- [Έλεγχος Εκτελέσιμου](../../questions/exams/exam-2023-fall-ex9-q1.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 1 · ★☆☆ · programming
-- [Κρυμμένο Μήνυμα](../../questions/exams/exam-2023-fall-ex10-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 3 · ★★☆ · programming
-- [Μετρήσεις Θερμοκρασίας](../../questions/exams/exam-2023-fall-ex14-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 3 · ★★☆ · programming
-- [Αλλαγή Μεγέθους](../../questions/exams/exam-2023-fall-ex4-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 4 · ★★☆ · programming
-- [Επιλογή](../../questions/exams/exam-2023-fall-ex5-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 3 · ★★☆ · programming
-- [Ταξινόμηση Αρχείων Καταγραφής](../../questions/exams/exam-2023-fall-ex6-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 4 · ★★☆ · programming
-- [Καλύτερο Ταίριασμα](../../questions/exams/exam-2023-fall-ex0-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 3 · ★★★ · programming
-- [Ταξινομώντας τα Άλματα](../../questions/exams/exam-2023-fall-ex15-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 3 · ★★★ · programming
-- [Μίνι Βάση Δεδομένων](../../questions/exams/exam-2023-fall-ex2-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 3 · ★★★ · programming
-- [Ταξινόμηση Πακέτων](../../questions/exams/exam-2023-fall-ex8-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 4 · ★★★ · programming
+- <a id="a18-12"></a>**[Α18.12](../../questions/exams/exam-2023-fall-ex7-q2.md)** Κρυφό Μήνυμα: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 2 · ★☆☆ · programming · `exam-2023-fall-ex7-q2`
+- <a id="a18-13"></a>**[Α18.13](../../questions/exams/exam-2023-fall-ex7-q4.md)** Κόψιμο Αρχείων: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 4 · ★☆☆ · programming · `exam-2023-fall-ex7-q4`
+- <a id="a18-14"></a>**[Α18.14](../../questions/exams/exam-2023-fall-ex9-q1.md)** Έλεγχος Εκτελέσιμου: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 1 · ★☆☆ · programming · `exam-2023-fall-ex9-q1`
+- <a id="a18-15"></a>**[Α18.15](../../questions/exams/exam-2023-fall-ex10-q3.md)** Κρυμμένο Μήνυμα: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 3 · ★★☆ · programming · `exam-2023-fall-ex10-q3`
+- <a id="a18-16"></a>**[Α18.16](../../questions/exams/exam-2023-fall-ex14-q3.md)** Μετρήσεις Θερμοκρασίας: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #14, Θέμα 3 · ★★☆ · programming · `exam-2023-fall-ex14-q3`
+- <a id="a18-17"></a>**[Α18.17](../../questions/exams/exam-2023-fall-ex4-q4.md)** Αλλαγή Μεγέθους: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 4 · ★★☆ · programming · `exam-2023-fall-ex4-q4`
+- <a id="a18-18"></a>**[Α18.18](../../questions/exams/exam-2023-fall-ex5-q3.md)** Επιλογή: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 3 · ★★☆ · programming · `exam-2023-fall-ex5-q3`
+- <a id="a18-19"></a>**[Α18.19](../../questions/exams/exam-2023-fall-ex6-q4.md)** Ταξινόμηση Αρχείων Καταγραφής: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 4 · ★★☆ · programming · `exam-2023-fall-ex6-q4`
+- <a id="a18-20"></a>**[Α18.20](../../questions/exams/exam-2023-fall-ex0-q3.md)** Καλύτερο Ταίριασμα: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 3 · ★★★ · programming · `exam-2023-fall-ex0-q3`
+- <a id="a18-21"></a>**[Α18.21](../../questions/exams/exam-2023-fall-ex15-q3.md)** Ταξινομώντας τα Άλματα: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 3 · ★★★ · programming · `exam-2023-fall-ex15-q3`
+- <a id="a18-22"></a>**[Α18.22](../../questions/exams/exam-2023-fall-ex2-q3.md)** Μίνι Βάση Δεδομένων: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #2 (Pokémon Themed), Θέμα 3 · ★★★ · programming · `exam-2023-fall-ex2-q3`
+- <a id="a18-23"></a>**[Α18.23](../../questions/exams/exam-2023-fall-ex8-q4.md)** Ταξινόμηση Πακέτων: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 4 · ★★★ · programming · `exam-2023-fall-ex8-q4`
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
-- [Περιστροφή Πίνακα](../../questions/exams/exam-2023-fall-ex1-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 3 · ★★☆ · programming (κεφ. 12)
-- [Κινήσεις σε Πλέγμα](../../questions/exams/exam-2023-fall-ex11-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #11, Θέμα 3 · ★★☆ · programming (κεφ. 12)
-- [Πολλαπλασιασμός Πινάκων](../../questions/exams/exam-2023-fall-ex8-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 3 · ★★☆ · programming (κεφ. 12)
-- [Πολύτιμοι Πίνακες](../../questions/exams/exam-2023-fall-ex9-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 3 · ★★☆ · programming (κεφ. 12)
-- [FauxtoShop: περιστροφή εικόνας BMP](../../questions/homework/hw-2023-hw2-fauxtoshop.md): Εργασία 2 (2023-24), Άσκηση 1 · ★★★ · programming (κεφ. 12)
-- [Κρεμάλα](../../questions/exams/exam-2023-fall-ex12-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 3 · ★★☆ · programming (κεφ. 14)
-- [Δυνατότητες](../../questions/exams/exam-2023-fall-ex15-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 4 · ★★☆ · programming (κεφ. 14)
-- [Εύρεση Λέξεων](../../questions/exams/exam-2023-fall-ex3-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 3 · ★★☆ · programming (κεφ. 14)
-- [Το Δικό σου Chatbot (jason)](../../questions/homework/hw-2024-hw2-jason.md): Εργασία 2 (2024-25), Άσκηση 3 · ★★★ · programming (κεφ. 14)
-- [Χτίζοντας έναν Χιονάνθρωπο](../../questions/exams/exam-2023-fall-ex3-q4.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 4 · ★★★ · programming (κεφ. 16)
-- [Μετρώντας τα Αστέρια - stars](../../questions/exams/exam-2025-jan-q6.md): Εξέταση Ιανουαρίου 2025, Θέμα 6 · ★★★ · programming (κεφ. 16)
-- [Αναζήτηση χρήστη στο Instagram](../../questions/slides/slides-lec17-instagram.md): Διάλεξη 17: Δυαδική Αναζήτηση και Ταξινόμηση, διαφάνεια 19 · ★☆☆ · short-answer (κεφ. 17)
-- [Η συνάρτηση swap](../../questions/slides/slides-lec17-swap.md): Διάλεξη 17: Δυαδική Αναζήτηση και Ταξινόμηση, διαφάνεια 21 · ★☆☆ · programming (κεφ. 17)
-- [Πρωτάθλημα](../../questions/exams/exam-2023-fall-ex13-q3.md): Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 3 · ★★★ · programming (κεφ. 19)
-- [World Cup 2026](../../questions/exams/exam-2026-jun-q4.md): Εξέταση Ιουνίου 2026, Θέμα 4 · ★★★ · programming (κεφ. 19)
-- [Η Newton-Raphson Ξαναχτυπά! (Bonus)](../../questions/homework/hw-2023-hw3-fractal.md): Εργασία 3 (2023-24), Άσκηση 2 (Bonus) και 2.1 (Bonus) · ★★★ · programming (κεφ. 23)
-- [Το Καλό το Μονοπάτι - path](../../questions/exams/exam-2025-sep-q5.md): Εξέταση Σεπτεμβρίου 2025, Θέμα 5 · ★★★ · programming (κεφ. 25)
-- [DNA Matching](../../questions/homework/hw-2023-hw2-dna.md): Εργασία 2 (2023-24), Άσκηση 2 · ★★★ · programming (κεφ. 25)
-- [Το Καλύτερο GPS (jabbamaps)](../../questions/homework/hw-2024-hw2-jabbamaps.md): Εργασία 2 (2024-25), Άσκηση 2 · ★★★ · programming (κεφ. 25)
+- **[Α12.16](../../questions/exams/exam-2023-fall-ex1-q3.md)** Περιστροφή Πίνακα: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 3 · ★★☆ · programming · `exam-2023-fall-ex1-q3`
+- **[Α12.17](../../questions/exams/exam-2023-fall-ex11-q3.md)** Κινήσεις σε Πλέγμα: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #11, Θέμα 3 · ★★☆ · programming · `exam-2023-fall-ex11-q3`
+- **[Α12.18](../../questions/exams/exam-2023-fall-ex8-q3.md)** Πολλαπλασιασμός Πινάκων: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 3 · ★★☆ · programming · `exam-2023-fall-ex8-q3`
+- **[Α12.19](../../questions/exams/exam-2023-fall-ex9-q3.md)** Πολύτιμοι Πίνακες: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 3 · ★★☆ · programming · `exam-2023-fall-ex9-q3`
+- **[Α12.12](../../questions/homework/hw-2023-hw2-fauxtoshop.md)** FauxtoShop: περιστροφή εικόνας BMP: Εργασία 2 (2023-24), Άσκηση 1 · ★★★ · programming · `hw-2023-hw2-fauxtoshop`
+- **[Α14.16](../../questions/exams/exam-2023-fall-ex12-q3.md)** Κρεμάλα: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 3 · ★★☆ · programming · `exam-2023-fall-ex12-q3`
+- **[Α14.17](../../questions/exams/exam-2023-fall-ex15-q4.md)** Δυνατότητες: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 4 · ★★☆ · programming · `exam-2023-fall-ex15-q4`
+- **[Α14.18](../../questions/exams/exam-2023-fall-ex3-q3.md)** Εύρεση Λέξεων: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 3 · ★★☆ · programming · `exam-2023-fall-ex3-q3`
+- **[Α14.10](../../questions/homework/hw-2024-hw2-jason.md)** Το Δικό σου Chatbot (jason): Εργασία 2 (2024-25), Άσκηση 3 · ★★★ · programming · `hw-2024-hw2-jason`
+- **[Α16.25](../../questions/exams/exam-2023-fall-ex3-q4.md)** Χτίζοντας έναν Χιονάνθρωπο: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 4 · ★★★ · programming · `exam-2023-fall-ex3-q4`
+- **[Α16.26](../../questions/exams/exam-2025-jan-q6.md)** Μετρώντας τα Αστέρια - stars: Εξέταση Ιανουαρίου 2025, Θέμα 6 · ★★★ · programming · `exam-2025-jan-q6`
+- **[Α17.4](../../questions/slides/slides-lec17-instagram.md)** Αναζήτηση χρήστη στο Instagram: Διάλεξη 17: Δυαδική Αναζήτηση και Ταξινόμηση, διαφάνεια 19 · ★☆☆ · short-answer · `slides-lec17-instagram`
+- **[Α17.6](../../questions/slides/slides-lec17-swap.md)** Η συνάρτηση swap: Διάλεξη 17: Δυαδική Αναζήτηση και Ταξινόμηση, διαφάνεια 21 · ★☆☆ · programming · `slides-lec17-swap`
+- **[Α19.11](../../questions/exams/exam-2023-fall-ex13-q3.md)** Πρωτάθλημα: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #13, Θέμα 3 · ★★★ · programming · `exam-2023-fall-ex13-q3`
+- **[Α19.12](../../questions/exams/exam-2026-jun-q4.md)** World Cup 2026: Εξέταση Ιουνίου 2026, Θέμα 4 · ★★★ · programming · `exam-2026-jun-q4`
+- **[Α23.6](../../questions/homework/hw-2023-hw3-fractal.md)** Η Newton-Raphson Ξαναχτυπά! (Bonus): Εργασία 3 (2023-24), Άσκηση 2 (Bonus) και 2.1 (Bonus) · ★★★ · programming · `hw-2023-hw3-fractal`
+- **[Α25.15](../../questions/exams/exam-2025-sep-q5.md)** Το Καλό το Μονοπάτι - path: Εξέταση Σεπτεμβρίου 2025, Θέμα 5 · ★★★ · programming · `exam-2025-sep-q5`
+- **[Α25.2](../../questions/homework/hw-2023-hw2-dna.md)** DNA Matching: Εργασία 2 (2023-24), Άσκηση 2 · ★★★ · programming · `hw-2023-hw2-dna`
+- **[Α25.3](../../questions/homework/hw-2024-hw2-jabbamaps.md)** Το Καλύτερο GPS (jabbamaps): Εργασία 2 (2024-25), Άσκηση 2 · ★★★ · programming · `hw-2024-hw2-jabbamaps`
 
 <!-- /exercises -->
 

@@ -11,7 +11,8 @@ layout: default
   <span class="lab-nav-side lab-nav-right"></span>
 </nav>
 
-<h1>{{ page.title }}</h1>
+{% assign ref = site.data.refs[page.id] %}
+<h1>{% if ref %}{{ ref.label }} · {% endif %}{{ page.title }}</h1>
 
 <p class="chapter-meta">
   {% if page.source.url %}<a href="{{ page.source.url }}">{{ page.source.title }}</a>{% else %}{{ page.source.title }}{% endif %}
@@ -24,6 +25,9 @@ layout: default
 {{ content }}
 
 <p class="chapter-downloads">
-  <a href="https://github.com/progintro/study/blob/main/{{ page.path }}">Markdown (GitHub)</a> ·
-  <code>{{ page.id }}</code>
+  {% if ref %}Αριθμός στον οδηγό: <strong>{{ ref.label }}</strong>
+  (<a href="{{ site.baseurl }}/chapters/{{ ref.chapter }}/#{{ ref.anchor }}">στο κεφάλαιο</a>) ·{% endif %}
+  Μόνιμο αναγνωριστικό: <code>{{ page.id }}</code> ·
+  Σύνδεσμος: <code>https://progintro.github.io/study{{ page.url }}</code> ·
+  <a href="https://github.com/progintro/study/blob/main/{{ page.path }}">Markdown (GitHub)</a>
 </p>

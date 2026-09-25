@@ -10,6 +10,11 @@ The PDF is a different renderer from GitHub and the Pages site, and needs:
     and every chapter numbers its notes from 1;
   * mermaid diagrams as the PDFs tools/mermaid.py rendered (the plain Markdown for
     agents keeps the mermaid source, which is the more useful form for them);
+  * labels (tools/gen-exercises.py): each <a id="x"></a> anchor becomes a LaTeX
+    \\label, and a label's link to its own anchor (Ε12.4 -> #e12-4) becomes the
+    absolute site URL, so clicking a label in the PDF gives a link to share; in the book,
+    the Α/Κ labels in a chapter jump to the full statement in the question appendix
+    instead, and the running header names the current chapter;
   * links that work outside the site: links to other chapters and to questions are
     relative on GitHub and the site, and become absolute site URLs here.
 
@@ -49,6 +54,39 @@ def links(text):
     return text
 
 
+def anchors(text, plain):
+    """<a id> anchors: gone in plain Markdown; LaTeX hypertargets in the PDF, for the
+    ASCII label anchors only (the slug anchors next to them serve the site)."""
+    if plain:
+        return re.sub(r'(?:<a id="[^"]*"></a>)+\n?', "", text)
+    # pandoc writes internal links as \\hyperref[id], which needs a \\label
+    text = re.sub(r'<a id="([a-z0-9-]+)"></a>', r"`\\phantomsection\\label{\1}`{=latex}", text)
+    return re.sub(r'<a id="[^"]*"></a>', "", text)
+
+
+def in_page_links(text, chapter, plain):
+    """Links within a chapter: a heading slug (#η-συνάρτηση-getchar) jumps to its §
+    anchor in the PDF; label self-links (#e12-4) and anything else become site URLs,
+    so a reader can share them."""
+    url = SITE + "/chapters/" + chapter + "/#"
+    to_sec = dict((b, a) for a, b in re.findall(r'<a id="(s\d+-\d+)"></a><a id="([^"]*)"></a>', text))
+
+    def fix(m):
+        target = m.group(1)
+        if target in to_sec and not plain:
+            return "](#%s)" % to_sec[target]
+        return "](%s%s)" % (url, to_sec.get(target, target) if not plain else target)
+    return re.sub(r"\]\(#([^)\s]+)\)", fix, text)
+
+
+def tex_escape(s):
+    return re.sub(r"([#$%&_{}])", r"\\\1", s)
+
+
+def header(title):
+    return latex("\\renewcommand{\\chaptitle}{%s}" % tex_escape(title))
+
+
 def diagrams(text):
     out, last = [], 0
     for m, _, h in mermaid.blocks(text):
@@ -70,8 +108,11 @@ def prepare(path, plain=False):
     if not plain:
         text = diagrams(text)
     text = re.sub(r"\]\((?:\.\./)+figures/(\w+)\.svg\)", r"](figures/\1.pdf)", text)
-    slug = os.path.basename(os.path.dirname(path))[:2]
+    chapter = os.path.basename(os.path.dirname(path))
+    slug = chapter[:2]
     text = re.sub(r"\[\^(\w+)\]", lambda m: "[^c%s-%s]" % (slug, m.group(1)), text)
+    text = in_page_links(text, chapter, plain)
+    text = anchors(text, plain)
     missing = [f for f in re.findall(r"\]\((figures/[^)]+)\)", text)
                if not os.path.exists(os.path.join(ROOT, f))]
     if missing:
@@ -99,6 +140,13 @@ def book(plain):
             label = "Παραρτήματα" if part == "X" else f"Μέρος {'ΑΒΓΔΕ'['ABCDE'.index(part)]}: {title}"
             out.append(latex("\\part*{%s}\n\\addcontentsline{toc}{part}{%s}" % (label, label)))
         text = prepare(path, plain)
+        if not plain:
+            # a chapter's Α/Κ labels jump to the full statement in the appendix
+            text = re.sub(r"\*\*\[([ΑΚ])(\d+)\.(\d+)\]\(" + re.escape(SITE) + r"/questions/[^)]+\)\*\*",
+                          lambda m: "**[%s%s.%s](#%s%s-%s-full)**" % (
+                              m.group(1), m.group(2), m.group(3),
+                              "a" if m.group(1) == "Α" else "k", m.group(2), m.group(3)), text)
+            out.append(header(re.search(r"^# (.+)$", text, re.M).group(1)))
         if plain:
             meta = f"> Διάλεξη {l['n']} · {l['date']} · [διαφάνειες]({m['release']}/{l['slides']})"
             text = re.sub(r"^(# .+\n)", lambda h: h.group(1) + "\n" + meta + "\n", text, count=1, flags=re.M)
@@ -110,6 +158,8 @@ def book(plain):
             appendix = True
         g = open(gpath, encoding="utf-8").read()
         g = re.sub(r"\]\(chapters/([\w-]+)/\)", "](" + SITE + r"/chapters/\1/)", g)
+        if not plain:
+            out.append(header("Γλωσσάριο"))
         out.append(g)
     qpath = os.path.join(ROOT, "build", "questions.md")
     if os.path.exists(qpath):
@@ -117,8 +167,14 @@ def book(plain):
             out.append(latex("\\appendix"))
             appendix = True
         # the bank's H1 is a chapter of its own; its per-chapter H2s stay sections
-        qtext = links(open(qpath, encoding="utf-8").read())
-        out.append(qtext if plain else diagrams(qtext))
+        qtext = anchors(links(open(qpath, encoding="utf-8").read()), plain)
+        if not plain:
+            # the running header says whose exercises these are
+            qtext = re.sub(r"^## ((?:Κεφάλαιο \d+|Παράρτημα Α)):.*$",
+                           lambda m: header("Ασκήσεις · " + m.group(1)) + "\n" + m.group(0),
+                           qtext, flags=re.M)
+            qtext = header("Τράπεζα ασκήσεων") + "\n" + diagrams(qtext)
+        out.append(qtext)
     return "\n\n".join(out)
 
 

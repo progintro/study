@@ -15,6 +15,9 @@ three renderers (GitHub, the Jekyll site, the xelatex PDF):
              the study-guide keys: lecture, title, date, part, slides, topics, notes, labs)
   topic      a topics: tag that is not in questions/topics.yaml
   section    the H1 or the H2 sections are missing or out of order (see STYLE.md)
+  fence      a code fence followed by text on the same line (``` Για …), which
+             never closes the block and swallows the rest of the chapter
+  anchor     a link to #x within the chapter where no <a id="x"> or heading has that id
   liquid     body not wrapped in <!-- {% raw %} --> ... <!-- {% endraw %} -->, so C code
              such as {{'a','b'}} would break the Jekyll build
 
@@ -66,6 +69,18 @@ def check(path, chapters):
         for m in re.finditer(r"!\[[^\]]*\]\(([^)]+)\)", line):
             if not os.path.exists(os.path.join(os.path.dirname(path), m.group(1))):
                 add("image", i, m.group(1))
+
+    for i, line in enumerate(raw.split("\n"), 1):
+        if re.match(r"\s*```[^`\s]* +\S", line):
+            add("fence", i, line.strip()[:60])
+
+    ids = set(re.findall(r'<a id="([^"]+)"></a>', raw))
+    ids |= {re.sub(r"[^\w\- ]", "", h.strip().lower()).replace(" ", "-")
+            for h in re.findall(r"^#{1,6} (.+)$", text, re.M)}
+    for i, line in enumerate(raw.split("\n"), 1):
+        for target in re.findall(r"\]\(#([^)\s]+)\)", line):
+            if target not in ids:
+                add("anchor", i, f"#{target} matches no anchor or heading in this file")
 
     if "chapters" in path and not ("<!-- {% raw %} -->" in raw and raw.rstrip().endswith("<!-- {% endraw %} -->")):
         add("liquid", 1, "chapter body is not wrapped in raw tags")
