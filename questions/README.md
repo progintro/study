@@ -23,15 +23,17 @@
 - **[Κ0.5](../questions/kahoot/kahoot-c-main-feature.md)** Το χαρακτηριστικό της C: Kahoot «Καλημέρα Κόσμε - lec00!» (διάλεξη 0) · ★★☆ · multiple-choice · 61% σωστές απαντήσεις · `kahoot-c-main-feature`
 - **[Κ0.6](../questions/kahoot/kahoot-ask-question.md)** Έχω μια ερώτηση για το μάθημα: Kahoot «Καλημέρα Κόσμε - lec00!», «Καλημέρα Κόσμε!» (διάλεξη 0) · ★★☆ · multiple-choice · 57% σωστές απαντήσεις · `kahoot-ask-question`
 
-### Ζέσταμα: από τις διαφάνειες (Α0.1–Α0.7)
+### Ζέσταμα: από τις διαφάνειες (Α0.1–Α0.9)
 
-- **[Α0.1](../questions/slides/slides-lec00-ask-question.md)** Έχω μια ερώτηση, τι κάνω;: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 16 · ★☆☆ · multiple-choice · `slides-lec00-ask-question`
-- **[Α0.2](../questions/slides/slides-lec00-bread-and-eggs.md)** Ψωμί και αυγά: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 26 · ★☆☆ · short-answer · `slides-lec00-bread-and-eggs`
-- **[Α0.3](../questions/slides/slides-lec00-hello-world.md)** Hello World σε online compiler: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 32 · ★☆☆ · tooling · `slides-lec00-hello-world`
-- **[Α0.4](../questions/slides/slides-lec00-highest-mountain.md)** Το πιο ψηλό βουνό του κόσμου: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 25 · ★☆☆ · short-answer · `slides-lec00-highest-mountain`
-- **[Α0.5](../questions/slides/slides-lec00-pass-without-labs.md)** Περνάω χωρίς εργασίες και εργαστήριο;: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 11 · ★☆☆ · short-answer · `slides-lec00-pass-without-labs`
-- **[Α0.6](../questions/slides/slides-lec00-programs-you-know.md)** Παραδείγματα προγραμμάτων: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 23 · ★☆☆ · short-answer · `slides-lec00-programs-you-know`
-- **[Α0.7](../questions/slides/slides-lec00-why-programming.md)** Γιατί προγραμματισμός το 2025;: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 5 · ★☆☆ · short-answer · `slides-lec00-why-programming`
+- **[Α0.1](../questions/slides/slides-lec00-ai-homework.md)** Τεχνητή νοημοσύνη στις εργασίες;: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 12 · ★☆☆ · short-answer · `slides-lec00-ai-homework`
+- **[Α0.2](../questions/slides/slides-lec00-ask-question.md)** Έχω μια ερώτηση, τι κάνω;: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 17 · ★☆☆ · multiple-choice · `slides-lec00-ask-question`
+- **[Α0.3](../questions/slides/slides-lec00-bread-and-eggs.md)** Ψωμί και αυγά: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 31 · ★☆☆ · short-answer · `slides-lec00-bread-and-eggs`
+- **[Α0.4](../questions/slides/slides-lec00-hello-world.md)** Hello World σε online compiler: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 37 · ★☆☆ · tooling · `slides-lec00-hello-world`
+- **[Α0.5](../questions/slides/slides-lec00-highest-mountain.md)** Το πιο ψηλό βουνό του κόσμου: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 29 · ★☆☆ · short-answer · `slides-lec00-highest-mountain`
+- **[Α0.6](../questions/slides/slides-lec00-pass-without-labs.md)** Περνάω χωρίς εργασίες και εργαστήριο;: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 11 · ★☆☆ · short-answer · `slides-lec00-pass-without-labs`
+- **[Α0.7](../questions/slides/slides-lec00-program-vs-algorithm.md)** Πρόγραμμα και αλγόριθμος: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 25 · ★☆☆ · short-answer · `slides-lec00-program-vs-algorithm`
+- **[Α0.8](../questions/slides/slides-lec00-programs-you-know.md)** Παραδείγματα προγραμμάτων: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 27 · ★☆☆ · short-answer · `slides-lec00-programs-you-know`
+- **[Α0.9](../questions/slides/slides-lec00-why-programming.md)** Γιατί προγραμματισμός το 2026;: Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 5 · ★☆☆ · short-answer · `slides-lec00-why-programming`
 
 ## [Κεφάλαιο 1: Η Γραμμή Εντολών](../chapters/01-command-line/)
 

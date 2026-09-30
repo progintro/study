@@ -41,7 +41,7 @@
       <td>0</td>
       <td><a href="chapters/00-hello-world/">Καλημέρα Κόσμε!</a></td>
       <td>Εισαγωγή στο μάθημα, Υπολογιστές και αναπαράσταση πληροφορίας, Μεταγλώττιση και σύνδεση (gcc)</td>
-      <td>13</td>
+      <td>15</td>
       <td><a href="downloads/00-hello-world.pdf">PDF</a></td>
     </tr>
     <tr>
@@ -323,7 +323,8 @@ chatbot ή agent το [`llms-full.txt`](llms-full.txt) (όλος ο οδηγός
 ## Σχετικά με τον οδηγό
 
 Ο οδηγός γράφτηκε από τις διαφάνειες των διαλέξεων του 2025-26
-([progintro.github.io](https://progintro.github.io/)), τις
+([progintro.github.io](https://progintro.github.io/)) και ενημερώνεται με τις διαφάνειες
+του 2026-27 καθώς δημοσιεύονται (ως τώρα: Διάλεξη 0), τις
 [σημειώσεις](https://progintro.github.io/notes/) του μαθήματος, τα
 [εργαστήρια](https://progintro.github.io/lab-material/) και τα θέματα εξετάσεων και τις
 εργασίες προηγούμενων ετών. Οι ασκήσεις έχουν υποδείξεις αλλά όχι λύσεις.

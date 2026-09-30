@@ -1,18 +1,18 @@
 ---
 id: slides-lec00-why-programming
 kind: slides
-title: "Γιατί προγραμματισμός το 2025;"
+title: "Γιατί προγραμματισμός το 2026;"
 source:
   title: "Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 5"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec00.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec00.pdf
+  years: [2025, 2026]
 chapters: [0]
 topics: [course-intro]
 difficulty: 1
 type: short-answer
 ---
 
-Γιατί να ασχοληθείς με τον προγραμματισμό το 2025; Δώστε τουλάχιστον τρεις λόγους.
+Γιατί να ασχοληθείς με τον προγραμματισμό το 2026; Δώστε τουλάχιστον τρεις λόγους.
 
 ## Υπόδειξη
 

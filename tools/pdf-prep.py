@@ -148,7 +148,7 @@ def book(plain):
                               "a" if m.group(1) == "Α" else "k", m.group(2), m.group(3)), text)
             out.append(header(re.search(r"^# (.+)$", text, re.M).group(1)))
         if plain:
-            meta = f"> Διάλεξη {l['n']} · {l['date']} · [διαφάνειες]({m['release']}/{l['slides']})"
+            meta = f"> Διάλεξη {l['n']} · {l['date']} · [διαφάνειες]({l.get('url') or m['release'] + '/' + l['slides']})"
             text = re.sub(r"^(# .+\n)", lambda h: h.group(1) + "\n" + meta + "\n", text, count=1, flags=re.M)
         out.append(text)
     gpath = os.path.join(ROOT, "glossary.md")

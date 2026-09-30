@@ -3,16 +3,16 @@ id: slides-lec00-hello-world
 kind: slides
 title: "Hello World σε online compiler"
 source:
-  title: "Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 32"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec00.pdf
-  years: [2025]
+  title: "Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 37"
+  url: https://progintro.github.io/assets/pdf/lec00.pdf
+  years: [2025, 2026]
 chapters: [0]
 topics: [compilation, input-output]
 difficulty: 1
 type: tooling
 ---
 
-Ας τρέξουμε το παρακάτω πρόγραμμα με έναν [online compiler](https://www.programiz.com/c-programming/online-compiler/):
+Ας τρέξουμε το παρακάτω πρόγραμμα με έναν online compiler ([Sea](https://progintro.github.io/sea/), [Programiz](https://www.programiz.com/c-programming/online-compiler/)):
 
 ```c
 /* File: helloworld.c */

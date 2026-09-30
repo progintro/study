@@ -17,7 +17,7 @@
 | variadic συνάρτηση | variadic function | συνάρτηση με μεταβλητό αριθμό ορισμάτων (`...`) | [24](chapters/24-advanced-topics/) |
 | ακέραια διαίρεση | integer division | `/` μεταξύ ακεραίων, που κρατάει μόνο το πηλίκο | [5](chapters/05-operators-statements/) |
 | ακολουθία διαφυγής | escape sequence | `\` και ένας χαρακτήρας, π.χ. `\n` | [2](chapters/02-memory-variables/), [3](chapters/03-functions/) |
-| αλγόριθμος | algorithm | Σαφής διαδικασία από εκτελέσιμα βήματα που τερματίζει | [0](chapters/00-hello-world/) |
+| αλγόριθμος | algorithm | Πεπερασμένη σειρά αυστηρά καθορισμένων ενεργειών, εκτελέσιμων σε πεπερασμένο χρόνο, που λύνει ένα πρόβλημα | [0](chapters/00-hello-world/) |
 | αλλαγή γραμμής | newline | Ο χαρακτήρας `\n` | [0](chapters/00-hello-world/) |
 | αλφαριθμητικό μορφοποίησης | format string | Η πρώτη παράμετρος της `printf` | [2](chapters/02-memory-variables/), [3](chapters/03-functions/), [9](chapters/09-input/), [10](chapters/10-arrays/) |
 | αμφισημία | ambiguity | Όταν μια λέξη ή πρόταση έχει περισσότερες από μία σημασίες | [0](chapters/00-hello-world/) |
