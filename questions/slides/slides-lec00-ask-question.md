@@ -3,9 +3,9 @@ id: slides-lec00-ask-question
 kind: slides
 title: "Έχω μια ερώτηση, τι κάνω;"
 source:
-  title: "Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 16"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec00.pdf
-  years: [2025]
+  title: "Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 17"
+  url: https://progintro.github.io/assets/pdf/lec00.pdf
+  years: [2025, 2026]
 chapters: [0]
 topics: [course-intro]
 difficulty: 1
@@ -15,7 +15,7 @@ type: multiple-choice
 Έχω μια ερώτηση για το μάθημα, τι κάνω;
 
 - Α. Στέλνω email στον Αυγερινό/Τάκη
-- Β. Ελέγχω αν έχει απαντηθεί στο piazza και εφόσον *δεν* έχει απαντηθεί, ποστάρω καινούρια ερώτηση
+- Β. Ελέγχω αν έχει απαντηθεί στο faq, piazza και εφόσον *δεν* έχει απαντηθεί, ποστάρω καινούρια ερώτηση
 
 ## Υπόδειξη
 

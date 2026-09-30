@@ -6,6 +6,9 @@
 #            refined by the extraction pass - the chapter's front matter is canonical)
 #   labs     progintro/lab-material labs that practise it (same caveat)
 #   part     the book part the chapter opens or belongs to (see `parts` below)
+#   url      the slides' full URL, for a lecture already updated to the 2026-27 deck
+#            (published on the course site, not yet in a release); `make fetch`
+#            downloads it to sources/slides/2026/
 release: https://github.com/progintro/progintro.github.io/releases/download/2025
 year: 2025-26
 
@@ -18,7 +21,7 @@ parts:
   X: Παραρτήματα
 
 lectures:
-  - {n: 0,  slug: 00-hello-world,        date: 2025-09-29, part: A, slides: lec00.pdf, title: "Καλημέρα Κόσμε!",                     notes: [00-intro, 01-first-programs], labs: [lab00]}
+  - {n: 0,  slug: 00-hello-world,        date: 2026-09-28, part: A, slides: lec00.pdf, url: "https://progintro.github.io/assets/pdf/lec00.pdf", title: "Καλημέρα Κόσμε!",                     notes: [00-intro, 01-first-programs], labs: [lab00]}
   - {n: 1,  slug: 01-command-line,       date: 2025-10-03, part: A, slides: lec01.pdf, title: "Η Γραμμή Εντολών",                    notes: [00-intro],                    labs: [lab01]}
   - {n: 2,  slug: 02-memory-variables,   date: 2025-10-06, part: B, slides: lec02.pdf, title: "Μνήμη και Μεταβλητές",                notes: [02-types-operators],          labs: [lab02, lab03]}
   - {n: 3,  slug: 03-functions,          date: 2025-10-10, part: B, slides: lec03.pdf, title: "Συναρτήσεις",                         notes: [04-functions],                labs: [lab05]}

@@ -3,9 +3,9 @@ id: slides-lec00-highest-mountain
 kind: slides
 title: "Το πιο ψηλό βουνό του κόσμου"
 source:
-  title: "Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 25"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec00.pdf
-  years: [2025]
+  title: "Διάλεξη 0: Καλημέρα Κόσμε!, διαφάνεια 29"
+  url: https://progintro.github.io/assets/pdf/lec00.pdf
+  years: [2025, 2026]
 chapters: [0]
 topics: [computers]
 difficulty: 1
