@@ -4,8 +4,8 @@ kind: slides
 title: "Παραδείγματα για κάθε επίπεδο ενός υπολογιστικού συστήματος"
 source:
   title: "Διάλεξη 1: Η Γραμμή Εντολών, διαφάνεια 7"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec01.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec01.pdf
+  years: [2025, 2026]
 chapters: [1]
 topics: [computers]
 difficulty: 1

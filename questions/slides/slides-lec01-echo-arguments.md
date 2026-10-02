@@ -4,8 +4,8 @@ kind: slides
 title: "Πρόγραμμα και ορίσματα στο /bin/echo"
 source:
   title: "Διάλεξη 1: Η Γραμμή Εντολών, διαφάνεια 15"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec01.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec01.pdf
+  years: [2025, 2026]
 chapters: [1]
 topics: [shell]
 difficulty: 1
