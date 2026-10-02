@@ -1,4 +1,6 @@
 lecture: 1
+year: 2026-27                     # updated from the 2025-26 deck (same 43 pages) on 2026-10-02
+slides: https://progintro.github.io/assets/pdf/lec01.pdf
 pages: 43
 outline:
   - {pages: "1-2", section: "Γιατί C;"}              # title, announcements (lab starts Monday, map of the building)
@@ -39,6 +41,12 @@ pointers:
   - {page: 42, text: "Προαιρετικό: The Unix Programming Environment (https://scis.uohyd.ac.in/~apcs/itw/UNIXProgrammingEnvironment.pdf)"}
   - {page: 42, text: "Προαιρετικό #2: Common Linux Interview Questions (https://www.geeksforgeeks.org/linux-interview-questions/)"}
 takeaways_slide: null   # p. 42 is a reading/to-do list, not a takeaways slide
+changes_from_2025:
+  - "Same 43 pages and page order as 2025-26; slide numbers in the chapter and questions are unchanged."
+  - "p. 2: 'έχουμε άλλο ένα τμήμα!' dropped from the announcement that the lab starts on Monday (the chapter never mentioned it)."
+  - "p. 4-5: captions added to the recap/agenda images (Creation of Adam, Van Gogh's Irises). p. 10: photo of Linus Torvalds added."
+  - "p. 24: the volunteer demo now shows a concrete host, 'ssh ubuntu@44.202.150.55'; it is a throwaway demo machine, so the chapter keeps 'ssh user@host'."
+  - "p. 9, 27: line wrapping only."
 issues:
   - "p. 42 cites Stamatopoulos' notes 'σελίδες 58-60, 98-99'. These are the page numbers printed on K04.pdf, which k04-map.tsv now uses: 58-60 = 04-functions «Δομή ενός προγράμματος C – Συναρτήσεις» (main, return value to the OS) and 98-99 = 06-memory-strings «Ορίσματα γραμμής εντολών». The chapter cites K04 58-60 and 98-99."
   - "No explicit key-takeaways slide; Κύρια σημεία are synthesised from the definition slides (9, 14, 27, 32, 35-40)."

@@ -3,9 +3,9 @@ layout: chapter
 chapter: 1
 lecture: 1
 title: "Η Γραμμή Εντολών"
-date: 2025-10-03
+date: 2026-10-02
 part: A
-slides: https://github.com/progintro/progintro.github.io/releases/download/2025/lec01.pdf
+slides: https://progintro.github.io/assets/pdf/lec01.pdf
 prev: 00-hello-world
 next: 02-memory-variables
 topics: [computers, unix, shell, compilation]
@@ -658,7 +658,7 @@ $ echo $?
 
 ## Διάβασμα
 
-- **Διαφάνειες:** [Διάλεξη 1](https://github.com/progintro/progintro.github.io/releases/download/2025/lec01.pdf), σελ. 1–43. Αρχιτεκτονική και λειτουργικά συστήματα: σελ. 6–10· GUI, CLI, kernel και shell: σελ. 11–13· εκτέλεση προγραμμάτων και ορίσματα: σελ. 14–17· πρόσβαση σε γραμμή εντολών και `ssh`: σελ. 18–24· βασικές εντολές: σελ. 25· σύστημα αρχείων και εντολές αρχείων: σελ. 27–31· `gcc` και ανάλυση του Hello World: σελ. 32–40.
+- **Διαφάνειες:** [Διάλεξη 1](https://progintro.github.io/assets/pdf/lec01.pdf) (2026-27), σελ. 1–43. Αρχιτεκτονική και λειτουργικά συστήματα: σελ. 6–10· GUI, CLI, kernel και shell: σελ. 11–13· εκτέλεση προγραμμάτων και ορίσματα: σελ. 14–17· πρόσβαση σε γραμμή εντολών και `ssh`: σελ. 18–24· βασικές εντολές: σελ. 25· σύστημα αρχείων και εντολές αρχείων: σελ. 27–31· `gcc` και ανάλυση του Hello World: σελ. 32–40. Οι διαφάνειες του 2025-26 (ίδια σελιδοποίηση): [Διάλεξη 1 (2025)](https://github.com/progintro/progintro.github.io/releases/download/2025/lec01.pdf).
 - **Σημειώσεις:** οι διαφάνειες ζητούν τις σελίδες 58–60 και 98–99 των σημειώσεων του κ. Σταματόπουλου (αριθμημένες σελίδες, δηλαδή K04, σελ. 58–60 και 98–99):
   - [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/), ενότητα «Δομή ενός προγράμματος C – Συναρτήσεις» (K04, σελ. 58–60): η `main` και η τιμή που επιστρέφει.
   - [Κεφάλαιο 6: Μνήμη και συμβολοσειρές](https://progintro.github.io/notes/chapters/06-memory-strings/), ενότητα «Ορίσματα γραμμής εντολών» (K04, σελ. 98–99): πώς ένα πρόγραμμα C διαβάζει τα ορίσματά του (θα το δούμε αναλυτικά αργότερα).
