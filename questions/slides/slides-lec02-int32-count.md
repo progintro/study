@@ -4,8 +4,8 @@ kind: slides
 title: "Ακέραιοι με 32 bit"
 source:
   title: "Διάλεξη 2: Μνήμη και Μεταβλητές, διαφάνεια 18"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec02.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec02.pdf
+  years: [2025, 2026]
 chapters: [2]
 topics: [integer-representation, types]
 difficulty: 1
