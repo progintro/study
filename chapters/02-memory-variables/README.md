@@ -3,9 +3,9 @@ layout: chapter
 chapter: 2
 lecture: 2
 title: "Μνήμη και Μεταβλητές"
-date: 2025-10-06
+date: 2026-10-05
 part: B
-slides: https://github.com/progintro/progintro.github.io/releases/download/2025/lec02.pdf
+slides: https://progintro.github.io/assets/pdf/lec02.pdf
 prev: 01-command-line
 next: 03-functions
 topics: [computers, memory-model, variables, types, integer-representation, input-output]
@@ -657,7 +657,7 @@ tab και `\\` μια `\`.
 
 ## Διάβασμα
 
-- **Διαφάνειες:** [Διάλεξη 2](https://github.com/progintro/progintro.github.io/releases/download/2025/lec02.pdf), σελ. 1–35. Bits, bytes και διευθύνσεις: σελ. 5–8· βάσεις αρίθμησης: σελ. 9–11· δήλωση μεταβλητής: σελ. 12–15· ASCII: σελ. 16–17· αναπαράσταση ακεραίων και συμπλήρωμα ως προς 2: σελ. 18–22· τύποι: σελ. 23· ανάθεση: σελ. 24–25· υπερχείλιση και `<stdint.h>`: σελ. 26–27· `printf`: σελ. 28–30· δηλώσεις πολλών μεταβλητών και δεσμευμένες λέξεις: σελ. 31–32.
+- **Διαφάνειες:** [Διάλεξη 2](https://progintro.github.io/assets/pdf/lec02.pdf) (2026-27), σελ. 1–35. Bits, bytes και διευθύνσεις: σελ. 5–8· βάσεις αρίθμησης: σελ. 9–11· δήλωση μεταβλητής: σελ. 12–15· ASCII: σελ. 16–17· αναπαράσταση ακεραίων και συμπλήρωμα ως προς 2: σελ. 18–22· τύποι: σελ. 23· ανάθεση: σελ. 24–25· υπερχείλιση και `<stdint.h>`: σελ. 26–27· `printf`: σελ. 28–30· δηλώσεις πολλών μεταβλητών και δεσμευμένες λέξεις: σελ. 31–32. Οι διαφάνειες του 2025-26 (ίδια σελιδοποίηση): [Διάλεξη 2 (2025)](https://github.com/progintro/progintro.github.io/releases/download/2025/lec02.pdf).
 - **Σημειώσεις:** Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 35 και τις σελίδες 58–71 (K04). Για αυτό το κεφάλαιο ειδικά:
   - [Κεφάλαιο 0: Εισαγωγή](https://progintro.github.io/notes/chapters/00-intro/), ενότητες «Η δομή του υπολογιστή», «Η πληροφορία στον υπολογιστή» (K04, σελ. 9–10)
   - [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Μεταβλητές, σταθερές, τύποι και δηλώσεις στην C» (K04, σελ. 30–33)

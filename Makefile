@@ -73,7 +73,7 @@ $(BUILD)/llms.txt: $(CHAPTERS) glossary.md $(BUILD)/questions.md tools/llms.py t
 .PHONY: all fetch lint check-code exercises check clean
 fetch:
 	mkdir -p sources/slides/2026 sources/hw/2023 sources/hw/2024 sources/hw/2025
-	for f in lec00 lec01; do curl -fsSL -o sources/slides/2026/$$f.pdf https://progintro.github.io/assets/pdf/$$f.pdf; done
+	for f in lec00 lec01 lec02; do curl -fsSL -o sources/slides/2026/$$f.pdf https://progintro.github.io/assets/pdf/$$f.pdf; done
 	gh release download 2025 -R $(REPO) -D sources/slides -p 'lec*.pdf' -p make.pdf --skip-existing
 	gh release download 2025 -R $(REPO) -D sources/hw/2025 -p 'hw*.pdf' -p stergios.pdf --skip-existing
 	gh release download 2024 -R $(REPO) -D sources/hw/2024 -p 'hw*.pdf' --skip-existing

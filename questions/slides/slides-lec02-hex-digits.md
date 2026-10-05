@@ -4,8 +4,8 @@ kind: slides
 title: "Δεκαεξαδικά ψηφία ενός byte"
 source:
   title: "Διάλεξη 2: Μνήμη και Μεταβλητές, διαφάνεια 10"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec02.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec02.pdf
+  years: [2025, 2026]
 chapters: [2]
 topics: [computers]
 difficulty: 1
