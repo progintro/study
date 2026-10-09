@@ -52,6 +52,8 @@ jobs:
       # A pandoc/xelatex failure can still leave a stub PDF behind.
       - name: Check PDFs
         run: |
+          # The runner image can ship a stale package index (404s on superseded versions).
+          sudo apt-get update -qq >/dev/null
           sudo apt-get install -y -qq poppler-utils >/dev/null
           for f in build/*.pdf; do
             pages=$(pdfinfo "$f" | awk '/^Pages:/ {print $2}')
