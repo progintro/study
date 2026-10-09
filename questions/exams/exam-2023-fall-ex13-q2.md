@@ -9,6 +9,7 @@ source:
 chapters: [12, 9, 13]
 topics: [multidim-arrays, dynamic-memory, input-output, input-validation]
 difficulty: 1
+level: 3
 type: programming
 ---
 

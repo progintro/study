@@ -9,6 +9,7 @@ source:
 chapters: [25, 16, 11]
 topics: [dynamic-programming, recursion, complexity, integer-representation]
 difficulty: 2
+level: 4
 type: programming
 ---
 

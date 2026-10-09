@@ -9,6 +9,7 @@ source:
 chapters: [17]
 topics: [searching, arrays]
 difficulty: 1
+level: 1
 type: trace
 ---
 

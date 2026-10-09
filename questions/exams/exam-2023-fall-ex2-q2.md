@@ -9,6 +9,7 @@ source:
 chapters: [12, 8]
 topics: [command-line-args, loops, strings]
 difficulty: 1
+level: 2
 type: programming
 ---
 

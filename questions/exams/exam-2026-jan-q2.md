@@ -9,6 +9,7 @@ source:
 chapters: [17, 13, 12]
 topics: [sorting, dynamic-memory, memory-model]
 difficulty: 2
+level: 1
 type: trace
 ---
 

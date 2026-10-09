@@ -9,6 +9,7 @@ source:
 chapters: [6, 12]
 topics: [loops, command-line-args, integer-representation]
 difficulty: 2
+level: 2
 type: programming
 ---
 

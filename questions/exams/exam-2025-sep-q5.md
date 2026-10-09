@@ -9,6 +9,7 @@ source:
 chapters: [25, 12, 18]
 topics: [dynamic-programming, multidim-arrays, files]
 difficulty: 3
+level: 4
 type: programming
 ---
 

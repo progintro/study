@@ -9,6 +9,7 @@ source:
 chapters: [10, 9]
 topics: [arrays, input-output]
 difficulty: 1
+level: 2
 type: programming
 ---
 

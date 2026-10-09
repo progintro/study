@@ -9,6 +9,7 @@ source:
 chapters: [9, 5]
 topics: [input-output, operators]
 difficulty: 2
+level: 2
 type: programming
 ---
 

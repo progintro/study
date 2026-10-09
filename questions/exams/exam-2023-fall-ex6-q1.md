@@ -9,6 +9,7 @@ source:
 chapters: [6, 4, 2]
 topics: [math-algorithms, command-line-args, input-validation, integer-representation]
 difficulty: 1
+level: 2
 type: programming
 ---
 

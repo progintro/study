@@ -9,6 +9,7 @@ source:
 chapters: [16, 17, 18]
 topics: [problem-solving, complexity, sorting, files]
 difficulty: 3
+level: 4
 type: programming
 ---
 

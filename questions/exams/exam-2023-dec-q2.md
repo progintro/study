@@ -9,6 +9,7 @@ source:
 chapters: [16, 4]
 topics: [math-algorithms, loops, command-line-args]
 difficulty: 2
+level: 2
 type: programming
 ---
 

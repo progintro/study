@@ -9,6 +9,7 @@ source:
 chapters: [22, 15, 20]
 topics: [trees, recursion, complexity, unions-enums]
 difficulty: 2
+level: 3
 type: programming
 ---
 

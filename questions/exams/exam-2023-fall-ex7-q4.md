@@ -9,6 +9,7 @@ source:
 chapters: [18, 12]
 topics: [files, command-line-args]
 difficulty: 1
+level: 2
 type: programming
 ---
 

@@ -9,6 +9,7 @@ source:
 chapters: [11, 13]
 topics: [pointers, undefined-behavior, memory-model]
 difficulty: 1
+level: 1
 type: trace
 ---
 

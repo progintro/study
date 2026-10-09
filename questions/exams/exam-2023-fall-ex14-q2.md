@@ -9,6 +9,7 @@ source:
 chapters: [25, 17]
 topics: [sorting, problem-solving, command-line-args, input-validation]
 difficulty: 2
+level: 2
 type: programming
 ---
 

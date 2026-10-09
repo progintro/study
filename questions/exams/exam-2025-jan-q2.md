@@ -9,6 +9,7 @@ source:
 chapters: [14, 13, 2]
 topics: [strings, pointer-arithmetic, dynamic-memory]
 difficulty: 1
+level: 1
 type: trace
 ---
 

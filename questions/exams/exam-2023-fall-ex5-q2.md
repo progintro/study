@@ -9,6 +9,7 @@ source:
 chapters: [10, 12]
 topics: [arrays, command-line-args, input-validation]
 difficulty: 2
+level: 2
 type: programming
 ---
 

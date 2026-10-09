@@ -9,6 +9,7 @@ source:
 chapters: [14, 13, 15]
 topics: [strings, dynamic-memory, complexity]
 difficulty: 2
+level: 3
 type: programming
 ---
 

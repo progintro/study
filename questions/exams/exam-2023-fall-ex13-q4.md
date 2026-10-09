@@ -9,6 +9,7 @@ source:
 chapters: [16, 2]
 topics: [math-algorithms, loops, integer-representation, floating-point]
 difficulty: 2
+level: 2
 type: programming
 ---
 

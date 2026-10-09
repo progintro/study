@@ -9,6 +9,7 @@ source:
 chapters: [6, 2]
 topics: [loops, variables, undefined-behavior]
 difficulty: 1
+level: 1
 type: trace
 ---
 

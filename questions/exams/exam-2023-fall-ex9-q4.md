@@ -9,6 +9,7 @@ source:
 chapters: [13, 9, 14]
 topics: [dynamic-memory, input-output, strings]
 difficulty: 3
+level: 3
 type: programming
 ---
 

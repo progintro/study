@@ -9,6 +9,7 @@ source:
 chapters: [9, 4]
 topics: [input-output, bitwise, input-validation]
 difficulty: 2
+level: 2
 type: programming
 ---
 

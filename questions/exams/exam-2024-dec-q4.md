@@ -9,6 +9,7 @@ source:
 chapters: [25, 12, 11]
 topics: [dynamic-programming, multidim-arrays, recursion, complexity]
 difficulty: 3
+level: 4
 type: programming
 ---
 

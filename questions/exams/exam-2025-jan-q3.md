@@ -9,6 +9,7 @@ source:
 chapters: [12, 10]
 topics: [command-line-args, arrays, floating-point]
 difficulty: 2
+level: 2
 type: programming
 ---
 

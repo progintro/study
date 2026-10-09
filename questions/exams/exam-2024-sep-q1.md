@@ -9,6 +9,7 @@ source:
 chapters: [3, 2]
 topics: [input-output, functions, strings]
 difficulty: 1
+level: 1
 type: programming
 ---
 

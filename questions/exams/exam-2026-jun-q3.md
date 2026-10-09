@@ -9,6 +9,7 @@ source:
 chapters: [25, 15, 9]
 topics: [complexity, problem-solving, command-line-args, input-output]
 difficulty: 2
+level: 2
 type: programming
 ---
 

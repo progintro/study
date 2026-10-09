@@ -9,6 +9,7 @@ source:
 chapters: [9]
 topics: [input-output]
 difficulty: 2
+level: 2
 type: programming
 ---
 

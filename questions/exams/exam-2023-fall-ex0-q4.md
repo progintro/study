@@ -9,6 +9,7 @@ source:
 chapters: [16, 2]
 topics: [math-algorithms, integer-representation, complexity]
 difficulty: 2
+level: 4
 type: programming
 ---
 

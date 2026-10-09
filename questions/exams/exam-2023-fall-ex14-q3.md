@@ -9,6 +9,7 @@ source:
 chapters: [18, 19, 17]
 topics: [sorting, structs, files, floating-point]
 difficulty: 2
+level: 3
 type: programming
 ---
 

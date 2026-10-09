@@ -30,6 +30,8 @@ defaults:
     values: {layout: question}
   - scope: {path: questions/README.md}
     values: {layout: default}
+  - scope: {path: questions/exam-questions.md}
+    values: {layout: default}
 
 plugins:
   - jekyll-coffeescript

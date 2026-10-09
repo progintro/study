@@ -9,6 +9,7 @@ source:
 chapters: [19, 18, 14]
 topics: [structs, sorting, strings, input-validation, complexity]
 difficulty: 3
+level: 4
 type: programming
 ---
 
