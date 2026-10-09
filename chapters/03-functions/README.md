@@ -3,9 +3,9 @@ layout: chapter
 chapter: 3
 lecture: 3
 title: "Συναρτήσεις"
-date: 2025-10-10
+date: 2026-10-09
 part: B
-slides: https://github.com/progintro/progintro.github.io/releases/download/2025/lec03.pdf
+slides: https://progintro.github.io/assets/pdf/lec03.pdf
 prev: 02-memory-variables
 next: 04-git-operators
 topics: [functions, types, variables, integer-representation, input-output, compilation]
@@ -586,7 +586,7 @@ Pi is approximately: 3.141583
 
 ## Διάβασμα
 
-- **Διαφάνειες:** [Διάλεξη 3](https://github.com/progintro/progintro.github.io/releases/download/2025/lec03.pdf), σελ. 1–47. Τύποι, ανάθεση, υπερχείλιση: σελ. 5–9· `printf`, ακολουθίες διαφυγής, προσδιοριστικά: σελ. 10–12· συμμετρία και μηνύματα λάθους: σελ. 13–14· δηλώσεις και δεσμευμένες λέξεις: σελ. 15–16· μεταγλώττιση και ανάλυση του Hello World: σελ. 17–27· συναρτήσεις: σελ. 28–37· pair programming και challenges: σελ. 38–44.
+- **Διαφάνειες:** [Διάλεξη 3](https://progintro.github.io/assets/pdf/lec03.pdf) (2026-27), σελ. 1–48. Τύποι, ανάθεση, υπερχείλιση: σελ. 5–9· `printf`, ακολουθίες διαφυγής, προσδιοριστικά: σελ. 10–12· συμμετρία και μηνύματα λάθους: σελ. 13–14· δηλώσεις και δεσμευμένες λέξεις: σελ. 15–16· μεταγλώττιση και ανάλυση του Hello World: σελ. 17–27· συναρτήσεις: σελ. 28–37· pair programming και challenges: σελ. 38–45. Οι διαφάνειες του 2025-26 (μία σελίδα λιγότερη: από τη σελ. 40 και μετά η αρίθμηση είναι κατά μία μικρότερη): [Διάλεξη 3 (2025)](https://github.com/progintro/progintro.github.io/releases/download/2025/lec03.pdf).
 - **Σημειώσεις:** οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 35, και τις σελίδες 58–71. Συγκεκριμένα για αυτή τη διάλεξη:
   - [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), ενότητες «Καλημέρα κόσμε της C» και «Πόσο είναι το $\pi$;» (K04, σελ. 19–23)
   - [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Μεταβλητές, σταθερές, τύποι και δηλώσεις στην C» (K04, σελ. 30–33)
@@ -671,8 +671,8 @@ Pi is approximately: 3.141583
 - <a id="a3-1"></a>**[Α3.1](../../questions/slides/slides-lec03-function-call.md)** Τιμή μετά από κλήση συνάρτησης: Διάλεξη 3: Συναρτήσεις, διαφάνεια 37 · ★☆☆ · trace · `slides-lec03-function-call`
 - <a id="a3-2"></a>**[Α3.2](../../questions/slides/slides-lec03-int-size.md)** Πόσα bytes είναι ένας int;: Διάλεξη 3: Συναρτήσεις, διαφάνεια 9 · ★☆☆ · short-answer · `slides-lec03-int-size`
 - <a id="a3-3"></a>**[Α3.3](../../questions/slides/slides-lec03-power-outage.md)** Διακοπή ρεύματος και μνήμη: Διάλεξη 3: Συναρτήσεις, διαφάνεια 3 · ★☆☆ · multiple-choice · `slides-lec03-power-outage`
-- <a id="a3-4"></a>**[Α3.4](../../questions/slides/slides-lec03-pyth.md)** Πυθαγόρειο θεώρημα (pyth.c): Διάλεξη 3: Συναρτήσεις, διαφάνεια 40 · ★☆☆ · programming · `slides-lec03-pyth`
-- <a id="a3-5"></a>**[Α3.5](../../questions/slides/slides-lec03-leibniz-pi.md)** Προσέγγιση του π με τη σειρά Leibniz: Διάλεξη 3: Συναρτήσεις, διαφάνεια 43 · ★★☆ · programming · `slides-lec03-leibniz-pi`
+- <a id="a3-4"></a>**[Α3.4](../../questions/slides/slides-lec03-pyth.md)** Πυθαγόρειο θεώρημα (pyth.c): Διάλεξη 3: Συναρτήσεις, διαφάνεια 41 · ★☆☆ · programming · `slides-lec03-pyth`
+- <a id="a3-5"></a>**[Α3.5](../../questions/slides/slides-lec03-leibniz-pi.md)** Προσέγγιση του π με τη σειρά Leibniz: Διάλεξη 3: Συναρτήσεις, διαφάνεια 44 · ★★☆ · programming · `slides-lec03-leibniz-pi`
 - <a id="a3-6"></a>**[Α3.6](../../questions/slides/slides-lec03-overflow.md)** Υπερχείλιση ακεραίων: Διάλεξη 3: Συναρτήσεις, διαφάνεια 8 · ★★☆ · trace · `slides-lec03-overflow`
 
 ### Εργαστήριο (Α3.7)

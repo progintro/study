@@ -3,9 +3,9 @@ id: slides-lec03-pyth
 kind: slides
 title: "Πυθαγόρειο θεώρημα (pyth.c)"
 source:
-  title: "Διάλεξη 3: Συναρτήσεις, διαφάνεια 40"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec03.pdf
-  years: [2025]
+  title: "Διάλεξη 3: Συναρτήσεις, διαφάνεια 41"
+  url: https://progintro.github.io/assets/pdf/lec03.pdf
+  years: [2025, 2026]
 chapters: [3]
 topics: [functions, floating-point, compilation]
 difficulty: 1
