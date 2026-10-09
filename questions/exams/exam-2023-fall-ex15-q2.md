@@ -9,6 +9,7 @@ source:
 chapters: [6, 2, 4]
 topics: [loops, input-output, computers, command-line-args]
 difficulty: 2
+level: 2
 type: programming
 ---
 

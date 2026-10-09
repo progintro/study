@@ -9,6 +9,7 @@ source:
 chapters: [2, 5]
 topics: [integer-representation, bitwise, loops]
 difficulty: 3
+level: 2
 type: programming
 ---
 

@@ -9,6 +9,7 @@ source:
 chapters: [4, 12]
 topics: [bitwise, command-line-args]
 difficulty: 1
+level: 2
 type: programming
 ---
 

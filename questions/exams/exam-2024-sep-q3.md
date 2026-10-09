@@ -9,6 +9,7 @@ source:
 chapters: [17, 15]
 topics: [searching, complexity, floating-point]
 difficulty: 2
+level: 1
 type: programming
 ---
 

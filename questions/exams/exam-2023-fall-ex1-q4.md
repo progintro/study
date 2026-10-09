@@ -9,6 +9,7 @@ source:
 chapters: [13, 21]
 topics: [dynamic-memory, memory-model, linked-lists, debugging]
 difficulty: 2
+level: 3
 type: debug
 ---
 

@@ -9,6 +9,7 @@ source:
 chapters: [14, 8]
 topics: [problem-solving, strings, loops]
 difficulty: 2
+level: 2
 type: programming
 ---
 

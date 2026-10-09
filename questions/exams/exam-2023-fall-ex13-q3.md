@@ -9,6 +9,7 @@ source:
 chapters: [19, 17, 18]
 topics: [structs, sorting, files, strings]
 difficulty: 3
+level: 3
 type: programming
 ---
 

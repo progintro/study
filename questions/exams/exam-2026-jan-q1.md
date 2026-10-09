@@ -9,6 +9,7 @@ source:
 chapters: [5, 6]
 topics: [bitwise, operators, loops]
 difficulty: 1
+level: 1
 type: trace
 ---
 

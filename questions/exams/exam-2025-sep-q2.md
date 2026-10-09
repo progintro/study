@@ -9,6 +9,7 @@ source:
 chapters: [14, 12]
 topics: [strings, pointer-arithmetic, pointers]
 difficulty: 1
+level: 1
 type: trace
 ---
 

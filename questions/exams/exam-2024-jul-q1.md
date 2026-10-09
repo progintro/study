@@ -9,6 +9,7 @@ source:
 chapters: [9, 2]
 topics: [input-output, loops, integer-representation]
 difficulty: 1
+level: 2
 type: programming
 ---
 

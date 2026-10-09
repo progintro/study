@@ -9,6 +9,7 @@ source:
 chapters: [14, 12]
 topics: [strings, command-line-args, arrays]
 difficulty: 3
+level: 3
 type: programming
 ---
 

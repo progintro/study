@@ -9,6 +9,7 @@ source:
 chapters: [18, 14, 13]
 topics: [files, strings, dynamic-memory, command-line-args]
 difficulty: 2
+level: 3
 type: programming
 ---
 

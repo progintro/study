@@ -9,6 +9,7 @@ source:
 chapters: [16, 10]
 topics: [math-algorithms, arrays, loops]
 difficulty: 2
+level: 2
 type: programming
 ---
 

@@ -9,6 +9,7 @@ source:
 chapters: [12, 18, 13]
 topics: [multidim-arrays, files, dynamic-memory]
 difficulty: 2
+level: 3
 type: programming
 ---
 

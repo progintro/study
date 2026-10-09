@@ -9,6 +9,7 @@ source:
 chapters: [21, 13, 15]
 topics: [linked-lists, dynamic-memory, complexity]
 difficulty: 2
+level: 3
 type: programming
 ---
 

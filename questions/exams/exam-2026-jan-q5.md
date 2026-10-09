@@ -9,6 +9,7 @@ source:
 chapters: [25, 12, 22]
 topics: [graphs, multidim-arrays, input-validation, complexity]
 difficulty: 3
+level: 4
 type: programming
 ---
 

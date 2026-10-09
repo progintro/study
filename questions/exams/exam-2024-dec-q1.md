@@ -9,6 +9,7 @@ source:
 chapters: [6, 3, 4]
 topics: [loops, floating-point, command-line-args]
 difficulty: 1
+level: 2
 type: programming
 ---
 

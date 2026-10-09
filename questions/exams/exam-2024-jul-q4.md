@@ -9,6 +9,7 @@ source:
 chapters: [22, 11, 15]
 topics: [trees, recursion, complexity]
 difficulty: 2
+level: 3
 type: programming
 ---
 

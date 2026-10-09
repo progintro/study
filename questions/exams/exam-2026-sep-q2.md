@@ -9,6 +9,7 @@ source:
 chapters: [10, 25]
 topics: [arrays, loops, undefined-behavior]
 difficulty: 1
+level: 1
 type: trace
 ---
 

@@ -9,6 +9,7 @@ source:
 chapters: [17, 19, 12]
 topics: [sorting, structs, command-line-args, floating-point]
 difficulty: 2
+level: 3
 type: programming
 ---
 

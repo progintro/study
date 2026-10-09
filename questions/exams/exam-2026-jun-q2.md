@@ -9,6 +9,7 @@ source:
 chapters: [10, 2]
 topics: [arrays, strings, undefined-behavior, types]
 difficulty: 2
+level: 1
 type: debug
 ---
 

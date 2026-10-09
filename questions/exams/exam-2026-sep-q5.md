@@ -9,6 +9,7 @@ source:
 chapters: [25, 15, 13]
 topics: [complexity, arrays, problem-solving]
 difficulty: 3
+level: 4
 type: programming
 ---
 

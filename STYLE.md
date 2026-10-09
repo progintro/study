@@ -246,6 +246,7 @@ source:
 chapters: [14, 12]
 topics: [strings, pointers]
 difficulty: 2
+level: 1
 type: programming
 ---
 
@@ -266,6 +267,20 @@ type: programming
   primary chapter**, where most of the needed material is taught. List others only if
   the question genuinely needs them.
 - `difficulty`: 1 (direct application), 2 (combines ideas), 3 (exam-hard or longer).
+- `level` (exam questions only, required there): where the question sits on the 1-4 exam
+  scale. The question's position in the exam is a strong hint, but its content decides.
+  `tools/gen-exercises.py` lists every exam question by level in `questions/exam-questions.md`.
+  1. **Short question, not a whole program:** explain or trace given code (what it prints,
+     what a function does), a type, operator or memory question, or a short fragment or
+     function. Usually the first θέματα.
+  2. **Simple complete program with input:** a whole program that reads its data from
+     stdin or argv and does simple processing on it, with one loop or a simple double loop.
+     Usually Θέμα 3.
+  3. **Data structures and dynamic memory:** a program built around a data structure
+     (linked lists, trees, ...) with heap allocation (`malloc`/`free`) and the pointer
+     handling that goes with it.
+  4. **The hardest θέμα:** usually the last one. Larger programs that may combine the above
+     with file handling or need dynamic programming or another non-obvious algorithm.
 - `type` is one of:
   - `programming`: write a program or function
   - `short-answer`: explain or define

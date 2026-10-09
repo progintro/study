@@ -22,6 +22,7 @@
   <a href="downloads/study.pdf">Ολόκληρος ο οδηγός (PDF)</a>
   <a href="downloads/study-md.zip">Ολόκληρος ο οδηγός (Markdown)</a>
   <a href="questions/">Τράπεζα ασκήσεων</a>
+  <a href="questions/exam-questions.html">Θέματα εξετάσεων</a>
   <a href="glossary.html">Γλωσσάριο</a>
   <a href="https://github.com/progintro/study">GitHub</a>
 </p>

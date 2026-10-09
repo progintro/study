@@ -9,6 +9,7 @@ source:
 chapters: [18, 13, 14]
 topics: [sorting, files, strings, dynamic-memory]
 difficulty: 3
+level: 3
 type: programming
 ---
 

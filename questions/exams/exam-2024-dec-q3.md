@@ -9,6 +9,7 @@ source:
 chapters: [25, 17, 13]
 topics: [sorting, complexity, dynamic-memory, problem-solving]
 difficulty: 3
+level: 4
 type: programming
 ---
 

@@ -9,6 +9,7 @@ source:
 chapters: [12, 18]
 topics: [multidim-arrays, files, simulation]
 difficulty: 2
+level: 3
 type: programming
 ---
 
