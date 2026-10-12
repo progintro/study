@@ -3,9 +3,9 @@ id: slides-lec04-max-conditional
 kind: slides
 title: "Συνάρτηση max με τον τελεστή συνθήκης"
 source:
-  title: "Διάλεξη 4: Git και Τελεστές, διαφάνεια 31"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec04.pdf
-  years: [2025]
+  title: "Διάλεξη 4: Git και Τελεστές, διαφάνεια 23"
+  url: https://progintro.github.io/assets/pdf/lec04.pdf
+  years: [2025, 2026]
 chapters: [4, 3]
 topics: [operators, functions]
 difficulty: 1

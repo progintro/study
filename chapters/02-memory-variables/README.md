@@ -775,7 +775,7 @@ tab και `\\` μια `\`.
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - **[Α3.8](../../questions/exams/exam-2024-sep-q1.md)** Η συνάρτηση about: Εξέταση Σεπτεμβρίου 2024, Θέμα 1 · ★☆☆ · programming · `exam-2024-sep-q1`
-- **[Α3.3](../../questions/slides/slides-lec03-power-outage.md)** Διακοπή ρεύματος και μνήμη: Διάλεξη 3: Συναρτήσεις, διαφάνεια 3 · ★☆☆ · multiple-choice · `slides-lec03-power-outage`
+- **[Α3.3](../../questions/slides/slides-lec03-power-outage.md)** Διακοπή ρεύματος και μνήμη: Διάλεξη 3 (2025-26): Συναρτήσεις, διαφάνεια 3 · ★☆☆ · multiple-choice · `slides-lec03-power-outage`
 - **[Α6.23](../../questions/exams/exam-2023-fall-ex15-q2.md)** Τυπώνοντας τον Πίνακα ASCII: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #15, Θέμα 2 · ★★☆ · programming · `exam-2023-fall-ex15-q2`
 - **[Α6.16](../../questions/exams/exam-2023-fall-ex6-q1.md)** Μέγιστος Κοινός Διαιρέτης: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 1 · ★☆☆ · programming · `exam-2023-fall-ex6-q1`
 - **[Α6.18](../../questions/exams/exam-2025-sep-q1.md)** Mystery: Εξέταση Σεπτεμβρίου 2025, Θέμα 1 · ★☆☆ · trace · `exam-2025-sep-q1`

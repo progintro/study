@@ -670,7 +670,7 @@ Pi is approximately: 3.141583
 
 - <a id="a3-1"></a>**[Α3.1](../../questions/slides/slides-lec03-function-call.md)** Τιμή μετά από κλήση συνάρτησης: Διάλεξη 3: Συναρτήσεις, διαφάνεια 37 · ★☆☆ · trace · `slides-lec03-function-call`
 - <a id="a3-2"></a>**[Α3.2](../../questions/slides/slides-lec03-int-size.md)** Πόσα bytes είναι ένας int;: Διάλεξη 3: Συναρτήσεις, διαφάνεια 9 · ★☆☆ · short-answer · `slides-lec03-int-size`
-- <a id="a3-3"></a>**[Α3.3](../../questions/slides/slides-lec03-power-outage.md)** Διακοπή ρεύματος και μνήμη: Διάλεξη 3: Συναρτήσεις, διαφάνεια 3 · ★☆☆ · multiple-choice · `slides-lec03-power-outage`
+- <a id="a3-3"></a>**[Α3.3](../../questions/slides/slides-lec03-power-outage.md)** Διακοπή ρεύματος και μνήμη: Διάλεξη 3 (2025-26): Συναρτήσεις, διαφάνεια 3 · ★☆☆ · multiple-choice · `slides-lec03-power-outage`
 - <a id="a3-4"></a>**[Α3.4](../../questions/slides/slides-lec03-pyth.md)** Πυθαγόρειο θεώρημα (pyth.c): Διάλεξη 3: Συναρτήσεις, διαφάνεια 41 · ★☆☆ · programming · `slides-lec03-pyth`
 - <a id="a3-5"></a>**[Α3.5](../../questions/slides/slides-lec03-leibniz-pi.md)** Προσέγγιση του π με τη σειρά Leibniz: Διάλεξη 3: Συναρτήσεις, διαφάνεια 44 · ★★☆ · programming · `slides-lec03-leibniz-pi`
 - <a id="a3-6"></a>**[Α3.6](../../questions/slides/slides-lec03-overflow.md)** Υπερχείλιση ακεραίων: Διάλεξη 3: Συναρτήσεις, διαφάνεια 8 · ★★☆ · trace · `slides-lec03-overflow`
@@ -685,9 +685,9 @@ Pi is approximately: 3.141583
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
-- **[Α4.4](../../questions/slides/slides-lec04-grade-program.md)** Υπολογισμός βαθμολογίας πρωτοετών: Διάλεξη 4: Git και Τελεστές, διαφάνεια 8 · ★☆☆ · programming · `slides-lec04-grade-program`
-- **[Α4.5](../../questions/slides/slides-lec04-max-conditional.md)** Συνάρτηση max με τον τελεστή συνθήκης: Διάλεξη 4: Git και Τελεστές, διαφάνεια 31 · ★☆☆ · programming · `slides-lec04-max-conditional`
-- **[Α4.8](../../questions/slides/slides-lec04-operators-as-functions.md)** Τελεστές ως συναρτήσεις: Διάλεξη 4: Git και Τελεστές, διαφάνειες 21 και 25 · ★☆☆ · short-answer · `slides-lec04-operators-as-functions`
+- **[Α4.4](../../questions/slides/slides-lec04-grade-program.md)** Υπολογισμός βαθμολογίας πρωτοετών: Διάλεξη 4 (2025-26): Git και Τελεστές, διαφάνεια 8 · ★☆☆ · programming · `slides-lec04-grade-program`
+- **[Α4.5](../../questions/slides/slides-lec04-max-conditional.md)** Συνάρτηση max με τον τελεστή συνθήκης: Διάλεξη 4: Git και Τελεστές, διαφάνεια 23 · ★☆☆ · programming · `slides-lec04-max-conditional`
+- **[Α4.8](../../questions/slides/slides-lec04-operators-as-functions.md)** Τελεστές ως συναρτήσεις: Διάλεξη 4: Git και Τελεστές, διαφάνειες 15 και 19 · ★☆☆ · short-answer · `slides-lec04-operators-as-functions`
 - **[Α5.7](../../questions/slides/slides-lec05-ternary-max.md)** Συνάρτηση max με τον τελεστή συνθήκης: Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 13 · ★☆☆ · programming · `slides-lec05-ternary-max`
 - **[Α6.20](../../questions/exams/exam-2023-dec-q1.md)** Κάντο όπως ο Βιετά: Κατατακτήριες Δεκεμβρίου 2023, Θέμα 1 · ★★☆ · programming · `exam-2023-dec-q1`
 - **[Α6.21](../../questions/exams/exam-2023-fall-ex10-q2.md)** Ασημένιο Κλάσμα: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 2 · ★★☆ · programming · `exam-2023-fall-ex10-q2`

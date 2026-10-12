@@ -3,7 +3,7 @@ id: slides-lec04-msb
 kind: slides
 title: "Απομόνωση του πιο σημαντικού bit"
 source:
-  title: "Διάλεξη 4: Git και Τελεστές, διαφάνεια 29"
+  title: "Διάλεξη 4 (2025-26): Git και Τελεστές, διαφάνεια 29"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec04.pdf
   years: [2025]
 chapters: [4]

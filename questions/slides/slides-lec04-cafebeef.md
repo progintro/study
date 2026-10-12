@@ -3,7 +3,7 @@ id: slides-lec04-cafebeef
 kind: slides
 title: "Η τιμή του 0xbeef | 0xcafe0000"
 source:
-  title: "Διάλεξη 4: Git και Τελεστές, διαφάνεια 30"
+  title: "Διάλεξη 4 (2025-26): Git και Τελεστές, διαφάνεια 30"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec04.pdf
   years: [2025]
 chapters: [4]
