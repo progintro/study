@@ -4,8 +4,8 @@ kind: slides
 title: "Πόσα bytes είναι ένας int;"
 source:
   title: "Διάλεξη 3: Συναρτήσεις, διαφάνεια 9"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec03.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec03.pdf
+  years: [2025, 2026]
 chapters: [3]
 topics: [types]
 difficulty: 1

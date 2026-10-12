@@ -650,7 +650,7 @@ echo -e "2856\n0\nf\n" | ./aliquot | ttyplot
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - **[Α2.11](../../questions/labs/lab-lab04-printchar.md)** Εκτύπωση χαρακτήρων: Εργαστήριο 4, Άσκηση 1 · ★☆☆ · programming · `lab-lab04-printchar`
-- **[Α3.5](../../questions/slides/slides-lec03-leibniz-pi.md)** Προσέγγιση του π με τη σειρά Leibniz: Διάλεξη 3: Συναρτήσεις, διαφάνεια 43 · ★★☆ · programming · `slides-lec03-leibniz-pi`
+- **[Α3.5](../../questions/slides/slides-lec03-leibniz-pi.md)** Προσέγγιση του π με τη σειρά Leibniz: Διάλεξη 3: Συναρτήσεις, διαφάνεια 44 · ★★☆ · programming · `slides-lec03-leibniz-pi`
 - **[Α5.9](../../questions/exams/exam-2025-jan-q1.md)** Mystery: Εξέταση Ιανουαρίου 2025, Θέμα 1 · ★☆☆ · trace · `exam-2025-jan-q1`
 - **[Α5.10](../../questions/exams/exam-2026-jan-q1.md)** Mystery: Εξέταση Ιανουαρίου 2026, Θέμα 1 · ★☆☆ · trace · `exam-2026-jan-q1`
 - **[Α5.11](../../questions/exams/exam-2026-jun-q1.md)** Η συνάρτηση mystery: Εξέταση Ιουνίου 2026, Θέμα 1 · ★☆☆ · trace · `exam-2026-jun-q1`

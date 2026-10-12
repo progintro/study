@@ -133,8 +133,8 @@
 - **[Α3.1](../questions/slides/slides-lec03-function-call.md)** Τιμή μετά από κλήση συνάρτησης: Διάλεξη 3: Συναρτήσεις, διαφάνεια 37 · ★☆☆ · trace · `slides-lec03-function-call`
 - **[Α3.2](../questions/slides/slides-lec03-int-size.md)** Πόσα bytes είναι ένας int;: Διάλεξη 3: Συναρτήσεις, διαφάνεια 9 · ★☆☆ · short-answer · `slides-lec03-int-size`
 - **[Α3.3](../questions/slides/slides-lec03-power-outage.md)** Διακοπή ρεύματος και μνήμη: Διάλεξη 3: Συναρτήσεις, διαφάνεια 3 · ★☆☆ · multiple-choice · `slides-lec03-power-outage`
-- **[Α3.4](../questions/slides/slides-lec03-pyth.md)** Πυθαγόρειο θεώρημα (pyth.c): Διάλεξη 3: Συναρτήσεις, διαφάνεια 40 · ★☆☆ · programming · `slides-lec03-pyth`
-- **[Α3.5](../questions/slides/slides-lec03-leibniz-pi.md)** Προσέγγιση του π με τη σειρά Leibniz: Διάλεξη 3: Συναρτήσεις, διαφάνεια 43 · ★★☆ · programming · `slides-lec03-leibniz-pi`
+- **[Α3.4](../questions/slides/slides-lec03-pyth.md)** Πυθαγόρειο θεώρημα (pyth.c): Διάλεξη 3: Συναρτήσεις, διαφάνεια 41 · ★☆☆ · programming · `slides-lec03-pyth`
+- **[Α3.5](../questions/slides/slides-lec03-leibniz-pi.md)** Προσέγγιση του π με τη σειρά Leibniz: Διάλεξη 3: Συναρτήσεις, διαφάνεια 44 · ★★☆ · programming · `slides-lec03-leibniz-pi`
 - **[Α3.6](../questions/slides/slides-lec03-overflow.md)** Υπερχείλιση ακεραίων: Διάλεξη 3: Συναρτήσεις, διαφάνεια 8 · ★★☆ · trace · `slides-lec03-overflow`
 
 ### Εργαστήριο (Α3.7)
