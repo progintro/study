@@ -1,48 +1,47 @@
 lecture: 4
-pages: 44
+year: 2026-27                     # updated from the 2025-26 deck (44 pages) on 2026-10-12; see the first issue for the page mapping
+slides: https://progintro.github.io/assets/pdf/lec04.pdf
+pages: 36
 outline:
-  - {pages: "1-4", section: "Pair programming"}  # title, announcements, recap, agenda
-  - {pages: "5-7", section: "Pair programming"}
-  - {pages: "8-9", section: "Πρόγραμμα υπολογισμού βαθμολογίας"}  # in Παραδείγματα
-  - {pages: "10", section: "Ορίσματα της main: argc, argv και atoi"}
-  - {pages: "11-12", section: "Version control"}
-  - {pages: "13-19", section: "Git και GitHub"}
-  - {pages: "15-18", section: "Ο κύκλος του git βήμα προς βήμα"}  # in Παραδείγματα
-  - {pages: "20", section: "Κατηγοριοποίηση των τελεστών"}
-  - {pages: "21-22", section: "Τελεστής και τελεστέος"}
-  - {pages: "23-24", section: "Κατηγοριοποίηση των τελεστών"}
-  - {pages: "25", section: "Αριθμητικοί τελεστές"}
-  - {pages: "26", section: "Συγκριτικοί τελεστές"}
-  - {pages: "27", section: "Λογικοί τελεστές"}
-  - {pages: "28-30", section: "Bitwise τελεστές"}
-  - {pages: "31", section: "Τελεστής συνθήκης"}
-  - {pages: "32-33", section: "Τελεστής μετατροπής και σιωπηρή μετατροπή τύπων"}
-  - {pages: "34", section: "Τελεστής ανάθεσης"}
-  - {pages: "35", section: "Συνδυαστικοί τελεστές ανάθεσης"}
-  - {pages: "36", section: "Τελεστές αύξησης και μείωσης"}
-  - {pages: "37", section: "Τελεστής παράθεσης"}
-  - {pages: "38", section: "Πρόγραμμα υπολογισμού βαθμολογίας"}  # revisited before precedence
-  - {pages: "39-41", section: "Προτεραιότητα και προσεταιριστικότητα"}
-  - {pages: "42-44", section: "Προτεραιότητα και προσεταιριστικότητα"}  # Kahoot, next time, closing
+  - {pages: "1-4", section: "Version control"}  # title, announcements (N/A), recap, agenda
+  - {pages: "5-6", section: "Version control"}
+  - {pages: "7-13", section: "Git και GitHub"}
+  - {pages: "9-12", section: "Ο κύκλος του git βήμα προς βήμα"}  # in Παραδείγματα
+  - {pages: "14", section: "Κατηγοριοποίηση των τελεστών"}
+  - {pages: "15-16", section: "Τελεστής και τελεστέος"}
+  - {pages: "17-18", section: "Κατηγοριοποίηση των τελεστών"}
+  - {pages: "19", section: "Αριθμητικοί τελεστές"}
+  - {pages: "20", section: "Συγκριτικοί τελεστές"}
+  - {pages: "21", section: "Λογικοί τελεστές"}
+  - {pages: "22", section: "Bitwise τελεστές"}
+  - {pages: "23", section: "Τελεστής συνθήκης"}
+  - {pages: "24-25", section: "Τελεστής μετατροπής και σιωπηρή μετατροπή τύπων"}
+  - {pages: "26", section: "Τελεστής ανάθεσης"}
+  - {pages: "27", section: "Συνδυαστικοί τελεστές ανάθεσης"}
+  - {pages: "28", section: "Τελεστές αύξησης και μείωσης"}
+  - {pages: "29", section: "Τελεστής παράθεσης"}
+  - {pages: "30", section: "Πρόγραμμα υπολογισμού βαθμολογίας"}  # revisited before precedence
+  - {pages: "31-33", section: "Προτεραιότητα και προσεταιριστικότητα"}
+  - {pages: "34-36", section: "Προτεραιότητα και προσεταιριστικότητα"}  # Kahoot, next time, closing
 pointers:
-  - {page: 5, text: "Wikipedia: Software development, Computer programmer, Source code, Code review (links in the pair programming definition)"}
-  - {page: 6, text: "Jeff Dean quote (https://www.brainyquote.com/authors/jeff-dean-quotes)"}
-  - {page: 9, text: "Comment in the grade program: https://progintro.github.io (grading rules)"}
-  - {page: 13, text: "Wikipedia: Git (https://en.wikipedia.org/wiki/Git)"}
-  - {page: 13, text: "GitHub: https://github.com/"}
-  - {page: 15, text: "git clone git@github.com:progintro/hw0-barbouni-2005.git; SSH key and configuration as in Φυλλάδιο 1 του εργαστηρίου (lab01, Βήμα 6)"}
-  - {page: 23, text: "Wikipedia: Arity (https://en.wikipedia.org/wiki/Arity)"}
-  - {page: 37, text: "Wikipedia: Comma operator (https://en.wikipedia.org/wiki/Comma_operator)"}
-  - {page: 43, text: "Σημειώσεις κ. Σταματόπουλου: όλα μέχρι τη σελίδα 43 (K04)"}
-  - {page: 43, text: "Type conversion (https://www.geeksforgeeks.org/type-conversion-c/)"}
-  - {page: 43, text: "List of operators (https://www.tutorialspoint.com/cprogramming/c_operators.htm)"}
-  - {page: 43, text: "lvalues and rvalues (https://en.wikipedia.org/wiki/Value_(computer_science))"}
-  - {page: 43, text: "Precedence and associativity (https://en.cppreference.com/w/c/language/operator_precedence)"}
-  - {page: 43, text: "Προαιρετικό: Git Cheat Sheet (https://education.github.com/git-cheat-sheet-education.pdf)"}
-  - {page: 43, text: "Προαιρετικό: Git Tutorial (https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)"}
-  - {page: 43, text: "Jeff and Sanjay (https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge)"}
+  - {page: 7, text: "Wikipedia: Git (https://en.wikipedia.org/wiki/Git)"}
+  - {page: 7, text: "GitHub: https://github.com/"}
+  - {page: 9, text: "git clone git@github.com:progintro/hw0-2026-barbouni-2005.git; SSH key and configuration as in Φυλλάδιο 0 του εργαστηρίου"}
+  - {page: 17, text: "Wikipedia: Arity (https://en.wikipedia.org/wiki/Arity)"}
+  - {page: 29, text: "Wikipedia: Comma operator (https://en.wikipedia.org/wiki/Comma_operator)"}
+  - {page: 35, text: "Σημειώσεις κ. Σταματόπουλου: όλα μέχρι τη σελίδα 43 (K04)"}
+  - {page: 35, text: "Type conversion (https://www.geeksforgeeks.org/type-conversion-c/)"}
+  - {page: 35, text: "List of operators (https://www.tutorialspoint.com/cprogramming/c_operators.htm)"}
+  - {page: 35, text: "lvalues and rvalues (https://en.wikipedia.org/wiki/Value_(computer_science))"}
+  - {page: 35, text: "Precedence and associativity (https://en.cppreference.com/w/c/language/operator_precedence)"}
+  - {page: 35, text: "Προαιρετικό: Git Cheat Sheet (https://education.github.com/git-cheat-sheet-education.pdf)"}
+  - {page: 35, text: "Προαιρετικό: Git Tutorial (https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)"}
+  - {page: 35, text: "Jeff and Sanjay (https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge)"}
+  - {page: 5, text: "2025-26 deck only (pair programming, now Διάλεξη 3 2026-27 pp. 38-39): Wikipedia: Software development, Computer programmer, Source code, Code review"}
+  - {page: 9, text: "2025-26 deck only (grade program): comment with https://progintro.github.io (grading rules)"}
 takeaways_slide: null
 issues:
+  - "2026-27 deck vs 2025-26 (44 pages): the title drops 'Live Coding'; pair programming (2025 pp. 5-7) moved to lecture 3 (2026 pp. 38-40); the grade program with argc/argv/atoi (2025 pp. 8-10) and the bitwise questions (2025 pp. 29-30, slides-lec04-msb and slides-lec04-cafebeef) were removed; the clone example is now hw0-2026-barbouni-2005 and points to Φυλλάδιο 0. Page mapping: 2025 pp. 1-4 = 2026 pp. 1-4, 2025 pp. 11-28 = 2026 pp. 5-22, 2025 pp. 31-44 = 2026 pp. 23-36. The chapter keeps the removed material; the four questions from removed slides cite the 2025-26 deck. Page numbers in the issues below are 2025-26."
   - "No explicit key-takeaways slide; the red callouts (p. 20 'Don't forget to add your files', p. 27 zero = false, p. 32 truncation not rounding, p. 40 use parentheses) were treated as takeaways."
   - "p. 2 announces that 'η Εργασία' (hw0) comes out that day; not a concept, omitted. p. 3 recap and p. 4 agenda are not separate sections."
   - "p. 7 (volunteers) and p. 8-9 are live coding; the grade program on p. 9/38 is 'μια περσινή λύση'. Its terminal output (79, usage message) was produced by compiling it locally, not transcribed from the slides."

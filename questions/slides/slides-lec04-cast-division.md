@@ -3,9 +3,9 @@ id: slides-lec04-cast-division
 kind: slides
 title: "Τι επιστρέφει το (double)3/4;"
 source:
-  title: "Διάλεξη 4: Git και Τελεστές, διαφάνεια 32"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec04.pdf
-  years: [2025]
+  title: "Διάλεξη 4: Git και Τελεστές, διαφάνεια 24"
+  url: https://progintro.github.io/assets/pdf/lec04.pdf
+  years: [2025, 2026]
 chapters: [4]
 topics: [operators, types, precedence]
 difficulty: 2

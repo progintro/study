@@ -3,9 +3,9 @@ layout: chapter
 chapter: 4
 lecture: 4
 title: "Git και Τελεστές"
-date: 2025-10-13
+date: 2026-10-12
 part: A
-slides: https://github.com/progintro/progintro.github.io/releases/download/2025/lec04.pdf
+slides: https://progintro.github.io/assets/pdf/lec04.pdf
 prev: 03-functions
 next: 05-operators-statements
 topics: [git, operators, bitwise, precedence, types, command-line-args]
@@ -571,12 +571,12 @@ int max(int a, int b) {
 
 ## Διάβασμα
 
-- **Διαφάνειες:** [Διάλεξη 4](https://github.com/progintro/progintro.github.io/releases/download/2025/lec04.pdf), σελ. 1–44. Pair programming: σελ. 5–7· πρόγραμμα βαθμολογίας και `argc`/`argv`/`atoi`: σελ. 8–10, 38· version control και git: σελ. 11–19· τελεστές: σελ. 20–37· προτεραιότητα και προσεταιριστικότητα: σελ. 39–41.
+- **Διαφάνειες:** [Διάλεξη 4](https://progintro.github.io/assets/pdf/lec04.pdf) (2026-27), σελ. 1–36. Version control και git: σελ. 5–13· τελεστές: σελ. 14–29· το πρόγραμμα βαθμολογίας ξανά: σελ. 30· προτεραιότητα και προσεταιριστικότητα: σελ. 31–33. Το pair programming παρουσιάζεται φέτος στη [Διάλεξη 3](https://progintro.github.io/assets/pdf/lec03.pdf), σελ. 38–40. Το πρόγραμμα βαθμολογίας με τα `argc`/`argv`/`atoi` και δύο ερωτήσεις για bitwise τελεστές υπάρχουν μόνο στις διαφάνειες του 2025-26: [Διάλεξη 4 (2025)](https://github.com/progintro/progintro.github.io/releases/download/2025/lec04.pdf), σελ. 8–10 και 29–30.
 - **Σημειώσεις:** [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Εντολές αντικατάστασης, τελεστές και παραστάσεις» (K04, σελ. 34–43). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι τη σελίδα 43, δηλαδή ολόκληρη αυτή την ενότητα.
 - **Εργαστήριο:** [Εργαστήριο 1](https://progintro.github.io/lab-material/labs/lab01/): «Βήμα 6: Git και GitHub» (λογαριασμός, κλειδί SSH, `git config`) και «Άσκηση 1: Το πρώτο σας repository (info.txt)».
 - **Βιβλίο:** K&R, §2.5–§2.12, όπως προτείνουν οι σημειώσεις.
 - **Άλλα:**
-  - Wikipedia (σελ. 5): [Software development](https://en.wikipedia.org/wiki/Software_development), [Computer programmer](https://en.wikipedia.org/wiki/Computer_programmer), [Source code](https://en.wikipedia.org/wiki/Source_code), [Code review](https://en.wikipedia.org/wiki/Code_review)
+  - Wikipedia (Διάλεξη 3, σελ. 38): [Software development](https://en.wikipedia.org/wiki/Software_development), [Computer programmer](https://en.wikipedia.org/wiki/Computer_programmer), [Source code](https://en.wikipedia.org/wiki/Source_code), [Code review](https://en.wikipedia.org/wiki/Code_review)
   - Wikipedia: [Git](https://en.wikipedia.org/wiki/Git), [Arity](https://en.wikipedia.org/wiki/Arity), [Comma operator](https://en.wikipedia.org/wiki/Comma_operator), [Value (lvalues και rvalues)](https://en.wikipedia.org/wiki/Value_(computer_science))
   - [Type conversion in C](https://www.geeksforgeeks.org/type-conversion-c/), [List of operators](https://www.tutorialspoint.com/cprogramming/c_operators.htm), [Precedence and associativity (cppreference)](https://en.cppreference.com/w/c/language/operator_precedence)
   - Προαιρετικά: [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf), [Git Tutorial](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
@@ -656,16 +656,16 @@ int max(int a, int b) {
 
 ### Ζέσταμα: από τις διαφάνειες (Α4.1–Α4.10)
 
-- <a id="a4-1"></a>**[Α4.1](../../questions/slides/slides-lec04-cafebeef.md)** Η τιμή του 0xbeef | 0xcafe0000: Διάλεξη 4: Git και Τελεστές, διαφάνεια 30 · ★☆☆ · multiple-choice · `slides-lec04-cafebeef`
-- <a id="a4-2"></a>**[Α4.2](../../questions/slides/slides-lec04-git-cycle.md)** Ο κύκλος clone, add, commit, push, pull: Διάλεξη 4: Git και Τελεστές, διαφάνειες 15-18 · ★☆☆ · tooling · `slides-lec04-git-cycle`
-- <a id="a4-3"></a>**[Α4.3](../../questions/slides/slides-lec04-grade-adjustment.md)** Κανόνας αναπροσαρμογής βαθμού ασκήσεων: Διάλεξη 4: Git και Τελεστές, διαφάνεια 8 · ★☆☆ · programming · `slides-lec04-grade-adjustment`
-- <a id="a4-4"></a>**[Α4.4](../../questions/slides/slides-lec04-grade-program.md)** Υπολογισμός βαθμολογίας πρωτοετών: Διάλεξη 4: Git και Τελεστές, διαφάνεια 8 · ★☆☆ · programming · `slides-lec04-grade-program`
-- <a id="a4-5"></a>**[Α4.5](../../questions/slides/slides-lec04-max-conditional.md)** Συνάρτηση max με τον τελεστή συνθήκης: Διάλεξη 4: Git και Τελεστές, διαφάνεια 31 · ★☆☆ · programming · `slides-lec04-max-conditional`
-- <a id="a4-6"></a>**[Α4.6](../../questions/slides/slides-lec04-msb.md)** Απομόνωση του πιο σημαντικού bit: Διάλεξη 4: Git και Τελεστές, διαφάνεια 29 · ★☆☆ · multiple-choice · `slides-lec04-msb`
-- <a id="a4-7"></a>**[Α4.7](../../questions/slides/slides-lec04-operator-arity.md)** Τι τύπου τελεστές είναι;: Διάλεξη 4: Git και Τελεστές, διαφάνειες 25-28 και 31 · ★☆☆ · short-answer · `slides-lec04-operator-arity`
-- <a id="a4-8"></a>**[Α4.8](../../questions/slides/slides-lec04-operators-as-functions.md)** Τελεστές ως συναρτήσεις: Διάλεξη 4: Git και Τελεστές, διαφάνειες 21 και 25 · ★☆☆ · short-answer · `slides-lec04-operators-as-functions`
-- <a id="a4-9"></a>**[Α4.9](../../questions/slides/slides-lec04-precedence.md)** Προτεραιότητα και προσεταιριστικότητα: Διάλεξη 4: Git και Τελεστές, διαφάνεια 39 · ★☆☆ · trace · `slides-lec04-precedence`
-- <a id="a4-10"></a>**[Α4.10](../../questions/slides/slides-lec04-cast-division.md)** Τι επιστρέφει το (double)3/4;: Διάλεξη 4: Git και Τελεστές, διαφάνεια 32 · ★★☆ · trace · `slides-lec04-cast-division`
+- <a id="a4-1"></a>**[Α4.1](../../questions/slides/slides-lec04-cafebeef.md)** Η τιμή του 0xbeef | 0xcafe0000: Διάλεξη 4 (2025-26): Git και Τελεστές, διαφάνεια 30 · ★☆☆ · multiple-choice · `slides-lec04-cafebeef`
+- <a id="a4-2"></a>**[Α4.2](../../questions/slides/slides-lec04-git-cycle.md)** Ο κύκλος clone, add, commit, push, pull: Διάλεξη 4: Git και Τελεστές, διαφάνειες 9-12 · ★☆☆ · tooling · `slides-lec04-git-cycle`
+- <a id="a4-3"></a>**[Α4.3](../../questions/slides/slides-lec04-grade-adjustment.md)** Κανόνας αναπροσαρμογής βαθμού ασκήσεων: Διάλεξη 4 (2025-26): Git και Τελεστές, διαφάνεια 8 · ★☆☆ · programming · `slides-lec04-grade-adjustment`
+- <a id="a4-4"></a>**[Α4.4](../../questions/slides/slides-lec04-grade-program.md)** Υπολογισμός βαθμολογίας πρωτοετών: Διάλεξη 4 (2025-26): Git και Τελεστές, διαφάνεια 8 · ★☆☆ · programming · `slides-lec04-grade-program`
+- <a id="a4-5"></a>**[Α4.5](../../questions/slides/slides-lec04-max-conditional.md)** Συνάρτηση max με τον τελεστή συνθήκης: Διάλεξη 4: Git και Τελεστές, διαφάνεια 23 · ★☆☆ · programming · `slides-lec04-max-conditional`
+- <a id="a4-6"></a>**[Α4.6](../../questions/slides/slides-lec04-msb.md)** Απομόνωση του πιο σημαντικού bit: Διάλεξη 4 (2025-26): Git και Τελεστές, διαφάνεια 29 · ★☆☆ · multiple-choice · `slides-lec04-msb`
+- <a id="a4-7"></a>**[Α4.7](../../questions/slides/slides-lec04-operator-arity.md)** Τι τύπου τελεστές είναι;: Διάλεξη 4: Git και Τελεστές, διαφάνειες 19-22 και 23 · ★☆☆ · short-answer · `slides-lec04-operator-arity`
+- <a id="a4-8"></a>**[Α4.8](../../questions/slides/slides-lec04-operators-as-functions.md)** Τελεστές ως συναρτήσεις: Διάλεξη 4: Git και Τελεστές, διαφάνειες 15 και 19 · ★☆☆ · short-answer · `slides-lec04-operators-as-functions`
+- <a id="a4-9"></a>**[Α4.9](../../questions/slides/slides-lec04-precedence.md)** Προτεραιότητα και προσεταιριστικότητα: Διάλεξη 4: Git και Τελεστές, διαφάνεια 31 · ★☆☆ · trace · `slides-lec04-precedence`
+- <a id="a4-10"></a>**[Α4.10](../../questions/slides/slides-lec04-cast-division.md)** Τι επιστρέφει το (double)3/4;: Διάλεξη 4: Git και Τελεστές, διαφάνεια 24 · ★★☆ · trace · `slides-lec04-cast-division`
 
 ### Εργαστήριο (Α4.11)
 

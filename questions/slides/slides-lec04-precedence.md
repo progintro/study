@@ -3,9 +3,9 @@ id: slides-lec04-precedence
 kind: slides
 title: "Προτεραιότητα και προσεταιριστικότητα"
 source:
-  title: "Διάλεξη 4: Git και Τελεστές, διαφάνεια 39"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec04.pdf
-  years: [2025]
+  title: "Διάλεξη 4: Git και Τελεστές, διαφάνεια 31"
+  url: https://progintro.github.io/assets/pdf/lec04.pdf
+  years: [2025, 2026]
 chapters: [4]
 topics: [precedence, operators]
 difficulty: 1

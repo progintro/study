@@ -132,7 +132,7 @@
 
 - **[Α3.1](../questions/slides/slides-lec03-function-call.md)** Τιμή μετά από κλήση συνάρτησης: Διάλεξη 3: Συναρτήσεις, διαφάνεια 37 · ★☆☆ · trace · `slides-lec03-function-call`
 - **[Α3.2](../questions/slides/slides-lec03-int-size.md)** Πόσα bytes είναι ένας int;: Διάλεξη 3: Συναρτήσεις, διαφάνεια 9 · ★☆☆ · short-answer · `slides-lec03-int-size`
-- **[Α3.3](../questions/slides/slides-lec03-power-outage.md)** Διακοπή ρεύματος και μνήμη: Διάλεξη 3: Συναρτήσεις, διαφάνεια 3 · ★☆☆ · multiple-choice · `slides-lec03-power-outage`
+- **[Α3.3](../questions/slides/slides-lec03-power-outage.md)** Διακοπή ρεύματος και μνήμη: Διάλεξη 3 (2025-26): Συναρτήσεις, διαφάνεια 3 · ★☆☆ · multiple-choice · `slides-lec03-power-outage`
 - **[Α3.4](../questions/slides/slides-lec03-pyth.md)** Πυθαγόρειο θεώρημα (pyth.c): Διάλεξη 3: Συναρτήσεις, διαφάνεια 41 · ★☆☆ · programming · `slides-lec03-pyth`
 - **[Α3.5](../questions/slides/slides-lec03-leibniz-pi.md)** Προσέγγιση του π με τη σειρά Leibniz: Διάλεξη 3: Συναρτήσεις, διαφάνεια 44 · ★★☆ · programming · `slides-lec03-leibniz-pi`
 - **[Α3.6](../questions/slides/slides-lec03-overflow.md)** Υπερχείλιση ακεραίων: Διάλεξη 3: Συναρτήσεις, διαφάνεια 8 · ★★☆ · trace · `slides-lec03-overflow`
@@ -161,16 +161,16 @@
 
 ### Ζέσταμα: από τις διαφάνειες (Α4.1–Α4.10)
 
-- **[Α4.1](../questions/slides/slides-lec04-cafebeef.md)** Η τιμή του 0xbeef | 0xcafe0000: Διάλεξη 4: Git και Τελεστές, διαφάνεια 30 · ★☆☆ · multiple-choice · `slides-lec04-cafebeef`
-- **[Α4.2](../questions/slides/slides-lec04-git-cycle.md)** Ο κύκλος clone, add, commit, push, pull: Διάλεξη 4: Git και Τελεστές, διαφάνειες 15-18 · ★☆☆ · tooling · `slides-lec04-git-cycle`
-- **[Α4.3](../questions/slides/slides-lec04-grade-adjustment.md)** Κανόνας αναπροσαρμογής βαθμού ασκήσεων: Διάλεξη 4: Git και Τελεστές, διαφάνεια 8 · ★☆☆ · programming · `slides-lec04-grade-adjustment`
-- **[Α4.4](../questions/slides/slides-lec04-grade-program.md)** Υπολογισμός βαθμολογίας πρωτοετών: Διάλεξη 4: Git και Τελεστές, διαφάνεια 8 · ★☆☆ · programming · `slides-lec04-grade-program`
-- **[Α4.5](../questions/slides/slides-lec04-max-conditional.md)** Συνάρτηση max με τον τελεστή συνθήκης: Διάλεξη 4: Git και Τελεστές, διαφάνεια 31 · ★☆☆ · programming · `slides-lec04-max-conditional`
-- **[Α4.6](../questions/slides/slides-lec04-msb.md)** Απομόνωση του πιο σημαντικού bit: Διάλεξη 4: Git και Τελεστές, διαφάνεια 29 · ★☆☆ · multiple-choice · `slides-lec04-msb`
-- **[Α4.7](../questions/slides/slides-lec04-operator-arity.md)** Τι τύπου τελεστές είναι;: Διάλεξη 4: Git και Τελεστές, διαφάνειες 25-28 και 31 · ★☆☆ · short-answer · `slides-lec04-operator-arity`
-- **[Α4.8](../questions/slides/slides-lec04-operators-as-functions.md)** Τελεστές ως συναρτήσεις: Διάλεξη 4: Git και Τελεστές, διαφάνειες 21 και 25 · ★☆☆ · short-answer · `slides-lec04-operators-as-functions`
-- **[Α4.9](../questions/slides/slides-lec04-precedence.md)** Προτεραιότητα και προσεταιριστικότητα: Διάλεξη 4: Git και Τελεστές, διαφάνεια 39 · ★☆☆ · trace · `slides-lec04-precedence`
-- **[Α4.10](../questions/slides/slides-lec04-cast-division.md)** Τι επιστρέφει το (double)3/4;: Διάλεξη 4: Git και Τελεστές, διαφάνεια 32 · ★★☆ · trace · `slides-lec04-cast-division`
+- **[Α4.1](../questions/slides/slides-lec04-cafebeef.md)** Η τιμή του 0xbeef | 0xcafe0000: Διάλεξη 4 (2025-26): Git και Τελεστές, διαφάνεια 30 · ★☆☆ · multiple-choice · `slides-lec04-cafebeef`
+- **[Α4.2](../questions/slides/slides-lec04-git-cycle.md)** Ο κύκλος clone, add, commit, push, pull: Διάλεξη 4: Git και Τελεστές, διαφάνειες 9-12 · ★☆☆ · tooling · `slides-lec04-git-cycle`
+- **[Α4.3](../questions/slides/slides-lec04-grade-adjustment.md)** Κανόνας αναπροσαρμογής βαθμού ασκήσεων: Διάλεξη 4 (2025-26): Git και Τελεστές, διαφάνεια 8 · ★☆☆ · programming · `slides-lec04-grade-adjustment`
+- **[Α4.4](../questions/slides/slides-lec04-grade-program.md)** Υπολογισμός βαθμολογίας πρωτοετών: Διάλεξη 4 (2025-26): Git και Τελεστές, διαφάνεια 8 · ★☆☆ · programming · `slides-lec04-grade-program`
+- **[Α4.5](../questions/slides/slides-lec04-max-conditional.md)** Συνάρτηση max με τον τελεστή συνθήκης: Διάλεξη 4: Git και Τελεστές, διαφάνεια 23 · ★☆☆ · programming · `slides-lec04-max-conditional`
+- **[Α4.6](../questions/slides/slides-lec04-msb.md)** Απομόνωση του πιο σημαντικού bit: Διάλεξη 4 (2025-26): Git και Τελεστές, διαφάνεια 29 · ★☆☆ · multiple-choice · `slides-lec04-msb`
+- **[Α4.7](../questions/slides/slides-lec04-operator-arity.md)** Τι τύπου τελεστές είναι;: Διάλεξη 4: Git και Τελεστές, διαφάνειες 19-22 και 23 · ★☆☆ · short-answer · `slides-lec04-operator-arity`
+- **[Α4.8](../questions/slides/slides-lec04-operators-as-functions.md)** Τελεστές ως συναρτήσεις: Διάλεξη 4: Git και Τελεστές, διαφάνειες 15 και 19 · ★☆☆ · short-answer · `slides-lec04-operators-as-functions`
+- **[Α4.9](../questions/slides/slides-lec04-precedence.md)** Προτεραιότητα και προσεταιριστικότητα: Διάλεξη 4: Git και Τελεστές, διαφάνεια 31 · ★☆☆ · trace · `slides-lec04-precedence`
+- **[Α4.10](../questions/slides/slides-lec04-cast-division.md)** Τι επιστρέφει το (double)3/4;: Διάλεξη 4: Git και Τελεστές, διαφάνεια 24 · ★★☆ · trace · `slides-lec04-cast-division`
 
 ### Εργαστήριο (Α4.11)
 
