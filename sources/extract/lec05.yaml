@@ -1,4 +1,6 @@
 lecture: 5
+year: 2026-27                     # updated from the 2025-26 deck (35 pages) on 2026-10-20; same page numbers
+slides: https://progintro.github.io/assets/pdf/lec05.pdf
 pages: 35
 outline:
   - {pages: "1-6", section: "Κατηγορίες τελεστών"}
@@ -27,7 +29,8 @@ pointers:
 takeaways_slide: null
 issues:
   - "No explicit key-takeaways slide; the red callouts on p. 9 (0 is false, any non-zero is true), p. 22 (use parentheses when unsure) and p. 31 (the if parentheses are mandatory) were treated as takeaways."
-  - "p. 2 (announcements: hw0 pages question, Coding Club meeting) and p. 3 (recap: pair programming, git, operators) are course logistics/recap and are not in the chapter."
+  - "2026-27 deck vs 2025-26 (both 35 pages): only pp. 2-4 changed. p. 2 announces the Coding Club Git & GitHub workshop (16 October) instead of the meeting; p. 3 recap drops pair programming (it moved to lecture 3) and adds a Klimt painting; p. 4 adds a caption. All page numbers are unchanged."
+  - "p. 2 (announcements: hw0 pages question, Coding Club) and p. 3 (recap: git, operators) are course logistics/recap and are not in the chapter."
   - "p. 15: the implicit-conversion image lists 'bool, char, short int, int, unsigned int, long, unsigned, long long, float, double, long double'. The 'unsigned' after 'long' was read as 'unsigned long' in the chapter's diagram. The slide's rule 'convert to the larger operand' is a simplification of C's usual arithmetic conversions (integer promotion of char/short is not mentioned in the slides or the chapter)."
   - "p. 10: the ~ examples (~0xF0 = 0x0F, ~0x05 = 0xFA) only hold for 8-bit values; the chapter says so and gives 0xFFFFFFFA for a 32-bit int (verified with gcc/clang)."
   - "p. 20: the grade program is shown without #include lines; the chapter adds stdio.h and stdlib.h. The sample runs (83 for 85/75/95, 7 for 9/9/9) were produced locally, not taken from the slides."

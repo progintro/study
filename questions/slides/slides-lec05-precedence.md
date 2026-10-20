@@ -4,8 +4,8 @@ kind: slides
 title: "Προτεραιότητα και προσεταιριστικότητα"
 source:
   title: "Διάλεξη 5: Τελεστές και Εντολές, διαφάνεια 21"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec05.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec05.pdf
+  years: [2025, 2026]
 chapters: [5]
 topics: [precedence, operators]
 difficulty: 1

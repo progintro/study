@@ -3,9 +3,9 @@ layout: chapter
 chapter: 5
 lecture: 5
 title: "Τελεστές και Εντολές"
-date: 2025-10-17
+date: 2026-10-16
 part: B
-slides: https://github.com/progintro/progintro.github.io/releases/download/2025/lec05.pdf
+slides: https://progintro.github.io/assets/pdf/lec05.pdf
 prev: 04-git-operators
 next: 06-control-flow
 topics: [operators, bitwise, precedence, types, statements, conditionals]
@@ -696,7 +696,7 @@ else
 
 ## Διάβασμα
 
-- **Διαφάνειες:** [Διάλεξη 5](https://github.com/progintro/progintro.github.io/releases/download/2025/lec05.pdf), σελ. 1–35. Κατηγορίες τελεστών: σελ. 5· αριθμητικοί, συγκριτικοί, λογικοί: σελ. 7–9· bitwise: σελ. 10–12· συνθήκης και cast: σελ. 13–15· ανάθεση, αύξηση/μείωση, κόμμα: σελ. 16–19· πρόγραμμα βαθμολογίας: σελ. 20· προτεραιότητα: σελ. 21–24· εκφράσεις και εντολές: σελ. 25–28· `if` και `if-else`: σελ. 29–33.
+- **Διαφάνειες:** [Διάλεξη 5](https://progintro.github.io/assets/pdf/lec05.pdf) (2026-27), σελ. 1–35. Κατηγορίες τελεστών: σελ. 5· αριθμητικοί, συγκριτικοί, λογικοί: σελ. 7–9· bitwise: σελ. 10–12· συνθήκης και cast: σελ. 13–15· ανάθεση, αύξηση/μείωση, κόμμα: σελ. 16–19· πρόγραμμα βαθμολογίας: σελ. 20· προτεραιότητα: σελ. 21–24· εκφράσεις και εντολές: σελ. 25–28· `if` και `if-else`: σελ. 29–33. Οι διαφάνειες του 2025-26 έχουν την ίδια αρίθμηση (αλλάζουν μόνο οι ανακοινώσεις και η ανασκόπηση, σελ. 2–3): [Διάλεξη 5 (2025)](https://github.com/progintro/progintro.github.io/releases/download/2025/lec05.pdf).
 - **Σημειώσεις:** [Κεφάλαιο 2: Μεταβλητές, τύποι, τελεστές και παραστάσεις](https://progintro.github.io/notes/chapters/02-types-operators/), ενότητα «Εντολές αντικατάστασης, τελεστές και παραστάσεις» (K04, σελ. 34–43)· [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Η ροή του ελέγχου στην C», «Εντολή `if`» (K04, σελ. 46–49). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι και τη σελίδα 62.
 - **Εργαστήριο:** [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): ασκήσεις `root.c` (`if...else`), `birthdate.c` (ακέραια διαίρεση και `%`), `limit.c` (αποσφαλμάτωση εκφράσεων)
 - **Βιβλίο:** K&R, §2.5–2.12 (τελεστές και παραστάσεις), όπως προτείνουν οι σημειώσεις.
