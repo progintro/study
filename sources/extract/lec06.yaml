@@ -1,4 +1,6 @@
 lecture: 6
+year: 2026-27                     # updated from the 2025-26 deck (29 pages) on 2026-10-20; same page numbers
+slides: https://progintro.github.io/assets/pdf/lec06.pdf
 pages: 29
 outline:
   - {pages: "1-2", section: "Γρήγορος έλεγχος της λύσης με pipes και time"}  # in Παραδείγματα
@@ -15,7 +17,7 @@ outline:
   - {pages: "27-29", section: "Σύγκριση των τριών βρόχων"}
 pointers:
   - {page: 2, text: "Περισσότερα για τις ακολουθίες aliquot: https://math.dartmouth.edu/~carlp/upintconf.pdf"}
-  - {page: 2, text: "echo -e \"...\" | ./aliquot, με time και ttyplot (άσκηση aliquot της hw0 2025)"}
+  - {page: 2, text: "echo -e \"42\\ng\\n67\\np\\n\" | ./goldbach, με time, και time ./goldbach < input.txt (άσκηση goldbach της hw0 2026)"}
   - {page: 15, text: "Wikipedia: Dangling else (https://en.wikipedia.org/wiki/Dangling_else)"}
   - {page: 16, text: "Wikipedia: Dangling else (https://en.wikipedia.org/wiki/Dangling_else)"}
   - {page: 28, text: "Σημειώσεις κ. Σταματόπουλου: όλα μέχρι τη σελίδα 62 (K04)"}
@@ -25,6 +27,7 @@ pointers:
   - {page: 28, text: "Wikipedia: For loops (https://en.wikipedia.org/wiki/For_loop)"}
 takeaways_slide: null
 issues:
+  - "2026-27 deck vs 2025-26 (both 29 pages): only pp. 2-4 changed. p. 2 keeps the aliquot link but its pipe/time example is now the hw0 2026 goldbach exercise (input 42/g, 67/p) and adds reading from a file (time ./goldbach < input.txt) instead of ttyplot; pp. 3-4 add painting captions. All page numbers are unchanged. The chapter's pipes section now follows the goldbach example and mentions the 2025-26 aliquot one."
   - "No explicit key-takeaways slide; the red callouts on p. 11 (parentheses are mandatory) and p. 16 (use braces when unsure) were treated as takeaways."
   - "p. 23: `for (;;)` is shown without a body, so it is not a complete statement; the chapter adds an empty statement `;` as body (noted in the example text)."
   - "p. 27 is only 'Kahoot Time!'; the quiz questions are not in the slides, so none were transcribed. The chapter's 'Σύγκριση των τριών βρόχων' is a synthesis section (supported by lab03's intro), mapped to pp. 27-29. Worked examples of pp. 7, 13, 15, 19-21, 22-24, 26 are in «Παραδείγματα»."

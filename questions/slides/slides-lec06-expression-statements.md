@@ -4,8 +4,8 @@ kind: slides
 title: "Τιμές μετά από εντολές έκφρασης"
 source:
   title: "Διάλεξη 6: Εντολές και Ροή Ελέγχου, διαφάνεια 7"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec06.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec06.pdf
+  years: [2025, 2026]
 chapters: [6, 5]
 topics: [statements, operators]
 difficulty: 1
