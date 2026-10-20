@@ -3,7 +3,7 @@ id: slides-lec03-power-outage
 kind: slides
 title: "Διακοπή ρεύματος και μνήμη"
 source:
-  title: "Διάλεξη 3: Συναρτήσεις, διαφάνεια 3"
+  title: "Διάλεξη 3 (2025-26): Συναρτήσεις, διαφάνεια 3"
   url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec03.pdf
   years: [2025]
 chapters: [3, 2]

@@ -3,9 +3,9 @@ id: slides-lec04-operator-arity
 kind: slides
 title: "Τι τύπου τελεστές είναι;"
 source:
-  title: "Διάλεξη 4: Git και Τελεστές, διαφάνειες 25-28 και 31"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec04.pdf
-  years: [2025]
+  title: "Διάλεξη 4: Git και Τελεστές, διαφάνειες 19-22 και 23"
+  url: https://progintro.github.io/assets/pdf/lec04.pdf
+  years: [2025, 2026]
 chapters: [4]
 topics: [operators, bitwise]
 difficulty: 1
