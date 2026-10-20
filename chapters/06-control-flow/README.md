@@ -3,9 +3,9 @@ layout: chapter
 chapter: 6
 lecture: 6
 title: "Εντολές και Ροή Ελέγχου"
-date: 2025-10-20
+date: 2026-10-19
 part: B
-slides: https://github.com/progintro/progintro.github.io/releases/download/2025/lec06.pdf
+slides: https://progintro.github.io/assets/pdf/lec06.pdf
 prev: 05-operators-statements
 next: 07-problem-solving
 topics: [statements, conditionals, loops, control-flow]
@@ -488,21 +488,26 @@ printf("%d\n", i);
 
 ### §6.20 Γρήγορος έλεγχος της λύσης με pipes και time
 
-*Συμβουλή για την άσκηση `aliquot` της hw0.* Αντί να πληκτρολογείτε κάθε φορά την
+*Συμβουλή για την άσκηση `goldbach` της hw0.* Αντί να πληκτρολογείτε κάθε φορά την
 είσοδο, στείλτε τη στο πρόγραμμα με pipe ([Κεφάλαιο 1](../01-command-line/)):
 
 ```sh
-echo -e "138\n0\nf\n" | ./aliquot
+echo -e "42\ng\n67\np\n" | ./goldbach
 ```
 
-Η `echo -e` ερμηνεύει κάθε `\n` ως αλλαγή γραμμής, οπότε το `./aliquot` διαβάζει τρεις
-γραμμές: `138`, `0` και `f`. Με `time` μετράτε και τον χρόνο εκτέλεσης, και με
-`ttyplot` (ίσως χρειαστεί να το εγκαταστήσετε) σχεδιάζετε την έξοδο στο τερματικό:
+Η `echo -e` ερμηνεύει κάθε `\n` ως αλλαγή γραμμής, οπότε το `./goldbach` διαβάζει
+τέσσερις γραμμές: `42` με την επιλογή `g` (έλεγχος Goldbach) και `67` με την επιλογή `p`
+(έλεγχος πρώτου). Με `time` μετράτε και τον χρόνο εκτέλεσης. Αν οι είσοδοι είναι
+πολλές, γράψτε τις σε ένα αρχείο και δώστε το στο πρόγραμμα με ανακατεύθυνση εισόδου:
 
 ```sh
-echo -e "138\n0\nf\n" | time ./aliquot
-echo -e "2856\n0\nf\n" | ./aliquot | ttyplot
+echo -e "42\ng\n67\np\n" | time ./goldbach
+time ./goldbach < input.txt
 ```
+
+Στις διαφάνειες του 2025-26 το ίδιο παράδειγμα ήταν η άσκηση `aliquot` της hw0 εκείνης
+της χρονιάς ([Α6.15](#a6-15)), όπου με το `ttyplot` σχεδιάζατε και την έξοδο στο
+τερματικό: `echo -e "2856\n0\nf\n" | ./aliquot | ttyplot`.
 
 ## Κύρια σημεία
 
@@ -542,7 +547,7 @@ echo -e "2856\n0\nf\n" | ./aliquot | ttyplot
 
 ## Διάβασμα
 
-- **Διαφάνειες:** [Διάλεξη 6](https://github.com/progintro/progintro.github.io/releases/download/2025/lec06.pdf), σελ. 1–29. Pipes και `time`: σελ. 2· κατηγορίες εντολών: σελ. 5–8· ροή ελέγχου, `if`, `if-else`: σελ. 9–13· εμφωλευμένες `if` και dangling else: σελ. 14–16· `while`: σελ. 17–21· `for`: σελ. 22–24· `do-while`: σελ. 25–26.
+- **Διαφάνειες:** [Διάλεξη 6](https://progintro.github.io/assets/pdf/lec06.pdf) (2026-27), σελ. 1–29. Pipes και `time`: σελ. 2· κατηγορίες εντολών: σελ. 5–8· ροή ελέγχου, `if`, `if-else`: σελ. 9–13· εμφωλευμένες `if` και dangling else: σελ. 14–16· `while`: σελ. 17–21· `for`: σελ. 22–24· `do-while`: σελ. 25–26. Οι διαφάνειες του 2025-26 έχουν την ίδια αρίθμηση (αλλάζει μόνο το παράδειγμα της σελ. 2, που εκεί είναι η άσκηση `aliquot` της hw0 του 2025): [Διάλεξη 6 (2025)](https://github.com/progintro/progintro.github.io/releases/download/2025/lec06.pdf).
 - **Σημειώσεις:** [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Η ροή του ελέγχου στην C», «Εντολή `if`», «Εντολές βρόχου `while`», «Εντολή βρόχου `for`» (K04, σελ. 46–49 και 52–55). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι και τη σελίδα 62, δηλαδή και το [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/) μέχρι την ενότητα «Συνάρτηση υπολογισμού παραγοντικού».
 - **Εργαστήριο:** [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): εισαγωγή για τους τρεις βρόχους και τα διαγράμματα ροής τους, ασκήσεις `seq.c` (`while`, `for`, `do...while`), `root.c` (`if...else`), `birthdate.c`, `limit.c`
 - **Βιβλίο:** K&R, κεφ. 3 (σελ. 85–100), όπως προτείνουν οι σημειώσεις.

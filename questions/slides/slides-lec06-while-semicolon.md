@@ -4,8 +4,8 @@ kind: slides
 title: "Το ερωτηματικό μετά το while"
 source:
   title: "Διάλεξη 6: Εντολές και Ροή Ελέγχου, διαφάνεια 21"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec06.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec06.pdf
+  years: [2025, 2026]
 chapters: [6]
 topics: [loops, statements]
 difficulty: 2
