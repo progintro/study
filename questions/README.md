@@ -275,8 +275,8 @@
 
 ### Ζέσταμα: από τις διαφάνειες (Α7.1–Α7.2)
 
-- **[Α7.1](../questions/slides/slides-lec07-even-descending.md)** Τριψήφιοι άρτιοι σε φθίνουσα σειρά: Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 14 · ★☆☆ · programming · `slides-lec07-even-descending`
-- **[Α7.2](../questions/slides/slides-lec07-odd-multiples-of-7.md)** Γινόμενο τριψήφιων περιττών πολλαπλασίων του 7: Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 16 · ★★☆ · programming · `slides-lec07-odd-multiples-of-7`
+- **[Α7.1](../questions/slides/slides-lec07-even-descending.md)** Τριψήφιοι άρτιοι σε φθίνουσα σειρά: Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 12 · ★☆☆ · programming · `slides-lec07-even-descending`
+- **[Α7.2](../questions/slides/slides-lec07-odd-multiples-of-7.md)** Γινόμενο τριψήφιων περιττών πολλαπλασίων του 7: Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 14 · ★★☆ · programming · `slides-lec07-odd-multiples-of-7`
 
 ## [Κεφάλαιο 8: Ροή Ελέγχου #2](../chapters/08-control-flow-2/)
 

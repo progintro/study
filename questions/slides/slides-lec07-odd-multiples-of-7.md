@@ -3,9 +3,9 @@ id: slides-lec07-odd-multiples-of-7
 kind: slides
 title: "Γινόμενο τριψήφιων περιττών πολλαπλασίων του 7"
 source:
-  title: "Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 16"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec07.pdf
-  years: [2025]
+  title: "Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 14"
+  url: https://progintro.github.io/assets/pdf/lec07.pdf
+  years: [2025, 2026]
 chapters: [7]
 topics: [loops, problem-solving, operators]
 difficulty: 2
