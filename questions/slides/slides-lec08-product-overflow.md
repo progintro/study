@@ -4,8 +4,8 @@ kind: slides
 title: "Αρνητικό γινόμενο σε βρόχο"
 source:
   title: "Διάλεξη 8: Ροή Ελέγχου #2, διαφάνεια 2"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec08.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec08.pdf
+  years: [2025, 2026]
 chapters: [8, 2]
 topics: [integer-representation, loops]
 difficulty: 1

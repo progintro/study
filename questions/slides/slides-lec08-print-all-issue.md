@@ -4,8 +4,8 @@ kind: slides
 title: "Υπάρχει θέμα με αυτή την υλοποίηση;"
 source:
   title: "Διάλεξη 8: Ροή Ελέγχου #2, διαφάνεια 7"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec08.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec08.pdf
+  years: [2025, 2026]
 chapters: [8]
 topics: [loops, control-flow]
 difficulty: 1

@@ -3,9 +3,9 @@ layout: chapter
 chapter: 8
 lecture: 8
 title: "Ροή Ελέγχου #2"
-date: 2025-10-27
+date: 2026-10-26
 part: B
-slides: https://github.com/progintro/progintro.github.io/releases/download/2025/lec08.pdf
+slides: https://progintro.github.io/assets/pdf/lec08.pdf
 prev: 07-problem-solving
 next: 09-input
 topics: [loops, control-flow, conditionals, integer-representation]
@@ -538,13 +538,13 @@ switch (month) {
 
 ## Διάβασμα
 
-- **Διαφάνειες:** [Διάλεξη 8](https://github.com/progintro/progintro.github.io/releases/download/2025/lec08.pdf), σελ. 1–25. Υπερχείλιση στο γινόμενο: σελ. 2· παραδείγματα βρόχων και σημαία: σελ. 5–8· `break`: σελ. 9–10· `continue`: σελ. 11–12· `switch`: σελ. 13–18· `goto` και δομημένος προγραμματισμός: σελ. 19–22.
+- **Διαφάνειες:** [Διάλεξη 8](https://progintro.github.io/assets/pdf/lec08.pdf) (2026-27), σελ. 1–25. Υπερχείλιση στο γινόμενο: σελ. 2· παραδείγματα βρόχων και σημαία: σελ. 5–8· `break`: σελ. 9–10· `continue`: σελ. 11–12· `switch`: σελ. 13–18· `goto` και δομημένος προγραμματισμός: σελ. 19–22. Οι διαφάνειες του 2025-26 έχουν την ίδια αρίθμηση: [Διάλεξη 8 (2025)](https://github.com/progintro/progintro.github.io/releases/download/2025/lec08.pdf).
 - **Σημειώσεις:** [Κεφάλαιο 3: Η ροή του ελέγχου](https://progintro.github.io/notes/chapters/03-control-flow/), ενότητες «Εντολή `switch`», «Εντολές `break` και `continue`», «Εντολή `goto` και ετικέτες» (K04, σελ. 50–51 και 56–57). Οι διαφάνειες συνιστούν να έχετε καλύψει τις σημειώσεις του κ. Σταματόπουλου μέχρι και τη σελίδα 71, δηλαδή και το [Κεφάλαιο 4: Συναρτήσεις](https://progintro.github.io/notes/chapters/04-functions/) μέχρι την ενότητα «Μετατροπές μεταξύ δεκαδικών και δυαδικών αριθμών».
 - **Εργαστήριο:** [Εργαστήριο 3](https://progintro.github.io/lab-material/labs/lab03/): ασκήσεις `seq.c` (βρόχοι), `birthdate.c` (αντιστοίχιση `IDAY % 7` σε ημέρα, κατάλληλη για `switch`)
 - **Άλλα:**
   - [Break and Continue (W3Schools)](https://www.w3schools.com/c/c_break_continue.php)
   - [Switch statement (GeeksforGeeks)](https://www.geeksforgeeks.org/c-switch-statement/)
-  - Wikipedia: [Considered harmful](https://en.wikipedia.org/wiki/Considered_harmful), [Spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code)
+  - Wikipedia: [Considered harmful](https://en.wikipedia.org/wiki/Considered_harmful), [Edsger W. Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra), [Spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code)
   - [IOCCC](https://ioccc.org/): διαγωνισμός δυσνόητου κώδικα C
 
 ## Συχνά λάθη

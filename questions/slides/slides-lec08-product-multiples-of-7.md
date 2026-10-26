@@ -4,8 +4,8 @@ kind: slides
 title: "Γινόμενο τριψήφιων περιττών πολλαπλασίων του 7"
 source:
   title: "Διάλεξη 8: Ροή Ελέγχου #2, διαφάνεια 5"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec08.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec08.pdf
+  years: [2025, 2026]
 chapters: [8]
 topics: [loops]
 difficulty: 1

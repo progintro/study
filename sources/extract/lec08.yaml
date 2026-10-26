@@ -1,4 +1,6 @@
 lecture: 8
+year: 2026-27                     # updated from the 2025-26 deck (25 pages) on 2026-10-26; same page numbers
+slides: https://progintro.github.io/assets/pdf/lec08.pdf
 pages: 25
 outline:
   - {pages: "1-2", section: "Υπερχείλιση σε βρόχους που πολλαπλασιάζουν"}
@@ -19,8 +21,10 @@ pointers:
   - {page: 24, text: "Break and Continue: https://www.w3schools.com/c/c_break_continue.php"}
   - {page: 24, text: "Switch statement: https://www.geeksforgeeks.org/c-switch-statement/"}
   - {page: 24, text: "Considered harmful: https://en.wikipedia.org/wiki/Considered_harmful"}
+  - {page: 24, text: "Edsger Dijkstra: https://en.wikipedia.org/wiki/Edsger_W._Dijkstra"}
 takeaways_slide: null
 issues:
+  - "2026-27 deck vs 2025-26 (both 25 pages): no content changes and no page numbers moved. pp. 3-4 add painting captions, pp. 13 and 15-18 fix the accent «Πως» -> «Πώς», and the reading list on p. 24 adds a link to Edsger Dijkstra (Wikipedia), now also in the chapter's «Άλλα»."
   - "No explicit key-takeaways slide. The callouts on pp. 16-18 (break ends the switch; several cases together; only equality; integer expression and constants) and p. 21-22 (structured programming means no goto) were treated as takeaways."
   - "p. 2: the question 'τι συμβαίνει;' has no answer on the slides. The chapter explains it as signed int overflow (standard C). Verified locally: the loop multiplies 64 factors and, with 32-bit wraparound, prints -1187656959 as on the slide."
   - "p. 5: the first solution starts at i = 100 with i += 2, so it visits even numbers although the problem asks for odd ones. The chapter keeps the slide code and points out the bug (should start at 101). Also the range text '105, …, 987' is computed (the largest odd three-digit multiple of 7 is 987)."
