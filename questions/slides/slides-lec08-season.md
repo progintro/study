@@ -4,8 +4,8 @@ kind: slides
 title: "Η εποχή κάθε μήνα"
 source:
   title: "Διάλεξη 8: Ροή Ελέγχου #2, διαφάνεια 17"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec08.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec08.pdf
+  years: [2025, 2026]
 chapters: [8]
 topics: [conditionals, control-flow]
 difficulty: 1
