@@ -28,7 +28,7 @@ lectures:
   - {n: 4,  slug: 04-git-operators,      date: 2026-10-12, part: A, slides: lec04.pdf, url: "https://progintro.github.io/assets/pdf/lec04.pdf", title: "Git και Τελεστές",                    notes: [02-types-operators],          labs: [lab01]}
   - {n: 5,  slug: 05-operators-statements, date: 2026-10-16, part: B, slides: lec05.pdf, url: "https://progintro.github.io/assets/pdf/lec05.pdf", title: "Τελεστές και Εντολές",              notes: [02-types-operators, 03-control-flow], labs: [lab03]}
   - {n: 6,  slug: 06-control-flow,       date: 2026-10-19, part: B, slides: lec06.pdf, url: "https://progintro.github.io/assets/pdf/lec06.pdf", title: "Εντολές και Ροή Ελέγχου",             notes: [03-control-flow],             labs: [lab03]}
-  - {n: 7,  slug: 07-problem-solving,    date: 2025-10-24, part: B, slides: lec07.pdf, title: "Επίλυση Προβλημάτων",                 notes: [01-first-programs],           labs: [lab03]}
+  - {n: 7,  slug: 07-problem-solving,    date: 2026-10-23, part: B, slides: lec07.pdf, url: "https://progintro.github.io/assets/pdf/lec07.pdf", title: "Επίλυση Προβλημάτων",                 notes: [01-first-programs],           labs: [lab03]}
   - {n: 8,  slug: 08-control-flow-2,     date: 2025-10-27, part: B, slides: lec08.pdf, title: "Ροή Ελέγχου #2",                      notes: [03-control-flow],             labs: [lab03]}
   - {n: 9,  slug: 09-input,              date: 2025-10-31, part: B, slides: lec09.pdf, title: "Δεδομένα Εισόδου",                    notes: [01-first-programs, 09-io],    labs: [lab04]}
   - {n: 10, slug: 10-arrays,             date: 2025-11-03, part: C, slides: lec10.pdf, title: "Πίνακες",                             notes: [05-pointers-arrays],          labs: [lab06]}

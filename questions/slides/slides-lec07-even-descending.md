@@ -3,9 +3,9 @@ id: slides-lec07-even-descending
 kind: slides
 title: "Τριψήφιοι άρτιοι σε φθίνουσα σειρά"
 source:
-  title: "Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 14"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec07.pdf
-  years: [2025]
+  title: "Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 12"
+  url: https://progintro.github.io/assets/pdf/lec07.pdf
+  years: [2025, 2026]
 chapters: [7]
 topics: [loops, problem-solving]
 difficulty: 1
