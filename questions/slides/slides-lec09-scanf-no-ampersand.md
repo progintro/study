@@ -3,9 +3,9 @@ id: slides-lec09-scanf-no-ampersand
 kind: slides
 title: "scanf χωρίς &"
 source:
-  title: "Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 32"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec09.pdf
-  years: [2025]
+  title: "Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 34"
+  url: https://progintro.github.io/assets/pdf/lec09.pdf
+  years: [2025, 2026]
 chapters: [9]
 topics: [input-output, pointers]
 difficulty: 2

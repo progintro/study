@@ -3,9 +3,9 @@ id: slides-lec09-scanf-return
 kind: slides
 title: "Είναι σωστό αυτό το πρόγραμμα;"
 source:
-  title: "Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 33–35"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec09.pdf
-  years: [2025]
+  title: "Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 35–37"
+  url: https://progintro.github.io/assets/pdf/lec09.pdf
+  years: [2025, 2026]
 chapters: [9]
 topics: [input-output, input-validation]
 difficulty: 2

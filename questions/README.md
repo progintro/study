@@ -317,16 +317,16 @@
 
 ### Ζέσταμα: από τις διαφάνειες (Α9.1–Α9.10)
 
-- **[Α9.1](../questions/slides/slides-lec09-charcount.md)** Μετρητής χαρακτήρων με getchar: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 20 · ★☆☆ · trace · `slides-lec09-charcount`
-- **[Α9.2](../questions/slides/slides-lec09-scanf-square.md)** Τι κάνει το πρόγραμμα με τη scanf;: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 30 · ★☆☆ · trace · `slides-lec09-scanf-square`
-- **[Α9.3](../questions/slides/slides-lec09-scanf-two.md)** scanf με πολλά ορίσματα: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 36–37 · ★☆☆ · trace · `slides-lec09-scanf-two`
-- **[Α9.4](../questions/slides/slides-lec09-addnums.md)** Άθροισμα δύο αριθμών από την πρότυπη είσοδο: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 25–26 · ★★☆ · programming · `slides-lec09-addnums`
-- **[Α9.5](../questions/slides/slides-lec09-cat-char.md)** Μια cat με char: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 23 · ★★☆ · debug · `slides-lec09-cat-char`
-- **[Α9.6](../questions/slides/slides-lec09-float-equality.md)** OK ή Not OK;: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 3 · ★★☆ · trace · `slides-lec09-float-equality`
-- **[Α9.7](../questions/slides/slides-lec09-getinteger.md)** Η συνάρτηση getinteger: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 26, 38 · ★★☆ · trace · `slides-lec09-getinteger`
-- **[Α9.8](../questions/slides/slides-lec09-letter-frequencies.md)** Μέτρηση γραμμάτων στην είσοδο: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 39 · ★★☆ · trace · `slides-lec09-letter-frequencies`
-- **[Α9.9](../questions/slides/slides-lec09-scanf-no-ampersand.md)** scanf χωρίς &: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 32 · ★★☆ · short-answer · `slides-lec09-scanf-no-ampersand`
-- **[Α9.10](../questions/slides/slides-lec09-scanf-return.md)** Είναι σωστό αυτό το πρόγραμμα;: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 33–35 · ★★☆ · debug · `slides-lec09-scanf-return`
+- **[Α9.1](../questions/slides/slides-lec09-charcount.md)** Μετρητής χαρακτήρων με getchar: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 21 · ★☆☆ · trace · `slides-lec09-charcount`
+- **[Α9.2](../questions/slides/slides-lec09-scanf-square.md)** Τι κάνει το πρόγραμμα με τη scanf;: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 32 · ★☆☆ · trace · `slides-lec09-scanf-square`
+- **[Α9.3](../questions/slides/slides-lec09-scanf-two.md)** scanf με πολλά ορίσματα: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 38–39 · ★☆☆ · trace · `slides-lec09-scanf-two`
+- **[Α9.4](../questions/slides/slides-lec09-addnums.md)** Άθροισμα δύο αριθμών από την πρότυπη είσοδο: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 26–27 · ★★☆ · programming · `slides-lec09-addnums`
+- **[Α9.5](../questions/slides/slides-lec09-cat-char.md)** Μια cat με char: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 24 · ★★☆ · debug · `slides-lec09-cat-char`
+- **[Α9.6](../questions/slides/slides-lec09-float-equality.md)** OK ή Not OK;: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 4 · ★★☆ · trace · `slides-lec09-float-equality`
+- **[Α9.7](../questions/slides/slides-lec09-getinteger.md)** Η συνάρτηση getinteger: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 27, 40 · ★★☆ · trace · `slides-lec09-getinteger`
+- **[Α9.8](../questions/slides/slides-lec09-letter-frequencies.md)** Μέτρηση γραμμάτων στην είσοδο: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 41 · ★★☆ · trace · `slides-lec09-letter-frequencies`
+- **[Α9.9](../questions/slides/slides-lec09-scanf-no-ampersand.md)** scanf χωρίς &: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 34 · ★★☆ · short-answer · `slides-lec09-scanf-no-ampersand`
+- **[Α9.10](../questions/slides/slides-lec09-scanf-return.md)** Είναι σωστό αυτό το πρόγραμμα;: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 35–37 · ★★☆ · debug · `slides-lec09-scanf-return`
 
 ### Εργαστήριο (Α9.11–Α9.14)
 

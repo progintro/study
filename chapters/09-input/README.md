@@ -3,9 +3,9 @@ layout: chapter
 chapter: 9
 lecture: 9
 title: "Δεδομένα Εισόδου"
-date: 2025-10-31
+date: 2026-10-30
 part: B
-slides: https://github.com/progintro/progintro.github.io/releases/download/2025/lec09.pdf
+slides: https://progintro.github.io/assets/pdf/lec09.pdf
 prev: 08-control-flow-2
 next: 10-arrays
 topics: [input-output, input-validation, floating-point, good-practice]
@@ -38,7 +38,13 @@ labs: [lab04]
 `printf` για διάβασμα. Στην πορεία βλέπουμε τρεις κλασικές παγίδες: `char` αντί για
 `int` για την τιμή της `getchar`, `scanf` χωρίς `&`, και `scanf` χωρίς έλεγχο της
 τιμής επιστροφής. Σχεδόν κάθε εργασία του μαθήματος διαβάζει είσοδο, οπότε αυτά τα
-εργαλεία θα τα χρησιμοποιείτε συνέχεια.
+εργαλεία θα τα χρησιμοποιείτε συνέχεια. Οι διαφάνειες του 2026-27 κλείνουν με την
+`fprintf`, που γράφει μηνύματα λάθους στην έξοδο σφάλματος (`stderr`).
+
+Οι ανακοινώσεις του 2026-27 είχαν και ένα καλό νέο: ομάδα του ΕΚΠΑ πήρε την 1η θέση
+στον GRCPC 2026, μαζί με ένα αργυρό μετάλλιο και τρεις θέσεις στην πρώτη 11άδα
+([αποτελέσματα](https://grcpc.gr/public?countries%5B%5D=GRC&filter=filter)). Για τον
+διαγωνισμό δείτε το [Κεφάλαιο 7](../07-problem-solving/#s7-2).
 
 ## Θεωρία
 
@@ -86,6 +92,26 @@ flowchart LR
 Τα δεδομένα εισόδου είναι **μια σειρά από χαρακτήρες (bytes)** που δίνει ο χρήστης
 στο πρόγραμμα. Όταν πληκτρολογείτε τον «αριθμό» `42`, το πρόγραμμα λαμβάνει δύο
 χαρακτήρες, `'4'` και `'2'`· η μετατροπή τους σε ακέραιο είναι δική του δουλειά.
+
+Για την έξοδο ένα πρόγραμμα έχει δύο κανάλια: την **πρότυπη έξοδο** (`stdout`), όπου
+γράφει η `printf`, και την **έξοδο σφάλματος** (standard error, `stderr`), για
+μηνύματα λάθους. Και τα δύο εμφανίζονται κανονικά στο τερματικό, αλλά μια ανακατεύθυνση
+`>` ή μια σωλήνωση `|` παίρνει μόνο το `stdout`, οπότε τα μηνύματα λάθους δεν
+ανακατεύονται με τα αποτελέσματα. Σε όποιο κανάλι θέλουμε γράφουμε με την `fprintf`, που
+είναι όμοια με την `printf` αλλά παίρνει πρώτο όρισμα το πού θα γράψει:
+
+```c
+int fprintf(FILE *stream, const char *format, ...);
+```
+
+Η `printf(x, y, z)` είναι ουσιαστικά ισοδύναμη με την `fprintf(stdout, x, y, z)`, και ένα
+μήνυμα λάθους γράφεται έτσι:
+
+```c
+fprintf(stderr, "Not a prime number: %d\n", num);
+```
+
+Η `fprintf` μπορεί να γράψει και σε οποιοδήποτε αρχείο (επόμενες διαλέξεις).
 
 <a id="s9-4"></a><a id="οι-τέσσερις-πηγές-εισόδου"></a>
 
@@ -532,7 +558,10 @@ while ((ch = getchar()) != EOF) {
   δοκιμάζετε με σωληνώσεις, π.χ. `echo hello world | ./encode | ./decode`.
 - Όταν μια εκφώνηση ορίζει τι γίνεται στο τέλος της εισόδου ή σε λάθος είσοδο,
   ξεχωρίστε τις τρεις περιπτώσεις της `scanf`: `1`, `0` και `EOF`. Το πρόγραμμα
-  `trolley` της διάλεξης, π.χ., τερματίζει όταν δεν μπορεί να διαβάσει άλλο κόστος.
+  `goldbach` της διάλεξης (άσκηση της hw0 του 2026), π.χ., τυπώνει «EOF detected,
+  exiting» και τερματίζει όταν δεν υπάρχει άλλη είσοδος· στις διαφάνειες του 2025-26
+  το αντίστοιχο παράδειγμα ήταν το `trolley`, που τερματίζει όταν δεν μπορεί να
+  διαβάσει άλλο κόστος.
 
 ## Κύρια σημεία
 
@@ -565,6 +594,7 @@ while ((ch = getchar()) != EOF) {
 | δεδομένα εισόδου / εξόδου | input / output data | Ό,τι δίνεται στο πρόγραμμα / ό,τι παράγει. |
 | πρότυπη είσοδος | standard input (`stdin`) | Η προεπιλεγμένη είσοδος, συνήθως το πληκτρολόγιο. |
 | πρότυπη έξοδος | standard output (`stdout`) | Η προεπιλεγμένη έξοδος, συνήθως η οθόνη. |
+| έξοδος σφάλματος | standard error (`stderr`) | Η έξοδος για μηνύματα λάθους, χωριστά από την πρότυπη έξοδο. |
 | τέλος αρχείου | End-Of-File (`EOF`) | Τιμή (`-1`) που δηλώνει ότι δεν υπάρχει άλλη είσοδος. |
 | ενδιάμεση μνήμη | buffer | Όπου περιμένουν οι χαρακτήρες πριν φτάσουν στο πρόγραμμα. |
 | κανονική λειτουργία | canonical mode | Το τερματικό στέλνει την είσοδο ανά γραμμή. |
@@ -576,7 +606,7 @@ while ((ch = getchar()) != EOF) {
 
 ## Διάβασμα
 
-- **Διαφάνειες:** [Διάλεξη 9](https://github.com/progintro/progintro.github.io/releases/download/2025/lec09.pdf), σελ. 1–41. Σύγκριση `float` και ονόματα: σελ. 2–5· πηγές εισόδου: σελ. 8–13· `getchar`: σελ. 14–21· `putchar` και `cat`: σελ. 22–24· `getinteger`: σελ. 25–26, 38· `scanf`: σελ. 27–37· συχνότητες γραμμάτων: σελ. 39.
+- **Διαφάνειες:** [Διάλεξη 9](https://progintro.github.io/assets/pdf/lec09.pdf) (2026-27), σελ. 1–45. Σύγκριση `float` και ονόματα: σελ. 2, 4–6· GRCPC 2026: σελ. 3· πηγές εισόδου: σελ. 9–14· `getchar`: σελ. 15–22· `putchar` και `cat`: σελ. 23–25· `getinteger`: σελ. 26–27, 40· το όπλο του Τσέχοφ: σελ. 28· `scanf`: σελ. 29–39· συχνότητες γραμμάτων: σελ. 41· `fprintf` και `stderr`: σελ. 42–43. Οι διαφάνειες του 2025-26 ([Διάλεξη 9 (2025)](https://github.com/progintro/progintro.github.io/releases/download/2025/lec09.pdf), σελ. 1–41) δεν έχουν τις σελ. 3, 28 και 42–43, οπότε οι σελίδες τους είναι κατά 1 μικρότερες στις σελ. 3–26, κατά 2 στις σελ. 27–39 και κατά 4 στις σελ. 40–41.
 - **Σημειώσεις:** οι διαφάνειες παραπέμπουν στις σελίδες 28–29, 70–71, 78–79 και 86–87 των σημειώσεων του κ. Σταματόπουλου, δηλαδή στις ενότητες:
   - [Κεφάλαιο 1: Πρώτα προγράμματα σε C](https://progintro.github.io/notes/chapters/01-first-programs/), «Μετατροπή πεζών γραμμάτων σε κεφαλαία» (K04, σελ. 28–29)
   - [Κεφάλαιο 4: Συναρτήσεις, εμβέλεια και αναδρομή](https://progintro.github.io/notes/chapters/04-functions/), «Μετατροπές μεταξύ δεκαδικών και δυαδικών αριθμών» (K04, σελ. 70–71)
@@ -584,8 +614,8 @@ while ((ch = getchar()) != EOF) {
   - Για αναφορά: [Κεφάλαιο 9: Είσοδος και έξοδος](https://progintro.github.io/notes/chapters/09-io/), «Είσοδος και έξοδος» (K04, σελ. 136–149), με τις `getchar`, `putchar`, `printf`, `scanf` και την ανακατεύθυνση.
 - **Εργαστήριο:** [Εργαστήριο 4](https://progintro.github.io/lab-material/labs/lab04/): ασκήσεις `pyramid.c` (`putchar` και `scanf`), `lowercase.c` (βρόχος `getchar`/`putchar`), `encode.c` και `decode.c` (φίλτρα με ανακατεύθυνση και σωληνώσεις)
 - **Άλλα:**
-  - Αναφορά συναρτήσεων: [getchar](https://en.cppreference.com/w/c/io/getchar), [putchar](https://en.cppreference.com/w/c/io/putchar), [scanf](https://cplusplus.com/reference/cstdio/scanf/), [printf](https://cplusplus.com/reference/cstdio/printf/), και οι σελίδες `man getchar`, `man scanf`
-  - Wikipedia: [Data buffer](https://en.wikipedia.org/wiki/Data_buffer), [End-of-Transmission character](https://en.wikipedia.org/wiki/End-of-Transmission_character), [Camel case](https://en.wikipedia.org/wiki/Camel_case), [Snake case](https://en.wikipedia.org/wiki/Snake_case)
+  - Αναφορά συναρτήσεων: [getchar](https://en.cppreference.com/w/c/io/getchar), [putchar](https://en.cppreference.com/w/c/io/putchar), [scanf](https://cplusplus.com/reference/cstdio/scanf/), [printf](https://cplusplus.com/reference/cstdio/printf/), και οι σελίδες `man getchar`, `man scanf`, `man fprintf`
+  - Wikipedia: [Data buffer](https://en.wikipedia.org/wiki/Data_buffer), [End-of-Transmission character](https://en.wikipedia.org/wiki/End-of-Transmission_character), [Camel case](https://en.wikipedia.org/wiki/Camel_case), [Snake case](https://en.wikipedia.org/wiki/Snake_case), [Chekhov's gun](https://en.wikipedia.org/wiki/Chekhov%27s_gun)
   - POSIX: [Canonical mode input processing](https://pubs.opengroup.org/onlinepubs/7908799/xbd/termios.html#tag_008_001_006)
 
 ## Συχνά λάθη
@@ -653,16 +683,16 @@ while ((ch = getchar()) != EOF) {
 
 ### Ζέσταμα: από τις διαφάνειες (Α9.1–Α9.10)
 
-- <a id="a9-1"></a>**[Α9.1](../../questions/slides/slides-lec09-charcount.md)** Μετρητής χαρακτήρων με getchar: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 20 · ★☆☆ · trace · `slides-lec09-charcount`
-- <a id="a9-2"></a>**[Α9.2](../../questions/slides/slides-lec09-scanf-square.md)** Τι κάνει το πρόγραμμα με τη scanf;: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 30 · ★☆☆ · trace · `slides-lec09-scanf-square`
-- <a id="a9-3"></a>**[Α9.3](../../questions/slides/slides-lec09-scanf-two.md)** scanf με πολλά ορίσματα: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 36–37 · ★☆☆ · trace · `slides-lec09-scanf-two`
-- <a id="a9-4"></a>**[Α9.4](../../questions/slides/slides-lec09-addnums.md)** Άθροισμα δύο αριθμών από την πρότυπη είσοδο: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 25–26 · ★★☆ · programming · `slides-lec09-addnums`
-- <a id="a9-5"></a>**[Α9.5](../../questions/slides/slides-lec09-cat-char.md)** Μια cat με char: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 23 · ★★☆ · debug · `slides-lec09-cat-char`
-- <a id="a9-6"></a>**[Α9.6](../../questions/slides/slides-lec09-float-equality.md)** OK ή Not OK;: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 3 · ★★☆ · trace · `slides-lec09-float-equality`
-- <a id="a9-7"></a>**[Α9.7](../../questions/slides/slides-lec09-getinteger.md)** Η συνάρτηση getinteger: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 26, 38 · ★★☆ · trace · `slides-lec09-getinteger`
-- <a id="a9-8"></a>**[Α9.8](../../questions/slides/slides-lec09-letter-frequencies.md)** Μέτρηση γραμμάτων στην είσοδο: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 39 · ★★☆ · trace · `slides-lec09-letter-frequencies`
-- <a id="a9-9"></a>**[Α9.9](../../questions/slides/slides-lec09-scanf-no-ampersand.md)** scanf χωρίς &: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 32 · ★★☆ · short-answer · `slides-lec09-scanf-no-ampersand`
-- <a id="a9-10"></a>**[Α9.10](../../questions/slides/slides-lec09-scanf-return.md)** Είναι σωστό αυτό το πρόγραμμα;: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 33–35 · ★★☆ · debug · `slides-lec09-scanf-return`
+- <a id="a9-1"></a>**[Α9.1](../../questions/slides/slides-lec09-charcount.md)** Μετρητής χαρακτήρων με getchar: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 21 · ★☆☆ · trace · `slides-lec09-charcount`
+- <a id="a9-2"></a>**[Α9.2](../../questions/slides/slides-lec09-scanf-square.md)** Τι κάνει το πρόγραμμα με τη scanf;: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 32 · ★☆☆ · trace · `slides-lec09-scanf-square`
+- <a id="a9-3"></a>**[Α9.3](../../questions/slides/slides-lec09-scanf-two.md)** scanf με πολλά ορίσματα: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 38–39 · ★☆☆ · trace · `slides-lec09-scanf-two`
+- <a id="a9-4"></a>**[Α9.4](../../questions/slides/slides-lec09-addnums.md)** Άθροισμα δύο αριθμών από την πρότυπη είσοδο: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 26–27 · ★★☆ · programming · `slides-lec09-addnums`
+- <a id="a9-5"></a>**[Α9.5](../../questions/slides/slides-lec09-cat-char.md)** Μια cat με char: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 24 · ★★☆ · debug · `slides-lec09-cat-char`
+- <a id="a9-6"></a>**[Α9.6](../../questions/slides/slides-lec09-float-equality.md)** OK ή Not OK;: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 4 · ★★☆ · trace · `slides-lec09-float-equality`
+- <a id="a9-7"></a>**[Α9.7](../../questions/slides/slides-lec09-getinteger.md)** Η συνάρτηση getinteger: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 27, 40 · ★★☆ · trace · `slides-lec09-getinteger`
+- <a id="a9-8"></a>**[Α9.8](../../questions/slides/slides-lec09-letter-frequencies.md)** Μέτρηση γραμμάτων στην είσοδο: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 41 · ★★☆ · trace · `slides-lec09-letter-frequencies`
+- <a id="a9-9"></a>**[Α9.9](../../questions/slides/slides-lec09-scanf-no-ampersand.md)** scanf χωρίς &: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 34 · ★★☆ · short-answer · `slides-lec09-scanf-no-ampersand`
+- <a id="a9-10"></a>**[Α9.10](../../questions/slides/slides-lec09-scanf-return.md)** Είναι σωστό αυτό το πρόγραμμα;: Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 35–37 · ★★☆ · debug · `slides-lec09-scanf-return`
 
 ### Εργαστήριο (Α9.11–Α9.14)
 
