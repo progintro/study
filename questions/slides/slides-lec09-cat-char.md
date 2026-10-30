@@ -3,9 +3,9 @@ id: slides-lec09-cat-char
 kind: slides
 title: "Μια cat με char"
 source:
-  title: "Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 23"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec09.pdf
-  years: [2025]
+  title: "Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 24"
+  url: https://progintro.github.io/assets/pdf/lec09.pdf
+  years: [2025, 2026]
 chapters: [9]
 topics: [input-output, types]
 difficulty: 2

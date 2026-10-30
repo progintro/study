@@ -3,9 +3,9 @@ id: slides-lec09-scanf-two
 kind: slides
 title: "scanf με πολλά ορίσματα"
 source:
-  title: "Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 36–37"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec09.pdf
-  years: [2025]
+  title: "Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 38–39"
+  url: https://progintro.github.io/assets/pdf/lec09.pdf
+  years: [2025, 2026]
 chapters: [9]
 topics: [input-output]
 difficulty: 1

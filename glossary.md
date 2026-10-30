@@ -127,7 +127,7 @@
 | εντολή έκφρασης | expression statement | Μια έκφραση που τελειώνει με `;` | [6](chapters/06-control-flow/) |
 | ένωση | union | Τύπος σαν τη δομή, όπου όλα τα μέλη μοιράζονται την ίδια μνήμη. | [20](chapters/20-advanced-structs/) |
 | εξάρτηση | dependency | Ένα αρχείο χρειάζεται ένα άλλο για να χτιστεί. | [23](chapters/23-code-organization/), [24](chapters/24-advanced-topics/) |
-| έξοδος σφάλματος | standard error | Το ρεύμα `stderr`, για μηνύματα λάθους. | [18](chapters/18-sorting-input-2/) |
+| έξοδος σφάλματος | standard error (`stderr`) | Η έξοδος για μηνύματα λάθους, χωριστά από την πρότυπη έξοδο. | [9](chapters/09-input/), [18](chapters/18-sorting-input-2/) |
 | επανάληψη | iteration | Μία εκτέλεση του σώματος του βρόχου | [6](chapters/06-control-flow/) |
 | επέκταση | extension | Το τέλος του ονόματος (`.txt`, `.c`) που δείχνει τον τύπο | [1](chapters/01-command-line/), [18](chapters/18-sorting-input-2/) |
 | επεξεργαστής κειμένου | editor | Πρόγραμμα για τη σύνταξη του κώδικα (π.χ. `vim`, VS Code). | [7](chapters/07-problem-solving/) |

@@ -3,9 +3,9 @@ id: slides-lec09-float-equality
 kind: slides
 title: "OK ή Not OK;"
 source:
-  title: "Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 3"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec09.pdf
-  years: [2025]
+  title: "Διάλεξη 9: Δεδομένα Εισόδου, διαφάνεια 4"
+  url: https://progintro.github.io/assets/pdf/lec09.pdf
+  years: [2025, 2026]
 chapters: [9]
 topics: [floating-point, operators]
 difficulty: 2

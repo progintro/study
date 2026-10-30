@@ -1,37 +1,43 @@
 lecture: 9
-pages: 41
+year: 2026-27                     # updated from the 2025-26 deck (41 pages) on 2026-10-30
+slides: https://progintro.github.io/assets/pdf/lec09.pdf
+pages: 45
 outline:
-  - {pages: "2-4", section: "Σύγκριση αριθμών κινητής υποδιαστολής με =="}
-  - {pages: "5", section: "Ονόματα: camelCase και snake_case"}
-  - {pages: "1-8", section: "Δεδομένα εισόδου και εξόδου"}
-  - {pages: "9-13", section: "Οι τέσσερις πηγές εισόδου"}
-  - {pages: "14-17", section: "Η συνάρτηση getchar"}
-  - {pages: "18-19", section: "Buffer, Enter και Ctrl+D"}
-  - {pages: "20-21", section: "Η συνάρτηση getchar"}
-  - {pages: "22", section: "Η συνάρτηση putchar"}
-  - {pages: "23-24", section: "Η τιμή της getchar πάει σε int, όχι σε char"}
-  - {pages: "25-26", section: "Διάβασμα αριθμών χαρακτήρα-χαρακτήρα"}
-  - {pages: "27-32", section: "Η συνάρτηση scanf"}
-  - {pages: "33-35", section: "Η τιμή επιστροφής της scanf"}
-  - {pages: "36-37", section: "Κενά και πολλές τιμές"}
-  - {pages: "38", section: "Διάβασμα αριθμών χαρακτήρα-χαρακτήρα"}
-  - {pages: "39", section: "Η συνάρτηση getchar"}
+  - {pages: "2-5", section: "Σύγκριση αριθμών κινητής υποδιαστολής με =="}
+  - {pages: "6", section: "Ονόματα: camelCase και snake_case"}
+  - {pages: "3", section: "Σύνοψη"}  # GRCPC 2026 announcement, new in 2026-27
+  - {pages: "1-9", section: "Δεδομένα εισόδου και εξόδου"}
+  - {pages: "10-14", section: "Οι τέσσερις πηγές εισόδου"}
+  - {pages: "15-18", section: "Η συνάρτηση getchar"}
+  - {pages: "19-20", section: "Buffer, Enter και Ctrl+D"}
+  - {pages: "21-22", section: "Η συνάρτηση getchar"}
+  - {pages: "23", section: "Η συνάρτηση putchar"}
+  - {pages: "24-25", section: "Η τιμή της getchar πάει σε int, όχι σε char"}
+  - {pages: "26-27", section: "Διάβασμα αριθμών χαρακτήρα-χαρακτήρα"}
+  - {pages: "29-34", section: "Η συνάρτηση scanf"}
+  - {pages: "35-37", section: "Η τιμή επιστροφής της scanf"}
+  - {pages: "38-39", section: "Κενά και πολλές τιμές"}
+  - {pages: "40", section: "Διάβασμα αριθμών χαρακτήρα-χαρακτήρα"}
+  - {pages: "41", section: "Η συνάρτηση getchar"}
+  - {pages: "42-43", section: "Δεδομένα εισόδου και εξόδου"}  # fprintf and stderr, new in 2026-27
 pointers:
+  - {page: 3, text: "GRCPC 2026 scoreboard (Greece): https://grcpc.gr/public?countries%5B%5D=GRC&filter=filter"}
   - {page: 2, text: "Wikipedia: Camel case (https://en.wikipedia.org/wiki/Camel_case)"}
   - {page: 2, text: "Wikipedia: Snake case (https://en.wikipedia.org/wiki/Snake_case)"}
-  - {page: 15, text: "man getchar"}
-  - {page: 18, text: "Wikipedia: Data buffer (https://en.wikipedia.org/wiki/Data_buffer)"}
-  - {page: 27, text: "man scanf"}
-  - {page: 40, text: "Σημειώσεις κ. Σταματόπουλου, σελ. 28-29, 70-71, 78-79, 86-87"}
-  - {page: 40, text: "getchar (https://en.cppreference.com/w/c/io/getchar)"}
-  - {page: 40, text: "putchar (https://en.cppreference.com/w/c/io/putchar)"}
-  - {page: 40, text: "scanf (https://cplusplus.com/reference/cstdio/scanf/)"}
-  - {page: 40, text: "printf (https://cplusplus.com/reference/cstdio/printf/)"}
-  - {page: 40, text: "Wikipedia: Data buffer (https://en.wikipedia.org/wiki/Data_buffer)"}
-  - {page: 40, text: "Wikipedia: End of transmission (https://en.wikipedia.org/wiki/End-of-Transmission_character)"}
-  - {page: 40, text: "POSIX termios, Canonical mode (https://pubs.opengroup.org/onlinepubs/7908799/xbd/termios.html#tag_008_001_006)"}
+  - {page: 16, text: "man getchar"}
+  - {page: 19, text: "Wikipedia: Data buffer (https://en.wikipedia.org/wiki/Data_buffer)"}
+  - {page: 29, text: "man scanf"}
+  - {page: 44, text: "Σημειώσεις κ. Σταματόπουλου, σελ. 28-29, 70-71, 78-79, 86-87"}
+  - {page: 44, text: "getchar (https://en.cppreference.com/w/c/io/getchar)"}
+  - {page: 44, text: "putchar (https://en.cppreference.com/w/c/io/putchar)"}
+  - {page: 44, text: "scanf (https://cplusplus.com/reference/cstdio/scanf/)"}
+  - {page: 44, text: "printf (https://cplusplus.com/reference/cstdio/printf/)"}
+  - {page: 44, text: "Wikipedia: Data buffer (https://en.wikipedia.org/wiki/Data_buffer)"}
+  - {page: 44, text: "Wikipedia: End of transmission (https://en.wikipedia.org/wiki/End-of-Transmission_character)"}
+  - {page: 44, text: "POSIX termios, Canonical mode (https://pubs.opengroup.org/onlinepubs/7908799/xbd/termios.html#tag_008_001_006)"}
 takeaways_slide: null
 issues:
+  - "2026-27 deck (45 pages) vs 2025-26 (41 pages). New pages: p. 3 (1st place for an NKUA team at GRCPC 2026, plus a silver and three places in the top 11, with the scoreboard link), p. 28 (a Chekhov's Gun image, «every element in a story should earn its place», between the addnums question and scanf, with no text of its own; the chapter only lists it in the reading pages), pp. 42-43 (fprintf, stdout vs stderr, `fprintf(stderr, \"Not a prime number: %d\\n\", num)`; added to §9.3 and the glossary). Page mapping: 2025-26 pp. 1-2 = 2026-27 pp. 1-2; pp. 3-26 -> 4-27; pp. 27-39 -> 29-41; pp. 40-41 -> 44-45. Other changes: p. 2 fixes the spelling «Διευκρινίσεις»; pp. 7-8 add painting captions; p. 11 (old p. 10) replaces the hw0 2025 trolley stdin screenshot with the hw0 2026 goldbach one (ending in «EOF detected, exiting»), and §9.22 now uses goldbach and mentions trolley as the 2025-26 example. The outline and pointers above use 2026-27 pages; the issues below use 2025-26 page numbers."
   - "No explicit key-takeaways slide; p. 40 ('Για την επόμενη φορά') lists reading pointers only. Κύρια σημεία were built from the red callouts (p. 17 one char, p. 18-19 buffer/Ctrl+D, p. 24 int not char, p. 31 address, p. 34 check return value, p. 37 whitespace skipping, p. 29 'συμμετρική της printf')."
   - "p. 40 cites notes pages 28-29, 70-71, 78-79, 86-87; these are printed page numbers and match k04-map.tsv exactly (28-29, 70-71, 78-79, 86-87); the chapter cites the section names with these pages and quotes the slides' numbers."
   - "p. 3-4: the slides ask 'Υπάρχει κάποια εξήγηση;' but give no answer; the explanation (float rounding vs double constant) and the fix (fabs with tolerance, or 3.1f) are standard C, verified locally (a == 3.1 false, a == 3.1f true)."
