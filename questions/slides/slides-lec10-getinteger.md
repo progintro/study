@@ -4,8 +4,8 @@ kind: slides
 title: "Τι κάνει η getinteger;"
 source:
   title: "Διάλεξη 10, διαφάνεια 17"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec10.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec10.pdf
+  years: [2025, 2026]
 chapters: [10, 9]
 topics: [input-output, functions]
 difficulty: 2

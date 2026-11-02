@@ -1,8 +1,10 @@
 lecture: 10
+year: 2026-27                     # updated from the 2025-26 deck (53 pages) on 2026-11-02; same page numbers
+slides: https://progintro.github.io/assets/pdf/lec10.pdf
 pages: 53
 outline:
   - {pages: "1", section: "(τίτλος)"}
-  - {pages: "2", section: "(ανακοινώσεις / διευκρινίσεις: κενή διαφάνεια)"}
+  - {pages: "2", section: "Σύνοψη"}  # 2026-27: function vs program, return value vs exit code
   - {pages: "3-4", section: "(προηγούμενη φορά / σήμερα)"}
   - {pages: "5", section: "Η `getinteger` με `getchar` (Παραδείγματα)"}
   - {pages: "6-8", section: "Η συνάρτηση `scanf`"}
@@ -39,7 +41,8 @@ pointers:
   - {page: 51, text: "Memoization: https://en.wikipedia.org/wiki/Memoization"}
 takeaways_slide: null         # p. 51 is a reading assignment, not a takeaways slide
 issues:
-  - "p. 2: 'Ανακοινώσεις / Διευκρινίσεις' slide has a title and no content."
+  - "2026-27 deck vs 2025-26 (both 53 pages, same page numbers). p. 2 was empty and now asks two questions: «Ποια η διαφορά (υπάρχει;) μιας συνάρτησης και ενός προγράμματος;» and «Ποια η διαφορά (υπάρχει;) ανάμεσα στην τιμή επιστροφής μιας συνάρτησης και τον κωδικό εξόδου ενός προγράμματος;». The slides give no answer; the chapter's Σύνοψη answers both briefly (caller: other code vs the OS; typed arguments vs argv text; exit code = main's return value, 0-255 on Linux, read with echo $?). pp. 3-4 add painting captions (p. 4 also «Πίνακας με Πίνακες!»), and the closing p. 52 says «καλή μέρα» instead of «καλό Σαββατοκύριακο»."
+  - "2025-26 p. 2: 'Ανακοινώσεις / Διευκρινίσεις' slide has a title and no content."
   - "p. 53: stray slide 'The Iron Triangle of Project Management' (Scope / Cost / Time around Quality) after the closing slide; unrelated to arrays, left out of the chapter."
   - "p. 14: the second run ('Gimme a number: Square:' then 1068701481) shows no input; the chapter interprets it as EOF (Ctrl-D), which the slide does not state."
   - "p. 17: the comment 'No need to declare ch as int - no EOF handling' sits next to 'int ch;' (as in the notes); transcribed as is."
