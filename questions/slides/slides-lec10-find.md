@@ -4,8 +4,8 @@ kind: slides
 title: "Αναζήτηση στοιχείου σε πίνακα"
 source:
   title: "Διάλεξη 10, διαφάνειες 47-48"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec10.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec10.pdf
+  years: [2025, 2026]
 chapters: [10]
 topics: [arrays, functions, searching]
 difficulty: 1

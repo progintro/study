@@ -4,8 +4,8 @@ kind: slides
 title: "Τι κάνει το πρόγραμμα με τη scanf;"
 source:
   title: "Διάλεξη 10, διαφάνειες 9-10"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec10.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec10.pdf
+  years: [2025, 2026]
 chapters: [10]
 topics: [input-output]
 difficulty: 1
