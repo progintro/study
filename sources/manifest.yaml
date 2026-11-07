@@ -32,7 +32,7 @@ lectures:
   - {n: 8,  slug: 08-control-flow-2,     date: 2026-10-26, part: B, slides: lec08.pdf, url: "https://progintro.github.io/assets/pdf/lec08.pdf", title: "Ροή Ελέγχου #2",                      notes: [03-control-flow],             labs: [lab03]}
   - {n: 9,  slug: 09-input,              date: 2026-10-30, part: B, slides: lec09.pdf, url: "https://progintro.github.io/assets/pdf/lec09.pdf", title: "Δεδομένα Εισόδου",                    notes: [01-first-programs, 09-io],    labs: [lab04]}
   - {n: 10, slug: 10-arrays,             date: 2026-11-02, part: C, slides: lec10.pdf, url: "https://progintro.github.io/assets/pdf/lec10.pdf", title: "Πίνακες",                             notes: [05-pointers-arrays],          labs: [lab06]}
-  - {n: 11, slug: 11-pointers-recursion, date: 2025-11-07, part: C, slides: lec11.pdf, title: "Δείκτες και Αναδρομή",                notes: [04-functions, 05-pointers-arrays], labs: [lab05, lab06]}
+  - {n: 11, slug: 11-pointers-recursion, date: 2026-11-06, part: C, slides: lec11.pdf, url: "https://progintro.github.io/assets/pdf/lec11.pdf", title: "Δείκτες και Αναδρομή",                notes: [04-functions, 05-pointers-arrays], labs: [lab05, lab06]}
   - {n: 12, slug: 12-pointers-arrays,    date: 2025-11-10, part: C, slides: lec12.pdf, title: "Δείκτες και Πίνακες",                 notes: [05-pointers-arrays],          labs: [lab06]}
   - {n: 13, slug: 13-memory,             date: 2025-11-14, part: C, slides: lec13.pdf, title: "Μνήμη",                               notes: [06-memory-strings],           labs: [lab07]}
   - {n: 14, slug: 14-scope-strings,      date: 2025-11-21, part: C, slides: lec14.pdf, title: "Εμβέλεια, Μνήμη και Συμβολοσειρές",   notes: [04-functions, 06-memory-strings], labs: [lab08]}

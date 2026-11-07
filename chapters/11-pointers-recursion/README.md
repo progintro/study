@@ -3,9 +3,9 @@ layout: chapter
 chapter: 11
 lecture: 11
 title: "Δείκτες και Αναδρομή"
-date: 2025-11-07
+date: 2026-11-06
 part: C
-slides: https://github.com/progintro/progintro.github.io/releases/download/2025/lec11.pdf
+slides: https://progintro.github.io/assets/pdf/lec11.pdf
 prev: 10-arrays
 next: 12-pointers-arrays
 topics: [pointers, pointer-arithmetic, memory-model, arrays, recursion, integer-representation]
@@ -602,11 +602,12 @@ int main(int argc, char **argv) {
 
 ## Διάβασμα
 
-- **Διαφάνειες:** [Διάλεξη 11](https://github.com/progintro/progintro.github.io/releases/download/2025/lec11.pdf),
+- **Διαφάνειες:** [Διάλεξη 11](https://progintro.github.io/assets/pdf/lec11.pdf) (2026-27),
   σελ. 1–50. Μνήμη και διευθύνσεις σελ. 5–11· δείκτες, `sizeof` και `NULL`
   σελ. 12–19· αποαναφορά και μη έγκυροι δείκτες σελ. 20–24· πράξεις με δείκτες
   σελ. 25–28· δείκτες και πίνακες σελ. 29–35· παραδείγματα με πίνακες σελ. 36–42·
-  αναδρομή σελ. 43–48.
+  αναδρομή σελ. 43–48. Οι διαφάνειες του 2025-26 έχουν την ίδια αρίθμηση:
+  [Διάλεξη 11 (2025)](https://github.com/progintro/progintro.github.io/releases/download/2025/lec11.pdf).
 - **Σημειώσεις:** η διάλεξη μαζί με την επόμενη καλύπτει τις σελίδες 73–103 των
   σημειώσεων του κ. Σταματόπουλου:
   - [Κεφάλαιο 5: Δείκτες και πίνακες](https://progintro.github.io/notes/chapters/05-pointers-arrays/),

@@ -1,4 +1,6 @@
 lecture: 11
+year: 2026-27                     # updated from the 2025-26 deck (50 pages) on 2026-11-07; same page numbers
+slides: https://progintro.github.io/assets/pdf/lec11.pdf
 pages: 50
 outline:
   - {pages: "1", section: "(τίτλος)"}
@@ -34,6 +36,7 @@ pointers:
   - {page: 49, text: "Pointer tutorial [4]: https://www.programiz.com/c-programming/c-pointers"}
 takeaways_slide: null          # p. 47 (definition of recursion) and p. 49 (reading) are not takeaways slides
 issues:
+  - "2026-27 deck vs 2025-26 (both 50 pages, same page numbers, no content changes). pp. 3-4 add painting captions, and the memory diagram on p. 16 now puts the &c label on Byte 150 (in 2025-26 it pointed at Byte 148); the chapter already places c at 150. The «μεταβλητή x» slip on p. 16 is still there."
   - "Read tool could not render the PDF (no poppler for it); pages were rendered with pdftoppm -r 110 and read as PNGs. Link URLs recovered with pdftohtml -xml (xref warning, links intact)."
   - "p. 2: announcement 'Η Εργασία #1 έρχεται την επόμενη εβδομάδα!' (course policy, not put in the chapter)."
   - "p. 8-11, 15, 21, 27: memory diagrams draw the int 42 with its value in the last byte (103), i.e. big-endian order; the chapter notes this and points to chapter 12 (endianness)."
