@@ -4,8 +4,8 @@ kind: slides
 title: "Πώς τυπώνω μόνο το World"
 source:
   title: "Διάλεξη 11, διαφάνειες 34–35"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec11.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec11.pdf
+  years: [2025, 2026]
 chapters: [11]
 topics: [pointers, strings, arrays]
 difficulty: 1

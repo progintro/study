@@ -4,8 +4,8 @@ kind: slides
 title: "Μέσος όρος πίνακα 100 ακεραίων"
 source:
   title: "Διάλεξη 11, διαφάνειες 37–38"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec11.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec11.pdf
+  years: [2025, 2026]
 chapters: [11, 10]
 topics: [arrays, functions]
 difficulty: 1

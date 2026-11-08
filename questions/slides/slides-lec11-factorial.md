@@ -4,8 +4,8 @@ kind: slides
 title: "Το παραγοντικό αναδρομικά σε C"
 source:
   title: "Διάλεξη 11, διαφάνειες 44–45"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec11.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec11.pdf
+  years: [2025, 2026]
 chapters: [11]
 topics: [recursion, functions, command-line-args]
 difficulty: 1

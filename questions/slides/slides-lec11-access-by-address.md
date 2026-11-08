@@ -4,8 +4,8 @@ kind: slides
 title: "Πρόσβαση σε μεταβλητή μόνο μέσω της διεύθυνσής της"
 source:
   title: "Διάλεξη 11, διαφάνεια 20"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec11.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec11.pdf
+  years: [2025, 2026]
 chapters: [11]
 topics: [pointers]
 difficulty: 1
