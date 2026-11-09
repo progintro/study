@@ -3,9 +3,9 @@ layout: chapter
 chapter: 12
 lecture: 12
 title: "Δείκτες και Πίνακες"
-date: 2025-11-10
+date: 2026-11-09
 part: C
-slides: https://github.com/progintro/progintro.github.io/releases/download/2025/lec12.pdf
+slides: https://progintro.github.io/assets/pdf/lec12.pdf
 prev: 11-pointers-recursion
 next: 13-memory
 topics: [arrays, multidim-arrays, pointers, pointer-arithmetic, command-line-args, dynamic-memory, memory-model]
@@ -516,10 +516,11 @@ $ ./int
 
 ## Διάβασμα
 
-- **Διαφάνειες:** [Διάλεξη 12](https://github.com/progintro/progintro.github.io/releases/download/2025/lec12.pdf),
+- **Διαφάνειες:** [Διάλεξη 12](https://progintro.github.io/assets/pdf/lec12.pdf) (2026-27),
   σελ. 1–45: μονοδιάστατοι πίνακες 5–10· δισδιάστατοι 11–22· πολυδιάστατοι 23·
   δείκτες σε δείκτες 24–28· πίνακες από δείκτες και `argv` 29–35· `malloc` 36–40·
-  endianness 41–43.
+  endianness 41–43. Οι διαφάνειες του 2025-26 έχουν την ίδια αρίθμηση:
+  [Διάλεξη 12 (2025)](https://github.com/progintro/progintro.github.io/releases/download/2025/lec12.pdf).
 - **Σημειώσεις:** η διάλεξη ζητά να διαβάσετε τις σελ. 73–103:
   - [Κεφάλαιο 5](https://progintro.github.io/notes/chapters/05-pointers-arrays/):
     «Δείκτες» (K04, σελ. 72–77), «Περί ανάγνωσης ακεραίων (και όχι μόνο)» (78–79),
