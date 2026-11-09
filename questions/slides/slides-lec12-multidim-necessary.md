@@ -4,8 +4,8 @@ kind: slides
 title: "Είναι απαραίτητοι οι πολυδιάστατοι πίνακες;"
 source:
   title: "Διάλεξη 12, διαφάνεια 23"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec12.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec12.pdf
+  years: [2025, 2026]
 chapters: [12]
 topics: [multidim-arrays, arrays, memory-model]
 difficulty: 2

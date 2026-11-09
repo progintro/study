@@ -1,8 +1,10 @@
 lecture: 12
+year: 2026-27                     # updated from the 2025-26 deck (45 pages) on 2026-11-09; same page numbers
+slides: https://progintro.github.io/assets/pdf/lec12.pdf
 pages: 45
 outline:
   - {pages: "1", section: "(τίτλος)"}
-  - {pages: "2", section: "(ανακοινώσεις: Εργασία #1, «Πράξεις με δείκτες»)"}
+  - {pages: "2", section: "(ανακοινώσεις: «Πράξεις με δείκτες»· το 2025-26 και η Εργασία #1)"}
   - {pages: "3-4", section: "(προηγούμενη φορά / σήμερα)"}
   - {pages: "5-10", section: "Ο πίνακας στη μνήμη"}
   - {pages: "11-14", section: "Δισδιάστατοι πίνακες"}
@@ -23,6 +25,7 @@ pointers:
   - {page: 44, text: "Endianness: https://en.wikipedia.org/wiki/Endianness"}
 takeaways_slide: null         # p. 44 is a reading assignment, not a takeaways slide
 issues:
+  - "2026-27 deck vs 2025-26 (both 45 pages, same page numbers, no content changes). p. 2 drops the 2025-26 Εργασία #1 announcement and keeps only «Πράξεις με δείκτες»; p. 3 adds a painting caption. The p. 2 issue below describes the 2025-26 deck."
   - "p. 2: announcement 'Η Εργασία #1 μόλις βγήκε! Προθεσμία: Τετάρτη, 10 Δεκέμβρη 23:59' (course policy, not put in the chapter); the second bullet 'Πράξεις με δείκτες' is a bare clarification heading with no content on the slide."
   - "p. 44 is a 'Για την επόμενη φορά' slide (reading assignment + link), not an explicit key-takeaways slide; Κύρια σημεία were derived from the lecture content."
   - "p. 6-10: the 1D memory diagram places bears[0] at bytes 4-7 (array occupies 4-403), consistent with the callout on p. 10; kept as is."
