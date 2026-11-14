@@ -3,9 +3,9 @@ id: slides-lec14-str-plus-plus
 kind: slides
 title: "Η έκφραση *str++"
 source:
-  title: "Διάλεξη 14, διαφάνεια 34"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec14.pdf
-  years: [2025]
+  title: "Διάλεξη 13, διαφάνεια 34"
+  url: https://progintro.github.io/assets/pdf/lec13.pdf
+  years: [2025, 2026]
 chapters: [14, 5]
 topics: [pointers, pointer-arithmetic, precedence]
 difficulty: 2

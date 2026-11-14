@@ -697,7 +697,7 @@ Pi is approximately: 3.141583
 - **[Α8.7](../../questions/homework/hw-2023-hw1-newton.md)** Η Μέθοδος Newton-Raphson: Εργασία 1 (2023-24), Άσκηση 1 · ★★☆ · programming · `hw-2023-hw1-newton`
 - **[Α11.15](../../questions/labs/lab-lab05-collatz.md)** Η εικασία του Collatz: Εργαστήριο 5, Άσκηση 1 · ★★☆ · programming · `lab-lab05-collatz`
 - **[Α11.14](../../questions/labs/lab-lab06-myprog.md)** Πέρασμα δεδομένων μέσω δεικτών: Εργαστήριο 6, Άσκηση 1 · ★☆☆ · programming · `lab-lab06-myprog`
-- **[Α14.2](../../questions/slides/slides-lec14-local-param.md)** Αύξηση παραμέτρου μέσα σε συνάρτηση: Διάλεξη 14, διαφάνειες 11–12 · ★☆☆ · trace · `slides-lec14-local-param`
+- **[Α14.2](../../questions/slides/slides-lec14-local-param.md)** Αύξηση παραμέτρου μέσα σε συνάρτηση: Διάλεξη 13, διαφάνειες 11–12 · ★☆☆ · trace · `slides-lec14-local-param`
 - **[Α15.16](../../questions/homework/hw-2023-hw1-mirror.md)** Κατοπτρικά Πρώτα Τετράγωνα: Εργασία 1 (2023-24), Άσκηση 2 · ★★★ · programming · `hw-2023-hw1-mirror`
 - **[Α23.1](../../questions/slides/slides-lec23-implicit-declaration.md)** Κλήση πριν από τον ορισμό: Διάλεξη 23, διαφάνειες 19-21 · ★☆☆ · debug · `slides-lec23-implicit-declaration`
 - **[Α26.4](../../questions/slides/slides-lecmake-sqrt-errors.md)** Compiler error ή linking error; (math.h και libm.so): How to Make? (προσκεκλημένη διάλεξη), διαφάνειες 6-8 · ★☆☆ · debug · `slides-lecmake-sqrt-errors`

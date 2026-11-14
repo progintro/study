@@ -3,9 +3,9 @@ id: slides-lec14-static-assign
 kind: slides
 title: "Στατική μεταβλητή με ανάθεση εκτός δήλωσης"
 source:
-  title: "Διάλεξη 14, διαφάνεια 19"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec14.pdf
-  years: [2025]
+  title: "Διάλεξη 13, διαφάνεια 19"
+  url: https://progintro.github.io/assets/pdf/lec13.pdf
+  years: [2025, 2026]
 chapters: [14]
 topics: [scope, memory-model]
 difficulty: 2
