@@ -558,14 +558,14 @@
 
 ### Ζέσταμα: από τις διαφάνειες (Α14.1–Α14.8)
 
-- **[Α14.1](../questions/slides/slides-lec14-check-boo.md)** Είναι το πρώτο όρισμα "--boo";: Διάλεξη 14, διαφάνεια 42 · ★☆☆ · programming · `slides-lec14-check-boo`
-- **[Α14.2](../questions/slides/slides-lec14-local-param.md)** Αύξηση παραμέτρου μέσα σε συνάρτηση: Διάλεξη 14, διαφάνειες 11–12 · ★☆☆ · trace · `slides-lec14-local-param`
-- **[Α14.3](../questions/slides/slides-lec14-local-same-name.md)** Τοπική μεταβλητή με το ίδιο όνομα σε δύο συναρτήσεις: Διάλεξη 14, διαφάνειες 9–10 · ★☆☆ · trace · `slides-lec14-local-same-name`
-- **[Α14.4](../questions/slides/slides-lec14-palindrome.md)** Παλινδρομικό string: Διάλεξη 14, διαφάνειες 43–44 · ★☆☆ · programming · `slides-lec14-palindrome`
-- **[Α14.5](../questions/slides/slides-lec14-shadowing.md)** Επισκίαση παγκόσμιας μεταβλητής: Διάλεξη 14, διαφάνειες 14–16 · ★☆☆ · trace · `slides-lec14-shadowing`
-- **[Α14.6](../questions/slides/slides-lec14-static-counter.md)** Στατική και τοπική μεταβλητή σε τρεις κλήσεις: Διάλεξη 14, διαφάνειες 17–18 · ★☆☆ · trace · `slides-lec14-static-counter`
-- **[Α14.7](../questions/slides/slides-lec14-static-assign.md)** Στατική μεταβλητή με ανάθεση εκτός δήλωσης: Διάλεξη 14, διαφάνεια 19 · ★★☆ · trace · `slides-lec14-static-assign`
-- **[Α14.8](../questions/slides/slides-lec14-str-plus-plus.md)** Η έκφραση *str++: Διάλεξη 14, διαφάνεια 34 · ★★☆ · short-answer · `slides-lec14-str-plus-plus`
+- **[Α14.1](../questions/slides/slides-lec14-check-boo.md)** Είναι το πρώτο όρισμα "--boo";: Διάλεξη 13, διαφάνεια 42 · ★☆☆ · programming · `slides-lec14-check-boo`
+- **[Α14.2](../questions/slides/slides-lec14-local-param.md)** Αύξηση παραμέτρου μέσα σε συνάρτηση: Διάλεξη 13, διαφάνειες 11–12 · ★☆☆ · trace · `slides-lec14-local-param`
+- **[Α14.3](../questions/slides/slides-lec14-local-same-name.md)** Τοπική μεταβλητή με το ίδιο όνομα σε δύο συναρτήσεις: Διάλεξη 13, διαφάνειες 9–10 · ★☆☆ · trace · `slides-lec14-local-same-name`
+- **[Α14.4](../questions/slides/slides-lec14-palindrome.md)** Παλινδρομικό string: Διάλεξη 13, διαφάνειες 43–44 · ★☆☆ · programming · `slides-lec14-palindrome`
+- **[Α14.5](../questions/slides/slides-lec14-shadowing.md)** Επισκίαση παγκόσμιας μεταβλητής: Διάλεξη 13, διαφάνειες 14–16 · ★☆☆ · trace · `slides-lec14-shadowing`
+- **[Α14.6](../questions/slides/slides-lec14-static-counter.md)** Στατική και τοπική μεταβλητή σε τρεις κλήσεις: Διάλεξη 13, διαφάνειες 17–18 · ★☆☆ · trace · `slides-lec14-static-counter`
+- **[Α14.7](../questions/slides/slides-lec14-static-assign.md)** Στατική μεταβλητή με ανάθεση εκτός δήλωσης: Διάλεξη 13, διαφάνεια 19 · ★★☆ · trace · `slides-lec14-static-assign`
+- **[Α14.8](../questions/slides/slides-lec14-str-plus-plus.md)** Η έκφραση *str++: Διάλεξη 13, διαφάνεια 34 · ★★☆ · short-answer · `slides-lec14-str-plus-plus`
 
 ### Εργαστήριο (Α14.9)
 

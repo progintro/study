@@ -3,9 +3,9 @@ id: slides-lec14-check-boo
 kind: slides
 title: "Είναι το πρώτο όρισμα \"--boo\";"
 source:
-  title: "Διάλεξη 14, διαφάνεια 42"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec14.pdf
-  years: [2025]
+  title: "Διάλεξη 13, διαφάνεια 42"
+  url: https://progintro.github.io/assets/pdf/lec13.pdf
+  years: [2025, 2026]
 chapters: [14, 12]
 topics: [strings, command-line-args]
 difficulty: 1

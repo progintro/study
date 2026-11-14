@@ -3,9 +3,9 @@ id: slides-lec14-static-counter
 kind: slides
 title: "Στατική και τοπική μεταβλητή σε τρεις κλήσεις"
 source:
-  title: "Διάλεξη 14, διαφάνειες 17–18"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec14.pdf
-  years: [2025]
+  title: "Διάλεξη 13, διαφάνειες 17–18"
+  url: https://progintro.github.io/assets/pdf/lec13.pdf
+  years: [2025, 2026]
 chapters: [14]
 topics: [scope, memory-model]
 difficulty: 1

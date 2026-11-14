@@ -3,9 +3,9 @@ id: slides-lec14-local-param
 kind: slides
 title: "Αύξηση παραμέτρου μέσα σε συνάρτηση"
 source:
-  title: "Διάλεξη 14, διαφάνειες 11–12"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec14.pdf
-  years: [2025]
+  title: "Διάλεξη 13, διαφάνειες 11–12"
+  url: https://progintro.github.io/assets/pdf/lec13.pdf
+  years: [2025, 2026]
 chapters: [14, 3]
 topics: [scope, functions]
 difficulty: 1

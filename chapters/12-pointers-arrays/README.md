@@ -657,7 +657,7 @@ $ ./int
 - **[Α14.22](../../questions/exams/exam-2023-fall-ex5-q4.md)** Μεταμορφώσιμες Προτάσεις: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 4 · ★★★ · programming · `exam-2023-fall-ex5-q4`
 - **[Α14.12](../../questions/exams/exam-2025-sep-q2.md)** Η συνάρτηση transform: Εξέταση Σεπτεμβρίου 2025, Θέμα 2 · ★☆☆ · trace · `exam-2025-sep-q2`
 - **[Α14.9](../../questions/labs/lab-lab08-string.md)** Επεξεργασία συμβολοσειρών: Εργαστήριο 8, Άσκηση 1 · ★★☆ · programming · `lab-lab08-string`
-- **[Α14.1](../../questions/slides/slides-lec14-check-boo.md)** Είναι το πρώτο όρισμα "--boo";: Διάλεξη 14, διαφάνεια 42 · ★☆☆ · programming · `slides-lec14-check-boo`
+- **[Α14.1](../../questions/slides/slides-lec14-check-boo.md)** Είναι το πρώτο όρισμα "--boo";: Διάλεξη 13, διαφάνεια 42 · ★☆☆ · programming · `slides-lec14-check-boo`
 - **[Α15.2](../../questions/slides/slides-lec15-complexity-find-max-2d.md)** Πολυπλοκότητα εύρεσης μέγιστου σε πίνακα N x N: Διάλεξη 15, διαφάνεια 23 · ★☆☆ · short-answer · `slides-lec15-complexity-find-max-2d`
 - **[Α15.4](../../questions/slides/slides-lec15-complexity-malloc.md)** Πολυπλοκότητα δυναμικού πίνακα με malloc: Διάλεξη 15, διαφάνεια 19 · ★☆☆ · short-answer · `slides-lec15-complexity-malloc`
 - **[Α16.10](../../questions/slides/slides-lec16-char-pointer-arrays.md)** char *array[], char **array και char array[10][10]: Διάλεξη 16, διαφάνεια 19 · ★★☆ · short-answer · `slides-lec16-char-pointer-arrays`

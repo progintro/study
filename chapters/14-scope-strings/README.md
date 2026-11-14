@@ -3,9 +3,9 @@ layout: chapter
 chapter: 14
 lecture: 14
 title: "Εμβέλεια, Μνήμη και Συμβολοσειρές"
-date: 2025-11-21
+date: 2026-11-13
 part: C
-slides: https://github.com/progintro/progintro.github.io/releases/download/2025/lec14.pdf
+slides: https://progintro.github.io/assets/pdf/lec13.pdf
 prev: 13-memory
 next: 15-complexity-preprocessor
 topics: [scope, memory-model, strings, pointers, pointer-arithmetic, precedence, command-line-args]
@@ -706,10 +706,12 @@ int isPalindrome(char *str) {
 
 ## Διάβασμα
 
-- **Διαφάνειες:** [Διάλεξη 14](https://github.com/progintro/progintro.github.io/releases/download/2025/lec14.pdf),
+- **Διαφάνειες:** [Διάλεξη 13](https://progintro.github.io/assets/pdf/lec13.pdf) (2026-27),
   σελ. 1–46: εμβέλεια, τοπικές και παγκόσμιες μεταβλητές 5–13· επισκίαση 14–16·
   στατικές μεταβλητές 17–19· κατηγορίες μνήμης και στατική μνήμη 20–27·
-  συμβολοσειρές και `string.h` 28–41· ερωτήσεις (`--boo`, παλινδρομικό) 42–44.
+  συμβολοσειρές και `string.h` 28–41· ερωτήσεις (`--boo`, παλινδρομικό) 42–44. Το 2025-26 ήταν η
+  [Διάλεξη 14 (2025)](https://github.com/progintro/progintro.github.io/releases/download/2025/lec14.pdf),
+  με την ίδια αρίθμηση σελίδων· το 2026-27 προηγείται της διάλεξης για τη μνήμη (Κεφάλαιο 13).
 - **Σημειώσεις:** η διάλεξη λέει ότι κάλυψε τις σελ. 63–68, 74–76 και 93–96 των
   διαφανειών του κ. Σταματόπουλου:
   - [Κεφάλαιο 4: Συναρτήσεις, εμβέλεια και αναδρομή](https://progintro.github.io/notes/chapters/04-functions/),
@@ -807,14 +809,14 @@ int isPalindrome(char *str) {
 
 ### Ζέσταμα: από τις διαφάνειες (Α14.1–Α14.8)
 
-- <a id="a14-1"></a>**[Α14.1](../../questions/slides/slides-lec14-check-boo.md)** Είναι το πρώτο όρισμα "--boo";: Διάλεξη 14, διαφάνεια 42 · ★☆☆ · programming · `slides-lec14-check-boo`
-- <a id="a14-2"></a>**[Α14.2](../../questions/slides/slides-lec14-local-param.md)** Αύξηση παραμέτρου μέσα σε συνάρτηση: Διάλεξη 14, διαφάνειες 11–12 · ★☆☆ · trace · `slides-lec14-local-param`
-- <a id="a14-3"></a>**[Α14.3](../../questions/slides/slides-lec14-local-same-name.md)** Τοπική μεταβλητή με το ίδιο όνομα σε δύο συναρτήσεις: Διάλεξη 14, διαφάνειες 9–10 · ★☆☆ · trace · `slides-lec14-local-same-name`
-- <a id="a14-4"></a>**[Α14.4](../../questions/slides/slides-lec14-palindrome.md)** Παλινδρομικό string: Διάλεξη 14, διαφάνειες 43–44 · ★☆☆ · programming · `slides-lec14-palindrome`
-- <a id="a14-5"></a>**[Α14.5](../../questions/slides/slides-lec14-shadowing.md)** Επισκίαση παγκόσμιας μεταβλητής: Διάλεξη 14, διαφάνειες 14–16 · ★☆☆ · trace · `slides-lec14-shadowing`
-- <a id="a14-6"></a>**[Α14.6](../../questions/slides/slides-lec14-static-counter.md)** Στατική και τοπική μεταβλητή σε τρεις κλήσεις: Διάλεξη 14, διαφάνειες 17–18 · ★☆☆ · trace · `slides-lec14-static-counter`
-- <a id="a14-7"></a>**[Α14.7](../../questions/slides/slides-lec14-static-assign.md)** Στατική μεταβλητή με ανάθεση εκτός δήλωσης: Διάλεξη 14, διαφάνεια 19 · ★★☆ · trace · `slides-lec14-static-assign`
-- <a id="a14-8"></a>**[Α14.8](../../questions/slides/slides-lec14-str-plus-plus.md)** Η έκφραση *str++: Διάλεξη 14, διαφάνεια 34 · ★★☆ · short-answer · `slides-lec14-str-plus-plus`
+- <a id="a14-1"></a>**[Α14.1](../../questions/slides/slides-lec14-check-boo.md)** Είναι το πρώτο όρισμα "--boo";: Διάλεξη 13, διαφάνεια 42 · ★☆☆ · programming · `slides-lec14-check-boo`
+- <a id="a14-2"></a>**[Α14.2](../../questions/slides/slides-lec14-local-param.md)** Αύξηση παραμέτρου μέσα σε συνάρτηση: Διάλεξη 13, διαφάνειες 11–12 · ★☆☆ · trace · `slides-lec14-local-param`
+- <a id="a14-3"></a>**[Α14.3](../../questions/slides/slides-lec14-local-same-name.md)** Τοπική μεταβλητή με το ίδιο όνομα σε δύο συναρτήσεις: Διάλεξη 13, διαφάνειες 9–10 · ★☆☆ · trace · `slides-lec14-local-same-name`
+- <a id="a14-4"></a>**[Α14.4](../../questions/slides/slides-lec14-palindrome.md)** Παλινδρομικό string: Διάλεξη 13, διαφάνειες 43–44 · ★☆☆ · programming · `slides-lec14-palindrome`
+- <a id="a14-5"></a>**[Α14.5](../../questions/slides/slides-lec14-shadowing.md)** Επισκίαση παγκόσμιας μεταβλητής: Διάλεξη 13, διαφάνειες 14–16 · ★☆☆ · trace · `slides-lec14-shadowing`
+- <a id="a14-6"></a>**[Α14.6](../../questions/slides/slides-lec14-static-counter.md)** Στατική και τοπική μεταβλητή σε τρεις κλήσεις: Διάλεξη 13, διαφάνειες 17–18 · ★☆☆ · trace · `slides-lec14-static-counter`
+- <a id="a14-7"></a>**[Α14.7](../../questions/slides/slides-lec14-static-assign.md)** Στατική μεταβλητή με ανάθεση εκτός δήλωσης: Διάλεξη 13, διαφάνεια 19 · ★★☆ · trace · `slides-lec14-static-assign`
+- <a id="a14-8"></a>**[Α14.8](../../questions/slides/slides-lec14-str-plus-plus.md)** Η έκφραση *str++: Διάλεξη 13, διαφάνεια 34 · ★★☆ · short-answer · `slides-lec14-str-plus-plus`
 
 ### Εργαστήριο (Α14.9)
 

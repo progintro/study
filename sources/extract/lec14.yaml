@@ -1,4 +1,6 @@
 lecture: 14
+year: 2026-27                     # updated from the 2025-26 deck (46 pages) on 2026-11-14; same page numbers
+slides: https://progintro.github.io/assets/pdf/lec13.pdf
 pages: 46
 outline:
   - {pages: "1", section: "(τίτλος)"}
@@ -28,6 +30,7 @@ pointers:
   - {page: 45, text: "strdup: https://en.cppreference.com/w/c/experimental/dynamic/strdup, strchr: https://cplusplus.com/reference/cstring/strchr/, strtok: https://cplusplus.com/reference/cstring/strtok/"}
 takeaways_slide: null         # p. 45 is a reading list, not a takeaways slide
 issues:
+  - "2026-27: this deck is lecture 13 (assets/pdf/lec13.pdf on the course site), given before the memory lecture (chapter 13), which swaps the 2025-26 order. Same 46 pages and page numbers as the 2025-26 lecture 14. p. 1 title says «Διάλεξη 13»; p. 2 announcements are new (Εργασία #1 discussion, department closed Monday 16 November); p. 3 «previous time» lists lecture 12 (pointers and arrays) instead of memory; p. 4 adds a painting caption; p. 21 small wording fix. The p. 2-3 notes below describe the 2025-26 deck."
   - "p. 2: announcements (make-up lecture Thu 27 Nov 6-8pm; oral exams for Εργασία #0 starting next week) are course logistics and were left out of the chapter."
   - "p. 45: 'σελίδες 63-68, 74-76, 93-96' of Stamatopoulos's slides. Per k04-map.tsv (printed pages) these are exactly 04-functions «Εμβέλεια και χρόνος ζωής μεταβλητών» 63-68, part of 05-pointers-arrays «Δείκτες» (72-77) and 06-memory-strings «Συμβολοσειρές» 93-96. The chapter cites «Εμβέλεια και χρόνος ζωής μεταβλητών» 63-68, «Συμβολοσειρές» 93-96 and «Δείκτες» 74-76 (the slides' pages)."
   - "p. 28: the second declaration is partly hidden behind the 'null byte' callout; reconstructed as {72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 10, 0}, consistent with chapter 10."
