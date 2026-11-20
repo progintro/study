@@ -3,9 +3,9 @@ id: slides-lec13-stack-frames
 kind: slides
 title: "Τα stack frames της equalIgnoreCase"
 source:
-  title: "Διάλεξη 13, διαφάνειες 20–26"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec13.pdf
-  years: [2025]
+  title: "Διάλεξη 14, διαφάνειες 20–26"
+  url: https://progintro.github.io/assets/pdf/lec14.pdf
+  years: [2025, 2026]
 chapters: [13]
 topics: [memory-model, functions]
 difficulty: 1

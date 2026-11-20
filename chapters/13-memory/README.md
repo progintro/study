@@ -3,9 +3,9 @@ layout: chapter
 chapter: 13
 lecture: 13
 title: "Μνήμη"
-date: 2025-11-14
+date: 2026-11-20
 part: C
-slides: https://github.com/progintro/progintro.github.io/releases/download/2025/lec13.pdf
+slides: https://progintro.github.io/assets/pdf/lec14.pdf
 prev: 12-pointers-arrays
 next: 14-scope-strings
 topics: [memory-model, dynamic-memory, functions, recursion, pointers, multidim-arrays, undefined-behavior]
@@ -650,12 +650,14 @@ $ ./dyn2d
 
 ## Διάβασμα
 
-- **Διαφάνειες:** [Διάλεξη 13](https://github.com/progintro/progintro.github.io/releases/download/2025/lec13.pdf),
+- **Διαφάνειες:** [Διάλεξη 14](https://progintro.github.io/assets/pdf/lec14.pdf) (2026-27),
   σελ. 1–64: endianness σελ. 5–7· κατηγορίες μνήμης σελ. 8–9· στοίβα και stack
   frames σελ. 10–26· αναδρομή και μέγεθος στοίβας σελ. 27–31· σωρός και `malloc`
   σελ. 32–40· `void` και `void *` σελ. 41–42· έλεγχος για `NULL` σελ. 43–46· `free`
   σελ. 47–51· `realloc` σελ. 52–55· δυναμικοί δισδιάστατοι πίνακες σελ. 56–58 και 64·
-  κουίζ σελ. 61–63.
+  κουίζ σελ. 61–63. Το 2025-26 ήταν η
+  [Διάλεξη 13 (2025)](https://github.com/progintro/progintro.github.io/releases/download/2025/lec13.pdf),
+  με την ίδια αρίθμηση σελίδων· το 2026-27 έρχεται μετά τη διάλεξη για την εμβέλεια (Κεφάλαιο 14).
 - **Σημειώσεις:**
   - [Κεφάλαιο 6: Δυναμική μνήμη, συμβολοσειρές και πολυδιάστατοι πίνακες](https://progintro.github.io/notes/chapters/06-memory-strings/),
     ενότητες «Δυναμική δέσμευση μνήμης» (K04, σελ. 88–92) και «Πολυδιάστατοι
@@ -758,13 +760,13 @@ $ ./dyn2d
 
 ### Ζέσταμα: από τις διαφάνειες (Α13.1–Α13.7)
 
-- <a id="a13-1"></a>**[Α13.1](../../questions/slides/slides-lec13-after-free.md)** Τι γίνεται μετά την free;: Διάλεξη 13, διαφάνειες 47–51 · ★☆☆ · short-answer · `slides-lec13-after-free`
-- <a id="a13-2"></a>**[Α13.2](../../questions/slides/slides-lec13-infinite-recursion.md)** Γιατί η αναδρομή πρέπει να τελειώνει;: Διάλεξη 13, διαφάνεια 27 · ★☆☆ · short-answer · `slides-lec13-infinite-recursion`
-- <a id="a13-3"></a>**[Α13.3](../../questions/slides/slides-lec13-stack-frames.md)** Τα stack frames της equalIgnoreCase: Διάλεξη 13, διαφάνειες 20–26 · ★☆☆ · short-answer · `slides-lec13-stack-frames`
-- <a id="a13-4"></a>**[Α13.4](../../questions/slides/slides-lec13-dynamic-2d.md)** Δυναμικός δισδιάστατος πίνακας MxN: Διάλεξη 13, διαφάνειες 56–58 · ★★☆ · programming · `slides-lec13-dynamic-2d`
-- <a id="a13-5"></a>**[Α13.5](../../questions/slides/slides-lec13-heap-bomb.md)** Ένας τεράστιος πίνακας στον σωρό: Διάλεξη 13, διαφάνειες 43–46 · ★★☆ · trace · `slides-lec13-heap-bomb`
-- <a id="a13-6"></a>**[Α13.6](../../questions/slides/slides-lec13-quiz-5x5.md)** Κουίζ: πίνακας 5x5 σε συνάρτηση: Διάλεξη 13, διαφάνειες 61–63 · ★★☆ · debug · `slides-lec13-quiz-5x5`
-- <a id="a13-7"></a>**[Α13.7](../../questions/slides/slides-lec13-stack-bomb.md)** Ένας τεράστιος πίνακας στη στοίβα: Διάλεξη 13, διαφάνειες 28–31 · ★★☆ · trace · `slides-lec13-stack-bomb`
+- <a id="a13-1"></a>**[Α13.1](../../questions/slides/slides-lec13-after-free.md)** Τι γίνεται μετά την free;: Διάλεξη 14, διαφάνειες 47–51 · ★☆☆ · short-answer · `slides-lec13-after-free`
+- <a id="a13-2"></a>**[Α13.2](../../questions/slides/slides-lec13-infinite-recursion.md)** Γιατί η αναδρομή πρέπει να τελειώνει;: Διάλεξη 14, διαφάνεια 27 · ★☆☆ · short-answer · `slides-lec13-infinite-recursion`
+- <a id="a13-3"></a>**[Α13.3](../../questions/slides/slides-lec13-stack-frames.md)** Τα stack frames της equalIgnoreCase: Διάλεξη 14, διαφάνειες 20–26 · ★☆☆ · short-answer · `slides-lec13-stack-frames`
+- <a id="a13-4"></a>**[Α13.4](../../questions/slides/slides-lec13-dynamic-2d.md)** Δυναμικός δισδιάστατος πίνακας MxN: Διάλεξη 14, διαφάνειες 56–58 · ★★☆ · programming · `slides-lec13-dynamic-2d`
+- <a id="a13-5"></a>**[Α13.5](../../questions/slides/slides-lec13-heap-bomb.md)** Ένας τεράστιος πίνακας στον σωρό: Διάλεξη 14, διαφάνειες 43–46 · ★★☆ · trace · `slides-lec13-heap-bomb`
+- <a id="a13-6"></a>**[Α13.6](../../questions/slides/slides-lec13-quiz-5x5.md)** Κουίζ: πίνακας 5x5 σε συνάρτηση: Διάλεξη 14, διαφάνειες 61–63 · ★★☆ · debug · `slides-lec13-quiz-5x5`
+- <a id="a13-7"></a>**[Α13.7](../../questions/slides/slides-lec13-stack-bomb.md)** Ένας τεράστιος πίνακας στη στοίβα: Διάλεξη 14, διαφάνειες 28–31 · ★★☆ · trace · `slides-lec13-stack-bomb`
 
 ### Εργαστήριο (Α13.8–Α13.9)
 

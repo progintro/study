@@ -3,9 +3,9 @@ id: slides-lec13-infinite-recursion
 kind: slides
 title: "Γιατί η αναδρομή πρέπει να τελειώνει;"
 source:
-  title: "Διάλεξη 13, διαφάνεια 27"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec13.pdf
-  years: [2025]
+  title: "Διάλεξη 14, διαφάνεια 27"
+  url: https://progintro.github.io/assets/pdf/lec14.pdf
+  years: [2025, 2026]
 chapters: [13, 11]
 topics: [recursion, memory-model]
 difficulty: 1
