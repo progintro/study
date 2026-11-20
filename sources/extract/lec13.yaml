@@ -1,4 +1,6 @@
 lecture: 13
+year: 2026-27                     # updated from the 2025-26 deck (64 pages) on 2026-11-20; same page numbers
+slides: https://progintro.github.io/assets/pdf/lec14.pdf
 pages: 64
 outline:
   - {pages: "1", section: "(τίτλος)"}
@@ -33,6 +35,7 @@ pointers:
   - {page: 59, text: "Endianness: https://en.wikipedia.org/wiki/Endianness"}
 takeaways_slide: null         # p. 59 is a further-reading list, not a takeaways slide
 issues:
+  - "2026-27: this deck is lecture 14 (assets/pdf/lec14.pdf on the course site), given after the scope lecture (chapter 14), which swaps the 2025-26 order. Same 64 pages and page numbers as the 2025-26 lecture 13. p. 1 title says «Διάλεξη 14»; p. 2 announcements are new (Άσκηση and πρόοδος moved a week later; ungetc is allowed in the Εργασία); p. 3 «previous time» lists the scope lecture; p. 4 adds a painting caption; p. 60 changes only the font. The p. 2-3 notes below describe the 2025-26 deck."
   - "p. 2: announcements (Εργασία #0 finished; Εργασία #1 deadline Wednesday 10 December 23:59; 'Συζήτηση'; γρίφοι & bonus) are course policy and were not put in the chapter."
   - "No slide cites K04 / notes pages or labs; the Διάβασμα notes sections (06-memory-strings «Δυναμική δέσμευση μνήμης», «Πολυδιάστατοι πίνακες»; 04-functions «Εμβέλεια και χρόνος ζωής μεταβλητών») and lab07 (array.c, mines.c, my_prog.c) were chosen from the course material."
   - "p. 5-7 (endianness example) and p. 37-38 (how much memory malloc allocates / sizeof of the pointers prints 8 8 8) repeat lecture 12 slides 41-43 and 39-40. The questions already exist as slides-lec12-endianness and slides-lec12-malloc-sizeof, so no duplicate lec13 question files were written; consider adding lecture 13 to their source/Εμφανίσεις."

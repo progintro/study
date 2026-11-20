@@ -525,13 +525,13 @@
 
 ### Ζέσταμα: από τις διαφάνειες (Α13.1–Α13.7)
 
-- **[Α13.1](../questions/slides/slides-lec13-after-free.md)** Τι γίνεται μετά την free;: Διάλεξη 13, διαφάνειες 47–51 · ★☆☆ · short-answer · `slides-lec13-after-free`
-- **[Α13.2](../questions/slides/slides-lec13-infinite-recursion.md)** Γιατί η αναδρομή πρέπει να τελειώνει;: Διάλεξη 13, διαφάνεια 27 · ★☆☆ · short-answer · `slides-lec13-infinite-recursion`
-- **[Α13.3](../questions/slides/slides-lec13-stack-frames.md)** Τα stack frames της equalIgnoreCase: Διάλεξη 13, διαφάνειες 20–26 · ★☆☆ · short-answer · `slides-lec13-stack-frames`
-- **[Α13.4](../questions/slides/slides-lec13-dynamic-2d.md)** Δυναμικός δισδιάστατος πίνακας MxN: Διάλεξη 13, διαφάνειες 56–58 · ★★☆ · programming · `slides-lec13-dynamic-2d`
-- **[Α13.5](../questions/slides/slides-lec13-heap-bomb.md)** Ένας τεράστιος πίνακας στον σωρό: Διάλεξη 13, διαφάνειες 43–46 · ★★☆ · trace · `slides-lec13-heap-bomb`
-- **[Α13.6](../questions/slides/slides-lec13-quiz-5x5.md)** Κουίζ: πίνακας 5x5 σε συνάρτηση: Διάλεξη 13, διαφάνειες 61–63 · ★★☆ · debug · `slides-lec13-quiz-5x5`
-- **[Α13.7](../questions/slides/slides-lec13-stack-bomb.md)** Ένας τεράστιος πίνακας στη στοίβα: Διάλεξη 13, διαφάνειες 28–31 · ★★☆ · trace · `slides-lec13-stack-bomb`
+- **[Α13.1](../questions/slides/slides-lec13-after-free.md)** Τι γίνεται μετά την free;: Διάλεξη 14, διαφάνειες 47–51 · ★☆☆ · short-answer · `slides-lec13-after-free`
+- **[Α13.2](../questions/slides/slides-lec13-infinite-recursion.md)** Γιατί η αναδρομή πρέπει να τελειώνει;: Διάλεξη 14, διαφάνεια 27 · ★☆☆ · short-answer · `slides-lec13-infinite-recursion`
+- **[Α13.3](../questions/slides/slides-lec13-stack-frames.md)** Τα stack frames της equalIgnoreCase: Διάλεξη 14, διαφάνειες 20–26 · ★☆☆ · short-answer · `slides-lec13-stack-frames`
+- **[Α13.4](../questions/slides/slides-lec13-dynamic-2d.md)** Δυναμικός δισδιάστατος πίνακας MxN: Διάλεξη 14, διαφάνειες 56–58 · ★★☆ · programming · `slides-lec13-dynamic-2d`
+- **[Α13.5](../questions/slides/slides-lec13-heap-bomb.md)** Ένας τεράστιος πίνακας στον σωρό: Διάλεξη 14, διαφάνειες 43–46 · ★★☆ · trace · `slides-lec13-heap-bomb`
+- **[Α13.6](../questions/slides/slides-lec13-quiz-5x5.md)** Κουίζ: πίνακας 5x5 σε συνάρτηση: Διάλεξη 14, διαφάνειες 61–63 · ★★☆ · debug · `slides-lec13-quiz-5x5`
+- **[Α13.7](../questions/slides/slides-lec13-stack-bomb.md)** Ένας τεράστιος πίνακας στη στοίβα: Διάλεξη 14, διαφάνειες 28–31 · ★★☆ · trace · `slides-lec13-stack-bomb`
 
 ### Εργαστήριο (Α13.8–Α13.9)
 

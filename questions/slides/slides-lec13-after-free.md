@@ -3,9 +3,9 @@ id: slides-lec13-after-free
 kind: slides
 title: "Τι γίνεται μετά την free;"
 source:
-  title: "Διάλεξη 13, διαφάνειες 47–51"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec13.pdf
-  years: [2025]
+  title: "Διάλεξη 14, διαφάνειες 47–51"
+  url: https://progintro.github.io/assets/pdf/lec14.pdf
+  years: [2025, 2026]
 chapters: [13]
 topics: [dynamic-memory, undefined-behavior]
 difficulty: 1

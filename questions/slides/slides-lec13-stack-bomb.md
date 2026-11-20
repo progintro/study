@@ -3,9 +3,9 @@ id: slides-lec13-stack-bomb
 kind: slides
 title: "Ένας τεράστιος πίνακας στη στοίβα"
 source:
-  title: "Διάλεξη 13, διαφάνειες 28–31"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec13.pdf
-  years: [2025]
+  title: "Διάλεξη 14, διαφάνειες 28–31"
+  url: https://progintro.github.io/assets/pdf/lec14.pdf
+  years: [2025, 2026]
 chapters: [13]
 topics: [memory-model, arrays, dynamic-memory]
 difficulty: 2

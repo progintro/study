@@ -3,9 +3,9 @@ id: slides-lec13-dynamic-2d
 kind: slides
 title: "Δυναμικός δισδιάστατος πίνακας MxN"
 source:
-  title: "Διάλεξη 13, διαφάνειες 56–58"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec13.pdf
-  years: [2025]
+  title: "Διάλεξη 14, διαφάνειες 56–58"
+  url: https://progintro.github.io/assets/pdf/lec14.pdf
+  years: [2025, 2026]
 chapters: [13, 12]
 topics: [dynamic-memory, multidim-arrays, pointers]
 difficulty: 2

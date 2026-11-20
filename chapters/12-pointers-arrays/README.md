@@ -651,7 +651,7 @@ $ ./int
 - **[Α11.17](../../questions/labs/lab-lab06-pointers.md)** Πίνακες και αριθμητική δεικτών: Εργαστήριο 6, Άσκηση 3 · ★★☆ · trace · `lab-lab06-pointers`
 - **[Α13.8](../../questions/labs/lab-lab07-mines.md)** Δυναμική δέσμευση μνήμης για δισδιάστατο πίνακα: Εργαστήριο 7, Άσκηση 3 · ★★☆ · programming · `lab-lab07-mines`
 - **[Α13.9](../../questions/labs/lab-lab07-pacman.md)** Κινήσεις σε πλέγμα (Παλιό θέμα): Εργαστήριο 7, Άσκηση 5 · ★★★ · programming · `lab-lab07-pacman`
-- **[Α13.4](../../questions/slides/slides-lec13-dynamic-2d.md)** Δυναμικός δισδιάστατος πίνακας MxN: Διάλεξη 13, διαφάνειες 56–58 · ★★☆ · programming · `slides-lec13-dynamic-2d`
+- **[Α13.4](../../questions/slides/slides-lec13-dynamic-2d.md)** Δυναμικός δισδιάστατος πίνακας MxN: Διάλεξη 14, διαφάνειες 56–58 · ★★☆ · programming · `slides-lec13-dynamic-2d`
 - **[Α14.13](../../questions/exams/exam-2023-fall-ex0-q2.md)** Ταιριαστές Καρδιές: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #0 (Valentine's Themed), Θέμα 2 · ★★☆ · programming · `exam-2023-fall-ex0-q2`
 - **[Α14.14](../../questions/exams/exam-2023-fall-ex1-q2.md)** Εντοπισμός Διπλών Ορισμάτων: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 2 · ★★☆ · programming · `exam-2023-fall-ex1-q2`
 - **[Α14.22](../../questions/exams/exam-2023-fall-ex5-q4.md)** Μεταμορφώσιμες Προτάσεις: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 4 · ★★★ · programming · `exam-2023-fall-ex5-q4`

@@ -746,7 +746,7 @@ int main(int argc, char **argv) {
 - **[Α10.15](../../questions/labs/lab-lab06-judgement.md)** Πίνακες και συναρτήσεις: Εργαστήριο 6, Άσκηση 4 · ★☆☆ · programming · `lab-lab06-judgement`
 - **[Α10.14](../../questions/slides/slides-lec10-scanf-no-ampersand.md)** scanf χωρίς &: Διάλεξη 10, διαφάνεια 11 · ★★☆ · debug · `slides-lec10-scanf-no-ampersand`
 - **[Α12.7](../../questions/slides/slides-lec12-pointer-copy-loop.md)** Περιεχόμενα του x μετά από βρόχο με δείκτη: Διάλεξη 12, διαφάνεια 25 · ★★☆ · trace · `slides-lec12-pointer-copy-loop`
-- **[Α13.2](../../questions/slides/slides-lec13-infinite-recursion.md)** Γιατί η αναδρομή πρέπει να τελειώνει;: Διάλεξη 13, διαφάνεια 27 · ★☆☆ · short-answer · `slides-lec13-infinite-recursion`
+- **[Α13.2](../../questions/slides/slides-lec13-infinite-recursion.md)** Γιατί η αναδρομή πρέπει να τελειώνει;: Διάλεξη 14, διαφάνεια 27 · ★☆☆ · short-answer · `slides-lec13-infinite-recursion`
 - **[Α14.10](../../questions/homework/hw-2024-hw2-jason.md)** Το Δικό σου Chatbot (jason): Εργασία 2 (2024-25), Άσκηση 3 · ★★★ · programming · `hw-2024-hw2-jason`
 - **[Α15.10](../../questions/slides/slides-lec15-complexity-factorial.md)** Πολυπλοκότητα του αναδρομικού παραγοντικού: Διάλεξη 15, διαφάνεια 25 · ★★☆ · short-answer · `slides-lec15-complexity-factorial`
 - **[Α15.11](../../questions/slides/slides-lec15-complexity-fibonacci.md)** Πολυπλοκότητα του αναδρομικού Fibonacci: Διάλεξη 15, διαφάνεια 27 · ★★☆ · short-answer · `slides-lec15-complexity-fibonacci`
