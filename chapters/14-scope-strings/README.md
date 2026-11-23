@@ -847,8 +847,8 @@ int isPalindrome(char *str) {
 - **[Α10.22](../../questions/exams/exam-2023-fall-ex4-q1.md)** Αναγράμματα: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 1 · ★★☆ · programming · `exam-2023-fall-ex4-q1`
 - **[Α11.16](../../questions/labs/lab-lab05-fib.md)** Η ακολουθία Fibonacci: Εργαστήριο 5, Άσκηση 2 · ★★☆ · programming · `lab-lab05-fib`
 - **[Α13.11](../../questions/exams/exam-2023-fall-ex9-q4.md)** Κάδρο: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 4 · ★★★ · programming · `exam-2023-fall-ex9-q4`
-- **[Α15.14](../../questions/slides/slides-lec15-complexity-strcmp.md)** Πολυπλοκότητα της strcmp: Διάλεξη 15, διαφάνεια 31 · ★★☆ · short-answer · `slides-lec15-complexity-strcmp`
-- **[Α15.6](../../questions/slides/slides-lec15-complexity-strlen.md)** Πολυπλοκότητα της strlen: Διάλεξη 15, διαφάνεια 29 · ★☆☆ · short-answer · `slides-lec15-complexity-strlen`
+- **[Α15.14](../../questions/slides/slides-lec15-complexity-strcmp.md)** Πολυπλοκότητα της strcmp: Διάλεξη 15, διαφάνεια 34 · ★★☆ · short-answer · `slides-lec15-complexity-strcmp`
+- **[Α15.6](../../questions/slides/slides-lec15-complexity-strlen.md)** Πολυπλοκότητα της strlen: Διάλεξη 15, διαφάνεια 32 · ★☆☆ · short-answer · `slides-lec15-complexity-strlen`
 - **[Α18.15](../../questions/exams/exam-2023-fall-ex10-q3.md)** Κρυμμένο Μήνυμα: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 3 · ★★☆ · programming · `exam-2023-fall-ex10-q3`
 - **[Α18.18](../../questions/exams/exam-2023-fall-ex5-q3.md)** Επιλογή: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 3 · ★★☆ · programming · `exam-2023-fall-ex5-q3`
 - **[Α18.19](../../questions/exams/exam-2023-fall-ex6-q4.md)** Ταξινόμηση Αρχείων Καταγραφής: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 4 · ★★☆ · programming · `exam-2023-fall-ex6-q4`

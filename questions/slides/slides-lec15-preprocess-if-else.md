@@ -3,9 +3,9 @@ id: slides-lec15-preprocess-if-else
 kind: slides
 title: "Σε τι προεπεξεργάζεται το #if 0"
 source:
-  title: "Διάλεξη 15, διαφάνεια 50"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec15.pdf
-  years: [2025]
+  title: "Διάλεξη 15, διαφάνεια 53"
+  url: https://progintro.github.io/assets/pdf/lec15.pdf
+  years: [2025, 2026]
 chapters: [15]
 topics: [preprocessor]
 difficulty: 1

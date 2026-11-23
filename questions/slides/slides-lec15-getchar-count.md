@@ -3,9 +3,9 @@ id: slides-lec15-getchar-count
 kind: slides
 title: "Τι κάνει το πρόγραμμα με την getchar"
 source:
-  title: "Διάλεξη 15, διαφάνεια 17"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec15.pdf
-  years: [2025]
+  title: "Διάλεξη 15, διαφάνεια 20"
+  url: https://progintro.github.io/assets/pdf/lec15.pdf
+  years: [2025, 2026]
 chapters: [15, 9]
 topics: [complexity, input-output, loops]
 difficulty: 1

@@ -3,9 +3,9 @@ id: slides-lec15-macro-prod
 kind: slides
 title: "Τι επιστρέφει το πρόγραμμα με τη μακροεντολή PROD"
 source:
-  title: "Διάλεξη 15, διαφάνεια 47"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec15.pdf
-  years: [2025]
+  title: "Διάλεξη 15, διαφάνεια 50"
+  url: https://progintro.github.io/assets/pdf/lec15.pdf
+  years: [2025, 2026]
 chapters: [15]
 topics: [preprocessor, precedence]
 difficulty: 1
