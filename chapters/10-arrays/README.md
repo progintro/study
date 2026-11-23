@@ -791,7 +791,7 @@ $0 \to 4 \to 47 \to 472$.
 - **[Α12.21](../../questions/exams/exam-2025-jan-q3.md)** Κινούμενος Μέσος Όρος - sma: Εξέταση Ιανουαρίου 2025, Θέμα 3 · ★★☆ · programming · `exam-2025-jan-q3`
 - **[Α14.15](../../questions/exams/exam-2023-fall-ex12-q2.md)** Προσεγγίζοντας την Λέξη: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 2 · ★★☆ · programming · `exam-2023-fall-ex12-q2`
 - **[Α15.18](../../questions/exams/exam-2023-fall-ex7-q3.md)** Δίδυμοι Πρώτοι: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 3 · ★★★ · programming · `exam-2023-fall-ex7-q3`
-- **[Α15.1](../../questions/slides/slides-lec15-complexity-atoi.md)** Πολυπλοκότητα της atoi: Διάλεξη 15, διαφάνεια 15 · ★☆☆ · short-answer · `slides-lec15-complexity-atoi`
+- **[Α15.1](../../questions/slides/slides-lec15-complexity-atoi.md)** Πολυπλοκότητα της atoi: Διάλεξη 15, διαφάνεια 18 · ★☆☆ · short-answer · `slides-lec15-complexity-atoi`
 - **[Α16.22](../../questions/exams/exam-2023-fall-ex12-q4.md)** Εαυτοί Αριθμοί: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 4 · ★★☆ · programming · `exam-2023-fall-ex12-q4`
 - **[Α16.1](../../questions/slides/slides-lec16-average-complexity.md)** Μέσος όρος πίνακα και πολυπλοκότητα: Διάλεξη 16, διαφάνειες 8–9 · ★☆☆ · programming · `slides-lec16-average-complexity`
 - **[Α16.2](../../questions/slides/slides-lec16-find-complexity.md)** Αναζήτηση σε πίνακα και πολυπλοκότητα: Διάλεξη 16, διαφάνειες 10 και 15 · ★☆☆ · programming · `slides-lec16-find-complexity`

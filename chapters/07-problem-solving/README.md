@@ -603,7 +603,7 @@ prod    = 1.211521e+171 (64 terms)
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
-- **[Α15.5](../../questions/slides/slides-lec15-complexity-odd-multiples-of-7.md)** Πολυπλοκότητα: γινόμενο περιττών πολλαπλασίων του 7: Διάλεξη 15, διαφάνεια 13 · ★☆☆ · short-answer · `slides-lec15-complexity-odd-multiples-of-7`
+- **[Α15.5](../../questions/slides/slides-lec15-complexity-odd-multiples-of-7.md)** Πολυπλοκότητα: γινόμενο περιττών πολλαπλασίων του 7: Διάλεξη 15, διαφάνεια 16 · ★☆☆ · short-answer · `slides-lec15-complexity-odd-multiples-of-7`
 - **[Α16.8](../../questions/slides/slides-lec16-why-practice.md)** Γιατί εξάσκηση στην επίλυση προβλημάτων;: Διάλεξη 16, διαφάνειες 5–6 · ★☆☆ · short-answer · `slides-lec16-why-practice`
 
 <!-- /exercises -->

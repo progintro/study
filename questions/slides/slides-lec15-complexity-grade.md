@@ -3,9 +3,9 @@ id: slides-lec15-complexity-grade
 kind: slides
 title: "Πολυπλοκότητα υπολογισμού βαθμολογίας"
 source:
-  title: "Διάλεξη 15, διαφάνεια 21"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec15.pdf
-  years: [2025]
+  title: "Διάλεξη 15, διαφάνεια 24"
+  url: https://progintro.github.io/assets/pdf/lec15.pdf
+  years: [2025, 2026]
 chapters: [15, 5]
 topics: [complexity, functions]
 difficulty: 1

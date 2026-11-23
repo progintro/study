@@ -3,9 +3,9 @@ layout: chapter
 chapter: 15
 lecture: 15
 title: "Πολυπλοκότητα και Προεπεξεργαστής"
-date: 2025-11-24
+date: 2026-11-23
 part: C
-slides: https://github.com/progintro/progintro.github.io/releases/download/2025/lec15.pdf
+slides: https://progintro.github.io/assets/pdf/lec15.pdf
 prev: 14-scope-strings
 next: 16-problem-solving-2
 topics: [complexity, preprocessor, recursion, strings, compilation]
@@ -70,6 +70,11 @@ labs: [lab06, lab10]
 ερευνητές του είναι ο Χρίστος Παπαδημητρίου, συν-συγγραφέας και του κόμικ
 *Logicomix*.
 
+Οι διαφάνειες του 2026-27 ξεκινούν με τα μεγάλα ανοιχτά προβλήματα: τα 23 προβλήματα
+που έθεσε ο David Hilbert στο Διεθνές Συνέδριο Μαθηματικών του 1900 στο Παρίσι, και τα
+7 «προβλήματα της χιλιετίας» του Ινστιτούτου Clay. Από αυτά έχει λυθεί μόνο η εικασία
+του Poincaré (Grigori Perelman)· ένα από τα υπόλοιπα είναι το P vs NP (§15.3).
+
 <a id="s15-2"></a><a id="ο-συμβολισμός-big-o-ω-και-θ"></a>
 
 ### §15.2 Ο συμβολισμός Big-O, Ω και Θ
@@ -127,6 +132,14 @@ $$O(1) < O(\log n) < O(\sqrt{n}) < O(n) < O(n \log n) < O(n^2) < O(n^3) < O(2^n)
 $n^2$ είναι 10.000 και η $2^n$ έχει 31 ψηφία. Οι αλγόριθμοι μέχρι το πολυωνυμικό
 επίπεδο είναι συνήθως πρακτικοί· οι εκθετικοί και οι παραγοντικοί γίνονται άχρηστοι
 ήδη για μερικές δεκάδες στοιχεία.
+
+Από εδώ βγαίνει και το πιο γνωστό ανοιχτό πρόβλημα της πληροφορικής, το **P vs NP**.
+Η κλάση **P** έχει τα προβλήματα που *λύνονται* σε πολυωνυμικό χρόνο ($O(1)$, $O(n)$,
+$O(n^2)$, …) και η **NP** αυτά των οποίων μια προτεινόμενη λύση *ελέγχεται* σε
+πολυωνυμικό χρόνο. Ισχύει $P \subseteq NP$: ό,τι λύνουμε γρήγορα το ελέγχουμε και
+γρήγορα. Το ανοιχτό ερώτημα είναι αν $P = NP$, δηλαδή αν κάθε πρόβλημα που ελέγχεται
+γρήγορα λύνεται και γρήγορα. Η $O(2^n)$ περιγράφει τον χρόνο ενός αλγορίθμου, όχι
+κλάση προβλημάτων.
 
 <a id="s15-4"></a><a id="πώς-εκτιμούμε-την-πολυπλοκότητα-ενός-προγράμματος"></a>
 
@@ -732,9 +745,12 @@ int main() {
 
 ## Διάβασμα
 
-- **Διαφάνειες:** [Διάλεξη 15](https://github.com/progintro/progintro.github.io/releases/download/2025/lec15.pdf),
-  σελ. 1–54: πολυπλοκότητα και Big-O 5–12· παραδείγματα ανάλυσης 13–39·
-  μεταγλωττιστές και προεπεξεργαστής 40–43· οδηγίες 44–52.
+- **Διαφάνειες:** [Διάλεξη 15](https://progintro.github.io/assets/pdf/lec15.pdf) (2026-27),
+  σελ. 1–57: πολυπλοκότητα και Big-O 5–15 (προβλήματα του Hilbert και της χιλιετίας
+  5–6, P vs NP 15)· παραδείγματα ανάλυσης 16–42· μεταγλωττιστές και προεπεξεργαστής
+  43–46· οδηγίες 47–55. Οι διαφάνειες του 2025-26
+  ([Διάλεξη 15 (2025)](https://github.com/progintro/progintro.github.io/releases/download/2025/lec15.pdf), σελ. 1–54) δεν έχουν τις σελ. 5–6 και 15, οπότε οι
+  σελίδες τους είναι κατά 2 μικρότερες στις σελ. 7–14 και κατά 3 στις σελ. 16–57.
 - **Σημειώσεις:** η διάλεξη ζητά τις σελ. 154–159 και 161 των διαφανειών του
   κ. Σταματόπουλου:
   - [Κεφάλαιο 10: Ο προεπεξεργαστής της C](https://progintro.github.io/notes/chapters/10-preprocessor/),
@@ -828,21 +844,21 @@ int main() {
 
 ### Ζέσταμα: από τις διαφάνειες (Α15.1–Α15.15)
 
-- <a id="a15-1"></a>**[Α15.1](../../questions/slides/slides-lec15-complexity-atoi.md)** Πολυπλοκότητα της atoi: Διάλεξη 15, διαφάνεια 15 · ★☆☆ · short-answer · `slides-lec15-complexity-atoi`
-- <a id="a15-2"></a>**[Α15.2](../../questions/slides/slides-lec15-complexity-find-max-2d.md)** Πολυπλοκότητα εύρεσης μέγιστου σε πίνακα N x N: Διάλεξη 15, διαφάνεια 23 · ★☆☆ · short-answer · `slides-lec15-complexity-find-max-2d`
-- <a id="a15-3"></a>**[Α15.3](../../questions/slides/slides-lec15-complexity-grade.md)** Πολυπλοκότητα υπολογισμού βαθμολογίας: Διάλεξη 15, διαφάνεια 21 · ★☆☆ · short-answer · `slides-lec15-complexity-grade`
-- <a id="a15-4"></a>**[Α15.4](../../questions/slides/slides-lec15-complexity-malloc.md)** Πολυπλοκότητα δυναμικού πίνακα με malloc: Διάλεξη 15, διαφάνεια 19 · ★☆☆ · short-answer · `slides-lec15-complexity-malloc`
-- <a id="a15-5"></a>**[Α15.5](../../questions/slides/slides-lec15-complexity-odd-multiples-of-7.md)** Πολυπλοκότητα: γινόμενο περιττών πολλαπλασίων του 7: Διάλεξη 15, διαφάνεια 13 · ★☆☆ · short-answer · `slides-lec15-complexity-odd-multiples-of-7`
-- <a id="a15-6"></a>**[Α15.6](../../questions/slides/slides-lec15-complexity-strlen.md)** Πολυπλοκότητα της strlen: Διάλεξη 15, διαφάνεια 29 · ★☆☆ · short-answer · `slides-lec15-complexity-strlen`
-- <a id="a15-7"></a>**[Α15.7](../../questions/slides/slides-lec15-getchar-count.md)** Τι κάνει το πρόγραμμα με την getchar: Διάλεξη 15, διαφάνεια 17 · ★☆☆ · trace · `slides-lec15-getchar-count`
-- <a id="a15-8"></a>**[Α15.8](../../questions/slides/slides-lec15-macro-prod.md)** Τι επιστρέφει το πρόγραμμα με τη μακροεντολή PROD: Διάλεξη 15, διαφάνεια 47 · ★☆☆ · trace · `slides-lec15-macro-prod`
-- <a id="a15-9"></a>**[Α15.9](../../questions/slides/slides-lec15-preprocess-if-else.md)** Σε τι προεπεξεργάζεται το #if 0: Διάλεξη 15, διαφάνεια 50 · ★☆☆ · trace · `slides-lec15-preprocess-if-else`
-- <a id="a15-10"></a>**[Α15.10](../../questions/slides/slides-lec15-complexity-factorial.md)** Πολυπλοκότητα του αναδρομικού παραγοντικού: Διάλεξη 15, διαφάνεια 25 · ★★☆ · short-answer · `slides-lec15-complexity-factorial`
-- <a id="a15-11"></a>**[Α15.11](../../questions/slides/slides-lec15-complexity-fibonacci.md)** Πολυπλοκότητα του αναδρομικού Fibonacci: Διάλεξη 15, διαφάνεια 27 · ★★☆ · short-answer · `slides-lec15-complexity-fibonacci`
-- <a id="a15-12"></a>**[Α15.12](../../questions/slides/slides-lec15-complexity-mirror.md)** Πολυπλοκότητα εύρεσης κατόπτρου ακεραίου: Διάλεξη 15, διαφάνεια 37 · ★★☆ · short-answer · `slides-lec15-complexity-mirror`
-- <a id="a15-13"></a>**[Α15.13](../../questions/slides/slides-lec15-complexity-perfect-squares.md)** Άθροισμα τέλειων τετραγώνων: δύο εκδοχές: Διάλεξη 15, διαφάνεια 33 · ★★☆ · short-answer · `slides-lec15-complexity-perfect-squares`
-- <a id="a15-14"></a>**[Α15.14](../../questions/slides/slides-lec15-complexity-strcmp.md)** Πολυπλοκότητα της strcmp: Διάλεξη 15, διαφάνεια 31 · ★★☆ · short-answer · `slides-lec15-complexity-strcmp`
-- <a id="a15-15"></a>**[Α15.15](../../questions/slides/slides-lec15-prime-complexity.md)** Πολυπλοκότητα ελέγχου αν ένας αριθμός είναι πρώτος: Διάλεξη 15, διαφάνεια 39 · ★★☆ · short-answer · `slides-lec15-prime-complexity`
+- <a id="a15-1"></a>**[Α15.1](../../questions/slides/slides-lec15-complexity-atoi.md)** Πολυπλοκότητα της atoi: Διάλεξη 15, διαφάνεια 18 · ★☆☆ · short-answer · `slides-lec15-complexity-atoi`
+- <a id="a15-2"></a>**[Α15.2](../../questions/slides/slides-lec15-complexity-find-max-2d.md)** Πολυπλοκότητα εύρεσης μέγιστου σε πίνακα N x N: Διάλεξη 15, διαφάνεια 26 · ★☆☆ · short-answer · `slides-lec15-complexity-find-max-2d`
+- <a id="a15-3"></a>**[Α15.3](../../questions/slides/slides-lec15-complexity-grade.md)** Πολυπλοκότητα υπολογισμού βαθμολογίας: Διάλεξη 15, διαφάνεια 24 · ★☆☆ · short-answer · `slides-lec15-complexity-grade`
+- <a id="a15-4"></a>**[Α15.4](../../questions/slides/slides-lec15-complexity-malloc.md)** Πολυπλοκότητα δυναμικού πίνακα με malloc: Διάλεξη 15, διαφάνεια 22 · ★☆☆ · short-answer · `slides-lec15-complexity-malloc`
+- <a id="a15-5"></a>**[Α15.5](../../questions/slides/slides-lec15-complexity-odd-multiples-of-7.md)** Πολυπλοκότητα: γινόμενο περιττών πολλαπλασίων του 7: Διάλεξη 15, διαφάνεια 16 · ★☆☆ · short-answer · `slides-lec15-complexity-odd-multiples-of-7`
+- <a id="a15-6"></a>**[Α15.6](../../questions/slides/slides-lec15-complexity-strlen.md)** Πολυπλοκότητα της strlen: Διάλεξη 15, διαφάνεια 32 · ★☆☆ · short-answer · `slides-lec15-complexity-strlen`
+- <a id="a15-7"></a>**[Α15.7](../../questions/slides/slides-lec15-getchar-count.md)** Τι κάνει το πρόγραμμα με την getchar: Διάλεξη 15, διαφάνεια 20 · ★☆☆ · trace · `slides-lec15-getchar-count`
+- <a id="a15-8"></a>**[Α15.8](../../questions/slides/slides-lec15-macro-prod.md)** Τι επιστρέφει το πρόγραμμα με τη μακροεντολή PROD: Διάλεξη 15, διαφάνεια 50 · ★☆☆ · trace · `slides-lec15-macro-prod`
+- <a id="a15-9"></a>**[Α15.9](../../questions/slides/slides-lec15-preprocess-if-else.md)** Σε τι προεπεξεργάζεται το #if 0: Διάλεξη 15, διαφάνεια 53 · ★☆☆ · trace · `slides-lec15-preprocess-if-else`
+- <a id="a15-10"></a>**[Α15.10](../../questions/slides/slides-lec15-complexity-factorial.md)** Πολυπλοκότητα του αναδρομικού παραγοντικού: Διάλεξη 15, διαφάνεια 28 · ★★☆ · short-answer · `slides-lec15-complexity-factorial`
+- <a id="a15-11"></a>**[Α15.11](../../questions/slides/slides-lec15-complexity-fibonacci.md)** Πολυπλοκότητα του αναδρομικού Fibonacci: Διάλεξη 15, διαφάνεια 30 · ★★☆ · short-answer · `slides-lec15-complexity-fibonacci`
+- <a id="a15-12"></a>**[Α15.12](../../questions/slides/slides-lec15-complexity-mirror.md)** Πολυπλοκότητα εύρεσης κατόπτρου ακεραίου: Διάλεξη 15, διαφάνεια 40 · ★★☆ · short-answer · `slides-lec15-complexity-mirror`
+- <a id="a15-13"></a>**[Α15.13](../../questions/slides/slides-lec15-complexity-perfect-squares.md)** Άθροισμα τέλειων τετραγώνων: δύο εκδοχές: Διάλεξη 15, διαφάνεια 36 · ★★☆ · short-answer · `slides-lec15-complexity-perfect-squares`
+- <a id="a15-14"></a>**[Α15.14](../../questions/slides/slides-lec15-complexity-strcmp.md)** Πολυπλοκότητα της strcmp: Διάλεξη 15, διαφάνεια 34 · ★★☆ · short-answer · `slides-lec15-complexity-strcmp`
+- <a id="a15-15"></a>**[Α15.15](../../questions/slides/slides-lec15-prime-complexity.md)** Πολυπλοκότητα ελέγχου αν ένας αριθμός είναι πρώτος: Διάλεξη 15, διαφάνεια 42 · ★★☆ · short-answer · `slides-lec15-prime-complexity`
 
 ### Εργασίες (Α15.16–Α15.17)
 

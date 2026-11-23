@@ -3,9 +3,9 @@ id: slides-lec15-complexity-factorial
 kind: slides
 title: "Πολυπλοκότητα του αναδρομικού παραγοντικού"
 source:
-  title: "Διάλεξη 15, διαφάνεια 25"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec15.pdf
-  years: [2025]
+  title: "Διάλεξη 15, διαφάνεια 28"
+  url: https://progintro.github.io/assets/pdf/lec15.pdf
+  years: [2025, 2026]
 chapters: [15, 11]
 topics: [complexity, recursion]
 difficulty: 2

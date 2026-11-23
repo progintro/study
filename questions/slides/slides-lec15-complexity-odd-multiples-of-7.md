@@ -3,9 +3,9 @@ id: slides-lec15-complexity-odd-multiples-of-7
 kind: slides
 title: "Πολυπλοκότητα: γινόμενο περιττών πολλαπλασίων του 7"
 source:
-  title: "Διάλεξη 15, διαφάνεια 13"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec15.pdf
-  years: [2025]
+  title: "Διάλεξη 15, διαφάνεια 16"
+  url: https://progintro.github.io/assets/pdf/lec15.pdf
+  years: [2025, 2026]
 chapters: [15, 7]
 topics: [complexity, loops]
 difficulty: 1

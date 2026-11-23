@@ -792,7 +792,7 @@ else
 - **[Α9.31](../../questions/exams/exam-2024-sep-q4.md)** Μετρητής λέξεων: Εξέταση Σεπτεμβρίου 2024, Θέμα 4 · ★★☆ · programming · `exam-2024-sep-q4`
 - **[Α9.17](../../questions/homework/hw-2025-hw1-soundwave.md)** Επεξεργασία Ήχου (soundwave): Εργασία 1 (2025-26), Άσκηση 1 · ★★★ · programming · `hw-2025-hw1-soundwave`
 - **[Α14.8](../../questions/slides/slides-lec14-str-plus-plus.md)** Η έκφραση *str++: Διάλεξη 13, διαφάνεια 34 · ★★☆ · short-answer · `slides-lec14-str-plus-plus`
-- **[Α15.3](../../questions/slides/slides-lec15-complexity-grade.md)** Πολυπλοκότητα υπολογισμού βαθμολογίας: Διάλεξη 15, διαφάνεια 21 · ★☆☆ · short-answer · `slides-lec15-complexity-grade`
+- **[Α15.3](../../questions/slides/slides-lec15-complexity-grade.md)** Πολυπλοκότητα υπολογισμού βαθμολογίας: Διάλεξη 15, διαφάνεια 24 · ★☆☆ · short-answer · `slides-lec15-complexity-grade`
 - **[Α18.12](../../questions/exams/exam-2023-fall-ex7-q2.md)** Κρυφό Μήνυμα: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #7 (Star Wars Themed), Θέμα 2 · ★☆☆ · programming · `exam-2023-fall-ex7-q2`
 
 <!-- /exercises -->

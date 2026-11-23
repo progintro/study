@@ -36,7 +36,7 @@ lectures:
   - {n: 12, slug: 12-pointers-arrays,    date: 2026-11-09, part: C, slides: lec12.pdf, url: "https://progintro.github.io/assets/pdf/lec12.pdf", title: "Δείκτες και Πίνακες",                 notes: [05-pointers-arrays],          labs: [lab06]}
   - {n: 13, slug: 13-memory,             date: 2026-11-20, part: C, slides: lec13.pdf, url: "https://progintro.github.io/assets/pdf/lec14.pdf", title: "Μνήμη",                               notes: [06-memory-strings],           labs: [lab07]}
   - {n: 14, slug: 14-scope-strings,      date: 2026-11-13, part: C, slides: lec14.pdf, url: "https://progintro.github.io/assets/pdf/lec13.pdf", title: "Εμβέλεια, Μνήμη και Συμβολοσειρές",   notes: [04-functions, 06-memory-strings], labs: [lab08]}
-  - {n: 15, slug: 15-complexity-preprocessor, date: 2025-11-24, part: C, slides: lec15.pdf, title: "Πολυπλοκότητα και Προεπεξεργαστής", notes: [10-preprocessor, 11-sorting-searching], labs: []}
+  - {n: 15, slug: 15-complexity-preprocessor, date: 2026-11-23, part: C, slides: lec15.pdf, url: "https://progintro.github.io/assets/pdf/lec15.pdf", title: "Πολυπλοκότητα και Προεπεξεργαστής", notes: [10-preprocessor, 11-sorting-searching], labs: []}
   - {n: 16, slug: 16-problem-solving-2,  date: 2025-11-27, part: D, slides: lec16.pdf, title: "Επίλυση Προβλημάτων #2",              notes: [],                            labs: []}
   - {n: 17, slug: 17-binary-search-sorting, date: 2025-11-28, part: D, slides: lec17.pdf, title: "Δυαδική Αναζήτηση και Ταξινόμηση", notes: [11-sorting-searching],        labs: []}
   - {n: 18, slug: 18-sorting-input-2,    date: 2025-12-01, part: D, slides: lec18.pdf, title: "Ταξινόμηση και Δεδομένα Εισόδου #2",  notes: [11-sorting-searching, 09-io], labs: [lab10]}

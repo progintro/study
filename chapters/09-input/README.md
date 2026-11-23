@@ -736,7 +736,7 @@ while ((ch = getchar()) != EOF) {
 - **[Α12.22](../../questions/exams/exam-2026-sep-q3.md)** Το μεγαλύτερο άλμα - polevault: Εξέταση Σεπτεμβρίου 2026, Θέμα 3 · ★★☆ · programming · `exam-2026-sep-q3`
 - **[Α13.11](../../questions/exams/exam-2023-fall-ex9-q4.md)** Κάδρο: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 4 · ★★★ · programming · `exam-2023-fall-ex9-q4`
 - **[Α14.19](../../questions/exams/exam-2023-fall-ex4-q2.md)** Τα Πάνω Κάτω: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 2 · ★★☆ · programming · `exam-2023-fall-ex4-q2`
-- **[Α15.7](../../questions/slides/slides-lec15-getchar-count.md)** Τι κάνει το πρόγραμμα με την getchar: Διάλεξη 15, διαφάνεια 17 · ★☆☆ · trace · `slides-lec15-getchar-count`
+- **[Α15.7](../../questions/slides/slides-lec15-getchar-count.md)** Τι κάνει το πρόγραμμα με την getchar: Διάλεξη 15, διαφάνεια 20 · ★☆☆ · trace · `slides-lec15-getchar-count`
 - **[Α18.3](../../questions/slides/slides-lec18-hypotenuse.md)** Υποτείνουσα με scanf: Διάλεξη 18, διαφάνειες 29–30 · ★☆☆ · trace · `slides-lec18-hypotenuse`
 - **[Α25.8](../../questions/exams/exam-2026-jun-q3.md)** Επενδύσεις στο Χρηματιστήριο: Εξέταση Ιουνίου 2026, Θέμα 3 · ★★☆ · programming · `exam-2026-jun-q3`
 

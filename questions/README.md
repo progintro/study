@@ -605,21 +605,21 @@
 
 ### Ζέσταμα: από τις διαφάνειες (Α15.1–Α15.15)
 
-- **[Α15.1](../questions/slides/slides-lec15-complexity-atoi.md)** Πολυπλοκότητα της atoi: Διάλεξη 15, διαφάνεια 15 · ★☆☆ · short-answer · `slides-lec15-complexity-atoi`
-- **[Α15.2](../questions/slides/slides-lec15-complexity-find-max-2d.md)** Πολυπλοκότητα εύρεσης μέγιστου σε πίνακα N x N: Διάλεξη 15, διαφάνεια 23 · ★☆☆ · short-answer · `slides-lec15-complexity-find-max-2d`
-- **[Α15.3](../questions/slides/slides-lec15-complexity-grade.md)** Πολυπλοκότητα υπολογισμού βαθμολογίας: Διάλεξη 15, διαφάνεια 21 · ★☆☆ · short-answer · `slides-lec15-complexity-grade`
-- **[Α15.4](../questions/slides/slides-lec15-complexity-malloc.md)** Πολυπλοκότητα δυναμικού πίνακα με malloc: Διάλεξη 15, διαφάνεια 19 · ★☆☆ · short-answer · `slides-lec15-complexity-malloc`
-- **[Α15.5](../questions/slides/slides-lec15-complexity-odd-multiples-of-7.md)** Πολυπλοκότητα: γινόμενο περιττών πολλαπλασίων του 7: Διάλεξη 15, διαφάνεια 13 · ★☆☆ · short-answer · `slides-lec15-complexity-odd-multiples-of-7`
-- **[Α15.6](../questions/slides/slides-lec15-complexity-strlen.md)** Πολυπλοκότητα της strlen: Διάλεξη 15, διαφάνεια 29 · ★☆☆ · short-answer · `slides-lec15-complexity-strlen`
-- **[Α15.7](../questions/slides/slides-lec15-getchar-count.md)** Τι κάνει το πρόγραμμα με την getchar: Διάλεξη 15, διαφάνεια 17 · ★☆☆ · trace · `slides-lec15-getchar-count`
-- **[Α15.8](../questions/slides/slides-lec15-macro-prod.md)** Τι επιστρέφει το πρόγραμμα με τη μακροεντολή PROD: Διάλεξη 15, διαφάνεια 47 · ★☆☆ · trace · `slides-lec15-macro-prod`
-- **[Α15.9](../questions/slides/slides-lec15-preprocess-if-else.md)** Σε τι προεπεξεργάζεται το #if 0: Διάλεξη 15, διαφάνεια 50 · ★☆☆ · trace · `slides-lec15-preprocess-if-else`
-- **[Α15.10](../questions/slides/slides-lec15-complexity-factorial.md)** Πολυπλοκότητα του αναδρομικού παραγοντικού: Διάλεξη 15, διαφάνεια 25 · ★★☆ · short-answer · `slides-lec15-complexity-factorial`
-- **[Α15.11](../questions/slides/slides-lec15-complexity-fibonacci.md)** Πολυπλοκότητα του αναδρομικού Fibonacci: Διάλεξη 15, διαφάνεια 27 · ★★☆ · short-answer · `slides-lec15-complexity-fibonacci`
-- **[Α15.12](../questions/slides/slides-lec15-complexity-mirror.md)** Πολυπλοκότητα εύρεσης κατόπτρου ακεραίου: Διάλεξη 15, διαφάνεια 37 · ★★☆ · short-answer · `slides-lec15-complexity-mirror`
-- **[Α15.13](../questions/slides/slides-lec15-complexity-perfect-squares.md)** Άθροισμα τέλειων τετραγώνων: δύο εκδοχές: Διάλεξη 15, διαφάνεια 33 · ★★☆ · short-answer · `slides-lec15-complexity-perfect-squares`
-- **[Α15.14](../questions/slides/slides-lec15-complexity-strcmp.md)** Πολυπλοκότητα της strcmp: Διάλεξη 15, διαφάνεια 31 · ★★☆ · short-answer · `slides-lec15-complexity-strcmp`
-- **[Α15.15](../questions/slides/slides-lec15-prime-complexity.md)** Πολυπλοκότητα ελέγχου αν ένας αριθμός είναι πρώτος: Διάλεξη 15, διαφάνεια 39 · ★★☆ · short-answer · `slides-lec15-prime-complexity`
+- **[Α15.1](../questions/slides/slides-lec15-complexity-atoi.md)** Πολυπλοκότητα της atoi: Διάλεξη 15, διαφάνεια 18 · ★☆☆ · short-answer · `slides-lec15-complexity-atoi`
+- **[Α15.2](../questions/slides/slides-lec15-complexity-find-max-2d.md)** Πολυπλοκότητα εύρεσης μέγιστου σε πίνακα N x N: Διάλεξη 15, διαφάνεια 26 · ★☆☆ · short-answer · `slides-lec15-complexity-find-max-2d`
+- **[Α15.3](../questions/slides/slides-lec15-complexity-grade.md)** Πολυπλοκότητα υπολογισμού βαθμολογίας: Διάλεξη 15, διαφάνεια 24 · ★☆☆ · short-answer · `slides-lec15-complexity-grade`
+- **[Α15.4](../questions/slides/slides-lec15-complexity-malloc.md)** Πολυπλοκότητα δυναμικού πίνακα με malloc: Διάλεξη 15, διαφάνεια 22 · ★☆☆ · short-answer · `slides-lec15-complexity-malloc`
+- **[Α15.5](../questions/slides/slides-lec15-complexity-odd-multiples-of-7.md)** Πολυπλοκότητα: γινόμενο περιττών πολλαπλασίων του 7: Διάλεξη 15, διαφάνεια 16 · ★☆☆ · short-answer · `slides-lec15-complexity-odd-multiples-of-7`
+- **[Α15.6](../questions/slides/slides-lec15-complexity-strlen.md)** Πολυπλοκότητα της strlen: Διάλεξη 15, διαφάνεια 32 · ★☆☆ · short-answer · `slides-lec15-complexity-strlen`
+- **[Α15.7](../questions/slides/slides-lec15-getchar-count.md)** Τι κάνει το πρόγραμμα με την getchar: Διάλεξη 15, διαφάνεια 20 · ★☆☆ · trace · `slides-lec15-getchar-count`
+- **[Α15.8](../questions/slides/slides-lec15-macro-prod.md)** Τι επιστρέφει το πρόγραμμα με τη μακροεντολή PROD: Διάλεξη 15, διαφάνεια 50 · ★☆☆ · trace · `slides-lec15-macro-prod`
+- **[Α15.9](../questions/slides/slides-lec15-preprocess-if-else.md)** Σε τι προεπεξεργάζεται το #if 0: Διάλεξη 15, διαφάνεια 53 · ★☆☆ · trace · `slides-lec15-preprocess-if-else`
+- **[Α15.10](../questions/slides/slides-lec15-complexity-factorial.md)** Πολυπλοκότητα του αναδρομικού παραγοντικού: Διάλεξη 15, διαφάνεια 28 · ★★☆ · short-answer · `slides-lec15-complexity-factorial`
+- **[Α15.11](../questions/slides/slides-lec15-complexity-fibonacci.md)** Πολυπλοκότητα του αναδρομικού Fibonacci: Διάλεξη 15, διαφάνεια 30 · ★★☆ · short-answer · `slides-lec15-complexity-fibonacci`
+- **[Α15.12](../questions/slides/slides-lec15-complexity-mirror.md)** Πολυπλοκότητα εύρεσης κατόπτρου ακεραίου: Διάλεξη 15, διαφάνεια 40 · ★★☆ · short-answer · `slides-lec15-complexity-mirror`
+- **[Α15.13](../questions/slides/slides-lec15-complexity-perfect-squares.md)** Άθροισμα τέλειων τετραγώνων: δύο εκδοχές: Διάλεξη 15, διαφάνεια 36 · ★★☆ · short-answer · `slides-lec15-complexity-perfect-squares`
+- **[Α15.14](../questions/slides/slides-lec15-complexity-strcmp.md)** Πολυπλοκότητα της strcmp: Διάλεξη 15, διαφάνεια 34 · ★★☆ · short-answer · `slides-lec15-complexity-strcmp`
+- **[Α15.15](../questions/slides/slides-lec15-prime-complexity.md)** Πολυπλοκότητα ελέγχου αν ένας αριθμός είναι πρώτος: Διάλεξη 15, διαφάνεια 42 · ★★☆ · short-answer · `slides-lec15-prime-complexity`
 
 ### Εργασίες (Α15.16–Α15.17)
 

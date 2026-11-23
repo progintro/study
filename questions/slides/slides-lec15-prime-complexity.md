@@ -3,9 +3,9 @@ id: slides-lec15-prime-complexity
 kind: slides
 title: "Πολυπλοκότητα ελέγχου αν ένας αριθμός είναι πρώτος"
 source:
-  title: "Διάλεξη 15, διαφάνεια 39"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec15.pdf
-  years: [2025]
+  title: "Διάλεξη 15, διαφάνεια 42"
+  url: https://progintro.github.io/assets/pdf/lec15.pdf
+  years: [2025, 2026]
 chapters: [15]
 topics: [complexity, math-algorithms, loops]
 difficulty: 2

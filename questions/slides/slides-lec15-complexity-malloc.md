@@ -3,9 +3,9 @@ id: slides-lec15-complexity-malloc
 kind: slides
 title: "Πολυπλοκότητα δυναμικού πίνακα με malloc"
 source:
-  title: "Διάλεξη 15, διαφάνεια 19"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec15.pdf
-  years: [2025]
+  title: "Διάλεξη 15, διαφάνεια 22"
+  url: https://progintro.github.io/assets/pdf/lec15.pdf
+  years: [2025, 2026]
 chapters: [15, 12]
 topics: [complexity, dynamic-memory, arrays]
 difficulty: 1

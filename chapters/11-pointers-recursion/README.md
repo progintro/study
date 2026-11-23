@@ -748,8 +748,8 @@ int main(int argc, char **argv) {
 - **[Α12.7](../../questions/slides/slides-lec12-pointer-copy-loop.md)** Περιεχόμενα του x μετά από βρόχο με δείκτη: Διάλεξη 12, διαφάνεια 25 · ★★☆ · trace · `slides-lec12-pointer-copy-loop`
 - **[Α13.2](../../questions/slides/slides-lec13-infinite-recursion.md)** Γιατί η αναδρομή πρέπει να τελειώνει;: Διάλεξη 14, διαφάνεια 27 · ★☆☆ · short-answer · `slides-lec13-infinite-recursion`
 - **[Α14.10](../../questions/homework/hw-2024-hw2-jason.md)** Το Δικό σου Chatbot (jason): Εργασία 2 (2024-25), Άσκηση 3 · ★★★ · programming · `hw-2024-hw2-jason`
-- **[Α15.10](../../questions/slides/slides-lec15-complexity-factorial.md)** Πολυπλοκότητα του αναδρομικού παραγοντικού: Διάλεξη 15, διαφάνεια 25 · ★★☆ · short-answer · `slides-lec15-complexity-factorial`
-- **[Α15.11](../../questions/slides/slides-lec15-complexity-fibonacci.md)** Πολυπλοκότητα του αναδρομικού Fibonacci: Διάλεξη 15, διαφάνεια 27 · ★★☆ · short-answer · `slides-lec15-complexity-fibonacci`
+- **[Α15.10](../../questions/slides/slides-lec15-complexity-factorial.md)** Πολυπλοκότητα του αναδρομικού παραγοντικού: Διάλεξη 15, διαφάνεια 28 · ★★☆ · short-answer · `slides-lec15-complexity-factorial`
+- **[Α15.11](../../questions/slides/slides-lec15-complexity-fibonacci.md)** Πολυπλοκότητα του αναδρομικού Fibonacci: Διάλεξη 15, διαφάνεια 30 · ★★☆ · short-answer · `slides-lec15-complexity-fibonacci`
 - **[Α16.18](../../questions/homework/hw-2025-bonus0-stergios.md)** Ο Γρίφος του Στέργιου: Bonus #0 (2025-26, προαιρετική) · ★★★ · programming · `hw-2025-bonus0-stergios`
 - **[Α16.16](../../questions/labs/lab-lab05-ladder.md)** Σκαλί-σκαλί (Παλιό θέμα, Προαιρετικό): Εργαστήριο 5, Άσκηση 3 · ★★★ · programming · `lab-lab05-ladder`
 - **[Α16.9](../../questions/slides/slides-lec16-atoi.md)** Η atoi και τι μπορεί να πάει στραβά: Διάλεξη 16, διαφάνειες 16–17 · ★★☆ · programming · `slides-lec16-atoi`

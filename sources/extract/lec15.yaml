@@ -1,37 +1,40 @@
 lecture: 15
-pages: 54
+year: 2026-27                     # updated from the 2025-26 deck (54 pages) on 2026-11-23
+slides: https://progintro.github.io/assets/pdf/lec15.pdf
+pages: 57
 outline:
   - {pages: "1", section: "(τίτλος)"}
-  - {pages: "2", section: "(ανακοινώσεις: αναπλήρωση Πέμπτη 27/11)"}
+  - {pages: "2", section: "(ανακοινώσεις: οι «μαγικοί» αριθμοί του Linux reboot.h· το 2025-26 η αναπλήρωση της Πέμπτης 27/11)"}
   - {pages: "3-4", section: "(προηγούμενη φορά / σήμερα)"}
-  - {pages: "5-8", section: "Τι είναι η πολυπλοκότητα"}
-  - {pages: "9-10", section: "Ο συμβολισμός Big-O, Ω και Θ"}
-  - {pages: "11-12", section: "Διάταξη των κλάσεων πολυπλοκότητας"}
-  - {pages: "13-14", section: "Γινόμενο των περιττών πολλαπλασίων του 7"}
-  - {pages: "15-16", section: "Η `atoi`"}
-  - {pages: "17-18", section: "Μέτρηση χαρακτήρων με `getchar`"}
-  - {pages: "19-20", section: "Δυναμικός πίνακας με `malloc`"}
-  - {pages: "21-22", section: "Υπολογισμός βαθμολογίας"}
-  - {pages: "23-24", section: "Μέγιστο στοιχείο σε πίνακα N × N"}
-  - {pages: "25-28", section: "Παραγοντικό και Fibonacci"}
-  - {pages: "29-32", section: "`strlen` και `strcmp`"}
-  - {pages: "33-36", section: "Άθροισμα τέλειων τετραγώνων"}
-  - {pages: "37-38", section: "Κατοπτρικός αριθμός"}
-  - {pages: "39", section: "Κατοπτρικός αριθμός (ανοιχτό ερώτημα για τους πρώτους, τέλος της ενότητας)"}
-  - {pages: "40-43", section: "Μεταγλωττιστής και προεπεξεργαστής"}
-  - {pages: "44", section: "Οδηγίες προεπεξεργαστή"}
-  - {pages: "45", section: "Η οδηγία `#include`"}
-  - {pages: "46", section: "Η οδηγία `#define` και οι μακροεντολές"}
-  - {pages: "47-49", section: "Η μακροεντολή `PROD`"}
-  - {pages: "50-51", section: "`#if 0` / `#else`"}
-  - {pages: "52", section: "Μηνύματα αποσφαλμάτωσης με `#ifdef DEBUG`"}
-  - {pages: "53-54", section: "(για την επόμενη φορά / κλείσιμο)"}
+  - {pages: "5-10", section: "Τι είναι η πολυπλοκότητα"}  # pp. 5-6 (Hilbert, Millennium problems) new in 2026-27
+  - {pages: "11-12", section: "Ο συμβολισμός Big-O, Ω και Θ"}
+  - {pages: "13-15", section: "Διάταξη των κλάσεων πολυπλοκότητας"}  # p. 15 (P vs NP) new in 2026-27
+  - {pages: "16-17", section: "Γινόμενο των περιττών πολλαπλασίων του 7"}
+  - {pages: "18-19", section: "Η `atoi`"}
+  - {pages: "20-21", section: "Μέτρηση χαρακτήρων με `getchar`"}
+  - {pages: "22-23", section: "Δυναμικός πίνακας με `malloc`"}
+  - {pages: "24-25", section: "Υπολογισμός βαθμολογίας"}
+  - {pages: "26-27", section: "Μέγιστο στοιχείο σε πίνακα N × N"}
+  - {pages: "28-31", section: "Παραγοντικό και Fibonacci"}
+  - {pages: "32-35", section: "`strlen` και `strcmp`"}
+  - {pages: "36-39", section: "Άθροισμα τέλειων τετραγώνων"}
+  - {pages: "40-41", section: "Κατοπτρικός αριθμός"}
+  - {pages: "42", section: "Κατοπτρικός αριθμός (ανοιχτό ερώτημα για τους πρώτους, τέλος της ενότητας)"}
+  - {pages: "43-46", section: "Μεταγλωττιστής και προεπεξεργαστής"}
+  - {pages: "47", section: "Οδηγίες προεπεξεργαστή"}
+  - {pages: "48", section: "Η οδηγία `#include`"}
+  - {pages: "49", section: "Η οδηγία `#define` και οι μακροεντολές"}
+  - {pages: "50-52", section: "Η μακροεντολή `PROD`"}
+  - {pages: "53-54", section: "`#if 0` / `#else`"}
+  - {pages: "55", section: "Μηνύματα αποσφαλμάτωσης με `#ifdef DEBUG`"}
+  - {pages: "56-57", section: "(για την επόμενη φορά / κλείσιμο)"}
 pointers:
-  - {page: 53, text: "Διαφάνειες κ. Σταματόπουλου σελ. 154-159, 161 (K04): 10-preprocessor «Ο προεπεξεργαστής της C», 11-sorting-searching «Ταξινόμηση πινάκων» (πολυπλοκότητα)"}
-  - {page: 53, text: "Big-O Notation: https://en.wikipedia.org/wiki/Big_O_notation"}
-  - {page: 53, text: "C Preprocessor: https://en.wikipedia.org/wiki/C_preprocessor"}
-takeaways_slide: null         # p. 53 is a reading assignment, not a takeaways slide
+  - {page: 56, text: "Διαφάνειες κ. Σταματόπουλου σελ. 154-159, 161 (K04): 10-preprocessor «Ο προεπεξεργαστής της C», 11-sorting-searching «Ταξινόμηση πινάκων» (πολυπλοκότητα)"}
+  - {page: 56, text: "Big-O Notation: https://en.wikipedia.org/wiki/Big_O_notation"}
+  - {page: 56, text: "C Preprocessor: https://en.wikipedia.org/wiki/C_preprocessor"}
+takeaways_slide: null         # p. 56 is a reading assignment, not a takeaways slide
 issues:
+  - "2026-27 deck (57 pages) vs 2025-26 (54 pages). New pages: p. 5 (Hilbert's 23 problems, ICM Paris 1900), p. 6 (the 7 Millennium Prize problems and Grigori Perelman, who solved the Poincaré conjecture), p. 15 (P vs NP: polynomial vs exponential running times, P ⊆ NP, «Is P = NP?»). The chapter adds a paragraph for pp. 5-6 to §15.1 and one for p. 15 to §15.3. Page mapping: 2025-26 pp. 1-4 = 2026-27 pp. 1-4; pp. 5-12 -> 7-14; pp. 13-54 -> 16-57. Other changes: p. 2 announcement now links the Linux reboot.h magic numbers; p. 3 recaps the memory lecture. The outline and pointers above use 2026-27 pages; the issues below use 2025-26 page numbers."
   - "p. 53 cites 'σελίδες 154-159, 161' of the Stamatopoulos slides; these are printed page numbers and sources/k04-map.tsv puts «Ο προεπεξεργαστής της C» at K04 pp. 154-159 and p. 161 in «Ταξινόμηση πινάκων» (160-166). The earlier off-by-one was the map's old PDF numbering; the chapter cites 154-159 and 161."
   - "p. 5 shows only a photo of Christos Papadimitriou and the Logicomix cover, p. 6 Top Trumps supercar cards, p. 8 a wristwatch titled 'Ένα Λεπτό'. No text; the chapter keeps the points in words (compare algorithms by measurable metrics; wall-clock time depends on the machine) - this reading of p. 6 and p. 8 is an interpretation."
   - "p. 9: definitions use strict inequalities and ∃c without c > 0; transcribed as on the slide."
