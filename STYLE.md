@@ -263,7 +263,8 @@ type: programming
   - `hw-<year>-hwN-<slug>`
   - `exam-<exam-id>-qN`, with a letter suffix for sub-parts if they are separate problems.
   - `interview-<LL>-<area>-<slug>`: the technical-interview problem bank (2026),
-    statements only. They close each chapter's ladder and are listed in
+    raw statements exactly as the interview bank exports them, with no hint (the
+    one kind exempt from «Υπόδειξη»). They close each chapter's ladder and are listed in
     `questions/interview-questions.md`.
   - `kahoot-<short-slug>`
 - `chapters`: the chapter numbers where the question belongs. **The first one is the
