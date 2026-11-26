@@ -660,7 +660,7 @@ time ./goldbach < input.txt
 - <a id="a6-29"></a>**[Α6.29](../../questions/interview/interview-06-control-is-prime.md)** Πρώτος αριθμός: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-is-prime`
 - <a id="a6-30"></a>**[Α6.30](../../questions/interview/interview-06-control-palindrome-number.md)** Παλίνδρομος αριθμός: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-palindrome-number`
 - <a id="a6-31"></a>**[Α6.31](../../questions/interview/interview-06-control-times-table.md)** Προπαίδεια σε στήλες: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-times-table`
-- <a id="a6-32"></a>**[Α6.32](../../questions/interview/interview-06-functions-fib-iterative.md)** Fibonacci με βρόχο: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-functions-fib-iterative`
+- <a id="a6-32"></a>**[Α6.32](../../questions/interview/interview-06-functions-fib-iterative.md)** Αριθμοί Fibonacci: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-functions-fib-iterative`
 - <a id="a6-33"></a>**[Α6.33](../../questions/interview/interview-06-operators-bit-set.md)** Πλήθος bits που είναι 1: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-operators-bit-set`
 - <a id="a6-34"></a>**[Α6.34](../../questions/interview/interview-06-operators-even-parity.md)** Άρτια ισοτιμία bits: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-operators-even-parity`
 - <a id="a6-35"></a>**[Α6.35](../../questions/interview/interview-06-operators-msb-pos.md)** Θέση του υψηλότερου bit: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-operators-msb-pos`

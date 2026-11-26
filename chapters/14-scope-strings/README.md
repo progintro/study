@@ -847,7 +847,7 @@ int isPalindrome(char *str) {
 - <a id="a14-24"></a>**[Α14.24](../../questions/interview/interview-14-arrays-freq-letter.md)** Συχνότητες γραμμάτων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-freq-letter`
 - <a id="a14-25"></a>**[Α14.25](../../questions/interview/interview-14-arrays-mystrcpy.md)** Η δική σας strcpy: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-mystrcpy`
 - <a id="a14-26"></a>**[Α14.26](../../questions/interview/interview-14-arrays-mystrlen.md)** Η δική σας strlen: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-mystrlen`
-- <a id="a14-27"></a>**[Α14.27](../../questions/interview/interview-14-arrays-reverse-string.md)** Αντιστροφή string επί τόπου: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-reverse-string`
+- <a id="a14-27"></a>**[Α14.27](../../questions/interview/interview-14-arrays-reverse-string.md)** Αντιστροφή string: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-reverse-string`
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 

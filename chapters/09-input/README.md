@@ -726,7 +726,7 @@ while ((ch = getchar()) != EOF) {
 
 ### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α9.32)
 
-- <a id="a9-32"></a>**[Α9.32](../../questions/interview/interview-09-io-capitalize.md)** Κεφαλαία με getchar: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-09-io-capitalize`
+- <a id="a9-32"></a>**[Α9.32](../../questions/interview/interview-09-io-capitalize.md)** Μετατροπή σε κεφαλαία: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-09-io-capitalize`
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 

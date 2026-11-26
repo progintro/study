@@ -780,7 +780,7 @@ $ ./dyn2d
 
 ### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α13.12–Α13.16)
 
-- <a id="a13-12"></a>**[Α13.12](../../questions/interview/interview-13-arrays-array-add.md)** Άθροισμα πινάκων (πολυώνυμα): Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-array-add`
+- <a id="a13-12"></a>**[Α13.12](../../questions/interview/interview-13-arrays-array-add.md)** Άθροισμα πινάκων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-array-add`
 - <a id="a13-13"></a>**[Α13.13](../../questions/interview/interview-13-arrays-concat.md)** Συνένωση πινάκων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-concat`
 - <a id="a13-14"></a>**[Α13.14](../../questions/interview/interview-13-arrays-div4.md)** Διαίρεση στοιχείων με το 4: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-div4`
 - <a id="a13-15"></a>**[Α13.15](../../questions/interview/interview-13-arrays-product.md)** Γινόμενο των άλλων στοιχείων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-product`

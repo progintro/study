@@ -272,7 +272,7 @@
 - **[Α6.29](../questions/interview/interview-06-control-is-prime.md)** Πρώτος αριθμός: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-is-prime`
 - **[Α6.30](../questions/interview/interview-06-control-palindrome-number.md)** Παλίνδρομος αριθμός: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-palindrome-number`
 - **[Α6.31](../questions/interview/interview-06-control-times-table.md)** Προπαίδεια σε στήλες: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-times-table`
-- **[Α6.32](../questions/interview/interview-06-functions-fib-iterative.md)** Fibonacci με βρόχο: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-functions-fib-iterative`
+- **[Α6.32](../questions/interview/interview-06-functions-fib-iterative.md)** Αριθμοί Fibonacci: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-functions-fib-iterative`
 - **[Α6.33](../questions/interview/interview-06-operators-bit-set.md)** Πλήθος bits που είναι 1: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-operators-bit-set`
 - **[Α6.34](../questions/interview/interview-06-operators-even-parity.md)** Άρτια ισοτιμία bits: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-operators-even-parity`
 - **[Α6.35](../questions/interview/interview-06-operators-msb-pos.md)** Θέση του υψηλότερου bit: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-operators-msb-pos`
@@ -378,7 +378,7 @@
 
 ### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α9.32)
 
-- **[Α9.32](../questions/interview/interview-09-io-capitalize.md)** Κεφαλαία με getchar: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-09-io-capitalize`
+- **[Α9.32](../questions/interview/interview-09-io-capitalize.md)** Μετατροπή σε κεφαλαία: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-09-io-capitalize`
 
 ## [Κεφάλαιο 10: Πίνακες](../chapters/10-arrays/)
 
@@ -435,7 +435,7 @@
 - **[Α10.27](../questions/interview/interview-10-arrays-max-element.md)** Μέγιστο και δεύτερο μεγαλύτερο στοιχείο: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-arrays-max-element`
 - **[Α10.28](../questions/interview/interview-10-arrays-opposite.md)** Αντίθετα στοιχεία: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-arrays-opposite`
 - **[Α10.29](../questions/interview/interview-10-control-freq-dig.md)** Συχνότητες ψηφίων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-control-freq-dig`
-- **[Α10.30](../questions/interview/interview-10-io-read-token.md)** Διάβασμα μηνυμάτων με τελεία: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-io-read-token`
+- **[Α10.30](../questions/interview/interview-10-io-read-token.md)** Διάβασμα μέχρι την τελεία: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-io-read-token`
 
 ## [Κεφάλαιο 11: Δείκτες και Αναδρομή](../chapters/11-pointers-recursion/)
 
@@ -580,7 +580,7 @@
 
 ### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α13.12–Α13.16)
 
-- **[Α13.12](../questions/interview/interview-13-arrays-array-add.md)** Άθροισμα πινάκων (πολυώνυμα): Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-array-add`
+- **[Α13.12](../questions/interview/interview-13-arrays-array-add.md)** Άθροισμα πινάκων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-array-add`
 - **[Α13.13](../questions/interview/interview-13-arrays-concat.md)** Συνένωση πινάκων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-concat`
 - **[Α13.14](../questions/interview/interview-13-arrays-div4.md)** Διαίρεση στοιχείων με το 4: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-div4`
 - **[Α13.15](../questions/interview/interview-13-arrays-product.md)** Γινόμενο των άλλων στοιχείων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-product`
@@ -639,7 +639,7 @@
 - **[Α14.24](../questions/interview/interview-14-arrays-freq-letter.md)** Συχνότητες γραμμάτων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-freq-letter`
 - **[Α14.25](../questions/interview/interview-14-arrays-mystrcpy.md)** Η δική σας strcpy: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-mystrcpy`
 - **[Α14.26](../questions/interview/interview-14-arrays-mystrlen.md)** Η δική σας strlen: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-mystrlen`
-- **[Α14.27](../questions/interview/interview-14-arrays-reverse-string.md)** Αντιστροφή string επί τόπου: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-reverse-string`
+- **[Α14.27](../questions/interview/interview-14-arrays-reverse-string.md)** Αντιστροφή string: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-reverse-string`
 
 ## [Κεφάλαιο 15: Πολυπλοκότητα και Προεπεξεργαστής](../chapters/15-complexity-preprocessor/)
 

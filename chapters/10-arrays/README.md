@@ -788,7 +788,7 @@ $0 \to 4 \to 47 \to 472$.
 - <a id="a10-27"></a>**[Α10.27](../../questions/interview/interview-10-arrays-max-element.md)** Μέγιστο και δεύτερο μεγαλύτερο στοιχείο: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-arrays-max-element`
 - <a id="a10-28"></a>**[Α10.28](../../questions/interview/interview-10-arrays-opposite.md)** Αντίθετα στοιχεία: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-arrays-opposite`
 - <a id="a10-29"></a>**[Α10.29](../../questions/interview/interview-10-control-freq-dig.md)** Συχνότητες ψηφίων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-control-freq-dig`
-- <a id="a10-30"></a>**[Α10.30](../../questions/interview/interview-10-io-read-token.md)** Διάβασμα μηνυμάτων με τελεία: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-io-read-token`
+- <a id="a10-30"></a>**[Α10.30](../../questions/interview/interview-10-io-read-token.md)** Διάβασμα μέχρι την τελεία: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-io-read-token`
 
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 

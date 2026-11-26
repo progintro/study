@@ -18,7 +18,7 @@
 - **[Α6.29](interview/interview-06-control-is-prime.md)** Πρώτος αριθμός · ★☆☆ · `interview-06-control-is-prime`
 - **[Α6.30](interview/interview-06-control-palindrome-number.md)** Παλίνδρομος αριθμός · ★☆☆ · `interview-06-control-palindrome-number`
 - **[Α6.31](interview/interview-06-control-times-table.md)** Προπαίδεια σε στήλες · ★☆☆ · `interview-06-control-times-table`
-- **[Α6.32](interview/interview-06-functions-fib-iterative.md)** Fibonacci με βρόχο · ★☆☆ · `interview-06-functions-fib-iterative`
+- **[Α6.32](interview/interview-06-functions-fib-iterative.md)** Αριθμοί Fibonacci · ★☆☆ · `interview-06-functions-fib-iterative`
 - **[Α6.33](interview/interview-06-operators-bit-set.md)** Πλήθος bits που είναι 1 · ★☆☆ · `interview-06-operators-bit-set`
 - **[Α6.34](interview/interview-06-operators-even-parity.md)** Άρτια ισοτιμία bits · ★☆☆ · `interview-06-operators-even-parity`
 - **[Α6.35](interview/interview-06-operators-msb-pos.md)** Θέση του υψηλότερου bit · ★☆☆ · `interview-06-operators-msb-pos`
@@ -29,7 +29,7 @@
 
 ## [Κεφάλαιο 9: Δεδομένα Εισόδου](../chapters/09-input/) (1)
 
-- **[Α9.32](interview/interview-09-io-capitalize.md)** Κεφαλαία με getchar · ★☆☆ · `interview-09-io-capitalize`
+- **[Α9.32](interview/interview-09-io-capitalize.md)** Μετατροπή σε κεφαλαία · ★☆☆ · `interview-09-io-capitalize`
 
 ## [Κεφάλαιο 10: Πίνακες](../chapters/10-arrays/) (6)
 
@@ -38,7 +38,7 @@
 - **[Α10.27](interview/interview-10-arrays-max-element.md)** Μέγιστο και δεύτερο μεγαλύτερο στοιχείο · ★☆☆ · `interview-10-arrays-max-element`
 - **[Α10.28](interview/interview-10-arrays-opposite.md)** Αντίθετα στοιχεία · ★☆☆ · `interview-10-arrays-opposite`
 - **[Α10.29](interview/interview-10-control-freq-dig.md)** Συχνότητες ψηφίων · ★☆☆ · `interview-10-control-freq-dig`
-- **[Α10.30](interview/interview-10-io-read-token.md)** Διάβασμα μηνυμάτων με τελεία · ★☆☆ · `interview-10-io-read-token`
+- **[Α10.30](interview/interview-10-io-read-token.md)** Διάβασμα μέχρι την τελεία · ★☆☆ · `interview-10-io-read-token`
 
 ## [Κεφάλαιο 11: Δείκτες και Αναδρομή](../chapters/11-pointers-recursion/) (1)
 
@@ -46,7 +46,7 @@
 
 ## [Κεφάλαιο 13: Μνήμη](../chapters/13-memory/) (5)
 
-- **[Α13.12](interview/interview-13-arrays-array-add.md)** Άθροισμα πινάκων (πολυώνυμα) · ★☆☆ · `interview-13-arrays-array-add`
+- **[Α13.12](interview/interview-13-arrays-array-add.md)** Άθροισμα πινάκων · ★☆☆ · `interview-13-arrays-array-add`
 - **[Α13.13](interview/interview-13-arrays-concat.md)** Συνένωση πινάκων · ★☆☆ · `interview-13-arrays-concat`
 - **[Α13.14](interview/interview-13-arrays-div4.md)** Διαίρεση στοιχείων με το 4 · ★☆☆ · `interview-13-arrays-div4`
 - **[Α13.15](interview/interview-13-arrays-product.md)** Γινόμενο των άλλων στοιχείων · ★☆☆ · `interview-13-arrays-product`
@@ -58,7 +58,7 @@
 - **[Α14.24](interview/interview-14-arrays-freq-letter.md)** Συχνότητες γραμμάτων · ★☆☆ · `interview-14-arrays-freq-letter`
 - **[Α14.25](interview/interview-14-arrays-mystrcpy.md)** Η δική σας strcpy · ★☆☆ · `interview-14-arrays-mystrcpy`
 - **[Α14.26](interview/interview-14-arrays-mystrlen.md)** Η δική σας strlen · ★☆☆ · `interview-14-arrays-mystrlen`
-- **[Α14.27](interview/interview-14-arrays-reverse-string.md)** Αντιστροφή string επί τόπου · ★☆☆ · `interview-14-arrays-reverse-string`
+- **[Α14.27](interview/interview-14-arrays-reverse-string.md)** Αντιστροφή string · ★☆☆ · `interview-14-arrays-reverse-string`
 
 ## [Κεφάλαιο 16: Επίλυση Προβλημάτων #2](../chapters/16-problem-solving-2/) (3)
 
