@@ -741,6 +741,10 @@ int main(int argc, char **argv) {
 
 - <a id="a11-22"></a>**[Α11.22](../../questions/exams/exam-2026-jan-q6.md)** Ο Στέργιος Ξαναχτυπά: Εξέταση Ιανουαρίου 2026, Θέμα 6 · ★☆☆ · trace · `exam-2026-jan-q6`
 
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α11.23)
+
+- <a id="a11-23"></a>**[Α11.23](../../questions/interview/interview-11-functions-factorial-recursive.md)** Αναδρομικό παραγοντικό: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-11-functions-factorial-recursive`
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - **[Α10.15](../../questions/labs/lab-lab06-judgement.md)** Πίνακες και συναρτήσεις: Εργαστήριο 6, Άσκηση 4 · ★☆☆ · programming · `lab-lab06-judgement`

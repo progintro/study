@@ -652,6 +652,19 @@ time ./goldbach < input.txt
 - <a id="a6-24"></a>**[Α6.24](../../questions/exams/exam-2023-fall-ex9-q2.md)** Πετυχαίνοντας τον Στόχο: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 2 · ★★☆ · programming · `exam-2023-fall-ex9-q2`
 - <a id="a6-25"></a>**[Α6.25](../../questions/exams/exam-2026-jan-q3.md)** Εύρεση Πρώτων Παραγόντων - factor: Εξέταση Ιανουαρίου 2026, Θέμα 3 · ★★☆ · programming · `exam-2026-jan-q3`
 
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α6.26–Α6.35)
+
+- <a id="a6-26"></a>**[Α6.26](../../questions/interview/interview-06-control-digit-count.md)** Πλήθος ψηφίων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-digit-count`
+- <a id="a6-27"></a>**[Α6.27](../../questions/interview/interview-06-control-digit-sum.md)** Άθροισμα ψηφίων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-digit-sum`
+- <a id="a6-28"></a>**[Α6.28](../../questions/interview/interview-06-control-gcd-lcm.md)** ΜΚΔ και ΕΚΠ: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-gcd-lcm`
+- <a id="a6-29"></a>**[Α6.29](../../questions/interview/interview-06-control-is-prime.md)** Πρώτος αριθμός: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-is-prime`
+- <a id="a6-30"></a>**[Α6.30](../../questions/interview/interview-06-control-palindrome-number.md)** Παλίνδρομος αριθμός: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-palindrome-number`
+- <a id="a6-31"></a>**[Α6.31](../../questions/interview/interview-06-control-times-table.md)** Προπαίδεια σε στήλες: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-times-table`
+- <a id="a6-32"></a>**[Α6.32](../../questions/interview/interview-06-functions-fib-iterative.md)** Fibonacci με βρόχο: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-functions-fib-iterative`
+- <a id="a6-33"></a>**[Α6.33](../../questions/interview/interview-06-operators-bit-set.md)** Πλήθος bits που είναι 1: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-operators-bit-set`
+- <a id="a6-34"></a>**[Α6.34](../../questions/interview/interview-06-operators-even-parity.md)** Άρτια ισοτιμία bits: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-operators-even-parity`
+- <a id="a6-35"></a>**[Α6.35](../../questions/interview/interview-06-operators-msb-pos.md)** Θέση του υψηλότερου bit: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-operators-msb-pos`
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - **[Α2.11](../../questions/labs/lab-lab04-printchar.md)** Εκτύπωση χαρακτήρων: Εργαστήριο 4, Άσκηση 1 · ★☆☆ · programming · `lab-lab04-printchar`

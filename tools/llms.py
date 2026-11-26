@@ -53,6 +53,8 @@ def main():
         f"- [questions.json]({SITE}/downloads/questions.json): όλη η τράπεζα ασκήσεων "
         "(id, source, chapters, topics, difficulty 1-3, type, statement, hint)",
         f"- [Τράπεζα ασκήσεων]({SITE}/questions/): ευρετήριο ανά κεφάλαιο",
+        f"- [Τεχνική συνέντευξη]({SITE}/questions/interview-questions.html): τα προβλήματα "
+        "της τράπεζας θεμάτων τεχνικής συνέντευξης 2026",
         "",
         "## Optional",
         "",

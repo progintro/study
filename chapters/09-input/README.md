@@ -724,6 +724,10 @@ while ((ch = getchar()) != EOF) {
 - <a id="a9-30"></a>**[Α9.30](../../questions/exams/exam-2023-fall-ex8-q2.md)** Αποκωδικοποίηση: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 2 · ★★☆ · programming · `exam-2023-fall-ex8-q2`
 - <a id="a9-31"></a>**[Α9.31](../../questions/exams/exam-2024-sep-q4.md)** Μετρητής λέξεων: Εξέταση Σεπτεμβρίου 2024, Θέμα 4 · ★★☆ · programming · `exam-2024-sep-q4`
 
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α9.32)
+
+- <a id="a9-32"></a>**[Α9.32](../../questions/interview/interview-09-io-capitalize.md)** Κεφαλαία με getchar: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-09-io-capitalize`
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - **[Α3.7](../../questions/labs/lab-lab02-pyth.md)** Πυθαγόρειο θεώρημα: Εργαστήριο 2, Άσκηση 2 · ★☆☆ · programming · `lab-lab02-pyth`

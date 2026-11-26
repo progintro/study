@@ -781,6 +781,15 @@ $0 \to 4 \to 47 \to 472$.
 - <a id="a10-23"></a>**[Α10.23](../../questions/exams/exam-2023-fall-ex5-q2.md)** Μαγικό Ζευγάρι: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 2 · ★★☆ · programming · `exam-2023-fall-ex5-q2`
 - <a id="a10-24"></a>**[Α10.24](../../questions/exams/exam-2026-jun-q2.md)** Η συνάρτηση paws: Εξέταση Ιουνίου 2026, Θέμα 2 · ★★☆ · debug · `exam-2026-jun-q2`
 
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α10.25–Α10.30)
+
+- <a id="a10-25"></a>**[Α10.25](../../questions/interview/interview-10-arrays-array-sum.md)** Άθροισμα πίνακα: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-arrays-array-sum`
+- <a id="a10-26"></a>**[Α10.26](../../questions/interview/interview-10-arrays-max-distance.md)** Μέγιστη απόσταση διαδοχικών στοιχείων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-arrays-max-distance`
+- <a id="a10-27"></a>**[Α10.27](../../questions/interview/interview-10-arrays-max-element.md)** Μέγιστο και δεύτερο μεγαλύτερο στοιχείο: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-arrays-max-element`
+- <a id="a10-28"></a>**[Α10.28](../../questions/interview/interview-10-arrays-opposite.md)** Αντίθετα στοιχεία: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-arrays-opposite`
+- <a id="a10-29"></a>**[Α10.29](../../questions/interview/interview-10-control-freq-dig.md)** Συχνότητες ψηφίων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-control-freq-dig`
+- <a id="a10-30"></a>**[Α10.30](../../questions/interview/interview-10-io-read-token.md)** Διάβασμα μηνυμάτων με τελεία: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-io-read-token`
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - **[Α9.20](../../questions/exams/exam-2023-fall-ex12-q1.md)** Γραμμή και Γράμμα: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #12, Θέμα 1 · ★☆☆ · programming · `exam-2023-fall-ex12-q1`

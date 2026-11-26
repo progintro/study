@@ -24,6 +24,19 @@ layout: default
 </nav>
 {% endif %}
 
+{% assign iv = site.data.interview[page.id] %}
+{% if iv %}
+<nav class="lab-nav" aria-label="Τεχνική συνέντευξη">
+  <span class="lab-nav-side">
+    {% if iv.prev %}<a href="{{ site.baseurl }}/questions/interview/{{ iv.prev }}.html" rel="prev">&larr; Προηγούμενο πρόβλημα</a>{% endif %}
+  </span>
+  <span class="lab-nav-mid"><a href="{{ site.baseurl }}/questions/interview-questions.html">Τράπεζα θεμάτων τεχνικής συνέντευξης</a></span>
+  <span class="lab-nav-side lab-nav-right">
+    {% if iv.next %}<a href="{{ site.baseurl }}/questions/interview/{{ iv.next }}.html" rel="next">Επόμενο πρόβλημα &rarr;</a>{% endif %}
+  </span>
+</nav>
+{% endif %}
+
 {% assign ref = site.data.refs[page.id] %}
 <h1>{% if ref %}{{ ref.label }} · {% endif %}{{ page.title }}</h1>
 

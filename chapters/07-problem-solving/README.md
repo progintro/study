@@ -601,6 +601,10 @@ prod    = 1.211521e+171 (64 terms)
 - <a id="a7-1"></a>**[Α7.1](../../questions/slides/slides-lec07-even-descending.md)** Τριψήφιοι άρτιοι σε φθίνουσα σειρά: Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 12 · ★☆☆ · programming · `slides-lec07-even-descending`
 - <a id="a7-2"></a>**[Α7.2](../../questions/slides/slides-lec07-odd-multiples-of-7.md)** Γινόμενο τριψήφιων περιττών πολλαπλασίων του 7: Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 14 · ★★☆ · programming · `slides-lec07-odd-multiples-of-7`
 
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α7.3)
+
+- <a id="a7-3"></a>**[Α7.3](../../questions/interview/interview-07-control-perfect-numbers.md)** Τέλειοι αριθμοί: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-07-control-perfect-numbers`
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - **[Α15.5](../../questions/slides/slides-lec15-complexity-odd-multiples-of-7.md)** Πολυπλοκότητα: γινόμενο περιττών πολλαπλασίων του 7: Διάλεξη 15, διαφάνεια 16 · ★☆☆ · short-answer · `slides-lec15-complexity-odd-multiples-of-7`

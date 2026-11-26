@@ -232,7 +232,7 @@ and agents read the source. Memory layouts (addresses and contents) stay tables.
 ## The question bank: `questions/`
 
 One question per file, `questions/<kind>/<id>.md`, where kind is `slides`, `labs`,
-`homework`, `exams` or `kahoot`.
+`homework`, `exams`, `interview` or `kahoot`.
 
 ```markdown
 ---
@@ -262,6 +262,9 @@ type: programming
   - `lab-labNN-<file>`
   - `hw-<year>-hwN-<slug>`
   - `exam-<exam-id>-qN`, with a letter suffix for sub-parts if they are separate problems.
+  - `interview-<LL>-<area>-<slug>`: the technical-interview problem bank (2026),
+    statements only. They close each chapter's ladder and are listed in
+    `questions/interview-questions.md`.
   - `kahoot-<short-slug>`
 - `chapters`: the chapter numbers where the question belongs. **The first one is the
   primary chapter**, where most of the needed material is taught. List others only if

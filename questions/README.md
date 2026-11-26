@@ -9,7 +9,8 @@
 ακολουθεί την τρέχουσα έκδοση του οδηγού· το αναγνωριστικό δεν αλλάζει ποτέ.
 
 Τα θέματα εξετάσεων, ταξινομημένα σε τέσσερα επίπεδα δυσκολίας, είναι και στη σελίδα
-[Θέματα εξετάσεων](exam-questions.md).
+[Θέματα εξετάσεων](exam-questions.md). Τα προβλήματα της τεχνικής συνέντευξης
+είναι στη σελίδα [Τράπεζα θεμάτων τεχνικής συνέντευξης](interview-questions.md).
 
 Σε μορφή για εργαλεία: [`questions.json`](https://progintro.github.io/study/downloads/questions.json).
 
@@ -263,6 +264,19 @@
 - **[Α6.24](../questions/exams/exam-2023-fall-ex9-q2.md)** Πετυχαίνοντας τον Στόχο: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 2 · ★★☆ · programming · `exam-2023-fall-ex9-q2`
 - **[Α6.25](../questions/exams/exam-2026-jan-q3.md)** Εύρεση Πρώτων Παραγόντων - factor: Εξέταση Ιανουαρίου 2026, Θέμα 3 · ★★☆ · programming · `exam-2026-jan-q3`
 
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α6.26–Α6.35)
+
+- **[Α6.26](../questions/interview/interview-06-control-digit-count.md)** Πλήθος ψηφίων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-digit-count`
+- **[Α6.27](../questions/interview/interview-06-control-digit-sum.md)** Άθροισμα ψηφίων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-digit-sum`
+- **[Α6.28](../questions/interview/interview-06-control-gcd-lcm.md)** ΜΚΔ και ΕΚΠ: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-gcd-lcm`
+- **[Α6.29](../questions/interview/interview-06-control-is-prime.md)** Πρώτος αριθμός: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-is-prime`
+- **[Α6.30](../questions/interview/interview-06-control-palindrome-number.md)** Παλίνδρομος αριθμός: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-palindrome-number`
+- **[Α6.31](../questions/interview/interview-06-control-times-table.md)** Προπαίδεια σε στήλες: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-control-times-table`
+- **[Α6.32](../questions/interview/interview-06-functions-fib-iterative.md)** Fibonacci με βρόχο: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-functions-fib-iterative`
+- **[Α6.33](../questions/interview/interview-06-operators-bit-set.md)** Πλήθος bits που είναι 1: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-operators-bit-set`
+- **[Α6.34](../questions/interview/interview-06-operators-even-parity.md)** Άρτια ισοτιμία bits: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-operators-even-parity`
+- **[Α6.35](../questions/interview/interview-06-operators-msb-pos.md)** Θέση του υψηλότερου bit: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-06-operators-msb-pos`
+
 ## [Κεφάλαιο 7: Επίλυση Προβλημάτων](../chapters/07-problem-solving/)
 
 ### Kahoot από το αμφιθέατρο (Κ7.1–Κ7.5)
@@ -277,6 +291,10 @@
 
 - **[Α7.1](../questions/slides/slides-lec07-even-descending.md)** Τριψήφιοι άρτιοι σε φθίνουσα σειρά: Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 12 · ★☆☆ · programming · `slides-lec07-even-descending`
 - **[Α7.2](../questions/slides/slides-lec07-odd-multiples-of-7.md)** Γινόμενο τριψήφιων περιττών πολλαπλασίων του 7: Διάλεξη 7: Επίλυση Προβλημάτων, διαφάνεια 14 · ★★☆ · programming · `slides-lec07-odd-multiples-of-7`
+
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α7.3)
+
+- **[Α7.3](../questions/interview/interview-07-control-perfect-numbers.md)** Τέλειοι αριθμοί: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-07-control-perfect-numbers`
 
 ## [Κεφάλαιο 8: Ροή Ελέγχου #2](../chapters/08-control-flow-2/)
 
@@ -358,6 +376,10 @@
 - **[Α9.30](../questions/exams/exam-2023-fall-ex8-q2.md)** Αποκωδικοποίηση: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #8, Θέμα 2 · ★★☆ · programming · `exam-2023-fall-ex8-q2`
 - **[Α9.31](../questions/exams/exam-2024-sep-q4.md)** Μετρητής λέξεων: Εξέταση Σεπτεμβρίου 2024, Θέμα 4 · ★★☆ · programming · `exam-2024-sep-q4`
 
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α9.32)
+
+- **[Α9.32](../questions/interview/interview-09-io-capitalize.md)** Κεφαλαία με getchar: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-09-io-capitalize`
+
 ## [Κεφάλαιο 10: Πίνακες](../chapters/10-arrays/)
 
 ### Kahoot από το αμφιθέατρο (Κ10.1–Κ10.10)
@@ -405,6 +427,15 @@
 - **[Α10.22](../questions/exams/exam-2023-fall-ex4-q1.md)** Αναγράμματα: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #4 (Rick Astley Themed), Θέμα 1 · ★★☆ · programming · `exam-2023-fall-ex4-q1`
 - **[Α10.23](../questions/exams/exam-2023-fall-ex5-q2.md)** Μαγικό Ζευγάρι: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 2 · ★★☆ · programming · `exam-2023-fall-ex5-q2`
 - **[Α10.24](../questions/exams/exam-2026-jun-q2.md)** Η συνάρτηση paws: Εξέταση Ιουνίου 2026, Θέμα 2 · ★★☆ · debug · `exam-2026-jun-q2`
+
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α10.25–Α10.30)
+
+- **[Α10.25](../questions/interview/interview-10-arrays-array-sum.md)** Άθροισμα πίνακα: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-arrays-array-sum`
+- **[Α10.26](../questions/interview/interview-10-arrays-max-distance.md)** Μέγιστη απόσταση διαδοχικών στοιχείων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-arrays-max-distance`
+- **[Α10.27](../questions/interview/interview-10-arrays-max-element.md)** Μέγιστο και δεύτερο μεγαλύτερο στοιχείο: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-arrays-max-element`
+- **[Α10.28](../questions/interview/interview-10-arrays-opposite.md)** Αντίθετα στοιχεία: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-arrays-opposite`
+- **[Α10.29](../questions/interview/interview-10-control-freq-dig.md)** Συχνότητες ψηφίων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-control-freq-dig`
+- **[Α10.30](../questions/interview/interview-10-io-read-token.md)** Διάβασμα μηνυμάτων με τελεία: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-10-io-read-token`
 
 ## [Κεφάλαιο 11: Δείκτες και Αναδρομή](../chapters/11-pointers-recursion/)
 
@@ -458,6 +489,10 @@
 ### Θέματα εξετάσεων (Α11.22)
 
 - **[Α11.22](../questions/exams/exam-2026-jan-q6.md)** Ο Στέργιος Ξαναχτυπά: Εξέταση Ιανουαρίου 2026, Θέμα 6 · ★☆☆ · trace · `exam-2026-jan-q6`
+
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α11.23)
+
+- **[Α11.23](../questions/interview/interview-11-functions-factorial-recursive.md)** Αναδρομικό παραγοντικό: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-11-functions-factorial-recursive`
 
 ## [Κεφάλαιο 12: Δείκτες και Πίνακες](../chapters/12-pointers-arrays/)
 
@@ -543,6 +578,14 @@
 - **[Α13.10](../questions/exams/exam-2023-fall-ex1-q4.md)** Debugging: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 4 · ★★☆ · debug · `exam-2023-fall-ex1-q4`
 - **[Α13.11](../questions/exams/exam-2023-fall-ex9-q4.md)** Κάδρο: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 4 · ★★★ · programming · `exam-2023-fall-ex9-q4`
 
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α13.12–Α13.16)
+
+- **[Α13.12](../questions/interview/interview-13-arrays-array-add.md)** Άθροισμα πινάκων (πολυώνυμα): Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-array-add`
+- **[Α13.13](../questions/interview/interview-13-arrays-concat.md)** Συνένωση πινάκων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-concat`
+- **[Α13.14](../questions/interview/interview-13-arrays-div4.md)** Διαίρεση στοιχείων με το 4: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-div4`
+- **[Α13.15](../questions/interview/interview-13-arrays-product.md)** Γινόμενο των άλλων στοιχείων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-product`
+- **[Α13.16](../questions/interview/interview-13-arrays-reverse-array.md)** Αντιστροφή πίνακα: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-reverse-array`
+
 ## [Κεφάλαιο 14: Εμβέλεια, Μνήμη και Συμβολοσειρές](../chapters/14-scope-strings/)
 
 ### Kahoot από το αμφιθέατρο (Κ14.1–Κ14.8)
@@ -589,6 +632,14 @@
 - **[Α14.20](../questions/exams/exam-2023-fall-ex6-q3.md)** Σπάσε το PIN: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #6 (Crypto Themed), Θέμα 3 · ★★☆ · programming · `exam-2023-fall-ex6-q3`
 - **[Α14.21](../questions/exams/exam-2025-jan-q5.md)** Συνένωση Αλφαριθμητικών - join: Εξέταση Ιανουαρίου 2025, Θέμα 5 · ★★☆ · programming · `exam-2025-jan-q5`
 - **[Α14.22](../questions/exams/exam-2023-fall-ex5-q4.md)** Μεταμορφώσιμες Προτάσεις: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 4 · ★★★ · programming · `exam-2023-fall-ex5-q4`
+
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α14.23–Α14.27)
+
+- **[Α14.23](../questions/interview/interview-14-arrays-concat-string.md)** Συνένωση strings: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-concat-string`
+- **[Α14.24](../questions/interview/interview-14-arrays-freq-letter.md)** Συχνότητες γραμμάτων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-freq-letter`
+- **[Α14.25](../questions/interview/interview-14-arrays-mystrcpy.md)** Η δική σας strcpy: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-mystrcpy`
+- **[Α14.26](../questions/interview/interview-14-arrays-mystrlen.md)** Η δική σας strlen: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-mystrlen`
+- **[Α14.27](../questions/interview/interview-14-arrays-reverse-string.md)** Αντιστροφή string επί τόπου: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-reverse-string`
 
 ## [Κεφάλαιο 15: Πολυπλοκότητα και Προεπεξεργαστής](../chapters/15-complexity-preprocessor/)
 
@@ -670,6 +721,12 @@
 - **[Α16.25](../questions/exams/exam-2023-fall-ex3-q4.md)** Χτίζοντας έναν Χιονάνθρωπο: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 4 · ★★★ · programming · `exam-2023-fall-ex3-q4`
 - **[Α16.26](../questions/exams/exam-2025-jan-q6.md)** Μετρώντας τα Αστέρια - stars: Εξέταση Ιανουαρίου 2025, Θέμα 6 · ★★★ · programming · `exam-2025-jan-q6`
 
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α16.27–Α16.29)
+
+- **[Α16.27](../questions/interview/interview-16-algorithms-find-duplicate.md)** Το διπλό στοιχείο: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-16-algorithms-find-duplicate`
+- **[Α16.28](../questions/interview/interview-16-algorithms-find-unique.md)** Το στοιχείο χωρίς ζευγάρι: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-16-algorithms-find-unique`
+- **[Α16.29](../questions/interview/interview-16-pointers-get-two-chars.md)** Η get_two_chars: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-16-pointers-get-two-chars`
+
 ## [Κεφάλαιο 17: Δυαδική Αναζήτηση και Ταξινόμηση](../chapters/17-binary-search-sorting/)
 
 ### Kahoot από το αμφιθέατρο (Κ17.1–Κ17.8)
@@ -701,6 +758,10 @@
 - **[Α17.11](../questions/exams/exam-2023-fall-ex10-q4.md)** Πλησιάζοντας στον Στόχο: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #10, Θέμα 4 · ★★☆ · programming · `exam-2023-fall-ex10-q4`
 - **[Α17.12](../questions/exams/exam-2024-sep-q3.md)** Εύρεση μηδενός σε πίνακα: Εξέταση Σεπτεμβρίου 2024, Θέμα 3 · ★★☆ · programming · `exam-2024-sep-q3`
 - **[Α17.13](../questions/exams/exam-2026-jan-q2.md)** Η συνάρτηση compute: Εξέταση Ιανουαρίου 2026, Θέμα 2 · ★★☆ · trace · `exam-2026-jan-q2`
+
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α17.14)
+
+- **[Α17.14](../questions/interview/interview-17-algorithms-popular-element.md)** Δημοφιλές στοιχείο: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-17-algorithms-popular-element`
 
 ## [Κεφάλαιο 18: Ταξινόμηση και Δεδομένα Εισόδου #2](../chapters/18-sorting-input-2/)
 

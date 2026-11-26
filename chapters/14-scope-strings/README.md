@@ -841,6 +841,14 @@ int isPalindrome(char *str) {
 - <a id="a14-21"></a>**[Α14.21](../../questions/exams/exam-2025-jan-q5.md)** Συνένωση Αλφαριθμητικών - join: Εξέταση Ιανουαρίου 2025, Θέμα 5 · ★★☆ · programming · `exam-2025-jan-q5`
 - <a id="a14-22"></a>**[Α14.22](../../questions/exams/exam-2023-fall-ex5-q4.md)** Μεταμορφώσιμες Προτάσεις: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #5 (HP Themed), Θέμα 4 · ★★★ · programming · `exam-2023-fall-ex5-q4`
 
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α14.23–Α14.27)
+
+- <a id="a14-23"></a>**[Α14.23](../../questions/interview/interview-14-arrays-concat-string.md)** Συνένωση strings: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-concat-string`
+- <a id="a14-24"></a>**[Α14.24](../../questions/interview/interview-14-arrays-freq-letter.md)** Συχνότητες γραμμάτων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-freq-letter`
+- <a id="a14-25"></a>**[Α14.25](../../questions/interview/interview-14-arrays-mystrcpy.md)** Η δική σας strcpy: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-mystrcpy`
+- <a id="a14-26"></a>**[Α14.26](../../questions/interview/interview-14-arrays-mystrlen.md)** Η δική σας strlen: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-mystrlen`
+- <a id="a14-27"></a>**[Α14.27](../../questions/interview/interview-14-arrays-reverse-string.md)** Αντιστροφή string επί τόπου: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-14-arrays-reverse-string`
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - **[Α9.27](../../questions/exams/exam-2023-fall-ex11-q1.md)** Αναζητώντας τον Blinky: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #11, Θέμα 1 · ★★☆ · programming · `exam-2023-fall-ex11-q1`

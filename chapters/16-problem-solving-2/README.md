@@ -747,6 +747,12 @@ int main(int argc, char **argv) {
 - <a id="a16-25"></a>**[Α16.25](../../questions/exams/exam-2023-fall-ex3-q4.md)** Χτίζοντας έναν Χιονάνθρωπο: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 4 · ★★★ · programming · `exam-2023-fall-ex3-q4`
 - <a id="a16-26"></a>**[Α16.26](../../questions/exams/exam-2025-jan-q6.md)** Μετρώντας τα Αστέρια - stars: Εξέταση Ιανουαρίου 2025, Θέμα 6 · ★★★ · programming · `exam-2025-jan-q6`
 
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α16.27–Α16.29)
+
+- <a id="a16-27"></a>**[Α16.27](../../questions/interview/interview-16-algorithms-find-duplicate.md)** Το διπλό στοιχείο: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-16-algorithms-find-duplicate`
+- <a id="a16-28"></a>**[Α16.28](../../questions/interview/interview-16-algorithms-find-unique.md)** Το στοιχείο χωρίς ζευγάρι: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-16-algorithms-find-unique`
+- <a id="a16-29"></a>**[Α16.29](../../questions/interview/interview-16-pointers-get-two-chars.md)** Η get_two_chars: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-16-pointers-get-two-chars`
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - **[Α11.20](../../questions/homework/hw-2023-hw1-flawless.md)** Άψογα Τετράγωνα (Bonus): Εργασία 1 (2023-24), Άσκηση 3 (Bonus) · ★★★ · programming · `hw-2023-hw1-flawless`

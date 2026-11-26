@@ -778,6 +778,14 @@ $ ./dyn2d
 - <a id="a13-10"></a>**[Α13.10](../../questions/exams/exam-2023-fall-ex1-q4.md)** Debugging: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #1 (Coreutils Themed), Θέμα 4 · ★★☆ · debug · `exam-2023-fall-ex1-q4`
 - <a id="a13-11"></a>**[Α13.11](../../questions/exams/exam-2023-fall-ex9-q4.md)** Κάδρο: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #9, Θέμα 4 · ★★★ · programming · `exam-2023-fall-ex9-q4`
 
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α13.12–Α13.16)
+
+- <a id="a13-12"></a>**[Α13.12](../../questions/interview/interview-13-arrays-array-add.md)** Άθροισμα πινάκων (πολυώνυμα): Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-array-add`
+- <a id="a13-13"></a>**[Α13.13](../../questions/interview/interview-13-arrays-concat.md)** Συνένωση πινάκων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-concat`
+- <a id="a13-14"></a>**[Α13.14](../../questions/interview/interview-13-arrays-div4.md)** Διαίρεση στοιχείων με το 4: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-div4`
+- <a id="a13-15"></a>**[Α13.15](../../questions/interview/interview-13-arrays-product.md)** Γινόμενο των άλλων στοιχείων: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-product`
+- <a id="a13-16"></a>**[Α13.16](../../questions/interview/interview-13-arrays-reverse-array.md)** Αντιστροφή πίνακα: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-13-arrays-reverse-array`
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - **[Α11.22](../../questions/exams/exam-2026-jan-q6.md)** Ο Στέργιος Ξαναχτυπά: Εξέταση Ιανουαρίου 2026, Θέμα 6 · ★☆☆ · trace · `exam-2026-jan-q6`

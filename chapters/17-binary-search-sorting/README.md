@@ -808,6 +808,10 @@ flowchart TD
 - <a id="a17-12"></a>**[Α17.12](../../questions/exams/exam-2024-sep-q3.md)** Εύρεση μηδενός σε πίνακα: Εξέταση Σεπτεμβρίου 2024, Θέμα 3 · ★★☆ · programming · `exam-2024-sep-q3`
 - <a id="a17-13"></a>**[Α17.13](../../questions/exams/exam-2026-jan-q2.md)** Η συνάρτηση compute: Εξέταση Ιανουαρίου 2026, Θέμα 2 · ★★☆ · trace · `exam-2026-jan-q2`
 
+### Τράπεζα θεμάτων τεχνικής συνέντευξης (Α17.14)
+
+- <a id="a17-14"></a>**[Α17.14](../../questions/interview/interview-17-algorithms-popular-element.md)** Δημοφιλές στοιχείο: Τράπεζα θεμάτων τεχνικής συνέντευξης 2026 · ★☆☆ · programming · `interview-17-algorithms-popular-element`
+
 ### Σχετικές ασκήσεις από άλλα κεφάλαια
 
 - **[Α16.25](../../questions/exams/exam-2023-fall-ex3-q4.md)** Χτίζοντας έναν Χιονάνθρωπο: Online τελική εξέταση Δεκεμβρίου 2023, Εξέταση #3 (Frozen Themed), Θέμα 4 · ★★★ · programming · `exam-2023-fall-ex3-q4`

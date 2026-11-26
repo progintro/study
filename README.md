@@ -23,6 +23,7 @@
   <a href="downloads/study-md.zip">Ολόκληρος ο οδηγός (Markdown)</a>
   <a href="questions/">Τράπεζα ασκήσεων</a>
   <a href="questions/exam-questions.html">Θέματα εξετάσεων</a>
+  <a href="questions/interview-questions.html">Τεχνική συνέντευξη</a>
   <a href="glossary.html">Γλωσσάριο</a>
   <a href="https://github.com/progintro/study">GitHub</a>
 </p>
@@ -114,14 +115,14 @@
       <td>6</td>
       <td><a href="chapters/06-control-flow/">Εντολές και Ροή Ελέγχου</a></td>
       <td>Εντολές, if / else / switch, Βρόχοι (while, for, do-while), Ροή ελέγχου (break, continue, goto)</td>
-      <td>34</td>
+      <td>44</td>
       <td><a href="downloads/06-control-flow.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>7</td>
       <td><a href="chapters/07-problem-solving/">Επίλυση Προβλημάτων</a></td>
       <td>Επίλυση προβλημάτων, Βρόχοι (while, for, do-while), Καλές πρακτικές, Επεξεργαστές κειμένου και IDEs, Git και GitHub</td>
-      <td>7</td>
+      <td>8</td>
       <td><a href="downloads/07-problem-solving.pdf">PDF</a></td>
     </tr>
     <tr>
@@ -135,7 +136,7 @@
       <td>9</td>
       <td><a href="chapters/09-input/">Δεδομένα Εισόδου</a></td>
       <td>Είσοδος / έξοδος (printf, scanf, getchar), Έλεγχος και ανάγνωση εισόδου, Αριθμοί κινητής υποδιαστολής, Καλές πρακτικές</td>
-      <td>40</td>
+      <td>41</td>
       <td><a href="downloads/09-input.pdf">PDF</a></td>
     </tr>
   </tbody>
@@ -152,14 +153,14 @@
       <td>10</td>
       <td><a href="chapters/10-arrays/">Πίνακες</a></td>
       <td>Πίνακες, Είσοδος / έξοδος (printf, scanf, getchar), Έλεγχος και ανάγνωση εισόδου, Μοντέλο μνήμης (διευθύνσεις, στοίβα, σωρός), Συμβολοσειρές, Συναρτήσεις, Αναζήτηση (σειριακή, δυαδική), Απροσδιόριστη συμπεριφορά</td>
-      <td>34</td>
+      <td>40</td>
       <td><a href="downloads/10-arrays.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>11</td>
       <td><a href="chapters/11-pointers-recursion/">Δείκτες και Αναδρομή</a></td>
       <td>Δείκτες, Αριθμητική δεικτών, Μοντέλο μνήμης (διευθύνσεις, στοίβα, σωρός), Πίνακες, Αναδρομή, Αναπαράσταση ακεραίων, υπερχείλιση</td>
-      <td>36</td>
+      <td>37</td>
       <td><a href="downloads/11-pointers-recursion.pdf">PDF</a></td>
     </tr>
     <tr>
@@ -173,14 +174,14 @@
       <td>13</td>
       <td><a href="chapters/13-memory/">Μνήμη</a></td>
       <td>Μοντέλο μνήμης (διευθύνσεις, στοίβα, σωρός), Δυναμική δέσμευση μνήμης (malloc / free), Συναρτήσεις, Αναδρομή, Δείκτες, Πολυδιάστατοι πίνακες, Απροσδιόριστη συμπεριφορά</td>
-      <td>22</td>
+      <td>27</td>
       <td><a href="downloads/13-memory.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>14</td>
       <td><a href="chapters/14-scope-strings/">Εμβέλεια, Μνήμη και Συμβολοσειρές</a></td>
       <td>Εμβέλεια και χρόνος ζωής, Μοντέλο μνήμης (διευθύνσεις, στοίβα, σωρός), Συμβολοσειρές, Δείκτες, Αριθμητική δεικτών, Προτεραιότητα και προσεταιριστικότητα, Ορίσματα γραμμής εντολών (argc / argv)</td>
-      <td>30</td>
+      <td>35</td>
       <td><a href="downloads/14-scope-strings.pdf">PDF</a></td>
     </tr>
     <tr>
@@ -204,14 +205,14 @@
       <td>16</td>
       <td><a href="chapters/16-problem-solving-2/">Επίλυση Προβλημάτων #2</a></td>
       <td>Επίλυση προβλημάτων, Πολυπλοκότητα αλγορίθμων, Πίνακες, Δείκτες, Πολυδιάστατοι πίνακες, Δυναμική δέσμευση μνήμης (malloc / free), Αναδρομή, Τελεστές bit</td>
-      <td>26</td>
+      <td>29</td>
       <td><a href="downloads/16-problem-solving-2.pdf">PDF</a></td>
     </tr>
     <tr>
       <td>17</td>
       <td><a href="chapters/17-binary-search-sorting/">Δυαδική Αναζήτηση και Ταξινόμηση</a></td>
       <td>Αναζήτηση (σειριακή, δυαδική), Ταξινόμηση, Πολυπλοκότητα αλγορίθμων, Αναδρομή, Δείκτες</td>
-      <td>21</td>
+      <td>22</td>
       <td><a href="downloads/17-binary-search-sorting.pdf">PDF</a></td>
     </tr>
     <tr>
