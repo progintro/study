@@ -4,8 +4,8 @@ kind: slides
 title: "Γιατί εξάσκηση στην επίλυση προβλημάτων;"
 source:
   title: "Διάλεξη 16, διαφάνειες 5–6"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec16.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec16.pdf
+  years: [2025, 2026]
 chapters: [16, 7]
 topics: [problem-solving]
 difficulty: 1

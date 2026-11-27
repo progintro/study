@@ -4,8 +4,8 @@ kind: slides
 title: "yes αν ένα στοιχείο υπάρχει σε δισδιάστατο πίνακα"
 source:
   title: "Διάλεξη 16, διαφάνεια 24"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec16.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec16.pdf
+  years: [2025, 2026]
 chapters: [16, 12]
 topics: [multidim-arrays, loops, control-flow]
 difficulty: 1

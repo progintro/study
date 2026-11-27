@@ -4,8 +4,8 @@ kind: slides
 title: "char *array[], char **array και char array[10][10]"
 source:
   title: "Διάλεξη 16, διαφάνεια 19"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec16.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec16.pdf
+  years: [2025, 2026]
 chapters: [16, 12]
 topics: [pointers, arrays, multidim-arrays]
 difficulty: 2

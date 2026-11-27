@@ -3,9 +3,9 @@ layout: chapter
 chapter: 16
 lecture: 16
 title: "Επίλυση Προβλημάτων #2"
-date: 2025-11-27
+date: 2026-11-27
 part: D
-slides: https://github.com/progintro/progintro.github.io/releases/download/2025/lec16.pdf
+slides: https://progintro.github.io/assets/pdf/lec16.pdf
 prev: 15-complexity-preprocessor
 next: 17-binary-search-sorting
 topics: [problem-solving, complexity, arrays, pointers, multidim-arrays, dynamic-memory, recursion, bitwise]
@@ -629,13 +629,14 @@ int main(int argc, char **argv) {
 
 ## Διάβασμα
 
-- **Διαφάνειες:** [Διάλεξη 16](https://github.com/progintro/progintro.github.io/releases/download/2025/lec16.pdf),
+- **Διαφάνειες:** [Διάλεξη 16](https://progintro.github.io/assets/pdf/lec16.pdf) (2026-27),
   σελ. 1–28: γιατί εξάσκηση σελ. 5–6· μέσος όρος σελ. 8–9· αναζήτηση σελ. 10 και 15·
   διπλό στοιχείο σελ. 11· αντιστροφή ψηφίων σελ. 13· μοναδικό στοιχείο σελ. 14· `atoi`
   σελ. 16–17· τέλεια τετράγωνα σελ. 18· `char *array[]` / `char **` / `char [10][10]`
   σελ. 19· `get_two_chars` σελ. 20· παλινδρομικός σελ. 21· `swap` σελ. 22–23·
   δισδιάστατη αναζήτηση σελ. 24· δισδιάστατος στον σωρό σελ. 25· Fibonacci σελ. 26·
-  Εργασία #1 σελ. 27.
+  Εργασία #1 σελ. 27. Οι διαφάνειες του 2025-26 έχουν την ίδια αρίθμηση:
+  [Διάλεξη 16 (2025)](https://github.com/progintro/progintro.github.io/releases/download/2025/lec16.pdf).
 - **Σημειώσεις:**
   - [Κεφάλαιο 11: Ταξινόμηση και αναζήτηση](https://progintro.github.io/notes/chapters/11-sorting-searching/),
     ενότητες «Ταξινόμηση πινάκων» (K04, σελ. 160–166, για τον συμβολισμό $O$) και
