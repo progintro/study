@@ -4,8 +4,8 @@ kind: slides
 title: "Αποδοτική αναδρομική Fibonacci"
 source:
   title: "Διάλεξη 16, διαφάνεια 26"
-  url: https://github.com/progintro/progintro.github.io/releases/download/2025/lec16.pdf
-  years: [2025]
+  url: https://progintro.github.io/assets/pdf/lec16.pdf
+  years: [2025, 2026]
 chapters: [16, 11]
 topics: [recursion, complexity, dynamic-programming]
 difficulty: 2
